@@ -1,19 +1,11 @@
-$primary-color: #141e33;
-$primary-color-v2: #4d1f4c;
-$secondary-color: #eacca8;
-$alt-color: #c6b7ce;
-$tint-color: #faa564;
-$tint-secondary-color: #f9a41a;
+$black-color: #000000;
+$yellow-color: #fedf22;
+$yellow-color-hover: #ffef33;
+$blue-color: #3355ff;
+$red-color: #f2604b;
+$white-color: #ffffff;
 
-$font-mono: 'SF Mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
-$font-sans:
-  'Calibre',
-  'Inter',
-  'San Francisco',
-  'SF Pro Text',
-  -apple-system,
-  system-ui,
-  sans-serif;
+$font-spoof-trail: var(--font-spoof-trial), sans-serif;
 
 $animation: cubic-bezier(0.55, -0.19, 0.59, 1.45);
 $animation-2: cubic-bezier(0.55, -0.19, 0.59, 0.95);

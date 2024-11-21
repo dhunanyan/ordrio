@@ -1,0 +1,91 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.header {
+  background-color: $white-color;
+  box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  transition: all 150ms ease-out;
+  transition: height 200ms ease-in;
+  width: 100%;
+  z-index: 99999999999999;
+
+  &--is-scrolled {
+    box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.55);
+    -webkit-box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.55);
+    -moz-box-shadow: 0px 1px 10px 2px rgba(0, 0, 0, 0.55);
+    height: 60px;
+  }
+
+  > div:first-of-type {
+    background-color: $white-color;
+    height: 100%;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__container {
+    @include container;
+    align-items: center;
+    display: flex;
+    transition: all 150ms linear;
+  }
+
+  &__logo {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 24px;
+    padding: 5px;
+    position: relative;
+    transition: all 200ms ease-in;
+
+    &--is-scrolled {
+      transition: all 220ms ease-out;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    width: 100%;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__item {
+    button,
+    a {
+      @include common-text;
+      display: flex;
+      margin: 0 23px;
+      padding: 12px 0;
+      white-space: nowrap;
+
+      &--is-scrolled {
+        padding: 19px 0;
+      }
+    }
+  }
+
+  &__buttons-list {
+    align-items: center;
+    display: flex;
+  }
+
+  &__buttons-item {
+    button {
+      @include common-text;
+      white-space: nowrap;
+      padding: 12px 24px;
+    }
+
+    &:last-of-type button {
+      border: 1px solid $black-color;
+      border-radius: 90px;
+    }
+  }
+}

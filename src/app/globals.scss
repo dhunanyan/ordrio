@@ -1,37 +1,28 @@
-@import '../styles/variables.scss';
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
-
-.container {
-  max-width: 1040px;
-  margin: 0 auto;
-  padding: 60px 30px;
-}
+@import "../styles/variables.scss";
 
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: $primary-color;
-  font-family: 'Poppins', sans-serif;
+  background: $black-color;
+  font-family: $font-spoof-trail;
 
   &::-webkit-scrollbar {
     width: 12px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $alt-color;
-    border: 3px solid $alt-color;
+    background-color: $white-color;
+    border: 3px solid $white-color;
   }
 
   &::-webkit-scrollbar-track {
-    background: $primary-color;
+    background: $black-color;
   }
 
   &::selection {
-    background-color: $alt-color;
-    color: $tint-color;
+    background-color: $white-color;
+    color: $blue-color;
   }
 
   &:focus,
@@ -101,7 +92,7 @@ body {
     &::-ms-clear {
       display: none;
     }
-    &[type='file'] {
+    &[type="file"] {
       display: none;
     }
   }
@@ -138,7 +129,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
   color: rgb(161, 242, 187);
 }

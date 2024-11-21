@@ -1,1 +1,2 @@
-export { HtmlMeta } from './HtmlMeta';
+export { HtmlMeta } from "./HtmlMeta";
+export { HeaderData, NavItemType } from "./HeaderData";

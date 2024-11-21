@@ -1,0 +1,76 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.banner {
+  background-color: $blue-color;
+  height: 500px;
+  position: relative;
+
+  > img {
+    z-index: 0;
+  }
+
+  &__container {
+    @include container;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__description {
+    @include description;
+    margin: 32px 0;
+  }
+
+  &__button {
+    @include button;
+  }
+
+  &__link {
+    align-items: center;
+    display: flex;
+    padding: 24px 20px;
+
+    &-text {
+      @include common-text;
+      color: $yellow-color;
+      font-weight: 700;
+      margin: 0 4px 0 0;
+      transition: all 150ms $animation-2;
+    }
+
+    &-icon {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      transition: all 150ms $animation-2;
+
+      svg {
+        fill: $yellow-color;
+      }
+    }
+
+    &:hover &-text {
+      color: $yellow-color-hover;
+    }
+
+    &:hover &-icon {
+      transform: translate(10px, 0);
+
+      svg {
+        fill: $yellow-color-hover !important;
+      }
+    }
+  }
+}
