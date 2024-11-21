@@ -3,6 +3,8 @@ import aboutUs from "../../public/svg/i_about-us.svg";
 import cafes from "../../public/svg/i_cafes.svg";
 import careers from "../../public/svg/i_careers.svg";
 import clothingAndAccessories from "../../public/svg/i_clothing-and-accessories.svg";
+import check from "../../public/svg/i_check.svg";
+import checkCircle from "../../public/svg/i_check-circle.svg";
 import faq from "../../public/svg/i_faq.svg";
 import groceriesAndSupermarkets from "../../public/svg/i_groceries-and-supermarkets.svg";
 import howToGuide from "../../public/svg/i_how-to-guide.svg";
@@ -12,6 +14,8 @@ import meatStores from "../../public/svg/i_meat-stores.svg";
 import milkAndTiffinSubscriptions from "../../public/svg/i_milk-and-tiffin-subscriptions.svg";
 import petStores from "../../public/svg/i_pet-stores.svg";
 import restaurants from "../../public/svg/i_restaurants.svg";
+import sectionSeparator from "../../public/svg/i_section-separator.svg";
+import sectionSeparatorBig from "../../public/svg/i_section-separator-big.svg";
 import services from "../../public/svg/i_services.svg";
 import support from "../../public/svg/i_support.svg";
 import videos from "../../public/svg/i_videos.svg";
@@ -21,6 +25,8 @@ export const Icons = {
   "about-us": aboutUs,
   cafes,
   careers,
+  check: check,
+  "check-circle": checkCircle,
   "clothing-and-accessories": clothingAndAccessories,
   faq,
   "groceries-and-supermarkets": groceriesAndSupermarkets,
@@ -31,6 +37,8 @@ export const Icons = {
   "milk-and-tiffin-subscriptions": milkAndTiffinSubscriptions,
   "pet-stores": petStores,
   restaurants,
+  "section-separator": sectionSeparator,
+  "section-separator-big": sectionSeparatorBig,
   services,
   support,
   videos,

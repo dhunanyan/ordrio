@@ -1,18 +1,16 @@
-import { Banner } from "@components/Banner";
+import { Hero, type HeroPropsType } from "@components/Hero";
 
-const bannerProps = {
-  imageURL: "/images/spiral.png",
-  title: "Ready to Elevate Your Fashion Brand?",
-  description:
-    "Let Aura be the spotlight that illuminates your clothing and accessories, turning shoppers into loyal fans.",
-  button: "Setup Your Free Account",
-  link: "Schedule a Personalized Demo",
-};
+const heroProps = {
+  title: "The Ultimate <span>eCommerce</span> Business Solution",
+  list: ["Simplify online store", "Streamline shipping", "Manage sales & more"],
+  button: "Get Started for Free",
+  sectionSeparator: "section-separator-big",
+} as HeroPropsType;
 
 export default function Home() {
   return (
     <main className="home">
-      <Banner {...bannerProps} />
+      <Hero {...heroProps} />
     </main>
   );
 }

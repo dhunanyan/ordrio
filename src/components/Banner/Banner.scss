@@ -3,7 +3,6 @@
 
 .banner {
   background-color: $blue-color;
-  height: 500px;
   position: relative;
 
   > img {
@@ -12,16 +11,32 @@
 
   &__container {
     @include container;
+    display: flex;
+    padding: 0 !important;
     position: relative;
     z-index: 1;
   }
 
+  &__image {
+    position: relative;
+    min-width: 565px;
+
+    img {
+      width: 100%;
+    }
+  }
+
   &__content {
+    @include container;
     align-items: center;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
     max-width: 700px;
+  }
+
+  &__icon {
+    margin: 0 0 26px;
   }
 
   &__title {
@@ -34,13 +49,13 @@
   }
 
   &__button {
-    @include button;
+    @include buttonYellow;
   }
 
   &__link {
     align-items: center;
     display: flex;
-    padding: 24px 20px;
+    margin: 24px 0 0;
 
     &-text {
       @include common-text;
@@ -71,6 +86,15 @@
       svg {
         fill: $yellow-color-hover !important;
       }
+    }
+  }
+
+  &__content--split.banner__content {
+    align-items: flex-start;
+    margin: 0 0 0 86px;
+
+    * {
+      text-align: left !important;
     }
   }
 }

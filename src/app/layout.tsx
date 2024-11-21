@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 import { HtmlMeta } from "@data";
-import { Footer, Header } from "@components";
+// import { Footer, Header } from "@components";
 
 import "./globals.scss";
 
@@ -98,7 +98,7 @@ export default function RootLayout({
       <body>
         {/* <Header /> */}
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
