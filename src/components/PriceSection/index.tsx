@@ -1,14 +1,19 @@
 import * as React from "react";
 
-import { Plan } from "@components/Plan";
+import { Plan, type PlanPropsType } from "@components/Plan";
 import "./PriceSection.scss";
 
 export type PriceSectionPropsType = {
   title: string;
   description: string;
+  plan: PlanPropsType;
 };
 
-export const PriceSection = ({ title, description }: PriceSectionPropsType) => (
+export const PriceSection = ({
+  title,
+  description,
+  plan,
+}: PriceSectionPropsType) => (
   <section className="price-section">
     <div className="price-section__container">
       <div className="price-section__content">
@@ -16,7 +21,7 @@ export const PriceSection = ({ title, description }: PriceSectionPropsType) => (
         <h2 className="price-section__title">{title}</h2>
       </div>
 
-      <Plan />
+      <Plan {...plan} />
     </div>
   </section>
 );

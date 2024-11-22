@@ -10,7 +10,9 @@ export type HeroPropsType = {
   description?: string;
   link?: { text: string; href: string };
   children?: React.ReactNode;
+  alignChildrenOutOfBox?: boolean;
   sectionSeparator?: "section-separator" | "section-separator-big";
+  bottomImageURL?: string;
 };
 
 export const Hero = ({
@@ -19,6 +21,8 @@ export const Hero = ({
   description,
   link,
   children,
+  alignChildrenOutOfBox = false,
+  bottomImageURL,
   sectionSeparator,
 }: HeroPropsType) => (
   <section className="hero">
@@ -40,15 +44,19 @@ export const Hero = ({
           {link.text}
         </Link>
       )}
+      {children}
     </div>
-    {children}
-    <div
-      className={
-        "hero__bottom-image" + (sectionSeparator ? " " + sectionSeparator : "")
-      }
-    >
-      <img src="/images/landing-hero.png" alt="Ordrio Dashboard Screenshot" />
-    </div>
+    {alignChildrenOutOfBox && children}
+    {bottomImageURL && (
+      <div
+        className={
+          "hero__bottom-image" +
+          (sectionSeparator ? " " + sectionSeparator : "")
+        }
+      >
+        <img src={bottomImageURL} alt={title} />
+      </div>
+    )}
     {sectionSeparator && (
       <div className={"hero__separator-image" + " " + sectionSeparator}>
         {[...Array(7)].map((_, i) => (

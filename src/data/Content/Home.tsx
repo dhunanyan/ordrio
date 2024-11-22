@@ -1,4 +1,5 @@
 import { Icons } from "@config";
+import { PlanContent } from "./Components";
 
 export const HomeContent = {
   hero: {
@@ -10,6 +11,7 @@ export const HomeContent = {
     ],
     link: { text: "Get Started for Free", href: "#" },
     sectionSeparator: "section-separator-big",
+    bottomImageURL: "/images/landing-hero.png",
   },
   listSection: {
     imageURL: "/images/tiger-painting.png",
@@ -159,6 +161,7 @@ export const HomeContent = {
   priceSection: {
     description: "No matter your budget",
     title: "We've got a plan that fits",
+    plan: PlanContent,
   },
   accordionSection: {
     title: "Frequently Asked Questions",
