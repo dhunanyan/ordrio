@@ -58,6 +58,19 @@
     }
   }
 
+  &__subtitle {
+    @include description;
+    font-weight: 600;
+
+    &--white {
+      color: $white-color;
+    }
+
+    &--black {
+      color: $black-color;
+    }
+  }
+
   &__description {
     @include description;
 
@@ -70,6 +83,13 @@
     }
   }
 
+  &__buttons {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
   &__button {
     &--yellow {
       @include buttonYellow;
@@ -77,6 +97,12 @@
 
     &--blue {
       @include buttonBlue;
+    }
+
+    &--disabled {
+      cursor: auto;
+      opacity: 0.6;
+      pointer-events: none;
     }
   }
 

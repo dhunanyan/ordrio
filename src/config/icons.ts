@@ -1,4 +1,6 @@
+import arrowLeft from "../../public/svg/i_arrow-left.svg";
 import arrowRight from "../../public/svg/i_arrow-right.svg";
+import arrowRightCircle from "../../public/svg/i_arrow-right-circle.svg";
 import appStore from "../../public/svg/i_app-store.svg";
 import aboutUs from "../../public/svg/i_about-us.svg";
 import cafes from "../../public/svg/i_cafes.svg";
@@ -23,7 +25,9 @@ import videos from "../../public/svg/i_videos.svg";
 
 export const Icons = {
   "app-store": appStore,
+  "arrow-left": arrowLeft,
   "arrow-right": arrowRight,
+  "arrow-right-circle": arrowRightCircle,
   "about-us": aboutUs,
   cafes,
   careers,

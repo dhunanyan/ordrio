@@ -7,9 +7,15 @@ import "./Content.scss";
 
 export type ContentPropsType = {
   title: string;
+  subtitle?: string;
   showIcon?: boolean;
   description?: string;
-  buttons?: { text: string; href?: string; onClick?: () => void }[];
+  buttons?: {
+    text: string;
+    href?: string;
+    onClick?: () => void;
+    disabled?: boolean;
+  }[];
   link?: { text: string; href: string };
   alignLeft?: boolean;
   tintColor?: "yellow" | "blue";
@@ -19,6 +25,7 @@ export type ContentPropsType = {
 export const Content = ({
   showIcon,
   title,
+  subtitle,
   description,
   buttons,
   link,
@@ -34,31 +41,38 @@ export const Content = ({
       />
     )}
     <h2 className={`content__title content__title--${textColor}`}>{title}</h2>
+    <h4 className={`content__subtitle content__subtitle--${textColor}`}>
+      {subtitle}
+    </h4>
     {description && (
       <p className={`content__description content__description--${textColor}`}>
         {description}
       </p>
     )}
-    {buttons &&
-      buttons.map(({ text, href, onClick }, i) =>
-        href ? (
-          <Link
-            key={i}
-            href={href}
-            className={`content__button content__button--${tintColor}`}
-          >
-            {text}
-          </Link>
-        ) : (
-          <button
-            key={i}
-            onClick={onClick}
-            className={`content__button content__button--${tintColor}`}
-          >
-            {text}
-          </button>
-        )
-      )}
+    <div className="content__buttons">
+      {buttons &&
+        buttons.map(({ text, href, onClick, disabled }, i) =>
+          href ? (
+            <Link
+              key={i}
+              href={href}
+              className={`content__button content__button--${tintColor}`}
+              dangerouslySetInnerHTML={{ __html: text }}
+            />
+          ) : (
+            <button
+              key={i}
+              onClick={onClick}
+              className={
+                `content__button content__button--${tintColor}` +
+                (disabled ? " content__button--disabled" : "")
+              }
+              dangerouslySetInnerHTML={{ __html: text }}
+              disabled={disabled}
+            />
+          )
+        )}
+    </div>
     {link && (
       <Link href={link.href} className="content__link">
         <span className={`content__link-text content__link-text--${tintColor}`}>
@@ -66,7 +80,7 @@ export const Content = ({
         </span>
         <span
           className={`content__link-icon content__link-icon--${tintColor}`}
-          dangerouslySetInnerHTML={{ __html: Icons["arrow-right"] }}
+          dangerouslySetInnerHTML={{ __html: Icons["arrow-right*"] }}
         />
       </Link>
     )}

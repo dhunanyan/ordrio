@@ -2,6 +2,10 @@ import {
   BigCardsSection,
   type BigCardsSectionPropsType,
 } from "@components/BigCardsSection";
+import {
+  CarouselSection,
+  type CarouselSectionPropsType,
+} from "@components/CarouselSection";
 import { Hero, type HeroPropsType } from "@components/Hero";
 import {
   ImageCardsWithContentSection,
@@ -15,6 +19,7 @@ import {
   PartnersSection,
   type PartnersSectionPropsType,
 } from "@components/PartnersSection";
+import { Icons } from "@config";
 
 const heroProps = {
   title: "The Ultimate <span>eCommerce</span> Business Solution",
@@ -155,6 +160,23 @@ const bigCardsSectionProps = {
   screenshotURL: "/images/screenshot-landing.png",
 } as BigCardsSectionPropsType;
 
+const carouselSectionProps = {
+  title: "Themes & Customization",
+  subtitle: "Ordrio adapts to every business's needs. ",
+  description:
+    "Whether you're launching a restaurant, boutique, or tech store, we offer stunning templates tailored to you. Customize easily to match your brand and start selling!",
+  buttons: [
+    { text: `${Icons["arrow-left"]}` },
+    { text: `${Icons["arrow-right"]}` },
+  ],
+  imageURLs: [
+    "/images/landing-theme-0.png",
+    "/images/landing-theme-1.png",
+    "/images/landing-theme-2.png",
+    "/images/landing-theme-3.png",
+  ],
+} as CarouselSectionPropsType;
+
 export default function Home() {
   return (
     <main>
@@ -163,6 +185,7 @@ export default function Home() {
       <PartnersSection {...partnersSectionProps} />
       <ImageCardsWithContentSection {...imageCardsWithContentSectionProps} />
       <BigCardsSection {...bigCardsSectionProps} />
+      <CarouselSection {...carouselSectionProps} />
     </main>
   );
 }
