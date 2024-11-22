@@ -1,3 +1,7 @@
+import {
+  BigCardsSection,
+  type BigCardsSectionPropsType,
+} from "@components/BigCardsSection";
 import { Hero, type HeroPropsType } from "@components/Hero";
 import {
   ImageCardsWithContentSection,
@@ -117,13 +121,48 @@ const imageCardsWithContentSectionProps = {
   ],
 } as ImageCardsWithContentSectionPropsType;
 
+const bigCardsSectionProps = {
+  bigCards: [
+    {
+      imageURL: "/images/ordrio-ship.png",
+      title: "Ordrio Ship",
+      description:
+        "Tired of shipping feeling like a second job? Enjoy stress-free, integrated shipping solutions with Ordrio.",
+      backgroundColor: "#f6eece",
+    },
+    {
+      imageURL: "/images/100-plush-add-ons.png",
+      title: "<span>100+</span> Add-ons",
+      description:
+        "Boost your store's potential with the perfect add-ons for marketing, analytics, and more.",
+      link: { text: "View Detail's", href: "#" },
+      backgroundColor: "#f4f4f4",
+    },
+  ],
+  content: {
+    topLinks: [
+      { text: "Website", href: "#" },
+      { text: "Mobile App", href: "#" },
+    ],
+    title: "Seamless Mobile Shopping",
+    description:
+      "Deliver a smooth shopping experience for your customers on any device.",
+    bottomLinks: [
+      { text: "google-play", href: "#" },
+      { text: "app-store", href: "#" },
+    ],
+  },
+  screenshotURL: "/images/screenshot-landing.png",
+} as BigCardsSectionPropsType;
+
 export default function Home() {
   return (
-    <main className="home">
+    <main>
       <Hero {...heroProps} />
       <ListSection {...listSectionProps} />
       <PartnersSection {...partnersSectionProps} />
       <ImageCardsWithContentSection {...imageCardsWithContentSectionProps} />
+      <BigCardsSection {...bigCardsSectionProps} />
     </main>
   );
 }

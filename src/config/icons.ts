@@ -1,10 +1,12 @@
 import arrowRight from "../../public/svg/i_arrow-right.svg";
+import appStore from "../../public/svg/i_app-store.svg";
 import aboutUs from "../../public/svg/i_about-us.svg";
 import cafes from "../../public/svg/i_cafes.svg";
 import careers from "../../public/svg/i_careers.svg";
 import clothingAndAccessories from "../../public/svg/i_clothing-and-accessories.svg";
 import check from "../../public/svg/i_check.svg";
 import faq from "../../public/svg/i_faq.svg";
+import googlePlay from "../../public/svg/i_google-play.svg";
 import groceriesAndSupermarkets from "../../public/svg/i_groceries-and-supermarkets.svg";
 import howToGuide from "../../public/svg/i_how-to-guide.svg";
 import logo from "../../public/svg/i_logo.svg";
@@ -20,6 +22,7 @@ import support from "../../public/svg/i_support.svg";
 import videos from "../../public/svg/i_videos.svg";
 
 export const Icons = {
+  "app-store": appStore,
   "arrow-right": arrowRight,
   "about-us": aboutUs,
   cafes,
@@ -27,6 +30,7 @@ export const Icons = {
   check: check,
   "clothing-and-accessories": clothingAndAccessories,
   faq,
+  "google-play": googlePlay,
   "groceries-and-supermarkets": groceriesAndSupermarkets,
   "how-to-guide": howToGuide,
   logo,

@@ -29,6 +29,11 @@
     @include description;
     align-items: center;
     display: flex;
+    transition: all 120ms ease-out;
+
+    &:hover {
+      transform: translate(0, -5px) scale(1.08);
+    }
 
     span:first-of-type {
       align-items: center;
@@ -63,6 +68,10 @@
     }
 
     img {
+      border-radius: 24px 24px 0px 0px;
+      box-shadow: 0px -2px 16px 1px rgba(0, 0, 0, 0.47);
+      -webkit-box-shadow: 0px -2px 16px 1px rgba(0, 0, 0, 0.47);
+      -moz-box-shadow: 0px -2px 16px 1px rgba(0, 0, 0, 0.47);
       width: 100%;
     }
   }

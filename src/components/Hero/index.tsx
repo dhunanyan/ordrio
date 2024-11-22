@@ -47,7 +47,7 @@ export const Hero = ({
         "hero__bottom-image" + (sectionSeparator ? " " + sectionSeparator : "")
       }
     >
-      <img src="/images/landing-hero.png" alt="asd" />
+      <img src="/images/landing-hero.png" alt="Ordrio Dashboard Screenshot" />
     </div>
     {sectionSeparator && (
       <div className={"hero__separator-image" + " " + sectionSeparator}>

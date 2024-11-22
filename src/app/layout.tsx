@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${spoofTrial.className} ${inter.className} ${manrope.className}`}
+      className={`${spoofTrial.variable} ${inter.variable} ${manrope.variable}`}
     >
       <head>
         <meta charSet="utf-8" />

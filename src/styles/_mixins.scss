@@ -46,7 +46,7 @@
     box-shadow: 0px 1px 16px 2px rgba(0, 0, 0, 0.55);
     -webkit-box-shadow: 0px 1px 16px 2px rgba(0, 0, 0, 0.55);
     -moz-box-shadow: 0px 1px 16px 2px rgba(0, 0, 0, 0.55);
-    transform: translate(20px, 0);
+    transform: translate(-10px, 0);
 
     &::after {
       content: "➜";
@@ -98,6 +98,29 @@
   &:hover {
     background-color: $black-color;
     color: $yellow-color;
+  }
+}
+
+@mixin buttonBlack {
+  @include button;
+  background-color: $black-color-alt;
+  color: $white-color;
+
+  &:hover {
+    background-color: $white-color;
+    color: $black-color-alt;
+  }
+}
+
+@mixin buttonBlackSmall {
+  @include buttonBlack;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  padding: 4px 16px !important;
+
+  &:hover {
+    transform: translate(0, 0);
   }
 }
 
