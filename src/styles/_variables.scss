@@ -1,12 +1,17 @@
 $black-color: #000000;
+$grey-color: #ecf0f6;
 $yellow-color: #fedf22;
 $yellow-color-hover: #ffef33;
+$yellow-color-dark: #dcb400;
 $blue-color: #3355ff;
+$blue-color-hover: #4466ff;
 $red-color: #f2604b;
 $white-color: #ffffff;
+$light-white-color: #f9faf5;
 
 $font-spoof-trail: var(--font-spoof-trial), sans-serif;
 $font-inter: var(--font-inter), sans-serif;
+$font-manrope: var(--font-manrope), sans-serif;
 
 $animation: cubic-bezier(0.55, -0.19, 0.59, 1.45);
 $animation-2: cubic-bezier(0.55, -0.19, 0.59, 0.95);

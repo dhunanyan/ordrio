@@ -1,0 +1,68 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.image-cards-with-content-section {
+  background-color: $yellow-color;
+  position: relative;
+
+  > img {
+    position: absolute;
+  }
+
+  &__container {
+    @include container;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    margin: 0 46px 0 0;
+    max-width: 376px;
+  }
+
+  &__cards {
+    background-color: $yellow-color-dark;
+    border-radius: 28px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+    display: grid;
+    grid-gap: 13px;
+    grid-template-areas:
+      "a b e"
+      "c d e";
+    grid-template-columns: 220px 220px 220px;
+    grid-template-rows: 220px 220px;
+    padding: 13px;
+
+    > .image-card {
+      &:hover {
+        cursor: pointer;
+        transform: translate(3px, -5px);
+      }
+
+      &:nth-of-type(1) {
+        grid-area: a;
+      }
+
+      &:nth-of-type(2) {
+        grid-area: b;
+      }
+
+      &:nth-of-type(3) {
+        grid-area: c;
+      }
+
+      &:nth-of-type(4) {
+        grid-area: d;
+      }
+
+      &:nth-of-type(5) {
+        grid-area: e;
+      }
+    }
+  }
+}

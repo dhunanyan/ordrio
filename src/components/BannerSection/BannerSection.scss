@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.banner-section {
+  background-color: $blue-color;
+  position: relative;
+
+  > img {
+    z-index: 0;
+  }
+
+  &__container {
+    @include container;
+    display: flex;
+    padding: 0 !important;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__image {
+    height: 470px;
+    margin: auto 86px 0 0;
+    min-width: 565px;
+    position: relative;
+
+    img {
+      bottom: 0;
+      height: 470px;
+      width: 565px;
+    }
+  }
+
+  &__content {
+    @include container;
+  }
+}

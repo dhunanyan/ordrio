@@ -156,3 +156,44 @@ export const inter = localFont({
   ],
   variable: "--font-inter",
 });
+
+export const manrope = localFont({
+  src: [
+    {
+      path: "./Manrope/Manrope-ExtraBold.ttf",
+      style: "normal",
+      weight: "800",
+    },
+    {
+      path: "./Manrope/Manrope-Bold.ttf",
+      style: "normal",
+      weight: "700",
+    },
+    {
+      path: "./Manrope/Manrope-SemiBold.ttf",
+      style: "normal",
+      weight: "600",
+    },
+    {
+      path: "./Manrope/Manrope-Medium.ttf",
+      style: "normal",
+      weight: "500",
+    },
+    {
+      path: "./Manrope/Manrope-Regular.ttf",
+      style: "normal",
+      weight: "400",
+    },
+    {
+      path: "./Manrope/Manrope-Light.ttf",
+      style: "normal",
+      weight: "300",
+    },
+    {
+      path: "./Manrope/Manrope-ExtraLight.ttf",
+      style: "normal",
+      weight: "200",
+    },
+  ],
+  variable: "--font-manrope",
+});

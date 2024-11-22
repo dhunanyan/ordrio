@@ -1,0 +1,98 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.partners-section {
+  background-color: $grey-color;
+  position: relative;
+
+  &__container {
+    @include container;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__logos {
+    &-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 58px 0 0 0;
+    }
+
+    &-item {
+      height: 66px;
+      position: relative;
+
+      &:nth-of-type(1) {
+        height: 43px;
+        width: 152px;
+      }
+
+      &:nth-of-type(2) {
+        width: 164px;
+      }
+
+      &:nth-of-type(3) {
+        height: 60px;
+        width: 90px;
+      }
+
+      &:nth-of-type(4) {
+        height: 58px;
+        width: 88px;
+      }
+
+      &:nth-of-type(5) {
+        height: 48px;
+        width: 202px;
+      }
+    }
+  }
+
+  &__separator {
+    background: $black-color;
+    display: flex;
+    height: 2px;
+    opacity: 0.2;
+    margin: 42px 0;
+    width: 100%;
+  }
+
+  &__quotes {
+    &-list {
+      align-items: flex-start;
+      display: flex;
+      gap: 54px;
+      justify-content: center;
+    }
+
+    &-item {
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+    }
+
+    &-text {
+      @include common-text;
+      font-weight: 700;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    &-author {
+      @include common-text;
+      font-size: 12.8px;
+      margin: 19px 0 0 0;
+      text-align: center;
+
+      span {
+        font-weight: 700;
+      }
+    }
+  }
+}

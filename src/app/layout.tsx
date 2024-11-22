@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { spoofTrial, inter } from "./fonts";
+import { spoofTrial, inter, manrope } from "./fonts";
 
 import { HtmlMeta } from "@data";
 import { Header } from "@components";
@@ -20,7 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${spoofTrial.className} ${inter.className}`}>
+    <html
+      lang="en"
+      className={`${spoofTrial.className} ${inter.className} ${manrope.className}`}
+    >
       <head>
         <meta charSet="utf-8" />
         {/* <link

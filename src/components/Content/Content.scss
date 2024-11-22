@@ -1,0 +1,156 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  margin: 0 auto;
+  max-width: 700px;
+
+  &--align-left {
+    align-items: flex-start;
+
+    * {
+      text-align: left !important;
+    }
+  }
+
+  &__icon {
+    &--yellow {
+      svg {
+        background-color: $yellow-color;
+
+        path {
+          fill: $black-color;
+        }
+      }
+    }
+
+    &--blue {
+      svg {
+        background-color: $blue-color;
+
+        path {
+          fill: $white-color;
+        }
+      }
+    }
+
+    svg {
+      border-radius: 50%;
+      height: 22px;
+      padding: 14px;
+      width: 22px;
+    }
+  }
+
+  &__title {
+    @include title;
+
+    &--white {
+      color: $white-color;
+    }
+
+    &--black {
+      color: $black-color;
+    }
+  }
+
+  &__description {
+    @include description;
+
+    &--white {
+      color: $white-color;
+    }
+
+    &--black {
+      color: $black-color;
+    }
+  }
+
+  &__button {
+    &--yellow {
+      @include buttonYellow;
+    }
+
+    &--blue {
+      @include buttonBlue;
+    }
+  }
+
+  &__link {
+    align-items: center;
+    display: flex;
+
+    &-text {
+      @include common-text;
+      font-weight: 700;
+      margin: 0 4px 0 0;
+      transition: all 150ms $animation-2;
+
+      &--yellow {
+        color: $yellow-color;
+      }
+
+      &--blue {
+        color: $blue-color;
+      }
+    }
+
+    &-icon {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      transition: all 150ms $animation-2;
+
+      &--yellow {
+        svg {
+          fill: $yellow-color;
+        }
+      }
+
+      &--blue {
+        svg {
+          fill: $blue-color;
+        }
+      }
+    }
+
+    &:hover &-text {
+      &--yellow {
+        color: $yellow-color-hover;
+      }
+
+      &--blue {
+        color: $blue-color-hover;
+      }
+    }
+
+    &:hover &-icon {
+      transform: translate(10px, 0);
+
+      &--yellow {
+        svg {
+          fill: $yellow-color-hover !important;
+        }
+      }
+
+      &--blue {
+        svg {
+          fill: $blue-color-hover !important;
+        }
+      }
+    }
+  }
+
+  &__content--split.banner__content {
+    align-items: flex-start;
+    margin: 0 0 0 86px;
+
+    * {
+      text-align: left !important;
+    }
+  }
+}
