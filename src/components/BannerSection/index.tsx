@@ -10,8 +10,8 @@ export type BannerSectionPropsType = {
   imageURL?: string;
   showIcon?: boolean;
   description?: string;
-  buttons: { text: string; href: string }[];
-  link: { text: string; href: string };
+  links: { text: string; href: string }[];
+  link?: { text: string; href: string };
 };
 
 export const BannerSection = ({
@@ -20,7 +20,7 @@ export const BannerSection = ({
   showIcon,
   title,
   description,
-  buttons,
+  links,
   link,
 }: BannerSectionPropsType) => (
   <section className="banner-section">
@@ -63,7 +63,7 @@ export const BannerSection = ({
           showIcon={showIcon}
           title={title}
           description={description}
-          buttons={buttons}
+          buttons={links}
           link={link}
           alignLeft
         />

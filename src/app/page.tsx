@@ -3,6 +3,10 @@ import {
   type AccordionSectionPropsType,
 } from "@components/AccordionSection";
 import {
+  BannerSection,
+  type BannerSectionPropsType,
+} from "@components/BannerSection";
+import {
   BigCardsSection,
   type BigCardsSectionPropsType,
 } from "@components/BigCardsSection";
@@ -226,6 +230,15 @@ const accordionSectionProps = {
   ],
 } as AccordionSectionPropsType;
 
+const bannerSectionProps = {
+  backgroundImageURL: "/images/blue-spiral.png",
+  imageURL: "/images/tiger-boxes.png",
+  showIcon: true,
+  title:
+    "Let's Bring Your Business Online With just a few clicks, get started for free!",
+  links: [{ text: "Get Started for Free", href: "#" }],
+} as BannerSectionPropsType;
+
 export default function Home() {
   return (
     <main>
@@ -237,7 +250,7 @@ export default function Home() {
       <CarouselSection {...carouselSectionProps} />
       <PriceSection {...priceSectionProps} />
       <AccordionSection {...accordionSectionProps} />
-      <PriceSection {...priceSectionProps} />
+      <BannerSection {...bannerSectionProps} />
     </main>
   );
 }

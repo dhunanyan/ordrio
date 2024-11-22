@@ -83,11 +83,11 @@
       line-height: 32px;
       opacity: 0;
       text-align: left;
-      transition: all 700ms ease-out;
+      transition: all 700ms $animation-2;
     }
 
     &--active &-description {
-      transition: all 1400ms ease-out;
+      transition: all 600ms $animation-2;
       opacity: 1;
       max-height: 1000px; // This is to be sure, that the whole text will be visible
     }

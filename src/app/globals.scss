@@ -13,15 +13,16 @@ body {
   &::-webkit-scrollbar-thumb {
     background-color: $yellow-color;
     border: 3px solid $yellow-color;
+    cursor: pointer;
+
+    &:active {
+      background-color: $yellow-color-dark;
+      border: 3px solid $yellow-color-dark;
+    }
   }
 
   &::-webkit-scrollbar-track {
-    background: $black-color;
-  }
-
-  &::selection {
-    background-color: $yellow-color;
-    color: $blue-color;
+    background-color: $black-color-light;
   }
 
   &:focus,
