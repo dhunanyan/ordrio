@@ -4,7 +4,6 @@ import cafes from "../../public/svg/i_cafes.svg";
 import careers from "../../public/svg/i_careers.svg";
 import clothingAndAccessories from "../../public/svg/i_clothing-and-accessories.svg";
 import check from "../../public/svg/i_check.svg";
-import checkCircle from "../../public/svg/i_check-circle.svg";
 import faq from "../../public/svg/i_faq.svg";
 import groceriesAndSupermarkets from "../../public/svg/i_groceries-and-supermarkets.svg";
 import howToGuide from "../../public/svg/i_how-to-guide.svg";
@@ -26,7 +25,6 @@ export const Icons = {
   cafes,
   careers,
   check: check,
-  "check-circle": checkCircle,
   "clothing-and-accessories": clothingAndAccessories,
   faq,
   "groceries-and-supermarkets": groceriesAndSupermarkets,

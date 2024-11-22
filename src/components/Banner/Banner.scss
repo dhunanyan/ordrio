@@ -37,10 +37,23 @@
 
   &__icon {
     margin: 0 0 26px;
+
+    svg {
+      background-color: $yellow-color;
+      border-radius: 50%;
+      height: 22px;
+      padding: 14px;
+      width: 22px;
+
+      path {
+        fill: $black-color;
+      }
+    }
   }
 
   &__title {
     @include title;
+    color: $white-color;
   }
 
   &__description {

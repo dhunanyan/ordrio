@@ -8,7 +8,7 @@ export type HeroPropsType = {
   title: string;
   list?: string[];
   description?: string;
-  button?: string;
+  button?: { text: string; href: string };
   children?: React.ReactNode;
   sectionSeparator?: "section-separator" | "section-separator-big";
 };
@@ -36,8 +36,8 @@ export const Hero = ({
         </ul>
       )}
       {button && (
-        <Link href="#" className="hero__button">
-          {button}
+        <Link href={button.href} className="hero__button">
+          {button.text}
         </Link>
       )}
     </div>

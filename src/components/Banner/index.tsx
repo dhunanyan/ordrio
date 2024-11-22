@@ -12,8 +12,8 @@ export type BannerPropsType = {
   showIcon?: boolean;
   title: string;
   description: string;
-  buttons: string[];
-  link: string;
+  buttons: { text: string; href: string }[];
+  link: { text: string; href: string };
 };
 
 export const Banner = ({
@@ -61,20 +61,20 @@ export const Banner = ({
         {showIcon && (
           <div
             className="banner__icon"
-            dangerouslySetInnerHTML={{ __html: Icons["check-circle"] }}
+            dangerouslySetInnerHTML={{ __html: Icons["check"] }}
           />
         )}
         <h2 className="banner__title">{title}</h2>
         <p className="banner__description">{description}</p>
         {buttons &&
-          buttons.map((button, i) => (
-            <Link key={i} href="#" className="banner__button">
-              {button}
+          buttons.map(({ text, href }, i) => (
+            <Link key={i} href={href} className="banner__button">
+              {text}
             </Link>
           ))}
         {link && (
-          <Link href="#" className="banner__link">
-            <span className="banner__link-text">{link}</span>
+          <Link href={link.href} className="banner__link">
+            <span className="banner__link-text">{link.text}</span>
             <span
               className="banner__link-icon"
               dangerouslySetInnerHTML={{ __html: Icons["arrow-right"] }}
