@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 import { HtmlMeta } from "@data";
+import { Header } from "@components";
 // import { Footer, Header } from "@components";
 
 import "./globals.scss";
@@ -96,7 +97,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#0a192f" />
       </head>
       <body>
-        {/* <Header /> */}
+        <Header />
         {children}
         {/* <Footer /> */}
       </body>

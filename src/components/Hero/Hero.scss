@@ -2,8 +2,9 @@
 @import "../../styles/mixins";
 
 .hero {
-  margin: 96px 0 0 0;
+  margin: 112px 0 0 0;
   overflow: hidden;
+  padding-top: 30px;
   position: relative;
 
   &__container {

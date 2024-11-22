@@ -11,8 +11,8 @@ body {
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $white-color;
-    border: 3px solid $white-color;
+    background-color: $yellow-color;
+    border: 3px solid $yellow-color;
   }
 
   &::-webkit-scrollbar-track {
@@ -20,7 +20,7 @@ body {
   }
 
   &::selection {
-    background-color: $white-color;
+    background-color: $yellow-color;
     color: $blue-color;
   }
 

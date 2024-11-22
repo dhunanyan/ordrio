@@ -46,45 +46,40 @@ export const Header = () => {
   }, []);
 
   return (
-    <header>
-      <div className={"header" + (isScrolled ? " header--is-scrolled" : "")}>
-        <div>
-          <div className="header__container">
-            <Link
-              className={
-                "header__logo" +
-                (isScrolled ? " header__logo--is-scrolled" : "")
-              }
-              href="/"
-              dangerouslySetInnerHTML={{ __html: Icons["logo"] }}
-            />
-            <nav className="header__nav">
-              <ul className="header__list">
-                {HeaderData.links.map(({ id, text, type }) => (
-                  <li className="header__item" key={id}>
-                    {renderNavItem({
-                      type,
-                      text,
-                      href: `/${id}`,
-                      onClick: () => {},
-                    })}
-                  </li>
-                ))}
-              </ul>
-            </nav>
-            <ul className="header__buttons-list">
-              {HeaderData.buttons.map(({ id, text }) => (
-                <li className="header__buttons-item" key={id}>
-                  <button className={`header__button header__button--${id}`}>
-                    {text}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </div>
-        </div>
-        {/* HERE DROPDOWN */}
+    <header className={"header" + (isScrolled ? " header--is-scrolled" : "")}>
+      <div className="header__container">
+        <Link
+          className={
+            "header__logo" + (isScrolled ? " header__logo--is-scrolled" : "")
+          }
+          href="/"
+          dangerouslySetInnerHTML={{ __html: Icons["logo"] }}
+        />
+        <nav className="header__nav">
+          <ul className="header__list">
+            {HeaderData.links.map(({ id, text, type }) => (
+              <li className="header__item" key={id}>
+                {renderNavItem({
+                  type,
+                  text,
+                  href: `/${id}`,
+                  onClick: () => {},
+                })}
+              </li>
+            ))}
+          </ul>
+        </nav>
+        <ul className="header__buttons-list">
+          {HeaderData.buttons.map(({ id, text }) => (
+            <li className="header__buttons-item" key={id}>
+              <button className={`header__button header__button--${id}`}>
+                {text}
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
+      {/* HERE DROPDOWN */}
     </header>
   );
 };
