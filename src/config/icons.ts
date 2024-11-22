@@ -1,3 +1,4 @@
+import arrowDown from "../../public/svg/i_arrow-down.svg";
 import arrowLeft from "../../public/svg/i_arrow-left.svg";
 import arrowRight from "../../public/svg/i_arrow-right.svg";
 import arrowRightCircle from "../../public/svg/i_arrow-right-circle.svg";
@@ -26,6 +27,7 @@ import videos from "../../public/svg/i_videos.svg";
 
 export const Icons = {
   "app-store": appStore,
+  "arrow-down": arrowDown,
   "arrow-left": arrowLeft,
   "arrow-right": arrowRight,
   "arrow-right-circle": arrowRightCircle,

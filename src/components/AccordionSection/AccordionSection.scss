@@ -1,0 +1,104 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.accordion-section {
+  background-color: $grey-color;
+  transition: all 430ms ease-out;
+
+  &__container {
+    @include container;
+    display: flex;
+    gap: 24px;
+    transition: all 430ms ease-out;
+  }
+
+  &__content {
+    max-width: 375px;
+    transition: all 430ms ease-out;
+  }
+
+  &__title {
+    @include title;
+    text-align: left;
+  }
+
+  &__list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
+    transition: all 430ms ease-out;
+  }
+
+  &__button {
+    background-color: $white-color-opacity;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 0px 4px 8px -4px rgba(0, 0, 0, 0.47);
+    display: flex;
+    flex-direction: column;
+    min-height: 80px;
+    max-height: max-content;
+    overflow: hidden;
+    padding: 24px;
+    transition: all 830ms linear;
+    width: 100%;
+
+    &:hover {
+      box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+      -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+      -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+    }
+
+    &-title {
+      align-items: center;
+      color: $black-color;
+      background-color: transparent;
+      display: flex;
+      font-family: $font-inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      justify-content: space-between;
+      line-height: 32px;
+      width: 100%;
+
+      span {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+      }
+    }
+
+    &-description {
+      color: $black-color;
+      font-family: $font-inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      max-height: 0;
+      line-height: 32px;
+      opacity: 0;
+      text-align: left;
+      transition: all 700ms ease-out;
+    }
+
+    &--active &-description {
+      transition: all 1400ms ease-out;
+      opacity: 1;
+      max-height: 1000px; // This is to be sure, that the whole text will be visible
+    }
+  }
+
+  &__icon {
+    transform: rotate(0);
+    transition: all 220ms ease-out;
+
+    &--active {
+      transform: rotate(180deg);
+    }
+  }
+}
