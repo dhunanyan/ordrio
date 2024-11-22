@@ -19,6 +19,10 @@ import {
   PartnersSection,
   type PartnersSectionPropsType,
 } from "@components/PartnersSection";
+import {
+  PriceSection,
+  type PriceSectionPropsType,
+} from "@components/PriceSection";
 import { Icons } from "@config";
 
 const heroProps = {
@@ -177,6 +181,11 @@ const carouselSectionProps = {
   ],
 } as CarouselSectionPropsType;
 
+const priceSectionProps = {
+  description: "No matter your budget",
+  title: "We've got a plan that fits",
+} as PriceSectionPropsType;
+
 export default function Home() {
   return (
     <main>
@@ -186,6 +195,7 @@ export default function Home() {
       <ImageCardsWithContentSection {...imageCardsWithContentSectionProps} />
       <BigCardsSection {...bigCardsSectionProps} />
       <CarouselSection {...carouselSectionProps} />
+      <PriceSection {...priceSectionProps} />
     </main>
   );
 }

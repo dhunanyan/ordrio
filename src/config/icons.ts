@@ -11,6 +11,7 @@ import faq from "../../public/svg/i_faq.svg";
 import googlePlay from "../../public/svg/i_google-play.svg";
 import groceriesAndSupermarkets from "../../public/svg/i_groceries-and-supermarkets.svg";
 import howToGuide from "../../public/svg/i_how-to-guide.svg";
+import info from "../../public/svg/i_info.svg";
 import logo from "../../public/svg/i_logo.svg";
 import marketplace from "../../public/svg/i_marketplace.svg";
 import meatStores from "../../public/svg/i_meat-stores.svg";
@@ -37,6 +38,7 @@ export const Icons = {
   "google-play": googlePlay,
   "groceries-and-supermarkets": groceriesAndSupermarkets,
   "how-to-guide": howToGuide,
+  info,
   logo,
   marketplace,
   "meat-stores": meatStores,
