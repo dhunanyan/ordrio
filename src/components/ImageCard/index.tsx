@@ -25,7 +25,7 @@ export const ImageCard = ({
         placeholder="blur"
         blurDataURL={imageURL}
         src={imageURL}
-        alt="Background layout"
+        alt={title}
         fill
         sizes="100%"
         style={{

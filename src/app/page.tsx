@@ -32,12 +32,37 @@ const listSectionProps = {
 const partnersSectionProps = {
   backgroundImageURL: "/images/grey-spiral.png",
   title: "Helping <span>Businesses</span> Thrive",
-  logoURLs: [
-    "/images/logos/chenai-start.png",
-    "/images/logos/tokree.png",
-    "/images/logos/fib.png",
-    "/images/logos/country.png",
-    "/images/logos/shree-baba.png",
+  partners: [
+    {
+      imageURL: "/images/logos/chenai-start.png",
+      href: "https://chennaistar.com",
+      height: 43,
+      width: 152,
+    },
+    {
+      imageURL: "/images/logos/tokree.png",
+      href: "https://www.quickcompany.in/trademarks/2848950-tokree-no-more-khit-pit",
+      height: 66,
+      width: 164,
+    },
+    {
+      imageURL: "/images/logos/fib.png",
+      href: "https://appagg.com/android/shopping/feel-it-buy-38658831.html",
+      height: 60,
+      width: 90,
+    },
+    {
+      imageURL: "/images/logos/country.png",
+      href: "https://www.countrychickenco.in",
+      height: 58,
+      width: 88,
+    },
+    {
+      imageURL: "/images/logos/shree-baba.png",
+      href: "https://www.instagram.com/shreebabaramdevdhaba",
+      height: 48,
+      width: 202,
+    },
   ],
   quotes: [
     {

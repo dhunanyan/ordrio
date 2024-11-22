@@ -1,4 +1,5 @@
 import * as React from "react";
+import Link from "next/link";
 import Image from "next/image";
 
 import "./PartnersSection.scss";
@@ -6,14 +7,19 @@ import "./PartnersSection.scss";
 export type PartnersSectionPropsType = {
   backgroundImageURL: string;
   title: string;
-  logoURLs: string[];
+  partners: {
+    imageURL: string;
+    height: number;
+    width: number;
+    href: string;
+  }[];
   quotes: { quote: string; author: string }[];
 };
 
 export const PartnersSection = ({
   backgroundImageURL,
   title,
-  logoURLs,
+  partners,
   quotes,
 }: PartnersSectionPropsType) => (
   <section className="partners-section">
@@ -34,19 +40,22 @@ export const PartnersSection = ({
         dangerouslySetInnerHTML={{ __html: title }}
       />
       <ul className="partners-section__logos-list">
-        {logoURLs.map((logoURL, i) => (
+        {partners.map(({ imageURL, width, height, href }, i) => (
           <li key={i} className="partners-section__logos-item">
-            <Image
-              placeholder="blur"
-              blurDataURL={logoURL}
-              src={logoURL}
-              alt="Background layout"
-              fill
-              sizes="100%"
-              style={{
-                objectFit: "cover",
-              }}
-            />
+            <Link
+              className="partners-section__logos-link"
+              href={href}
+              target="_blank"
+            >
+              <Image
+                placeholder="blur"
+                blurDataURL={imageURL}
+                src={imageURL}
+                width={width}
+                height={height}
+                alt={"Partner" + i}
+              />
+            </Link>
           </li>
         ))}
       </ul>
