@@ -1,22 +1,17 @@
 import {
-  AnimatedCards,
-  AnimatedCardsPropsType,
+  AnimatedCardsSection,
   EasyManagement,
   SmartControl,
-} from "@components/AnimatedCards";
-import {
   BigCardsSection,
-  type BigCardsSectionPropsType,
-} from "@components/BigCardsSection";
-import { Hero, type HeroPropsType } from "@components/Hero";
-import {
   IconCardSection,
-  type IconCardSectionPropsType,
-} from "@components/IconCardSection";
-import {
   ListSection,
+  Hero,
+  type AnimatedCardsSectionPropsType,
+  type BigCardsSectionPropsType,
+  type IconCardSectionPropsType,
+  type HeroPropsType,
   type ListSectionPropsType,
-} from "@components/ListSection";
+} from "@components";
 
 import { ProductTourContent, AnimatedCardsContent } from "@data";
 
@@ -24,7 +19,9 @@ export default function Page() {
   return (
     <main>
       <Hero {...(ProductTourContent.hero as HeroPropsType)}>
-        <AnimatedCards {...(AnimatedCardsContent as AnimatedCardsPropsType)} />
+        <AnimatedCardsSection
+          {...(AnimatedCardsContent as AnimatedCardsSectionPropsType)}
+        />
       </Hero>
 
       <ListSection

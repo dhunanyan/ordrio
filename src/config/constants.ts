@@ -4,7 +4,7 @@ export enum CardVariant {
   BIG = "big",
 }
 
-export enum CardAnimation {
+export enum AnimatedCard {
   TABLET = "tablet",
   ROBOT = "robot",
   STORE = "store",

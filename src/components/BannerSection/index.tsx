@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 
-import { Content } from "@components/Content";
+import { Content } from "@components";
 
 import "./BannerSection.scss";
 
@@ -82,14 +82,3 @@ export const BannerSection = ({
     </div>
   </section>
 );
-
-// import { BannerSection, BannerSectionPropsType } from "@components/BannerSection";
-// const banner-sectionProps = {
-//   backgroundImageURL: "/images/spiral.png",
-//   showIcon: true,
-//   imageURL: "/images/tiger-boxes.png",
-//   title: "Ready to Elevate Your Fashion Brand?",
-//   buttons: [{ text: "Setup Your Free Account", href: "#" }],
-//   link: { text: "Schedule a Personalized Demo", href: "#" },
-// } as BannerSectionPropsType;
-// <BannerSection {...banner-sectionProps} />;

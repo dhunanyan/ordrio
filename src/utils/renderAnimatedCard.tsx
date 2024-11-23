@@ -1,5 +1,5 @@
 import * as React from "react";
-import { CardAnimation } from "@config";
+import { AnimatedCard } from "@config";
 import {
   Tablet,
   Robot,
@@ -12,26 +12,26 @@ import {
   type AddOnsPropsType,
   type HasslePropsType,
   type CustomerManagementPropsType,
-} from "@components/AnimatedCards";
+} from "@components";
 
 export const renderAnimatedCard = (
-  animationType: CardAnimation,
+  animationType: AnimatedCard,
   props?: ShipPropsType | AddOnsPropsType
 ) => {
   switch (animationType) {
-    case CardAnimation.ROBOT:
+    case AnimatedCard.ROBOT:
       return <Robot />;
-    case CardAnimation.STORE:
+    case AnimatedCard.STORE:
       return <Store />;
-    case CardAnimation.TABLET:
+    case AnimatedCard.TABLET:
       return <Tablet />;
-    case CardAnimation.ADD_ONS:
+    case AnimatedCard.ADD_ONS:
       return <AddOns {...(props as AddOnsPropsType)} />;
-    case CardAnimation.SHIP:
+    case AnimatedCard.SHIP:
       return <Ship {...(props as ShipPropsType)} />;
-    case CardAnimation.HASSLE:
+    case AnimatedCard.HASSLE:
       return <Hassle {...(props as HasslePropsType)} />;
-    case CardAnimation.CUSTOMER_MANAGEMENT:
+    case AnimatedCard.CUSTOMER_MANAGEMENT:
       return <CustomerManagement {...(props as CustomerManagementPropsType)} />;
     default:
       return null;

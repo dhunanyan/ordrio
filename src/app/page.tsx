@@ -1,36 +1,23 @@
 import {
   AccordionSection,
-  type AccordionSectionPropsType,
-} from "@components/AccordionSection";
-import {
   BannerSection,
-  type BannerSectionPropsType,
-} from "@components/BannerSection";
-import {
   BigCardsSection,
-  type BigCardsSectionPropsType,
-} from "@components/BigCardsSection";
-import {
   CarouselSection,
-  type CarouselSectionPropsType,
-} from "@components/CarouselSection";
-import { Hero, type HeroPropsType } from "@components/Hero";
-import {
+  Hero,
   ImageCardsWithContentSection,
-  type ImageCardsWithContentSectionPropsType,
-} from "@components/ImageCardsWithContentSection";
-import {
   ListSection,
-  type ListSectionPropsType,
-} from "@components/ListSection";
-import {
   PartnersSection,
-  type PartnersSectionPropsType,
-} from "@components/PartnersSection";
-import {
   PlanSection,
+  type AccordionSectionPropsType,
+  type BannerSectionPropsType,
+  type BigCardsSectionPropsType,
+  type CarouselSectionPropsType,
+  type HeroPropsType,
+  type ImageCardsWithContentSectionPropsType,
+  type ListSectionPropsType,
+  type PartnersSectionPropsType,
   type PlanSectionPropsType,
-} from "@components/PlanSection";
+} from "@components";
 
 import { HomeContent } from "@data";
 

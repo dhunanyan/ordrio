@@ -2,7 +2,7 @@ import * as React from "react";
 
 import "./ComparePlansSection.scss";
 
-export type ComparePlanSectionPropsType = {
+export type ComparePlansSectionPropsType = {
   title: string;
   description: string;
   children: React.ReactNode;
@@ -12,7 +12,7 @@ export const ComparePlansSection = ({
   title,
   description,
   children,
-}: ComparePlanSectionPropsType) => {
+}: ComparePlansSectionPropsType) => {
   return (
     <section className="compare-plans-section">
       <div className="compare-plans-section__container">

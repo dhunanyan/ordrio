@@ -1,21 +1,17 @@
 import {
   AccordionSection,
-  AccordionSectionPropsType,
-} from "@components/AccordionSection";
-import {
   BannerSection,
-  BannerSectionPropsType,
-} from "@components/BannerSection";
-import {
   ComparePlans,
-  type ComparePlansPropsType,
-} from "@components/ComparePlans";
-import {
   ComparePlansSection,
-  type ComparePlanSectionPropsType,
-} from "@components/ComparePlansSection";
-import { Hero, type HeroPropsType } from "@components/Hero";
-import { Plan, type PlanPropsType } from "@components/Plan";
+  Hero,
+  Plan,
+  type AccordionSectionPropsType,
+  type BannerSectionPropsType,
+  type ComparePlansPropsType,
+  type ComparePlansSectionPropsType,
+  type HeroPropsType,
+  type PlanPropsType,
+} from "@components";
 
 import {
   PricingContent,
@@ -30,7 +26,7 @@ export default function Page() {
         <Plan {...(PlanWithExtraContent as PlanPropsType)} />
       </Hero>
       <ComparePlansSection
-        {...(PricingContent.comparePlansSection as ComparePlanSectionPropsType)}
+        {...(PricingContent.comparePlansSection as ComparePlansSectionPropsType)}
       >
         <ComparePlans {...(ComparePlansContent as ComparePlansPropsType)} />
       </ComparePlansSection>

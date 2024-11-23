@@ -4,8 +4,7 @@ import * as React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import { Content } from "@components/Content";
-import { ImageCard, type ImageCardPropsType } from "@components/ImageCard";
+import { Content, ImageCard, type ImageCardPropsType } from "@components";
 
 import "./ImageCardsWithContentSection.scss";
 

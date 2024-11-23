@@ -1,4 +1,4 @@
-import { CardAnimation, SectionSeparator } from "@config";
+import { AnimatedCard, SectionSeparator } from "@config";
 
 export const ProductTourContent = {
   hero: {
@@ -57,13 +57,13 @@ export const ProductTourContent = {
         title: "<span>Hassle-Free</span> Orders & Fulfillment",
         description:
           "Our platform integrates with Ordrio Ship to provide multiple fulfillment options and automated notifications, ensuring timely and accurate delivery to your customers.",
-        type: CardAnimation.HASSLE,
+        type: AnimatedCard.HASSLE,
       },
       {
         title: "Customer Management",
         description:
           "Ordrio's customer management tools allow you to create and manage customer accounts, access order histories, and utilize powerful CRM functionalities to enhance customer engagement.",
-        type: CardAnimation.CUSTOMER_MANAGEMENT,
+        type: AnimatedCard.CUSTOMER_MANAGEMENT,
       },
     ],
     content: {

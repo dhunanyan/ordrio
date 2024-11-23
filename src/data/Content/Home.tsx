@@ -1,4 +1,4 @@
-import { CardAnimation, Icons, SectionSeparator } from "@config";
+import { AnimatedCard, Icons, SectionSeparator } from "@config";
 import { PlanContent } from "./Components";
 
 export const HomeContent = {
@@ -115,14 +115,14 @@ export const HomeContent = {
         title: "Ordrio Ship",
         description:
           "Tired of shipping feeling like a second job? Enjoy stress-free, integrated shipping solutions with Ordrio.",
-        type: CardAnimation.SHIP,
+        type: AnimatedCard.SHIP,
       },
       {
         title: "<span>100+</span> Add-ons",
         description:
           "Boost your store's potential with the perfect add-ons for marketing, analytics, and more.",
         link: { text: "View Detail's", href: "#" },
-        type: CardAnimation.ADD_ONS,
+        type: AnimatedCard.ADD_ONS,
       },
     ],
     content: {

@@ -3,7 +3,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 
-import { Plan, type PlanPropsType } from "@components/Plan";
+import { Plan, type PlanPropsType } from "@components";
 import "./PlanSection.scss";
 
 export type PlanSectionPropsType = {

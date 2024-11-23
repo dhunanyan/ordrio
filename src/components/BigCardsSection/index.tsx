@@ -6,12 +6,12 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import { renderAnimatedCard } from "@utils";
-import { CardAnimation, Icons } from "@config";
+import { AnimatedCard, Icons } from "@config";
 import "./BigCardsSection.scss";
 
 export type BigCardsSectionPropsType = {
   bigCards: {
-    type: CardAnimation;
+    type: AnimatedCard;
     title: string;
     description: string;
     link?: { text: string; href: string };

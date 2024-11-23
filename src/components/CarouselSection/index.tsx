@@ -5,7 +5,7 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 
-import { Content } from "@components/Content";
+import { Content } from "@components";
 
 import "./CarouselSection.scss";
 

@@ -3,21 +3,23 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 
-import "./AnimatedCards.scss";
-import { CardAnimation } from "@config";
+import "./AnimatedCardsSection.scss";
+import { AnimatedCard } from "@config";
 import { renderAnimatedCard } from "@utils";
 
-export type AnimatedCardsPropsType = {
+export type AnimatedCardsSectionPropsType = {
   cards: {
     title: string;
     subtitle: string;
-    animation: CardAnimation;
+    animation: AnimatedCard;
   }[];
 };
 
-export const AnimatedCards = ({ cards }: AnimatedCardsPropsType) => {
+export const AnimatedCardsSection = ({
+  cards,
+}: AnimatedCardsSectionPropsType) => {
   return (
-    <ul className="animated-cards">
+    <ul className="animated-cards-section">
       {cards.map(({ title, subtitle, animation }, i) => (
         <div key={i} className="animated-card">
           <li className="animated-card__image">
@@ -52,16 +54,3 @@ export const AnimatedCards = ({ cards }: AnimatedCardsPropsType) => {
     </ul>
   );
 };
-
-export { Tablet } from "./Tablet";
-export { Robot } from "./Robot";
-export { Store } from "./Store";
-export { EasyManagement } from "./EasyManagement";
-export { SmartControl } from "./SmartControl";
-export { Ship, type ShipPropsType } from "./Ship";
-export { AddOns, type AddOnsPropsType } from "./AddOns";
-export { Hassle, type HasslePropsType } from "./Hassle";
-export {
-  CustomerManagement,
-  type CustomerManagementPropsType,
-} from "./CustomerManagement";

@@ -1,5 +1,6 @@
-import * as React from "react";
+"use client";
 
+import * as React from "react";
 import { motion } from "framer-motion";
 
 import "./CustomerManagement.scss";
