@@ -79,16 +79,18 @@
       font-size: 18px;
       font-style: normal;
       font-weight: 400;
-      max-height: 0;
       line-height: 32px;
+      max-height: 0;
+      margin: 0;
       opacity: 0;
       text-align: left;
-      transition: all 700ms $animation-2;
+      transition: all 800ms $animation-2;
     }
 
     &--active &-description {
-      transition: all 600ms $animation-2;
+      transition: all 550ms $animation-2;
       opacity: 1;
+      margin: 16px 0 0;
       max-height: 1000px; // This is to be sure, that the whole text will be visible
     }
   }
