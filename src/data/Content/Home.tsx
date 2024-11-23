@@ -1,4 +1,4 @@
-import { Icons, SectionSeparator } from "@config";
+import { CardAnimation, Icons, SectionSeparator } from "@config";
 import { PlanContent } from "./Components";
 
 export const HomeContent = {
@@ -112,19 +112,17 @@ export const HomeContent = {
   bigCardsSection: {
     bigCards: [
       {
-        imageURL: "/images/ordrio-ship.png",
         title: "Ordrio Ship",
         description:
           "Tired of shipping feeling like a second job? Enjoy stress-free, integrated shipping solutions with Ordrio.",
-        backgroundColor: "#f6eece",
+        type: CardAnimation.SHIP,
       },
       {
-        imageURL: "/images/100-plush-add-ons.png",
         title: "<span>100+</span> Add-ons",
         description:
           "Boost your store's potential with the perfect add-ons for marketing, analytics, and more.",
         link: { text: "View Detail's", href: "#" },
-        backgroundColor: "#f4f4f4",
+        type: CardAnimation.ADD_ONS,
       },
     ],
     content: {

@@ -1,15 +1,20 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
+
 import { motion } from "framer-motion";
+
+import { renderAnimatedCard } from "@utils";
+import { CardAnimation, Icons } from "@config";
+import "./BigCardsSection.scss";
 
 export type BigCardsSectionPropsType = {
   bigCards: {
+    type: CardAnimation;
     title: string;
     description: string;
-    imageURL: string;
     link?: { text: string; href: string };
-    backgroundColor: string;
   }[];
   content: {
     topLinks: { text: string; href: string }[];
@@ -20,11 +25,6 @@ export type BigCardsSectionPropsType = {
   };
   screenshotURL: string;
 };
-
-import "./BigCardsSection.scss";
-import { ImageCard } from "@components/ImageCard";
-import { CardVariant, Icons } from "@config";
-import Link from "next/link";
 
 export const BigCardsSection = ({
   bigCards,
@@ -45,7 +45,7 @@ export const BigCardsSection = ({
               transition={{ duration: 0.3, delay: 0.15 * i }}
               viewport={{ once: true }}
             >
-              <ImageCard {...bigCard} variant={CardVariant.BIG} index={i} />
+              {renderAnimatedCard(bigCard.type, bigCard)}
             </motion.li>
           ))}
         </ul>

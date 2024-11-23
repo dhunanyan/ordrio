@@ -1,0 +1,84 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.add-ons {
+  background-color: $light-white-color;
+  border-radius: 24px;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+  min-height: 100%;
+  overflow: hidden;
+  position: relative;
+
+  &__content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    height: 100%;
+    left: 40px;
+    position: absolute;
+    top: 65px;
+    z-index: 1;
+  }
+
+  &__title {
+    @include title;
+    color: $black-color;
+    font-family: $font-spoof-trail;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+  }
+
+  &__description {
+    color: $black-color;
+    font-family: $font-inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 350px;
+  }
+
+  &__link {
+    @include buttonBlue;
+  }
+
+  &__image {
+    position: absolute;
+    pointer-events: none;
+
+    &--18 {
+      left: 0;
+      top: 0;
+      max-width: 550px;
+    }
+  }
+
+  &__box-size {
+    opacity: 0;
+    pointer-events: none;
+    width: 100%;
+  }
+
+  &__components {
+    columns: 2;
+    max-width: 380px;
+    position: absolute;
+    top: 0px;
+    right: -110px;
+
+    img {
+      border-radius: 16px;
+      box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+      -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+      -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+      margin: 4.5px;
+      overflow: hidden;
+      pointer-events: none;
+      width: 180px;
+    }
+  }
+}

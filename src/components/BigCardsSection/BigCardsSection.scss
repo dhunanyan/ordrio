@@ -13,16 +13,6 @@
     display: flex;
     gap: 25px;
     width: 100%;
-
-    li {
-      &:first-of-type {
-        min-width: 475px;
-      }
-
-      &:last-of-type {
-        width: 100%;
-      }
-    }
   }
 
   &__content {

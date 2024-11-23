@@ -5,9 +5,7 @@ import { motion } from "framer-motion";
 
 import "./AnimatedCards.scss";
 import { CardAnimation } from "@config";
-import { Robot } from "./Robot";
-import { Store } from "./Store";
-import { Tablet } from "./Tablet";
+import { renderAnimatedCard } from "@utils";
 
 export type AnimatedCardsPropsType = {
   cards: {
@@ -15,19 +13,6 @@ export type AnimatedCardsPropsType = {
     subtitle: string;
     animation: CardAnimation;
   }[];
-};
-
-const renderAnimation = (animationType: CardAnimation) => {
-  switch (animationType) {
-    case CardAnimation.ROBOT:
-      return <Robot />;
-    case CardAnimation.STORE:
-      return <Store />;
-    case CardAnimation.TABLET:
-      return <Tablet />;
-    default:
-      return null;
-  }
 };
 
 export const AnimatedCards = ({ cards }: AnimatedCardsPropsType) => {
@@ -44,7 +29,7 @@ export const AnimatedCards = ({ cards }: AnimatedCardsPropsType) => {
               transition={{ duration: 0.3, delay: 0.05 * i }}
               viewport={{ once: true }}
             />
-            {renderAnimation(animation)}
+            {renderAnimatedCard(animation)}
           </li>
           <motion.h4
             className="animated-card__subtitle"
@@ -70,3 +55,8 @@ export const AnimatedCards = ({ cards }: AnimatedCardsPropsType) => {
 
 export { EasyManagement } from "./EasyManagement";
 export { SmartControl } from "./SmartControl";
+export { Ship, type ShipPropsType } from "./Ship";
+export { AddOns, type AddOnsPropsType } from "./AddOns";
+export { Tablet } from "./Tablet";
+export { Robot } from "./Robot";
+export { Store } from "./Store";
