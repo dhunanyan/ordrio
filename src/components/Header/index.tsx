@@ -94,7 +94,7 @@ export const Header = () => {
         />
         <nav className="header__nav">
           <ul className="header__list">
-            {HeaderData.links.map(({ id, text, type }) => (
+            {HeaderData.links.map(({ id, text, href, type }) => (
               <li
                 className={
                   "header__item" +
@@ -105,7 +105,7 @@ export const Header = () => {
                 {renderNavItem({
                   type,
                   text,
-                  href: `/${id}`,
+                  href,
                   onClick: () => handleClick(id as DropdownType),
                 })}
               </li>

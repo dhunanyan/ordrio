@@ -28,6 +28,18 @@
       gap: 32px;
     }
 
+    &-link {
+      &:hover {
+        .dropdown__aside {
+          &-title,
+          &-description {
+            color: $blue-color;
+            transform: translateX(10px) !important;
+          }
+        }
+      }
+    }
+
     &-title {
       color: $black-color-alt;
       font-family: $font-spoof-trail;
@@ -35,6 +47,7 @@
       font-style: normal;
       font-weight: 500;
       line-height: 28px;
+      transition: all 180ms ease-out;
     }
 
     &-description {
@@ -44,6 +57,7 @@
       font-style: normal;
       font-weight: 400;
       line-height: 28px;
+      transition: all 180ms ease-out;
     }
   }
 
@@ -97,6 +111,16 @@
     font-weight: 500;
     line-height: 28px;
     max-width: max-content;
+    transition: all 180ms ease-out;
+
+    &:hover {
+      color: $blue-color;
+      transform: translateX(10px);
+
+      .dropdown__icon svg path {
+        fill: $blue-color;
+      }
+    }
   }
 
   &__icon {

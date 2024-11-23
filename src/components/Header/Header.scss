@@ -72,10 +72,23 @@
       display: flex;
       margin: 0 23px;
       padding: 12px 0;
+      transition: all 180ms ease-out;
       white-space: nowrap;
+
+      &:hover {
+        color: $blue-color;
+
+        path {
+          fill: $blue-color;
+        }
+      }
 
       &--is-scrolled {
         padding: 19px 0;
+      }
+
+      path {
+        transition: all 180ms ease-out;
       }
     }
 

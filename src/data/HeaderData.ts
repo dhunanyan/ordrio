@@ -10,21 +10,25 @@ export const HeaderData = {
     {
       text: "Why Ordrio",
       id: "why-ordrio",
+      href: "/why-ordrio",
       type: NavItemType.BUTTON,
     },
     {
       text: "Pricing",
       id: "pricing",
+      href: "/pricing",
       type: NavItemType.LINK,
     },
     {
       text: "Integrations",
       id: "integrations",
+      href: "/integrations",
       type: NavItemType.LINK,
     },
     {
       text: "Resources",
       id: "resources",
+      href: "/resources",
       type: NavItemType.BUTTON,
     },
   ],
@@ -46,22 +50,22 @@ export const DropdownData = {
       {
         title: "Product Tour",
         description: "Overall concept of the product",
-        href: "#",
+        href: "/product-tour",
       },
       {
         title: "Themes",
         description: "Personalise experience for user",
-        href: "#",
+        href: "/themes",
       },
       {
         title: "Ordrio Ship",
         description: "Integrated with delivery",
-        href: "#",
+        href: "/ordrio-ship",
       },
       {
         title: "Plugins",
         description: "Tools that you may need",
-        href: "#",
+        href: "/plugins",
       },
     ],
     nav: [
@@ -71,47 +75,47 @@ export const DropdownData = {
           {
             icon: "groceries-and-supermarkets",
             text: "Groceries & Supermarkets",
-            href: "#",
+            href: "/groceries-and-supermarkets",
           },
           {
             icon: "restaurants",
             text: "Restaurants",
-            href: "#",
+            href: "/restaurants",
           },
           {
             icon: "milk-and-tiffin-subscriptions",
             text: "Milk & Tiffin Subscriptions",
-            href: "#",
+            href: "/milk-and-tiffin-subscriptions",
           },
           {
             icon: "marketplace",
             text: "Marketplace",
-            href: "#",
+            href: "/marketplace",
           },
           {
             icon: "services",
             text: "Services",
-            href: "#",
+            href: "/services",
           },
           {
             icon: "pet-stores",
             text: "Pet Stores",
-            href: "#",
+            href: "/pet-stores",
           },
           {
             icon: "clothing-and-accessories",
             text: "Clothing & Accessories",
-            href: "#",
+            href: "/clothing-and-accessories",
           },
           {
             icon: "cafes",
             text: "Cafes",
-            href: "#",
+            href: "/cafes",
           },
           {
             icon: "meat-stores",
             text: "Meat Stores",
-            href: "#",
+            href: "/meat-stores",
           },
         ],
       },
@@ -121,12 +125,12 @@ export const DropdownData = {
           {
             icon: "about-us",
             text: "About Us",
-            href: "#",
+            href: "/about-us",
           },
           {
             icon: "careers",
             text: "Careers",
-            href: "#",
+            href: "/careers",
           },
         ],
       },
@@ -137,22 +141,22 @@ export const DropdownData = {
       {
         title: "Community ",
         description: "A place to explore",
-        href: "#",
+        href: "/community",
       },
       {
         title: "Product News",
         description: "Updates from Ordrio",
-        href: "#",
+        href: "/product-news",
       },
       {
         title: "Become a Partner",
         description: "Join the team",
-        href: "#",
+        href: "/become-a-partner",
       },
       {
         title: "Blog",
         description: "Get the latest updates",
-        href: "#",
+        href: "/blog",
       },
     ],
     nav: [
@@ -162,22 +166,22 @@ export const DropdownData = {
           {
             icon: "support",
             text: "Support",
-            href: "#",
+            href: "/support",
           },
           {
             icon: "videos",
             text: "Videos",
-            href: "#",
+            href: "/videos",
           },
           {
             icon: "how-to-guide",
             text: "How to Guide",
-            href: "#",
+            href: "/how-to-guide",
           },
           {
             icon: "faq",
             text: "FAQ",
-            href: "#",
+            href: "/faq",
           },
         ],
       },
