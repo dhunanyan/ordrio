@@ -1,4 +1,19 @@
 export {
+  AddOns,
+  CustomerManagement,
+  EasyManagement,
+  Hassle,
+  Robot,
+  Store,
+  SmartControl,
+  Ship,
+  Tablet,
+  type AddOnsPropsType,
+  type CustomerManagementPropsType,
+  type HasslePropsType,
+  type ShipPropsType,
+} from "./AnimatedCards";
+export {
   AccordionSection,
   type AccordionSectionPropsType,
 } from "./AccordionSection";
@@ -40,19 +55,4 @@ export {
 } from "./PartnersSection";
 export { Plan, type PlanPropsType } from "./Plan";
 export { PlanSection, type PlanSectionPropsType } from "./PlanSection";
-
-export {
-  AddOns,
-  CustomerManagement,
-  EasyManagement,
-  Hassle,
-  Robot,
-  Store,
-  SmartControl,
-  Ship,
-  Tablet,
-  type AddOnsPropsType,
-  type CustomerManagementPropsType,
-  type HasslePropsType,
-  type ShipPropsType,
-} from "./AnimatedCards";
+export { BigCards, type BigCardsPropsType } from "./BigCards";

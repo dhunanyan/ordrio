@@ -3,52 +3,46 @@
 import * as React from "react";
 import Link from "next/link";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
-import { renderAnimatedCard } from "@utils";
-import { AnimatedCard, Icons } from "@config";
+import { BigCards, type BigCardsPropsType } from "@components";
+import { Icons } from "@config";
+
 import "./BigCardsSection.scss";
 
 export type BigCardsSectionPropsType = {
-  bigCards: {
-    type: AnimatedCard;
-    title: string;
-    description: string;
-    link?: { text: string; href: string };
-  }[];
+  cards: BigCardsPropsType["cards"];
   content: {
     topLinks: { text: string; href: string }[];
     title: string;
     description: string;
     bottomLinks?: { text: string; href: string }[];
-    bottomButtons?: { text: string }[];
+    bottomButtons?: string[];
   };
-  screenshotURL: string;
+  screenshotURLs: string[];
 };
 
 export const BigCardsSection = ({
-  bigCards,
+  cards,
   content: { title, description, bottomButtons, bottomLinks, topLinks },
-  screenshotURL,
+  screenshotURLs,
 }: BigCardsSectionPropsType) => {
-  // const [activeScreenshot, setActiveScreenshot] = React.useState(0);
+  const [activeScreenshot, setActiveScreenshot] = React.useState(0);
+
+  const variants = {
+    hidden: () => ({
+      opacity: 0,
+    }),
+    visible: { x: 0, opacity: 1 },
+    exit: () => ({
+      opacity: 0,
+    }),
+  };
 
   return (
     <section className="big-cards-section">
       <div className="big-cards-section__container">
-        <ul className="big-cards-section__big-cards">
-          {bigCards.map((bigCard, i) => (
-            <motion.li
-              key={i}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: 0.15 * i }}
-              viewport={{ once: true }}
-            >
-              {renderAnimatedCard(bigCard.type, bigCard)}
-            </motion.li>
-          ))}
-        </ul>
+        <BigCards cards={cards} />
 
         <div className="big-cards-section__content">
           <ul className="big-cards-section__top-links">
@@ -102,11 +96,32 @@ export const BigCardsSection = ({
             </ul>
           )}
           {bottomButtons && (
-            <div className="big-cards-section__bottom-links">
-              {bottomButtons.map(({ text }, i) => (
-                <button key={i} className="big-cards-section__bottom-link">
+            <div className="big-cards-section__bottom-buttons">
+              <motion.div
+                className="big-cards-section__bottom-line"
+                style={{
+                  transform: `translate(${(190 + 16) * activeScreenshot}px, 0)`,
+                }}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.4 }}
+              />
+              {bottomButtons.map((text, i) => (
+                <motion.button
+                  key={i}
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.2 * i }}
+                  onClick={() => setActiveScreenshot(i)}
+                  className={
+                    "big-cards-section__bottom-button" +
+                    (i === activeScreenshot
+                      ? " big-cards-section__bottom-button--active"
+                      : "")
+                  }
+                >
                   {text}
-                </button>
+                </motion.button>
               ))}
             </div>
           )}
@@ -118,7 +133,32 @@ export const BigCardsSection = ({
           whileInView={{ opacity: 1, y: 80 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <img src={screenshotURL} alt="Screenshot" />
+          <AnimatePresence custom={1}>
+            {screenshotURLs.map(
+              (screenshotURL, i) =>
+                i === activeScreenshot && (
+                  <motion.img
+                    custom={1}
+                    key={i}
+                    src={screenshotURL}
+                    alt={`Screenshot ${1}`}
+                    variants={variants}
+                    initial="hidden"
+                    animate="visible"
+                    exit="exit"
+                    transition={{ duration: 0.5 }}
+                    style={{
+                      position: "absolute",
+                      top: 0,
+                      left: 0,
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                    }}
+                  />
+                )
+            )}
+          </AnimatePresence>
         </motion.div>
       </div>
     </section>

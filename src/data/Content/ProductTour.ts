@@ -52,7 +52,7 @@ export const ProductTourContent = {
     ],
   },
   bigCardsSection: {
-    bigCards: [
+    cards: [
       {
         title: "<span>Hassle-Free</span> Orders & Fulfillment",
         description:
@@ -72,13 +72,16 @@ export const ProductTourContent = {
         { text: "Mobile App", href: "#" },
       ],
       title: "Insightful Reporting & Analytics",
-      description:
-        "Deliver a smooth shopping experience for your customers on any device.",
-      bottomLinks: [
-        { text: "google-play", href: "#" },
-        { text: "app-store", href: "#" },
+      bottomButtons: [
+        "Sales Data Analysis",
+        "Customer Behavior",
+        "Performance Metrics",
       ],
     },
-    screenshotURL: "/images/screenshot-landing.png",
+    screenshotURLs: [
+      "/images/carousels/product-tour-screenshot/0.png",
+      "/images/carousels/product-tour-screenshot/1.png",
+      "/images/carousels/product-tour-screenshot/2.png",
+    ],
   },
 };

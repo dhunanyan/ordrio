@@ -110,7 +110,7 @@ export const HomeContent = {
     ],
   },
   bigCardsSection: {
-    bigCards: [
+    cards: [
       {
         title: "Ordrio Ship",
         description:
@@ -138,7 +138,7 @@ export const HomeContent = {
         { text: "app-store", href: "#" },
       ],
     },
-    screenshotURL: "/images/screenshot-landing.png",
+    screenshotURLs: ["/images/carousels/landing-screenshot/0.png"],
   },
   carouselSection: {
     title: "Themes & Customization",
@@ -150,10 +150,10 @@ export const HomeContent = {
       { text: `${Icons["arrow-right"]}` },
     ],
     imageURLs: [
-      "/images/landing-theme-0.png",
-      "/images/landing-theme-1.png",
-      "/images/landing-theme-2.png",
-      "/images/landing-theme-3.png",
+      "/images/carousels/landing-theme/0.png",
+      "/images/carousels/landing-theme/1.png",
+      "/images/carousels/landing-theme/2.png",
+      "/images/carousels/landing-theme/3.png",
     ],
   },
   PlanSection: {

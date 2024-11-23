@@ -1,0 +1,8 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.big-cards {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+}
