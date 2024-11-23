@@ -1,5 +1,5 @@
 export { HtmlMeta } from "./HtmlMeta";
-export { HeaderData, NavItemType } from "./HeaderData";
+export { HeaderData, DropdownData, NavItemType } from "./HeaderData";
 export {
   HomeContent,
   PricingContent,

@@ -21,3 +21,8 @@ export enum SectionSeparator {
   MEDIUM = "section-separator",
   BIG = "section-separator-big",
 }
+
+export enum Dropdown {
+  WHY_ORDIO = "why-ordrio",
+  RESOURCES = "resources",
+}

@@ -1,0 +1,110 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.dropdown {
+  align-items: flex-start;
+  background-color: $white-color;
+  border-radius: 16px;
+  border: 1px solid $grey-color;
+  box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.55);
+  -webkit-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.55);
+  -moz-box-shadow: 0px 4px 10px -2px rgba(0, 0, 0, 0.55);
+  display: flex;
+  left: 30px;
+  overflow: hidden;
+  position: absolute;
+  top: calc(100% - 10px);
+  width: max-content;
+  z-index: 9992;
+
+  &__aside {
+    padding: 40px;
+    min-width: 280px;
+    max-width: calc(280px + 2 * 40px);
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+
+    &-title {
+      color: $black-color-alt;
+      font-family: $font-spoof-trail;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+    }
+
+    &-description {
+      color: $grey-color-darker;
+      font-family: $font-inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+    }
+  }
+
+  &__nav {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid $grey-color;
+  }
+
+  &__section {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    max-width: calc(800px - 2 * 40px);
+    padding: 40px;
+    width: 100%;
+  }
+
+  &__title {
+    color: $grey-color-darker;
+    font-family: $font-inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 8px 0 0;
+    width: 100%;
+  }
+
+  &__item {
+    margin: 24px auto 0 0;
+    width: 50%;
+  }
+
+  &__link {
+    align-items: center;
+    color: $black-color-alt;
+    display: flex;
+    font-family: $font-spoof-trail;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+    max-width: max-content;
+  }
+
+  &__icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 24px;
+    margin: 0 8px 0 0;
+    width: 24px;
+  }
+}

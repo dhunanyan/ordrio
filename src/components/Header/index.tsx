@@ -2,11 +2,14 @@
 
 import * as React from "react";
 import Link from "next/link";
+import { AnimatePresence } from "framer-motion";
 
+import { Dropdown } from "./Dropdown";
+
+import { Dropdown as DropdownType, Icons } from "@config";
 import { HeaderData, NavItemType } from "@data";
 
 import "./Header.scss";
-import { Icons } from "@config";
 
 const renderNavItem = ({
   type,
@@ -18,18 +21,28 @@ const renderNavItem = ({
   text: string;
   href?: string;
   onClick?: () => void;
+  isActive?: boolean;
 }) => {
   switch (type) {
     case NavItemType.LINK:
       return <Link href={href as string}>{text}</Link>;
     case NavItemType.BUTTON:
     default:
-      return <button onClick={onClick}>{text}</button>;
+      return (
+        <button onClick={onClick}>
+          {text}
+          <span dangerouslySetInnerHTML={{ __html: Icons["arrow-down"] }} />
+        </button>
+      );
   }
 };
 
 export const Header = () => {
   const [isScrolled, setIsScrolled] = React.useState(false);
+  const [activeDropdown, setActiveDropdown] = React.useState<DropdownType | "">(
+    ""
+  );
+  const animationDuration = 300;
 
   React.useEffect(() => {
     const handleScroll = () => {
@@ -45,8 +58,32 @@ export const Header = () => {
     };
   }, []);
 
+  const handleClick = (id: DropdownType) => {
+    if (!activeDropdown) {
+      setActiveDropdown(id);
+      return;
+    }
+
+    setActiveDropdown("");
+
+    if (id === activeDropdown) {
+      return;
+    }
+
+    setTimeout(() => {
+      setActiveDropdown(id);
+      // optional +20 to trigger inner animations as well
+    }, animationDuration + 20);
+  };
+
   return (
-    <header className={"header" + (isScrolled ? " header--is-scrolled" : "")}>
+    <header
+      className={
+        "header" +
+        (isScrolled ? " header--is-scrolled" : "") +
+        (activeDropdown ? " header--is-active" : "")
+      }
+    >
       <div className="header__container">
         <Link
           className={
@@ -58,12 +95,18 @@ export const Header = () => {
         <nav className="header__nav">
           <ul className="header__list">
             {HeaderData.links.map(({ id, text, type }) => (
-              <li className="header__item" key={id}>
+              <li
+                className={
+                  "header__item" +
+                  (id === activeDropdown ? " header__item--active" : "")
+                }
+                key={id}
+              >
                 {renderNavItem({
                   type,
                   text,
                   href: `/${id}`,
-                  onClick: () => {},
+                  onClick: () => handleClick(id as DropdownType),
                 })}
               </li>
             ))}
@@ -79,7 +122,14 @@ export const Header = () => {
           ))}
         </ul>
       </div>
-      {/* HERE DROPDOWN */}
+      <AnimatePresence custom={1}>
+        {activeDropdown && (
+          <Dropdown
+            type={activeDropdown}
+            animationDuration={animationDuration}
+          />
+        )}
+      </AnimatePresence>
     </header>
   );
 };
