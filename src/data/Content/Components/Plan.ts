@@ -82,3 +82,14 @@ export const PlanContent = {
     },
   ],
 };
+
+export const PlanWithExtraContent = {
+  ...PlanContent,
+  extraSection: {
+    name: "Enterprise Plan",
+    price: "Ordrio X",
+    description:
+      "Flexible plans with features you can customize to fit your unique goals.",
+    link: { text: "Schedule a Meeting Now", href: "#" },
+  },
+};

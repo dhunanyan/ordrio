@@ -15,6 +15,11 @@ $white-color-opacity: #ffffff8c;
 $white-color-alt: #f0f0f0;
 $light-white-color: #f9faf5;
 $cream-color: #fff8da;
+$cream-color-light: #fff8b7;
+
+$cream-gradient-dark: linear-gradient(0deg, #fff8b7 0%, #ffefb7 100%);
+$cream-gradient-light: linear-gradient(180deg, #fffbe7 0%, #fffcef 22.67%),
+  linear-gradient(180deg, #fff6bf 0%, #fece22 100%);
 
 $font-spoof-trail: var(--font-spoof-trial), sans-serif;
 $font-inter: var(--font-inter), sans-serif;

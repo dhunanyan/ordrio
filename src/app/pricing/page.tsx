@@ -1,14 +1,15 @@
-import { Hero, HeroPropsType } from "@components/Hero";
-import { Plan, PlanPropsType } from "@components/Plan";
-import { PricingContent } from "@data";
-import { PlanContent } from "@data/Content";
+import { ComparePlans } from "@components/ComparePlan";
+import { Hero, type HeroPropsType } from "@components/Hero";
+import { Plan, type PlanPropsType } from "@components/Plan";
+import { PricingContent, PlanWithExtraContent } from "@data";
 
 export default function Page() {
   return (
     <main>
       <Hero {...(PricingContent.hero as HeroPropsType)}>
-        <Plan {...(PlanContent as PlanPropsType)} />
+        <Plan {...(PlanWithExtraContent as PlanPropsType)} />
       </Hero>
+      <ComparePlans />
     </main>
   );
 }

@@ -1,1 +1,1 @@
-export { PlanContent } from "./Plan";
+export { PlanContent, PlanWithExtraContent } from "./Plan";

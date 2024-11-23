@@ -3,13 +3,17 @@
 
 .plan {
   border: 1px solid $yellow-color-alt;
-  background-color: $yellow-color-alt;
+  background: $cream-gradient-light;
   border-radius: 24px;
   box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.47);
   -webkit-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.47);
   -moz-box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.47);
   overflow: hidden;
   width: 100%;
+
+  &--dark-top {
+    background: $cream-gradient-dark;
+  }
 
   &__free {
     display: grid;
@@ -22,12 +26,15 @@
     padding: 40px;
   }
 
-  &__list {
+  &__inner-container {
     box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.47);
     -webkit-box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.47);
     -moz-box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.47);
     background-color: $cream-color;
     border-radius: 24px;
+  }
+
+  &__list {
     display: flex;
     justify-content: space-between;
     overflow: hidden;
@@ -105,7 +112,8 @@
       vertical-align: 10px;
     }
 
-    &--free {
+    &--free,
+    &--extra {
       display: flex;
       flex-direction: column;
       grid-area: b;
@@ -137,7 +145,8 @@
       gap: 16px;
       margin: 0 0 26px 0;
 
-      &--free {
+      &--free,
+      &--extra {
         display: grid;
         grid-area: d;
         grid-template-columns: 322px 322px;
@@ -179,9 +188,32 @@
     margin: auto 0 0 0;
     justify-content: center;
 
-    &--free {
+    &--free,
+    &--extra {
       grid-area: c;
+    }
+
+    &--free {
       margin: auto auto 0 0;
     }
+
+    &--extra {
+      margin: auto 0 auto auto;
+    }
+  }
+
+  &__extra {
+    box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 0px 1px 8px -2px rgba(0, 0, 0, 0.47);
+    background: $cream-gradient-dark;
+    border-radius: 24px;
+    display: grid;
+    grid-template-areas:
+      "a c"
+      "b c";
+    grid-template-columns: auto auto;
+    grid-template-rows: 50px 86px;
+    padding: 40px;
   }
 }
