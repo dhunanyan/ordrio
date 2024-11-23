@@ -27,6 +27,10 @@ export {
   type BigCardsSectionPropsType,
 } from "./BigCardsSection";
 export {
+  WebsitePlusMobileSection,
+  type WebsitePlusMobileSectionPropsType,
+} from "./WebsitePlusMobileSection";
+export {
   CarouselSection,
   type CarouselSectionPropsType,
 } from "./CarouselSection";
@@ -55,4 +59,3 @@ export {
 } from "./PartnersSection";
 export { Plan, type PlanPropsType } from "./Plan";
 export { PlanSection, type PlanSectionPropsType } from "./PlanSection";
-export { BigCards, type BigCardsPropsType } from "./BigCards";

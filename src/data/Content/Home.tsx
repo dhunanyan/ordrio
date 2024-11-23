@@ -125,6 +125,8 @@ export const HomeContent = {
         type: AnimatedCard.ADD_ONS,
       },
     ],
+  },
+  websiteAndMobileSection: {
     content: {
       topLinks: [
         { text: "Website", href: "#" },

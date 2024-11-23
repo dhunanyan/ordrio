@@ -24,7 +24,7 @@ export const CarouselSection = ({
   imageURLs,
 }: CarouselSectionPropsType) => {
   const [activeTheme, setActiveTheme] = React.useState(0);
-  const totalPages = imageURLs.length; // with 0
+  const totalPages = imageURLs.length - 1;
 
   const onPrevClick = () => {
     setActiveTheme((prev) => Math.max(0, prev - 1));

@@ -7,3 +7,11 @@ TODO: HtmlMeta tags
 TODO: tab icon
 
 TODO: animate tiger-in-phone.png (refactor of BannerSection is needed)
+
+TODO: remove this from Carousel Section
+
+```scss
+button {
+  padding: 16px !important;
+}
+```

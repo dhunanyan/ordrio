@@ -51,7 +51,7 @@ export const ProductTourContent = {
       },
     ],
   },
-  bigCardsSection: {
+  bigCardsSection1: {
     cards: [
       {
         title: "<span>Hassle-Free</span> Orders & Fulfillment",
@@ -66,6 +66,8 @@ export const ProductTourContent = {
         type: AnimatedCard.CUSTOMER_MANAGEMENT,
       },
     ],
+  },
+  websiteAndMobileSection: {
     content: {
       topLinks: [
         { text: "Website", href: "#" },
@@ -84,7 +86,7 @@ export const ProductTourContent = {
       "/images/carousels/product-tour-screenshot/2.png",
     ],
   },
-  bannerSection: {
+  bannerSection1: {
     title: "Seamless Mobile App Integration",
     description:
       "Manage your store on the go with Ordrio's mobile app integration. Receive real-time notifications, update your inventory, and engage with customers anytime, anywhere, directly from your mobile device.",
@@ -96,5 +98,65 @@ export const ProductTourContent = {
     backgroundImageURL: "/images/blue-small-spirals.png",
     imageURL: "/images/tiger-in-phone.png",
     tintColor: "white",
+  },
+  bigCardsSection2: {
+    cards: [
+      {
+        title: "Ordrio Ship",
+        description:
+          "Tired of shipping feeling like a second job? Enjoy stress-free, integrated shipping solutions with Ordrio.",
+        type: AnimatedCard.SHIP,
+      },
+      {
+        title: "<span>100+</span> Add-ons",
+        description:
+          "Boost your store's potential with the perfect add-ons for marketing, analytics, and more.",
+        link: { text: "View Detail's", href: "#" },
+        type: AnimatedCard.ADD_ONS,
+      },
+    ],
+  },
+  accordionSection: {
+    title: "Frequently Asked Questions",
+    accordions: [
+      {
+        title: "What features does Ordrio offer?",
+        description:
+          "Ordrio offers a comprehensive suite of features including store setup, sales management, shipping integration, customer engagement tools, and mobile app connectivity.",
+      },
+      {
+        title: "How do I set up my online store with Ordrio?",
+        description:
+          "Ordrio offers a comprehensive suite of features including store setup, sales management, shipping integration, customer engagement tools, and mobile app connectivity.",
+      },
+      {
+        title: "Can I integrate Ordrio with my existing website?",
+        description:
+          "Ordrio offers a comprehensive suite of features including store setup, sales management, shipping integration, customer engagement tools, and mobile app connectivity.",
+      },
+      {
+        title: "What kind of customer support does Ordrio provide?",
+        description:
+          "Ordrio offers a comprehensive suite of features including store setup, sales management, shipping integration, customer engagement tools, and mobile app connectivity.",
+      },
+      {
+        title: "What are the pricing plans for Ordrio?",
+        description:
+          "Ordrio offers a comprehensive suite of features including store setup, sales management, shipping integration, customer engagement tools, and mobile app connectivity.",
+      },
+      {
+        title: "How secure is Ordrio?",
+        description:
+          "Ordrio offers a comprehensive suite of features including store setup, sales management, shipping integration, customer engagement tools, and mobile app connectivity. Ordrio offers a comprehensive suite of features including store setup, sales management, shipping integration, customer engagement tools, and mobile app connectivity.",
+      },
+    ],
+  },
+  bannerSection2: {
+    backgroundImageURL: "/images/blue-spiral.png",
+    imageURL: "/images/tiger-boxes.png",
+    showIcon: true,
+    title:
+      "Let's Bring Your Business Online With just a few clicks, get started for free!",
+    links: [{ text: "Get Started for Free", href: "#" }],
   },
 };

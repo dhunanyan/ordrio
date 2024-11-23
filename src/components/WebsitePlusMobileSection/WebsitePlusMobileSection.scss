@@ -1,0 +1,115 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.big-cards-section {
+  &__container {
+    @include container;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 0 !important;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 24px 0;
+    margin: 100px 0;
+    max-width: 700px;
+  }
+
+  &__top-links {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+  }
+
+  &__top-link {
+    @include buttonBlackSmall;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__description {
+    @include description;
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  &__bottom {
+    &-links {
+      align-items: center;
+      display: flex;
+      gap: 16px;
+    }
+
+    &-link {
+      @include button;
+      background-color: $white-color-alt;
+      border: 2px solid $light-white-color;
+      height: 48px;
+    }
+  }
+
+  &__bottom {
+    &-buttons {
+      align-items: center;
+      background-color: $grey-color;
+      border-radius: 90px;
+      display: flex;
+      gap: 16px;
+      justify-content: space-between;
+      padding: 8px;
+    }
+
+    &-button {
+      background-color: transparent;
+      border-radius: 90px;
+      color: $grey-color-darker;
+      font-family: $font-inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+      padding: 12px 16px;
+      position: relative;
+      height: 48px;
+      transition: all 180ms ease-out;
+      white-space: nowrap;
+      width: 190px;
+
+      &--active {
+        color: $black-color;
+      }
+    }
+
+    &-line {
+      border-radius: 90px;
+      background-color: $yellow-color;
+      height: 48px;
+      position: absolute;
+      transition: all 380ms $animation-2;
+      width: 190px;
+    }
+  }
+
+  &__bottom-image {
+    display: flex;
+    justify-content: center;
+    margin: -80px auto 0 auto;
+    height: 464px;
+    min-width: 900px;
+    position: relative;
+    transform: translate(0, 80px);
+
+    img {
+      border-radius: 40px 40px 0px 0px;
+      box-shadow: 0px -2px 16px 1px rgba(0, 0, 0, 0.47);
+      -webkit-box-shadow: 0px -2px 16px 1px rgba(0, 0, 0, 0.47);
+      -moz-box-shadow: 0px -2px 16px 1px rgba(0, 0, 0, 0.47);
+    }
+  }
+}
