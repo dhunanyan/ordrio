@@ -1,8 +1,14 @@
 import {
   AnimatedCards,
   AnimatedCardsPropsType,
+  EasyManagement,
+  SmartControl,
 } from "@components/AnimatedCards";
 import { Hero, type HeroPropsType } from "@components/Hero";
+import {
+  ListSection,
+  type ListSectionPropsType,
+} from "@components/ListSection";
 
 import { ProductTourContent, AnimatedCardsContent } from "@data";
 
@@ -12,6 +18,17 @@ export default function Page() {
       <Hero {...(ProductTourContent.hero as HeroPropsType)}>
         <AnimatedCards {...(AnimatedCardsContent as AnimatedCardsPropsType)} />
       </Hero>
+
+      <ListSection
+        {...(ProductTourContent.listSection as ListSectionPropsType)}
+      >
+        <EasyManagement />
+      </ListSection>
+      <ListSection
+        {...(ProductTourContent.listSectionReversed as ListSectionPropsType)}
+      >
+        <SmartControl />
+      </ListSection>
     </main>
   );
 }

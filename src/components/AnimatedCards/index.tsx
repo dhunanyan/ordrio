@@ -67,3 +67,6 @@ export const AnimatedCards = ({ cards }: AnimatedCardsPropsType) => {
     </ul>
   );
 };
+
+export { EasyManagement } from "./EasyManagement";
+export { SmartControl } from "./SmartControl";
