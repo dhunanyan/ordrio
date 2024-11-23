@@ -3,8 +3,7 @@ import type { Metadata } from "next";
 import { spoofTrial, inter, manrope } from "./fonts";
 
 import { HtmlMeta } from "@data";
-import { Header } from "@components";
-// import { Footer, Header } from "@components";
+import { Footer, Header } from "@components";
 
 import "./globals.scss";
 
@@ -26,18 +25,13 @@ export default function RootLayout({
     >
       <head>
         <meta charSet="utf-8" />
-        {/* <link
-          rel="icon"
-          type="image/svg"
-          sizes="32x32"
-          href="/svg/i_logo-bold-bg.svg"
-        /> */}
+        <link rel="icon" type="image/ico" sizes="32x32" href="./favicon.ico" />
         <meta name="theme-color" content="#0a192f" />
       </head>
       <body>
         <Header />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
