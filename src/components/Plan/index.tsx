@@ -1,5 +1,9 @@
+"use client";
 import * as React from "react";
 import Link from "next/link";
+
+import { motion } from "framer-motion";
+
 import { Icons } from "@config";
 
 import "./Plan.scss";
@@ -42,15 +46,37 @@ export const Plan = ({
         <span>{description}</span>
       </p>
       <Link className="plan__link plan__link--free" href={link.href}>
-        {link.text}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3, delay: 0.1 }}
+        >
+          {link.text}
+        </motion.div>
       </Link>
       <ul className="plan__benefits-list plan__benefits-list--free">
         {list.map((benefit, j) => (
           <li key={j} className="plan__benefits-item">
             <p>
-              <span dangerouslySetInnerHTML={{ __html: Icons["check"] }} />
-              {benefit}
-              <span dangerouslySetInnerHTML={{ __html: Icons["info"] }} />
+              <motion.span
+                dangerouslySetInnerHTML={{ __html: Icons["check"] }}
+                initial={{ opacity: 0, x: -10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3, delay: 0.02 * j }}
+              />
+              <motion.span
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.2, delay: 0.02 * j }}
+              >
+                {benefit}
+              </motion.span>
+              <motion.span
+                dangerouslySetInnerHTML={{ __html: Icons["info"] }}
+                initial={{ opacity: 0, x: 10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3, delay: 0.02 * j }}
+              />
             </p>
           </li>
         ))}
@@ -86,19 +112,37 @@ export const Plan = ({
                 {list.map((benefit, j) => (
                   <li key={j} className="plan__benefits-item">
                     <p>
-                      <span
+                      <motion.span
                         dangerouslySetInnerHTML={{ __html: Icons["check"] }}
+                        initial={{ opacity: 0, x: -10 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.3, delay: 0.02 * j }}
                       />
-                      {benefit}
-                      <span
+                      <motion.span
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.2, delay: 0.02 * j }}
+                      >
+                        {benefit}
+                      </motion.span>
+                      <motion.span
                         dangerouslySetInnerHTML={{ __html: Icons["info"] }}
+                        initial={{ opacity: 0, x: 10 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.3, delay: 0.02 * j }}
                       />
                     </p>
                   </li>
                 ))}
               </ul>
               <Link className="plan__link" href={href}>
-                {text}
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.1 }}
+                >
+                  {text}
+                </motion.div>
               </Link>
             </li>
           )
@@ -117,7 +161,14 @@ export const Plan = ({
             className="plan__link plan__link--extra"
             href={extraSection.link.href}
           >
-            {extraSection.link.text}
+            {" "}
+            <motion.div
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.1 }}
+            >
+              {extraSection.link.text}
+            </motion.div>
           </Link>
         </div>
       )}

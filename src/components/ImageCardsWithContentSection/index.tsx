@@ -1,5 +1,8 @@
+"use client";
+
 import * as React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import { Content } from "@components/Content";
 import { ImageCard, type ImageCardPropsType } from "@components/ImageCard";
@@ -46,7 +49,15 @@ export const ImageCardsWithContentSection = ({
 
       <ul className="image-cards-with-content-section__cards">
         {cards.map((card, i) => (
-          <ImageCard key={i} {...card} />
+          <motion.li
+            key={i}
+            initial={{ opacity: 0, x: 10, y: -5 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.15 * i }}
+            viewport={{ once: true }}
+          >
+            <ImageCard {...card} index={i} />
+          </motion.li>
         ))}
       </ul>
     </div>

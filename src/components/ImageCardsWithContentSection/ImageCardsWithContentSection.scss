@@ -38,11 +38,9 @@
     grid-template-rows: 220px 220px;
     padding: 13px;
 
-    > .image-card {
-      &:hover {
-        cursor: pointer;
-        transform: translate(3px, -5px);
-      }
+    li {
+      display: flex;
+      flex-direction: column;
 
       &:nth-of-type(1) {
         grid-area: a;
@@ -62,6 +60,13 @@
 
       &:nth-of-type(5) {
         grid-area: e;
+      }
+
+      > .image-card {
+        &:hover {
+          cursor: pointer;
+          transform: translate(3px, -5px);
+        }
       }
     }
   }

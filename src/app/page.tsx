@@ -28,9 +28,9 @@ import {
   type PartnersSectionPropsType,
 } from "@components/PartnersSection";
 import {
-  PriceSection,
-  type PriceSectionPropsType,
-} from "@components/PriceSection";
+  PlanSection,
+  type PlanSectionPropsType,
+} from "@components/PlanSection";
 
 import { HomeContent } from "@data";
 
@@ -51,7 +51,7 @@ export default function Home() {
       <CarouselSection
         {...(HomeContent.carouselSection as CarouselSectionPropsType)}
       />
-      <PriceSection {...(HomeContent.priceSection as PriceSectionPropsType)} />
+      <PlanSection {...(HomeContent.PlanSection as PlanSectionPropsType)} />
       <AccordionSection
         {...(HomeContent.accordionSection as AccordionSectionPropsType)}
       />

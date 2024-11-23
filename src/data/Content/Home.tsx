@@ -1,4 +1,4 @@
-import { Icons } from "@config";
+import { Icons, SectionSeparator } from "@config";
 import { PlanContent } from "./Components";
 
 export const HomeContent = {
@@ -10,7 +10,7 @@ export const HomeContent = {
       "Manage sales & more",
     ],
     link: { text: "Get Started for Free", href: "#" },
-    sectionSeparator: "section-separator-big",
+    sectionSeparator: SectionSeparator.BIG,
     bottomImageURL: "/images/landing-hero.png",
   },
   listSection: {
@@ -158,7 +158,7 @@ export const HomeContent = {
       "/images/landing-theme-3.png",
     ],
   },
-  priceSection: {
+  PlanSection: {
     description: "No matter your budget",
     title: "We've got a plan that fits",
     plan: PlanContent,

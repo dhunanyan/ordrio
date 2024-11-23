@@ -1,5 +1,10 @@
+"use client";
+
 import * as React from "react";
 import Image from "next/image";
+
+import { motion } from "framer-motion";
+
 import { Content } from "@components/Content";
 
 import "./BannerSection.scss";
@@ -39,7 +44,13 @@ export const BannerSection = ({
     )}
     <div className="banner-section__container">
       {imageURL && (
-        <div className="banner-section__image">
+        <motion.div
+          className="banner-section__image"
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.3 }}
+          viewport={{ once: true }}
+        >
           <Image
             placeholder="blur"
             blurDataURL={imageURL}
@@ -51,7 +62,7 @@ export const BannerSection = ({
               objectFit: "cover",
             }}
           />
-        </div>
+        </motion.div>
       )}
       <div
         className={

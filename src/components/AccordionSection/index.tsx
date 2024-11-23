@@ -1,6 +1,8 @@
 "use client";
 
 import * as React from "react";
+import { motion } from "framer-motion";
+
 import { Icons } from "@config";
 
 import "./AccordionSection.scss";
@@ -24,7 +26,7 @@ export const AccordionSection = ({
         </div>
         <ul className="accordion-section__list">
           {accordions.map(({ title, description }, i) => (
-            <button
+            <motion.button
               key={i}
               className={
                 "accordion-section__button" +
@@ -33,6 +35,9 @@ export const AccordionSection = ({
                   : "")
               }
               onClick={() => setActiveAccordion(i)}
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ duration: 0.3, delay: 0.05 * i }}
             >
               <h2 className="accordion-section__button-title">
                 <span>{title}</span>
@@ -49,7 +54,7 @@ export const AccordionSection = ({
               <p className="accordion-section__button-description">
                 {description}
               </p>
-            </button>
+            </motion.button>
           ))}
         </ul>
       </div>

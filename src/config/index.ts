@@ -1,2 +1,2 @@
 export { Icons } from "./icons";
-export { CardVariant, CardAnimation } from "./constants";
+export { CardVariant, CardAnimation, SectionSeparator } from "./constants";

@@ -1,5 +1,8 @@
+"use client";
+
 import * as React from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 import { Icons } from "@config";
 
@@ -35,32 +38,59 @@ export const Content = ({
 }: ContentPropsType) => (
   <div className={"content" + (alignLeft ? " content--align-left" : "")}>
     {showIcon && (
-      <div
+      <motion.div
         className={`content__icon content__icon--${tintColor}`}
         dangerouslySetInnerHTML={{ __html: Icons["check"] }}
+        initial={{ opacity: 0, x: 10 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3, delay: 0.2 }}
       />
     )}
-    <h2 className={`content__title content__title--${textColor}`}>{title}</h2>
-    <h4 className={`content__subtitle content__subtitle--${textColor}`}>
+    <motion.h2
+      className={`content__title content__title--${textColor}`}
+      initial={{ opacity: 0, x: 10 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.3 }}
+      viewport={{ once: true }}
+    >
+      {title}
+    </motion.h2>
+    <motion.h4
+      className={`content__subtitle content__subtitle--${textColor}`}
+      initial={{ opacity: 0, x: 10 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.3 }}
+    >
       {subtitle}
-    </h4>
+    </motion.h4>
     {description && (
-      <p className={`content__description content__description--${textColor}`}>
+      <motion.p
+        className={`content__description content__description--${textColor}`}
+        initial={{ opacity: 0, x: 10 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3, delay: 0.2 }}
+      >
         {description}
-      </p>
+      </motion.p>
     )}
     <div className="content__buttons">
       {buttons &&
         buttons.map(({ text, href, onClick, disabled }, i) =>
           href ? (
-            <Link
+            <motion.div
               key={i}
-              href={href}
-              className={`content__button content__button--${tintColor}`}
-              dangerouslySetInnerHTML={{ __html: text }}
-            />
+              initial={{ opacity: 0, x: 10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.3, delay: 0.15 * (i + 1) }}
+            >
+              <Link
+                href={href}
+                className={`content__button content__button--${tintColor}`}
+                dangerouslySetInnerHTML={{ __html: text }}
+              />
+            </motion.div>
           ) : (
-            <button
+            <motion.button
               key={i}
               onClick={onClick}
               className={
@@ -69,20 +99,31 @@ export const Content = ({
               }
               dangerouslySetInnerHTML={{ __html: text }}
               disabled={disabled}
+              initial={{ opacity: 0, x: 10 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              transition={{ duration: 0.3, delay: 0.15 * (i + 1) }}
             />
           )
         )}
     </div>
     {link && (
-      <Link href={link.href} className="content__link">
-        <span className={`content__link-text content__link-text--${tintColor}`}>
-          {link.text}
-        </span>
-        <span
-          className={`content__link-icon content__link-icon--${tintColor}`}
-          dangerouslySetInnerHTML={{ __html: Icons["arrow-right*"] }}
-        />
-      </Link>
+      <motion.div
+        initial={{ opacity: 0, x: 10 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        <Link href={link.href} className="content__link">
+          <span
+            className={`content__link-text content__link-text--${tintColor}`}
+          >
+            {link.text}
+          </span>
+          <span
+            className={`content__link-icon content__link-icon--${tintColor}`}
+            dangerouslySetInnerHTML={{ __html: Icons["arrow-right*"] }}
+          />
+        </Link>
+      </motion.div>
     )}
   </div>
 );

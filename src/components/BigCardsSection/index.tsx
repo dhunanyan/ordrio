@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { motion } from "framer-motion";
 
 export type BigCardsSectionPropsType = {
   bigCards: {
@@ -37,33 +38,68 @@ export const BigCardsSection = ({
       <div className="big-cards-section__container">
         <ul className="big-cards-section__big-cards">
           {bigCards.map((bigCard, i) => (
-            <li key={i}>
-              <ImageCard {...bigCard} variant={CardVariant.BIG} />
-            </li>
+            <motion.li
+              key={i}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.15 * i }}
+              viewport={{ once: true }}
+            >
+              <ImageCard {...bigCard} variant={CardVariant.BIG} index={i} />
+            </motion.li>
           ))}
         </ul>
 
         <div className="big-cards-section__content">
-          <div className="big-cards-section__top-links">
+          <ul className="big-cards-section__top-links">
             {topLinks.map(({ href, text }, i) => (
-              <Link key={i} className="big-cards-section__top-link" href={href}>
-                {text}
-              </Link>
+              <motion.li
+                key={i}
+                initial={{ opacity: 0, y: -30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.2 * i }}
+              >
+                <Link className="big-cards-section__top-link" href={href}>
+                  {text}
+                </Link>
+              </motion.li>
             ))}
-          </div>
-          <h2 className="big-cards-section__title">{title}</h2>
-          <p className="big-cards-section__description">{description}</p>
+          </ul>
+          <motion.h2
+            className="big-cards-section__title"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            {title}
+          </motion.h2>
+          <motion.p
+            className="big-cards-section__description"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            {description}
+          </motion.p>
           {bottomLinks && (
-            <div className="big-cards-section__bottom-links">
+            <ul className="big-cards-section__bottom-links">
               {bottomLinks.map(({ href, text }, i) => (
-                <Link
+                <motion.li
                   key={i}
-                  className="big-cards-section__bottom-link"
-                  href={href}
-                  dangerouslySetInnerHTML={{ __html: Icons[text] }}
-                />
+                  initial={{ opacity: 0, y: 30 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: 0.2 * i }}
+                >
+                  <Link
+                    className="big-cards-section__bottom-link"
+                    href={href}
+                    dangerouslySetInnerHTML={{ __html: Icons[text] }}
+                  />
+                </motion.li>
               ))}
-            </div>
+            </ul>
           )}
           {bottomButtons && (
             <div className="big-cards-section__bottom-links">
@@ -76,9 +112,14 @@ export const BigCardsSection = ({
           )}
         </div>
 
-        <div className="big-cards-section__bottom-image">
-          <img src={screenshotURL} alt="asd" />
-        </div>
+        <motion.div
+          className="big-cards-section__bottom-image"
+          initial={{ opacity: 0, y: 80 + 10 }}
+          whileInView={{ opacity: 1, y: 80 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          <img src={screenshotURL} alt="Screenshot" />
+        </motion.div>
       </div>
     </section>
   );

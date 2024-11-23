@@ -1,8 +1,11 @@
 "use client";
 
 import * as React from "react";
-import { Content } from "@components/Content";
 import Image from "next/image";
+
+import { motion } from "framer-motion";
+
+import { Content } from "@components/Content";
 
 import "./CarouselSection.scss";
 
@@ -51,7 +54,13 @@ export const CarouselSection = ({
   return (
     <section className="carousel-section">
       <div className="carousel-section__container">
-        <div className="carousel-section__view">
+        <motion.div
+          className="carousel-section__view"
+          initial={{ opacity: 0, x: 10 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           {imageURLs.map((imageURL, i) => (
             <Image
               key={i}
@@ -67,7 +76,7 @@ export const CarouselSection = ({
               }}
             />
           ))}
-        </div>
+        </motion.div>
         <Content
           title={title}
           subtitle={subtitle}

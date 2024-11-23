@@ -3,6 +3,7 @@
 
 .banner-section {
   background-color: $blue-color;
+  overflow: hidden;
   position: relative;
 
   > img {

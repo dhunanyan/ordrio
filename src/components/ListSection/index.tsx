@@ -1,6 +1,9 @@
+"use client";
+
 import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import { Icons } from "@config";
 
@@ -35,13 +38,32 @@ export const ListSection = ({
         />
       </div>
       <div className="list-section__content">
-        <h2 className="list-section__title">{title}</h2>
+        <motion.h2
+          className="list-section__title"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true }}
+        >
+          {title}
+        </motion.h2>
         <ul className="list-section__list">
           {list.map((item, i) => (
             <li key={i} className="list-section__item">
               <p className="list-section__item-text">
-                <span dangerouslySetInnerHTML={{ __html: Icons["check"] }} />
-                {item}
+                <motion.span
+                  dangerouslySetInnerHTML={{ __html: Icons["check"] }}
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: 0.1 * i }}
+                />
+                <motion.span
+                  initial={{ opacity: 0, x: 30 }}
+                  whileInView={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.3, delay: 0.1 * i + 0.3 }}
+                >
+                  {item}
+                </motion.span>
               </p>
             </li>
           ))}

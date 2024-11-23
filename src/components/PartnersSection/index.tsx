@@ -1,6 +1,9 @@
+"use client";
+
 import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import "./PartnersSection.scss";
 
@@ -41,7 +44,13 @@ export const PartnersSection = ({
       />
       <ul className="partners-section__logos-list">
         {partners.map(({ imageURL, width, height, href }, i) => (
-          <li key={i} className="partners-section__logos-item">
+          <motion.li
+            key={i}
+            className="partners-section__logos-item"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.22, delay: 0.15 * i }}
+          >
             <Link
               className="partners-section__logos-link"
               href={href}
@@ -56,7 +65,7 @@ export const PartnersSection = ({
                 alt={"Partner" + i}
               />
             </Link>
-          </li>
+          </motion.li>
         ))}
       </ul>
       <span className="partners-section__separator" />

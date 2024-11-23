@@ -9,3 +9,9 @@ export enum CardAnimation {
   ROBOT = "robot",
   STORE = "store",
 }
+
+export enum SectionSeparator {
+  SMALL = "section-separator-small",
+  MEDIUM = "section-separator",
+  BIG = "section-separator-big",
+}

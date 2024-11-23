@@ -1,4 +1,7 @@
+"use client";
 import * as React from "react";
+import { motion } from "framer-motion";
+
 import { Icons } from "@config";
 
 export type ComparePlansPropsType = {
@@ -44,7 +47,7 @@ export const ComparePlans = ({
             </span>
 
             {checks.map((check, j) => (
-              <span
+              <motion.span
                 key={j}
                 className={
                   "compare-plans__row-item compare-plans__row-item--pricing" +
@@ -57,6 +60,10 @@ export const ComparePlans = ({
                 dangerouslySetInnerHTML={{
                   __html: `${check ? (count ? count[j] : Icons["check"]) : "—"}`,
                 }}
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.3, delay: 0.05 * j }}
+                viewport={{ once: true }}
               />
             ))}
           </li>

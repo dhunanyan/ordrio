@@ -1,9 +1,14 @@
+"use client";
+
 import * as React from "react";
+import Link from "next/link";
 import Image from "next/image";
 
-import "./ImageCard.scss";
+import { motion } from "framer-motion";
+
 import { CardVariant } from "@config";
-import Link from "next/link";
+
+import "./ImageCard.scss";
 
 export type ImageCardPropsType = {
   title: string;
@@ -12,6 +17,7 @@ export type ImageCardPropsType = {
   link?: { text: string; href: string };
   variant?: CardVariant;
   backgroundColor?: string;
+  index?: number;
 };
 
 export const ImageCard = ({
@@ -21,25 +27,58 @@ export const ImageCard = ({
   link,
   variant = CardVariant.MEDIUM,
   backgroundColor,
+  index = 0,
 }: ImageCardPropsType) => (
   <div
     className={`image-card image-card--${variant}`}
     {...(backgroundColor && { style: { backgroundColor } })}
   >
     <div className="image-card__content">
-      <h3
+      <motion.h3
         className="image-card__title"
         dangerouslySetInnerHTML={{ __html: title }}
+        initial={{
+          opacity: 0,
+          y: variant === CardVariant.MEDIUM ? 0 : 20,
+          x: variant === CardVariant.BIG ? 0 : 20,
+        }}
+        whileInView={{ opacity: 1, x: 0, y: 0 }}
+        transition={{ duration: 0.3, delay: 0.2 * index }}
       />
-      <p className="image-card__description">{description}</p>
+      <motion.p
+        initial={{
+          opacity: 0,
+          y: variant === CardVariant.MEDIUM ? 0 : 20,
+          x: variant === CardVariant.BIG ? 0 : 20,
+        }}
+        whileInView={{ opacity: 1, x: 0, y: 0 }}
+        transition={{
+          duration: 0.3,
+          delay: 0.2 * index + (variant === CardVariant.MEDIUM ? 0 : 0.2),
+        }}
+        className="image-card__description"
+      >
+        {description}
+      </motion.p>
       {link && (
-        <Link className="image-card__link" href={link.href}>
-          {link.text}
-        </Link>
+        <motion.div
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ duration: 0.3, delay: 0.2 * index + 0.4 + 0.2 }}
+        >
+          <Link className="image-card__link" href={link.href}>
+            {link.text}
+          </Link>
+        </motion.div>
       )}
     </div>
 
-    <div className="image-card__image">
+    <motion.div
+      className="image-card__image"
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3, delay: 0.1 * index }}
+    >
       <Image
         placeholder="blur"
         blurDataURL={imageURL}
@@ -51,6 +90,6 @@ export const ImageCard = ({
           objectFit: "cover",
         }}
       />
-    </div>
+    </motion.div>
   </div>
 );
