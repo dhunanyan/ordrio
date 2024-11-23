@@ -5,4 +5,5 @@ export {
   PricingContent,
   PlanContent,
   PlanWithExtraContent,
+  ComparePlansContent,
 } from "./Content";

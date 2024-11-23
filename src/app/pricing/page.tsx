@@ -1,7 +1,19 @@
-import { ComparePlans } from "@components/ComparePlan";
+import {
+  ComparePlans,
+  type ComparePlansPropsType,
+} from "@components/ComparePlans";
+import {
+  ComparePlansSection,
+  type ComparePlanSectionPropsType,
+} from "@components/ComparePlansSection";
 import { Hero, type HeroPropsType } from "@components/Hero";
 import { Plan, type PlanPropsType } from "@components/Plan";
-import { PricingContent, PlanWithExtraContent } from "@data";
+
+import {
+  PricingContent,
+  PlanWithExtraContent,
+  ComparePlansContent,
+} from "@data";
 
 export default function Page() {
   return (
@@ -9,7 +21,11 @@ export default function Page() {
       <Hero {...(PricingContent.hero as HeroPropsType)}>
         <Plan {...(PlanWithExtraContent as PlanPropsType)} />
       </Hero>
-      <ComparePlans />
+      <ComparePlansSection
+        {...(PricingContent.comparePlansSection as ComparePlanSectionPropsType)}
+      >
+        <ComparePlans {...(ComparePlansContent as ComparePlansPropsType)} />
+      </ComparePlansSection>
     </main>
   );
 }

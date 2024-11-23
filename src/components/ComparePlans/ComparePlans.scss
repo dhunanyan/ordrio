@@ -1,0 +1,78 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.compare-plans {
+  background-color: $white-color;
+  border-radius: 16px;
+  border: 1px solid $white-blue-color;
+  overflow: hidden;
+  width: 100%;
+
+  &__container {
+    width: 100%;
+  }
+
+  &__rows,
+  &__header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__header {
+    background-color: $white-blue-color;
+  }
+
+  &__row,
+  &__header-row {
+    align-items: center;
+    border-top: 1px solid $white-blue-color;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 16px 24px;
+
+    &-item {
+      color: $black-color;
+      font-family: $font-inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      max-width: 100px;
+      width: 100%;
+      white-space: nowrap;
+      text-align: center;
+      min-width: 100px;
+
+      &:first-of-type {
+        max-width: 400px;
+        text-align: left;
+      }
+
+      &--icon {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        svg {
+          border-radius: 50%;
+          background-color: $yellow-color;
+          padding: 5px;
+          height: 14px;
+          width: 14px;
+        }
+      }
+
+      &--empty {
+        color: $white-blue-color-dark;
+      }
+    }
+  }
+
+  &__header-row-item {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+  }
+}
