@@ -1,4 +1,12 @@
 import {
+  AccordionSection,
+  AccordionSectionPropsType,
+} from "@components/AccordionSection";
+import {
+  BannerSection,
+  BannerSectionPropsType,
+} from "@components/BannerSection";
+import {
   ComparePlans,
   type ComparePlansPropsType,
 } from "@components/ComparePlans";
@@ -26,6 +34,12 @@ export default function Page() {
       >
         <ComparePlans {...(ComparePlansContent as ComparePlansPropsType)} />
       </ComparePlansSection>
+      <AccordionSection
+        {...(PricingContent.accordionSection as AccordionSectionPropsType)}
+      />
+      <BannerSection
+        {...(PricingContent.bannerSection as BannerSectionPropsType)}
+      />
     </main>
   );
 }
