@@ -4,6 +4,10 @@ import {
   EasyManagement,
   SmartControl,
 } from "@components/AnimatedCards";
+import {
+  BigCardsSection,
+  type BigCardsSectionPropsType,
+} from "@components/BigCardsSection";
 import { Hero, type HeroPropsType } from "@components/Hero";
 import {
   IconCardSection,
@@ -35,6 +39,9 @@ export default function Page() {
       </ListSection>
       <IconCardSection
         {...(ProductTourContent.iconCardSection as IconCardSectionPropsType)}
+      />
+      <BigCardsSection
+        {...(ProductTourContent.bigCardsSection as BigCardsSectionPropsType)}
       />
     </main>
   );

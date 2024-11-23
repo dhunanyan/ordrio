@@ -1,4 +1,4 @@
-import { SectionSeparator } from "@config";
+import { CardAnimation, SectionSeparator } from "@config";
 
 export const ProductTourContent = {
   hero: {
@@ -50,5 +50,35 @@ export const ProductTourContent = {
           "Run effective email marketing campaigns to engage customers.",
       },
     ],
+  },
+  bigCardsSection: {
+    bigCards: [
+      {
+        title: "<span>Hassle-Free</span> Orders & Fulfillment",
+        description:
+          "Our platform integrates with Ordrio Ship to provide multiple fulfillment options and automated notifications, ensuring timely and accurate delivery to your customers.",
+        type: CardAnimation.HASSLE,
+      },
+      {
+        title: "Customer Management",
+        description:
+          "Ordrio's customer management tools allow you to create and manage customer accounts, access order histories, and utilize powerful CRM functionalities to enhance customer engagement.",
+        type: CardAnimation.CUSTOMER_MANAGEMENT,
+      },
+    ],
+    content: {
+      topLinks: [
+        { text: "Website", href: "#" },
+        { text: "Mobile App", href: "#" },
+      ],
+      title: "Insightful Reporting & Analytics",
+      description:
+        "Deliver a smooth shopping experience for your customers on any device.",
+      bottomLinks: [
+        { text: "google-play", href: "#" },
+        { text: "app-store", href: "#" },
+      ],
+    },
+    screenshotURL: "/images/screenshot-landing.png",
   },
 };

@@ -53,10 +53,15 @@ export const AnimatedCards = ({ cards }: AnimatedCardsPropsType) => {
   );
 };
 
+export { Tablet } from "./Tablet";
+export { Robot } from "./Robot";
+export { Store } from "./Store";
 export { EasyManagement } from "./EasyManagement";
 export { SmartControl } from "./SmartControl";
 export { Ship, type ShipPropsType } from "./Ship";
 export { AddOns, type AddOnsPropsType } from "./AddOns";
-export { Tablet } from "./Tablet";
-export { Robot } from "./Robot";
-export { Store } from "./Store";
+export { Hassle, type HasslePropsType } from "./Hassle";
+export {
+  CustomerManagement,
+  type CustomerManagementPropsType,
+} from "./CustomerManagement";

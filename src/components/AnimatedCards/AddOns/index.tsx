@@ -50,7 +50,7 @@ export const AddOns = ({ title, description, link }: AddOnsPropsType) => (
     <motion.img
       className="add-ons__image add-ons__image--18"
       initial={{ opacity: 0, y: -50, scale: 1.3 }}
-      whileInView={{ opacity: 1, x: 0, scale: 1 }}
+      whileInView={{ opacity: 1, y: 0, scale: 1 }}
       transition={{ duration: 0.5, delay: 0.2 }}
       src="/images/animated/add-ons/image-17.png"
       alt="Icons Spiral"

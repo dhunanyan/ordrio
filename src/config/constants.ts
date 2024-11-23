@@ -12,6 +12,8 @@ export enum CardAnimation {
   ADD_ONS = "add-ons",
   EASY_MANAGEMENT = "easy-management",
   SMART_CONTROL = "smart-control",
+  HASSLE = "hassle",
+  CUSTOMER_MANAGEMENT = "customer-management",
 }
 
 export enum SectionSeparator {

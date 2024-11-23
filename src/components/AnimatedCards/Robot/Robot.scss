@@ -13,6 +13,10 @@
   top: 132.5px;
   width: calc(67px - 2 * 3.8px);
 
+  img {
+    pointer-events: none;
+  }
+
   &__todo {
     align-items: center;
     display: flex;

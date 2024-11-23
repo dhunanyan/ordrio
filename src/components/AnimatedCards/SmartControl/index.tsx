@@ -32,18 +32,23 @@ export const SmartControl = () => (
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.4, delay: 0.5 }}
     >
-      <img src="/images/animated/smart-control/image-3.png" alt="Component 3" />
-      <ul className="smart-control__lines-list">
-        {[...Array(7)].map((_, i) => (
-          <motion.li
-            key={i}
-            className="smart-control__lines-list-item"
-            initial={{ opacity: 0, height: 0 }}
-            whileInView={{ opacity: 1, height: 35 + i * 10 }}
-            transition={{ duration: 0.4, delay: 0.45 + i * 0.05 }}
-          />
-        ))}
-      </ul>
+      <div>
+        <img
+          src="/images/animated/smart-control/image-3.png"
+          alt="Component 3"
+        />
+        <ul className="lines-list">
+          {[...Array(7)].map((_, i) => (
+            <motion.li
+              key={i}
+              className="lines-list__item"
+              initial={{ opacity: 0, height: 0 }}
+              whileInView={{ opacity: 1, height: 35 + i * 10 }}
+              transition={{ duration: 0.4, delay: 0.45 + i * 0.05 }}
+            />
+          ))}
+        </ul>
+      </div>
     </motion.div>
   </div>
 );

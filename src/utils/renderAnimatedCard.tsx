@@ -6,8 +6,12 @@ import {
   Store,
   AddOns,
   Ship,
+  Hassle,
+  CustomerManagement,
   type ShipPropsType,
   type AddOnsPropsType,
+  type HasslePropsType,
+  type CustomerManagementPropsType,
 } from "@components/AnimatedCards";
 
 export const renderAnimatedCard = (
@@ -25,6 +29,10 @@ export const renderAnimatedCard = (
       return <AddOns {...(props as AddOnsPropsType)} />;
     case CardAnimation.SHIP:
       return <Ship {...(props as ShipPropsType)} />;
+    case CardAnimation.HASSLE:
+      return <Hassle {...(props as HasslePropsType)} />;
+    case CardAnimation.CUSTOMER_MANAGEMENT:
+      return <CustomerManagement {...(props as CustomerManagementPropsType)} />;
     default:
       return null;
   }
