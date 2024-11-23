@@ -1,12 +1,14 @@
 import {
   AnimatedCardsSection,
-  EasyManagement,
-  SmartControl,
+  BannerSection,
   BigCardsSection,
+  EasyManagement,
   IconCardSection,
-  ListSection,
   Hero,
+  ListSection,
+  SmartControl,
   type AnimatedCardsSectionPropsType,
+  type BannerSectionPropsType,
   type BigCardsSectionPropsType,
   type IconCardSectionPropsType,
   type HeroPropsType,
@@ -23,7 +25,6 @@ export default function Page() {
           {...(AnimatedCardsContent as AnimatedCardsSectionPropsType)}
         />
       </Hero>
-
       <ListSection
         {...(ProductTourContent.listSection as ListSectionPropsType)}
       >
@@ -39,6 +40,9 @@ export default function Page() {
       />
       <BigCardsSection
         {...(ProductTourContent.bigCardsSection as BigCardsSectionPropsType)}
+      />
+      <BannerSection
+        {...(ProductTourContent.bannerSection as BannerSectionPropsType)}
       />
     </main>
   );

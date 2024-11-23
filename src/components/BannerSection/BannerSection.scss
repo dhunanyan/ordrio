@@ -7,27 +7,27 @@
   position: relative;
 
   > img {
+    position: absolute;
     z-index: 0;
   }
 
   &__container {
     @include container;
     display: flex;
-    padding: 0 !important;
+    padding-bottom: 0 !important;
     position: relative;
     z-index: 1;
   }
 
   &__image {
-    height: 470px;
     margin: auto 86px 0 0;
-    min-width: 565px;
+    height: 523px;
+    max-width: 565px;
     position: relative;
 
     img {
       bottom: 0;
-      height: 470px;
-      width: 565px;
+      height: 100%;
     }
   }
 

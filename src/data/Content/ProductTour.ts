@@ -1,4 +1,4 @@
-import { AnimatedCard, SectionSeparator } from "@config";
+import { AnimatedCard, Icons, SectionSeparator } from "@config";
 
 export const ProductTourContent = {
   hero: {
@@ -83,5 +83,18 @@ export const ProductTourContent = {
       "/images/carousels/product-tour-screenshot/1.png",
       "/images/carousels/product-tour-screenshot/2.png",
     ],
+  },
+  bannerSection: {
+    title: "Seamless Mobile App Integration",
+    description:
+      "Manage your store on the go with Ordrio's mobile app integration. Receive real-time notifications, update your inventory, and engage with customers anytime, anywhere, directly from your mobile device.",
+    subtitle: "Download App",
+    links: [
+      { text: Icons["google-play"], href: "#" },
+      { text: Icons["app-store"], href: "#" },
+    ],
+    backgroundImageURL: "/images/blue-small-spirals.png",
+    imageURL: "/images/tiger-in-phone.png",
+    tintColor: "white",
   },
 };

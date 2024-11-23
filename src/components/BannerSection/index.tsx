@@ -1,8 +1,6 @@
 "use client";
 
 import * as React from "react";
-import Image from "next/image";
-
 import { motion } from "framer-motion";
 
 import { Content } from "@components";
@@ -17,6 +15,7 @@ export type BannerSectionPropsType = {
   description?: string;
   links: { text: string; href: string }[];
   link?: { text: string; href: string };
+  tintColor?: "white" | "yellow" | "blue";
 };
 
 export const BannerSection = ({
@@ -27,20 +26,11 @@ export const BannerSection = ({
   description,
   links,
   link,
+  tintColor = "yellow",
 }: BannerSectionPropsType) => (
   <section className="banner-section">
     {backgroundImageURL && (
-      <Image
-        placeholder="blur"
-        blurDataURL={backgroundImageURL}
-        src={backgroundImageURL}
-        alt="Background layout"
-        fill
-        sizes="100vw"
-        style={{
-          objectFit: "cover",
-        }}
-      />
+      <img src={backgroundImageURL} alt="Background layout" />
     )}
     <div className="banner-section__container">
       {imageURL && (
@@ -51,17 +41,7 @@ export const BannerSection = ({
           transition={{ duration: 0.3 }}
           viewport={{ once: true }}
         >
-          <Image
-            placeholder="blur"
-            blurDataURL={imageURL}
-            src={imageURL}
-            alt={title}
-            fill
-            sizes="100%"
-            style={{
-              objectFit: "cover",
-            }}
-          />
+          <img src={imageURL} alt={title} />
         </motion.div>
       )}
       <div
@@ -77,6 +57,7 @@ export const BannerSection = ({
           buttons={links}
           link={link}
           alignLeft
+          tintColor={tintColor}
         />
       </div>
     </div>

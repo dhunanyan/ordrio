@@ -87,7 +87,7 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    gap: 8px;
+    gap: 16px;
   }
 
   &__button {
@@ -97,6 +97,10 @@
 
     &--blue {
       @include buttonBlue;
+    }
+
+    &--white {
+      @include buttonWhite;
     }
 
     &--disabled {

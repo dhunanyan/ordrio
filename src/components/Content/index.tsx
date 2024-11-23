@@ -21,7 +21,7 @@ export type ContentPropsType = {
   }[];
   link?: { text: string; href: string };
   alignLeft?: boolean;
-  tintColor?: "yellow" | "blue";
+  tintColor?: "white" | "yellow" | "blue";
   textColor?: "white" | "black";
 };
 
