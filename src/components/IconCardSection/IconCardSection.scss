@@ -1,0 +1,52 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.icon-card-section {
+  background-color: $blue-color;
+  position: relative;
+
+  > img {
+    z-index: 0;
+  }
+
+  &__container {
+    @include container;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__title {
+    @include title;
+    color: $white-color;
+  }
+
+  &__icon {
+    align-items: center;
+    background-color: $yellow-color;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 7px;
+
+    svg {
+      width: 22px;
+    }
+  }
+
+  &__cards {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+  }
+}

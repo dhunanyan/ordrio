@@ -28,4 +28,27 @@ export const ProductTourContent = {
     switchOrder: true,
     applyCardStyles: true,
   },
+  iconCardSection: {
+    withIcon: true,
+    backgroundImageURL: "/images/blue-spiral.png",
+    title: "Marketing and Promotion",
+    cards: [
+      {
+        icon: "coupons",
+        title: "Create Coupons",
+        description: "Design enticing coupons to attract and retain customers.",
+      },
+      {
+        icon: "sale",
+        title: "Offer Discounts",
+        description: "Boost sales by offering attractive discounts and deals.",
+      },
+      {
+        icon: "megaphone",
+        title: "Run Campaigns",
+        description:
+          "Run effective email marketing campaigns to engage customers.",
+      },
+    ],
+  },
 };

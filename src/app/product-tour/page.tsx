@@ -6,6 +6,10 @@ import {
 } from "@components/AnimatedCards";
 import { Hero, type HeroPropsType } from "@components/Hero";
 import {
+  IconCardSection,
+  type IconCardSectionPropsType,
+} from "@components/IconCardSection";
+import {
   ListSection,
   type ListSectionPropsType,
 } from "@components/ListSection";
@@ -29,6 +33,9 @@ export default function Page() {
       >
         <SmartControl />
       </ListSection>
+      <IconCardSection
+        {...(ProductTourContent.iconCardSection as IconCardSectionPropsType)}
+      />
     </main>
   );
 }

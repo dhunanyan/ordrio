@@ -1,0 +1,39 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.icon-card {
+  align-items: center;
+  background-color: $yellow-color;
+  border-radius: 24px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+
+  &__icon svg {
+    height: 64px;
+    width: 64px;
+  }
+
+  &__title {
+    color: $black-color;
+    text-align: center;
+    font-family: $font-inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    margin: 16px 0 24px;
+    text-align: center;
+  }
+
+  &__description {
+    color: $black-color;
+    text-align: center;
+    font-family: $font-inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+  }
+}
