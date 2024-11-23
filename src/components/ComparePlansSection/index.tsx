@@ -16,8 +16,10 @@ export const ComparePlansSection = ({
   return (
     <section className="compare-plans-section">
       <div className="compare-plans-section__container">
-        <h2 className="compare-plans-section__title">{title}</h2>
-        <p className="compare-plans-section__description">{description}</p>
+        <div className="compare-plans-section__content">
+          <h2 className="compare-plans-section__title">{title}</h2>
+          <p className="compare-plans-section__description">{description}</p>
+        </div>
 
         {children}
       </div>

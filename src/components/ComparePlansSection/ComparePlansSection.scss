@@ -9,6 +9,14 @@
     flex-direction: column;
   }
 
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    margin: 0 0 50px 0;
+  }
+
   &__title {
     @include title;
   }
