@@ -1,0 +1,59 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.robot {
+  border-radius: 6.5px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  height: calc(92px - 2 * 11px);
+  left: 185px;
+  padding: 11px 3.8px;
+  position: absolute;
+  top: 132.5px;
+  width: calc(67px - 2 * 3.8px);
+
+  &__todo {
+    align-items: center;
+    display: flex;
+    gap: 3px;
+    height: 14px;
+    width: 100%;
+  }
+
+  &__icon {
+    min-height: 14px;
+    min-width: 14px;
+
+    svg {
+      height: 14px;
+      stroke: $blue-color-dark;
+      stroke-width: 3px;
+      width: 14px;
+    }
+  }
+
+  &__lines {
+    display: flex;
+    height: 14px;
+    flex-direction: column;
+    height: 100%;
+
+    span {
+      border-radius: 8px;
+      display: flex;
+      min-height: 3px;
+      margin: 1px 0;
+
+      &:first-of-type {
+        background-color: $blue-color-dark;
+        width: 38px;
+      }
+
+      &:last-of-type {
+        width: 30px;
+        background-color: $grey-color-dark;
+      }
+    }
+  }
+}

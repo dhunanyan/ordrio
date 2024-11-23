@@ -8,6 +8,7 @@ import cafes from "../../public/svg/i_cafes.svg";
 import careers from "../../public/svg/i_careers.svg";
 import clothingAndAccessories from "../../public/svg/i_clothing-and-accessories.svg";
 import check from "../../public/svg/i_check.svg";
+import checkSquare from "../../public/svg/i_check-square.svg";
 import faq from "../../public/svg/i_faq.svg";
 import googlePlay from "../../public/svg/i_google-play.svg";
 import groceriesAndSupermarkets from "../../public/svg/i_groceries-and-supermarkets.svg";
@@ -35,6 +36,7 @@ export const Icons = {
   cafes,
   careers,
   check: check,
+  "check-square": checkSquare,
   "clothing-and-accessories": clothingAndAccessories,
   faq,
   "google-play": googlePlay,

@@ -22,7 +22,7 @@ export type BigCardsSectionPropsType = {
 
 import "./BigCardsSection.scss";
 import { ImageCard } from "@components/ImageCard";
-import { CARD_VARIANT, Icons } from "@config";
+import { CardVariant, Icons } from "@config";
 import Link from "next/link";
 
 export const BigCardsSection = ({
@@ -38,7 +38,7 @@ export const BigCardsSection = ({
         <ul className="big-cards-section__big-cards">
           {bigCards.map((bigCard, i) => (
             <li key={i}>
-              <ImageCard {...bigCard} variant={CARD_VARIANT.BIG} />
+              <ImageCard {...bigCard} variant={CardVariant.BIG} />
             </li>
           ))}
         </ul>

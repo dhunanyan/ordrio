@@ -1,0 +1,11 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.tablet {
+  img {
+    bottom: 6.6px;
+    left: 160px;
+    position: absolute;
+    width: 70px;
+  }
+}

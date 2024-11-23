@@ -2,7 +2,7 @@ import * as React from "react";
 import Image from "next/image";
 
 import "./ImageCard.scss";
-import { CARD_VARIANT } from "@config";
+import { CardVariant } from "@config";
 import Link from "next/link";
 
 export type ImageCardPropsType = {
@@ -10,7 +10,7 @@ export type ImageCardPropsType = {
   description: string;
   imageURL: string;
   link?: { text: string; href: string };
-  variant?: CARD_VARIANT;
+  variant?: CardVariant;
   backgroundColor?: string;
 };
 
@@ -19,7 +19,7 @@ export const ImageCard = ({
   description,
   imageURL,
   link,
-  variant = CARD_VARIANT.MEDIUM,
+  variant = CardVariant.MEDIUM,
   backgroundColor,
 }: ImageCardPropsType) => (
   <div

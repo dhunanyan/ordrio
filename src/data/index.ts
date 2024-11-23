@@ -6,4 +6,6 @@ export {
   PlanContent,
   PlanWithExtraContent,
   ComparePlansContent,
+  ProductTourContent,
+  AnimatedCardsContent,
 } from "./Content";
