@@ -10,6 +10,8 @@ import clothingAndAccessories from "../../public/svg/i_clothing-and-accessories.
 import check from "../../public/svg/i_check.svg";
 import checkSquare from "../../public/svg/i_check-square.svg";
 import coupons from "../../public/svg/i_coupons.svg";
+import customizationBlue from "../../public/svg/i_customization-blue.svg";
+import designBlue from "../../public/svg/i_design-blue.svg";
 import faq from "../../public/svg/i_faq.svg";
 import googlePlay from "../../public/svg/i_google-play.svg";
 import groceriesAndSupermarkets from "../../public/svg/i_groceries-and-supermarkets.svg";
@@ -20,6 +22,7 @@ import marketplace from "../../public/svg/i_marketplace.svg";
 import meatStores from "../../public/svg/i_meat-stores.svg";
 import megaphone from "../../public/svg/i_megaphone.svg";
 import milkAndTiffinSubscriptions from "../../public/svg/i_milk-and-tiffin-subscriptions.svg";
+import mobileBlue from "../../public/svg/i_mobile-blue.svg";
 import petStores from "../../public/svg/i_pet-stores.svg";
 import restaurants from "../../public/svg/i_restaurants.svg";
 import sale from "../../public/svg/i_sale.svg";
@@ -42,6 +45,8 @@ export const Icons = {
   "check-square": checkSquare,
   "clothing-and-accessories": clothingAndAccessories,
   coupons,
+  "customization-blue": customizationBlue,
+  "design-blue": designBlue,
   faq,
   "google-play": googlePlay,
   "groceries-and-supermarkets": groceriesAndSupermarkets,
@@ -51,6 +56,7 @@ export const Icons = {
   marketplace,
   "meat-stores": meatStores,
   "milk-and-tiffin-subscriptions": milkAndTiffinSubscriptions,
+  "mobile-blue": mobileBlue,
   "pet-stores": petStores,
   restaurants,
   sale,

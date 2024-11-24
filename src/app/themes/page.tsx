@@ -3,9 +3,11 @@ import {
   BannerSection,
   BigCardsSection,
   Hero,
+  IconCardSection,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
+  type IconCardSectionPropsType,
   type HeroPropsType,
 } from "@components";
 
@@ -15,6 +17,9 @@ export default function Page() {
   return (
     <main>
       <Hero {...(ThemesContent.hero as HeroPropsType)} />
+      <IconCardSection
+        {...(ThemesContent.iconCardSection as IconCardSectionPropsType)}
+      />
       <BigCardsSection
         {...(ThemesContent.bigCardsSection as BigCardsSectionPropsType)}
       />

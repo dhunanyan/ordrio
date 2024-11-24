@@ -7,6 +7,31 @@ export const ThemesContent = {
     description: " Make a Lasting Impression with Your Store Design",
     sectionSeparator: SectionSeparator.MEDIUM,
   },
+  iconCardSection: {
+    withIcon: true,
+    backgroundImageURL: "/images/blue-spiral.png",
+    title: "Why Choose Ordrio?",
+    cards: [
+      {
+        icon: "design-blue",
+        title: "Eye-Catching Design",
+        description:
+          "Our themes are crafted by Professional designers to ensure your store looks stunning.",
+      },
+      {
+        icon: "customization-blue",
+        title: "Easy Customization",
+        description:
+          "Tailor your theme to your brand's colours, fonts, and overall aesthetic with our intuitive tools.",
+      },
+      {
+        icon: "mobile-blue",
+        title: "Mobile-First Approach",
+        description:
+          "Your store will look and function flawlessly on any device, from smartphones to desktops.",
+      },
+    ],
+  },
   bigCardsSection: {
     cards: [
       {
