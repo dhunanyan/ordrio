@@ -3,14 +3,16 @@ import {
   BannerSection,
   BigCardsSection,
   // CommonSection,
-  // Hero,
+  Hero,
   IconCardSection,
+  SlideshowSection,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
   // type CommonSectionPropsType,
+  type SlideshowSectionPropsType,
   type IconCardSectionPropsType,
-  // type HeroPropsType,
+  type HeroPropsType,
 } from "@components";
 
 import { RestaurantsContent } from "@data";
@@ -18,11 +20,15 @@ import { RestaurantsContent } from "@data";
 export default function Page() {
   return (
     <main>
-      {/* <Hero {...(ThemesContent.hero as HeroPropsType)} />
-      <CommonSection
+      <Hero {...(RestaurantsContent.hero as HeroPropsType)}>
+        <SlideshowSection
+          {...(RestaurantsContent.heroComponent as SlideshowSectionPropsType)}
+        />
+      </Hero>
+      {/*<CommonSection
         {...(ThemesContent.commonSectionWithBigCards as CommonSectionPropsType)}
       >
-        <BigCardsSection
+      <BigCardsSection
           {...(ThemesContent.bigCardsInCommonSection as BigCardsSectionPropsType)}
         />
       </CommonSection>

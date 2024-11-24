@@ -1,0 +1,56 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+:root {
+  --scroll-padding: 10px;
+}
+
+.slideshow-section {
+  animation: scroll-left-right 100s linear infinite;
+  align-self: flex-start;
+  align-items: center;
+  display: flex;
+
+  &__item {
+    border: 18.5px solid $grey-color;
+    border-radius: 24px;
+    height: 360px;
+    margin: 0 15px;
+    overflow: hidden;
+    width: 360px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  @keyframes scroll-left-right {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(calc(-100% + 100vw - var(--scroll-padding) * 2));
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+}
+
+@media screen and (min-width: 375px) {
+  :root {
+    --scroll-padding: 10px;
+  }
+}
+
+@media screen and (min-width: 425px) {
+  :root {
+    --scroll-padding: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --scroll-padding: 30px;
+  }
+}

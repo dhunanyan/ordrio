@@ -71,3 +71,7 @@ export {
 export { Plan, type PlanPropsType } from "./Plan";
 export { PlanSection, type PlanSectionPropsType } from "./PlanSection";
 export { CommonSection, type CommonSectionPropsType } from "./CommonSection";
+export {
+  SlideshowSection,
+  type SlideshowSectionPropsType,
+} from "./SlideshowSection";

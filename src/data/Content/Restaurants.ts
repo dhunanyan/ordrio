@@ -2,10 +2,17 @@ import { AnimatedCard, Colors, Icons, SectionSeparator } from "@config";
 
 export const RestaurantsContent = {
   hero: {
-    title:
-      "Ordrio Themes: Find the <span>Perfect Design</span> for Your Business",
-    description: " Make a Lasting Impression with Your Store Design",
+    title: "Your <span>Restaurant's</span> Digital Command Center ",
+    description: "Delight Diners, Simplify Operations, Grow Your Business",
     sectionSeparator: SectionSeparator.MEDIUM,
+  },
+  heroComponent: {
+    imageURLs: [
+      "/images/slideshow/restaurants/image-1.png",
+      "/images/slideshow/restaurants/image-2.png",
+      "/images/slideshow/restaurants/image-3.png",
+      "/images/slideshow/restaurants/image-4.png",
+    ],
   },
   commonSectionWithBigCards: {
     title: "Find Your Perfect Fit",
