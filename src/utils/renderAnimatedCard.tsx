@@ -11,6 +11,10 @@ import {
   CustomerManagement,
   Conversion,
   OngoingUpdates,
+  Relationship,
+  Marketing,
+  type RelationshipPropsType,
+  type MarketingPropsType,
   type OngoingUpdatesPropsType,
   type ConversionPropsType,
   type ShipPropsType,
@@ -57,6 +61,10 @@ export const renderAnimatedCard = (
       return (
         <Theme {...(props as ThemePropsType)} type={AnimatedCard.RESTOBITE} />
       );
+    case AnimatedCard.RELATIONSHIP:
+      return <Relationship {...(props as RelationshipPropsType)} />;
+    case AnimatedCard.MARKETING:
+      return <Marketing {...(props as MarketingPropsType)} />;
     default:
       return null;
   }

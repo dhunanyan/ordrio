@@ -51,7 +51,7 @@ export const ProductTourContent = {
       },
     ],
   },
-  bigCardsSection1: {
+  bigCardsSection: {
     cards: [
       {
         title: "<span>Hassle-Free</span> Orders & Fulfillment",

@@ -20,6 +20,8 @@ export enum AnimatedCard {
   RESTOBITE = "restobite",
   MOO_CHEW = "moo-chew",
   AURA = "aura",
+  RELATIONSHIP = "relationship",
+  MARKETING = "marketing",
 }
 
 export enum SectionSeparator {

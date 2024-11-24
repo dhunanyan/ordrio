@@ -43,7 +43,7 @@ export default function Page() {
         {...(ProductTourContent.iconCardSection as IconCardSectionPropsType)}
       />
       <BigCardsSection
-        {...(ProductTourContent.bigCardsSection1 as BigCardsSectionPropsType)}
+        {...(ProductTourContent.bigCardsSection as BigCardsSectionPropsType)}
       />
       <WebsitePlusMobileSection
         {...(ProductTourContent.websiteAndMobileSection as WebsitePlusMobileSectionPropsType)}

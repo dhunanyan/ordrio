@@ -9,6 +9,7 @@ import "./BannerSection.scss";
 
 export type BannerSectionPropsType = {
   title: string;
+  subtitle?: string;
   backgroundImageURL?: string;
   imageURL?: string;
   showIcon?: boolean;
@@ -23,6 +24,7 @@ export const BannerSection = ({
   imageURL,
   showIcon,
   title,
+  subtitle,
   description,
   links,
   link,
@@ -53,6 +55,7 @@ export const BannerSection = ({
         <Content
           showIcon={showIcon}
           title={title}
+          subtitle={subtitle}
           description={description}
           buttons={links}
           link={link}

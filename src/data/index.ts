@@ -11,4 +11,5 @@ export {
   ProductTourContent,
   AnimatedCardsContent,
   ThemesContent,
+  RestaurantsContent,
 } from "./Content";
