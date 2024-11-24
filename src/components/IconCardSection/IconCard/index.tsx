@@ -23,13 +23,13 @@ export const IconCard = ({
       dangerouslySetInnerHTML={{ __html: Icons[icon] }}
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: index * 0.2 }}
+      transition={{ duration: 0.3, delay: index * 0.1 }}
     />
     <motion.h3
       className="icon-card__title"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: 0.2 + index * 0.2 }}
+      transition={{ duration: 0.3, delay: 0.2 + index * 0.1 }}
     >
       {title}
     </motion.h3>
@@ -37,7 +37,7 @@ export const IconCard = ({
       className="icon-card__description"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: 0.3 + index * 0.2 }}
+      transition={{ duration: 0.3, delay: 0.3 + index * 0.1 }}
     >
       {description}
     </motion.p>
