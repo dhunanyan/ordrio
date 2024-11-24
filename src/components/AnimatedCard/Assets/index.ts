@@ -1,0 +1,1 @@
+export { renderAsset } from "./renderAsset";

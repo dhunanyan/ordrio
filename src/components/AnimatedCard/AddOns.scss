@@ -1,0 +1,28 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin addOns {
+  &--1 {
+    left: 0;
+    top: 0;
+    max-width: 550px;
+  }
+
+  &--2 {
+    columns: 2;
+    max-width: 380px;
+    position: absolute;
+    top: 0px;
+    right: -110px;
+
+    img {
+      border-radius: 16px;
+      box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+      -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+      -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+      margin: 4.5px;
+      overflow: hidden;
+      width: 180px;
+    }
+  }
+}

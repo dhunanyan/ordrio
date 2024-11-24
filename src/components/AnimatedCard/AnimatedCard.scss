@@ -1,0 +1,151 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@import "./Marketing";
+@import "./OngoingUpdates";
+@import "./Ship";
+@import "./Hassle";
+@import "./AddOns";
+@import "./EasyManagement";
+@import "./Relationship";
+@import "./CustomerManagement";
+@import "./SmartControl";
+@import "./Conversion";
+
+.animated-card {
+  border-radius: 24px;
+  box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+  display: flex;
+  height: 500px;
+  max-width: 565px;
+  overflow: hidden;
+  position: relative;
+
+  > img {
+    opacity: 0;
+  }
+
+  &--light-white {
+    background-color: $light-white-color !important;
+  }
+
+  &--grey {
+    background-color: $grey-color !important;
+  }
+
+  &--light-yellow {
+    background-color: $yellow-color-light-2 !important;
+  }
+
+  img {
+    pointer-events: none;
+  }
+
+  &__content {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    height: calc(100% - 2 * 40px);
+    padding: 40px;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  &__title {
+    @include title;
+    color: $black-color;
+    font-family: $font-spoof-trail;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: left;
+
+    span {
+      border-radius: 22px;
+      background: $yellow-color;
+      padding: 0 10px;
+    }
+  }
+
+  &__description {
+    color: $black-color;
+    font-family: $font-inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    max-width: 350px;
+  }
+
+  &__background {
+    max-width: 500px;
+    position: absolute;
+    width: 100%;
+
+    &--tick-1 {
+      left: 0;
+      top: 0;
+      z-index: 0;
+    }
+
+    &--tick-2 {
+      bottom: 0;
+      right: 0;
+      z-index: 0;
+    }
+
+    &--tick-3 {
+      right: 0;
+      top: 0;
+      z-index: 0;
+    }
+  }
+
+  &__assets {
+    position: absolute;
+  }
+
+  &__marketing {
+    @include marketing;
+  }
+
+  &__ongoing-updates {
+    @include ongoingUpdates;
+  }
+
+  &__ship {
+    @include ship;
+  }
+
+  &__hassle {
+    @include hassle;
+  }
+
+  &__easy-management {
+    @include easyManagement;
+  }
+
+  &__add-ons {
+    @include addOns;
+  }
+
+  &__relationship {
+    @include relationship;
+  }
+
+  &__customer-management {
+    @include customerManagement;
+  }
+
+  &__smart-control {
+    @include smartControl;
+  }
+
+  &__conversion {
+    @include conversion;
+  }
+}

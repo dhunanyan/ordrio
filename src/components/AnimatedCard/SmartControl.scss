@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin smartControl {
+  &--1 {
+    right: 0;
+    top: 0;
+    max-width: 550px;
+  }
+
+  &--2 {
+    max-width: 380px;
+    right: 0;
+    bottom: 0;
+  }
+
+  &--3 {
+    bottom: 0;
+    max-width: 350px;
+    left: 0;
+
+    > div {
+      position: relative;
+
+      img {
+        width: 100%;
+      }
+
+      .lines-list {
+        align-items: flex-end;
+        bottom: 65px;
+        display: flex;
+        gap: 17.35px;
+        left: 70px;
+        max-width: 350px;
+        position: absolute;
+
+        &__item {
+          background-color: $blue-color;
+          border-radius: 12.631px 12.631px 0px 0px;
+          height: 10px;
+          width: 9.5px;
+        }
+      }
+    }
+  }
+}

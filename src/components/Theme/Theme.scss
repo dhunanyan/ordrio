@@ -1,0 +1,232 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.theme {
+  &-card {
+    border-radius: 24px;
+    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+    height: 475px;
+    min-height: 100%;
+    overflow: hidden;
+    position: relative;
+
+    &--grocbay {
+      background-color: $red-color-light;
+    }
+
+    &--restobite {
+      background-color: $yellow-color-light-2;
+    }
+
+    &--aura {
+      background-color: $green-color;
+    }
+
+    &--moo-chew {
+      background-color: $purple-color;
+    }
+
+    img {
+      pointer-events: none;
+    }
+
+    &__content {
+      align-items: flex-start;
+      display: flex;
+      flex-direction: column;
+      gap: 23px;
+      height: calc(100% - 2 * 65px);
+      max-width: 460px;
+      padding: 65px 40px;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+    }
+
+    &__title {
+      @include title;
+      color: $black-color;
+      font-family: $font-spoof-trail;
+      font-size: 45px;
+      font-style: normal;
+      font-weight: 700;
+      text-align: left;
+    }
+
+    &__description {
+      color: $black-color;
+      font-family: $font-inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+    }
+
+    &__image {
+      position: absolute;
+
+      &--1 {
+        z-index: 1;
+
+        &.theme-card__image {
+          &--grocbay {
+            bottom: 0;
+            left: 0;
+            max-width: 300px;
+          }
+
+          &--restobite {
+            bottom: 20px;
+            left: -20px;
+            max-width: 200px;
+          }
+
+          &--aura {
+            left: 0px;
+            bottom: 0;
+            max-width: 250px;
+          }
+
+          &--moo-chew {
+            left: -10px;
+            top: -10px;
+            max-width: 140px;
+          }
+        }
+      }
+
+      &--2 {
+        z-index: 1;
+
+        &.theme-card__image {
+          &--grocbay {
+            top: 20px;
+            max-width: 250px;
+            right: 0;
+          }
+
+          &--restobite {
+            top: -20px;
+            right: -20px;
+            max-width: 200px;
+          }
+
+          &--aura {
+            bottom: 0px;
+            right: 0;
+            max-width: 250px;
+          }
+
+          &--moo-chew {
+            right: -20px;
+            bottom: 0px;
+            max-width: 180px;
+          }
+        }
+      }
+
+      &--3 {
+        bottom: 0;
+        left: calc(50% - 350px / 2);
+        max-width: 350px;
+        z-index: 3;
+      }
+
+      &--4 {
+        bottom: 0;
+        left: -20px;
+        max-width: 600px;
+        z-index: 1;
+      }
+
+      &--5 {
+        bottom: 0;
+        right: -20px;
+        max-width: 300px;
+        z-index: 1;
+
+        &.theme-card__image--mobile {
+          max-width: 400px;
+          right: auto;
+          left: calc(50% - 400px / 2);
+        }
+      }
+    }
+
+    &__box-size {
+      opacity: 0;
+      width: 100%;
+    }
+
+    &__links {
+      align-items: center;
+      bottom: 20px;
+      display: flex;
+      gap: 8px;
+      left: calc(50% - (50px + 8px + 50px) / 2);
+      max-width: 380px;
+      position: absolute;
+      z-index: 3;
+
+      a {
+        border-radius: 50%;
+        box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+        -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+        -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
+        height: 50px;
+        overflow: hidden;
+        transition: all 150ms ease-out;
+        width: 50px;
+
+        &:hover {
+          transform: translate(0, -5px) !important;
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+  }
+
+  &__title {
+    align-items: center;
+    color: $black-color;
+    display: flex;
+    font-family: $font-inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    justify-content: space-between;
+    line-height: 32px;
+
+    span {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+
+      &:last-of-type {
+        margin: 0 0 0 5px;
+      }
+    }
+  }
+
+  &__description {
+    overflow: hidden;
+    color: $grey-color-darker;
+    text-overflow: ellipsis;
+    font-family: $font-inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+}

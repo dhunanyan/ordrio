@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin ship {
+  &--1 {
+    bottom: 0;
+    left: calc(50% - 422px / 2);
+    max-width: 422px;
+    transform-origin: center 195px;
+  }
+}

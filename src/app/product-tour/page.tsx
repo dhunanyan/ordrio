@@ -1,16 +1,14 @@
 import {
   AccordionSection,
-  AnimatedCardsSection,
+  StepCardsSection,
   BigCardsSection,
   BannerSection,
-  EasyManagement,
   IconCardSection,
   Hero,
   ListSection,
-  SmartControl,
   WebsitePlusMobileSection,
   type AccordionSectionPropsType,
-  type AnimatedCardsSectionPropsType,
+  type StepCardsSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
   type IconCardSectionPropsType,
@@ -18,26 +16,28 @@ import {
   type ListSectionPropsType,
   type WebsitePlusMobileSectionPropsType,
 } from "@components";
+import { AnimatedCard } from "@config";
 
 import { ProductTourContent, AnimatedCardsContent } from "@data";
+import { renderAnimatedCard } from "@utils";
 
 export default function Page() {
   return (
     <main>
       <Hero {...(ProductTourContent.hero as HeroPropsType)}>
-        <AnimatedCardsSection
-          {...(AnimatedCardsContent as AnimatedCardsSectionPropsType)}
+        <StepCardsSection
+          {...(AnimatedCardsContent as StepCardsSectionPropsType)}
         />
       </Hero>
       <ListSection
         {...(ProductTourContent.listSection as ListSectionPropsType)}
       >
-        <EasyManagement />
+        {renderAnimatedCard(AnimatedCard.EASY_MANAGEMENT)}
       </ListSection>
       <ListSection
         {...(ProductTourContent.listSectionReversed as ListSectionPropsType)}
       >
-        <SmartControl />
+        {renderAnimatedCard(AnimatedCard.SMART_CONTROL)}
       </ListSection>
       <IconCardSection
         {...(ProductTourContent.iconCardSection as IconCardSectionPropsType)}

@@ -1,37 +1,11 @@
 export {
-  AddOns,
-  CustomerManagement,
-  EasyManagement,
-  Hassle,
-  Robot,
-  Store,
-  SmartControl,
-  Ship,
-  Tablet,
-  Conversion,
-  OngoingUpdates,
-  Theme,
-  Relationship,
-  Marketing,
-  type RelationshipPropsType,
-  type MarketingPropsType,
-  type ThemePropsType,
-  type ConversionPropsType,
-  type OngoingUpdatesPropsType,
-  type AddOnsPropsType,
-  type CustomerManagementPropsType,
-  type HasslePropsType,
-  type ShipPropsType,
-} from "./AnimatedCards";
-
-export {
   AccordionSection,
   type AccordionSectionPropsType,
 } from "./AccordionSection";
 export {
-  AnimatedCardsSection,
-  type AnimatedCardsSectionPropsType,
-} from "./AnimatedCardsSection";
+  StepCardsSection,
+  type StepCardsSectionPropsType,
+} from "./StepCardsSection";
 export { BannerSection, type BannerSectionPropsType } from "./BannerSection";
 export {
   BigCardsSection,
@@ -79,3 +53,6 @@ export {
   RowCardsWithBigCard,
   type RowCardsWithBigCardPropsType,
 } from "./RowCardsWithBigCard";
+export { AnimatedCard } from "./AnimatedCard";
+
+export { Theme, type ThemePropsType } from "./Theme";

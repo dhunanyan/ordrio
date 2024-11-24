@@ -1,3 +1,33 @@
+export enum SectionSeparator {
+  SMALL = "section-separator-small",
+  MEDIUM = "section-separator",
+  BIG = "section-separator-big",
+}
+
+export enum Dropdown {
+  WHY_ORDIO = "why-ordrio",
+  RESOURCES = "resources",
+}
+
+export enum Colors {
+  WHITE = "white",
+  BLACK = "black",
+  GREY = "grey",
+  BLUE = "blue",
+  YELLOW = "yellow",
+}
+
+export enum StepCardAnimation {
+  ROBOT = "robot",
+  STORE = "store",
+  TABLET = "tablet",
+}
+
+export enum ThemeCardVariant {
+  MOBILE = "mobile",
+  STANDARD = "standard",
+}
+
 export enum CardVariant {
   SMALL = "small",
   MEDIUM = "medium",
@@ -24,26 +54,16 @@ export enum AnimatedCard {
   MARKETING = "marketing",
 }
 
-export enum SectionSeparator {
-  SMALL = "section-separator-small",
-  MEDIUM = "section-separator",
-  BIG = "section-separator-big",
+export enum AnimatedCardBackground {
+  ONE_TICK = "one-tick",
+  ONE_FILLED_TICK = "one-filled-tick",
+  ONE_TICK_FILLED_FLIPPED = "one-tick-reversed",
+  TWO_TICKS = "two-ticks",
+  NO_ASSET = "",
 }
 
-export enum Dropdown {
-  WHY_ORDIO = "why-ordrio",
-  RESOURCES = "resources",
-}
-
-export enum Colors {
-  WHITE = "white",
-  BLACK = "black",
+export enum AnimatedCardBackgroundColor {
+  LIGHT_WHITE = "light-white",
   GREY = "grey",
-  BLUE = "blue",
-  YELLOW = "yellow",
-}
-
-export enum ThemeCardVariant {
-  MOBILE = "mobile",
-  STANDARD = "standard",
+  LIGHT_YELLOW = "light-yellow",
 }

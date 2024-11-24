@@ -1,83 +1,164 @@
 import * as React from "react";
-import { AnimatedCard } from "@config";
 import {
-  Tablet,
-  Robot,
-  Store,
-  AddOns,
-  Theme,
-  Ship,
-  Hassle,
-  CustomerManagement,
-  Conversion,
-  OngoingUpdates,
-  Relationship,
-  Marketing,
-  SmartControl,
-  type RelationshipPropsType,
-  type MarketingPropsType,
-  type OngoingUpdatesPropsType,
-  type ConversionPropsType,
-  type ShipPropsType,
-  type AddOnsPropsType,
-  type HasslePropsType,
-  type CustomerManagementPropsType,
-  type ThemePropsType,
-} from "@components";
+  AnimatedCardBackground,
+  AnimatedCardBackgroundColor,
+  AnimatedCard as AnimatedCardType,
+} from "@config";
+import { Theme, AnimatedCard, type ThemePropsType } from "@components";
+import { getAnimatedCardAssets } from "./getAnimatedCardAssets";
 
-export type AnimatedCardPropsType =
-  | ShipPropsType
-  | AddOnsPropsType
-  | HasslePropsType
-  | OngoingUpdatesPropsType
-  | ConversionPropsType
-  | ThemePropsType
-  | RelationshipPropsType
-  | MarketingPropsType;
+export type AnimatedCardPropsType = ThemePropsType;
 
 export const renderAnimatedCard = (
-  animationType: AnimatedCard,
-  props?: AnimatedCardPropsType
+  animationType: AnimatedCardType,
+  content?: AnimatedCardPropsType
 ) => {
   switch (animationType) {
-    case AnimatedCard.ROBOT:
-      return <Robot />;
-    case AnimatedCard.STORE:
-      return <Store />;
-    case AnimatedCard.TABLET:
-      return <Tablet />;
-    case AnimatedCard.ADD_ONS:
-      return <AddOns {...(props as AddOnsPropsType)} />;
-    case AnimatedCard.SHIP:
-      return <Ship {...(props as ShipPropsType)} />;
-    case AnimatedCard.HASSLE:
-      return <Hassle {...(props as HasslePropsType)} />;
-    case AnimatedCard.CUSTOMER_MANAGEMENT:
-      return <CustomerManagement {...(props as CustomerManagementPropsType)} />;
-    case AnimatedCard.ONGOING_UPDATES:
-      return <OngoingUpdates {...(props as OngoingUpdatesPropsType)} />;
-    case AnimatedCard.CONVERSION:
-      return <Conversion {...(props as ConversionPropsType)} />;
-    case AnimatedCard.GROCBAY:
+    case AnimatedCardType.GROCBAY:
       return (
-        <Theme {...(props as ThemePropsType)} type={AnimatedCard.GROCBAY} />
+        <Theme
+          {...(content as ThemePropsType)}
+          type={AnimatedCardType.GROCBAY}
+        />
       );
-    case AnimatedCard.MOO_CHEW:
+    case AnimatedCardType.MOO_CHEW:
       return (
-        <Theme {...(props as ThemePropsType)} type={AnimatedCard.MOO_CHEW} />
+        <Theme
+          {...(content as ThemePropsType)}
+          type={AnimatedCardType.MOO_CHEW}
+        />
       );
-    case AnimatedCard.AURA:
-      return <Theme {...(props as ThemePropsType)} type={AnimatedCard.AURA} />;
-    case AnimatedCard.RESTOBITE:
+    case AnimatedCardType.AURA:
       return (
-        <Theme {...(props as ThemePropsType)} type={AnimatedCard.RESTOBITE} />
+        <Theme {...(content as ThemePropsType)} type={AnimatedCardType.AURA} />
       );
-    case AnimatedCard.RELATIONSHIP:
-      return <Relationship {...(props as RelationshipPropsType)} />;
-    case AnimatedCard.MARKETING:
-      return <Marketing {...(props as MarketingPropsType)} />;
-    case AnimatedCard.SMART_CONTROL:
-      return <SmartControl />;
+    case AnimatedCardType.RESTOBITE:
+      return (
+        <Theme
+          {...(content as ThemePropsType)}
+          type={AnimatedCardType.RESTOBITE}
+        />
+      );
+    case AnimatedCardType.ADD_ONS:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.ADD_ONS}
+          assets={getAnimatedCardAssets(AnimatedCardType.ADD_ONS)}
+          background={{
+            type: AnimatedCardBackground.ONE_TICK,
+            color: AnimatedCardBackgroundColor.GREY,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.SHIP:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.SHIP}
+          assets={getAnimatedCardAssets(AnimatedCardType.SHIP)}
+          background={{
+            type: AnimatedCardBackground.ONE_FILLED_TICK,
+            color: AnimatedCardBackgroundColor.LIGHT_YELLOW,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.HASSLE:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.HASSLE}
+          assets={getAnimatedCardAssets(AnimatedCardType.HASSLE)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.LIGHT_YELLOW,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.CUSTOMER_MANAGEMENT:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.CUSTOMER_MANAGEMENT}
+          assets={getAnimatedCardAssets(AnimatedCardType.CUSTOMER_MANAGEMENT)}
+          background={{
+            type: AnimatedCardBackground.NO_ASSET,
+            color: AnimatedCardBackgroundColor.GREY,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.ONGOING_UPDATES:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.ONGOING_UPDATES}
+          assets={getAnimatedCardAssets(AnimatedCardType.ONGOING_UPDATES)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.LIGHT_YELLOW,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.CONVERSION:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.CONVERSION}
+          assets={getAnimatedCardAssets(AnimatedCardType.CONVERSION)}
+          background={{
+            type: AnimatedCardBackground.ONE_FILLED_TICK,
+            color: AnimatedCardBackgroundColor.LIGHT_YELLOW,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.RELATIONSHIP:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.RELATIONSHIP}
+          assets={getAnimatedCardAssets(AnimatedCardType.RELATIONSHIP)}
+          background={{
+            type: AnimatedCardBackground.ONE_FILLED_TICK,
+            color: AnimatedCardBackgroundColor.LIGHT_YELLOW,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.MARKETING:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.MARKETING}
+          assets={getAnimatedCardAssets(AnimatedCardType.MARKETING)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.GREY,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.SMART_CONTROL:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.SMART_CONTROL}
+          assets={getAnimatedCardAssets(AnimatedCardType.SMART_CONTROL)}
+          background={{
+            type: AnimatedCardBackground.NO_ASSET,
+            color: AnimatedCardBackgroundColor.GREY,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.EASY_MANAGEMENT:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.EASY_MANAGEMENT}
+          assets={getAnimatedCardAssets(AnimatedCardType.EASY_MANAGEMENT)}
+          background={{
+            type: AnimatedCardBackground.NO_ASSET,
+            color: AnimatedCardBackgroundColor.GREY,
+          }}
+          content={content}
+        />
+      );
     default:
       return null;
   }

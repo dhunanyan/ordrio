@@ -1,9 +1,12 @@
 export { Icons } from "./icons";
 export {
-  CardVariant,
-  AnimatedCard,
   SectionSeparator,
   Dropdown,
   Colors,
+  StepCardAnimation,
+  CardVariant,
   ThemeCardVariant,
+  AnimatedCard,
+  AnimatedCardBackground,
+  AnimatedCardBackgroundColor,
 } from "./constants";
