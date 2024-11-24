@@ -13,6 +13,8 @@
 @import "./Conversion";
 @import "./Secure";
 @import "./Support";
+@import "./Delivery";
+@import "./BuiltForGrowth";
 
 .animated-card {
   border-radius: 24px;
@@ -157,5 +159,13 @@
 
   &__secure {
     @include secure;
+  }
+
+  &__delivery {
+    @include delivery;
+  }
+
+  &__built-for-growth {
+    @include builtForGrowth;
   }
 }

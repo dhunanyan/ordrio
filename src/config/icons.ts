@@ -37,8 +37,10 @@ import sectionSeparator from "../../public/svg/i_section-separator.svg";
 import sectionSeparatorBig from "../../public/svg/i_section-separator-big.svg";
 import services from "../../public/svg/i_services.svg";
 import support from "../../public/svg/i_support.svg";
+import squaresYellow from "../../public/svg/i_squares-yellow.svg";
 import tableBlue from "../../public/svg/i_table-blue.svg";
 import videos from "../../public/svg/i_videos.svg";
+import windowCheckYellow from "../../public/svg/i_window-check-yellow.svg";
 
 export const Icons = {
   "app-store": appStore,
@@ -82,4 +84,6 @@ export const Icons = {
   "cursor-yellow": cursorYellow,
   "money-yellow": moneyYellow,
   "restaurants-yellow": restaurantsYellow,
+  "squares-yellow": squaresYellow,
+  "window-check-yellow": windowCheckYellow,
 } as { [key: string]: string };

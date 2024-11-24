@@ -28,7 +28,7 @@ export const ThemesContent = {
       {
         title: "Restobite",
         description:
-          "Warm, appetizing, and stylish – designed to make your restaurant's menu and ambiance shine online.",
+          "Warm, appetizing, and stylish - designed to make your restaurant's menu and ambiance shine online.",
         links: [
           { id: "ios", href: "#" },
           { id: "android", href: "#" },
@@ -38,7 +38,7 @@ export const ThemesContent = {
       {
         title: "Aura",
         description:
-          "Artistic, unique, and customizable – perfect for highlighting the craftsmanship and personality of your handcrafted goods.",
+          "Artistic, unique, and customizable - perfect for highlighting the craftsmanship and personality of your handcrafted goods.",
         links: [
           { id: "ios", href: "#" },
           { id: "android", href: "#" },

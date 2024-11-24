@@ -10,7 +10,6 @@ export const PlanContent = {
       "Unlimited Product Listings",
       "Rewards & Loyalty Programs",
       "Advanced Analytics",
-
       "Multiple Payment Gateways",
       "Smart Notifications",
       "Customizable Add-Ons",

@@ -1,0 +1,29 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.inventory-graph-asset {
+  > div {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .lines-list {
+      align-items: flex-end;
+      bottom: 65px;
+      display: flex;
+      gap: 22px;
+      left: 54px;
+      max-width: 350px;
+      position: absolute;
+
+      &__item {
+        background-color: $blue-color;
+        border-radius: 12px 12px 0px 0px;
+        height: 10px;
+        width: 15.5px;
+      }
+    }
+  }
+}

@@ -18,13 +18,35 @@ export const getAnimatedCardAssets = (
   type: AnimatedCard
 ): AnimatedCardAssetsType => {
   switch (type) {
-    case AnimatedCard.SECURE:
+    case AnimatedCard.DELIVERY:
       return [
         {
-          initial: { opacity: 0, y: 30 },
+          initial: { opacity: 0, rotate: 30 },
+          whileInView: { opacity: 1, rotate: 0 },
+          transition: { duration: 0.6, delay: 0.3 },
+          url: "/images/animated-cards/logos-on-circles-v2.png",
+        },
+      ];
+    case AnimatedCard.BUILT_FOR_GROWTH:
+      return [
+        {
+          initial: { opacity: 0, scale: 1.3 },
+          whileInView: { opacity: 1, scale: 1 },
+          transition: { duration: 0.3, delay: 0.2 },
+          url: "/images/animated-cards/circles.png",
+        },
+        {
+          initial: { opacity: 0, x: 50 },
+          whileInView: { opacity: 1, x: 0 },
+          transition: { duration: 0.4, delay: 0.3 },
+          url: "/images/animated-cards/customer-list-component.png",
+        },
+        {
+          initial: { opacity: 0, y: 20 },
           whileInView: { opacity: 1, y: 0 },
           transition: { duration: 0.4, delay: 0.5 },
-          url: "/images/animated-cards/shield-check.png",
+          kind: AnimatedCardAssetKind.INVENTORY_GRAPH,
+          url: "/images/animated-cards/order-history.png",
         },
       ];
     case AnimatedCard.SUPPORT:

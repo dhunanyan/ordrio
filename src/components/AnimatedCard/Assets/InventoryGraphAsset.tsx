@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { AnimatedCard } from "@config";
 import { RenderAssetPropsType } from "./renderAsset";
 
+import "./InventoryGraphAsset.scss";
+
 export type InventoryGraphAssetPropsType = {
   index: number;
   type: AnimatedCard;
@@ -16,15 +18,19 @@ export const InventoryGraphAsset = ({
   initial,
   whileInView,
   transition,
-}: Omit<RenderAssetPropsType, "url">) => (
+  url,
+}: RenderAssetPropsType) => (
   <motion.div
     initial={initial}
     whileInView={whileInView}
     transition={transition}
-    className={`animated-card__assets animated-card__assets--${type} animated-card__${type}--${index + 1}`}
+    className={`inventory-graph-asset animated-card__assets animated-card__assets--${type} animated-card__${type}--${index + 1}`}
   >
     <div>
-      <img src="/images/animated-cards/inventory.png" alt="Component 3" />
+      <img
+        src={url || "/images/animated-cards/inventory.png"}
+        alt="Component 3"
+      />
       <ul className="lines-list">
         {[...Array(7)].map((_, i) => (
           <motion.li

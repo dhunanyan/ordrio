@@ -12,4 +12,5 @@ export {
   AnimatedCardsContent,
   ThemesContent,
   RestaurantsContent,
+  GroceriesAndSupermarketsContent,
 } from "./Content";

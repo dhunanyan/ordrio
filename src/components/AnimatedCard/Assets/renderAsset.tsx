@@ -26,7 +26,17 @@ export const renderAsset = ({
 }: RenderAssetPropsType) => {
   switch (kind) {
     case AnimatedCardAssetKind.INVENTORY_GRAPH:
-      return <InventoryGraphAsset key={index} index={index} type={type} />;
+      return (
+        <InventoryGraphAsset
+          key={index}
+          index={index}
+          type={type}
+          url={url}
+          initial={initial}
+          whileInView={whileInView}
+          transition={transition}
+        />
+      );
     case AnimatedCardAssetKind.SMALL_CARDS:
       return <SmallCardsAsset key={index} index={index} type={type} />;
     case AnimatedCardAssetKind.ORDER_PROCESSING:
