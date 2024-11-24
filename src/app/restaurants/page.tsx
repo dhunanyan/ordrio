@@ -36,9 +36,11 @@ export default function Page() {
           {...(RestaurantsContent.rowAndBigCardsInCommonSection as RowCardsWithBigCardPropsType)}
         />
       </CommonSection>
-
       <ImageCardsWithContentSection
         {...(RestaurantsContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
+      />
+      <BigCardsSection
+        {...(RestaurantsContent.bigCardsSection1 as BigCardsSectionPropsType)}
       />
       <IconCardSection
         {...(RestaurantsContent.iconCardSection as IconCardSectionPropsType)}
@@ -47,7 +49,7 @@ export default function Page() {
         {...(RestaurantsContent.bannerSection1 as BannerSectionPropsType)}
       />
       <BigCardsSection
-        {...(RestaurantsContent.bigCardsSection as BigCardsSectionPropsType)}
+        {...(RestaurantsContent.bigCardsSection2 as BigCardsSectionPropsType)}
       />
       <AccordionSection
         {...(RestaurantsContent.accordionSection as AccordionSectionPropsType)}

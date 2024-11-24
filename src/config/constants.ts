@@ -52,6 +52,8 @@ export enum AnimatedCard {
   AURA = "aura",
   RELATIONSHIP = "relationship",
   MARKETING = "marketing",
+  SUPPORT = "support",
+  SECURE = "secure",
 }
 
 export enum AnimatedCardBackground {

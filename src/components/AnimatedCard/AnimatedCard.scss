@@ -11,6 +11,8 @@
 @import "./CustomerManagement";
 @import "./SmartControl";
 @import "./Conversion";
+@import "./Secure";
+@import "./Support";
 
 .animated-card {
   border-radius: 24px;
@@ -147,5 +149,13 @@
 
   &__conversion {
     @include conversion;
+  }
+
+  &__support {
+    @include support;
+  }
+
+  &__secure {
+    @include secure;
   }
 }

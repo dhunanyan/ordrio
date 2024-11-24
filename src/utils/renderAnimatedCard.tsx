@@ -159,6 +159,30 @@ export const renderAnimatedCard = (
           content={content}
         />
       );
+    case AnimatedCardType.SECURE:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.SECURE}
+          assets={getAnimatedCardAssets(AnimatedCardType.SECURE)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.GREY,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.SUPPORT:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.SUPPORT}
+          assets={getAnimatedCardAssets(AnimatedCardType.SUPPORT)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.LIGHT_YELLOW,
+          }}
+          content={content}
+        />
+      );
     default:
       return null;
   }

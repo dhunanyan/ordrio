@@ -18,6 +18,30 @@ export const getAnimatedCardAssets = (
   type: AnimatedCard
 ): AnimatedCardAssetsType => {
   switch (type) {
+    case AnimatedCard.SECURE:
+      return [
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.4, delay: 0.5 },
+          url: "/images/animated-cards/shield-check.png",
+        },
+      ];
+    case AnimatedCard.SUPPORT:
+      return [
+        {
+          initial: { opacity: 0, rotate: 45 },
+          whileInView: { opacity: 1, rotate: 0 },
+          transition: { duration: 0.5, delay: 0.6 },
+          url: "/images/animated-cards/circles.png",
+        },
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.4, delay: 0.5 },
+          url: "/images/animated-cards/laptop-call.png",
+        },
+      ];
     case AnimatedCard.CONVERSION:
       return [
         {

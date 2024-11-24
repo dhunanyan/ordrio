@@ -91,6 +91,22 @@ export const RestaurantsContent = {
       },
     ],
   },
+  bigCardsSection1: {
+    cards: [
+      {
+        title: "Dedicated <span>Support</span>",
+        description:
+          "Build customer profiles, track order history, and send personalized offers.",
+        type: AnimatedCard.SUPPORT,
+      },
+      {
+        title: "<span>Reliable</span> & Secure",
+        description:
+          "Create targeted campaigns, send email newsletters, and manage social media.",
+        type: AnimatedCard.SECURE,
+      },
+    ],
+  },
   iconCardSection: {
     backgroundImageURL: "/images/grey-spiral.png",
     title: "Key Features for a Thriving Restaurant",
@@ -146,7 +162,7 @@ export const RestaurantsContent = {
     imageURL: "/images/mobile-payments.png",
     tintColor: "white",
   },
-  bigCardsSection: {
+  bigCardsSection2: {
     cards: [
       {
         title: "Customer Relationship Management",
