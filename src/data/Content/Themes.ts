@@ -7,6 +7,13 @@ export const ThemesContent = {
     description: " Make a Lasting Impression with Your Store Design",
     sectionSeparator: SectionSeparator.MEDIUM,
   },
+  commonSection: {
+    title: "Your Brand, <span>Your Story</span>",
+    description:
+      "With Ordrio, you have the power to create a truly unique online presence that reflects  your brand's values and resonates with your target audience",
+    imageURL: "/images/tablet-and-mobile-view-tiger.png",
+    backgroundImageURL: "images/grey-spiral.png",
+  },
   iconCardSection: {
     withIcon: true,
     backgroundImageURL: "/images/blue-spiral.png",

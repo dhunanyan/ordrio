@@ -2,11 +2,13 @@ import {
   AccordionSection,
   BannerSection,
   BigCardsSection,
+  CommonSection,
   Hero,
   IconCardSection,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
+  type CommonSectionPropsType,
   type IconCardSectionPropsType,
   type HeroPropsType,
 } from "@components";
@@ -17,6 +19,9 @@ export default function Page() {
   return (
     <main>
       <Hero {...(ThemesContent.hero as HeroPropsType)} />
+      <CommonSection
+        {...(ThemesContent.commonSection as CommonSectionPropsType)}
+      />
       <IconCardSection
         {...(ThemesContent.iconCardSection as IconCardSectionPropsType)}
       />

@@ -11,7 +11,7 @@ export const HomeContent = {
     ],
     link: { text: "Get Started for Free", href: "#" },
     sectionSeparator: SectionSeparator.BIG,
-    bottomImageURL: "/images/landing-hero.png",
+    bottomImageURL: "/images/tablet-and-mobile-view-tiger.png",
   },
   listSection: {
     imageURL: "/images/tiger-painting.png",

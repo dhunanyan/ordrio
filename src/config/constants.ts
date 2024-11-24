@@ -28,3 +28,11 @@ export enum Dropdown {
   WHY_ORDIO = "why-ordrio",
   RESOURCES = "resources",
 }
+
+export enum Colors {
+  WHITE = "white",
+  BLACK = "black",
+  GREY = "grey",
+  BLUE = "blue",
+  YELLOW = "yellow",
+}

@@ -4,4 +4,5 @@ export {
   AnimatedCard,
   SectionSeparator,
   Dropdown,
+  Colors,
 } from "./constants";
