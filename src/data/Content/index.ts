@@ -3,8 +3,12 @@ export {
   PlanWithExtraContent,
   ComparePlansContent,
   AnimatedCardsContent,
+  HeaderData,
+  DropdownData,
+  NavItemType,
 } from "./Components";
 
 export { HomeContent } from "./Home";
 export { PricingContent } from "./Pricing";
 export { ProductTourContent } from "./ProductTour";
+export { ThemesContent } from "./Themes";

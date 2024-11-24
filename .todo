@@ -17,3 +17,5 @@ button {
 ```
 
 TODO: Footer
+
+TODO: Fix button in banner section (for example in Themes they have different colors. Add prop in `link`)

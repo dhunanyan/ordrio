@@ -158,7 +158,7 @@ export const HomeContent = {
       "/images/carousels/landing-theme/3.png",
     ],
   },
-  PlanSection: {
+  planSection: {
     description: "No matter your budget",
     title: "We've got a plan that fits",
     plan: PlanContent,

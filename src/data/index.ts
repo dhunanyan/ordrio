@@ -1,6 +1,8 @@
 export { HtmlMeta } from "./HtmlMeta";
-export { HeaderData, DropdownData, NavItemType } from "./HeaderData";
 export {
+  NavItemType,
+  HeaderData,
+  DropdownData,
   HomeContent,
   PricingContent,
   PlanContent,
@@ -8,4 +10,5 @@ export {
   ComparePlansContent,
   ProductTourContent,
   AnimatedCardsContent,
+  ThemesContent,
 } from "./Content";

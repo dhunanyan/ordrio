@@ -8,6 +8,10 @@ import {
   Ship,
   Hassle,
   CustomerManagement,
+  Conversion,
+  OngoingUpdates,
+  type OngoingUpdatesPropsType,
+  type ConversionPropsType,
   type ShipPropsType,
   type AddOnsPropsType,
   type HasslePropsType,
@@ -33,6 +37,10 @@ export const renderAnimatedCard = (
       return <Hassle {...(props as HasslePropsType)} />;
     case AnimatedCard.CUSTOMER_MANAGEMENT:
       return <CustomerManagement {...(props as CustomerManagementPropsType)} />;
+    case AnimatedCard.ONGOING_UPDATES:
+      return <OngoingUpdates {...(props as OngoingUpdatesPropsType)} />;
+    case AnimatedCard.CONVERSION:
+      return <Conversion {...(props as ConversionPropsType)} />;
     default:
       return null;
   }

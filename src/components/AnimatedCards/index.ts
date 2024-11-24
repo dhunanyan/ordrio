@@ -10,3 +10,5 @@ export { Store } from "./Store";
 export { SmartControl } from "./SmartControl";
 export { Ship, type ShipPropsType } from "./Ship";
 export { Tablet } from "./Tablet";
+export { Conversion, type ConversionPropsType } from "./Conversion";
+export { OngoingUpdates, type OngoingUpdatesPropsType } from "./OngoingUpdates";

@@ -14,6 +14,8 @@ export enum AnimatedCard {
   SMART_CONTROL = "smart-control",
   HASSLE = "hassle",
   CUSTOMER_MANAGEMENT = "customer-management",
+  ONGOING_UPDATES = "ongoing-updates",
+  CONVERSION = "conversion",
 }
 
 export enum SectionSeparator {

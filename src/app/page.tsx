@@ -34,7 +34,6 @@ export default function Home() {
       <ImageCardsWithContentSection
         {...(HomeContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
       />
-
       <BigCardsSection
         {...(HomeContent.bigCardsSection as BigCardsSectionPropsType)}
       />
@@ -44,7 +43,7 @@ export default function Home() {
       <CarouselSection
         {...(HomeContent.carouselSection as CarouselSectionPropsType)}
       />
-      <PlanSection {...(HomeContent.PlanSection as PlanSectionPropsType)} />
+      <PlanSection {...(HomeContent.planSection as PlanSectionPropsType)} />
       <AccordionSection
         {...(HomeContent.accordionSection as AccordionSectionPropsType)}
       />

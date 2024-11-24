@@ -8,11 +8,16 @@ export {
   SmartControl,
   Ship,
   Tablet,
+  Conversion,
+  OngoingUpdates,
+  type ConversionPropsType,
+  type OngoingUpdatesPropsType,
   type AddOnsPropsType,
   type CustomerManagementPropsType,
   type HasslePropsType,
   type ShipPropsType,
 } from "./AnimatedCards";
+
 export {
   AccordionSection,
   type AccordionSectionPropsType,
