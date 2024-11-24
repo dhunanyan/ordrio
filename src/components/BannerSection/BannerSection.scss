@@ -14,6 +14,7 @@
   &__container {
     @include container;
     display: flex;
+    justify-content: space-between;
     padding-bottom: 0 !important;
     position: relative;
     z-index: 1;
@@ -29,9 +30,5 @@
       bottom: 0;
       height: 100%;
     }
-  }
-
-  &__content {
-    @include container;
   }
 }

@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   gap: 26px;
-  margin: 0 auto;
   max-width: 700px;
 
   &--align-left {
@@ -91,6 +90,8 @@
   }
 
   &__button {
+    white-space: nowrap;
+
     &--yellow {
       @include buttonYellow;
     }
@@ -177,7 +178,6 @@
 
   &__content--split.banner__content {
     align-items: flex-start;
-    margin: 0 0 0 86px;
 
     * {
       text-align: left !important;
