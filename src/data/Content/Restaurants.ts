@@ -13,32 +13,48 @@ export const RestaurantsContent = {
       "Every brand has a unique story to tell. Ordrio's curated collection of  themes helps you express your brand's personality and captivate your customers. your brand, your products, and your customers.",
     backgroundColor: Colors.WHITE,
   },
-
-  // iconCardSection: {
-  //   withIcon: true,
-  //   backgroundImageURL: "/images/blue-spiral.png",
-  //   title: "Why Choose Ordrio?",
-  //   cards: [
-  //     {
-  //       icon: "design-blue",
-  //       title: "Eye-Catching Design",
-  //       description:
-  //         "Our themes are crafted by Professional designers to ensure your store looks stunning.",
-  //     },
-  //     {
-  //       icon: "customization-blue",
-  //       title: "Easy Customization",
-  //       description:
-  //         "Tailor your theme to your brand's colours, fonts, and overall aesthetic with our intuitive tools.",
-  //     },
-  //     {
-  //       icon: "mobile-blue",
-  //       title: "Mobile-First Approach",
-  //       description:
-  //         "Your store will look and function flawlessly on any device, from smartphones to desktops.",
-  //     },
-  //   ],
-  // },
+  iconCardSection: {
+    backgroundImageURL: "/images/grey-spiral.png",
+    title: "Key Features for a Thriving Restaurant",
+    color: Colors.WHITE,
+    cards: [
+      {
+        icon: "car-blue",
+        title: "Online Ordering & Delivery",
+        description:
+          "Offer convenient online ordering for pickup, delivery, or dine-in.",
+      },
+      {
+        icon: "table-blue",
+        title: "Table Reservations",
+        description: "Manage reservations seamlessly and avoid overbooking.",
+      },
+      {
+        icon: "paper-check-blue",
+        title: "Menu Management",
+        description:
+          "Easily update your menu with photos, descriptions, and pricing.",
+      },
+      {
+        icon: "paper-blue",
+        title: "Inventory & Recipe Management",
+        description:
+          "Track ingredient usage, optimize stock levels, and control costs.",
+      },
+      {
+        icon: "graph-blue",
+        title: "Reporting & Analytics",
+        description:
+          "Gain insights into sales, customer behaviour, and operational efficiency.",
+      },
+      {
+        icon: "mobile-blue",
+        title: "Custom Mobile Apps",
+        description:
+          "Provide a branded app for iOS and Android for an even more seamless experience.",
+      },
+    ],
+  },
   bannerSection1: {
     title: "Integrated Payments",
     description:

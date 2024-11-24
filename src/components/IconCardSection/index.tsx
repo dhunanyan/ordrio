@@ -6,7 +6,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { IconCard, type IconCardPropsType } from "./IconCard";
-import { Icons } from "@config";
+import { Colors, Icons } from "@config";
 
 import "./IconCardSection.scss";
 
@@ -15,6 +15,7 @@ export type IconCardSectionPropsType = {
   backgroundImageURL: string;
   title: string;
   cards: Omit<IconCardPropsType, "index">[];
+  color?: Colors;
 };
 
 export const IconCardSection = ({
@@ -22,8 +23,9 @@ export const IconCardSection = ({
   backgroundImageURL,
   title,
   cards,
+  color = Colors.YELLOW,
 }: IconCardSectionPropsType) => (
-  <section className="icon-card-section">
+  <section className={`icon-card-section icon-card-section--${color}`}>
     {backgroundImageURL && (
       <Image
         placeholder="blur"
@@ -60,7 +62,12 @@ export const IconCardSection = ({
           {title}
         </motion.h2>
       </div>
-      <ul className="icon-card-section__cards">
+      <ul
+        className={
+          "icon-card-section__cards" +
+          (cards.length > 3 ? " icon-card-section__cards--wrap" : "")
+        }
+      >
         {cards.map((card, i) => (
           <motion.li
             key={i}
