@@ -16,6 +16,10 @@ export enum AnimatedCard {
   CUSTOMER_MANAGEMENT = "customer-management",
   ONGOING_UPDATES = "ongoing-updates",
   CONVERSION = "conversion",
+  GROCBAY = "grocbay",
+  RESTOBITE = "restobite",
+  MOO_CHEW = "moo-chew",
+  AURA = "aura",
 }
 
 export enum SectionSeparator {

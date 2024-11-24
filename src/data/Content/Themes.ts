@@ -1,4 +1,4 @@
-import { AnimatedCard, SectionSeparator } from "@config";
+import { AnimatedCard, Colors, SectionSeparator } from "@config";
 
 export const ThemesContent = {
   hero: {
@@ -6,6 +6,56 @@ export const ThemesContent = {
       "Ordrio Themes: Find the <span>Perfect Design</span> for Your Business",
     description: " Make a Lasting Impression with Your Store Design",
     sectionSeparator: SectionSeparator.MEDIUM,
+  },
+  commonSectionWithBigCards: {
+    title: "Find Your Perfect Fit",
+    description:
+      "Every brand has a unique story to tell. Ordrio's curated collection of  themes helps you express your brand's personality and captivate your customers. your brand, your products, and your customers.",
+    backgroundColor: Colors.WHITE,
+  },
+  bigCardsInCommonSection: {
+    cards: [
+      {
+        title: "Grocbay",
+        description:
+          "Fresh, clean, and organized - perfect for showcasing your grocery and upermarket products in an inviting way.",
+        links: [
+          { id: "ios", href: "#" },
+          { id: "android", href: "#" },
+        ],
+        type: AnimatedCard.GROCBAY,
+      },
+      {
+        title: "Restobite",
+        description:
+          "Warm, appetizing, and stylish – designed to make your restaurant's menu and ambiance shine online.",
+        links: [
+          { id: "ios", href: "#" },
+          { id: "android", href: "#" },
+        ],
+        type: AnimatedCard.RESTOBITE,
+      },
+      {
+        title: "Aura",
+        description:
+          "Artistic, unique, and customizable – perfect for highlighting the craftsmanship and personality of your handcrafted goods.",
+        links: [
+          { id: "ios", href: "#" },
+          { id: "android", href: "#" },
+        ],
+        type: AnimatedCard.AURA,
+      },
+      {
+        title: "Moo & Chew",
+        description:
+          "Fresh, clean, and organized - perfect for showcasing your grocery and upermarket products in an inviting way.",
+        links: [
+          { id: "ios", href: "#" },
+          { id: "android", href: "#" },
+        ],
+        type: AnimatedCard.MOO_CHEW,
+      },
+    ],
   },
   commonSection: {
     title: "Your Brand, <span>Your Story</span>",

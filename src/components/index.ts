@@ -10,6 +10,8 @@ export {
   Tablet,
   Conversion,
   OngoingUpdates,
+  Theme,
+  type ThemePropsType,
   type ConversionPropsType,
   type OngoingUpdatesPropsType,
   type AddOnsPropsType,

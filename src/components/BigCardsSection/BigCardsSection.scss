@@ -13,5 +13,13 @@
     display: flex;
     gap: 25px;
     width: 100%;
+
+    &--wrap {
+      flex-wrap: wrap;
+
+      > li {
+        width: calc((100% - 25px) / 2);
+      }
+    }
   }
 }

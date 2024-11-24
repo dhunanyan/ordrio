@@ -20,7 +20,11 @@ export type BigCardsSectionPropsType = {
 export const BigCardsSection = ({ cards }: BigCardsSectionPropsType) => (
   <section className="big-cards">
     <div className="big-cards__container">
-      <ul className="big-cards__list">
+      <ul
+        className={
+          "big-cards__list" + (cards.length > 2 ? " big-cards__list--wrap" : "")
+        }
+      >
         {cards.map((bigCard, i) => (
           <motion.li
             key={i}

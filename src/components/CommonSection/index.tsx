@@ -49,13 +49,15 @@ export const CommonSection = ({
       {children && <div className="common-section__children">{children}</div>}
     </div>
 
-    <motion.div
-      className="common-section__image"
-      initial={{ opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: 0.3 }}
-    >
-      <img src={imageURL} alt={title} />
-    </motion.div>
+    {imageURL && (
+      <motion.div
+        className="common-section__image"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: 0.3 }}
+      >
+        <img src={imageURL} alt={title} />
+      </motion.div>
+    )}
   </section>
 );

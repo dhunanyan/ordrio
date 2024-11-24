@@ -20,6 +20,13 @@ export default function Page() {
     <main>
       <Hero {...(ThemesContent.hero as HeroPropsType)} />
       <CommonSection
+        {...(ThemesContent.commonSectionWithBigCards as CommonSectionPropsType)}
+      >
+        <BigCardsSection
+          {...(ThemesContent.bigCardsInCommonSection as BigCardsSectionPropsType)}
+        />
+      </CommonSection>
+      <CommonSection
         {...(ThemesContent.commonSection as CommonSectionPropsType)}
       />
       <IconCardSection

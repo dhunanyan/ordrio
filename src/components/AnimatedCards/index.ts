@@ -12,3 +12,4 @@ export { Ship, type ShipPropsType } from "./Ship";
 export { Tablet } from "./Tablet";
 export { Conversion, type ConversionPropsType } from "./Conversion";
 export { OngoingUpdates, type OngoingUpdatesPropsType } from "./OngoingUpdates";
+export { Theme, type ThemePropsType } from "./Theme";

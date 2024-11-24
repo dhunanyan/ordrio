@@ -5,6 +5,7 @@ import {
   Robot,
   Store,
   AddOns,
+  Theme,
   Ship,
   Hassle,
   CustomerManagement,
@@ -16,6 +17,7 @@ import {
   type AddOnsPropsType,
   type HasslePropsType,
   type CustomerManagementPropsType,
+  type ThemePropsType,
 } from "@components";
 
 export const renderAnimatedCard = (
@@ -41,6 +43,20 @@ export const renderAnimatedCard = (
       return <OngoingUpdates {...(props as OngoingUpdatesPropsType)} />;
     case AnimatedCard.CONVERSION:
       return <Conversion {...(props as ConversionPropsType)} />;
+    case AnimatedCard.GROCBAY:
+      return (
+        <Theme {...(props as ThemePropsType)} type={AnimatedCard.GROCBAY} />
+      );
+    case AnimatedCard.MOO_CHEW:
+      return (
+        <Theme {...(props as ThemePropsType)} type={AnimatedCard.MOO_CHEW} />
+      );
+    case AnimatedCard.AURA:
+      return <Theme {...(props as ThemePropsType)} type={AnimatedCard.AURA} />;
+    case AnimatedCard.RESTOBITE:
+      return (
+        <Theme {...(props as ThemePropsType)} type={AnimatedCard.RESTOBITE} />
+      );
     default:
       return null;
   }
