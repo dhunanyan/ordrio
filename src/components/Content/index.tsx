@@ -73,6 +73,25 @@ export const Content = ({
     >
       {subtitle}
     </motion.h4>
+    {link && (
+      <motion.div
+        initial={{ opacity: 0, x: 10 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        <Link href={link.href} className="content__link">
+          <span
+            className={`content__link-text content__link-text--${tintColor}`}
+          >
+            {link.text}
+          </span>
+          <span
+            className={`content__link-icon content__link-icon--${tintColor}`}
+            dangerouslySetInnerHTML={{ __html: Icons["arrow-right*"] }}
+          />
+        </Link>
+      </motion.div>
+    )}
     <div className="content__buttons">
       {buttons &&
         buttons.map(({ text, href, onClick, disabled }, i) =>
@@ -106,24 +125,5 @@ export const Content = ({
           )
         )}
     </div>
-    {link && (
-      <motion.div
-        initial={{ opacity: 0, x: 10 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3 }}
-      >
-        <Link href={link.href} className="content__link">
-          <span
-            className={`content__link-text content__link-text--${tintColor}`}
-          >
-            {link.text}
-          </span>
-          <span
-            className={`content__link-icon content__link-icon--${tintColor}`}
-            dangerouslySetInnerHTML={{ __html: Icons["arrow-right*"] }}
-          />
-        </Link>
-      </motion.div>
-    )}
   </div>
 );

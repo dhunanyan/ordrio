@@ -14,3 +14,4 @@ export { ProductTourContent } from "./ProductTour";
 export { ThemesContent } from "./Themes";
 export { RestaurantsContent } from "./Restaurants";
 export { GroceriesAndSupermarketsContent } from "./GroceriesAndSupermarkets";
+export { ClothingAndAccessoriesContent } from "./ClothingAndAccessories";

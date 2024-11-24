@@ -139,7 +139,7 @@ export const DropdownData = {
   [Dropdown.WHY_ORDIO]: {
     aside: [
       {
-        title: "Community ",
+        title: "Community",
         description: "A place to explore",
         href: "/community",
       },

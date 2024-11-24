@@ -16,6 +16,7 @@ export type BannerSectionPropsType = {
   description?: string;
   links: { text: string; href: string }[];
   link?: { text: string; href: string };
+  alignContentLeft?: boolean;
   tintColor?: "white" | "yellow" | "blue";
 };
 
@@ -29,12 +30,18 @@ export const BannerSection = ({
   links,
   link,
   tintColor = "yellow",
+  alignContentLeft = true,
 }: BannerSectionPropsType) => (
   <section className="banner-section">
     {backgroundImageURL && (
       <img src={backgroundImageURL} alt="Background layout" />
     )}
-    <div className="banner-section__container">
+    <div
+      className={
+        "banner-section__container" +
+        (imageURL ? " banner-section__container--split" : "")
+      }
+    >
       {imageURL && (
         <motion.div
           className="banner-section__image"
@@ -59,7 +66,7 @@ export const BannerSection = ({
           description={description}
           buttons={links}
           link={link}
-          alignLeft
+          alignLeft={alignContentLeft}
           tintColor={tintColor}
         />
       </div>

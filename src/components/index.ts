@@ -54,5 +54,5 @@ export {
   type RowCardsWithBigCardPropsType,
 } from "./RowCardsWithBigCard";
 export { AnimatedCard } from "./AnimatedCard";
-
+export { ImageCards, type ImageCardsPropsType } from "./ImageCards";
 export { Theme, type ThemePropsType } from "./Theme";

@@ -56,6 +56,7 @@ export enum AnimatedCard {
   SECURE = "secure",
   BUILT_FOR_GROWTH = "built-for-growth",
   DELIVERY = "delivery",
+  CUSTOMIZATION = "customization",
 }
 
 export enum AnimatedCardBackground {

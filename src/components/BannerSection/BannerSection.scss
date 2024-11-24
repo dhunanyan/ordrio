@@ -15,9 +15,12 @@
     @include container;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 0 !important;
     position: relative;
     z-index: 1;
+
+    &--split {
+      padding-bottom: 0 !important;
+    }
   }
 
   &__image {
@@ -29,6 +32,14 @@
     img {
       bottom: 0;
       height: 100%;
+    }
+  }
+
+  &__content {
+    margin: 0 auto;
+
+    &--split {
+      margin: auto 0;
     }
   }
 }

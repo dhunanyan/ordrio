@@ -15,6 +15,7 @@
 @import "./Support";
 @import "./Delivery";
 @import "./BuiltForGrowth";
+@import "./Customization";
 
 .animated-card {
   border-radius: 24px;
@@ -167,5 +168,9 @@
 
   &__built-for-growth {
     @include builtForGrowth;
+  }
+
+  &__customization {
+    @include customization;
   }
 }

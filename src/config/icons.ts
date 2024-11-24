@@ -10,6 +10,7 @@ import careers from "../../public/svg/i_careers.svg";
 import clothingAndAccessories from "../../public/svg/i_clothing-and-accessories.svg";
 import check from "../../public/svg/i_check.svg";
 import checkSquare from "../../public/svg/i_check-square.svg";
+import clothesYellow from "../../public/svg/i_clothes-yellow.svg";
 import coupons from "../../public/svg/i_coupons.svg";
 import customizationBlue from "../../public/svg/i_customization-blue.svg";
 import cursorYellow from "../../public/svg/i_cursor-yellow.svg";
@@ -17,6 +18,7 @@ import designBlue from "../../public/svg/i_design-blue.svg";
 import faq from "../../public/svg/i_faq.svg";
 import googlePlay from "../../public/svg/i_google-play.svg";
 import graphBlue from "../../public/svg/i_graph-blue.svg";
+import graphYellow from "../../public/svg/i_graph-yellow.svg";
 import groceriesAndSupermarkets from "../../public/svg/i_groceries-and-supermarkets.svg";
 import howToGuide from "../../public/svg/i_how-to-guide.svg";
 import info from "../../public/svg/i_info.svg";
@@ -27,6 +29,7 @@ import meatStores from "../../public/svg/i_meat-stores.svg";
 import megaphone from "../../public/svg/i_megaphone.svg";
 import milkAndTiffinSubscriptions from "../../public/svg/i_milk-and-tiffin-subscriptions.svg";
 import mobileBlue from "../../public/svg/i_mobile-blue.svg";
+import moneyBlue from "../../public/svg/i_money-blue.svg";
 import moneyYellow from "../../public/svg/i_money-yellow.svg";
 import paperBlue from "../../public/svg/i_paper-blue.svg";
 import paperCheckBlue from "../../public/svg/i_paper-check-blue.svg";
@@ -59,10 +62,12 @@ export const Icons = {
   "clothing-and-accessories": clothingAndAccessories,
   coupons,
   "customization-blue": customizationBlue,
+  "clothes-yellow": clothesYellow,
   "design-blue": designBlue,
   faq,
   "google-play": googlePlay,
   "graph-blue": graphBlue,
+  "graph-yellow": graphYellow,
   "groceries-and-supermarkets": groceriesAndSupermarkets,
   "how-to-guide": howToGuide,
   info,
@@ -85,6 +90,7 @@ export const Icons = {
   videos,
   megaphone,
   "cursor-yellow": cursorYellow,
+  "money-blue": moneyBlue,
   "money-yellow": moneyYellow,
   "restaurants-yellow": restaurantsYellow,
   "squares-yellow": squaresYellow,

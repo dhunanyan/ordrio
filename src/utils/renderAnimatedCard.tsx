@@ -207,6 +207,18 @@ export const renderAnimatedCard = (
           content={content}
         />
       );
+    case AnimatedCardType.CUSTOMIZATION:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.CUSTOMIZATION}
+          assets={getAnimatedCardAssets(AnimatedCardType.CUSTOMIZATION)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.GREY,
+          }}
+          content={content}
+        />
+      );
     default:
       return null;
   }

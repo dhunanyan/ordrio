@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin customization {
+  &--1 {
+    bottom: 0;
+    left: calc(50% - 380px / 2);
+    max-width: 380px;
+    z-index: 1;
+  }
+}
