@@ -75,3 +75,7 @@ export {
   SlideshowSection,
   type SlideshowSectionPropsType,
 } from "./SlideshowSection";
+export {
+  RowCardsWithBigCard,
+  type RowCardsWithBigCardPropsType,
+} from "./RowCardsWithBigCard";

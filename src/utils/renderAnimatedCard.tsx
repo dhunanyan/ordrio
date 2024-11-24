@@ -13,6 +13,7 @@ import {
   OngoingUpdates,
   Relationship,
   Marketing,
+  SmartControl,
   type RelationshipPropsType,
   type MarketingPropsType,
   type OngoingUpdatesPropsType,
@@ -24,9 +25,19 @@ import {
   type ThemePropsType,
 } from "@components";
 
+export type AnimatedCardPropsType =
+  | ShipPropsType
+  | AddOnsPropsType
+  | HasslePropsType
+  | OngoingUpdatesPropsType
+  | ConversionPropsType
+  | ThemePropsType
+  | RelationshipPropsType
+  | MarketingPropsType;
+
 export const renderAnimatedCard = (
   animationType: AnimatedCard,
-  props?: ShipPropsType | AddOnsPropsType
+  props?: AnimatedCardPropsType
 ) => {
   switch (animationType) {
     case AnimatedCard.ROBOT:
@@ -65,6 +76,8 @@ export const renderAnimatedCard = (
       return <Relationship {...(props as RelationshipPropsType)} />;
     case AnimatedCard.MARKETING:
       return <Marketing {...(props as MarketingPropsType)} />;
+    case AnimatedCard.SMART_CONTROL:
+      return <SmartControl />;
     default:
       return null;
   }

@@ -55,14 +55,6 @@ export const Content = ({
     >
       {title}
     </motion.h2>
-    <motion.h4
-      className={`content__subtitle content__subtitle--${textColor}`}
-      initial={{ opacity: 0, x: 10 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.3 }}
-    >
-      {subtitle}
-    </motion.h4>
     {description && (
       <motion.p
         className={`content__description content__description--${textColor}`}
@@ -73,6 +65,14 @@ export const Content = ({
         {description}
       </motion.p>
     )}
+    <motion.h4
+      className={`content__subtitle content__subtitle--${textColor}`}
+      initial={{ opacity: 0, x: 10 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.3 }}
+    >
+      {subtitle}
+    </motion.h4>
     <div className="content__buttons">
       {buttons &&
         buttons.map(({ text, href, onClick, disabled }, i) =>

@@ -1,4 +1,10 @@
-import { AnimatedCard, Colors, Icons, SectionSeparator } from "@config";
+import {
+  AnimatedCard,
+  Colors,
+  Icons,
+  SectionSeparator,
+  ThemeCardVariant,
+} from "@config";
 
 export const RestaurantsContent = {
   hero: {
@@ -14,11 +20,76 @@ export const RestaurantsContent = {
       "/images/slideshow/restaurants/image-4.png",
     ],
   },
-  commonSectionWithBigCards: {
-    title: "Find Your Perfect Fit",
+  commonSectionWithRowAndBigCards: {
+    title: "Why Restobite?",
     description:
-      "Every brand has a unique story to tell. Ordrio's curated collection of  themes helps you express your brand's personality and captivate your customers. your brand, your products, and your customers.",
+      "Restobite is more than just online ordering. It is a comprehensive solution that empowers your restaurant to",
     backgroundColor: Colors.WHITE,
+  },
+  rowAndBigCardsInCommonSection: {
+    bigCard: {
+      card: AnimatedCard.RESTOBITE,
+      props: { variant: ThemeCardVariant.MOBILE },
+    },
+    rowCards: [
+      {
+        icon: "restaurants-yellow",
+        title: "Built for Restaurants",
+        description:
+          "Our platform is designed by restaurant professionals who understand your unique challenges.",
+      },
+      {
+        icon: "cursor-yellow",
+        title: "Easy to Use",
+        description:
+          "Our intuitive interface makes it simple to set up and manage your online presence, even if you are not tech-savvy.",
+      },
+      {
+        icon: "money-yellow",
+        title: "Affordable & Flexible",
+        description:
+          "Choose the plan that fits your restaurant's size and budget.",
+      },
+    ],
+  },
+  imageCardsWithContentSection: {
+    backgroundImageURL: "/images/yellow-brush.png",
+    title: "Your Restaurant, Transformed",
+    description:
+      "Restobite is more than just online ordering. It is a comprehensive solution that empowers your restaurant to:",
+    link: { text: "Find Out More", href: "#" },
+    cards: [
+      {
+        title: "Own Your Online Presence",
+        description:
+          "Create a beautiful, branded website or mobile app where customers can easily browse your menu, place orders, and make reservations. ",
+        imageURL: "/images/tiger-boxes-card.png",
+      },
+      {
+        title: "Boost Sales & Efficiency",
+        description:
+          "Maximize table turnover, reduce errors, and increase average order value with seamless online ordering and contactless payments.",
+        imageURL: "/images/rocket-card.png",
+      },
+      {
+        title: "Streamline Operations",
+        description:
+          "Manage orders, inventory, table reservations, and staff schedules from a single, intuitive dashboard.",
+        imageURL: "/images/papers-card.png",
+      },
+      {
+        title: "Engage & Retain Customers",
+        description:
+          "Build lasting relationships with loyalty programs, personalized promotions, and targeted marketing campaigns.",
+        imageURL: "/images/handshake-card.png",
+      },
+      {
+        title: "Gain Valuable Insights",
+        description:
+          "Track sales data, customer preferences, and operational trends to make informed decisions and optimize your business.",
+        imageURL: "/images/toys-card.png",
+      },
+    ],
   },
   iconCardSection: {
     backgroundImageURL: "/images/grey-spiral.png",

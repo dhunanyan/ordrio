@@ -2,17 +2,21 @@ import {
   AccordionSection,
   BannerSection,
   BigCardsSection,
-  // CommonSection,
+  CommonSection,
   Hero,
   IconCardSection,
   SlideshowSection,
+  RowCardsWithBigCard,
+  ImageCardsWithContentSection,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
-  // type CommonSectionPropsType,
+  type CommonSectionPropsType,
   type SlideshowSectionPropsType,
   type IconCardSectionPropsType,
   type HeroPropsType,
+  type RowCardsWithBigCardPropsType,
+  type ImageCardsWithContentSectionPropsType,
 } from "@components";
 
 import { RestaurantsContent } from "@data";
@@ -25,16 +29,17 @@ export default function Page() {
           {...(RestaurantsContent.heroComponent as SlideshowSectionPropsType)}
         />
       </Hero>
-      {/*<CommonSection
-        {...(ThemesContent.commonSectionWithBigCards as CommonSectionPropsType)}
+      <CommonSection
+        {...(RestaurantsContent.commonSectionWithRowAndBigCards as CommonSectionPropsType)}
       >
-      <BigCardsSection
-          {...(ThemesContent.bigCardsInCommonSection as BigCardsSectionPropsType)}
+        <RowCardsWithBigCard
+          {...(RestaurantsContent.rowAndBigCardsInCommonSection as RowCardsWithBigCardPropsType)}
         />
       </CommonSection>
-      <CommonSection
-        {...(ThemesContent.commonSection as CommonSectionPropsType)}
-      />*/}
+
+      <ImageCardsWithContentSection
+        {...(RestaurantsContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
+      />
       <IconCardSection
         {...(RestaurantsContent.iconCardSection as IconCardSectionPropsType)}
       />

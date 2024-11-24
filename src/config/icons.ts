@@ -12,6 +12,7 @@ import check from "../../public/svg/i_check.svg";
 import checkSquare from "../../public/svg/i_check-square.svg";
 import coupons from "../../public/svg/i_coupons.svg";
 import customizationBlue from "../../public/svg/i_customization-blue.svg";
+import cursorYellow from "../../public/svg/i_cursor-yellow.svg";
 import designBlue from "../../public/svg/i_design-blue.svg";
 import faq from "../../public/svg/i_faq.svg";
 import googlePlay from "../../public/svg/i_google-play.svg";
@@ -25,10 +26,12 @@ import meatStores from "../../public/svg/i_meat-stores.svg";
 import megaphone from "../../public/svg/i_megaphone.svg";
 import milkAndTiffinSubscriptions from "../../public/svg/i_milk-and-tiffin-subscriptions.svg";
 import mobileBlue from "../../public/svg/i_mobile-blue.svg";
+import moneyYellow from "../../public/svg/i_money-yellow.svg";
 import paperBlue from "../../public/svg/i_paper-blue.svg";
 import paperCheckBlue from "../../public/svg/i_paper-check-blue.svg";
 import petStores from "../../public/svg/i_pet-stores.svg";
 import restaurants from "../../public/svg/i_restaurants.svg";
+import restaurantsYellow from "../../public/svg/i_restaurants-yellow.svg";
 import sale from "../../public/svg/i_sale.svg";
 import sectionSeparator from "../../public/svg/i_section-separator.svg";
 import sectionSeparatorBig from "../../public/svg/i_section-separator-big.svg";
@@ -76,4 +79,7 @@ export const Icons = {
   "table-blue": tableBlue,
   videos,
   megaphone,
+  "cursor-yellow": cursorYellow,
+  "money-yellow": moneyYellow,
+  "restaurants-yellow": restaurantsYellow,
 } as { [key: string]: string };

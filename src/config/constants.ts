@@ -42,3 +42,8 @@ export enum Colors {
   BLUE = "blue",
   YELLOW = "yellow",
 }
+
+export enum ThemeCardVariant {
+  MOBILE = "mobile",
+  STANDARD = "standard",
+}

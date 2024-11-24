@@ -1,1 +1,4 @@
-export { renderAnimatedCard } from "./renderAnimatedCard";
+export {
+  renderAnimatedCard,
+  type AnimatedCardPropsType,
+} from "./renderAnimatedCard";
