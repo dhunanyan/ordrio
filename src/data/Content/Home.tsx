@@ -144,7 +144,7 @@ export const HomeContent = {
   },
   carouselSection: {
     title: "Themes & Customization",
-    subtitle: "Ordrio adapts to every business's needs. ",
+    subtitle: "Ordrio adapts to every business's needs.",
     description:
       "Whether you're launching a restaurant, boutique, or tech store, we offer stunning templates tailored to you. Customize easily to match your brand and start selling!",
     buttons: [

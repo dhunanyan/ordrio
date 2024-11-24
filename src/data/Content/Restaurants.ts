@@ -62,7 +62,7 @@ export const RestaurantsContent = {
       {
         title: "Own Your Online Presence",
         description:
-          "Create a beautiful, branded website or mobile app where customers can easily browse your menu, place orders, and make reservations. ",
+          "Create a beautiful, branded website or mobile app where customers can easily browse your menu, place orders, and make reservations.",
         imageURL: "/images/tiger-boxes-card.png",
       },
       {
@@ -151,8 +151,7 @@ export const RestaurantsContent = {
   },
   bannerSection1: {
     title: "Integrated Payments",
-    description:
-      "Accept a variety of payment methods securely and seamlessly. ",
+    description: "Accept a variety of payment methods securely and seamlessly.",
     subtitle: "Download App",
     links: [
       { text: Icons["google-play"], href: "#" },

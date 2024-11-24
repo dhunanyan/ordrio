@@ -107,69 +107,69 @@ export const GroceriesAndSupermarketsContent = {
   },
   iconCardSection: {
     backgroundImageURL: "/images/grey-spiral.png",
-    title: "Key Features for a Thriving Restaurant",
+    title: "Features That Make Your Grocery Store Shine Online",
     color: Colors.WHITE,
     cards: [
       {
-        icon: "car-blue",
-        title: "Online Ordering & Delivery",
+        icon: "marketplace-blue",
+        title: "Customizable Storefront",
         description:
-          "Offer convenient online ordering for pickup, delivery, or dine-in.",
-      },
-      {
-        icon: "table-blue",
-        title: "Table Reservations",
-        description: "Manage reservations seamlessly and avoid overbooking.",
-      },
-      {
-        icon: "paper-check-blue",
-        title: "Menu Management",
-        description:
-          "Easily update your menu with photos, descriptions, and pricing.",
-      },
-      {
-        icon: "paper-blue",
-        title: "Inventory & Recipe Management",
-        description:
-          "Track ingredient usage, optimize stock levels, and control costs.",
-      },
-      {
-        icon: "graph-blue",
-        title: "Reporting & Analytics",
-        description:
-          "Gain insights into sales, customer behaviour, and operational efficiency.",
+          "Design your online store to match your brand's personality.",
       },
       {
         icon: "mobile-blue",
         title: "Custom Mobile Apps",
         description:
-          "Provide a branded app for iOS and Android for an even more seamless experience.",
+          "Give your customers a dedicated app for easy ordering and a seamless shopping experience.",
       },
+      {
+        icon: "paper-check-blue",
+        title: "Easy Inventory Management",
+        description: "Keep your online shelves stocked and organized.",
+      },
+      {
+        icon: "ticket-blue",
+        title: "Flexible Pricing & Promotions",
+        description:
+          "Track ingredient usage, optimize stock levels, and control costs.",
+      },
+      {
+        icon: "paper-blue",
+        title: "Convenient Ordering & Checkout",
+        description: "Make it easy for customers to shop and pay.",
+      },
+      {
+        icon: "car-blue",
+        title: "Delivery & Pickup Options",
+        description:
+          "Let your customers choose how they want to receive their groceries.",
+      },
+      ,
     ],
   },
   bannerSection1: {
-    title: "Integrated Payments",
+    title: "Sales Insights",
     description:
-      "Accept a variety of payment methods securely and seamlessly. ",
+      "Monitor your performance in real-time with detailed analytics, allowing you to make informed, data-driven decisions. Utilize these insights to optimize your strategies, enhance productivity, and achieve superior results",
     subtitle: "Download App",
     links: [
       { text: Icons["google-play"], href: "#" },
       { text: Icons["app-store"], href: "#" },
     ],
     backgroundImageURL: "/images/blue-small-spirals.png",
-    imageURL: "/images/mobile-payments.png",
+    imageURL: "/images/tiger-in-phone.png",
     tintColor: "white",
   },
   bigCardsSection2: {
     cards: [
       {
-        title: "Customer Relationship Management",
+        title: "Customer Accounts",
         description:
-          "Build customer profiles, track order history, and send personalized offers.",
+          "Build relationships with customers through profiles and order history.",
         type: AnimatedCard.RELATIONSHIP,
       },
       {
-        title: "Marketing & <span>Promotions</span>",
+        title: "Marketing <span>Tools</span>",
         description:
           "Create targeted campaigns, send email newsletters, and manage social media.",
         type: AnimatedCard.MARKETING,

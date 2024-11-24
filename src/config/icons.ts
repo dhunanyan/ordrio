@@ -22,6 +22,7 @@ import howToGuide from "../../public/svg/i_how-to-guide.svg";
 import info from "../../public/svg/i_info.svg";
 import logo from "../../public/svg/i_logo.svg";
 import marketplace from "../../public/svg/i_marketplace.svg";
+import marketplaceBlue from "../../public/svg/i_marketplace-blue.svg";
 import meatStores from "../../public/svg/i_meat-stores.svg";
 import megaphone from "../../public/svg/i_megaphone.svg";
 import milkAndTiffinSubscriptions from "../../public/svg/i_milk-and-tiffin-subscriptions.svg";
@@ -38,6 +39,7 @@ import sectionSeparatorBig from "../../public/svg/i_section-separator-big.svg";
 import services from "../../public/svg/i_services.svg";
 import support from "../../public/svg/i_support.svg";
 import squaresYellow from "../../public/svg/i_squares-yellow.svg";
+import ticketBlue from "../../public/svg/i_ticket-blue.svg";
 import tableBlue from "../../public/svg/i_table-blue.svg";
 import videos from "../../public/svg/i_videos.svg";
 import windowCheckYellow from "../../public/svg/i_window-check-yellow.svg";
@@ -66,6 +68,7 @@ export const Icons = {
   info,
   logo,
   marketplace,
+  "marketplace-blue": marketplaceBlue,
   "meat-stores": meatStores,
   "milk-and-tiffin-subscriptions": milkAndTiffinSubscriptions,
   "mobile-blue": mobileBlue,
@@ -86,4 +89,5 @@ export const Icons = {
   "restaurants-yellow": restaurantsYellow,
   "squares-yellow": squaresYellow,
   "window-check-yellow": windowCheckYellow,
+  "ticket-blue": ticketBlue,
 } as { [key: string]: string };

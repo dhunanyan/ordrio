@@ -4,7 +4,7 @@ import {
   BigCardsSection,
   CommonSection,
   Hero,
-  // IconCardSection,
+  IconCardSection,
   SlideshowSection,
   RowCardsWithBigCard,
   ImageCardsWithContentSection,
@@ -13,7 +13,7 @@ import {
   type BigCardsSectionPropsType,
   type CommonSectionPropsType,
   type SlideshowSectionPropsType,
-  // type IconCardSectionPropsType,
+  type IconCardSectionPropsType,
   type HeroPropsType,
   type RowCardsWithBigCardPropsType,
   type ImageCardsWithContentSectionPropsType,
@@ -42,7 +42,7 @@ export default function Page() {
       <BigCardsSection
         {...(GroceriesAndSupermarketsContent.bigCardsSection1 as BigCardsSectionPropsType)}
       />
-      {/* <IconCardSection
+      <IconCardSection
         {...(GroceriesAndSupermarketsContent.iconCardSection as IconCardSectionPropsType)}
       />
       <BannerSection
@@ -50,7 +50,7 @@ export default function Page() {
       />
       <BigCardsSection
         {...(GroceriesAndSupermarketsContent.bigCardsSection2 as BigCardsSectionPropsType)}
-      /> */}
+      />
       <AccordionSection
         {...(GroceriesAndSupermarketsContent.accordionSection as AccordionSectionPropsType)}
       />
