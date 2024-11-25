@@ -35,7 +35,6 @@ export const IconCard = ({
     ) : (
       <motion.div
         className="icon-card__icon"
-        dangerouslySetInnerHTML={{ __html: Icons[icon] }}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: index * 0.1 }}
@@ -66,7 +65,8 @@ export const IconCard = ({
         transition={{ duration: 0.4, delay: 0.65 }}
       >
         <Link href={link?.href} className="icon-card__link">
-          {link.text} <span dangerouslySetInnerHTML={{ __html: link.icon }} />
+          {link.text}
+          <span dangerouslySetInnerHTML={{ __html: Icons[link.icon] }} />
         </Link>
       </motion.div>
     )}

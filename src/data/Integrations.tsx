@@ -1,4 +1,4 @@
-import { AnimatedCard, Colors, Icons, SectionSeparator } from "@config";
+import { AnimatedCard, Colors, SectionSeparator } from "@config";
 
 export const IntegrationsContent = {
   hero: {
@@ -22,28 +22,28 @@ export const IntegrationsContent = {
         title: "Make an Impact",
         description:
           "Your work will directly influence the success of thousands of online businesses worldwide.",
-        link: { text: "Install", href: "#", icon: Icons["arrow-right-circle"] },
+        link: { text: "Install", href: "#", icon: "arrow-right-circle" },
       },
       {
         icon: "icons/facebook-ads.png",
         title: "Embrace Innovation",
         description:
           "We are constantly pushing boundaries and exploring new technologies to stay ahead of the curve.",
-        link: { text: "Install", href: "#", icon: Icons["arrow-right-circle"] },
+        link: { text: "Install", href: "#", icon: "arrow-right-circle" },
       },
       {
         icon: "icons/google-merchant-center.png",
         title: "Collaborative Culture",
         description:
           "We believe in teamwork, open communication, and a supportive environment where everyone's ideas are valued.",
-        link: { text: "Install", href: "#", icon: Icons["arrow-right-circle"] },
+        link: { text: "Install", href: "#", icon: "arrow-right-circle" },
       },
       {
         icon: "icons/multiple-payments-gateways.png",
         title: "Growth Opportunitie",
         description:
           "We invest in our employees' development, providing opportunities for learning, mentorship, and career advancement.",
-        link: { text: "Install", href: "#", icon: Icons["arrow-right-circle"] },
+        link: { text: "Install", href: "#", icon: "arrow-right-circle" },
       },
     ],
   },

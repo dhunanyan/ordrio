@@ -34,7 +34,24 @@ TODO: fix slide show bug - opposite direction to be removed
 
 TODO: use `flex: 1;` in Plan and PlanCompare (will fix your life on mobile layout)
 
+TODO: Reduce shadows
+
+TODO: FAQ Flickering?
+
 ---
 
 PAGES: 14 + 6
 PAGES LEFT: 4 + 6
+
+https://ordrio.netlify.app/
+https://ordrio.netlify.app/about-us
+https://ordrio.netlify.app/careers
+https://ordrio.netlify.app/clothing-and-accessories
+https://ordrio.netlify.app/groceries-and-supermarkets
+https://ordrio.netlify.app/integrations
+https://ordrio.netlify.app/milk-and-tiffin-subscriptions
+https://ordrio.netlify.app/plugins
+https://ordrio.netlify.app/pricing
+https://ordrio.netlify.app/product-tour
+https://ordrio.netlify.app/restaurants
+https://ordrio.netlify.app/themes

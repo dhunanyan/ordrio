@@ -13,7 +13,6 @@ export type HeroPropsType = {
   description?: string;
   link?: { text: string; href: string };
   children?: React.ReactNode;
-  alignChildrenOutOfBox?: boolean;
   sectionSeparator?: SectionSeparator;
   bottomImageURL?: string;
 };
@@ -24,7 +23,6 @@ export const Hero = ({
   description,
   link,
   children,
-  alignChildrenOutOfBox = false,
   bottomImageURL,
   sectionSeparator,
 }: HeroPropsType) => (
@@ -77,7 +75,6 @@ export const Hero = ({
       )}
       {children}
     </div>
-    {alignChildrenOutOfBox && children}
     {bottomImageURL && (
       <motion.div
         className={

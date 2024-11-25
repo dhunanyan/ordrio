@@ -4,14 +4,14 @@ import * as React from "react";
 import { motion } from "framer-motion";
 
 import { AnimatedCard, Icons } from "@config";
-import { AnimatedCardPropsType, renderAnimatedCard } from "@utils";
+import { type ContentType, renderAnimatedCard } from "@utils";
 
 import "./RowCardsWithBigCard.scss";
 
 export type RowCardsWithBigCardPropsType = {
   bigCard: {
     card: AnimatedCard;
-    props: AnimatedCardPropsType;
+    props: ContentType;
   };
   rowCards: {
     icon: string;
