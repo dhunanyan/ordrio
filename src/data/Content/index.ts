@@ -15,3 +15,4 @@ export { ThemesContent } from "./Themes";
 export { RestaurantsContent } from "./Restaurants";
 export { GroceriesAndSupermarketsContent } from "./GroceriesAndSupermarkets";
 export { ClothingAndAccessoriesContent } from "./ClothingAndAccessories";
+export { MilkAndTiffinSubscriptionsContent } from "./MilkAndTiffinSubscriptions";

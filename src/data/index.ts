@@ -13,5 +13,6 @@ export {
   ThemesContent,
   RestaurantsContent,
   GroceriesAndSupermarketsContent,
+  MilkAndTiffinSubscriptionsContent,
   ClothingAndAccessoriesContent,
 } from "./Content";

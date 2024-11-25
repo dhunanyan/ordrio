@@ -34,8 +34,8 @@ import moneyYellow from "../../public/svg/i_money-yellow.svg";
 import paperBlue from "../../public/svg/i_paper-blue.svg";
 import paperCheckBlue from "../../public/svg/i_paper-check-blue.svg";
 import petStores from "../../public/svg/i_pet-stores.svg";
-import restaurants from "../../public/svg/i_restaurants.svg";
-import restaurantsYellow from "../../public/svg/i_restaurants-yellow.svg";
+import restaurants from "../../public/svg/i_marketplace-yellow.svg";
+import marketplaceYellow from "../../public/svg/i_marketplace-yellow.svg";
 import sale from "../../public/svg/i_sale.svg";
 import sectionSeparator from "../../public/svg/i_section-separator.svg";
 import sectionSeparatorBig from "../../public/svg/i_section-separator-big.svg";
@@ -92,7 +92,7 @@ export const Icons = {
   "cursor-yellow": cursorYellow,
   "money-blue": moneyBlue,
   "money-yellow": moneyYellow,
-  "restaurants-yellow": restaurantsYellow,
+  "marketplace-yellow": marketplaceYellow,
   "squares-yellow": squaresYellow,
   "window-check-yellow": windowCheckYellow,
   "ticket-blue": ticketBlue,

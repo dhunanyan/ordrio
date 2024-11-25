@@ -86,7 +86,7 @@ export const HomeContent = {
       {
         title: "Set up payments",
         description:
-          "Revolutionize your payment experience with Ordrio swipe feature ",
+          "Revolutionize your payment experience with Ordrio swipe feature",
         imageURL: "/images/credit-cards-card.png",
       },
       {

@@ -8,7 +8,7 @@ import {
 
 export const RestaurantsContent = {
   hero: {
-    title: "Your <span>Restaurant's</span> Digital Command Center ",
+    title: "Your <span>Restaurant's</span> Digital Command Center",
     description: "Delight Diners, Simplify Operations, Grow Your Business",
     sectionSeparator: SectionSeparator.MEDIUM,
   },
@@ -33,7 +33,7 @@ export const RestaurantsContent = {
     },
     rowCards: [
       {
-        icon: "restaurants-yellow",
+        icon: "marketplace-yellow",
         title: "Built for Restaurants",
         description:
           "Our platform is designed by restaurant professionals who understand your unique challenges.",

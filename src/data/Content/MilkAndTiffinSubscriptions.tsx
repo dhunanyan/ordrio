@@ -5,49 +5,50 @@ import {
   ThemeCardVariant,
 } from "@config";
 
-export const ClothingAndAccessoriesContent = {
+export const MilkAndTiffinSubscriptionsContent = {
   hero: {
-    title: "Elevate Your <span>Fashion</span> Brand Online",
-    description: "Showcase Your Style, Captivate Your Customers",
+    title: "Simplify <span>Subscriptions</span>\nDelight Customers",
+    description:
+      "Moo & Chew is the all-in-one platform designed to help you manage your milk and tiffin subscription business effortlessly.",
     sectionSeparator: SectionSeparator.MEDIUM,
   },
   heroComponent: {
     imageURLs: [
-      "/images/slideshow/clothing-and-accessories/image-1.png",
-      "/images/slideshow/clothing-and-accessories/image-2.png",
-      "/images/slideshow/clothing-and-accessories/image-3.png",
-      "/images/slideshow/clothing-and-accessories/image-4.png",
+      "/images/slideshow/milk-and-tiffin-subscriptions/image-1.png",
+      "/images/slideshow/milk-and-tiffin-subscriptions/image-2.png",
+      "/images/slideshow/milk-and-tiffin-subscriptions/image-3.png",
+      "/images/slideshow/milk-and-tiffin-subscriptions/image-4.png",
     ],
   },
   commonSectionWithRowAndBigCards: {
-    title: "Why Choose Aura?",
+    title: "Why Moo & Chew?",
     description:
-      "Aura is not just a theme; it is a digital runway for your clothing and accessories. Create an online boutique that reflects your brand's unique aesthetic and inspires shoppers to fall in love with your collections.",
+      "Restobite is more than just online ordering. It is a comprehensive solution that empowers your restaurant to",
     backgroundColor: Colors.WHITE,
   },
   rowAndBigCardsInCommonSection: {
     bigCard: {
-      card: AnimatedCard.AURA,
+      card: AnimatedCard.GROCBAY,
       props: { variant: ThemeCardVariant.MOBILE },
     },
     rowCards: [
       {
-        icon: "clothes-yellow",
-        title: "Fashion-Forward Design",
+        icon: "marketplace-yellow",
+        title: "Built for Your Business",
         description:
-          "Aura's aesthetic is specifically tailored to the clothing and accessories industry, creating a visually appealing and on-trend shopping experience.",
+          "Our platform is specifically designed for milk and tiffin subscription services, catering to your unique needs.",
       },
       {
         icon: "cursor-yellow",
-        title: "Ease of Use",
+        title: "Easy to Use",
         description:
-          "Our intuitive platform makes it simple to set up and manage your online store, even if you have no technical experience.",
+          "Our intuitive interface makes it simple to set up and manage your subscriptions, even if you are not tech-savvy.",
       },
       {
-        icon: "graph-yellow",
-        title: "SEO-Optimized",
+        icon: "money-yellow",
+        title: "Affordable & Flexible",
         description:
-          "Boost your store's visibility in search engine results to attract more organic traffic.",
+          "Choose the plan that fits your business size and budget, and easily upgrade as you grow.",
       },
     ],
   },
@@ -58,79 +59,79 @@ export const ClothingAndAccessoriesContent = {
   commonSectionImageCards: {
     cards: [
       {
-        title: "Create a Visual Feast",
+        title: "Effortless Subscription Management",
         description:
-          "Highlight your clothing and accessories with high-res images, captivating product descriptions, and dynamic lookbooks that bring your collections to life.",
+          "Let customers easily subscribe, pause, or modify their milk and tiffin plans online or through your branded mobile app.",
         imageURL: "/images/tiger-boxes-card.png",
       },
       {
-        title: "Curate an Immersive Experience",
+        title: "Grow Your Business",
         description:
-          "Guide shoppers through your online store with intuitive navigation, personalized recommendations, and a seamless checkout process.",
-        imageURL: "/images/credit-cards-card.png",
+          "Expand your reach, increase customer satisfaction, and streamline operations with our comprehensive platform.",
+        imageURL: "/images/rocket-card.png",
       },
       {
-        title: "Build a Loyal Following",
+        title: "Simplify Payments & Billing",
         description:
-          "Foster customer engagement with social media integrations, wish lists, and email marketing campaigns that keep your brand top-of-mind.",
+          "Automate recurring payments, manage invoices, and track outstanding balances with ease.",
         imageURL: "/images/papers-card.png",
       },
       {
-        title: "Drive Sales & Growth",
+        title: "Enhance Customer Engagement",
         description:
-          "Optimize your store for conversions with strategic product placement, compelling calls to action, and abandoned cart recovery tools.",
-        imageURL: "/images/tiger-painting-card.png",
+          "Build customer loyalty with personalized offers, notifications, and feedback mechanisms.",
+        imageURL: "/images/handshake-card.png",
       },
     ],
   },
   iconCardSection: {
     backgroundImageURL: "/images/grey-spiral.png",
-    title: "Key Features for Fashion-Forward Brands",
+    title: "Key Features for a Thriving Restaurant",
     color: Colors.WHITE,
     cards: [
       {
-        icon: "paper-check-blue",
-        title: "Product Filtering & Sorting",
+        icon: "car-blue",
+        title: "Online Subscription Management",
         description:
-          "Help shoppers find exactly what they are looking for with easy-to-use filters and sorting options.",
+          "Customers can easily sign up, manage their subscriptions, and make changes on their own.",
+      },
+      {
+        icon: "table-blue",
+        title: "Customer Communication",
+        description:
+          "Send automated reminders, notifications, and promotional offers to keep your customers engaged.",
+      },
+      {
+        icon: "paper-check-blue",
+        title: "Inventory Management",
+        description:
+          "Track your stock levels, manage product variants, and ensure you always have enough to meet demand.",
       },
       {
         icon: "paper-blue",
-        title: "Size Charts & Fit Guides",
+        title: "Flexible Billing Options",
         description:
-          "Provide detailed sizing information to reduce returns and increase customer satisfaction.",
-      },
-      {
-        icon: "money-blue",
-        title: "Lookbook Creation",
-        description:
-          "Curate stunning lookbooks to highlight your collections and inspire shoppers.",
-      },
-      {
-        icon: "money-blue",
-        title: "Social Media Integration",
-        description:
-          "Connect your online store to your social media channels to expand your reach and drive traffic.",
+          "Set up recurring billing, offer discounts, and manage payment methods effortlessly.",
       },
       {
         icon: "graph-blue",
-        title: "Analytics & Reporting",
+        title: "Reporting & Analytics",
         description:
-          "Gain valuable insights into customer behavior, sales trends, and product performance.",
+          "Gain insights into sales, customer behaviour, and operational efficiency. ",
       },
       {
         icon: "mobile-blue",
-        title: "Email Marketing Tools",
+        title: "Custom Mobile Apps",
         description:
-          "Build your email list and send targeted campaigns to nurture customer relationships.",
+          "Provide a branded app for iOS and Android for an even more seamless experience.",
       },
       ,
     ],
   },
   bannerSection1: {
-    title: "Ready to Elevate Your Fashion Brand?",
+    title: "Ready to Unleash Your Marketplace Potential?",
     description:
-      "Let Aura be the spotlight that illuminates your clothing and accessories, turning shoppers into loyal fans.",
+      "Your vision. Your marketplace. Your success. HIVE is here to make it happen.",
     link: { text: "Schedule a Personalized Demo", href: "#" },
     links: [{ text: "Setup Your Free Account", href: "#" }],
     backgroundImageURL: "/images/blue-small-spirals.png",
@@ -139,15 +140,15 @@ export const ClothingAndAccessoriesContent = {
   bigCardsSection2: {
     cards: [
       {
-        title: "Customization",
+        title: "Reliable & Secure",
         description:
-          "Tailor your Aura theme to your brand's unique colors, fonts, and style preferences.",
-        type: AnimatedCard.CUSTOMIZATION,
+          "Our platform is built on robust technology to ensure your data and transactions are safe.",
+        type: AnimatedCard.SECURE,
       },
       {
-        title: "Dedicated <span>Support</span>",
+        title: "Dedicated Support",
         description:
-          "Our team is here to help you every step of the way, from setting up your store to launching successful campaigns.",
+          "Our team of experts is available to help and guide every step of the way.",
         type: AnimatedCard.SUPPORT,
       },
     ],
@@ -189,7 +190,7 @@ export const ClothingAndAccessoriesContent = {
   },
   bannerSection2: {
     backgroundImageURL: "/images/blue-spiral.png",
-    imageURL: "/images/tiger-computer.png",
+    imageURL: "/images/tiger-cart.png",
     showIcon: true,
     title: "Join the Ordrio Family",
     description:
