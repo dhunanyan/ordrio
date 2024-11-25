@@ -64,7 +64,5 @@ export {
   PositionsSection,
   type PositionsSectionPropsType,
 } from "./PositionsSection";
-export {
-  ShipPartners,
-  type ShipPartnersPropsType,
-} from "@components/ShipPartners";
+export { ShipPartners, type ShipPartnersPropsType } from "./ShipPartners";
+export { Contact, type ContactPropsType } from "./Contact";

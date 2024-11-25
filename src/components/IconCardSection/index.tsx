@@ -6,7 +6,7 @@ import Link from "next/link";
 
 import { motion } from "framer-motion";
 
-import { IconCard, type IconCardPropsType } from "./IconCard";
+import { IconCard, type IconCardPropsType } from "../IconCard";
 import { Colors, Icons } from "@config";
 
 import "./IconCardSection.scss";
