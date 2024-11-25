@@ -9,19 +9,21 @@ import {
   type HeroPropsType,
 } from "@components";
 
-import { Plugins } from "@data";
+import { PluginsContent } from "@data";
 
 export default function Page() {
   return (
     <main>
-      <Hero {...(Plugins.hero as HeroPropsType)} />
+      <Hero {...(PluginsContent.hero as HeroPropsType)} />
       <IconCardSection
-        {...(Plugins.iconCardSection as IconCardSectionPropsType)}
+        {...(PluginsContent.iconCardSection as IconCardSectionPropsType)}
       />
       <BigCardsSection
-        {...(Plugins.bigCardsSection as BigCardsSectionPropsType)}
+        {...(PluginsContent.bigCardsSection as BigCardsSectionPropsType)}
       />
-      <BannerSection {...(Plugins.bannerSection as BannerSectionPropsType)} />
+      <BannerSection
+        {...(PluginsContent.bannerSection as BannerSectionPropsType)}
+      />
     </main>
   );
 }

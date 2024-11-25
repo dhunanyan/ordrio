@@ -13,29 +13,31 @@ import {
   type ContentWithImageSectionPropsType,
 } from "@components";
 
-import { AboutUs } from "@data";
+import { AboutUsContent } from "@data";
 
 export default function Page() {
   return (
     <main>
-      <Hero {...(AboutUs.hero as HeroPropsType)}>
+      <Hero {...(AboutUsContent.hero as HeroPropsType)}>
         <SlideshowSection
-          {...(AboutUs.heroComponent as SlideshowSectionPropsType)}
+          {...(AboutUsContent.heroComponent as SlideshowSectionPropsType)}
         />
       </Hero>
       <ContentWithImageSection
-        {...(AboutUs.contentWithImageSection1 as ContentWithImageSectionPropsType)}
+        {...(AboutUsContent.contentWithImageSection1 as ContentWithImageSectionPropsType)}
       />
       <ContentWithImageSection
-        {...(AboutUs.contentWithImageSection2 as ContentWithImageSectionPropsType)}
+        {...(AboutUsContent.contentWithImageSection2 as ContentWithImageSectionPropsType)}
       />
       <IconCardSection
-        {...(AboutUs.iconCardSection as IconCardSectionPropsType)}
+        {...(AboutUsContent.iconCardSection as IconCardSectionPropsType)}
       />
       <BigCardsSection
-        {...(AboutUs.bigCardsSection as BigCardsSectionPropsType)}
+        {...(AboutUsContent.bigCardsSection as BigCardsSectionPropsType)}
       />
-      <BannerSection {...(AboutUs.bannerSection as BannerSectionPropsType)} />
+      <BannerSection
+        {...(AboutUsContent.bannerSection as BannerSectionPropsType)}
+      />
     </main>
   );
 }

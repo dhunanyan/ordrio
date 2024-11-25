@@ -24,12 +24,15 @@ TODO: get rid of blue and yellow icons
 
 TODO: Remove SASS duplications and use mixins
 
-TODO: add plugins: src\data\Plugins.tsx (@TODO comment is placed)
+TODO: add plugins: src\data\PluginsContent.tsx (@TODO comment is placed)
 
 TODO: fix banner background image
 
 TODO: organize assets folder
 
+TODO: use `flex: 1;` in Plan and PlanCompare (will fix your life on mobile layout)
+
 ---
 
 PAGES: 14 + 6
+PAGES LEFT: 4 + 6

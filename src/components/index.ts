@@ -60,3 +60,7 @@ export {
   ContentWithImageSection,
   type ContentWithImageSectionPropsType,
 } from "./ContentWithImageSection";
+export {
+  PositionsSection,
+  type PositionsSectionPropsType,
+} from "./PositionsSection";

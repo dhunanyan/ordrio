@@ -5,6 +5,7 @@ import arrowRightCircle from "../../public/svg/i_arrow-right-circle.svg";
 import appStore from "../../public/svg/i_app-store.svg";
 import aboutUs from "../../public/svg/i_about-us.svg";
 import bulbBlue from "../../public/svg/i_bulb-blue.svg";
+import bulbYellow from "../../public/svg/i_bulb-yellow.svg";
 import carBlue from "../../public/svg/i_car-blue.svg";
 import cafes from "../../public/svg/i_cafes.svg";
 import careers from "../../public/svg/i_careers.svg";
@@ -14,6 +15,7 @@ import checkSquare from "../../public/svg/i_check-square.svg";
 import clothesYellow from "../../public/svg/i_clothes-yellow.svg";
 import coupons from "../../public/svg/i_coupons.svg";
 import collaborativeBlue from "../../public/svg/i_collaborative-blue.svg";
+import collaborativeYellow from "../../public/svg/i_collaborative-yellow.svg";
 import customizationBlue from "../../public/svg/i_customization-blue.svg";
 import cursorYellow from "../../public/svg/i_cursor-yellow.svg";
 import customerCentricBlue from "../../public/svg/i_customer-centric-blue.svg";
@@ -42,6 +44,7 @@ import petStores from "../../public/svg/i_pet-stores.svg";
 import restaurants from "../../public/svg/i_restaurants.svg";
 import marketplaceYellow from "../../public/svg/i_marketplace-yellow.svg";
 import rocketBlue from "../../public/svg/i_rocket-blue.svg";
+import rocketYellow from "../../public/svg/i_rocket-yellow.svg";
 import sale from "../../public/svg/i_sale.svg";
 import sectionSeparator from "../../public/svg/i_section-separator.svg";
 import sectionSeparatorBig from "../../public/svg/i_section-separator-big.svg";
@@ -112,4 +115,7 @@ export const Icons = {
   "customer-centric-blue": customerCentricBlue,
   "rocket-blue": rocketBlue,
   "shield-blue": shieldBlue,
+  "collaborative-yellow": collaborativeYellow,
+  "bulb-yellow": bulbYellow,
+  "rocket-yellow": rocketYellow,
 } as { [key: string]: string };

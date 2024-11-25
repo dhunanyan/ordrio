@@ -1,6 +1,6 @@
 import { AnimatedCard, Colors } from "@config";
 
-export const AboutUs = {
+export const AboutUsContent = {
   hero: {
     title: "We are More Than Just <span>Techies</span>",
     description:
@@ -26,7 +26,7 @@ export const AboutUs = {
     icon: "three-dots",
     title: "Mission",
     description:
-      "To empower entrepreneurs and businesses by making eCommerce accessible, affordable, and easy to use for everyone. We believe in democratizing online selling, leveling the playing field, and helping businesses thrive in the digital age. ",
+      "To empower entrepreneurs and businesses by making eCommerce accessible, affordable, and easy to use for everyone. We believe in democratizing online selling, leveling the playing field, and helping businesses thrive in the digital age.",
     switchOrder: true,
   },
   iconCardSection: {

@@ -26,74 +26,76 @@ export const IconCardSection = ({
   description,
   cards,
   color = Colors.YELLOW,
-}: IconCardSectionPropsType) => (
-  <section className={`icon-card-section icon-card-section--${color}`}>
-    {backgroundImageURL && (
-      <Image
-        placeholder="blur"
-        blurDataURL={backgroundImageURL}
-        src={backgroundImageURL}
-        alt="Background layout"
-        fill
-        sizes="100vw"
-        style={{
-          objectFit: "cover",
-        }}
-      />
-    )}
+}: IconCardSectionPropsType) => {
+  return (
+    <section className={`icon-card-section icon-card-section--${color}`}>
+      {backgroundImageURL && (
+        <Image
+          placeholder="blur"
+          blurDataURL={backgroundImageURL}
+          src={backgroundImageURL}
+          alt="Background layout"
+          fill
+          sizes="100vw"
+          style={{
+            objectFit: "cover",
+          }}
+        />
+      )}
 
-    <div className="icon-card-section__container">
-      <div className="icon-card-section__content">
-        {withIcon && (
-          <motion.div
-            className="icon-card-section__icon"
-            dangerouslySetInnerHTML={{ __html: Icons["check"] }}
+      <div className="icon-card-section__container">
+        <div className="icon-card-section__content">
+          {withIcon && (
+            <motion.div
+              className="icon-card-section__icon"
+              dangerouslySetInnerHTML={{ __html: Icons["check"] }}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3 }}
+              viewport={{ once: true }}
+            />
+          )}
+          <motion.h2
+            className="icon-card-section__title"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.3, delay: 0.2 }}
             viewport={{ once: true }}
-          />
-        )}
-        <motion.h2
-          className="icon-card-section__title"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: 0.2 }}
-          viewport={{ once: true }}
+          >
+            {title}
+          </motion.h2>
+          {description && (
+            <motion.p
+              className="icon-card-section__description"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: 0.3 }}
+              viewport={{ once: true }}
+            >
+              {description}
+            </motion.p>
+          )}
+        </div>
+        <ul
+          className={
+            "icon-card-section__cards" +
+            (cards.length > 4 ? " icon-card-section__cards--wrap" : "")
+          }
         >
-          {title}
-        </motion.h2>
-        {description && (
-          <motion.p
-            className="icon-card-section__description"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            {description}
-          </motion.p>
-        )}
+          {cards.map((card, i) => (
+            <motion.li
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: i * 0.1 }}
+              viewport={{ once: true }}
+              className="icon-card-section__cards-item"
+            >
+              <IconCard index={i} {...card} />
+            </motion.li>
+          ))}
+        </ul>
       </div>
-      <ul
-        className={
-          "icon-card-section__cards" +
-          (cards.length > 3 ? " icon-card-section__cards--wrap" : "")
-        }
-      >
-        {cards.map((card, i) => (
-          <motion.li
-            key={i}
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: i * 0.1 }}
-            viewport={{ once: true }}
-            className="icon-card-section__cards-item"
-          >
-            <IconCard index={i} {...card} />
-          </motion.li>
-        ))}
-      </ul>
-    </div>
-  </section>
-);
+    </section>
+  );
+};

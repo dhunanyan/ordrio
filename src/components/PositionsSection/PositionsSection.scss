@@ -1,0 +1,101 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.positions-section {
+  &__container {
+    @include container;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 0 80px;
+  }
+
+  &__title {
+    color: $black-color;
+    font-family: $font-spoof-trail;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+  }
+
+  &__description {
+    color: $black-color;
+    font-family: $font-inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    border-top: $grey-blue-color 1px solid;
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 0;
+
+    &-index {
+      border-radius: 90px;
+      border: 1px solid $grey-color-darker;
+      color: $black-color;
+      font-family: $font-inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      margin: 0 0 auto 0;
+      padding: 10px;
+      text-align: center;
+      flex: 0.2;
+    }
+
+    &-title {
+      color: $black-color;
+      font-family: $font-inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+      margin: 0 0 0 50px;
+      flex: 0.7;
+    }
+
+    &-requirements {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+      margin: 0 0 0 50px;
+      flex: 1;
+    }
+
+    &-requirement {
+      color: $black-color;
+      font-family: $font-inter;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 28px;
+      flex: 1;
+    }
+
+    &-link {
+      @include buttonBlue;
+      flex: 0.3;
+      margin: 0 0 auto 50px;
+      overflow: hidden;
+
+      &:hover {
+        flex: 0.34;
+      }
+    }
+  }
+}

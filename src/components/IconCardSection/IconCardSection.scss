@@ -53,20 +53,23 @@
   }
 
   &__cards {
-    align-items: center;
+    align-items: stretch;
     display: flex;
     justify-content: center;
     gap: 24px;
 
     &--wrap {
       flex-wrap: wrap;
-      align-items: stretch;
 
       > li {
         width: calc((100% - 24px * 2) / 3);
-        display: flex;
-        flex-direction: column;
       }
+    }
+
+    > li {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
     }
   }
 

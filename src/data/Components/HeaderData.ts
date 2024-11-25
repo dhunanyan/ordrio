@@ -63,7 +63,7 @@ export const DropdownData = {
         href: "/ordrio-ship",
       },
       {
-        title: "Plugins",
+        title: "PluginsContent",
         description: "Tools that you may need",
         href: "/plugins",
       },

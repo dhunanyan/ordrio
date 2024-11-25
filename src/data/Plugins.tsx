@@ -1,6 +1,6 @@
 import { AnimatedCard, Colors } from "@config";
 
-export const Plugins = {
+export const PluginsContent = {
   hero: {
     title: "Customize Your Store with Powerful <span>Add-ons</span>",
     description:

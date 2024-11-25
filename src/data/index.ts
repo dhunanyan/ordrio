@@ -17,5 +17,6 @@ export { RestaurantsContent } from "./Restaurants";
 export { GroceriesAndSupermarketsContent } from "./GroceriesAndSupermarkets";
 export { ClothingAndAccessoriesContent } from "./ClothingAndAccessories";
 export { MilkAndTiffinSubscriptionsContent } from "./MilkAndTiffinSubscriptions";
-export { Plugins } from "./Plugins";
-export { AboutUs } from "./AboutUs";
+export { PluginsContent } from "./Plugins";
+export { AboutUsContent } from "./AboutUs";
+export { CareersContent } from "./Careers";
