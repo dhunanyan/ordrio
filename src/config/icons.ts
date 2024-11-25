@@ -22,6 +22,7 @@ import graphYellow from "../../public/svg/i_graph-yellow.svg";
 import groceriesAndSupermarkets from "../../public/svg/i_groceries-and-supermarkets.svg";
 import howToGuide from "../../public/svg/i_how-to-guide.svg";
 import info from "../../public/svg/i_info.svg";
+import globeBlue from "../../public/svg/i_globe-blue.svg";
 import logo from "../../public/svg/i_logo.svg";
 import marketplace from "../../public/svg/i_marketplace.svg";
 import marketplaceBlue from "../../public/svg/i_marketplace-blue.svg";
@@ -31,6 +32,7 @@ import milkAndTiffinSubscriptions from "../../public/svg/i_milk-and-tiffin-subsc
 import mobileBlue from "../../public/svg/i_mobile-blue.svg";
 import moneyBlue from "../../public/svg/i_money-blue.svg";
 import moneyYellow from "../../public/svg/i_money-yellow.svg";
+import monitorBlue from "../../public/svg/i_monitor-blue.svg";
 import paperBlue from "../../public/svg/i_paper-blue.svg";
 import paperCheckBlue from "../../public/svg/i_paper-check-blue.svg";
 import petStores from "../../public/svg/i_pet-stores.svg";
@@ -96,4 +98,6 @@ export const Icons = {
   "squares-yellow": squaresYellow,
   "window-check-yellow": windowCheckYellow,
   "ticket-blue": ticketBlue,
+  "globe-blue": globeBlue,
+  "monitor-blue": monitorBlue,
 } as { [key: string]: string };

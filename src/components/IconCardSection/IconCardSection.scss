@@ -30,6 +30,16 @@
     @include title;
   }
 
+  &__description {
+    color: $black-color;
+    text-align: center;
+    font-family: $font-inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+  }
+
   &__icon {
     align-items: center;
     border-radius: 50%;

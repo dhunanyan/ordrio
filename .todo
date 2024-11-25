@@ -22,6 +22,10 @@ TODO: Banner Section add button styles inside `link { prop here }`
 
 TODO: get rid of blue and yellow icons
 
+TODO: Remove SASS duplications and use mixins
+
+TODO: add plugins: src\data\Plugins.tsx (@TODO comment is placed)
+
 ---
 
 PAGES: 14 + 6

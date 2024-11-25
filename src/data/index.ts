@@ -1,18 +1,20 @@
 export { HtmlMeta } from "./HtmlMeta";
 export {
-  NavItemType,
-  HeaderData,
-  DropdownData,
-  HomeContent,
-  PricingContent,
   PlanContent,
   PlanWithExtraContent,
   ComparePlansContent,
-  ProductTourContent,
   AnimatedCardsContent,
-  ThemesContent,
-  RestaurantsContent,
-  GroceriesAndSupermarketsContent,
-  MilkAndTiffinSubscriptionsContent,
-  ClothingAndAccessoriesContent,
-} from "./Content";
+  HeaderData,
+  DropdownData,
+  NavItemType,
+} from "./Components";
+
+export { HomeContent } from "./Home";
+export { PricingContent } from "./Pricing";
+export { ProductTourContent } from "./ProductTour";
+export { ThemesContent } from "./Themes";
+export { RestaurantsContent } from "./Restaurants";
+export { GroceriesAndSupermarketsContent } from "./GroceriesAndSupermarkets";
+export { ClothingAndAccessoriesContent } from "./ClothingAndAccessories";
+export { MilkAndTiffinSubscriptionsContent } from "./MilkAndTiffinSubscriptions";
+export { Plugins } from "./Plugins";

@@ -14,6 +14,7 @@ export type IconCardSectionPropsType = {
   withIcon?: boolean;
   backgroundImageURL: string;
   title: string;
+  description: string;
   cards: Omit<IconCardPropsType, "index">[];
   color?: Colors;
 };
@@ -22,6 +23,7 @@ export const IconCardSection = ({
   withIcon,
   backgroundImageURL,
   title,
+  description,
   cards,
   color = Colors.YELLOW,
 }: IconCardSectionPropsType) => (
@@ -61,6 +63,17 @@ export const IconCardSection = ({
         >
           {title}
         </motion.h2>
+        {description && (
+          <motion.p
+            className="icon-card-section__description"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.3 }}
+            viewport={{ once: true }}
+          >
+            {description}
+          </motion.p>
+        )}
       </div>
       <ul
         className={
