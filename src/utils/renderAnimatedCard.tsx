@@ -219,6 +219,30 @@ export const renderAnimatedCard = (
           content={content}
         />
       );
+    case AnimatedCardType.VISION:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.VISION}
+          assets={getAnimatedCardAssets(AnimatedCardType.VISION)}
+          background={{
+            type: AnimatedCardBackground.NO_ASSET,
+            color: AnimatedCardBackgroundColor.LIGHT_YELLOW,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.WE_ARE:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.WE_ARE}
+          assets={getAnimatedCardAssets(AnimatedCardType.WE_ARE)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.LIGHT_WHITE,
+          }}
+          content={content}
+        />
+      );
     default:
       return null;
   }

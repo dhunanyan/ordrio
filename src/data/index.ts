@@ -18,3 +18,4 @@ export { GroceriesAndSupermarketsContent } from "./GroceriesAndSupermarkets";
 export { ClothingAndAccessoriesContent } from "./ClothingAndAccessories";
 export { MilkAndTiffinSubscriptionsContent } from "./MilkAndTiffinSubscriptions";
 export { Plugins } from "./Plugins";
+export { AboutUs } from "./AboutUs";

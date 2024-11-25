@@ -117,7 +117,7 @@ export const MilkAndTiffinSubscriptionsContent = {
         icon: "graph-blue",
         title: "Reporting & Analytics",
         description:
-          "Gain insights into sales, customer behaviour, and operational efficiency. ",
+          "Gain insights into sales, customer behaviour, and operational efficiency.",
       },
       {
         icon: "mobile-blue",
@@ -191,7 +191,7 @@ export const MilkAndTiffinSubscriptionsContent = {
   bannerSection2: {
     backgroundImageURL: "/images/blue-spiral.png",
     imageURL: "/images/tiger-cart.png",
-    showIcon: true,
+    icon: "check",
     title: "Join the Ordrio Family",
     description:
       "We're here to support you every step of the way, from setup to your first online order and beyond.",

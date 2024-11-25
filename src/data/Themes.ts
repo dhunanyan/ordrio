@@ -143,7 +143,7 @@ export const ThemesContent = {
   bannerSection: {
     backgroundImageURL: "/images/blue-spiral.png",
     imageURL: "/images/tiger-boxes.png",
-    showIcon: true,
+    icon: "check",
     title: "Ready to Make a Statement?",
     description:
       "Let your online store be an extension of your brand's unique personality. Choose Ordrio and start telling your story today",

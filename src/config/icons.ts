@@ -4,6 +4,7 @@ import arrowRight from "../../public/svg/i_arrow-right.svg";
 import arrowRightCircle from "../../public/svg/i_arrow-right-circle.svg";
 import appStore from "../../public/svg/i_app-store.svg";
 import aboutUs from "../../public/svg/i_about-us.svg";
+import bulbBlue from "../../public/svg/i_bulb-blue.svg";
 import carBlue from "../../public/svg/i_car-blue.svg";
 import cafes from "../../public/svg/i_cafes.svg";
 import careers from "../../public/svg/i_careers.svg";
@@ -12,8 +13,10 @@ import check from "../../public/svg/i_check.svg";
 import checkSquare from "../../public/svg/i_check-square.svg";
 import clothesYellow from "../../public/svg/i_clothes-yellow.svg";
 import coupons from "../../public/svg/i_coupons.svg";
+import collaborativeBlue from "../../public/svg/i_collaborative-blue.svg";
 import customizationBlue from "../../public/svg/i_customization-blue.svg";
 import cursorYellow from "../../public/svg/i_cursor-yellow.svg";
+import customerCentricBlue from "../../public/svg/i_customer-centric-blue.svg";
 import designBlue from "../../public/svg/i_design-blue.svg";
 import faq from "../../public/svg/i_faq.svg";
 import googlePlay from "../../public/svg/i_google-play.svg";
@@ -36,16 +39,19 @@ import monitorBlue from "../../public/svg/i_monitor-blue.svg";
 import paperBlue from "../../public/svg/i_paper-blue.svg";
 import paperCheckBlue from "../../public/svg/i_paper-check-blue.svg";
 import petStores from "../../public/svg/i_pet-stores.svg";
-import restaurants from "../../public/svg/i_marketplace-yellow.svg";
+import restaurants from "../../public/svg/i_restaurants.svg";
 import marketplaceYellow from "../../public/svg/i_marketplace-yellow.svg";
+import rocketBlue from "../../public/svg/i_rocket-blue.svg";
 import sale from "../../public/svg/i_sale.svg";
 import sectionSeparator from "../../public/svg/i_section-separator.svg";
 import sectionSeparatorBig from "../../public/svg/i_section-separator-big.svg";
 import services from "../../public/svg/i_services.svg";
+import shieldBlue from "../../public/svg/i_shield-blue.svg";
 import support from "../../public/svg/i_support.svg";
 import squaresYellow from "../../public/svg/i_squares-yellow.svg";
 import ticketBlue from "../../public/svg/i_ticket-blue.svg";
 import tableBlue from "../../public/svg/i_table-blue.svg";
+import threeDots from "../../public/svg/i_three-dots.svg";
 import videos from "../../public/svg/i_videos.svg";
 import windowCheckYellow from "../../public/svg/i_window-check-yellow.svg";
 
@@ -100,4 +106,10 @@ export const Icons = {
   "ticket-blue": ticketBlue,
   "globe-blue": globeBlue,
   "monitor-blue": monitorBlue,
+  "three-dots": threeDots,
+  "bulb-blue": bulbBlue,
+  "collaborative-blue": collaborativeBlue,
+  "customer-centric-blue": customerCentricBlue,
+  "rocket-blue": rocketBlue,
+  "shield-blue": shieldBlue,
 } as { [key: string]: string };

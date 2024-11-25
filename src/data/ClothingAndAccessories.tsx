@@ -190,7 +190,7 @@ export const ClothingAndAccessoriesContent = {
   bannerSection2: {
     backgroundImageURL: "/images/blue-spiral.png",
     imageURL: "/images/tiger-computer.png",
-    showIcon: true,
+    icon: "check",
     title: "Join the Ordrio Family",
     description:
       "We're here to support you every step of the way, from setup to your first online order and beyond.",

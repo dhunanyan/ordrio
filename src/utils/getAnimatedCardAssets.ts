@@ -18,6 +18,30 @@ export const getAnimatedCardAssets = (
   type: AnimatedCard
 ): AnimatedCardAssetsType => {
   switch (type) {
+    case AnimatedCard.WE_ARE:
+      return [
+        {
+          initial: { opacity: 0, y: 100, scale: 1.3 },
+          whileInView: { opacity: 1, y: 0, scale: 1 },
+          transition: { duration: 0.5, delay: 0.2 },
+          url: "/images/animated-cards/handshake.png",
+        },
+      ];
+    case AnimatedCard.VISION:
+      return [
+        {
+          initial: { opacity: 0, scale: 1.3 },
+          whileInView: { opacity: 1, scale: 1 },
+          transition: { duration: 0.6, delay: 0.2 },
+          url: "/images/animated-cards/globe.png",
+        },
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.6, delay: 0.3 },
+          url: "/images/animated-cards/tiger-computer.png",
+        },
+      ];
     case AnimatedCard.SECURE:
       return [
         {

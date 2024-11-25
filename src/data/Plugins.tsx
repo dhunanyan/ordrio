@@ -10,9 +10,9 @@ export const Plugins = {
   // @TODO: PLUGINS HERE
   iconCardSection: {
     backgroundImageURL: "/images/grey-spiral.png",
-    title: "Unlock New Possibilities ",
+    title: "Unlock New Possibilities",
     description:
-      "Whether you want to boost sales, streamline operations, or simply add more functionality, we have got the tools you need to succeed. ",
+      "Whether you want to boost sales, streamline operations, or simply add more functionality, we have got the tools you need to succeed.",
     color: Colors.WHITE,
     cards: [
       {
@@ -25,13 +25,13 @@ export const Plugins = {
         icon: "customization-blue",
         title: "Enhance Customer Experience",
         description:
-          " Offer flexible delivery options, enable in-store pickup, and cater to B2B clients with specialized pricing.",
+          "Offer flexible delivery options, enable in-store pickup, and cater to B2B clients with specialized pricing.",
       },
       {
         icon: "globe-blue",
         title: "Go Global",
         description:
-          " Reach international customers with multi-language support and real-time shipping rates.",
+          "Reach international customers with multi-language support and real-time shipping rates.",
       },
       ,
     ],

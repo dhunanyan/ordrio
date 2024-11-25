@@ -57,6 +57,8 @@ export enum AnimatedCard {
   BUILT_FOR_GROWTH = "built-for-growth",
   DELIVERY = "delivery",
   CUSTOMIZATION = "customization",
+  VISION = "vision",
+  WE_ARE = "we-are",
 }
 
 export enum AnimatedCardBackground {

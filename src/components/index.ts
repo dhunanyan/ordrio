@@ -56,3 +56,7 @@ export {
 export { AnimatedCard } from "./AnimatedCard";
 export { ImageCards, type ImageCardsPropsType } from "./ImageCards";
 export { Theme, type ThemePropsType } from "./Theme";
+export {
+  ContentWithImageSection,
+  type ContentWithImageSectionPropsType,
+} from "./ContentWithImageSection";

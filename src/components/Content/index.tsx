@@ -11,7 +11,7 @@ import "./Content.scss";
 export type ContentPropsType = {
   title: string;
   subtitle?: string;
-  showIcon?: boolean;
+  icon?: string;
   description?: string;
   buttons?: {
     text: string;
@@ -26,7 +26,7 @@ export type ContentPropsType = {
 };
 
 export const Content = ({
-  showIcon,
+  icon,
   title,
   subtitle,
   description,
@@ -37,10 +37,10 @@ export const Content = ({
   textColor = "white",
 }: ContentPropsType) => (
   <div className={"content" + (alignLeft ? " content--align-left" : "")}>
-    {showIcon && (
+    {icon && (
       <motion.div
         className={`content__icon content__icon--${tintColor}`}
-        dangerouslySetInnerHTML={{ __html: Icons["check"] }}
+        dangerouslySetInnerHTML={{ __html: Icons[icon] }}
         initial={{ opacity: 0, x: 10 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3, delay: 0.2 }}

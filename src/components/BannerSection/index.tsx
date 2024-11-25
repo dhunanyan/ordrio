@@ -12,7 +12,7 @@ export type BannerSectionPropsType = {
   subtitle?: string;
   backgroundImageURL?: string;
   imageURL?: string;
-  showIcon?: boolean;
+  icon?: string;
   description?: string;
   links: { text: string; href: string }[];
   link?: { text: string; href: string };
@@ -23,7 +23,7 @@ export type BannerSectionPropsType = {
 export const BannerSection = ({
   backgroundImageURL,
   imageURL,
-  showIcon,
+  icon,
   title,
   subtitle,
   description,
@@ -60,7 +60,7 @@ export const BannerSection = ({
         }
       >
         <Content
-          showIcon={showIcon}
+          icon={icon}
           title={title}
           subtitle={subtitle}
           description={description}

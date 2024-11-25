@@ -201,7 +201,7 @@ export const HomeContent = {
   bannerSection: {
     backgroundImageURL: "/images/blue-spiral.png",
     imageURL: "/images/tiger-boxes.png",
-    showIcon: true,
+    icon: "check",
     title:
       "Let's Bring Your Business Online With just a few clicks, get started for free!",
     links: [{ text: "Get Started for Free", href: "#" }],
