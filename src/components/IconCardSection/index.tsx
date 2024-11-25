@@ -2,6 +2,7 @@
 
 import * as React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 import { motion } from "framer-motion";
 
@@ -14,9 +15,12 @@ export type IconCardSectionPropsType = {
   withIcon?: boolean;
   backgroundImageURL: string;
   title: string;
+  link?: { text: string; href: string };
   description: string;
   cards: Omit<IconCardPropsType, "index">[];
   color?: Colors;
+  alignCardsContentLeft?: boolean;
+  displayInRow?: boolean;
 };
 
 export const IconCardSection = ({
@@ -25,7 +29,10 @@ export const IconCardSection = ({
   title,
   description,
   cards,
+  link,
   color = Colors.YELLOW,
+  alignCardsContentLeft = false,
+  displayInRow = false,
 }: IconCardSectionPropsType) => {
   return (
     <section className={`icon-card-section icon-card-section--${color}`}>
@@ -42,8 +49,12 @@ export const IconCardSection = ({
           }}
         />
       )}
-
-      <div className="icon-card-section__container">
+      <div
+        className={
+          "icon-card-section__container" +
+          (displayInRow ? " icon-card-section__container--row" : "")
+        }
+      >
         <div className="icon-card-section__content">
           {withIcon && (
             <motion.div
@@ -75,6 +86,17 @@ export const IconCardSection = ({
               {description}
             </motion.p>
           )}
+          {link && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.65 }}
+            >
+              <Link href={link?.href} className="icon-card-section__link">
+                {link.text}
+              </Link>
+            </motion.div>
+          )}
         </div>
         <ul
           className={
@@ -91,7 +113,7 @@ export const IconCardSection = ({
               viewport={{ once: true }}
               className="icon-card-section__cards-item"
             >
-              <IconCard index={i} {...card} />
+              <IconCard index={i} {...card} alignLeft={alignCardsContentLeft} />
             </motion.li>
           ))}
         </ul>

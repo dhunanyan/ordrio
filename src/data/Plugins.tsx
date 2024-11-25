@@ -13,7 +13,7 @@ export const PluginsContent = {
     title: "Unlock New Possibilities",
     description:
       "Whether you want to boost sales, streamline operations, or simply add more functionality, we have got the tools you need to succeed.",
-    color: Colors.WHITE,
+    color: Colors.GREY,
     cards: [
       {
         icon: "monitor-blue",

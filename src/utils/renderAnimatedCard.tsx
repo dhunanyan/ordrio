@@ -4,14 +4,19 @@ import {
   AnimatedCardBackgroundColor,
   AnimatedCard as AnimatedCardType,
 } from "@config";
-import { Theme, AnimatedCard, type ThemePropsType } from "@components";
+import {
+  Theme,
+  AnimatedCard,
+  type ThemePropsType,
+  type AnimatedCardPropsType,
+} from "@components";
 import { getAnimatedCardAssets } from "./getAnimatedCardAssets";
 
-export type AnimatedCardPropsType = ThemePropsType;
+export type ContentType = ThemePropsType | AnimatedCardPropsType["content"];
 
 export const renderAnimatedCard = (
   animationType: AnimatedCardType,
-  content?: AnimatedCardPropsType
+  content?: ContentType
 ) => {
   switch (animationType) {
     case AnimatedCardType.GROCBAY:

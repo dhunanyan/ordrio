@@ -86,7 +86,7 @@ export const ClothingAndAccessoriesContent = {
   iconCardSection: {
     backgroundImageURL: "/images/grey-spiral.png",
     title: "Key Features for Fashion-Forward Brands",
-    color: Colors.WHITE,
+    color: Colors.GREY,
     cards: [
       {
         icon: "paper-check-blue",

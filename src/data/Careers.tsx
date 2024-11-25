@@ -58,13 +58,13 @@ export const CareersContent = {
     title: "Our Values",
     description:
       "Whether you want to boost sales, streamline operations, or simply add more functionality, we have got the tools you need to succeed.",
-    color: Colors.WHITE,
+    color: Colors.GREY,
     cards: [
       {
         icon: "rocket-yellow",
         title: "Make an Impact",
         description:
-          "Your work will directly influence the success of thousands of online businesses worldwide. ",
+          "Your work will directly influence the success of thousands of online businesses worldwide.",
       },
       {
         icon: "bulb-yellow",
@@ -88,9 +88,9 @@ export const CareersContent = {
   },
   bannerSection: {
     backgroundImageURL: "/images/blue-spiral.png",
-    title: "Ready to Join the Ordrio Crew? ",
+    title: "Ready to Join the Ordrio Crew?",
     description:
-      "If you’re ready to be a part of a team that values innovation, diversity, and professional growth, Reach us at Careers@ordrio.com  ",
+      "If you’re ready to be a part of a team that values innovation, diversity, and professional growth, Reach us at Careers@ordrio.com ",
     links: [{ text: "Send Mail to Ordrio Team", href: "#" }],
     alignContentLeft: false,
   },

@@ -17,6 +17,29 @@
     gap: 40px;
     position: relative;
     z-index: 1;
+
+    &--row {
+      flex-direction: row;
+      align-items: flex-start;
+
+      .icon-card-section__content {
+        align-items: flex-start;
+        min-width: 300px;
+        max-width: 400px;
+      }
+
+      .icon-card-section__cards {
+        flex-wrap: wrap;
+
+        > li {
+          width: calc((100% - 24px * 2) / 2);
+        }
+      }
+
+      * {
+        text-align: left !important;
+      }
+    }
   }
 
   &__content {
@@ -52,6 +75,10 @@
     }
   }
 
+  &__link {
+    @include buttonYellow;
+  }
+
   &__cards {
     align-items: stretch;
     display: flex;
@@ -74,6 +101,22 @@
   }
 
   &--white.icon-card-section {
+    background-color: $white-color;
+
+    .icon-card-section__title {
+      color: $black-color;
+    }
+
+    .icon-card-section__icon {
+      background-color: $blue-color;
+    }
+
+    .icon-card {
+      background-color: $white-color;
+    }
+  }
+
+  &--grey.icon-card-section {
     background-color: $grey-color;
 
     .icon-card-section__title {

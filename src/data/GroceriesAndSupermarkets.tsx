@@ -108,7 +108,7 @@ export const GroceriesAndSupermarketsContent = {
   iconCardSection: {
     backgroundImageURL: "/images/grey-spiral.png",
     title: "Features That Make Your Grocery Store Shine Online",
-    color: Colors.WHITE,
+    color: Colors.GREY,
     cards: [
       {
         icon: "marketplace-blue",

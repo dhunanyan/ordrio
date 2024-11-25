@@ -53,7 +53,7 @@ export {
   RowCardsWithBigCard,
   type RowCardsWithBigCardPropsType,
 } from "./RowCardsWithBigCard";
-export { AnimatedCard } from "./AnimatedCard";
+export { AnimatedCard, type AnimatedCardPropsType } from "./AnimatedCard";
 export { ImageCards, type ImageCardsPropsType } from "./ImageCards";
 export { Theme, type ThemePropsType } from "./Theme";
 export {
@@ -64,3 +64,7 @@ export {
   PositionsSection,
   type PositionsSectionPropsType,
 } from "./PositionsSection";
+export {
+  ShipPartners,
+  type ShipPartnersPropsType,
+} from "@components/ShipPartners";

@@ -87,7 +87,7 @@ export const MilkAndTiffinSubscriptionsContent = {
   iconCardSection: {
     backgroundImageURL: "/images/grey-spiral.png",
     title: "Key Features for a Thriving Restaurant",
-    color: Colors.WHITE,
+    color: Colors.GREY,
     cards: [
       {
         icon: "car-blue",

@@ -30,6 +30,8 @@ TODO: fix banner background image
 
 TODO: organize assets folder
 
+TODO: fix slide show bug - opposite direction to be removed
+
 TODO: use `flex: 1;` in Plan and PlanCompare (will fix your life on mobile layout)
 
 ---

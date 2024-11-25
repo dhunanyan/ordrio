@@ -12,6 +12,7 @@
   &__list {
     display: flex;
     gap: 25px;
+    justify-content: space-between;
     width: 100%;
 
     &--wrap {
