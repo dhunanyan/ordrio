@@ -24,6 +24,11 @@
 @import "./PhoneChat";
 @import "./Speaker";
 @import "./TechnologyPartner";
+@import "./ThreePeopleLaptop";
+@import "./TwoMenHandshake";
+@import "./GirlWithLaptop";
+@import "./ManWithTablet";
+@import "./ManWithSPeaker";
 
 .animated-card {
   border-radius: 24px;
@@ -32,12 +37,14 @@
   -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
   display: flex;
   height: 500px;
-  width: 100%;
+  min-height: 100%;
   overflow: hidden;
   position: relative;
+  width: 100%;
 
   > img {
     opacity: 0;
+    width: 100%;
   }
 
   &--light-white {
@@ -52,8 +59,20 @@
     background-color: $yellow-color-light-2 !important;
   }
 
-  &--yellow-2 {
-    background-color: $yellow-color-hover !important;
+  &--yellow-gradient {
+    background: $yellow-gradient !important;
+  }
+
+  &--green-gradient {
+    background: $green-gradient !important;
+  }
+
+  &--red-gradient {
+    background: $red-gradient !important;
+  }
+
+  &--grey-gradient {
+    background: $grey-gradient !important;
   }
 
   img {
@@ -220,5 +239,25 @@
 
   &__technology-partner {
     @include technologyPartner;
+  }
+
+  &__three-people-laptop {
+    @include threePeopleLaptop;
+  }
+
+  &__two-men-handshake {
+    @include twoMenHandshake;
+  }
+
+  &__girl-with-laptop {
+    @include girlWithLaptop;
+  }
+
+  &__man-with-tablet {
+    @include manWithTablet;
+  }
+
+  &__man-with-speaker {
+    @include manWithSPeaker;
   }
 }

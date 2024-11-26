@@ -14,7 +14,7 @@ export const ThemesContent = {
       "Every brand has a unique story to tell. Ordrio's curated collection of  themes helps you express your brand's personality and captivate your customers. your brand, your products, and your customers.",
     backgroundColor: Colors.WHITE,
   },
-  bigCardsInCommonSection: {
+  bigCardsInCommonSection1: {
     //@LINKS - make whole thing as a link (with title and description)
     cards: [
       {
@@ -41,6 +41,11 @@ export const ThemesContent = {
         ],
         type: AnimatedCard.RESTOBITE,
       },
+    ],
+  },
+  bigCardsInCommonSection2: {
+    //@LINKS - make whole thing as a link (with title and description)
+    cards: [
       {
         title: "Aura",
         description:

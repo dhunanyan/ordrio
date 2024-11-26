@@ -320,6 +320,66 @@ export const renderAnimatedCard = (
           content={content}
         />
       );
+    case AnimatedCardType.THREE_PEOPLE_LAPTOP:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.THREE_PEOPLE_LAPTOP}
+          assets={getAnimatedCardAssets(AnimatedCardType.THREE_PEOPLE_LAPTOP)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.YELLOW_GRADIENT,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.TWO_MEN_HANDSHAKE:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.TWO_MEN_HANDSHAKE}
+          assets={getAnimatedCardAssets(AnimatedCardType.TWO_MEN_HANDSHAKE)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.RED_GRADIENT,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.GIRL_WITH_LAPTOP:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.GIRL_WITH_LAPTOP}
+          assets={getAnimatedCardAssets(AnimatedCardType.GIRL_WITH_LAPTOP)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.GREEN_GRADIENT,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.MAN_WITH_TABLET:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.MAN_WITH_TABLET}
+          assets={getAnimatedCardAssets(AnimatedCardType.MAN_WITH_TABLET)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.GREY_GRADIENT,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.MAN_WITH_SPEAKER:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.MAN_WITH_SPEAKER}
+          assets={getAnimatedCardAssets(AnimatedCardType.MAN_WITH_SPEAKER)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.YELLOW_GRADIENT,
+          }}
+          content={content}
+        />
+      );
     default:
       return null;
   }

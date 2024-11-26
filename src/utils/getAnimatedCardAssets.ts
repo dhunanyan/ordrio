@@ -19,6 +19,51 @@ export const getAnimatedCardAssets = (
   type: AnimatedCard
 ): AnimatedCardAssetsType => {
   switch (type) {
+    case AnimatedCard.THREE_PEOPLE_LAPTOP:
+      return [
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.2 },
+          url: "/avatars/three-people-with-laptop.png",
+        },
+      ];
+    case AnimatedCard.GIRL_WITH_LAPTOP:
+      return [
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.2 },
+          url: "/avatars/girl-with-laptop.png",
+        },
+      ];
+    case AnimatedCard.MAN_WITH_SPEAKER:
+      return [
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.2 },
+          url: "/avatars/man-with-speaker.png",
+        },
+      ];
+    case AnimatedCard.TWO_MEN_HANDSHAKE:
+      return [
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.2 },
+          url: "/avatars/two-men-handshake.png",
+        },
+      ];
+    case AnimatedCard.MAN_WITH_TABLET:
+      return [
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.2 },
+          url: "/avatars/man-with-tablet.png",
+        },
+      ];
     case AnimatedCard.MONEY_BAG:
       return [
         {
@@ -112,7 +157,7 @@ export const getAnimatedCardAssets = (
           initial: { opacity: 0, y: 30 },
           whileInView: { opacity: 1, y: 0 },
           transition: { duration: 0.5, delay: 0.2 },
-          url: "/images/avatars/three-people-laptop.png",
+          url: "/avatars/three-people-with-laptop.png",
         },
       ];
     case AnimatedCard.WE_ARE:

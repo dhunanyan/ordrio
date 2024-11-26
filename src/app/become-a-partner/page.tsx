@@ -29,10 +29,20 @@ export default function Page() {
         <BigCards
           {...(BecomeAPartnerContent.bigCardsInCommonSection1 as BigCardsPropsType)}
         />
+        <BigCards
+          {...(BecomeAPartnerContent.bigCardsInCommonSection2 as BigCardsPropsType)}
+        />
       </CommonSection>
       <CommonSection
         {...(BecomeAPartnerContent.commonSection2 as CommonSectionPropsType)}
-      />
+      >
+        <BigCards
+          {...(BecomeAPartnerContent.bigCardsInCommonSection3 as BigCardsPropsType)}
+        />
+        <BigCards
+          {...(BecomeAPartnerContent.bigCardsInCommonSection4 as BigCardsPropsType)}
+        />
+      </CommonSection>
       <IconCardSection
         {...(BecomeAPartnerContent.iconCardSection as IconCardSectionPropsType)}
       />

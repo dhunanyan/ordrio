@@ -37,6 +37,10 @@ export const BecomeAPartnerContent = {
           "Provide consulting, development, or design services to Ordrio merchants and help them get the most out of our platform.",
         type: AnimatedCard.PHONE_CHAT,
       },
+    ],
+  },
+  bigCardsInCommonSection2: {
+    cards: [
       {
         title: "<span>Technology</span> Partner",
         description:
@@ -55,7 +59,49 @@ export const BecomeAPartnerContent = {
     subtitle: "Who Can Become an Ordrio Partner?",
     description: "We welcome a diverse range of partners, including",
   },
-  bigCardsInCommonSection2: {},
+  bigCardsInCommonSection3: {
+    cards: [
+      {
+        title: "Digital Agencies",
+        description: "Help businesses build and manage their online stores.",
+        link: {
+          text: "Join Now",
+          href: "https://control.ordrio.com/#/register",
+          target: "_blank",
+        },
+        type: AnimatedCard.THREE_PEOPLE_LAPTOP,
+      },
+
+      {
+        title: "eCommerce Consultants",
+        description:
+          "Provide expert guidance and support to online businesses.",
+        type: AnimatedCard.TWO_MEN_HANDSHAKE,
+      },
+    ],
+  },
+  bigCardsInCommonSection4: {
+    cards: [
+      {
+        title: "Web Developers & Designers",
+        description:
+          "Create custom themes, integrations, and features for Ordrio stores.",
+        type: AnimatedCard.GIRL_WITH_LAPTOP,
+      },
+      {
+        title: "Marketing Professionals",
+        description:
+          "Help businesses promote their online stores and drive sales.",
+        type: AnimatedCard.MAN_WITH_TABLET,
+      },
+      {
+        title: "Bloggers & Influencers",
+        description:
+          "Share your knowledge and expertise with your audience and refer them to Ordrio.",
+        type: AnimatedCard.MAN_WITH_SPEAKER,
+      },
+    ],
+  },
   iconCardSection: {
     backgroundImageURL: "/images/grey-spiral.png",
     title: "Why Partner with Ordrio?",

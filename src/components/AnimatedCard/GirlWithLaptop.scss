@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin girlWithLaptop {
+  &--1 {
+    bottom: -100px;
+    left: calc(50% - 300px / 2);
+    max-width: 300px;
+    z-index: 1;
+  }
+}

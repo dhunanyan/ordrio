@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin threePeopleLaptop {
+  &--1 {
+    bottom: -20px;
+    right: 40px;
+    max-width: 350px;
+    z-index: 1;
+  }
+}

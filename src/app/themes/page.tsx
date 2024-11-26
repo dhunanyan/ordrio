@@ -21,7 +21,10 @@ export default function Page() {
         {...(ThemesContent.commonSectionWithBigCards as CommonSectionPropsType)}
       >
         <BigCards
-          {...(ThemesContent.bigCardsInCommonSection as BigCardsPropsType)}
+          {...(ThemesContent.bigCardsInCommonSection1 as BigCardsPropsType)}
+        />
+        <BigCards
+          {...(ThemesContent.bigCardsInCommonSection2 as BigCardsPropsType)}
         />
       </CommonSection>
       <CommonSection

@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin manWithTablet {
+  &--1 {
+    bottom: -70px;
+    left: calc(50% - 350px / 2);
+    max-width: 350px;
+    z-index: 1;
+  }
+}
