@@ -16,6 +16,7 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    gap: 16px;
     max-width: 375px;
     transition: all 430ms ease-out;
   }
@@ -50,11 +51,8 @@
     border-radius: 30px;
     display: flex;
     flex-direction: column;
-    min-height: 80px;
-    max-height: max-content;
     overflow: hidden;
     padding: 24px;
-    transition: all 830ms linear;
     width: 100%;
 
     &-title {
@@ -77,6 +75,16 @@
       }
     }
 
+    &-content {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: all 250ms $animation-2;
+
+      &--active {
+        grid-template-rows: 1fr;
+      }
+    }
+
     &-description {
       color: $black-color;
       font-family: $font-inter;
@@ -84,18 +92,8 @@
       font-style: normal;
       font-weight: 400;
       line-height: 32px;
-      max-height: 0;
-      margin: 0;
-      opacity: 0;
+      overflow: hidden;
       text-align: left;
-      transition: all 800ms $animation-2;
-    }
-
-    &--active &-description {
-      transition: all 550ms $animation-2;
-      opacity: 1;
-      margin: 16px 0 0;
-      max-height: 1000px; // This is to be sure, that the whole text will be visible
     }
   }
 

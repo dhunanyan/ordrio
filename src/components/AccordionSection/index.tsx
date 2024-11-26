@@ -38,20 +38,15 @@ export const AccordionSection = ({
         </div>
         <ul className="accordion-section__list">
           {accordions.map(({ title, description }, i) => (
-            <motion.button
+            <motion.li
               key={i}
-              className={
-                "accordion-section__button" +
-                (i === activeAccordion
-                  ? " accordion-section__button--active"
-                  : "")
-              }
+              className="accordion-section__button"
               onClick={() => setActiveAccordion(i)}
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.05 * i }}
             >
-              <h2 className="accordion-section__button-title">
+              <button className="accordion-section__button-title">
                 <span>{title}</span>
                 <span
                   className={
@@ -62,11 +57,20 @@ export const AccordionSection = ({
                   }
                   dangerouslySetInnerHTML={{ __html: Icons["arrow-down"] }}
                 />
-              </h2>
-              <p className="accordion-section__button-description">
-                {description}
-              </p>
-            </motion.button>
+              </button>
+              <div
+                className={
+                  "accordion-section__button-content" +
+                  (i === activeAccordion
+                    ? " accordion-section__button-content--active"
+                    : "")
+                }
+              >
+                <p className="accordion-section__button-description">
+                  {description}
+                </p>
+              </div>
+            </motion.li>
           ))}
         </ul>
       </div>
