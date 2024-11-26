@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin howToGuides {
+  &--1 {
+    bottom: 0;
+    right: 0;
+    max-width: 300px;
+    z-index: 1;
+  }
+}

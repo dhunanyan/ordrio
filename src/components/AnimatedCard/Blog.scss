@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin blog {
+  &--1 {
+    bottom: 100px;
+    left: 0;
+    max-width: 100%;
+    z-index: 1;
+  }
+}

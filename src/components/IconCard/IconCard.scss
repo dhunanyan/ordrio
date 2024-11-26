@@ -17,6 +17,14 @@
     align-items: flex-start;
   }
 
+  &--white {
+    background-color: $white-color;
+  }
+
+  &--grey {
+    background-color: $grey-color;
+  }
+
   &__icon svg,
   &__icon img {
     height: 64px;

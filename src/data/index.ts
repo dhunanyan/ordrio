@@ -21,3 +21,4 @@ export { PluginsContent } from "./Plugins";
 export { AboutUsContent } from "./AboutUs";
 export { CareersContent } from "./Careers";
 export { IntegrationsContent } from "./Integrations";
+export { SupportContent } from "./Support";

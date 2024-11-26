@@ -6,12 +6,15 @@ import appStore from "../../public/svg/i_app-store.svg";
 import aboutUs from "../../public/svg/i_about-us.svg";
 import bulbBlue from "../../public/svg/i_bulb-blue.svg";
 import bulbYellow from "../../public/svg/i_bulb-yellow.svg";
+import bookBlue from "../../public/svg/i_book-blue.svg";
+import bookQuestionBlue from "../../public/svg/i_book-question-blue.svg";
 import carBlue from "../../public/svg/i_car-blue.svg";
 import cafes from "../../public/svg/i_cafes.svg";
 import careers from "../../public/svg/i_careers.svg";
 import clothingAndAccessories from "../../public/svg/i_clothing-and-accessories.svg";
 import check from "../../public/svg/i_check.svg";
 import checkSquare from "../../public/svg/i_check-square.svg";
+import chatBlue from "../../public/svg/i_chat-blue.svg";
 import clothesYellow from "../../public/svg/i_clothes-yellow.svg";
 import coupons from "../../public/svg/i_coupons.svg";
 import collaborativeBlue from "../../public/svg/i_collaborative-blue.svg";
@@ -29,8 +32,10 @@ import howToGuide from "../../public/svg/i_how-to-guide.svg";
 import info from "../../public/svg/i_info.svg";
 import globeBlue from "../../public/svg/i_globe-blue.svg";
 import logo from "../../public/svg/i_logo.svg";
+import mailBlue from "../../public/svg/i_mail-blue.svg";
 import marketplace from "../../public/svg/i_marketplace.svg";
 import marketplaceBlue from "../../public/svg/i_marketplace-blue.svg";
+import marketplaceYellow from "../../public/svg/i_marketplace-yellow.svg";
 import meatStores from "../../public/svg/i_meat-stores.svg";
 import megaphone from "../../public/svg/i_megaphone.svg";
 import milkAndTiffinSubscriptions from "../../public/svg/i_milk-and-tiffin-subscriptions.svg";
@@ -41,8 +46,8 @@ import monitorBlue from "../../public/svg/i_monitor-blue.svg";
 import paperBlue from "../../public/svg/i_paper-blue.svg";
 import paperCheckBlue from "../../public/svg/i_paper-check-blue.svg";
 import petStores from "../../public/svg/i_pet-stores.svg";
+import phoneBlue from "../../public/svg/i_phone-blue.svg";
 import restaurants from "../../public/svg/i_restaurants.svg";
-import marketplaceYellow from "../../public/svg/i_marketplace-yellow.svg";
 import rocketBlue from "../../public/svg/i_rocket-blue.svg";
 import rocketYellow from "../../public/svg/i_rocket-yellow.svg";
 import sale from "../../public/svg/i_sale.svg";
@@ -56,6 +61,7 @@ import ticketBlue from "../../public/svg/i_ticket-blue.svg";
 import tableBlue from "../../public/svg/i_table-blue.svg";
 import threeDots from "../../public/svg/i_three-dots.svg";
 import videos from "../../public/svg/i_videos.svg";
+import videoBlue from "../../public/svg/i_video-blue.svg";
 import windowCheckYellow from "../../public/svg/i_window-check-yellow.svg";
 
 export const Icons = {
@@ -118,4 +124,10 @@ export const Icons = {
   "collaborative-yellow": collaborativeYellow,
   "bulb-yellow": bulbYellow,
   "rocket-yellow": rocketYellow,
+  "book-blue": bookBlue,
+  "book-question-blue": bookQuestionBlue,
+  "video-blue": videoBlue,
+  "phone-blue": phoneBlue,
+  "mail-blue": mailBlue,
+  "chat-blue": chatBlue,
 } as { [key: string]: string };

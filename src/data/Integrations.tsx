@@ -49,7 +49,7 @@ export const IntegrationsContent = {
   },
   imageCardsWithContentSection: {
     backgroundImageURL: "/images/yellow-brush.png",
-    title: "Benefits of Ordrio Integrations ",
+    title: "Benefits of Ordrio Integrations",
     description:
       "Ordrio's extensive suite of integrations empowers you to streamline your workflow.",
     link: { text: "Get Started Now", href: "#" },

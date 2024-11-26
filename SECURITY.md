@@ -29,14 +29,14 @@ If you find a security vulnerability, please report it by following these steps:
    - **Affected version(s)**: Specify the affected version(s) of the **`Ordrio`**.
 3. **PGP encryption** (optional): If you would like to encrypt your report, please use our PGP public key (include a link to a PGP key if available).
 
-We will respond within **48 hours** and provide an initial assessment of the vulnerability. We’ll work with you on remediation and coordinate a public disclosure timeline if appropriate.
+We will respond within **48 hours** and provide an initial assessment of the vulnerability. We'll work with you on remediation and coordinate a public disclosure timeline if appropriate.
 
 ## Security Updates and Advisories
 
 We regularly review and address security issues and release updates as needed. Security advisories and notifications for critical updates will be available in:
 
 - [GitHub Security Advisories](https://github.com/your-repo/security/advisories)
-- [Project’s Changelog](https://github.com/your-repo/releases)
+- [Project's Changelog](https://github.com/your-repo/releases)
 
 ## Best Practices for Users
 

@@ -248,6 +248,30 @@ export const renderAnimatedCard = (
           content={content}
         />
       );
+    case AnimatedCardType.BLOG:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.BLOG}
+          assets={getAnimatedCardAssets(AnimatedCardType.BLOG)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.LIGHT_WHITE,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.HOW_TO_GUIDES:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.HOW_TO_GUIDES}
+          assets={getAnimatedCardAssets(AnimatedCardType.HOW_TO_GUIDES)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.LIGHT_YELLOW,
+          }}
+          content={content}
+        />
+      );
     default:
       return null;
   }

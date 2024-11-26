@@ -2,4 +2,86 @@
 @import "../../styles/mixins";
 
 .contact {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  &__cards {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+  }
+
+  &__more-help {
+    align-items: center;
+    border-radius: 24px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
+    display: flex;
+    padding: 40px;
+    width: calc(100% - 2 * 40px);
+
+    &--white {
+      background-color: $white-color;
+    }
+
+    &--grey {
+      background-color: $grey-color;
+    }
+
+    &-item {
+      align-items: flex-start;
+      border-left: 1px solid $grey-color-darker;
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      gap: 8px;
+      padding: 0 0 0 50px;
+
+      h3 {
+        color: $black-color;
+        font-family: $font-inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        max-width: 110px;
+      }
+
+      &:first-of-type {
+        border-left: 0;
+        padding: 0;
+      }
+
+      p {
+        color: $grey-color-darker;
+        text-align: center;
+        font-family: $font-inter;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+      }
+
+      a {
+        align-items: center;
+        color: $blue-color;
+        display: flex;
+        font-family: $font-spoof-trail;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+        gap: 4px;
+
+        span {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
 }

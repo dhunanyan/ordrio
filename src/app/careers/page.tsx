@@ -3,12 +3,13 @@ import {
   Hero,
   IconCardSection,
   SlideshowSection,
+  PositionsSection,
+  type PositionsSectionPropsType,
   type BannerSectionPropsType,
   type IconCardSectionPropsType,
   type HeroPropsType,
   type SlideshowSectionPropsType,
 } from "@components";
-import { PositionsSection, PositionsSectionPropsType } from "@components";
 
 import { CareersContent } from "@data";
 

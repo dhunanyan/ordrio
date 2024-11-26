@@ -60,6 +60,8 @@ export enum AnimatedCard {
   CUSTOMIZATION = "customization",
   VISION = "vision",
   WE_ARE = "we-are",
+  BLOG = "blog",
+  HOW_TO_GUIDES = "how-to-guides",
 }
 
 export enum AnimatedCardBackground {

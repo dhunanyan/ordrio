@@ -2,7 +2,7 @@ import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import { Icons } from "@config";
+import { Colors, Icons } from "@config";
 
 import "./IconCard.scss";
 
@@ -13,6 +13,7 @@ export type IconCardPropsType = {
   description: string;
   link?: { text: string; href: string; icon: string };
   alignLeft?: boolean;
+  color?: Colors;
 };
 
 export const IconCard = ({
@@ -22,8 +23,14 @@ export const IconCard = ({
   description,
   link,
   alignLeft = false,
+  color = Colors.WHITE,
 }: IconCardPropsType) => (
-  <div className={"icon-card" + (alignLeft ? " icon-card--align-left" : "")}>
+  <div
+    className={
+      `icon-card icon-card--${color}` +
+      (alignLeft ? " icon-card--align-left" : "")
+    }
+  >
     {Icons[icon] ? (
       <motion.div
         className="icon-card__icon"

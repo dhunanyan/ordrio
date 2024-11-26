@@ -18,7 +18,7 @@ export const CareersContent = {
   },
   positionsSection: {
     title: "Ready to Work a with Great Team?",
-    description: "Let’s Explore the opportunities",
+    description: "Let's Explore the opportunities",
     positions: [
       {
         title: "User Interface Designer",
@@ -90,7 +90,7 @@ export const CareersContent = {
     backgroundImageURL: "/images/blue-spiral.png",
     title: "Ready to Join the Ordrio Crew?",
     description:
-      "If you’re ready to be a part of a team that values innovation, diversity, and professional growth, Reach us at Careers@ordrio.com ",
+      "If you're ready to be a part of a team that values innovation, diversity, and professional growth, Reach us at Careers@ordrio.com",
     links: [{ text: "Send Mail to Ordrio Team", href: "#" }],
     alignContentLeft: false,
   },

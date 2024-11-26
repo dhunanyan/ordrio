@@ -17,12 +17,14 @@ import {
 } from "@utils";
 
 import "./AnimatedCard.scss";
+import Link from "next/link";
 
 export type AnimatedCardPropsType = {
   type: AnimatedCardType;
   content?: {
     title?: string;
     description?: string;
+    link?: { text: string; href: string };
   };
   background?: {
     type?: AnimatedCardBackground;
@@ -67,6 +69,17 @@ export const AnimatedCard = ({
           >
             {content.description}
           </motion.p>
+        )}
+        {content.link && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            transition={{ duration: 0.3, delay: 0.25 }}
+          >
+            <Link href={content.link.href} className="animated-card__link">
+              {content.link.text}
+            </Link>
+          </motion.div>
         )}
       </div>
     )}
