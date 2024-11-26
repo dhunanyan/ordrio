@@ -14,7 +14,9 @@ import { PluginsContent } from "@data";
 export default function Page() {
   return (
     <main>
-      <CommonSection {...(PluginsContent.hero as CommonSectionPropsType)} />
+      <CommonSection {...(PluginsContent.hero as CommonSectionPropsType)}>
+        <IconCards {...(PluginsContent.plugins as IconCardsPropsType)} />
+      </CommonSection>
       <CommonSection
         {...(PluginsContent.iconCardsContent as CommonSectionPropsType)}
       >
