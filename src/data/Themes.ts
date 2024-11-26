@@ -58,10 +58,13 @@ export const ThemesContent = {
     backgroundImageURL: "images/grey-spiral.png",
     backgroundColor: Colors.GREY,
   },
-  iconCardSection: {
-    withIcon: true,
+  iconCardsContent: {
     backgroundImageURL: "/images/blue-spiral.png",
     title: "Why Choose Ordrio?",
+    backgroundColor: Colors.BLUE,
+  },
+  iconCards: {
+    color: Colors.YELLOW,
     cards: [
       {
         icon: "design-blue",

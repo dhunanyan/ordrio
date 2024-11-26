@@ -31,7 +31,7 @@ export const BannerSection = ({
   links,
   link,
   tintColor = Colors.YELLOW,
-  alignContentLeft = true,
+  alignContentLeft = false,
 }: BannerSectionPropsType) => (
   <section className="banner-section">
     {backgroundImageURL && (

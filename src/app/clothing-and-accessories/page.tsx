@@ -3,7 +3,7 @@ import {
   BannerSection,
   BigCards,
   CommonSection,
-  IconCardSection,
+  IconCards,
   Slideshow,
   RowCardsWithBigCard,
   ImageCards,
@@ -11,7 +11,7 @@ import {
   type BannerSectionPropsType,
   type BigCardsPropsType,
   type SlideshowPropsType,
-  type IconCardSectionPropsType,
+  type IconCardsPropsType,
   type CommonSectionPropsType,
   type RowCardsWithBigCardPropsType,
 } from "@components";
@@ -42,9 +42,13 @@ export default function Page() {
           {...ClothingAndAccessoriesContent.commonSectionImageCards}
         />
       </CommonSection>
-      <IconCardSection
-        {...(ClothingAndAccessoriesContent.iconCardSection as IconCardSectionPropsType)}
-      />
+      <CommonSection
+        {...(ClothingAndAccessoriesContent.iconCardsContent as CommonSectionPropsType)}
+      >
+        <IconCards
+          {...(ClothingAndAccessoriesContent.iconCards as IconCardsPropsType)}
+        />
+      </CommonSection>
       <BannerSection
         {...(ClothingAndAccessoriesContent.bannerSection1 as BannerSectionPropsType)}
       />

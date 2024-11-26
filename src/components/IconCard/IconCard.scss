@@ -23,6 +23,22 @@
     background-color: $grey-color;
   }
 
+  &--yellow {
+    background-color: $yellow-color;
+
+    * {
+      color: $black-color !important;
+    }
+  }
+
+  &--blue {
+    background-color: $yellow-color;
+
+    * {
+      color: $white-color !important;
+    }
+  }
+
   &__icon svg,
   &__icon img {
     height: 64px;

@@ -12,13 +12,71 @@ export const PluginsContent = {
     },
     isFirstSection: true,
   },
+  plugins: {
+    iconCardSection: {
+      color: Colors.GREY,
+      alignCardsContentLeft: true,
+      cards: [
+        {
+          icon: "icons/whatsapp-business.png",
+          title: "Make an Impact",
+          description:
+            "Your work will directly influence the success of thousands of online businesses worldwide.",
+          link: {
+            text: "Install",
+            target: "_blank",
+            href: "https://control.ordrio.com/#/register",
+            icon: "arrow-right-circle",
+          },
+        },
+        {
+          icon: "icons/facebook-ads.png",
+          title: "Embrace Innovation",
+          description:
+            "We are constantly pushing boundaries and exploring new technologies to stay ahead of the curve.",
+          link: {
+            text: "Install",
+            target: "_blank",
+            href: "https://control.ordrio.com/#/register",
+            icon: "arrow-right-circle",
+          },
+        },
+        {
+          icon: "icons/google-merchant-center-small.png",
+          title: "Collaborative Culture",
+          description:
+            "We believe in teamwork, open communication, and a supportive environment where everyone's ideas are valued.",
+          link: {
+            text: "Install",
+            target: "_blank",
+            href: "https://control.ordrio.com/#/register",
+            icon: "arrow-right-circle",
+          },
+        },
+        {
+          icon: "icons/multiple-payments-gateways.png",
+          title: "Growth Opportunitie",
+          description:
+            "We invest in our employees' development, providing opportunities for learning, mentorship, and career advancement.",
+          link: {
+            text: "Install",
+            target: "_blank",
+            href: "https://control.ordrio.com/#/register",
+            icon: "arrow-right-circle",
+          },
+        },
+      ],
+    },
+  },
   // @TODO: PLUGINS HERE
-  iconCardSection: {
+  iconCardsContent: {
     backgroundImageURL: "/images/grey-spiral.png",
     title: "Unlock New Possibilities",
     description:
       "Whether you want to boost sales, streamline operations, or simply add more functionality, we have got the tools you need to succeed.",
-    color: Colors.GREY,
+    backgroundColor: Colors.GREY,
+  },
+  iconCards: {
     cards: [
       {
         icon: "monitor-blue",

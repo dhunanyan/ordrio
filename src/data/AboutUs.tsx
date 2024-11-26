@@ -30,12 +30,14 @@ export const AboutUsContent = {
       "To empower entrepreneurs and businesses by making eCommerce accessible, affordable, and easy to use for everyone. We believe in democratizing online selling, leveling the playing field, and helping businesses thrive in the digital age.",
     switchOrder: true,
   },
-  iconCardSection: {
+  iconCardsContent: {
     backgroundImageURL: "/images/grey-spiral.png",
     title: "Our Values",
     description:
       "Whether you want to boost sales, streamline operations, or simply add more functionality, we have got the tools you need to succeed.",
-    color: Colors.GREY,
+    backgroundColor: Colors.GREY,
+  },
+  iconCards: {
     cards: [
       {
         icon: "customer-centric-blue",

@@ -3,11 +3,11 @@ import {
   BannerSection,
   BigCards,
   CommonSection,
-  IconCardSection,
+  IconCards,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsPropsType,
-  type IconCardSectionPropsType,
+  type IconCardsPropsType,
   type CommonSectionPropsType,
 } from "@components";
 
@@ -30,9 +30,12 @@ export default function Page() {
       <CommonSection
         {...(ThemesContent.commonSection as CommonSectionPropsType)}
       />
-      <IconCardSection
-        {...(ThemesContent.iconCardSection as IconCardSectionPropsType)}
-      />
+      <CommonSection
+        {...(ThemesContent.iconCardsContent as CommonSectionPropsType)}
+      >
+        <IconCards {...(ThemesContent.iconCards as IconCardsPropsType)} />
+      </CommonSection>
+
       <CommonSection>
         <BigCards {...(ThemesContent.bigCardsSection as BigCardsPropsType)} />
       </CommonSection>

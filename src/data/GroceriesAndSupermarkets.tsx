@@ -106,10 +106,12 @@ export const GroceriesAndSupermarketsContent = {
       },
     ],
   },
-  iconCardSection: {
+  iconCardsContent: {
     backgroundImageURL: "/images/grey-spiral.png",
     title: "Features That Make Your Grocery Store Shine Online",
-    color: Colors.GREY,
+    backgroundColor: Colors.GREY,
+  },
+  iconCards: {
     cards: [
       {
         icon: "marketplace-blue",

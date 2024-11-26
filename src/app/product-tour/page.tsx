@@ -3,7 +3,7 @@ import {
   StepCardsSection,
   BigCards,
   BannerSection,
-  IconCardSection,
+  IconCards,
   CommonSection,
   ListSection,
   WebsitePlusMobileSection,
@@ -11,7 +11,7 @@ import {
   type StepCardsSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsPropsType,
-  type IconCardSectionPropsType,
+  type IconCardsPropsType,
   type CommonSectionPropsType,
   type ListSectionPropsType,
   type WebsitePlusMobileSectionPropsType,
@@ -39,9 +39,11 @@ export default function Page() {
       >
         {renderAnimatedCard(AnimatedCard.SMART_CONTROL)}
       </ListSection>
-      <IconCardSection
-        {...(ProductTourContent.iconCardSection as IconCardSectionPropsType)}
-      />
+      <CommonSection
+        {...(ProductTourContent.iconCardsContent as CommonSectionPropsType)}
+      >
+        <IconCards {...(ProductTourContent.iconCards as IconCardsPropsType)} />
+      </CommonSection>
       <CommonSection>
         <BigCards
           {...(ProductTourContent.bigCardsSection as BigCardsPropsType)}

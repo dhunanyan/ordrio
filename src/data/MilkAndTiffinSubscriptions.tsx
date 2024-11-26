@@ -80,10 +80,12 @@ export const MilkAndTiffinSubscriptionsContent = {
       },
     ],
   },
-  iconCardSection: {
+  iconCardsContent: {
     backgroundImageURL: "/images/grey-spiral.png",
     title: "Key Features for a Thriving Restaurant",
-    color: Colors.GREY,
+    backgroundColor: Colors.GREY,
+  },
+  iconCards: {
     cards: [
       {
         icon: "car-blue",

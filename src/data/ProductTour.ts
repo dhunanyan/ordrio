@@ -37,10 +37,15 @@ export const ProductTourContent = {
     switchOrder: true,
     applyCardStyles: true,
   },
-  iconCardSection: {
-    withIcon: true,
+  iconCardsContent: {
+    icon: "check",
     backgroundImageURL: "/images/blue-spiral.png",
     title: "Marketing and Promotion",
+    backgroundColor: Colors.BLUE,
+    linkColor: Colors.YELLOW,
+  },
+  iconCards: {
+    color: Colors.YELLOW,
     cards: [
       {
         icon: "coupons",

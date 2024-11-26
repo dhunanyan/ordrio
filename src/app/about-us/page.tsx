@@ -2,12 +2,12 @@ import {
   BannerSection,
   BigCards,
   CommonSection,
-  IconCardSection,
+  IconCards,
   Slideshow,
   ContentWithImageSection,
   type BannerSectionPropsType,
   type BigCardsPropsType,
-  type IconCardSectionPropsType,
+  type IconCardsPropsType,
   type CommonSectionPropsType,
   type SlideshowPropsType,
   type ContentWithImageSectionPropsType,
@@ -27,9 +27,11 @@ export default function Page() {
       <ContentWithImageSection
         {...(AboutUsContent.contentWithImageSection2 as ContentWithImageSectionPropsType)}
       />
-      <IconCardSection
-        {...(AboutUsContent.iconCardSection as IconCardSectionPropsType)}
-      />
+      <CommonSection
+        {...(AboutUsContent.iconCardsContent as CommonSectionPropsType)}
+      >
+        <IconCards {...(AboutUsContent.iconCards as IconCardsPropsType)} />
+      </CommonSection>
       <CommonSection>
         <BigCards {...(AboutUsContent.bigCardsSection as BigCardsPropsType)} />
       </CommonSection>

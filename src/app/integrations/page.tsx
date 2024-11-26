@@ -1,13 +1,13 @@
 import {
   BannerSection,
   CommonSection,
-  IconCardSection,
+  IconCards,
   ImageCardsWithContentSection,
   BigCards,
   ShipPartners,
   type ShipPartnersPropsType,
   type BannerSectionPropsType,
-  type IconCardSectionPropsType,
+  type IconCardsPropsType,
   type CommonSectionPropsType,
   type ImageCardsWithContentSectionPropsType,
   type BigCardsPropsType,
@@ -21,9 +21,12 @@ export default function Page() {
       <CommonSection
         {...(IntegrationsContent.hero as CommonSectionPropsType)}
       />
-      <IconCardSection
-        {...(IntegrationsContent.iconCardSection as IconCardSectionPropsType)}
-      />
+      <CommonSection
+        {...(IntegrationsContent.iconCardsContent as CommonSectionPropsType)}
+      >
+        <IconCards {...(IntegrationsContent.iconCards as IconCardsPropsType)} />
+      </CommonSection>
+
       <ImageCardsWithContentSection
         {...(IntegrationsContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
       />

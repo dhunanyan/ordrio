@@ -79,10 +79,12 @@ export const ClothingAndAccessoriesContent = {
       },
     ],
   },
-  iconCardSection: {
+  iconCardsContent: {
     backgroundImageURL: "/images/grey-spiral.png",
     title: "Key Features for Fashion-Forward Brands",
-    color: Colors.GREY,
+    backgroundColor: Colors.GREY,
+  },
+  iconCards: {
     cards: [
       {
         icon: "paper-check-blue",
@@ -139,7 +141,6 @@ export const ClothingAndAccessoriesContent = {
       },
     ],
     backgroundImageURL: "/images/blue-small-spirals.png",
-    alignContentLeft: false,
   },
   bigCardsSection2: {
     cards: [

@@ -3,14 +3,14 @@ import {
   BannerSection,
   BigCards,
   CommonSection,
-  IconCardSection,
+  IconCards,
   Slideshow,
   RowCardsWithBigCard,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsPropsType,
   type SlideshowPropsType,
-  type IconCardSectionPropsType,
+  type IconCardsPropsType,
   type CommonSectionPropsType,
   type RowCardsWithBigCardPropsType,
   ImageCards,
@@ -42,9 +42,13 @@ export default function Page() {
           {...MilkAndTiffinSubscriptionsContent.commonSectionImageCards}
         />
       </CommonSection>
-      <IconCardSection
-        {...(MilkAndTiffinSubscriptionsContent.iconCardSection as IconCardSectionPropsType)}
-      />
+      <CommonSection
+        {...(MilkAndTiffinSubscriptionsContent.iconCardsContent as CommonSectionPropsType)}
+      >
+        <IconCards
+          {...(MilkAndTiffinSubscriptionsContent.iconCards as IconCardsPropsType)}
+        />
+      </CommonSection>
       <BannerSection
         {...(MilkAndTiffinSubscriptionsContent.bannerSection1 as BannerSectionPropsType)}
       />

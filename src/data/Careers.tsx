@@ -56,12 +56,14 @@ export const CareersContent = {
       },
     ],
   },
-  iconCardSection: {
+  iconCardsContent: {
     backgroundImageURL: "/images/white-brushes-flipped.png",
     title: "Our Values",
     description:
       "Whether you want to boost sales, streamline operations, or simply add more functionality, we have got the tools you need to succeed.",
     color: Colors.GREY,
+  },
+  iconCards: {
     cards: [
       {
         icon: "rocket-yellow",

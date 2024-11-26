@@ -19,10 +19,26 @@
 
   &--yellow {
     background-color: $yellow-color;
+
+    .common-section__title,
+    .common-section__subtitle,
+    .common-section__description {
+      color: $black-color !important;
+    }
   }
 
   &--white {
     background-color: $white-color;
+  }
+
+  &--blue {
+    background-color: $blue-color;
+
+    .common-section__title,
+    .common-section__subtitle,
+    .common-section__description {
+      color: $white-color !important;
+    }
   }
 
   &--section-separator-big {
@@ -45,6 +61,34 @@
     gap: 40px;
     position: relative;
     z-index: 2;
+
+    &--row {
+      flex-direction: row;
+      align-items: flex-start;
+
+      .icon-cards {
+        flex-wrap: wrap;
+
+        &__item {
+          width: calc((100% - 24px * 2) / 2);
+        }
+      }
+
+      * {
+        text-align: left !important;
+      }
+    }
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    &--align-left {
+      align-items: flex-start;
+    }
   }
 
   &__title {
@@ -124,8 +168,39 @@
   }
 
   &__button {
-    @include buttonBlue;
     width: max-content;
+
+    &--blue {
+      @include buttonBlue;
+    }
+
+    &--yellow {
+      @include buttonYellow;
+    }
+  }
+
+  &__icon {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 14px;
+
+    &--yellow {
+      background-color: $yellow-color;
+
+      svg path {
+        fill: $black-color;
+      }
+    }
+
+    &--blue {
+      background-color: $yellow-color;
+
+      svg path {
+        fill: $white-color;
+      }
+    }
   }
 
   &__component {

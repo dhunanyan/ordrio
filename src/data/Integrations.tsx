@@ -13,7 +13,7 @@ export const IntegrationsContent = {
     },
     isFirstSection: true,
   },
-  iconCardSection: {
+  iconCardsContent: {
     title: "Marketing & Sales",
     description:
       "Ordrio seamlessly integrates with a wide range of 3rd party platforms and tools, including",
@@ -22,8 +22,13 @@ export const IntegrationsContent = {
       target: "_blank",
       href: "https://control.ordrio.com/#/login",
     },
-    color: Colors.WHITE,
+    alignContentLeft: true,
+    backgroundColor: Colors.WHITE,
+    linkColor: Colors.YELLOW,
     displayInRow: true,
+  },
+  iconCards: {
+    color: Colors.WHITE,
     alignCardsContentLeft: true,
     cards: [
       {
@@ -51,7 +56,7 @@ export const IntegrationsContent = {
         },
       },
       {
-        icon: "icons/google-merchant-center.png",
+        icon: "icons/google-merchant-center-small.png",
         title: "Collaborative Culture",
         description:
           "We believe in teamwork, open communication, and a supportive environment where everyone's ideas are valued.",

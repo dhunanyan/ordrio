@@ -33,7 +33,7 @@ export const Content = ({
   description,
   buttons,
   link,
-  alignLeft,
+  alignLeft = false,
   tintColor = Colors.YELLOW,
   textColor = Colors.WHITE,
 }: ContentPropsType) => (

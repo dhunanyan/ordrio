@@ -1,12 +1,12 @@
 import {
   BannerSection,
   CommonSection,
-  IconCardSection,
+  IconCards,
   Slideshow,
   Positions,
   type PositionsPropsType,
   type BannerSectionPropsType,
-  type IconCardSectionPropsType,
+  type IconCardsPropsType,
   type CommonSectionPropsType,
   type SlideshowPropsType,
 } from "@components";
@@ -26,9 +26,11 @@ export default function Page() {
           {...(CareersContent.positionsSectionComponent as PositionsPropsType)}
         />
       </CommonSection>
-      <IconCardSection
-        {...(CareersContent.iconCardSection as IconCardSectionPropsType)}
-      />
+      <CommonSection
+        {...(CareersContent.iconCardsContent as CommonSectionPropsType)}
+      >
+        <IconCards {...(CareersContent.iconCards as IconCardsPropsType)} />
+      </CommonSection>
       <BannerSection
         {...(CareersContent.bannerSection as BannerSectionPropsType)}
       />

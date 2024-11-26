@@ -102,12 +102,14 @@ export const BecomeAPartnerContent = {
       },
     ],
   },
-  iconCardSection: {
+  iconCardsContent: {
     backgroundImageURL: "/images/grey-spiral.png",
     title: "Why Partner with Ordrio?",
     description:
       "Unlock new revenue streams, expand your reach, and help businesses succeed online with Ordrio, the leading eCommerce platform for growing brands.",
-    color: Colors.GREY,
+    backgroundColor: Colors.GREY,
+  },
+  iconCards: {
     cards: [
       {
         icon: "wallet-blue",

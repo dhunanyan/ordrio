@@ -1,10 +1,10 @@
 import {
   BannerSection,
   CommonSection,
-  IconCardSection,
+  IconCards,
   Slideshow,
   type BannerSectionPropsType,
-  type IconCardSectionPropsType,
+  type IconCardsPropsType,
   type CommonSectionPropsType,
   type SlideshowPropsType,
   BigCards,
@@ -43,9 +43,13 @@ export default function Page() {
           {...(BecomeAPartnerContent.bigCardsInCommonSection4 as BigCardsPropsType)}
         />
       </CommonSection>
-      <IconCardSection
-        {...(BecomeAPartnerContent.iconCardSection as IconCardSectionPropsType)}
-      />
+      <CommonSection
+        {...(BecomeAPartnerContent.iconCardsContent as CommonSectionPropsType)}
+      >
+        <IconCards
+          {...(BecomeAPartnerContent.iconCards as IconCardsPropsType)}
+        />
+      </CommonSection>
       <BannerSection
         {...(BecomeAPartnerContent.bannerSection as BannerSectionPropsType)}
       />

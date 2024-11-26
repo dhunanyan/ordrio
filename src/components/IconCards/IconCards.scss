@@ -1,0 +1,23 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.icon-cards {
+  align-items: stretch;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+
+  &--wrap {
+    flex-wrap: wrap;
+
+    > li {
+      width: calc((100% - 24px * 2) / 3);
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}

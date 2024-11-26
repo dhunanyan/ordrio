@@ -23,10 +23,7 @@ export { Footer } from "./Footer";
 export { Header } from "./Header";
 export { CommonSection, type CommonSectionPropsType } from "./CommonSection";
 export { ImageCard, type ImageCardPropsType } from "./ImageCard";
-export {
-  IconCardSection,
-  type IconCardSectionPropsType,
-} from "./IconCardSection";
+export { IconCards, type IconCardsPropsType } from "./IconCards";
 export {
   ImageCardsWithContentSection,
   type ImageCardsWithContentSectionPropsType,
