@@ -92,12 +92,12 @@
   }
 
   &__title {
-    @include title;
     color: $black-color;
     font-family: $font-spoof-trail;
     font-size: 45px;
     font-style: normal;
     font-weight: 700;
+    line-height: 50px;
     text-align: left;
 
     span {

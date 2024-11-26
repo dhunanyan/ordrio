@@ -21,13 +21,23 @@
   }
 
   &__title {
-    @include title;
     text-align: left;
   }
 
   &__link {
-    @include buttonBlue;
+    color: $black-color-alt;
+    font-family: $font-spoof-trail;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 60px;
     margin: 8px 0 0 0;
+
+    span {
+      border-radius: 22px;
+      background: $yellow-color;
+      padding: 0 10px;
+    }
   }
 
   &__list {

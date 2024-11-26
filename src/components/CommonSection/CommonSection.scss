@@ -44,8 +44,20 @@
   }
 
   &__title {
-    @include heroTitle;
+    color: $black-color;
+    text-align: center;
+    font-family: $font-spoof-trail;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 110px;
     overflow: hidden;
+
+    span {
+      border-radius: 22px;
+      background: $yellow-color;
+      padding: 0 10px;
+    }
   }
 
   &__subtitle {
@@ -65,9 +77,15 @@
   }
 
   &__item {
-    @include description;
     align-items: center;
+    color: $black-color;
     display: flex;
+    font-family: $font-inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
     transition: all 120ms ease-out;
 
     &:hover {
@@ -83,9 +101,15 @@
   }
 
   &__description {
-    @include description;
     align-items: center;
+    color: $black-color;
     display: flex;
+    text-align: center;
+    font-family: $font-spoof-trail;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
     gap: 30px;
 
     span {

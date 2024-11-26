@@ -15,10 +15,6 @@
   transition: all 200ms $animation-2;
   width: 100%;
 
-  &--big {
-    position: relative;
-  }
-
   &:last-of-type {
     height: 453px;
   }
@@ -31,13 +27,6 @@
     z-index: 1;
   }
 
-  &--big &__content {
-    align-items: flex-start;
-    gap: 23px;
-    height: 100%;
-    z-index: 1;
-  }
-
   &__title {
     color: $black-color;
     font-family: $font-inter;
@@ -47,13 +36,6 @@
     line-height: 20px;
   }
 
-  &--big &__title {
-    @include title;
-    font-family: $font-spoof-trail;
-    max-width: 280px;
-    text-align: left;
-  }
-
   &__description {
     color: $black-color;
     font-family: $font-manrope;
@@ -61,14 +43,6 @@
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
-  }
-
-  &--big &__description {
-    font-family: $font-inter;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 26px;
-    max-width: 280px;
   }
 
   &__link {
@@ -88,10 +62,5 @@
     img {
       width: 100%;
     }
-  }
-
-  &--big &__image {
-    position: absolute;
-    height: 100%;
   }
 }

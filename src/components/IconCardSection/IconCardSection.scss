@@ -50,7 +50,19 @@
   }
 
   &__title {
-    @include title;
+    color: $black-color;
+    text-align: center;
+    font-family: $font-spoof-trail;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+
+    span {
+      border-radius: 22px;
+      background: $yellow-color;
+      padding: 0 10px;
+    }
   }
 
   &__description {

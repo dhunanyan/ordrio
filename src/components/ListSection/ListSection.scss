@@ -54,8 +54,19 @@
   }
 
   &__title {
-    @include title;
+    color: $black-color;
+    font-family: $font-spoof-trail;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
     text-align: left;
+
+    span {
+      border-radius: 22px;
+      background: $yellow-color;
+      padding: 0 10px;
+    }
   }
 
   &__list {
@@ -67,12 +78,14 @@
   }
 
   &__item-text {
-    @include common-text;
     align-items: center;
+    color: $black-color;
     display: flex;
     font-family: $font-inter;
+    font-size: 16px;
     font-weight: 400;
     font-size: 18px;
+    line-height: 28px;
 
     span svg {
       background-color: $black-color;

@@ -12,7 +12,18 @@
   }
 
   &__title {
-    @include title;
+    color: $black-color;
+    font-family: $font-spoof-trail;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+
+    span {
+      border-radius: 22px;
+      background: $yellow-color;
+      padding: 0 10px;
+    }
   }
 
   &__logos {
@@ -65,15 +76,20 @@
     }
 
     &-text {
-      @include common-text;
-      font-weight: 700;
+      color: $black-color;
       font-size: 14px;
+      font-family: $font-spoof-trail;
+      font-weight: 700;
+      line-height: 28px;
       text-align: center;
     }
 
     &-author {
-      @include common-text;
-      font-size: 12.8px;
+      color: $black-color;
+      font-family: $font-spoof-trail;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 28px;
       margin: 19px 0 0 0;
       text-align: center;
 

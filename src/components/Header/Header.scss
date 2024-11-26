@@ -67,9 +67,13 @@
   &__item {
     button,
     a {
-      @include common-text;
+      color: $black-color;
       background-color: transparent;
       display: flex;
+      font-size: 16px;
+      font-family: $font-spoof-trail;
+      font-weight: 500;
+      line-height: 28px;
       margin: 0 23px;
       padding: 12px 0;
       transition: all 180ms ease-out;
@@ -112,9 +116,13 @@
 
   &__buttons-item {
     button {
-      @include common-text;
+      color: $black-color;
       background-color: transparent;
+      font-size: 16px;
+      font-family: $font-spoof-trail;
+      font-weight: 500;
       height: 52px;
+      line-height: 28px;
       padding: 12px 24px;
       transition: all 120ms ease-in-out;
       white-space: nowrap;

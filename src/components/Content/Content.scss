@@ -46,7 +46,11 @@
   }
 
   &__title {
-    @include title;
+    font-family: $font-spoof-trail;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
 
     &--white {
       color: $white-color;
@@ -55,11 +59,22 @@
     &--black {
       color: $black-color;
     }
+
+    span {
+      border-radius: 22px;
+      background: $yellow-color;
+      padding: 0 10px;
+    }
   }
 
   &__subtitle {
-    @include description;
+    color: $black-color;
+    text-align: center;
+    font-family: $font-spoof-trail;
+    font-size: 18px;
+    font-style: normal;
     font-weight: 600;
+    line-height: 28px;
 
     &--white {
       color: $white-color;
@@ -71,7 +86,12 @@
   }
 
   &__description {
-    @include description;
+    text-align: center;
+    font-family: $font-spoof-trail;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
 
     &--white {
       color: $white-color;
@@ -116,8 +136,11 @@
     display: flex;
 
     &-text {
-      @include common-text;
+      color: $black-color;
+      font-size: 16px;
+      font-family: $font-spoof-trail;
       font-weight: 700;
+      line-height: 28px;
       margin: 0 4px 0 0;
       transition: all 150ms $animation-2;
 

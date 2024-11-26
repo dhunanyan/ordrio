@@ -6,8 +6,6 @@ import Image from "next/image";
 
 import { motion } from "framer-motion";
 
-import { CardVariant } from "@config";
-
 import "./ImageCard.scss";
 
 export type ImageCardPropsType = {
@@ -15,7 +13,6 @@ export type ImageCardPropsType = {
   description: string;
   imageURL: string;
   link?: { text: string; href: string; target?: string };
-  variant?: CardVariant;
   backgroundColor?: string;
   index?: number;
 };
@@ -25,37 +22,25 @@ export const ImageCard = ({
   description,
   imageURL,
   link,
-  variant = CardVariant.MEDIUM,
   backgroundColor,
   index = 0,
 }: ImageCardPropsType) => (
   <div
-    className={`image-card image-card--${variant}`}
+    className="image-card"
     {...(backgroundColor && { style: { backgroundColor } })}
   >
     <div className="image-card__content">
       <motion.h3
         className="image-card__title"
         dangerouslySetInnerHTML={{ __html: title }}
-        initial={{
-          opacity: 0,
-          y: variant === CardVariant.MEDIUM ? 0 : 20,
-          x: variant === CardVariant.BIG ? 0 : 20,
-        }}
-        whileInView={{ opacity: 1, x: 0, y: 0 }}
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3, delay: 0.2 * index }}
       />
       <motion.p
-        initial={{
-          opacity: 0,
-          y: variant === CardVariant.MEDIUM ? 0 : 20,
-          x: variant === CardVariant.BIG ? 0 : 20,
-        }}
-        whileInView={{ opacity: 1, x: 0, y: 0 }}
-        transition={{
-          duration: 0.3,
-          delay: 0.2 * index + (variant === CardVariant.MEDIUM ? 0 : 0.2),
-        }}
+        initial={{ opacity: 0, x: 20 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3, delay: 0.2 * index }}
         className="image-card__description"
       >
         {description}
