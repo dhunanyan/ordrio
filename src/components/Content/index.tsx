@@ -18,8 +18,9 @@ export type ContentPropsType = {
     href?: string;
     onClick?: () => void;
     disabled?: boolean;
+    target?: string;
   }[];
-  link?: { text: string; href: string };
+  link?: { text: string; href: string; target?: string };
   alignLeft?: boolean;
   tintColor?: "white" | "yellow" | "blue";
   textColor?: "white" | "black";
@@ -79,7 +80,7 @@ export const Content = ({
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3 }}
       >
-        <Link href={link.href} className="content__link">
+        <Link href={link.href} target={link.target} className="content__link">
           <span
             className={`content__link-text content__link-text--${tintColor}`}
           >
@@ -94,7 +95,7 @@ export const Content = ({
     )}
     <div className="content__buttons">
       {buttons &&
-        buttons.map(({ text, href, onClick, disabled }, i) =>
+        buttons.map(({ text, href, target, onClick, disabled }, i) =>
           href ? (
             <motion.div
               key={i}
@@ -104,6 +105,7 @@ export const Content = ({
             >
               <Link
                 href={href}
+                target={target}
                 className={`content__button content__button--${tintColor}`}
                 dangerouslySetInnerHTML={{ __html: text }}
               />

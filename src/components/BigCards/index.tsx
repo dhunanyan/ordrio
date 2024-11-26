@@ -8,7 +8,7 @@ import { renderAnimatedCard } from "@utils";
 
 import "./BigCards.scss";
 
-export type BigCardsSectionPropsType = {
+export type BigCardsPropsType = {
   cards: {
     type: AnimatedCard;
     title: string;
@@ -17,7 +17,7 @@ export type BigCardsSectionPropsType = {
   }[];
 };
 
-export const BigCards = ({ cards }: BigCardsSectionPropsType) => (
+export const BigCards = ({ cards }: BigCardsPropsType) => (
   <ul className={"big-cards" + (cards.length > 2 ? " big-cards--wrap" : "")}>
     {cards.map((bigCard, i) => (
       <motion.li

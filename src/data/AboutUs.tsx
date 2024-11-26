@@ -91,7 +91,7 @@ export const AboutUsContent = {
     title: "Join Us on the Journey",
     description:
       "We are excited about the future of eCommerce, and we are always looking for talented individuals to join our team. If you are passionate about technology, entrepreneurship, and making a difference, we would love to hear from you.",
-    links: [{ text: "Explore Career Opportunities", href: "#" }],
+    links: [{ text: "Explore Career Opportunities", href: "/careers" }],
     alignContentLeft: false,
   },
 };

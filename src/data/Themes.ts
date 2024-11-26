@@ -15,14 +15,17 @@ export const ThemesContent = {
     backgroundColor: Colors.WHITE,
   },
   bigCardsInCommonSection: {
+    //@LINKS - make whole thing as a link (with title and description)
     cards: [
       {
         title: "Grocbay",
         description:
           "Fresh, clean, and organized - perfect for showcasing your grocery and upermarket products in an inviting way.",
         links: [
-          { id: "ios", href: "#" },
-          { id: "android", href: "#" },
+          { id: "ios", href: "#" }, //@LINKS: remove
+          ,
+          { id: "android", href: "#" }, //@LINKS: remove
+          ,
         ],
         type: AnimatedCard.GROCBAY,
       },
@@ -31,8 +34,10 @@ export const ThemesContent = {
         description:
           "Warm, appetizing, and stylish - designed to make your restaurant's menu and ambiance shine online.",
         links: [
-          { id: "ios", href: "#" },
-          { id: "android", href: "#" },
+          { id: "ios", href: "#" }, //@LINKS: remove
+          ,
+          { id: "android", href: "#" }, //@LINKS: remove
+          ,
         ],
         type: AnimatedCard.RESTOBITE,
       },
@@ -41,8 +46,10 @@ export const ThemesContent = {
         description:
           "Artistic, unique, and customizable - perfect for highlighting the craftsmanship and personality of your handcrafted goods.",
         links: [
-          { id: "ios", href: "#" },
-          { id: "android", href: "#" },
+          { id: "ios", href: "#" }, //@LINKS: remove
+          ,
+          { id: "android", href: "#" }, //@LINKS: remove
+          ,
         ],
         type: AnimatedCard.AURA,
       },
@@ -51,8 +58,8 @@ export const ThemesContent = {
         description:
           "Fresh, clean, and organized - perfect for showcasing your grocery and upermarket products in an inviting way.",
         links: [
-          { id: "ios", href: "#" },
-          { id: "android", href: "#" },
+          { id: "ios", href: "#" }, //@LINKS: remove
+          { id: "android", href: "#" }, //@LINKS: remove
         ],
         type: AnimatedCard.MOO_CHEW,
       },
@@ -108,7 +115,7 @@ export const ThemesContent = {
     ],
   },
   accordionSection: {
-    title: "Frequently Asked Questions",
+    title: "Frequently Asked Questions", //  //@LINKS: ADD BUTTON to "/support" page
     accordions: [
       {
         title: "What features does Ordrio offer?",
@@ -150,8 +157,12 @@ export const ThemesContent = {
     description:
       "Let your online store be an extension of your brand's unique personality. Choose Ordrio and start telling your story today",
     links: [
-      { text: "Setup Your Free Account", href: "#" },
-      { text: "Get a Personalized Demo", href: "#" },
+      {
+        text: "Setup Your Free Account",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
+      { text: "Get a Personalized Demo", href: "/support" }, //@LINKS: requested - may be changed
     ],
   },
 };

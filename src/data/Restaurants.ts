@@ -58,7 +58,7 @@ export const RestaurantsContent = {
     title: "Your Restaurant, Transformed",
     description:
       "Restobite is more than just online ordering. It is a comprehensive solution that empowers your restaurant to:",
-    link: { text: "Find Out More", href: "#" },
+    link: { text: "Find Out More", href: "/product-tour" },
     cards: [
       {
         title: "Own Your Online Presence",
@@ -155,8 +155,8 @@ export const RestaurantsContent = {
     description: "Accept a variety of payment methods securely and seamlessly.",
     subtitle: "Download App",
     links: [
-      { text: Icons["google-play"], href: "#" },
-      { text: Icons["app-store"], href: "#" },
+      { text: Icons["google-play"], href: "#" }, //@LINKS: requested - to be added
+      { text: Icons["app-store"], href: "#" }, //@LINKS: requested - to be added
     ],
     backgroundImageURL: "/images/blue-small-spirals.png",
     imageURL: "/images/mobile-payments.png",
@@ -220,6 +220,6 @@ export const RestaurantsContent = {
     title: "Join the Ordrio Family",
     description:
       "We're here to support you every step of the way, from setup to your first online order and beyond.",
-    links: [{ text: "Setup Your Free Account", href: "#" }],
+    links: [{ text: "Setup Your Free Account", href: "/support" }],
   },
 };

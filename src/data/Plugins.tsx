@@ -5,7 +5,11 @@ export const PluginsContent = {
     title: "Customize Your Store with Powerful <span>Add-ons</span>",
     description:
       "Take your Ordrio store to the next level with our handpicked selection of add-ons.",
-    link: { text: "Signup for free", href: " #" },
+    link: {
+      text: "Signup for free",
+      target: "_blank",
+      href: "https://control.ordrio.com/#/register",
+    },
     isFirstSection: true,
   },
   // @TODO: PLUGINS HERE
@@ -45,6 +49,7 @@ export const PluginsContent = {
           "Implement abandoned cart recovery, run targeted promotions, and create engaging membership programs to drive revenue.",
         type: AnimatedCard.CONVERSION,
       },
+      //@LINKS: Replace the card with "Marketing & Promotions"
       {
         title: "<span>100+</span> Add-ons",
         description:
@@ -58,7 +63,7 @@ export const PluginsContent = {
     backgroundImageURL: "/images/blue-spiral.png",
     title:
       "Discover the power of Ordrio add-ons and transform your online store into a thriving business.",
-    links: [{ text: "Setup Your Free Account", href: "#" }],
+    links: [{ text: "Setup Your Free Account", href: "#" }], //@LINKS: requested - to be added
     alignContentLeft: false,
   },
 };

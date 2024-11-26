@@ -6,7 +6,7 @@ import Link from "next/link";
 export type Position = {
   title: string;
   requirements: string[];
-  link: { text: string; href: "#" };
+  link: { text: string; href: string; target?: string };
 };
 
 export type PositionsSectionPropsType = {
@@ -40,7 +40,11 @@ export const PositionsSection = ({
                 </span>
               ))}
             </div>
-            <Link href={link.href} className="positions-section__item-link">
+            <Link
+              href={link.href}
+              target={link.target}
+              className="positions-section__item-link"
+            >
               {link.text}
             </Link>
           </li>

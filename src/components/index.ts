@@ -7,7 +7,7 @@ export {
   type StepCardsSectionPropsType,
 } from "./StepCardsSection";
 export { BannerSection, type BannerSectionPropsType } from "./BannerSection";
-export { BigCards, type BigCardsSectionPropsType } from "./BigCards";
+export { BigCards, type BigCardsPropsType } from "./BigCards";
 export {
   WebsitePlusMobileSection,
   type WebsitePlusMobileSectionPropsType,

@@ -11,7 +11,7 @@ export type IconCardPropsType = {
   icon: string;
   title: string;
   description: string;
-  link?: { text: string; href: string; icon: string };
+  link?: { text: string; href: string; icon: string; target?: string };
   alignLeft?: boolean;
   color?: Colors;
 };
@@ -71,7 +71,11 @@ export const IconCard = ({
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.4, delay: 0.65 }}
       >
-        <Link href={link?.href} className="icon-card__link">
+        <Link
+          href={link?.href}
+          target={link.target}
+          className="icon-card__link"
+        >
           {link.text}
           <span dangerouslySetInnerHTML={{ __html: Icons[link.icon] }} />
         </Link>

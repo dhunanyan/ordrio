@@ -14,18 +14,24 @@ import "./Header.scss";
 const renderNavItem = ({
   type,
   text,
+  target,
   href,
   onClick,
 }: {
   type: NavItemType;
   text: string;
   href?: string;
+  target?: string;
   onClick?: () => void;
   isActive?: boolean;
 }) => {
   switch (type) {
     case NavItemType.LINK:
-      return <Link href={href as string}>{text}</Link>;
+      return (
+        <Link href={href as string} target={target}>
+          {text}
+        </Link>
+      );
     case NavItemType.BUTTON:
     default:
       return (

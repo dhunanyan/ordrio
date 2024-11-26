@@ -127,8 +127,17 @@ export const ClothingAndAccessoriesContent = {
     title: "Ready to Elevate Your Fashion Brand?",
     description:
       "Let Aura be the spotlight that illuminates your clothing and accessories, turning shoppers into loyal fans.",
-    link: { text: "Schedule a Personalized Demo", href: "#" },
-    links: [{ text: "Setup Your Free Account", href: "#" }],
+    link: {
+      text: "Schedule a Personalized Demo",
+      href: "#", //@LINKS: requested - to be added
+    },
+    links: [
+      {
+        text: "Setup Your Free Account",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
+    ],
     backgroundImageURL: "/images/blue-small-spirals.png",
     alignContentLeft: false,
   },
@@ -190,6 +199,12 @@ export const ClothingAndAccessoriesContent = {
     title: "Join the Ordrio Family",
     description:
       "We're here to support you every step of the way, from setup to your first online order and beyond.",
-    links: [{ text: "Setup Your Free Account", href: "#" }],
+    links: [
+      {
+        text: "Setup Your Free Account",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
+    ],
   },
 };

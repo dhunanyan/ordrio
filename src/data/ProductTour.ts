@@ -15,7 +15,11 @@ export const ProductTourContent = {
       "Update product details quickly with a user-friendly interface.",
       "Visualize and manage your product catalog with ease.",
     ],
-    link: { text: "Signup Now for Free", href: "#" },
+    link: {
+      text: "Signup Now for Free",
+      target: "_blank",
+      href: "https://control.ordrio.com/#/register",
+    },
     applyCardStyles: true,
   },
   listSectionReversed: {
@@ -25,7 +29,11 @@ export const ProductTourContent = {
       "Receive automatic alerts when stock levels are low to ensure timely restocking.",
       "Easily update inventory details for multiple products at once.",
     ],
-    link: { text: "Signup Now for Free", href: "#" },
+    link: {
+      text: "Signup Now for Free",
+      target: "_blank",
+      href: "https://control.ordrio.com/#/register",
+    },
     switchOrder: true,
     applyCardStyles: true,
   },
@@ -71,8 +79,8 @@ export const ProductTourContent = {
   websiteAndMobileSection: {
     content: {
       topLinks: [
-        { text: "Website", href: "#" },
-        { text: "Mobile App", href: "#" },
+        { text: "Website", href: "#" }, //@LINKS: remove
+        { text: "Mobile App", href: "#" }, //@LINKS: requested - to be added
       ],
       title: "Insightful Reporting & Analytics",
       bottomButtons: [
@@ -93,8 +101,8 @@ export const ProductTourContent = {
       "Manage your store on the go with Ordrio's mobile app integration. Receive real-time notifications, update your inventory, and engage with customers anytime, anywhere, directly from your mobile device.",
     subtitle: "Download App",
     links: [
-      { text: Icons["google-play"], href: "#" },
-      { text: Icons["app-store"], href: "#" },
+      { text: Icons["google-play"], href: "#" }, //@LINKS: remove
+      { text: Icons["app-store"], href: "#" }, //@LINKS: requested - to be added
     ],
     backgroundImageURL: "/images/blue-small-spirals.png",
     imageURL: "/images/tiger-in-phone.png",
@@ -112,7 +120,10 @@ export const ProductTourContent = {
         title: "<span>100+</span> Add-ons",
         description:
           "Boost your store's potential with the perfect add-ons for marketing, analytics, and more.",
-        link: { text: "View Detail's", href: "#" },
+        link: {
+          text: "View Detail's",
+          href: "/plugins",
+        },
         type: AnimatedCard.ADD_ONS,
       },
     ],
@@ -158,6 +169,12 @@ export const ProductTourContent = {
     icon: "check",
     title:
       "Let's Bring Your Business Online With just a few clicks, get started for free!",
-    links: [{ text: "Get Started for Free", href: "#" }],
+    links: [
+      {
+        text: "Get Started for Free",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
+    ],
   },
 };

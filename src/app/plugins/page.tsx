@@ -4,7 +4,7 @@ import {
   CommonSection,
   IconCardSection,
   type BannerSectionPropsType,
-  type BigCardsSectionPropsType,
+  type BigCardsPropsType,
   type IconCardSectionPropsType,
   type CommonSectionPropsType,
 } from "@components";
@@ -19,9 +19,7 @@ export default function Page() {
         {...(PluginsContent.iconCardSection as IconCardSectionPropsType)}
       />
       <CommonSection>
-        <BigCards
-          {...(PluginsContent.bigCardsSection as BigCardsSectionPropsType)}
-        />
+        <BigCards {...(PluginsContent.bigCardsSection as BigCardsPropsType)} />
       </CommonSection>
       <BannerSection
         {...(PluginsContent.bannerSection as BannerSectionPropsType)}

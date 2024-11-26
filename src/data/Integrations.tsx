@@ -6,14 +6,22 @@ export const IntegrationsContent = {
     description:
       "Ordrio's extensive suite of integrations empowers you to streamline your workflow, expand your reach, and unlock new growth opportunities.",
     separator: Separator.MEDIUM,
-    link: { text: "Signup for free", href: "#" },
+    link: {
+      text: "Signup for free",
+      target: "_blank",
+      href: "https://control.ordrio.com/#/register",
+    },
     isFirstSection: true,
   },
   iconCardSection: {
     title: "Marketing & Sales",
     description:
       "Ordrio seamlessly integrates with a wide range of 3rd party platforms and tools, including",
-    link: { text: "Sign-in to Explore More", href: "#" },
+    link: {
+      text: "Sign-in to Explore More",
+      target: "_blank",
+      href: "https://control.ordrio.com/#/login",
+    },
     color: Colors.WHITE,
     displayInRow: true,
     alignCardsContentLeft: true,
@@ -23,28 +31,48 @@ export const IntegrationsContent = {
         title: "Make an Impact",
         description:
           "Your work will directly influence the success of thousands of online businesses worldwide.",
-        link: { text: "Install", href: "#", icon: "arrow-right-circle" },
+        link: {
+          text: "Install",
+          target: "_blank",
+          href: "https://control.ordrio.com/#/register",
+          icon: "arrow-right-circle",
+        },
       },
       {
         icon: "icons/facebook-ads.png",
         title: "Embrace Innovation",
         description:
           "We are constantly pushing boundaries and exploring new technologies to stay ahead of the curve.",
-        link: { text: "Install", href: "#", icon: "arrow-right-circle" },
+        link: {
+          text: "Install",
+          target: "_blank",
+          href: "https://control.ordrio.com/#/register",
+          icon: "arrow-right-circle",
+        },
       },
       {
         icon: "icons/google-merchant-center.png",
         title: "Collaborative Culture",
         description:
           "We believe in teamwork, open communication, and a supportive environment where everyone's ideas are valued.",
-        link: { text: "Install", href: "#", icon: "arrow-right-circle" },
+        link: {
+          text: "Install",
+          target: "_blank",
+          href: "https://control.ordrio.com/#/register",
+          icon: "arrow-right-circle",
+        },
       },
       {
         icon: "icons/multiple-payments-gateways.png",
         title: "Growth Opportunitie",
         description:
           "We invest in our employees' development, providing opportunities for learning, mentorship, and career advancement.",
-        link: { text: "Install", href: "#", icon: "arrow-right-circle" },
+        link: {
+          text: "Install",
+          target: "_blank",
+          href: "https://control.ordrio.com/#/register",
+          icon: "arrow-right-circle",
+        },
       },
     ],
   },
@@ -53,7 +81,11 @@ export const IntegrationsContent = {
     title: "Benefits of Ordrio Integrations",
     description:
       "Ordrio's extensive suite of integrations empowers you to streamline your workflow.",
-    link: { text: "Get Started Now", href: "#" },
+    link: {
+      text: "Get Started Now",
+      target: "_blank",
+      href: "https://control.ordrio.com/#/register",
+    },
     cards: [
       {
         title: "Simplified Setup",
@@ -119,7 +151,13 @@ export const IntegrationsContent = {
     title: "Get Started Today",
     description:
       "Explore our extensive library of integrations and discover how Ordrio can help you connect your store with the tools you need to thrive in the competitive eCommerce landscape.",
-    links: [{ text: "Start Your Free Trial", href: "#" }],
+    links: [
+      {
+        text: "Start Your Free Trial",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
+    ],
     subtitle:
       "Let Ordrio be your one-stop shop for all your eCommerce integration needs.",
     alignContentLeft: false,

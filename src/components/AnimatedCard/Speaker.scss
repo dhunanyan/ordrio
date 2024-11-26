@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin speaker {
+  &--1 {
+    bottom: 0px;
+    left: calc(50% - 400px / 2);
+    max-width: 400px;
+    z-index: 1;
+  }
+}

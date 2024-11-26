@@ -272,6 +272,54 @@ export const renderAnimatedCard = (
           content={content}
         />
       );
+    case AnimatedCardType.SPEAKER:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.SPEAKER}
+          assets={getAnimatedCardAssets(AnimatedCardType.SPEAKER)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.LIGHT_YELLOW,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.TECHNOLOGY_PARTNER:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.TECHNOLOGY_PARTNER}
+          assets={getAnimatedCardAssets(AnimatedCardType.TECHNOLOGY_PARTNER)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.LIGHT_YELLOW,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.PHONE_CHAT:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.PHONE_CHAT}
+          assets={getAnimatedCardAssets(AnimatedCardType.PHONE_CHAT)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.LIGHT_YELLOW,
+          }}
+          content={content}
+        />
+      );
+    case AnimatedCardType.MONEY_BAG:
+      return (
+        <AnimatedCard
+          type={AnimatedCardType.MONEY_BAG}
+          assets={getAnimatedCardAssets(AnimatedCardType.MONEY_BAG)}
+          background={{
+            type: AnimatedCardBackground.TWO_TICKS,
+            color: AnimatedCardBackgroundColor.LIGHT_YELLOW,
+          }}
+          content={content}
+        />
+      );
     default:
       return null;
   }

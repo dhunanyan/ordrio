@@ -1,0 +1,11 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin moneyBag {
+  &--1 {
+    bottom: -140px;
+    left: calc(50% - 500px / 2);
+    max-width: 500px;
+    z-index: 1;
+  }
+}

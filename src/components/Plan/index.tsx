@@ -14,7 +14,7 @@ export type PlanPropsType = {
     price: string;
     description: string;
     list: string[];
-    link: { text: string; href: string };
+    link: { text: string; href: string; target?: string };
   };
   paid: {
     name: string;
@@ -23,13 +23,13 @@ export type PlanPropsType = {
     period: string;
     list: string[];
     isMostPopular: true;
-    link: { text: string; href: string };
+    link: { text: string; href: string; target?: string };
   }[];
   extraSection?: {
     name: string;
     price: string;
     description: string;
-    link: { text: string; href: string };
+    link: { text: string; href: string; target?: string };
   };
 };
 
@@ -45,7 +45,11 @@ export const Plan = ({
         <span>{price}</span>
         <span>{description}</span>
       </p>
-      <Link className="plan__link plan__link--free" href={link.href}>
+      <Link
+        href={link.href}
+        target={link.target}
+        className="plan__link plan__link--free"
+      >
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -93,7 +97,7 @@ export const Plan = ({
               period,
               list,
               isMostPopular,
-              link: { text, href },
+              link: { text, href, target },
             },
             i
           ) => (
@@ -135,7 +139,7 @@ export const Plan = ({
                   </li>
                 ))}
               </ul>
-              <Link className="plan__link" href={href}>
+              <Link href={href} target={target} className="plan__link">
                 <motion.div
                   initial={{ opacity: 0, y: 10 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -158,10 +162,10 @@ export const Plan = ({
             <span>{extraSection.description}</span>
           </p>
           <Link
-            className="plan__link plan__link--extra"
             href={extraSection.link.href}
+            target={extraSection.link.target}
+            className="plan__link plan__link--extra"
           >
-            {" "}
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}

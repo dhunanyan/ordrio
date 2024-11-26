@@ -6,7 +6,7 @@ import {
   IconCardSection,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
-  type BigCardsSectionPropsType,
+  type BigCardsPropsType,
   type IconCardSectionPropsType,
   type CommonSectionPropsType,
 } from "@components";
@@ -21,7 +21,7 @@ export default function Page() {
         {...(ThemesContent.commonSectionWithBigCards as CommonSectionPropsType)}
       >
         <BigCards
-          {...(ThemesContent.bigCardsInCommonSection as BigCardsSectionPropsType)}
+          {...(ThemesContent.bigCardsInCommonSection as BigCardsPropsType)}
         />
       </CommonSection>
       <CommonSection
@@ -31,9 +31,7 @@ export default function Page() {
         {...(ThemesContent.iconCardSection as IconCardSectionPropsType)}
       />
       <CommonSection>
-        <BigCards
-          {...(ThemesContent.bigCardsSection as BigCardsSectionPropsType)}
-        />
+        <BigCards {...(ThemesContent.bigCardsSection as BigCardsPropsType)} />
       </CommonSection>
       <AccordionSection
         {...(ThemesContent.accordionSection as AccordionSectionPropsType)}

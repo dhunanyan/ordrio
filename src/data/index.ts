@@ -22,3 +22,4 @@ export { AboutUsContent } from "./AboutUs";
 export { CareersContent } from "./Careers";
 export { IntegrationsContent } from "./Integrations";
 export { SupportContent } from "./Support";
+export { BecomeAPartnerContent } from "./BecomeAPartner";

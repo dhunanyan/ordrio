@@ -36,10 +36,14 @@ export const HeaderData = {
     {
       text: "Login",
       id: "login",
+      target: "_blank",
+      href: "https://control.ordrio.com/#/login",
     },
     {
       text: "Sign up for Free",
       id: "sign-up",
+      target: "_blank",
+      href: "https://control.ordrio.com/#/register",
     },
   ],
 };
@@ -60,7 +64,7 @@ export const DropdownData = {
       {
         title: "Ordrio Ship",
         description: "Integrated with delivery",
-        href: "/ordrio-ship",
+        href: "/ordrio-ship", //LAST_PAGE
       },
       {
         title: "Plugins",
@@ -90,17 +94,17 @@ export const DropdownData = {
           {
             icon: "marketplace",
             text: "Marketplace",
-            href: "/marketplace",
+            href: "/marketplace", // 2/1
           },
           {
             icon: "services",
             text: "Services",
-            href: "/services",
+            href: "/services", // 2/2
           },
           {
             icon: "pet-stores",
             text: "Pet Stores",
-            href: "/pet-stores",
+            href: "/pet-stores", // 2/3
           },
           {
             icon: "clothing-and-accessories",
@@ -110,12 +114,12 @@ export const DropdownData = {
           {
             icon: "cafes",
             text: "Cafes",
-            href: "/cafes",
+            href: "/cafes", // 2/4
           },
           {
             icon: "meat-stores",
             text: "Meat Stores",
-            href: "/meat-stores",
+            href: "/meat-stores", // 2/5
           },
         ],
       },
@@ -141,13 +145,10 @@ export const DropdownData = {
       {
         title: "Community",
         description: "A place to explore",
-        href: "/community",
+        target: "_blank",
+        href: "https://www.facebook.com/groups/694862734867377",
       },
-      {
-        title: "Product News",
-        description: "Updates from Ordrio",
-        href: "/product-news",
-      },
+      //REMOVED PRODUCT NEWS
       {
         title: "Become a Partner",
         description: "Join the team",
@@ -156,7 +157,7 @@ export const DropdownData = {
       {
         title: "Blog",
         description: "Get the latest updates",
-        href: "/blog",
+        href: "/news-blogs",
       },
     ],
     nav: [
@@ -171,17 +172,19 @@ export const DropdownData = {
           {
             icon: "videos",
             text: "Videos",
-            href: "/videos",
+            target: "_blank",
+            href: "https://www.youtube.com/@Ordrio",
           },
           {
             icon: "how-to-guide",
             text: "How to Guide",
-            href: "/how-to-guide",
+            target: "_blank",
+            href: "https://ordrio.help.center/",
           },
           {
             icon: "faq",
             text: "FAQ",
-            href: "/faq",
+            href: "/faq", // NO FAQ PAGE
           },
         ],
       },

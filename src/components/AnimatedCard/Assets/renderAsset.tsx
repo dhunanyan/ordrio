@@ -9,6 +9,7 @@ import { SmallCardsAsset } from "./SmallCardsAsset";
 import { AnimatedCardAssetKind, type AnimatedCardAssetsType } from "@utils";
 import { AnimatedCard } from "@config";
 import { InventoryGraphAsset } from "./InventoryGraphAsset";
+import { LogoInCircleAsset } from "./LogoInCircleAsset";
 
 export type RenderAssetPropsType = {
   index: number;
@@ -25,6 +26,18 @@ export const renderAsset = ({
   url,
 }: RenderAssetPropsType) => {
   switch (kind) {
+    case AnimatedCardAssetKind.LOGO_IN_CIRCLE:
+      return (
+        <LogoInCircleAsset
+          key={index}
+          index={index}
+          type={type}
+          url={url}
+          initial={initial}
+          whileInView={whileInView}
+          transition={transition}
+        />
+      );
     case AnimatedCardAssetKind.INVENTORY_GRAPH:
       return (
         <InventoryGraphAsset

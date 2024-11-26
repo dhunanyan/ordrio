@@ -11,7 +11,7 @@ import {
   WebsitePlusMobileSection,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
-  type BigCardsSectionPropsType,
+  type BigCardsPropsType,
   type CarouselSectionPropsType,
   type CommonSectionPropsType,
   type ImageCardsWithContentSectionPropsType,
@@ -35,9 +35,7 @@ export default function Home() {
         {...(HomeContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
       />
       <CommonSection>
-        <BigCards
-          {...(HomeContent.bigCardsSection as BigCardsSectionPropsType)}
-        />
+        <BigCards {...(HomeContent.bigCardsSection as BigCardsPropsType)} />
       </CommonSection>
 
       <WebsitePlusMobileSection

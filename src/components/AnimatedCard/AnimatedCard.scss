@@ -20,6 +20,10 @@
 @import "./WeAre";
 @import "./Blog";
 @import "./HowToGuides";
+@import "./MoneyBag";
+@import "./PhoneChat";
+@import "./Speaker";
+@import "./TechnologyPartner";
 
 .animated-card {
   border-radius: 24px;
@@ -46,6 +50,10 @@
 
   &--light-yellow {
     background-color: $yellow-color-light-2 !important;
+  }
+
+  &--yellow-2 {
+    background-color: $yellow-color-hover !important;
   }
 
   img {
@@ -196,5 +204,21 @@
 
   &__how-to-guides {
     @include howToGuides;
+  }
+
+  &__money-bag {
+    @include moneyBag;
+  }
+
+  &__phone-chat {
+    @include phoneChat;
+  }
+
+  &__speaker {
+    @include speaker;
+  }
+
+  &__technology-partner {
+    @include technologyPartner;
   }
 }

@@ -9,7 +9,11 @@ export const HomeContent = {
       <span>${Icons["check"]}Streamline shipping</span>
       <span>${Icons["check"]}Manage sales & more</span>
     `,
-    link: { text: "Get Started for Free", href: "#" },
+    link: {
+      text: "Get Started for Free",
+      target: "_blank",
+      href: "https://control.ordrio.com",
+    },
     separator: Separator.BIG,
     bottomImageURL: "/images/tablet-and-mobile-view-tiger.png",
     isFirstSection: true,
@@ -29,30 +33,35 @@ export const HomeContent = {
     partners: [
       {
         imageURL: "/images/logos/chenai-start.png",
+        target: "_blank",
         href: "https://chennaistar.com",
         height: 43,
         width: 152,
       },
       {
         imageURL: "/images/logos/tokree.png",
+        target: "_blank",
         href: "https://www.quickcompany.in/trademarks/2848950-tokree-no-more-khit-pit",
         height: 66,
         width: 164,
       },
       {
         imageURL: "/images/logos/fib.png",
+        target: "_blank",
         href: "https://appagg.com/android/shopping/feel-it-buy-38658831.html",
         height: 60,
         width: 90,
       },
       {
         imageURL: "/images/logos/country.png",
+        target: "_blank",
         href: "https://www.countrychickenco.in",
         height: 58,
         width: 88,
       },
       {
         imageURL: "/images/logos/shree-baba.png",
+        target: "_blank",
         href: "https://www.instagram.com/shreebabaramdevdhaba",
         height: 48,
         width: 202,
@@ -76,7 +85,7 @@ export const HomeContent = {
     title: "No More Tool Juggling",
     description:
       "One powerful platform for eCommerce, shipping, and payments - everything working together seamlessly",
-    link: { text: "Find Out More", href: "#" },
+    link: { text: "Find Out More", href: "/product-tour" },
     cards: [
       {
         title: "Add your first product",
@@ -122,7 +131,7 @@ export const HomeContent = {
         title: "<span>100+</span> Add-ons",
         description:
           "Boost your store's potential with the perfect add-ons for marketing, analytics, and more.",
-        link: { text: "View Detail's", href: "#" },
+        link: { text: "View Detail's", href: "/plugins" },
         type: AnimatedCard.ADD_ONS,
       },
     ],
@@ -130,15 +139,15 @@ export const HomeContent = {
   websiteAndMobileSection: {
     content: {
       topLinks: [
-        { text: "Website", href: "#" },
-        { text: "Mobile App", href: "#" },
+        { text: "Website", href: "#" }, //@LINKS: remove
+        { text: "Mobile App", href: "#" }, //@LINKS: remove
       ],
       title: "Seamless Mobile Shopping",
       description:
         "Deliver a smooth shopping experience for your customers on any device.",
       bottomLinks: [
-        { text: "google-play", href: "#" },
-        { text: "app-store", href: "#" },
+        { text: "google-play", href: "#" }, //@LINKS: requested - to be added
+        { text: "app-store", href: "#" }, //@LINKS: requested - to be added
       ],
     },
     screenshotURLs: ["/images/carousels/landing-screenshot/0.png"],
@@ -205,6 +214,12 @@ export const HomeContent = {
     icon: "check",
     title:
       "Let's Bring Your Business Online With just a few clicks, get started for free!",
-    links: [{ text: "Get Started for Free", href: "#" }],
+    links: [
+      {
+        text: "Get Started for Free",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
+    ],
   },
 };

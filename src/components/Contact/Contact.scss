@@ -80,6 +80,10 @@
           align-items: center;
           display: flex;
           justify-content: center;
+
+          path {
+            fill: $blue-color;
+          }
         }
       }
     }

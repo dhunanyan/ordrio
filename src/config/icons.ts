@@ -13,7 +13,9 @@ import cafes from "../../public/svg/i_cafes.svg";
 import careers from "../../public/svg/i_careers.svg";
 import clothingAndAccessories from "../../public/svg/i_clothing-and-accessories.svg";
 import check from "../../public/svg/i_check.svg";
+import checkMedalBlue from "../../public/svg/i_check-medal-blue.svg";
 import checkSquare from "../../public/svg/i_check-square.svg";
+import chat from "../../public/svg/i_chat.svg";
 import chatBlue from "../../public/svg/i_chat-blue.svg";
 import clothesYellow from "../../public/svg/i_clothes-yellow.svg";
 import coupons from "../../public/svg/i_coupons.svg";
@@ -32,7 +34,7 @@ import howToGuide from "../../public/svg/i_how-to-guide.svg";
 import info from "../../public/svg/i_info.svg";
 import globeBlue from "../../public/svg/i_globe-blue.svg";
 import logo from "../../public/svg/i_logo.svg";
-import mailBlue from "../../public/svg/i_mail-blue.svg";
+import mail from "../../public/svg/i_mail.svg";
 import marketplace from "../../public/svg/i_marketplace.svg";
 import marketplaceBlue from "../../public/svg/i_marketplace-blue.svg";
 import marketplaceYellow from "../../public/svg/i_marketplace-yellow.svg";
@@ -46,7 +48,7 @@ import monitorBlue from "../../public/svg/i_monitor-blue.svg";
 import paperBlue from "../../public/svg/i_paper-blue.svg";
 import paperCheckBlue from "../../public/svg/i_paper-check-blue.svg";
 import petStores from "../../public/svg/i_pet-stores.svg";
-import phoneBlue from "../../public/svg/i_phone-blue.svg";
+import phone from "../../public/svg/i_phone.svg";
 import restaurants from "../../public/svg/i_restaurants.svg";
 import rocketBlue from "../../public/svg/i_rocket-blue.svg";
 import rocketYellow from "../../public/svg/i_rocket-yellow.svg";
@@ -63,6 +65,7 @@ import threeDots from "../../public/svg/i_three-dots.svg";
 import videos from "../../public/svg/i_videos.svg";
 import videoBlue from "../../public/svg/i_video-blue.svg";
 import windowCheckYellow from "../../public/svg/i_window-check-yellow.svg";
+import walletBlue from "../../public/svg/i_wallet-blue.svg";
 
 export const Icons = {
   "app-store": appStore,
@@ -127,7 +130,10 @@ export const Icons = {
   "book-blue": bookBlue,
   "book-question-blue": bookQuestionBlue,
   "video-blue": videoBlue,
-  "phone-blue": phoneBlue,
-  "mail-blue": mailBlue,
+  phone: phone,
+  mail: mail,
+  chat: chat,
   "chat-blue": chatBlue,
+  "wallet-blue": walletBlue,
+  "check-medal-blue": checkMedalBlue,
 } as { [key: string]: string };

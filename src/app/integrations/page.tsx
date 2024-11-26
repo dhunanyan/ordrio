@@ -10,7 +10,7 @@ import {
   type IconCardSectionPropsType,
   type CommonSectionPropsType,
   type ImageCardsWithContentSectionPropsType,
-  type BigCardsSectionPropsType,
+  type BigCardsPropsType,
 } from "@components";
 
 import { IntegrationsContent } from "@data";
@@ -28,11 +28,10 @@ export default function Page() {
         {...(IntegrationsContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
       />
       <CommonSection>
-        {" "}
         <BigCards
-          {...(IntegrationsContent.bigCardsSection as BigCardsSectionPropsType)}
+          {...(IntegrationsContent.bigCardsSection as BigCardsPropsType)}
         />
-      </CommonSection>{" "}
+      </CommonSection>
       <ShipPartners
         {...(IntegrationsContent.shipPartners as ShipPartnersPropsType)}
       />

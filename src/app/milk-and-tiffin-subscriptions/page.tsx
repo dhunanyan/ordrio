@@ -8,7 +8,7 @@ import {
   RowCardsWithBigCard,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
-  type BigCardsSectionPropsType,
+  type BigCardsPropsType,
   type SlideshowSectionPropsType,
   type IconCardSectionPropsType,
   type CommonSectionPropsType,
@@ -50,7 +50,7 @@ export default function Page() {
       />
       <CommonSection>
         <BigCards
-          {...(MilkAndTiffinSubscriptionsContent.bigCardsSection2 as BigCardsSectionPropsType)}
+          {...(MilkAndTiffinSubscriptionsContent.bigCardsSection2 as BigCardsPropsType)}
         />
       </CommonSection>
       <AccordionSection

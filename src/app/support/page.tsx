@@ -6,7 +6,7 @@ import {
   type BannerSectionPropsType,
   type CommonSectionPropsType,
   type ContactPropsType,
-  type BigCardsSectionPropsType,
+  type BigCardsPropsType,
 } from "@components";
 
 import { SupportContent } from "@data";
@@ -21,7 +21,7 @@ export default function Page() {
         {...(SupportContent.commonSection as CommonSectionPropsType)}
       >
         <BigCards
-          {...(SupportContent.bigCardsInCommonSection as BigCardsSectionPropsType)}
+          {...(SupportContent.bigCardsInCommonSection as BigCardsPropsType)}
         />
       </CommonSection>
 

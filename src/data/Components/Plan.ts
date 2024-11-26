@@ -17,7 +17,11 @@ export const PlanContent = {
       "In-Store Pickup",
       "Abandoned Cart Recovery",
     ],
-    link: { text: "Subscribe", href: "#" },
+    link: {
+      text: "Subscribe",
+      target: "_blank",
+      href: "https://control.ordrio.com/#/register",
+    },
   },
   paid: [
     {
@@ -32,7 +36,11 @@ export const PlanContent = {
         "Smart Inventory",
         "Abandoned Cart Recovery",
       ],
-      link: { text: "Subscribe", href: "#" },
+      link: {
+        text: "Subscribe",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
     },
     {
       name: "Grow",
@@ -41,7 +49,11 @@ export const PlanContent = {
       period: " / month",
       list: ["All for Launch", "Mobile Commerce Apps", "2 Team Member Access"],
       isMostPopular: true,
-      link: { text: "Subscribe", href: "#" },
+      link: {
+        text: "Subscribe",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
     },
     {
       name: "Scale",
@@ -56,7 +68,11 @@ export const PlanContent = {
         "Volume Discounts",
         "Product Bundles",
       ],
-      link: { text: "Subscribe", href: "#" },
+      link: {
+        text: "Subscribe",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
     },
     {
       name: "Max",
@@ -77,7 +93,11 @@ export const PlanContent = {
         "Flexible Delivery Options",
         "Multi-Vendor Marketplace",
       ],
-      link: { text: "Subscribe", href: "#" },
+      link: {
+        text: "Subscribe",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
     },
   ],
 };
@@ -89,6 +109,10 @@ export const PlanWithExtraContent = {
     price: "Ordrio X",
     description:
       "Flexible plans with features you can customize to fit your unique goals.",
-    link: { text: "Schedule a Meeting Now", href: "#" },
+    link: {
+      text: "Schedule a Meeting Now",
+      target: "_blank",
+      href: "https://control.ordrio.com/#/register",
+    },
   },
 };

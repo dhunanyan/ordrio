@@ -13,7 +13,7 @@ export type ListSectionPropsType = {
   children?: React.ReactNode;
   title: string;
   list: string[];
-  link?: { text: string; href: string };
+  link?: { text: string; href: string; target?: string };
   switchOrder?: boolean;
   applyCardStyles?: boolean;
 };
@@ -92,7 +92,11 @@ export const ListSection = ({
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
           >
-            <Link href={link.href} className="list-section__link">
+            <Link
+              href={link.href}
+              target={link.target}
+              className="list-section__link"
+            >
               {link.text}
             </Link>
           </motion.div>

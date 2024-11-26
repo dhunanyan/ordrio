@@ -62,6 +62,12 @@ export enum AnimatedCard {
   WE_ARE = "we-are",
   BLOG = "blog",
   HOW_TO_GUIDES = "how-to-guides",
+  MONEY_BAG = "money-bag",
+  PHONE_CHAT = "phone-chat",
+  TECHNOLOGY_PARTNER = "technology-partner",
+  SPEAKER = "speaker",
+  //CONTINUE
+  CENTRALIZED_AVATAR = "centralized-avatar",
 }
 
 export enum AnimatedCardBackground {
@@ -76,4 +82,5 @@ export enum AnimatedCardBackgroundColor {
   LIGHT_WHITE = "light-white",
   GREY = "grey",
   LIGHT_YELLOW = "light-yellow",
+  YELLOW = "yellow-2",
 }

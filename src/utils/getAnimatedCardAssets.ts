@@ -4,6 +4,7 @@ export enum AnimatedCardAssetKind {
   ORDER_PROCESSING = "order-processing",
   SMALL_CARDS = "small-cards",
   INVENTORY_GRAPH = "inventory-graph",
+  LOGO_IN_CIRCLE = "logo-in-circle",
 }
 
 export type AnimatedCardAssetsType = {
@@ -18,6 +19,84 @@ export const getAnimatedCardAssets = (
   type: AnimatedCard
 ): AnimatedCardAssetsType => {
   switch (type) {
+    case AnimatedCard.MONEY_BAG:
+      return [
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.2 },
+          url: "/images/animated-cards/money-bag.png",
+        },
+      ];
+    case AnimatedCard.PHONE_CHAT:
+      return [
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.2 },
+          url: "/images/animated-cards/phone-chat.png",
+        },
+      ];
+    case AnimatedCard.TECHNOLOGY_PARTNER:
+      return [
+        {
+          initial: { opacity: 0, scale: 1.3 },
+          whileInView: { opacity: 1, scale: 1 },
+          transition: { duration: 0.5, delay: 0.2 },
+          url: "/images/animated-cards/dashboard-view-yellow.png",
+        },
+        {
+          initial: { opacity: 0, y: 60, scale: 0.8 },
+          whileInView: { opacity: 1, y: 0, scale: 0.8 },
+          transition: { duration: 0.5, delay: 0.3 },
+          url: "/images/logos/blue-dart.png",
+          kind: AnimatedCardAssetKind.LOGO_IN_CIRCLE,
+        },
+        {
+          initial: { opacity: 0, y: 60, scale: 0.95 },
+          whileInView: { opacity: 1, y: 0, scale: 0.95 },
+          transition: { duration: 0.5, delay: 0.34 },
+          url: "/images/logos/dunzo.png",
+          kind: AnimatedCardAssetKind.LOGO_IN_CIRCLE,
+        },
+        {
+          initial: { opacity: 0, y: 60, scale: 1 },
+          whileInView: { opacity: 1, y: 0, scale: 1 },
+          transition: { duration: 0.5, delay: 0.34 },
+          url: "/images/logos/zomato.png",
+          kind: AnimatedCardAssetKind.LOGO_IN_CIRCLE,
+        },
+        {
+          initial: { opacity: 0, y: 60, scale: 0.8 },
+          whileInView: { opacity: 1, y: 0, scale: 0.8 },
+          transition: { duration: 0.5, delay: 0.36 },
+          url: "/images/logos/dtdc.png",
+          kind: AnimatedCardAssetKind.LOGO_IN_CIRCLE,
+        },
+        {
+          initial: { opacity: 0, y: 60, scale: 0.6 },
+          whileInView: { opacity: 1, y: 0, scale: 0.6 },
+          transition: { duration: 0.5, delay: 0.38 },
+          url: "/images/logos/gmail.png",
+          kind: AnimatedCardAssetKind.LOGO_IN_CIRCLE,
+        },
+        {
+          initial: { opacity: 0, y: 60, scale: 0.6 },
+          whileInView: { opacity: 1, y: 0, scale: 0.6 },
+          transition: { duration: 0.5, delay: 0.4 },
+          url: "/images/logos/google-calendar.png",
+          kind: AnimatedCardAssetKind.LOGO_IN_CIRCLE,
+        },
+      ];
+    case AnimatedCard.SPEAKER:
+      return [
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.2 },
+          url: "/images/animated-cards/speaker.png",
+        },
+      ];
     case AnimatedCard.BLOG:
       return [
         {
@@ -33,7 +112,7 @@ export const getAnimatedCardAssets = (
           initial: { opacity: 0, y: 30 },
           whileInView: { opacity: 1, y: 0 },
           transition: { duration: 0.5, delay: 0.2 },
-          url: "/images/animated-cards/3-people-laptop.png",
+          url: "/images/avatars/three-people-laptop.png",
         },
       ];
     case AnimatedCard.WE_ARE:

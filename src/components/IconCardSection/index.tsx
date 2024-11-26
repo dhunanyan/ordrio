@@ -15,7 +15,7 @@ export type IconCardSectionPropsType = {
   withIcon?: boolean;
   backgroundImageURL: string;
   title: string;
-  link?: { text: string; href: string };
+  link?: { text: string; href: string; target?: string };
   description: string;
   cards: Omit<IconCardPropsType, "index">[];
   color?: Colors;
@@ -92,7 +92,11 @@ export const IconCardSection = ({
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.65 }}
             >
-              <Link href={link?.href} className="icon-card-section__link">
+              <Link
+                href={link?.href}
+                target={link.target}
+                className="icon-card-section__link"
+              >
                 {link.text}
               </Link>
             </motion.div>

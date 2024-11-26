@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin technologyPartner {
+  &--1 {
+    bottom: 0px;
+    right: 0;
+    max-width: 500px;
+    z-index: 1;
+  }
+
+  &--2 {
+    left: 240px;
+    bottom: 240px;
+    z-index: 2;
+  }
+
+  &--3 {
+    bottom: 120px;
+    right: -20px;
+    z-index: 2;
+  }
+
+  &--4 {
+    right: 120px;
+    bottom: -20px;
+    z-index: 2;
+  }
+
+  &--5 {
+    left: 110px;
+    bottom: 140px;
+    z-index: 2;
+  }
+
+  &--6 {
+    left: 220px;
+    bottom: 10px;
+    z-index: 2;
+  }
+
+  &--7 {
+    bottom: 220px;
+    right: 120px;
+    z-index: 2;
+  }
+}

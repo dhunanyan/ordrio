@@ -10,7 +10,7 @@ import {
   type AccordionSectionPropsType,
   type StepCardsSectionPropsType,
   type BannerSectionPropsType,
-  type BigCardsSectionPropsType,
+  type BigCardsPropsType,
   type IconCardSectionPropsType,
   type CommonSectionPropsType,
   type ListSectionPropsType,
@@ -44,7 +44,7 @@ export default function Page() {
       />
       <CommonSection>
         <BigCards
-          {...(ProductTourContent.bigCardsSection as BigCardsSectionPropsType)}
+          {...(ProductTourContent.bigCardsSection as BigCardsPropsType)}
         />
       </CommonSection>
       <WebsitePlusMobileSection
@@ -55,7 +55,7 @@ export default function Page() {
       />
       <CommonSection>
         <BigCards
-          {...(ProductTourContent.bigCardsSection2 as BigCardsSectionPropsType)}
+          {...(ProductTourContent.bigCardsSection2 as BigCardsPropsType)}
         />
       </CommonSection>
       <AccordionSection

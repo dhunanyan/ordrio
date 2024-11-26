@@ -24,7 +24,7 @@ export type AnimatedCardPropsType = {
   content?: {
     title?: string;
     description?: string;
-    link?: { text: string; href: string };
+    link?: { text: string; href: string; target?: string };
   };
   background?: {
     type?: AnimatedCardBackground;
@@ -76,7 +76,11 @@ export const AnimatedCard = ({
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             transition={{ duration: 0.3, delay: 0.25 }}
           >
-            <Link href={content.link.href} className="animated-card__link">
+            <Link
+              href={content.link.href}
+              target={content.link.target}
+              className="animated-card__link"
+            >
               {content.link.text}
             </Link>
           </motion.div>

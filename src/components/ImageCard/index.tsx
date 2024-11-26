@@ -14,7 +14,7 @@ export type ImageCardPropsType = {
   title: string;
   description: string;
   imageURL: string;
-  link?: { text: string; href: string };
+  link?: { text: string; href: string; target?: string };
   variant?: CardVariant;
   backgroundColor?: string;
   index?: number;
@@ -66,7 +66,11 @@ export const ImageCard = ({
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, delay: 0.2 * index + 0.4 + 0.2 }}
         >
-          <Link className="image-card__link" href={link.href}>
+          <Link
+            href={link.href}
+            target={link.target}
+            className="image-card__link"
+          >
             {link.text}
           </Link>
         </motion.div>

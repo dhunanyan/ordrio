@@ -29,7 +29,7 @@ export const CareersContent = {
           "User Interface Design",
           "+1 years experience",
         ],
-        link: { text: "Apply Now", href: "#" },
+        link: { text: "Apply Now", href: "mailto:careers@ordrio.com" },
       },
       {
         title: "Motion Designer",
@@ -40,7 +40,7 @@ export const CareersContent = {
           "+5 years experience",
           "",
         ],
-        link: { text: "Apply Now", href: "#" },
+        link: { text: "Apply Now", href: "mailto:careers@ordrio.com" },
       },
       {
         title: "Experienced Blockchain and MERN Developer",
@@ -50,7 +50,7 @@ export const CareersContent = {
           "Blockchain, MERN Developer",
           "+5 years experience",
         ],
-        link: { text: "Apply Now", href: "#" },
+        link: { text: "Apply Now", href: "mailto:careers@ordrio.com" },
       },
     ],
   },
@@ -92,7 +92,9 @@ export const CareersContent = {
     title: "Ready to Join the Ordrio Crew?",
     description:
       "If you're ready to be a part of a team that values innovation, diversity, and professional growth, Reach us at Careers@ordrio.com",
-    links: [{ text: "Send Mail to Ordrio Team", href: "#" }],
+    links: [
+      { text: "Send Mail to Ordrio Team", href: "mailto:careers@ordrio.com" },
+    ],
     alignContentLeft: false,
   },
 };

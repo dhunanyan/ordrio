@@ -9,7 +9,7 @@ import {
   ImageCards,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
-  type BigCardsSectionPropsType,
+  type BigCardsPropsType,
   type SlideshowSectionPropsType,
   type IconCardSectionPropsType,
   type CommonSectionPropsType,
@@ -49,9 +49,8 @@ export default function Page() {
         {...(ClothingAndAccessoriesContent.bannerSection1 as BannerSectionPropsType)}
       />
       <CommonSection>
-        {" "}
         <BigCards
-          {...(ClothingAndAccessoriesContent.bigCardsSection2 as BigCardsSectionPropsType)}
+          {...(ClothingAndAccessoriesContent.bigCardsSection2 as BigCardsPropsType)}
         />
       </CommonSection>
       <AccordionSection

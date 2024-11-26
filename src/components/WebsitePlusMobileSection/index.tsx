@@ -11,10 +11,10 @@ import "./WebsitePlusMobileSection.scss";
 
 export type WebsitePlusMobileSectionPropsType = {
   content: {
-    topLinks: { text: string; href: string }[];
+    topLinks: { text: string; href: string; target?: string }[];
     title: string;
     description: string;
-    bottomLinks?: { text: string; href: string }[];
+    bottomLinks?: { text: string; href: string; target?: string }[];
     bottomButtons?: string[];
   };
   screenshotURLs: string[];
@@ -41,14 +41,18 @@ export const WebsitePlusMobileSection = ({
       <div className="big-cards-section__container">
         <div className="big-cards-section__content">
           <ul className="big-cards-section__top-links">
-            {topLinks.map(({ href, text }, i) => (
+            {topLinks.map(({ href, text, target }, i) => (
               <motion.li
                 key={i}
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.2 * i }}
               >
-                <Link className="big-cards-section__top-link" href={href}>
+                <Link
+                  href={href}
+                  target={target}
+                  className="big-cards-section__top-link"
+                >
                   {text}
                 </Link>
               </motion.li>
@@ -74,7 +78,7 @@ export const WebsitePlusMobileSection = ({
           </motion.p>
           {bottomLinks && (
             <ul className="big-cards-section__bottom-links">
-              {bottomLinks.map(({ href, text }, i) => (
+              {bottomLinks.map(({ href, text, target }, i) => (
                 <motion.li
                   key={i}
                   initial={{ opacity: 0, y: 30 }}
@@ -82,8 +86,9 @@ export const WebsitePlusMobileSection = ({
                   transition={{ duration: 0.3, delay: 0.2 * i }}
                 >
                   <Link
-                    className="big-cards-section__bottom-link"
                     href={href}
+                    target={target}
+                    className="big-cards-section__bottom-link"
                     dangerouslySetInnerHTML={{ __html: Icons[text] }}
                   />
                 </motion.li>

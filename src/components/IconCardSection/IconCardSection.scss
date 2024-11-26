@@ -85,18 +85,18 @@
     justify-content: center;
     gap: 24px;
 
+    > li {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
     &--wrap {
       flex-wrap: wrap;
 
       > li {
         width: calc((100% - 24px * 2) / 3);
       }
-    }
-
-    > li {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
     }
   }
 

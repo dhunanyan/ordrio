@@ -54,6 +54,12 @@ export const PricingContent = {
     icon: "check",
     title:
       "Let's Bring Your Business Online With just a few clicks, get started for free!",
-    links: [{ text: "Get Started for Free", href: "#" }],
+    links: [
+      {
+        text: "Get Started for Free",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
+    ],
   },
 };

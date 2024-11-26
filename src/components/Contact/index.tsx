@@ -18,6 +18,7 @@ export type ContactPropsType = {
       description: string;
       href: string;
       icon: string;
+      target?: string;
     }[];
   };
 };
@@ -38,10 +39,10 @@ export const Contact = ({
       <li className="contact__more-help-item">
         <h3>{moreHelp.title}</h3>
       </li>
-      {moreHelp.links.map(({ description, text, href, icon }, i) => (
+      {moreHelp.links.map(({ description, text, href, icon, target }, i) => (
         <li key={i} className="contact__more-help-item">
           <p>{description}</p>
-          <Link href={href}>
+          <Link href={href} target={target}>
             <span dangerouslySetInnerHTML={{ __html: Icons[icon] }} />
             {text}
           </Link>

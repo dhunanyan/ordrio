@@ -128,8 +128,14 @@ export const MilkAndTiffinSubscriptionsContent = {
     title: "Ready to Unleash Your Marketplace Potential?",
     description:
       "Your vision. Your marketplace. Your success. HIVE is here to make it happen.",
-    link: { text: "Schedule a Personalized Demo", href: "#" },
-    links: [{ text: "Setup Your Free Account", href: "#" }],
+    link: { text: "Schedule a Personalized Demo", href: "#" }, //@LINKS: requested - to be added
+    links: [
+      {
+        text: "Setup Your Free Account",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
+    ],
     backgroundImageURL: "/images/blue-small-spirals.png",
     alignContentLeft: false,
   },
@@ -191,6 +197,12 @@ export const MilkAndTiffinSubscriptionsContent = {
     title: "Join the Ordrio Family",
     description:
       "We're here to support you every step of the way, from setup to your first online order and beyond.",
-    links: [{ text: "Setup Your Free Account", href: "#" }],
+    links: [
+      {
+        text: "Setup Your Free Account",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
+    ],
   },
 };

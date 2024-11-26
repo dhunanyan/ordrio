@@ -38,7 +38,11 @@ TODO: Reduce shadows
 
 TODO: FAQ Flickering?
 
----
+TODO: Create email input component for partner section
+
+TODO: 'Website + Mobile App' buttons are not links should be span (Home Page above apps store and google play)
+
+TODO: add links for Themes & Customization carousel
 
 PAGES: 14 + 6
 PAGES LEFT: 4 + 6
@@ -55,3 +59,23 @@ https://ordrio.netlify.app/pricing
 https://ordrio.netlify.app/product-tour
 https://ordrio.netlify.app/restaurants
 https://ordrio.netlify.app/themes
+
+---
+
+FOOTER - SUPPORT
+FAQ - internal // NO FAQ PAGE
+Locate us - requested google map link - to be done
+Contact us - /support
+
+FOOTER - PRODUCTS (remove the whole section)
+
+FOOTER - SOCIAL
+Facebook - https://www.facebook.com/Ordrio
+Instagram - https://www.instagram.com/ordrio_com
+YouTube - https://www.youtube.com/@Ordrio
+LinkedIn - https://www.linkedin.com/company/ordrio
+
+Policies and T&C - requested, to be added mock
+
+https://ordrio.com/privacy-policy/
+https://ordrio.com/termsandcondition/

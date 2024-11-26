@@ -15,6 +15,7 @@ export type PartnersSectionPropsType = {
     height: number;
     width: number;
     href: string;
+    target?: string;
   }[];
   quotes: { quote: string; author: string }[];
 };
@@ -43,7 +44,7 @@ export const PartnersSection = ({
         dangerouslySetInnerHTML={{ __html: title }}
       />
       <ul className="partners-section__logos-list">
-        {partners.map(({ imageURL, width, height, href }, i) => (
+        {partners.map(({ imageURL, width, height, href, target }, i) => (
           <motion.li
             key={i}
             className="partners-section__logos-item"
@@ -54,7 +55,7 @@ export const PartnersSection = ({
             <Link
               className="partners-section__logos-link"
               href={href}
-              target="_blank"
+              target={target}
             >
               <Image
                 placeholder="blur"

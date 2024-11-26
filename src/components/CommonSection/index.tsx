@@ -12,7 +12,7 @@ export type CommonSectionPropsType = {
   title?: string;
   subtitle?: string;
   description?: string;
-  link?: { text: string; href: string };
+  link?: { text: string; href: string; target?: string };
   children?: React.ReactNode;
   backgroundColor?: Colors;
   backgroundImageURL?: string;
@@ -88,7 +88,11 @@ export const CommonSection = ({
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.2 }}
         >
-          <Link href={link.href} className="common-section__button">
+          <Link
+            href={link.href}
+            target={link.target}
+            className="common-section__button"
+          >
             {link.text}
           </Link>
         </motion.div>

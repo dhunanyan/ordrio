@@ -56,7 +56,7 @@ export const GroceriesAndSupermarketsContent = {
     title: "No More Tool Juggling",
     description:
       "One powerful platform for eCommerce, shipping, and payments - everything working together seamlessly",
-    link: { text: "Find Out More", href: "#" },
+    link: { text: "Find Out More", href: "/product-tour" },
     cards: [
       {
         title: "Add your first product",
@@ -154,8 +154,8 @@ export const GroceriesAndSupermarketsContent = {
       "Monitor your performance in real-time with detailed analytics, allowing you to make informed, data-driven decisions. Utilize these insights to optimize your strategies, enhance productivity, and achieve superior results",
     subtitle: "Download App",
     links: [
-      { text: Icons["google-play"], href: "#" },
-      { text: Icons["app-store"], href: "#" },
+      { text: Icons["google-play"], href: "#" }, //@LINKS: requested - to be added
+      { text: Icons["app-store"], href: "#" }, //@LINKS: requested - to be added
     ],
     backgroundImageURL: "/images/blue-small-spirals.png",
     imageURL: "/images/tiger-in-phone.png",
@@ -219,6 +219,12 @@ export const GroceriesAndSupermarketsContent = {
     title: "Join the Ordrio Family",
     description:
       "We're here to support you every step of the way, from setup to your first online order and beyond.",
-    links: [{ text: "Setup Your Free Account", href: "#" }],
+    links: [
+      {
+        text: "Setup Your Free Account",
+        target: "_blank",
+        href: "https://control.ordrio.com/#/register",
+      },
+    ],
   },
 };
