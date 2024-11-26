@@ -6,10 +6,24 @@
 }
 
 .slideshow-section {
-  animation: scroll-left-right 250s linear infinite;
-  align-self: flex-start;
   align-items: center;
   display: flex;
+
+  &__list {
+    animation: scroll-left-right 100s linear infinite;
+    align-self: flex-start;
+    align-items: center;
+    display: flex;
+
+    @keyframes scroll-left-right {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(-200%);
+      }
+    }
+  }
 
   &__item {
     background-color: $grey-color;
@@ -24,18 +38,6 @@
 
     img {
       height: 100%;
-    }
-  }
-
-  @keyframes scroll-left-right {
-    0% {
-      transform: translateX(0);
-    }
-    50% {
-      transform: translateX(calc(-100% + 100vw - var(--scroll-padding) * 2));
-    }
-    100% {
-      transform: translateX(0);
     }
   }
 }
