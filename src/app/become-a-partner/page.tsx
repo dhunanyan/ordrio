@@ -2,11 +2,11 @@ import {
   BannerSection,
   CommonSection,
   IconCardSection,
-  SlideshowSection,
+  Slideshow,
   type BannerSectionPropsType,
   type IconCardSectionPropsType,
   type CommonSectionPropsType,
-  type SlideshowSectionPropsType,
+  type SlideshowPropsType,
   BigCards,
   BigCardsPropsType,
 } from "@components";
@@ -19,8 +19,8 @@ export default function Page() {
       <CommonSection
         {...(BecomeAPartnerContent.hero as CommonSectionPropsType)}
       >
-        <SlideshowSection
-          {...(BecomeAPartnerContent.heroComponent as SlideshowSectionPropsType)}
+        <Slideshow
+          {...(BecomeAPartnerContent.heroComponent as SlideshowPropsType)}
         />
       </CommonSection>
       <CommonSection

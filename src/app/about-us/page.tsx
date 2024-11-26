@@ -3,13 +3,13 @@ import {
   BigCards,
   CommonSection,
   IconCardSection,
-  SlideshowSection,
+  Slideshow,
   ContentWithImageSection,
   type BannerSectionPropsType,
   type BigCardsPropsType,
   type IconCardSectionPropsType,
   type CommonSectionPropsType,
-  type SlideshowSectionPropsType,
+  type SlideshowPropsType,
   type ContentWithImageSectionPropsType,
 } from "@components";
 
@@ -19,9 +19,7 @@ export default function Page() {
   return (
     <main>
       <CommonSection {...(AboutUsContent.hero as CommonSectionPropsType)}>
-        <SlideshowSection
-          {...(AboutUsContent.heroComponent as SlideshowSectionPropsType)}
-        />
+        <Slideshow {...(AboutUsContent.heroComponent as SlideshowPropsType)} />
       </CommonSection>
       <ContentWithImageSection
         {...(AboutUsContent.contentWithImageSection1 as ContentWithImageSectionPropsType)}

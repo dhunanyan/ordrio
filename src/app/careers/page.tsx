@@ -2,13 +2,13 @@ import {
   BannerSection,
   CommonSection,
   IconCardSection,
-  SlideshowSection,
-  PositionsSection,
-  type PositionsSectionPropsType,
+  Slideshow,
+  Positions,
+  type PositionsPropsType,
   type BannerSectionPropsType,
   type IconCardSectionPropsType,
   type CommonSectionPropsType,
-  type SlideshowSectionPropsType,
+  type SlideshowPropsType,
 } from "@components";
 
 import { CareersContent } from "@data";
@@ -17,13 +17,15 @@ export default function Page() {
   return (
     <main>
       <CommonSection {...(CareersContent.hero as CommonSectionPropsType)}>
-        <SlideshowSection
-          {...(CareersContent.heroComponent as SlideshowSectionPropsType)}
+        <Slideshow {...(CareersContent.heroComponent as SlideshowPropsType)} />
+      </CommonSection>
+      <CommonSection
+        {...(CareersContent.positionsSection as CommonSectionPropsType)}
+      >
+        <Positions
+          {...(CareersContent.positionsSectionComponent as PositionsPropsType)}
         />
       </CommonSection>
-      <PositionsSection
-        {...(CareersContent.positionsSection as PositionsSectionPropsType)}
-      />
       <IconCardSection
         {...(CareersContent.iconCardSection as IconCardSectionPropsType)}
       />

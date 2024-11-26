@@ -1,4 +1,4 @@
-import { AnimatedCard, Icons, Separator } from "@config";
+import { AnimatedCard, Colors, Icons, Separator } from "@config";
 
 export const ProductTourContent = {
   hero: {
@@ -103,7 +103,7 @@ export const ProductTourContent = {
     ],
     backgroundImageURL: "/images/blue-small-spirals.png",
     imageURL: "/images/tiger-in-phone.png",
-    tintColor: "white",
+    tintColor: Colors.WHITE,
   },
   bigCardsSection2: {
     cards: [

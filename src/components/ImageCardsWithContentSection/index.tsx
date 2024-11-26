@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import { Content, ImageCard, type ImageCardPropsType } from "@components";
 
+import { Colors } from "@config";
 import "./ImageCardsWithContentSection.scss";
 
 export type ImageCardsWithContentSectionPropsType = {
@@ -41,8 +42,8 @@ export const ImageCardsWithContentSection = ({
           description={description}
           buttons={[link]}
           alignLeft
-          textColor="black"
-          tintColor="blue"
+          textColor={Colors.BLACK}
+          tintColor={Colors.BLUE}
         />
       </div>
 

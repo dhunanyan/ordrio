@@ -20,6 +20,8 @@ export const CareersContent = {
   positionsSection: {
     title: "Ready to Work a with Great Team?",
     description: "Let's Explore the opportunities",
+  },
+  positionsSectionComponent: {
     positions: [
       {
         title: "User Interface Designer",

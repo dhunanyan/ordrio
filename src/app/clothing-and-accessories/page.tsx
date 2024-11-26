@@ -4,13 +4,13 @@ import {
   BigCards,
   CommonSection,
   IconCardSection,
-  SlideshowSection,
+  Slideshow,
   RowCardsWithBigCard,
   ImageCards,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsPropsType,
-  type SlideshowSectionPropsType,
+  type SlideshowPropsType,
   type IconCardSectionPropsType,
   type CommonSectionPropsType,
   type RowCardsWithBigCardPropsType,
@@ -24,8 +24,8 @@ export default function Page() {
       <CommonSection
         {...(ClothingAndAccessoriesContent.hero as CommonSectionPropsType)}
       >
-        <SlideshowSection
-          {...(ClothingAndAccessoriesContent.heroComponent as SlideshowSectionPropsType)}
+        <Slideshow
+          {...(ClothingAndAccessoriesContent.heroComponent as SlideshowPropsType)}
         />
       </CommonSection>
       <CommonSection

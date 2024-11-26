@@ -160,7 +160,7 @@ export const RestaurantsContent = {
     ],
     backgroundImageURL: "/images/blue-small-spirals.png",
     imageURL: "/images/mobile-payments.png",
-    tintColor: "white",
+    tintColor: Colors.WHITE,
   },
   bigCardsSection2: {
     cards: [

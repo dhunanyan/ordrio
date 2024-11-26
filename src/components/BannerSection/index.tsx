@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 
 import { Content } from "@components";
 
+import { Colors } from "@config";
 import "./BannerSection.scss";
 
 export type BannerSectionPropsType = {
@@ -17,7 +18,7 @@ export type BannerSectionPropsType = {
   links: { text: string; href: string }[];
   link?: { text: string; href: string };
   alignContentLeft?: boolean;
-  tintColor?: "white" | "yellow" | "blue";
+  tintColor?: Colors;
 };
 
 export const BannerSection = ({
@@ -29,7 +30,7 @@ export const BannerSection = ({
   description,
   links,
   link,
-  tintColor = "yellow",
+  tintColor = Colors.YELLOW,
   alignContentLeft = true,
 }: BannerSectionPropsType) => (
   <section className="banner-section">

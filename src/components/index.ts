@@ -37,10 +37,7 @@ export {
   type PartnersSectionPropsType,
 } from "./PartnersSection";
 export { Plan, type PlanPropsType } from "./Plan";
-export {
-  SlideshowSection,
-  type SlideshowSectionPropsType,
-} from "./SlideshowSection";
+export { Slideshow, type SlideshowPropsType } from "./Slideshow";
 export {
   RowCardsWithBigCard,
   type RowCardsWithBigCardPropsType,
@@ -52,9 +49,6 @@ export {
   ContentWithImageSection,
   type ContentWithImageSectionPropsType,
 } from "./ContentWithImageSection";
-export {
-  PositionsSection,
-  type PositionsSectionPropsType,
-} from "./PositionsSection";
+export { Positions, type PositionsPropsType } from "./Positions";
 export { ShipPartners, type ShipPartnersPropsType } from "./ShipPartners";
 export { Contact, type ContactPropsType } from "./Contact";

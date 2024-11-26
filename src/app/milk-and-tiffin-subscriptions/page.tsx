@@ -4,12 +4,12 @@ import {
   BigCards,
   CommonSection,
   IconCardSection,
-  SlideshowSection,
+  Slideshow,
   RowCardsWithBigCard,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsPropsType,
-  type SlideshowSectionPropsType,
+  type SlideshowPropsType,
   type IconCardSectionPropsType,
   type CommonSectionPropsType,
   type RowCardsWithBigCardPropsType,
@@ -24,8 +24,8 @@ export default function Page() {
       <CommonSection
         {...(MilkAndTiffinSubscriptionsContent.hero as CommonSectionPropsType)}
       >
-        <SlideshowSection
-          {...(MilkAndTiffinSubscriptionsContent.heroComponent as SlideshowSectionPropsType)}
+        <Slideshow
+          {...(MilkAndTiffinSubscriptionsContent.heroComponent as SlideshowPropsType)}
         />
       </CommonSection>
       <CommonSection

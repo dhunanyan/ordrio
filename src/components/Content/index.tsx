@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import { Icons } from "@config";
+import { Colors, Icons } from "@config";
 
 import "./Content.scss";
 
@@ -22,8 +22,8 @@ export type ContentPropsType = {
   }[];
   link?: { text: string; href: string; target?: string };
   alignLeft?: boolean;
-  tintColor?: "white" | "yellow" | "blue";
-  textColor?: "white" | "black";
+  tintColor?: Colors;
+  textColor?: Colors;
 };
 
 export const Content = ({
@@ -34,8 +34,8 @@ export const Content = ({
   buttons,
   link,
   alignLeft,
-  tintColor = "yellow",
-  textColor = "white",
+  tintColor = Colors.YELLOW,
+  textColor = Colors.WHITE,
 }: ContentPropsType) => (
   <div className={"content" + (alignLeft ? " content--align-left" : "")}>
     {icon && (

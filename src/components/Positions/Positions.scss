@@ -1,40 +1,9 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
-.positions-section {
-  &__container {
-    @include container;
-  }
-
-  &__content {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin: 0 0 80px;
-  }
-
-  &__title {
-    color: $black-color;
-    font-family: $font-spoof-trail;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 60px;
-  }
-
-  &__description {
-    color: $black-color;
-    font-family: $font-inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
-  }
-
-  &__list {
-    display: flex;
-    flex-direction: column;
-  }
+.positions {
+  display: flex;
+  flex-direction: column;
 
   &__item {
     border-top: $grey-blue-color 1px solid;
