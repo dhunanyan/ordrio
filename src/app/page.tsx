@@ -1,32 +1,32 @@
 import {
   AccordionSection,
   BannerSection,
-  BigCardsSection,
+  BigCards,
   CarouselSection,
-  Hero,
+  CommonSection,
   ImageCardsWithContentSection,
   ListSection,
   PartnersSection,
-  PlanSection,
+  Plan,
   WebsitePlusMobileSection,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
   type CarouselSectionPropsType,
-  type HeroPropsType,
+  type CommonSectionPropsType,
   type ImageCardsWithContentSectionPropsType,
   type ListSectionPropsType,
   type PartnersSectionPropsType,
-  type PlanSectionPropsType,
+  type PlanPropsType,
   type WebsitePlusMobileSectionPropsType,
 } from "@components";
 
-import { HomeContent } from "@data";
+import { HomeContent, PlanContent } from "@data";
 
 export default function Home() {
   return (
     <main>
-      <Hero {...(HomeContent.hero as HeroPropsType)} />
+      <CommonSection {...(HomeContent.hero as CommonSectionPropsType)} />
       <ListSection {...(HomeContent.listSection as ListSectionPropsType)} />
       <PartnersSection
         {...(HomeContent.partnerSection as PartnersSectionPropsType)}
@@ -34,16 +34,21 @@ export default function Home() {
       <ImageCardsWithContentSection
         {...(HomeContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
       />
-      <BigCardsSection
-        {...(HomeContent.bigCardsSection as BigCardsSectionPropsType)}
-      />
+      <CommonSection>
+        <BigCards
+          {...(HomeContent.bigCardsSection as BigCardsSectionPropsType)}
+        />
+      </CommonSection>
+
       <WebsitePlusMobileSection
         {...(HomeContent.websiteAndMobileSection as WebsitePlusMobileSectionPropsType)}
       />
       <CarouselSection
         {...(HomeContent.carouselSection as CarouselSectionPropsType)}
       />
-      <PlanSection {...(HomeContent.planSection as PlanSectionPropsType)} />
+      <CommonSection {...(HomeContent.planSection as CommonSectionPropsType)}>
+        <Plan {...(PlanContent as PlanPropsType)} />
+      </CommonSection>
       <AccordionSection
         {...(HomeContent.accordionSection as AccordionSectionPropsType)}
       />

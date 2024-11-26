@@ -1,17 +1,18 @@
-import { AnimatedCard, Icons, SectionSeparator } from "@config";
+import { AnimatedCard, Icons, Separator } from "@config";
 import { PlanContent } from "./Components";
 
 export const HomeContent = {
   hero: {
     title: "The Ultimate <span>eCommerce</span> Business Solution",
-    list: [
-      "Simplify online store",
-      "Streamline shipping",
-      "Manage sales & more",
-    ],
+    description: `
+      <span>${Icons["check"]} Simplify online store</span>
+      <span>${Icons["check"]}Streamline shipping</span>
+      <span>${Icons["check"]}Manage sales & more</span>
+    `,
     link: { text: "Get Started for Free", href: "#" },
-    sectionSeparator: SectionSeparator.BIG,
+    separator: Separator.BIG,
     bottomImageURL: "/images/tablet-and-mobile-view-tiger.png",
+    isFirstSection: true,
   },
   listSection: {
     imageURL: "/images/tiger-painting.png",
@@ -160,9 +161,9 @@ export const HomeContent = {
   },
   planSection: {
     description: "No matter your budget",
-    title: "We've got a plan that fits",
-    plan: PlanContent,
+    subtitle: "We've got a plan that fits",
   },
+  planSectionInCommonSection: PlanContent,
   accordionSection: {
     title: "Frequently Asked Questions",
     accordions: [

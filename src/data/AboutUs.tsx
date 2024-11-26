@@ -5,6 +5,7 @@ export const AboutUsContent = {
     title: "We are More Than Just <span>Techies</span>",
     description:
       "We are dreamers, builders, and believers in the power of eCommerce. We are a bunch of passionate folks who love helping others succeed online.",
+    isFirstSection: true,
   },
   heroComponent: {
     imageURLs: [

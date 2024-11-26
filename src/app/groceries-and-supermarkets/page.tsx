@@ -1,9 +1,8 @@
 import {
   AccordionSection,
   BannerSection,
-  BigCardsSection,
+  BigCards,
   CommonSection,
-  Hero,
   IconCardSection,
   SlideshowSection,
   RowCardsWithBigCard,
@@ -11,10 +10,9 @@ import {
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
-  type CommonSectionPropsType,
   type SlideshowSectionPropsType,
   type IconCardSectionPropsType,
-  type HeroPropsType,
+  type CommonSectionPropsType,
   type RowCardsWithBigCardPropsType,
   type ImageCardsWithContentSectionPropsType,
 } from "@components";
@@ -24,11 +22,13 @@ import { GroceriesAndSupermarketsContent } from "@data";
 export default function Page() {
   return (
     <main>
-      <Hero {...(GroceriesAndSupermarketsContent.hero as HeroPropsType)}>
+      <CommonSection
+        {...(GroceriesAndSupermarketsContent.hero as CommonSectionPropsType)}
+      >
         <SlideshowSection
           {...(GroceriesAndSupermarketsContent.heroComponent as SlideshowSectionPropsType)}
         />
-      </Hero>
+      </CommonSection>
       <CommonSection
         {...(GroceriesAndSupermarketsContent.commonSectionWithRowAndBigCards as CommonSectionPropsType)}
       >
@@ -39,18 +39,22 @@ export default function Page() {
       <ImageCardsWithContentSection
         {...(GroceriesAndSupermarketsContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
       />
-      <BigCardsSection
-        {...(GroceriesAndSupermarketsContent.bigCardsSection1 as BigCardsSectionPropsType)}
-      />
+      <CommonSection>
+        <BigCards
+          {...(GroceriesAndSupermarketsContent.bigCardsSection1 as BigCardsSectionPropsType)}
+        />
+      </CommonSection>
       <IconCardSection
         {...(GroceriesAndSupermarketsContent.iconCardSection as IconCardSectionPropsType)}
       />
       <BannerSection
         {...(GroceriesAndSupermarketsContent.bannerSection1 as BannerSectionPropsType)}
       />
-      <BigCardsSection
-        {...(GroceriesAndSupermarketsContent.bigCardsSection2 as BigCardsSectionPropsType)}
-      />
+      <CommonSection>
+        <BigCards
+          {...(GroceriesAndSupermarketsContent.bigCardsSection2 as BigCardsSectionPropsType)}
+        />
+      </CommonSection>
       <AccordionSection
         {...(GroceriesAndSupermarketsContent.accordionSection as AccordionSectionPropsType)}
       />

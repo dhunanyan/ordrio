@@ -1,12 +1,13 @@
-import { AnimatedCard, Colors, SectionSeparator } from "@config";
+import { AnimatedCard, Colors, Separator } from "@config";
 
 export const IntegrationsContent = {
   hero: {
     title: "Connect Ordrio with Your <span>Favourite Tools</span>",
     description:
       "Ordrio's extensive suite of integrations empowers you to streamline your workflow, expand your reach, and unlock new growth opportunities.",
-    sectionSeparator: SectionSeparator.MEDIUM,
+    separator: Separator.MEDIUM,
     link: { text: "Signup for free", href: "#" },
+    isFirstSection: true,
   },
   iconCardSection: {
     title: "Marketing & Sales",

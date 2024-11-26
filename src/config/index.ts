@@ -1,6 +1,6 @@
 export { Icons } from "./icons";
 export {
-  SectionSeparator,
+  Separator,
   Dropdown,
   Colors,
   StepCardAnimation,

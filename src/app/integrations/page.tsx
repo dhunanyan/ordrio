@@ -1,14 +1,14 @@
 import {
   BannerSection,
-  Hero,
+  CommonSection,
   IconCardSection,
   ImageCardsWithContentSection,
-  BigCardsSection,
+  BigCards,
   ShipPartners,
   type ShipPartnersPropsType,
   type BannerSectionPropsType,
   type IconCardSectionPropsType,
-  type HeroPropsType,
+  type CommonSectionPropsType,
   type ImageCardsWithContentSectionPropsType,
   type BigCardsSectionPropsType,
 } from "@components";
@@ -18,16 +18,21 @@ import { IntegrationsContent } from "@data";
 export default function Page() {
   return (
     <main>
-      <Hero {...(IntegrationsContent.hero as HeroPropsType)} />
+      <CommonSection
+        {...(IntegrationsContent.hero as CommonSectionPropsType)}
+      />
       <IconCardSection
         {...(IntegrationsContent.iconCardSection as IconCardSectionPropsType)}
       />
       <ImageCardsWithContentSection
         {...(IntegrationsContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
       />
-      <BigCardsSection
-        {...(IntegrationsContent.bigCardsSection as BigCardsSectionPropsType)}
-      />
+      <CommonSection>
+        {" "}
+        <BigCards
+          {...(IntegrationsContent.bigCardsSection as BigCardsSectionPropsType)}
+        />
+      </CommonSection>{" "}
       <ShipPartners
         {...(IntegrationsContent.shipPartners as ShipPartnersPropsType)}
       />

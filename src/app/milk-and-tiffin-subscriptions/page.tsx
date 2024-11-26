@@ -1,19 +1,17 @@
 import {
   AccordionSection,
   BannerSection,
-  BigCardsSection,
+  BigCards,
   CommonSection,
-  Hero,
   IconCardSection,
   SlideshowSection,
   RowCardsWithBigCard,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
-  type CommonSectionPropsType,
   type SlideshowSectionPropsType,
   type IconCardSectionPropsType,
-  type HeroPropsType,
+  type CommonSectionPropsType,
   type RowCardsWithBigCardPropsType,
   ImageCards,
 } from "@components";
@@ -23,11 +21,13 @@ import { MilkAndTiffinSubscriptionsContent } from "@data";
 export default function Page() {
   return (
     <main>
-      <Hero {...(MilkAndTiffinSubscriptionsContent.hero as HeroPropsType)}>
+      <CommonSection
+        {...(MilkAndTiffinSubscriptionsContent.hero as CommonSectionPropsType)}
+      >
         <SlideshowSection
           {...(MilkAndTiffinSubscriptionsContent.heroComponent as SlideshowSectionPropsType)}
         />
-      </Hero>
+      </CommonSection>
       <CommonSection
         {...(MilkAndTiffinSubscriptionsContent.commonSectionWithRowAndBigCards as CommonSectionPropsType)}
       >
@@ -48,9 +48,11 @@ export default function Page() {
       <BannerSection
         {...(MilkAndTiffinSubscriptionsContent.bannerSection1 as BannerSectionPropsType)}
       />
-      <BigCardsSection
-        {...(MilkAndTiffinSubscriptionsContent.bigCardsSection2 as BigCardsSectionPropsType)}
-      />
+      <CommonSection>
+        <BigCards
+          {...(MilkAndTiffinSubscriptionsContent.bigCardsSection2 as BigCardsSectionPropsType)}
+        />
+      </CommonSection>
       <AccordionSection
         {...(MilkAndTiffinSubscriptionsContent.accordionSection as AccordionSectionPropsType)}
       />

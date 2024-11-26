@@ -2,7 +2,7 @@ import {
   AnimatedCard,
   Colors,
   Icons,
-  SectionSeparator,
+  Separator,
   ThemeCardVariant,
 } from "@config";
 
@@ -10,7 +10,8 @@ export const GroceriesAndSupermarketsContent = {
   hero: {
     title: "Grocbay: Your <span>Grocery</span> Store, Online.",
     description: "Bring the heart of your grocery store to the digital world.",
-    sectionSeparator: SectionSeparator.MEDIUM,
+    separator: Separator.MEDIUM,
+    isFirstSection: true,
   },
   heroComponent: {
     imageURLs: [
@@ -21,7 +22,7 @@ export const GroceriesAndSupermarketsContent = {
     ],
   },
   commonSectionWithRowAndBigCards: {
-    title: "Why Grocbay?",
+    subtitle: "Why Grocbay?",
     description:
       "Grocbay is the easiest way to create your own online store - no marketplace fuss, just your brand, your products, and your customers.",
     backgroundColor: Colors.WHITE,

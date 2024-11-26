@@ -1,11 +1,12 @@
-import { Colors, SectionSeparator } from "@config";
+import { Colors, Separator } from "@config";
 
 export const CareersContent = {
   hero: {
     title: "Join the <span>Ordrio Crew</span>",
     description:
       "Shape the Future of eCommerce, We are not just building a company; we are building a movement.",
-    sectionSeparator: SectionSeparator.MEDIUM,
+    separator: Separator.MEDIUM,
+    isFirstSection: true,
   },
   heroComponent: {
     imageURLs: [

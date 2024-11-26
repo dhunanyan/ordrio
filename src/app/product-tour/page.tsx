@@ -1,10 +1,10 @@
 import {
   AccordionSection,
   StepCardsSection,
-  BigCardsSection,
+  BigCards,
   BannerSection,
   IconCardSection,
-  Hero,
+  CommonSection,
   ListSection,
   WebsitePlusMobileSection,
   type AccordionSectionPropsType,
@@ -12,7 +12,7 @@ import {
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
   type IconCardSectionPropsType,
-  type HeroPropsType,
+  type CommonSectionPropsType,
   type ListSectionPropsType,
   type WebsitePlusMobileSectionPropsType,
 } from "@components";
@@ -24,11 +24,11 @@ import { renderAnimatedCard } from "@utils";
 export default function Page() {
   return (
     <main>
-      <Hero {...(ProductTourContent.hero as HeroPropsType)}>
+      <CommonSection {...(ProductTourContent.hero as CommonSectionPropsType)}>
         <StepCardsSection
           {...(AnimatedCardsContent as StepCardsSectionPropsType)}
         />
-      </Hero>
+      </CommonSection>
       <ListSection
         {...(ProductTourContent.listSection as ListSectionPropsType)}
       >
@@ -42,18 +42,22 @@ export default function Page() {
       <IconCardSection
         {...(ProductTourContent.iconCardSection as IconCardSectionPropsType)}
       />
-      <BigCardsSection
-        {...(ProductTourContent.bigCardsSection as BigCardsSectionPropsType)}
-      />
+      <CommonSection>
+        <BigCards
+          {...(ProductTourContent.bigCardsSection as BigCardsSectionPropsType)}
+        />
+      </CommonSection>
       <WebsitePlusMobileSection
         {...(ProductTourContent.websiteAndMobileSection as WebsitePlusMobileSectionPropsType)}
       />
       <BannerSection
         {...(ProductTourContent.bannerSection1 as BannerSectionPropsType)}
       />
-      <BigCardsSection
-        {...(ProductTourContent.bigCardsSection2 as BigCardsSectionPropsType)}
-      />
+      <CommonSection>
+        <BigCards
+          {...(ProductTourContent.bigCardsSection2 as BigCardsSectionPropsType)}
+        />
+      </CommonSection>
       <AccordionSection
         {...(ProductTourContent.accordionSection as AccordionSectionPropsType)}
       />

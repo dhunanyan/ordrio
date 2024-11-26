@@ -1,14 +1,14 @@
 import {
   BannerSection,
-  BigCardsSection,
-  Hero,
+  BigCards,
+  CommonSection,
   IconCardSection,
   SlideshowSection,
   ContentWithImageSection,
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
   type IconCardSectionPropsType,
-  type HeroPropsType,
+  type CommonSectionPropsType,
   type SlideshowSectionPropsType,
   type ContentWithImageSectionPropsType,
 } from "@components";
@@ -18,11 +18,11 @@ import { AboutUsContent } from "@data";
 export default function Page() {
   return (
     <main>
-      <Hero {...(AboutUsContent.hero as HeroPropsType)}>
+      <CommonSection {...(AboutUsContent.hero as CommonSectionPropsType)}>
         <SlideshowSection
           {...(AboutUsContent.heroComponent as SlideshowSectionPropsType)}
         />
-      </Hero>
+      </CommonSection>
       <ContentWithImageSection
         {...(AboutUsContent.contentWithImageSection1 as ContentWithImageSectionPropsType)}
       />
@@ -32,9 +32,12 @@ export default function Page() {
       <IconCardSection
         {...(AboutUsContent.iconCardSection as IconCardSectionPropsType)}
       />
-      <BigCardsSection
-        {...(AboutUsContent.bigCardsSection as BigCardsSectionPropsType)}
-      />
+      <CommonSection>
+        {" "}
+        <BigCards
+          {...(AboutUsContent.bigCardsSection as BigCardsSectionPropsType)}
+        />
+      </CommonSection>{" "}
       <BannerSection
         {...(AboutUsContent.bannerSection as BannerSectionPropsType)}
       />

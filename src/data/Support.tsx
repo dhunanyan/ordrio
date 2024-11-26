@@ -1,10 +1,11 @@
-import { AnimatedCard, Colors, SectionSeparator } from "@config";
+import { AnimatedCard, Colors, Separator } from "@config";
 
 export const SupportContent = {
   hero: {
     title: "Get the <span>Support</span> You Need",
     description: "Find answers, get help, and learn how to use Ordrio.",
-    sectionSeparator: SectionSeparator.MEDIUM,
+    separator: Separator.MEDIUM,
+    isFirstSection: true,
   },
   heroComponent: {
     moreHelp: {

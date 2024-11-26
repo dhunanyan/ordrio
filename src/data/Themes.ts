@@ -1,11 +1,12 @@
-import { AnimatedCard, Colors, SectionSeparator } from "@config";
+import { AnimatedCard, Colors, Separator } from "@config";
 
 export const ThemesContent = {
   hero: {
     title:
       "Ordrio Themes: Find the <span>Perfect Design</span> for Your Business",
     description: " Make a Lasting Impression with Your Store Design",
-    sectionSeparator: SectionSeparator.MEDIUM,
+    separator: Separator.MEDIUM,
+    isFirstSection: true,
   },
   commonSectionWithBigCards: {
     title: "Find Your Perfect Fit",
@@ -58,11 +59,12 @@ export const ThemesContent = {
     ],
   },
   commonSection: {
-    title: "Your Brand, <span>Your Story</span>",
+    subtitle: "Your Brand, <span>Your Story</span>",
     description:
       "With Ordrio, you have the power to create a truly unique online presence that reflects  your brand's values and resonates with your target audience",
     imageURL: "/images/tablet-and-mobile-view-tiger.png",
     backgroundImageURL: "images/grey-spiral.png",
+    backgroundColor: Colors.GREY,
   },
   iconCardSection: {
     withIcon: true,

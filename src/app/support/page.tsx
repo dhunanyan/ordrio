@@ -1,13 +1,11 @@
 import {
   BannerSection,
-  Hero,
-  Contact,
   CommonSection,
-  BigCardsSection,
+  Contact,
+  BigCards,
   type BannerSectionPropsType,
-  type HeroPropsType,
-  type ContactPropsType,
   type CommonSectionPropsType,
+  type ContactPropsType,
   type BigCardsSectionPropsType,
 } from "@components";
 
@@ -16,13 +14,13 @@ import { SupportContent } from "@data";
 export default function Page() {
   return (
     <main>
-      <Hero {...(SupportContent.hero as HeroPropsType)}>
+      <CommonSection {...(SupportContent.hero as CommonSectionPropsType)}>
         <Contact {...(SupportContent.heroComponent as ContactPropsType)} />
-      </Hero>
+      </CommonSection>
       <CommonSection
         {...(SupportContent.commonSection as CommonSectionPropsType)}
       >
-        <BigCardsSection
+        <BigCards
           {...(SupportContent.bigCardsInCommonSection as BigCardsSectionPropsType)}
         />
       </CommonSection>

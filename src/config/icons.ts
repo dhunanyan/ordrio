@@ -51,8 +51,8 @@ import restaurants from "../../public/svg/i_restaurants.svg";
 import rocketBlue from "../../public/svg/i_rocket-blue.svg";
 import rocketYellow from "../../public/svg/i_rocket-yellow.svg";
 import sale from "../../public/svg/i_sale.svg";
-import sectionSeparator from "../../public/svg/i_section-separator.svg";
-import sectionSeparatorBig from "../../public/svg/i_section-separator-big.svg";
+import separator from "../../public/svg/i_section-separator.svg";
+import separatorBig from "../../public/svg/i_section-separator-big.svg";
 import services from "../../public/svg/i_services.svg";
 import shieldBlue from "../../public/svg/i_shield-blue.svg";
 import support from "../../public/svg/i_support.svg";
@@ -99,8 +99,8 @@ export const Icons = {
   "pet-stores": petStores,
   restaurants,
   sale,
-  "section-separator": sectionSeparator,
-  "section-separator-big": sectionSeparatorBig,
+  "section-separator": separator,
+  "section-separator-big": separatorBig,
   services,
   support,
   "table-blue": tableBlue,

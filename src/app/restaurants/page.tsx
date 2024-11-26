@@ -1,9 +1,8 @@
 import {
   AccordionSection,
   BannerSection,
-  BigCardsSection,
+  BigCards,
   CommonSection,
-  Hero,
   IconCardSection,
   SlideshowSection,
   RowCardsWithBigCard,
@@ -11,10 +10,9 @@ import {
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
-  type CommonSectionPropsType,
   type SlideshowSectionPropsType,
   type IconCardSectionPropsType,
-  type HeroPropsType,
+  type CommonSectionPropsType,
   type RowCardsWithBigCardPropsType,
   type ImageCardsWithContentSectionPropsType,
 } from "@components";
@@ -24,11 +22,11 @@ import { RestaurantsContent } from "@data";
 export default function Page() {
   return (
     <main>
-      <Hero {...(RestaurantsContent.hero as HeroPropsType)}>
+      <CommonSection {...(RestaurantsContent.hero as CommonSectionPropsType)}>
         <SlideshowSection
           {...(RestaurantsContent.heroComponent as SlideshowSectionPropsType)}
         />
-      </Hero>
+      </CommonSection>
       <CommonSection
         {...(RestaurantsContent.commonSectionWithRowAndBigCards as CommonSectionPropsType)}
       >
@@ -39,18 +37,22 @@ export default function Page() {
       <ImageCardsWithContentSection
         {...(RestaurantsContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
       />
-      <BigCardsSection
-        {...(RestaurantsContent.bigCardsSection1 as BigCardsSectionPropsType)}
-      />
+      <CommonSection>
+        <BigCards
+          {...(RestaurantsContent.bigCardsSection1 as BigCardsSectionPropsType)}
+        />
+      </CommonSection>
       <IconCardSection
         {...(RestaurantsContent.iconCardSection as IconCardSectionPropsType)}
       />
       <BannerSection
         {...(RestaurantsContent.bannerSection1 as BannerSectionPropsType)}
       />
-      <BigCardsSection
-        {...(RestaurantsContent.bigCardsSection2 as BigCardsSectionPropsType)}
-      />
+      <CommonSection>
+        <BigCards
+          {...(RestaurantsContent.bigCardsSection2 as BigCardsSectionPropsType)}
+        />
+      </CommonSection>
       <AccordionSection
         {...(RestaurantsContent.accordionSection as AccordionSectionPropsType)}
       />

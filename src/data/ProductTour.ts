@@ -1,11 +1,12 @@
-import { AnimatedCard, Icons, SectionSeparator } from "@config";
+import { AnimatedCard, Icons, Separator } from "@config";
 
 export const ProductTourContent = {
   hero: {
     title: "See Ordrio from the inside",
     description:
       "Get to know the key elements of Ordrio even before creating your account.",
-    sectionSeparator: SectionSeparator.MEDIUM,
+    separator: Separator.MEDIUM,
+    isFirstSection: true,
   },
   listSection: {
     title: "Easy Product Management",

@@ -1,12 +1,12 @@
 import {
   BannerSection,
-  BigCardsSection,
-  Hero,
+  BigCards,
+  CommonSection,
   IconCardSection,
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
   type IconCardSectionPropsType,
-  type HeroPropsType,
+  type CommonSectionPropsType,
 } from "@components";
 
 import { PluginsContent } from "@data";
@@ -14,13 +14,15 @@ import { PluginsContent } from "@data";
 export default function Page() {
   return (
     <main>
-      <Hero {...(PluginsContent.hero as HeroPropsType)} />
+      <CommonSection {...(PluginsContent.hero as CommonSectionPropsType)} />
       <IconCardSection
         {...(PluginsContent.iconCardSection as IconCardSectionPropsType)}
       />
-      <BigCardsSection
-        {...(PluginsContent.bigCardsSection as BigCardsSectionPropsType)}
-      />
+      <CommonSection>
+        <BigCards
+          {...(PluginsContent.bigCardsSection as BigCardsSectionPropsType)}
+        />
+      </CommonSection>
       <BannerSection
         {...(PluginsContent.bannerSection as BannerSectionPropsType)}
       />

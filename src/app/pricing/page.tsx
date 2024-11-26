@@ -2,14 +2,12 @@ import {
   AccordionSection,
   BannerSection,
   ComparePlans,
-  ComparePlansSection,
-  Hero,
+  CommonSection,
   Plan,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type ComparePlansPropsType,
-  type ComparePlansSectionPropsType,
-  type HeroPropsType,
+  type CommonSectionPropsType,
   type PlanPropsType,
 } from "@components";
 
@@ -22,14 +20,14 @@ import {
 export default function Page() {
   return (
     <main>
-      <Hero {...(PricingContent.hero as HeroPropsType)}>
+      <CommonSection {...(PricingContent.hero as CommonSectionPropsType)}>
         <Plan {...(PlanWithExtraContent as PlanPropsType)} />
-      </Hero>
-      <ComparePlansSection
-        {...(PricingContent.comparePlansSection as ComparePlansSectionPropsType)}
+      </CommonSection>
+      <CommonSection
+        {...(PricingContent.comparePlansSection as CommonSectionPropsType)}
       >
         <ComparePlans {...(ComparePlansContent as ComparePlansPropsType)} />
-      </ComparePlansSection>
+      </CommonSection>
       <AccordionSection
         {...(PricingContent.accordionSection as AccordionSectionPropsType)}
       />

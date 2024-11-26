@@ -1,16 +1,14 @@
 import {
   AccordionSection,
   BannerSection,
-  BigCardsSection,
+  BigCards,
   CommonSection,
-  Hero,
   IconCardSection,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
-  type CommonSectionPropsType,
   type IconCardSectionPropsType,
-  type HeroPropsType,
+  type CommonSectionPropsType,
 } from "@components";
 
 import { ThemesContent } from "@data";
@@ -18,11 +16,11 @@ import { ThemesContent } from "@data";
 export default function Page() {
   return (
     <main>
-      <Hero {...(ThemesContent.hero as HeroPropsType)} />
+      <CommonSection {...(ThemesContent.hero as CommonSectionPropsType)} />
       <CommonSection
         {...(ThemesContent.commonSectionWithBigCards as CommonSectionPropsType)}
       >
-        <BigCardsSection
+        <BigCards
           {...(ThemesContent.bigCardsInCommonSection as BigCardsSectionPropsType)}
         />
       </CommonSection>
@@ -32,9 +30,11 @@ export default function Page() {
       <IconCardSection
         {...(ThemesContent.iconCardSection as IconCardSectionPropsType)}
       />
-      <BigCardsSection
-        {...(ThemesContent.bigCardsSection as BigCardsSectionPropsType)}
-      />
+      <CommonSection>
+        <BigCards
+          {...(ThemesContent.bigCardsSection as BigCardsSectionPropsType)}
+        />
+      </CommonSection>
       <AccordionSection
         {...(ThemesContent.accordionSection as AccordionSectionPropsType)}
       />

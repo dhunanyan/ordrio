@@ -7,10 +7,7 @@ export {
   type StepCardsSectionPropsType,
 } from "./StepCardsSection";
 export { BannerSection, type BannerSectionPropsType } from "./BannerSection";
-export {
-  BigCardsSection,
-  type BigCardsSectionPropsType,
-} from "./BigCardsSection";
+export { BigCards, type BigCardsSectionPropsType } from "./BigCards";
 export {
   WebsitePlusMobileSection,
   type WebsitePlusMobileSectionPropsType,
@@ -20,14 +17,11 @@ export {
   type CarouselSectionPropsType,
 } from "./CarouselSection";
 export { ComparePlans, type ComparePlansPropsType } from "./ComparePlans";
-export {
-  ComparePlansSection,
-  type ComparePlansSectionPropsType,
-} from "./ComparePlansSection";
+
 export { Content, type ContentPropsType } from "./Content";
 export { Footer } from "./Footer";
 export { Header } from "./Header";
-export { Hero, type HeroPropsType } from "./Hero";
+export { CommonSection, type CommonSectionPropsType } from "./CommonSection";
 export { ImageCard, type ImageCardPropsType } from "./ImageCard";
 export {
   IconCardSection,
@@ -43,8 +37,6 @@ export {
   type PartnersSectionPropsType,
 } from "./PartnersSection";
 export { Plan, type PlanPropsType } from "./Plan";
-export { PlanSection, type PlanSectionPropsType } from "./PlanSection";
-export { CommonSection, type CommonSectionPropsType } from "./CommonSection";
 export {
   SlideshowSection,
   type SlideshowSectionPropsType,

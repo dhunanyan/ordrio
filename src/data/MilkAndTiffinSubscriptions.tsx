@@ -1,16 +1,12 @@
-import {
-  AnimatedCard,
-  Colors,
-  SectionSeparator,
-  ThemeCardVariant,
-} from "@config";
+import { AnimatedCard, Colors, Separator, ThemeCardVariant } from "@config";
 
 export const MilkAndTiffinSubscriptionsContent = {
   hero: {
     title: "Simplify <span>Subscriptions</span>\nDelight Customers",
     description:
       "Moo & Chew is the all-in-one platform designed to help you manage your milk and tiffin subscription business effortlessly.",
-    sectionSeparator: SectionSeparator.MEDIUM,
+    separator: Separator.MEDIUM,
+    isFirstSection: true,
   },
   heroComponent: {
     imageURLs: [
@@ -21,7 +17,7 @@ export const MilkAndTiffinSubscriptionsContent = {
     ],
   },
   commonSectionWithRowAndBigCards: {
-    title: "Why Moo & Chew?",
+    subtitle: "Why Moo & Chew?",
     description:
       "Restobite is more than just online ordering. It is a comprehensive solution that empowers your restaurant to",
     backgroundColor: Colors.WHITE,
@@ -53,7 +49,7 @@ export const MilkAndTiffinSubscriptionsContent = {
     ],
   },
   commonSection: {
-    title: "Unveil Your Brand's Essence",
+    subtitle: "Unveil Your Brand's Essence",
     backgroundColor: Colors.YELLOW,
   },
   commonSectionImageCards: {

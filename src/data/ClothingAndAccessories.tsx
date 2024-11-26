@@ -1,15 +1,11 @@
-import {
-  AnimatedCard,
-  Colors,
-  SectionSeparator,
-  ThemeCardVariant,
-} from "@config";
+import { AnimatedCard, Colors, Separator, ThemeCardVariant } from "@config";
 
 export const ClothingAndAccessoriesContent = {
   hero: {
     title: "Elevate Your <span>Fashion</span> Brand Online",
     description: "Showcase Your Style, Captivate Your Customers",
-    sectionSeparator: SectionSeparator.MEDIUM,
+    separator: Separator.MEDIUM,
+    isFirstSection: true,
   },
   heroComponent: {
     imageURLs: [
@@ -20,7 +16,7 @@ export const ClothingAndAccessoriesContent = {
     ],
   },
   commonSectionWithRowAndBigCards: {
-    title: "Why Choose Aura?",
+    subtitle: "Why Choose Aura?",
     description:
       "Aura is not just a theme; it is a digital runway for your clothing and accessories. Create an online boutique that reflects your brand's unique aesthetic and inspires shoppers to fall in love with your collections.",
     backgroundColor: Colors.WHITE,
@@ -52,7 +48,7 @@ export const ClothingAndAccessoriesContent = {
     ],
   },
   commonSection: {
-    title: "Unveil Your Brand's Essence",
+    subtitle: "Unveil Your Brand's Essence",
     backgroundColor: Colors.YELLOW,
   },
   commonSectionImageCards: {

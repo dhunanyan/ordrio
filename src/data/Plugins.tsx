@@ -6,6 +6,7 @@ export const PluginsContent = {
     description:
       "Take your Ordrio store to the next level with our handpicked selection of add-ons.",
     link: { text: "Signup for free", href: " #" },
+    isFirstSection: true,
   },
   // @TODO: PLUGINS HERE
   iconCardSection: {

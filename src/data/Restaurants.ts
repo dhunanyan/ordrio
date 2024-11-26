@@ -2,7 +2,7 @@ import {
   AnimatedCard,
   Colors,
   Icons,
-  SectionSeparator,
+  Separator,
   ThemeCardVariant,
 } from "@config";
 
@@ -10,7 +10,8 @@ export const RestaurantsContent = {
   hero: {
     title: "Your <span>Restaurant's</span> Digital Command Center",
     description: "Delight Diners, Simplify Operations, Grow Your Business",
-    sectionSeparator: SectionSeparator.MEDIUM,
+    separator: Separator.MEDIUM,
+    isFirstSection: true,
   },
   heroComponent: {
     imageURLs: [

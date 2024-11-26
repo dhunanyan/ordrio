@@ -1,4 +1,4 @@
-export enum SectionSeparator {
+export enum Separator {
   SMALL = "section-separator-small",
   MEDIUM = "section-separator",
   BIG = "section-separator-big",

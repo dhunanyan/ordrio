@@ -1,21 +1,19 @@
 import {
   AccordionSection,
   BannerSection,
-  BigCardsSection,
+  BigCards,
   CommonSection,
-  Hero,
   IconCardSection,
   SlideshowSection,
   RowCardsWithBigCard,
+  ImageCards,
   type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsSectionPropsType,
-  type CommonSectionPropsType,
   type SlideshowSectionPropsType,
   type IconCardSectionPropsType,
-  type HeroPropsType,
+  type CommonSectionPropsType,
   type RowCardsWithBigCardPropsType,
-  ImageCards,
 } from "@components";
 
 import { ClothingAndAccessoriesContent } from "@data";
@@ -23,11 +21,13 @@ import { ClothingAndAccessoriesContent } from "@data";
 export default function Page() {
   return (
     <main>
-      <Hero {...(ClothingAndAccessoriesContent.hero as HeroPropsType)}>
+      <CommonSection
+        {...(ClothingAndAccessoriesContent.hero as CommonSectionPropsType)}
+      >
         <SlideshowSection
           {...(ClothingAndAccessoriesContent.heroComponent as SlideshowSectionPropsType)}
         />
-      </Hero>
+      </CommonSection>
       <CommonSection
         {...(ClothingAndAccessoriesContent.commonSectionWithRowAndBigCards as CommonSectionPropsType)}
       >
@@ -48,9 +48,12 @@ export default function Page() {
       <BannerSection
         {...(ClothingAndAccessoriesContent.bannerSection1 as BannerSectionPropsType)}
       />
-      <BigCardsSection
-        {...(ClothingAndAccessoriesContent.bigCardsSection2 as BigCardsSectionPropsType)}
-      />
+      <CommonSection>
+        {" "}
+        <BigCards
+          {...(ClothingAndAccessoriesContent.bigCardsSection2 as BigCardsSectionPropsType)}
+        />
+      </CommonSection>
       <AccordionSection
         {...(ClothingAndAccessoriesContent.accordionSection as AccordionSectionPropsType)}
       />

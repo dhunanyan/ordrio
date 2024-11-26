@@ -1,14 +1,15 @@
-import { SectionSeparator } from "@config";
+import { Separator } from "@config";
 
 export const PricingContent = {
   hero: {
     title: "Unleash Your Store's Roar with the Perfect Plan",
     description:
       "Unlock the essential tools to build, manage, and scale your eCommerce business, with pricing that grows alongside your success.",
-    sectionSeparator: SectionSeparator.MEDIUM,
+    separator: Separator.MEDIUM,
+    isFirstSection: true,
   },
   comparePlansSection: {
-    title: "Compare Plans",
+    subtitle: "Compare Plans",
     description:
       "Dive into the details and choose the best plan tailored for you",
   },
