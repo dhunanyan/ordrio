@@ -49,13 +49,11 @@ export const PluginsContent = {
           "Implement abandoned cart recovery, run targeted promotions, and create engaging membership programs to drive revenue.",
         type: AnimatedCard.CONVERSION,
       },
-      //@LINKS: Replace the card with "Marketing & Promotions"
       {
-        title: "<span>100+</span> Add-ons",
+        title: "Marketing & <span>Promotions</span>",
         description:
-          "Boost your store's potential with the perfect add-ons for marketing, analytics, and more.",
-        link: { text: "View Details", href: "#" },
-        type: AnimatedCard.ADD_ONS,
+          "Create targeted campaigns, send email newsletters, and manage social media.",
+        type: AnimatedCard.MARKETING,
       },
     ],
   },

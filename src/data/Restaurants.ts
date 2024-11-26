@@ -180,6 +180,7 @@ export const RestaurantsContent = {
   },
   accordionSection: {
     title: "Frequently Asked Questions",
+    link: { text: "Ask Us Now", href: "/support" },
     accordions: [
       {
         title: "What features does Ordrio offer?",

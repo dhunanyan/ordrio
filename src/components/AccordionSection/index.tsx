@@ -6,14 +6,17 @@ import { motion } from "framer-motion";
 import { Icons } from "@config";
 
 import "./AccordionSection.scss";
+import Link from "next/link";
 
 export type AccordionSectionPropsType = {
   title: string;
   accordions: { title: string; description: string }[];
+  link: { text: string; href: string; target: string };
 };
 
 export const AccordionSection = ({
   title,
+  link,
   accordions,
 }: AccordionSectionPropsType) => {
   const [activeAccordion, setActiveAccordion] = React.useState(0);
@@ -23,6 +26,15 @@ export const AccordionSection = ({
       <div className="accordion-section__container">
         <div className="accordion-section__content">
           <h2 className="accordion-section__title">{title}</h2>
+          {link && (
+            <Link
+              href={link.href}
+              target={link.target}
+              className="accordion-section__link"
+            >
+              {link.text}
+            </Link>
+          )}
         </div>
         <ul className="accordion-section__list">
           {accordions.map(({ title, description }, i) => (

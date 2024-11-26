@@ -1,31 +1,50 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
+
 import { motion } from "framer-motion";
 import { AnimatedCard, Icons, ThemeCardVariant } from "@config";
 
 import "./Theme.scss";
 
+type ThemeType =
+  | AnimatedCard.AURA
+  | AnimatedCard.GROCBAY
+  | AnimatedCard.RESTOBITE
+  | AnimatedCard.MOO_CHEW;
+
 export type ThemePropsType = {
   title?: string;
   description?: string;
-  links?: { id: "ios" | "android"; href: string }[];
-  type:
-    | AnimatedCard.AURA
-    | AnimatedCard.GROCBAY
-    | AnimatedCard.RESTOBITE
-    | AnimatedCard.MOO_CHEW;
+  icons?: string[];
+  type: ThemeType;
   variant?: ThemeCardVariant;
 };
 
-export const Theme = ({
+const getLinkHref = (type: ThemeType) => {
+  switch (type) {
+    case AnimatedCard.AURA:
+      return "/clothing-and-accessories";
+    case AnimatedCard.GROCBAY:
+      return "/groceries-and-supermarkets";
+    case AnimatedCard.RESTOBITE:
+      return "/restaurants";
+    case AnimatedCard.MOO_CHEW:
+      return "/milk-and-tiffin-subscriptions";
+    default:
+      return "#";
+  }
+};
+
+const renderInnerContent = ({
   title,
   description,
-  links,
+  icons,
   type,
   variant = ThemeCardVariant.STANDARD,
 }: ThemePropsType) => (
-  <div className="theme">
+  <>
     <div className={`theme-card theme-card--${type}`}>
       <img
         className="theme-card__box-size"
@@ -76,22 +95,21 @@ export const Theme = ({
         src={`/images/themes/${type}/image-5.png`}
         alt="Mobile Layout"
       />
-      {variant === ThemeCardVariant.STANDARD && links && (
+      {variant === ThemeCardVariant.STANDARD && icons && (
         <ul className="theme-card__links">
-          {links.map(({ id, href }, i) => (
-            <motion.a
-              key={id}
-              href={href}
+          {icons.map((icon, i) => (
+            <motion.span
+              key={i}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.9 + 0.05 * (i + 1) }}
             >
               <img
-                className={`theme-card__icon theme-card__icon--${id}`}
-                src={`/images/themes/${type}/icon-${id}.png`}
-                alt={id + " icon"}
+                className={`theme-card__icon theme-card__icon--${icon}`}
+                src={`/images/themes/${type}/icon-${icon}.png`}
+                alt={icon + " icon"}
               />
-            </motion.a>
+            </motion.span>
           ))}
         </ul>
       )}
@@ -105,5 +123,39 @@ export const Theme = ({
         <p className="theme__description">{description}</p>
       </div>
     )}
-  </div>
+  </>
 );
+
+export const Theme = ({
+  title,
+  description,
+  icons,
+  type,
+  variant = ThemeCardVariant.STANDARD,
+}: ThemePropsType) => {
+  if (variant === ThemeCardVariant.STANDARD) {
+    return (
+      <div className="theme theme--mobile">
+        {renderInnerContent({
+          title,
+          description,
+          icons,
+          type,
+          variant,
+        })}
+      </div>
+    );
+  }
+
+  return (
+    <Link href={getLinkHref(type)} className="theme theme--mobile">
+      {renderInnerContent({
+        title,
+        description,
+        icons,
+        type,
+        variant,
+      })}
+    </Link>
+  );
+};

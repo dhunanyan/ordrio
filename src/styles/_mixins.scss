@@ -160,18 +160,6 @@
   }
 }
 
-@mixin buttonBlackSmall {
-  @include buttonBlack;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  padding: 4px 16px !important;
-
-  &:hover {
-    transform: translate(0, 0);
-  }
-}
-
 @mixin heroTitle {
   color: $black-color;
   text-align: center;

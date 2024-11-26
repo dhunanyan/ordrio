@@ -19,14 +19,23 @@
     max-width: 700px;
   }
 
-  &__top-links {
+  &__spans {
     align-items: center;
     display: flex;
     gap: 8px;
   }
 
-  &__top-link {
-    @include buttonBlackSmall;
+  &__span {
+    background-color: $black-color-alt;
+    border-radius: 90px;
+    color: $white-color;
+    font-family: $font-spoof-trail;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    gap: 10px;
+    line-height: 28px;
+    padding: 8px 16px;
   }
 
   &__title {

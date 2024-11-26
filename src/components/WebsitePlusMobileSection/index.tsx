@@ -11,7 +11,7 @@ import "./WebsitePlusMobileSection.scss";
 
 export type WebsitePlusMobileSectionPropsType = {
   content: {
-    topLinks: { text: string; href: string; target?: string }[];
+    spans: [];
     title: string;
     description: string;
     bottomLinks?: { text: string; href: string; target?: string }[];
@@ -21,7 +21,7 @@ export type WebsitePlusMobileSectionPropsType = {
 };
 
 export const WebsitePlusMobileSection = ({
-  content: { title, description, bottomButtons, bottomLinks, topLinks },
+  content: { title, description, bottomButtons, bottomLinks, spans },
   screenshotURLs,
 }: WebsitePlusMobileSectionPropsType) => {
   const [activeScreenshot, setActiveScreenshot] = React.useState(0);
@@ -40,21 +40,15 @@ export const WebsitePlusMobileSection = ({
     <section className="big-cards-section">
       <div className="big-cards-section__container">
         <div className="big-cards-section__content">
-          <ul className="big-cards-section__top-links">
-            {topLinks.map(({ href, text, target }, i) => (
+          <ul className="big-cards-section__spans">
+            {spans.map((span, i) => (
               <motion.li
                 key={i}
                 initial={{ opacity: 0, y: -30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.3, delay: 0.2 * i }}
               >
-                <Link
-                  href={href}
-                  target={target}
-                  className="big-cards-section__top-link"
-                >
-                  {text}
-                </Link>
+                <span className="big-cards-section__span">{span}</span>
               </motion.li>
             ))}
           </ul>

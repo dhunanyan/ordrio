@@ -138,10 +138,7 @@ export const HomeContent = {
   },
   websiteAndMobileSection: {
     content: {
-      topLinks: [
-        { text: "Website", href: "#" }, //@LINKS: remove
-        { text: "Mobile App", href: "#" }, //@LINKS: remove
-      ],
+      spans: ["Website", "Mobile App"],
       title: "Seamless Mobile Shopping",
       description:
         "Deliver a smooth shopping experience for your customers on any device.",
@@ -175,6 +172,7 @@ export const HomeContent = {
   planSectionInCommonSection: PlanContent,
   accordionSection: {
     title: "Frequently Asked Questions",
+    link: { text: "Ask Us Now", href: "/support" },
     accordions: [
       {
         title: "What features does Ordrio offer?",

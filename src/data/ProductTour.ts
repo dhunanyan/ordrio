@@ -78,10 +78,7 @@ export const ProductTourContent = {
   },
   websiteAndMobileSection: {
     content: {
-      topLinks: [
-        { text: "Website", href: "#" }, //@LINKS: remove
-        { text: "Mobile App", href: "#" }, //@LINKS: requested - to be added
-      ],
+      spans: ["Website", "Mobile App"],
       title: "Insightful Reporting & Analytics",
       bottomButtons: [
         "Sales Data Analysis",
@@ -101,7 +98,7 @@ export const ProductTourContent = {
       "Manage your store on the go with Ordrio's mobile app integration. Receive real-time notifications, update your inventory, and engage with customers anytime, anywhere, directly from your mobile device.",
     subtitle: "Download App",
     links: [
-      { text: Icons["google-play"], href: "#" }, //@LINKS: remove
+      { text: Icons["google-play"], href: "#" }, //@LINKS: requested - to be added
       { text: Icons["app-store"], href: "#" }, //@LINKS: requested - to be added
     ],
     backgroundImageURL: "/images/blue-small-spirals.png",
@@ -130,6 +127,7 @@ export const ProductTourContent = {
   },
   accordionSection: {
     title: "Frequently Asked Questions",
+    link: { text: "Ask Us Now", href: "/support" },
     accordions: [
       {
         title: "What features does Ordrio offer?",

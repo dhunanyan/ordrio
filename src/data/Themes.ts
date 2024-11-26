@@ -15,57 +15,37 @@ export const ThemesContent = {
     backgroundColor: Colors.WHITE,
   },
   bigCardsInCommonSection1: {
-    //@LINKS - make whole thing as a link (with title and description)
     cards: [
       {
         title: "Grocbay",
         description:
           "Fresh, clean, and organized - perfect for showcasing your grocery and upermarket products in an inviting way.",
-        links: [
-          { id: "ios", href: "#" }, //@LINKS: remove
-          ,
-          { id: "android", href: "#" }, //@LINKS: remove
-          ,
-        ],
+        links: ["ios", "android"],
         type: AnimatedCard.GROCBAY,
       },
       {
         title: "Restobite",
         description:
           "Warm, appetizing, and stylish - designed to make your restaurant's menu and ambiance shine online.",
-        links: [
-          { id: "ios", href: "#" }, //@LINKS: remove
-          ,
-          { id: "android", href: "#" }, //@LINKS: remove
-          ,
-        ],
+        links: ["ios", "android"],
         type: AnimatedCard.RESTOBITE,
       },
     ],
   },
   bigCardsInCommonSection2: {
-    //@LINKS - make whole thing as a link (with title and description)
     cards: [
       {
         title: "Aura",
         description:
           "Artistic, unique, and customizable - perfect for highlighting the craftsmanship and personality of your handcrafted goods.",
-        links: [
-          { id: "ios", href: "#" }, //@LINKS: remove
-          ,
-          { id: "android", href: "#" }, //@LINKS: remove
-          ,
-        ],
+        links: ["ios", "android"],
         type: AnimatedCard.AURA,
       },
       {
         title: "Moo & Chew",
         description:
           "Fresh, clean, and organized - perfect for showcasing your grocery and upermarket products in an inviting way.",
-        links: [
-          { id: "ios", href: "#" }, //@LINKS: remove
-          { id: "android", href: "#" }, //@LINKS: remove
-        ],
+        links: ["ios", "android"],
         type: AnimatedCard.MOO_CHEW,
       },
     ],
@@ -120,7 +100,8 @@ export const ThemesContent = {
     ],
   },
   accordionSection: {
-    title: "Frequently Asked Questions", //  //@LINKS: ADD BUTTON to "/support" page
+    title: "Frequently Asked Questions",
+    link: { text: "Ask Us Now", href: "/support" },
     accordions: [
       {
         title: "What features does Ordrio offer?",

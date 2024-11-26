@@ -6,7 +6,7 @@ export const BecomeAPartnerContent = {
     description: "Join the Ordrio Partner Program and Thrive Together",
     separator: Separator.MEDIUM,
     isFirstSection: true,
-    //@LINKS: Join Partner Program -> /support
+    link: { text: "Join Partner Program", href: "/support" },
   },
   heroComponent: {
     imageURLs: [
