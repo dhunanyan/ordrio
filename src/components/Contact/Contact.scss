@@ -14,11 +14,9 @@
   }
 
   &__more-help {
+    @include lightShadow;
     align-items: center;
     border-radius: 24px;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
-    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
-    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
     display: flex;
     padding: 40px;
     width: calc(100% - 2 * 40px);

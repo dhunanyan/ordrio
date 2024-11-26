@@ -3,11 +3,9 @@
 
 @mixin marketing {
   &--1 {
+    @include lightShadow;
     bottom: -200px;
     border-radius: 16px 16px 0 0;
-    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
-    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
-    -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
     max-width: 520px;
     overflow: hidden;
     right: -30px;
@@ -15,11 +13,9 @@
   }
 
   &--2 {
+    @include lightShadow;
     bottom: 0;
     border-radius: 16px 16px 0 0;
-    box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
-    -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
-    -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
     max-width: 260px;
     overflow: hidden;
     right: 30px;

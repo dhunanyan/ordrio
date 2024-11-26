@@ -15,7 +15,7 @@ export const HomeContent = {
       href: "https://control.ordrio.com",
     },
     separator: Separator.BIG,
-    bottomImageURL: "/images/tablet-and-mobile-view-tiger.png",
+    imageURL: "/images/tablet-and-mobile-view-tiger.png",
     isFirstSection: true,
   },
   listSection: {
@@ -158,11 +158,23 @@ export const HomeContent = {
       { text: `${Icons["arrow-left"]}` },
       { text: `${Icons["arrow-right"]}` },
     ],
-    imageURLs: [
-      "/images/carousels/landing-theme/0.png",
-      "/images/carousels/landing-theme/1.png",
-      "/images/carousels/landing-theme/2.png",
-      "/images/carousels/landing-theme/3.png",
+    slides: [
+      {
+        imageURL: "/images/carousels/landing-theme/0.png",
+        href: "restaurants",
+      },
+      {
+        imageURL: "/images/carousels/landing-theme/1.png",
+        href: "/milk-and-tiffin-subscriptions",
+      },
+      {
+        imageURL: "/images/carousels/landing-theme/2.png",
+        href: "/groceries-and-supermarkets",
+      },
+      {
+        imageURL: "/images/carousels/landing-theme/3.png",
+        href: "/clothing-and-accessories",
+      },
     ],
   },
   planSection: {

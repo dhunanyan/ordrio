@@ -16,10 +16,8 @@
     right: -110px;
 
     img {
+      @include lightShadow;
       border-radius: 16px;
-      box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
-      -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
-      -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.47);
       margin: 4.5px;
       overflow: hidden;
       width: 180px;

@@ -14,7 +14,7 @@
     button {
       width: 52px !important;
       height: 52px !important;
-      padding: 16px;
+      padding: 16px !important;
 
       &::after {
         display: none !important;
@@ -24,24 +24,23 @@
         transform: translate(0, 0);
       }
     }
-
-    button {
-      padding: 16px !important;
-    }
   }
 
   &__view {
+    @include regularShadow;
     border-radius: 24px;
-    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.47);
-    -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.47);
-    -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.47);
     height: 464px;
     min-width: 687px;
     position: relative;
+    transition: all 120ms ease-in-out;
 
     img {
       width: 100%;
       transition: all 150ms ease-out;
+    }
+
+    &:hover {
+      transform: translateY(-10px) !important;
     }
   }
 }

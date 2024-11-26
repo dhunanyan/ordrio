@@ -9,8 +9,8 @@
   position: relative;
 
   &--offset {
-    margin: 112px 0 0 0;
-    padding-top: 120px;
+    margin: 52px 0 0 0;
+    padding-top: 60px;
   }
 
   &--grey {
@@ -23,6 +23,10 @@
 
   &--white {
     background-color: $white-color;
+  }
+
+  &--section-separator-big {
+    gap: 0;
   }
 
   > img {
@@ -137,21 +141,19 @@
     position: relative;
     z-index: 1;
 
-    &.section-separator {
-      transform: translate(0, 72px);
+    &--section-separator-medium {
+      transform: translate(0, 72px) !important;
       margin: -72px auto 0 auto;
+    }
 
-      &-big {
-        margin: -121px auto 0 auto;
-        transform: translate(0, 121px);
-      }
+    &--section-separator-big {
+      margin: -121px auto 0 auto;
+      transform: translate(0, 121px);
     }
 
     img {
+      @include lightShadow;
       border-radius: 24px 24px 0px 0px;
-      box-shadow: 0px -2px 16px 1px rgba(0, 0, 0, 0.47);
-      -webkit-box-shadow: 0px -2px 16px 1px rgba(0, 0, 0, 0.47);
-      -moz-box-shadow: 0px -2px 16px 1px rgba(0, 0, 0, 0.47);
       width: 100%;
     }
   }
@@ -161,15 +163,15 @@
     display: flex;
     width: 100vw;
 
-    &.section-separator {
+    &--section-separator-medium {
       span {
         height: 72px;
       }
+    }
 
-      &-big {
-        span {
-          height: 121px;
-        }
+    &--section-separator-big {
+      span {
+        height: 121px;
       }
     }
   }

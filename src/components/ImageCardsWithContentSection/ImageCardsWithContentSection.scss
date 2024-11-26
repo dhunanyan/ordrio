@@ -24,11 +24,9 @@
   }
 
   &__cards {
+    @include regularShadow;
     background-color: $yellow-color-dark;
     border-radius: 28px;
-    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
-    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
-    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.47);
     display: grid;
     grid-gap: 13px;
     grid-template-areas:

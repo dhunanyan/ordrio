@@ -8,14 +8,6 @@ TODO: tab icon
 
 TODO: animate tiger-in-phone.png (refactor of BannerSection is needed)
 
-TODO: remove this from Carousel Section
-
-```scss
-button {
-  padding: 16px !important;
-}
-```
-
 TODO: Footer
 
 TODO: Banner Section add button styles inside `link { prop here }`
@@ -35,28 +27,6 @@ TODO: use `flex: 1;` in Plan and PlanCompare (will fix your life on mobile layou
 TODO: Reduce shadows
 
 TODO: FAQ Flickering?
-
-TODO: Create email input component for partner section
-
-TODO: 'Website + Mobile App' buttons are not links should be span (Home Page above apps store and google play)
-
-TODO: add links for Themes & Customization carousel
-
-PAGES: 14 + 6
-PAGES LEFT: 4 + 6
-
-https://ordrio.netlify.app/
-https://ordrio.netlify.app/about-us
-https://ordrio.netlify.app/careers
-https://ordrio.netlify.app/clothing-and-accessories
-https://ordrio.netlify.app/groceries-and-supermarkets
-https://ordrio.netlify.app/integrations
-https://ordrio.netlify.app/milk-and-tiffin-subscriptions
-https://ordrio.netlify.app/plugins
-https://ordrio.netlify.app/pricing
-https://ordrio.netlify.app/product-tour
-https://ordrio.netlify.app/restaurants
-https://ordrio.netlify.app/themes
 
 ---
 

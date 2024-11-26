@@ -47,7 +47,8 @@ export const CommonSection = ({
   <section
     className={
       `common-section common-section--${backgroundColor}` +
-      (isFirstSection ? " common-section--offset" : "")
+      (isFirstSection ? " common-section--offset" : "") +
+      (separator === Separator.BIG ? ` common-section--${separator}` : "")
     }
   >
     {backgroundImageURL && <img src={backgroundImageURL} alt="Background" />}
@@ -102,7 +103,10 @@ export const CommonSection = ({
     </div>
     {imageURL && (
       <motion.div
-        className={"common-section__image" + (separator ? " " + separator : "")}
+        className={
+          "common-section__image" +
+          (separator ? ` common-section__image--${separator}` : "")
+        }
         initial={{
           opacity: 0,
           y: getImageInitialY(separator) + 10,
@@ -119,7 +123,7 @@ export const CommonSection = ({
     )}
     {separator && (
       <motion.div
-        className={"common-section__separator-image" + " " + separator}
+        className={`common-section__separator-image common-section__separator-image--${separator}`}
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 0.35 }}

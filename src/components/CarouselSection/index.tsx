@@ -7,13 +7,14 @@ import { AnimatePresence, motion } from "framer-motion";
 import { Content } from "@components";
 
 import "./CarouselSection.scss";
+import Link from "next/link";
 
 export type CarouselSectionPropsType = {
   title: string;
   subtitle: string;
   description: string;
   buttons: [{ text: string }, { text: string }];
-  imageURLs: string[];
+  slides: { imageURL: string; href: string; target?: string }[];
 };
 
 export const CarouselSection = ({
@@ -21,10 +22,10 @@ export const CarouselSection = ({
   subtitle,
   description,
   buttons,
-  imageURLs,
+  slides,
 }: CarouselSectionPropsType) => {
   const [activeTheme, setActiveTheme] = React.useState(0);
-  const totalPages = imageURLs.length - 1;
+  const totalPages = slides.length - 1;
 
   const onPrevClick = () => {
     setActiveTheme((prev) => Math.max(0, prev - 1));
@@ -71,28 +72,29 @@ export const CarouselSection = ({
           viewport={{ once: true }}
         >
           <AnimatePresence custom={1}>
-            {imageURLs.map(
-              (imageURL, i) =>
+            {slides.map(
+              ({ imageURL, href, target }, i) =>
                 i === activeTheme && (
-                  <motion.img
-                    custom={1}
-                    key={i}
-                    src={imageURL}
-                    alt={`Theme ${1}`}
-                    variants={variants}
-                    initial="hidden"
-                    animate="visible"
-                    exit="exit"
-                    transition={{ duration: 0.5 }}
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                    }}
-                  />
+                  <Link key={i} href={href} target={target}>
+                    <motion.img
+                      custom={1}
+                      src={imageURL}
+                      alt={`Theme ${1}`}
+                      variants={variants}
+                      initial="hidden"
+                      animate="visible"
+                      exit="exit"
+                      transition={{ duration: 0.5 }}
+                      style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </Link>
                 )
             )}
           </AnimatePresence>

@@ -119,11 +119,15 @@ export const Header = () => {
           </ul>
         </nav>
         <ul className="header__buttons-list">
-          {HeaderData.buttons.map(({ id, text }) => (
+          {HeaderData.buttons.map(({ id, href, target, text }) => (
             <li className="header__buttons-item" key={id}>
-              <button className={`header__button header__button--${id}`}>
+              <Link
+                target={target}
+                href={href}
+                className={`header__buttons-link header__buttons-link--${id}`}
+              >
                 {text}
-              </button>
+              </Link>
             </li>
           ))}
         </ul>
