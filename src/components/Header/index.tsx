@@ -131,15 +131,16 @@ export const Header = () => {
             </li>
           ))}
         </ul>
+
+        <AnimatePresence custom={1}>
+          {activeDropdown && (
+            <Dropdown
+              type={activeDropdown}
+              animationDuration={animationDuration}
+            />
+          )}
+        </AnimatePresence>
       </div>
-      <AnimatePresence custom={1}>
-        {activeDropdown && (
-          <Dropdown
-            type={activeDropdown}
-            animationDuration={animationDuration}
-          />
-        )}
-      </AnimatePresence>
     </header>
   );
 };
