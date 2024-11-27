@@ -49,6 +49,11 @@
   }
 
   &__icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
     margin: 0 16px 0 0;
+    height: 50px;
+    width: 50px;
   }
 }

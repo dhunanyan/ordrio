@@ -46,7 +46,7 @@ export const AccordionSection = ({
               whileInView={{ opacity: 1 }}
               transition={{ duration: 0.3, delay: 0.05 * i }}
             >
-              <button className="accordion-section__button-title">
+              <h3 className="accordion-section__button-title">
                 <span>{title}</span>
                 <span
                   className={
@@ -57,7 +57,7 @@ export const AccordionSection = ({
                   }
                   dangerouslySetInnerHTML={{ __html: Icons["arrow-down"] }}
                 />
-              </button>
+              </h3>
               <div
                 className={
                   "accordion-section__button-content" +

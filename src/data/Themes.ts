@@ -20,14 +20,14 @@ export const ThemesContent = {
         title: "Grocbay",
         description:
           "Fresh, clean, and organized - perfect for showcasing your grocery and upermarket products in an inviting way.",
-        links: ["ios", "android"],
+        icons: ["ios", "android"],
         type: AnimatedCard.GROCBAY,
       },
       {
         title: "Restobite",
         description:
           "Warm, appetizing, and stylish - designed to make your restaurant's menu and ambiance shine online.",
-        links: ["ios", "android"],
+        icons: ["ios", "android"],
         type: AnimatedCard.RESTOBITE,
       },
     ],
@@ -38,14 +38,14 @@ export const ThemesContent = {
         title: "Aura",
         description:
           "Artistic, unique, and customizable - perfect for highlighting the craftsmanship and personality of your handcrafted goods.",
-        links: ["ios", "android"],
+        icons: ["ios", "android"],
         type: AnimatedCard.AURA,
       },
       {
         title: "Moo & Chew",
         description:
           "Fresh, clean, and organized - perfect for showcasing your grocery and upermarket products in an inviting way.",
-        links: ["ios", "android"],
+        icons: ["ios", "android"],
         type: AnimatedCard.MOO_CHEW,
       },
     ],

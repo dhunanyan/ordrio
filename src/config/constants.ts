@@ -50,6 +50,7 @@ export enum AnimatedCard {
   GROCBAY = "grocbay",
   RESTOBITE = "restobite",
   MOO_CHEW = "moo-chew",
+  MARKETPLACE = "marketplace",
   AURA = "aura",
   RELATIONSHIP = "relationship",
   MARKETING = "marketing",

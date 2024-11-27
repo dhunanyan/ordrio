@@ -9,7 +9,7 @@ import { Colors, Icons } from "@config";
 import "./Content.scss";
 
 export type ContentPropsType = {
-  title: string;
+  title?: string;
   subtitle?: string;
   icon?: string;
   description?: string;
@@ -47,15 +47,17 @@ export const Content = ({
         transition={{ duration: 0.3, delay: 0.2 }}
       />
     )}
-    <motion.h2
-      className={`content__title content__title--${textColor}`}
-      initial={{ opacity: 0, x: 10 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.3 }}
-      viewport={{ once: true }}
-    >
-      {title}
-    </motion.h2>
+    {title && (
+      <motion.h2
+        className={`content__title content__title--${textColor}`}
+        initial={{ opacity: 0, x: 10 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3 }}
+        viewport={{ once: true }}
+      >
+        {title}
+      </motion.h2>
+    )}
     {description && (
       <motion.p
         className={`content__description content__description--${textColor}`}
@@ -66,14 +68,16 @@ export const Content = ({
         {description}
       </motion.p>
     )}
-    <motion.h4
-      className={`content__subtitle content__subtitle--${textColor}`}
-      initial={{ opacity: 0, x: 10 }}
-      whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.3 }}
-    >
-      {subtitle}
-    </motion.h4>
+    {subtitle && (
+      <motion.h4
+        className={`content__subtitle content__subtitle--${textColor}`}
+        initial={{ opacity: 0, x: 10 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3 }}
+      >
+        {subtitle}
+      </motion.h4>
+    )}
     {link && (
       <motion.div
         initial={{ opacity: 0, x: 10 }}

@@ -24,6 +24,10 @@ TODO: organize assets folder
 
 TODO: use `flex: 1;` in Plan and PlanCompare (will fix your life on mobile layout)
 
+TODO: change title to subtitle in @data for all CommonSections (not hero)
+
+TODO: Fix accordion container styles
+
 ---
 
 FOOTER - SUPPORT

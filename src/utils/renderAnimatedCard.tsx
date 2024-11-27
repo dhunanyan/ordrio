@@ -20,30 +20,11 @@ export const renderAnimatedCard = (
 ) => {
   switch (animationType) {
     case AnimatedCardType.GROCBAY:
-      return (
-        <Theme
-          {...(content as ThemePropsType)}
-          type={AnimatedCardType.GROCBAY}
-        />
-      );
     case AnimatedCardType.MOO_CHEW:
-      return (
-        <Theme
-          {...(content as ThemePropsType)}
-          type={AnimatedCardType.MOO_CHEW}
-        />
-      );
     case AnimatedCardType.AURA:
-      return (
-        <Theme {...(content as ThemePropsType)} type={AnimatedCardType.AURA} />
-      );
     case AnimatedCardType.RESTOBITE:
-      return (
-        <Theme
-          {...(content as ThemePropsType)}
-          type={AnimatedCardType.RESTOBITE}
-        />
-      );
+    case AnimatedCardType.MARKETPLACE:
+      return <Theme {...(content as ThemePropsType)} type={animationType} />;
     case AnimatedCardType.ADD_ONS:
       return (
         <AnimatedCard

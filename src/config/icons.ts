@@ -60,10 +60,12 @@ import shieldBlue from "../../public/svg/i_shield-blue.svg";
 import support from "../../public/svg/i_support.svg";
 import squaresYellow from "../../public/svg/i_squares-yellow.svg";
 import ticketBlue from "../../public/svg/i_ticket-blue.svg";
+import timeYellow from "../../public/svg/i_time-yellow.svg";
 import tableBlue from "../../public/svg/i_table-blue.svg";
 import threeDots from "../../public/svg/i_three-dots.svg";
 import videos from "../../public/svg/i_videos.svg";
 import videoBlue from "../../public/svg/i_video-blue.svg";
+import windowCheckBlue from "../../public/svg/i_window-check-blue.svg";
 import windowCheckYellow from "../../public/svg/i_window-check-yellow.svg";
 import walletBlue from "../../public/svg/i_wallet-blue.svg";
 
@@ -136,4 +138,6 @@ export const Icons = {
   "chat-blue": chatBlue,
   "wallet-blue": walletBlue,
   "check-medal-blue": checkMedalBlue,
+  "time-yellow": timeYellow,
+  "window-check-blue": windowCheckBlue,
 } as { [key: string]: string };

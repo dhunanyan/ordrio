@@ -49,11 +49,17 @@
     @include thinnerShadow;
     background-color: $white-color-opacity;
     border-radius: 30px;
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     padding: 24px;
-    width: 100%;
+    transition: all 150ms ease-in-out;
+    width: calc(100% - 24px * 2);
+
+    &:hover {
+      background-color: $grey-color;
+    }
 
     &-title {
       align-items: center;

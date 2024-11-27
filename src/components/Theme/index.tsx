@@ -12,7 +12,8 @@ type ThemeType =
   | AnimatedCard.AURA
   | AnimatedCard.GROCBAY
   | AnimatedCard.RESTOBITE
-  | AnimatedCard.MOO_CHEW;
+  | AnimatedCard.MOO_CHEW
+  | AnimatedCard.MARKETPLACE;
 
 export type ThemePropsType = {
   title?: string;
@@ -32,6 +33,8 @@ const getLinkHref = (type: ThemeType) => {
       return "/restaurants";
     case AnimatedCard.MOO_CHEW:
       return "/milk-and-tiffin-subscriptions";
+    case AnimatedCard.MARKETPLACE:
+      return "/marketplace";
     default:
       return "#";
   }
@@ -67,22 +70,23 @@ const renderInnerContent = ({
         src={`/images/themes/${type}/image-2.png`}
         alt="Background Asset 2"
       />
-      {variant === ThemeCardVariant.STANDARD && (
-        <motion.img
-          className={`theme-card__image theme-card__image--${variant} theme-card__image--${type} theme-card__image--3`}
-          initial={{ opacity: 0, y: 80 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.9 }}
-          src={`/images/themes/${type}/image-3.png`}
-          alt="Background Circle"
-        />
-      )}
+      {variant === ThemeCardVariant.STANDARD ||
+        (type === AnimatedCard.MARKETPLACE && (
+          <motion.img
+            className={`theme-card__image theme-card__image--${variant} theme-card__image--${type} theme-card__image--3`}
+            initial={{ opacity: 0, y: 80 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            src={`/images/themes/${type}/image-3.png`}
+            alt="Background Asset 3"
+          />
+        ))}
       {variant === ThemeCardVariant.STANDARD && (
         <motion.img
           className={`theme-card__image theme-card__image--${variant} theme-card__image--${type} theme-card__image--4`}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.55 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
           src={`/images/themes/${type}/image-4.png`}
           alt="Desktop Layout"
         />
@@ -91,7 +95,7 @@ const renderInnerContent = ({
         className={`theme-card__image theme-card__image--${variant} theme-card__image--${type} theme-card__image--5`}
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, delay: 0.75 }}
+        transition={{ duration: 0.5, delay: 0.25 }}
         src={`/images/themes/${type}/image-5.png`}
         alt="Mobile Layout"
       />
@@ -102,7 +106,7 @@ const renderInnerContent = ({
               key={i}
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.9 + 0.05 * (i + 1) }}
+              transition={{ duration: 0.5, delay: 0.3 + 0.05 * (i + 1) }}
             >
               <img
                 className={`theme-card__icon theme-card__icon--${icon}`}

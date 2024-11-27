@@ -11,8 +11,9 @@ import "./ImageCardsWithContentSection.scss";
 
 export type ImageCardsWithContentSectionPropsType = {
   backgroundImageURL?: string;
-  title: string;
-  description: string;
+  title?: string;
+  subtitle?: string;
+  description?: string;
   link: { text: string; href: string };
   cards: ImageCardPropsType[];
 };
@@ -20,6 +21,7 @@ export type ImageCardsWithContentSectionPropsType = {
 export const ImageCardsWithContentSection = ({
   backgroundImageURL,
   title,
+  subtitle,
   description,
   link,
   cards,
@@ -39,6 +41,7 @@ export const ImageCardsWithContentSection = ({
       <div className="image-cards-with-content-section__content">
         <Content
           title={title}
+          subtitle={subtitle}
           description={description}
           buttons={[link]}
           alignLeft
