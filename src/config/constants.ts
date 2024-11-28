@@ -52,6 +52,7 @@ export enum AnimatedCard {
   MOO_CHEW = "moo-chew",
   MARKETPLACE = "marketplace",
   AURA = "aura",
+  SERVICES = "services",
   RELATIONSHIP = "relationship",
   MARKETING = "marketing",
   SUPPORT = "support",
@@ -72,6 +73,7 @@ export enum AnimatedCard {
   GIRL_WITH_LAPTOP = "girl-with-laptop",
   MAN_WITH_TABLET = "man-with-tablet",
   MAN_WITH_SPEAKER = "man-with-speaker",
+  RATING = "rating",
 }
 
 export enum AnimatedCardBackground {

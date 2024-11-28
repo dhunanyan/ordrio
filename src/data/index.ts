@@ -26,3 +26,4 @@ export { SupportContent } from "./Support";
 export { BecomeAPartnerContent } from "./BecomeAPartner";
 export { MarketplaceContent } from "./Marketplace";
 export { NotFoundContent } from "./NotFound";
+export { ServicesContent } from "./Services";

@@ -74,6 +74,12 @@ import facebookYellow from "../../public/svg/i_facebook-yellow.svg";
 import instagramYellow from "../../public/svg/i_instagram-yellow.svg";
 import youtubeYellow from "../../public/svg/i_youtube-yellow.svg";
 import linkedinYellow from "../../public/svg/i_linkedin-yellow.svg";
+import customizationYellow from "../../public/svg/i_customization-yellow.svg";
+import workerBlue from "../../public/svg/i_worker-blue.svg";
+import checkSaveBlue from "../../public/svg/i_check-save-blue.svg";
+import userBlue from "../../public/svg/i_user-blue.svg";
+import calendarBlue from "../../public/svg/i_calendar-blue.svg";
+import bankBlue from "../../public/svg/i_bank-blue.svg";
 
 export const Icons = {
   "app-store": appStore,
@@ -152,4 +158,10 @@ export const Icons = {
   "instagram-yellow": instagramYellow,
   "youtube-yellow": youtubeYellow,
   "linkedin-yellow": linkedinYellow,
+  "customization-yellow": customizationYellow,
+  "user-blue": userBlue,
+  "worker-blue": workerBlue,
+  "check-save-blue": checkSaveBlue,
+  "calendar-blue": calendarBlue,
+  "bank-blue": bankBlue,
 } as { [key: string]: string };

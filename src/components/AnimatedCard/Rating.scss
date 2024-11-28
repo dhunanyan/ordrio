@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin rating {
+  &--1 {
+    bottom: 0;
+    left: calc(50% - 500px / 2);
+    max-width: 500px;
+    transform-origin: center 250px;
+    z-index: 1;
+  }
+
+  &--2 {
+    bottom: 0;
+    left: calc(50% - 300px / 2);
+    max-width: 300px;
+    transform-origin: center 195px;
+    z-index: 2;
+  }
+}

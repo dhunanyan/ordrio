@@ -13,7 +13,8 @@ type ThemeType =
   | AnimatedCard.GROCBAY
   | AnimatedCard.RESTOBITE
   | AnimatedCard.MOO_CHEW
-  | AnimatedCard.MARKETPLACE;
+  | AnimatedCard.MARKETPLACE
+  | AnimatedCard.SERVICES;
 
 export type ThemePropsType = {
   title?: string;
@@ -35,6 +36,8 @@ const getLinkHref = (type: ThemeType) => {
       return "/milk-and-tiffin-subscriptions";
     case AnimatedCard.MARKETPLACE:
       return "/marketplace";
+    case AnimatedCard.SERVICES:
+      return "/services";
     default:
       return "#";
   }
@@ -62,14 +65,16 @@ const renderInnerContent = ({
         src={`/images/themes/${type}/image-1.png`}
         alt="Background Asset 1"
       />
-      <motion.img
-        className={`theme-card__image theme-card__image--${variant} theme-card__image--${type} theme-card__image--2`}
-        initial={{ opacity: 0, y: 50, scale: 0.8 }}
-        whileInView={{ opacity: 1, y: 0, scale: 1 }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        src={`/images/themes/${type}/image-2.png`}
-        alt="Background Asset 2"
-      />
+      {!AnimatedCard.SERVICES && (
+        <motion.img
+          className={`theme-card__image theme-card__image--${variant} theme-card__image--${type} theme-card__image--2`}
+          initial={{ opacity: 0, y: 50, scale: 0.8 }}
+          whileInView={{ opacity: 1, y: 0, scale: 1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          src={`/images/themes/${type}/image-2.png`}
+          alt="Background Asset 2"
+        />
+      )}
       {variant === ThemeCardVariant.STANDARD ||
         (type === AnimatedCard.MARKETPLACE && (
           <motion.img

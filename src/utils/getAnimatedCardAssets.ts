@@ -20,6 +20,23 @@ export const getAnimatedCardAssets = (
   type: AnimatedCard
 ): AnimatedCardAssetsType => {
   switch (type) {
+    case AnimatedCard.RATING:
+      return [
+        {
+          initial: { opacity: 0, rotate: 45 },
+          whileInView: { opacity: 1, rotate: 0 },
+          transition: { duration: 0.5, delay: 0.3 },
+          viewport: { once: true },
+          url: "/images/animated-cards/circles.png",
+        },
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.5, delay: 0.2 },
+          viewport: { once: true },
+          url: "/images/animated-cards/tiger-rating.png",
+        },
+      ];
     case AnimatedCard.THREE_PEOPLE_LAPTOP:
       return [
         {

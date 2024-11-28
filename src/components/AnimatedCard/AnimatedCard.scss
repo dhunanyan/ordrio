@@ -29,6 +29,7 @@
 @import "./GirlWithLaptop";
 @import "./ManWithTablet";
 @import "./ManWithSPeaker";
+@import "./Rating";
 
 .animated-card {
   @include lightShadow;
@@ -262,5 +263,9 @@
 
   &__man-with-speaker {
     @include manWithSPeaker;
+  }
+
+  &__rating {
+    @include rating;
   }
 }
