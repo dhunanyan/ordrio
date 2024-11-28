@@ -53,6 +53,8 @@ export enum AnimatedCard {
   MARKETPLACE = "marketplace",
   AURA = "aura",
   SERVICES = "services",
+  PET_STORES = "pet-stores",
+  CAFES = "cafes",
   RELATIONSHIP = "relationship",
   MARKETING = "marketing",
   SUPPORT = "support",

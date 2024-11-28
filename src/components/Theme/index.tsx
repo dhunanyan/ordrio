@@ -14,7 +14,9 @@ type ThemeType =
   | AnimatedCard.RESTOBITE
   | AnimatedCard.MOO_CHEW
   | AnimatedCard.MARKETPLACE
-  | AnimatedCard.SERVICES;
+  | AnimatedCard.SERVICES
+  | AnimatedCard.CAFES
+  | AnimatedCard.PET_STORES;
 
 export type ThemePropsType = {
   title?: string;

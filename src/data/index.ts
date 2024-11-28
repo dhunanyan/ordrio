@@ -30,3 +30,4 @@ export { ServicesContent } from "./Services";
 export { PetStoresContent } from "./PetStores";
 export { PrivacyPolicyContent } from "./PrivacyPolicy";
 export { TermsAndConditionsContent } from "./TermsAndConditions";
+export { CafesContent } from "./Cafes";

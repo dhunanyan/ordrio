@@ -1,6 +1,6 @@
 import { AnimatedCard, Colors, Separator, ThemeCardVariant } from "@config";
 
-export const PetStoresContent = {
+export const CafesContent = {
   hero: {
     title: "Unleash Your <span>Pet</span> Product Potential",
     description: "Create a Pawsome Online Store for Your Furry Friends",
@@ -9,10 +9,10 @@ export const PetStoresContent = {
   },
   heroComponent: {
     imageURLs: [
-      "/images/slideshow/pet-stores/image-1.png",
-      "/images/slideshow/pet-stores/image-2.png",
-      "/images/slideshow/pet-stores/image-3.png",
-      "/images/slideshow/pet-stores/image-4.png",
+      "/images/slideshow/cafes/image-1.png",
+      "/images/slideshow/cafes/image-2.png",
+      "/images/slideshow/cafes/image-3.png",
+      "/images/slideshow/cafes/image-4.png",
     ],
   },
   commonSectionWithRowAndBigCards: {
@@ -22,7 +22,7 @@ export const PetStoresContent = {
   },
   rowAndBigCardsInCommonSection: {
     bigCard: {
-      card: AnimatedCard.PET_STORES,
+      card: AnimatedCard.CAFES,
       props: { variant: ThemeCardVariant.MOBILE },
     },
     rowCards: [
@@ -46,51 +46,61 @@ export const PetStoresContent = {
       },
     ],
   },
-  commonSection: {
-    subtitle: "Cater to Every Pet Parent's Needs",
-    backgroundColor: Colors.YELLOW,
-  },
-  commonSectionImageCards: {
+  imageCardsWithContentSection: {
+    backgroundImageURL: "/images/yellow-brush.png",
+    title: "Your Coffee Shop, Reimagined Online",
+    description:
+      "Escafe offers a comprehensive solution to help your coffee business thrive online",
+    link: { text: "Find Out More", href: "/product-tour" },
+    //@CONTENT - to be changed
     cards: [
       {
-        title: "Showcase Your Products",
+        title: "Limitless Possibilities",
         description:
-          "Present your pet products in a visually appealing and informative way, with high-quality images, detailed descriptions, and easy-to-use category filters.",
+          "Sell anything you can imagine - products, services, digital goods, rentals, and more.",
         imageURL: "/images/tiger-boxes-card.png",
       },
       {
-        title: "Create a Personalized Experience",
+        title: "Grow & Scale Effortlessly",
         description:
-          "Offer personalized product recommendations based on pet type, breed, and age, making it easier for customers to find what they need.",
-        imageURL: "/images/mobile-card.png",
-      },
-      {
-        title: "Build a Loyal Community",
-        description:
-          "Encourage customer engagement with reviews, ratings, social media sharing, and loyalty programs.",
-        imageURL: "/images/mobile-message-boxes-card.png",
-      },
-      {
-        title: "Drive Sales & Growth",
-        description:
-          "Optimize your store for conversions with strategic product placement, eye-catching banners, and special offers.",
+          "Our flexible architecture adapts to your growing needs, from startups to enterprise-level marketplaces.",
         imageURL: "/images/rocket-card.png",
+      },
+      {
+        title: "Attract & Delight Buyers",
+        description:
+          "Offer a seamless shopping experience with powerful search, personalized recommendations, secure payments, and social engagement features.",
+        imageURL: "/images/credit-cards-card.png",
+      },
+      {
+        title: "Empower Your Sellers",
+        description:
+          "Provide intuitive tools for managing products, inventory, orders, and customer interactions.",
+        imageURL: "/images/handshake-card.png",
+      },
+      {
+        title:
+          "From branding to user experience, tailor every aspect to match your vision.",
+        description:
+          "Build lasting relationships with loyalty programs, personalized promotions, and targeted marketing campaigns.",
+        imageURL: "/images/tiger-painting-vertical.png",
       },
     ],
   },
+
   bigCardsSection1: {
     cards: [
       {
-        title: "Customization",
+        title: "Reliable & Secure",
         description:
-          "Tailor your Aura theme to your brand's unique colors, fonts, and style preferences.",
-        type: AnimatedCard.CUSTOMIZATION,
+          "Our platform is built on robust technology to ensure your data and transactions are safe.",
+        type: AnimatedCard.SECURE,
       },
       {
-        title: "Mobile-Optimized",
+        title: "Dedicated Support",
         description:
-          "Our team is here to help you every step of the way, from setting up your store to launching successful campaigns.",
-        type: AnimatedCard.MOBILE,
+          "Our team is here to help you every step of the way, from getting started to maximizing your online success.",
+        type: AnimatedCard.SUPPORT,
       },
     ],
   },
@@ -103,46 +113,46 @@ export const PetStoresContent = {
     cards: [
       {
         icon: "bullet-points-blue",
-        title: "Pet-Specific Categories",
+        title: "Intuitive Online Menu Builder",
         description:
-          "Organize your products by species (dogs, cats, birds, etc.), breed, age, & category (food, toys, grooming, etc.)",
+          "Easily create a visually appealing and interactive menu that showcases your coffee creations.",
       },
       {
         icon: "plus-card-blue",
-        title: "Product Bundles & Kits",
+        title: "Customizable Ordering Options",
         description:
-          "Offer curated bundles of products that complement each other, encouraging larger purchases.",
+          "Allow customers to personalize their orders with modifiers, add-ons, and special requests.",
       },
       {
         icon: "check-save-blue",
-        title: "Subscription Options",
+        title: "Seamless Order Management",
         description:
-          "Allow customers to subscribe to recurring deliveries of food, treats, or other essentials.",
+          "Track orders in real-time, manage inventory, and streamline fulfillment for a smooth customer experience.",
       },
       {
         icon: "handshake-blue",
-        title: "Loyalty Programs",
+        title: "Loyalty & Rewards Programs",
         description:
-          "Reward loyal customers with points, discounts, or exclusive offers.",
+          "Incentivize repeat business and build lasting customer relationships with personalized rewards and discounts.",
       },
       {
         icon: "present-blue",
-        title: "Gift Registries",
+        title: "Analytics & Insights",
         description:
-          "Enable customers to create Wishlist's for their pets or for upcoming pet adoptions.",
+          "Track sales data, customer behavior, and popular menu items to make informed business decisions.",
       },
       {
         icon: "book-blue",
-        title: "Educational Resources",
+        title: "Mobile-First Design",
         description:
-          "Helpful articles, blog posts, & guides to position yourself as a trusted expert in the pet care industry.",
+          "Ensure your online coffee shop looks & functions beautifully on all devices, from smartphones to desktops.",
       },
     ],
   },
   bannerSection1: {
-    title: "Ready to Pamper Your Customers (and Their Pets)?",
+    title: "Ready to Brew Up Your Online Success?",
     description:
-      "Let PetO be your partner in creating a delightful online shopping experience for pet parents and their beloved companions.",
+      "The perfect blend of technology and taste to elevate your coffee business online.",
     links: [
       {
         text: "Setup Your Free Account",
@@ -160,15 +170,15 @@ export const PetStoresContent = {
   bigCardsSection2: {
     cards: [
       {
-        title: "Reviews & Ratings",
+        title: "Reviews & <span>Ratings</span>",
         description:
-          "Enable customers to leave feedback and build social proof. ",
+          "Enable customers to leave feedback and build social proof.",
         type: AnimatedCard.RATING,
       },
       {
-        title: "Promotional Tools",
+        title: "Marketing & <span>Promotions</span>",
         description:
-          "Create discount codes, offer special packages, and run targeted marketing campaigns.",
+          "Reach your target audience with targeted email campaigns, social media promotions, and exclusive offers.",
         type: AnimatedCard.MARKETING,
       },
     ],

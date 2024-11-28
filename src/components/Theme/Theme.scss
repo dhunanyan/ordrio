@@ -40,6 +40,14 @@
       background-color: $purple-color;
     }
 
+    &--pet-stores {
+      background-color: $purple-color-2;
+    }
+
+    &--cafes {
+      background-color: $cream-color;
+    }
+
     img {
       pointer-events: none;
     }
@@ -118,7 +126,9 @@
             max-width: 250px;
           }
 
-          &--services {
+          &--services,
+          &--pet-stores,
+          &--cafes {
             right: -70px;
             bottom: -150px;
             max-width: 700px;
