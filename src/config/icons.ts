@@ -80,6 +80,10 @@ import checkSaveBlue from "../../public/svg/i_check-save-blue.svg";
 import userBlue from "../../public/svg/i_user-blue.svg";
 import calendarBlue from "../../public/svg/i_calendar-blue.svg";
 import bankBlue from "../../public/svg/i_bank-blue.svg";
+import bulletPointsBlue from "../../public/svg/i_bullet-points-blue.svg";
+import plusCardBlue from "../../public/svg/i_plus-card-blue.svg";
+import handshakeBlue from "../../public/svg/i_handshake-blue.svg";
+import presentBlue from "../../public/svg/i_present-blue.svg";
 
 export const Icons = {
   "app-store": appStore,
@@ -164,4 +168,8 @@ export const Icons = {
   "check-save-blue": checkSaveBlue,
   "calendar-blue": calendarBlue,
   "bank-blue": bankBlue,
+  "bullet-points-blue": bulletPointsBlue,
+  "plus-card-blue": plusCardBlue,
+  "handshake-blue": handshakeBlue,
+  "present-blue": presentBlue,
 } as { [key: string]: string };

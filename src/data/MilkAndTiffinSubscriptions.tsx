@@ -49,7 +49,7 @@ export const MilkAndTiffinSubscriptionsContent = {
     ],
   },
   commonSection: {
-    subtitle: "Unveil Your Brand's Essence",
+    subtitle: "Moo & Chew empowers you to",
     backgroundColor: Colors.YELLOW,
   },
   commonSectionImageCards: {

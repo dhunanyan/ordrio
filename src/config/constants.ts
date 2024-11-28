@@ -74,6 +74,7 @@ export enum AnimatedCard {
   MAN_WITH_TABLET = "man-with-tablet",
   MAN_WITH_SPEAKER = "man-with-speaker",
   RATING = "rating",
+  MOBILE = "mobile",
 }
 
 export enum AnimatedCardBackground {

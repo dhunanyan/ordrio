@@ -116,6 +116,7 @@ export const renderAnimatedCard = (
     case AnimatedCardType.PHONE_CHAT:
     case AnimatedCardType.MONEY_BAG:
     case AnimatedCardType.RATING:
+    case AnimatedCardType.MOBILE:
       return (
         <AnimatedCard
           type={animationType}

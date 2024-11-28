@@ -27,3 +27,4 @@ export { BecomeAPartnerContent } from "./BecomeAPartner";
 export { MarketplaceContent } from "./Marketplace";
 export { NotFoundContent } from "./NotFound";
 export { ServicesContent } from "./Services";
+export { PetStoresContent } from "./PetStores";
