@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { AnimatePresence } from "framer-motion";
 
@@ -48,10 +49,13 @@ export const Header = () => {
   const [activeDropdown, setActiveDropdown] = React.useState<DropdownType | "">(
     ""
   );
+  const pathname = usePathname();
+
   const animationDuration = 300;
 
   React.useEffect(() => {
     const handleScroll = () => {
+      setActiveDropdown("");
       if (window.scrollY > 0) {
         setIsScrolled(true);
       } else {
@@ -81,6 +85,10 @@ export const Header = () => {
       // optional +20 to trigger inner animations as well
     }, animationDuration + 20);
   };
+
+  React.useEffect(() => {
+    setActiveDropdown("");
+  }, [pathname]);
 
   return (
     <header

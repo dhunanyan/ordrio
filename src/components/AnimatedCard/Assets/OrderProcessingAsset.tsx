@@ -12,12 +12,14 @@ export const OrderProcessingAsset = ({
   initial,
   whileInView,
   transition,
+  viewport,
 }: Omit<RenderAssetPropsType, "url">) => (
   <motion.div
     initial={initial}
     whileInView={whileInView}
     transition={transition}
     className={`animated-card__assets animated-card__assets--${type} animated-card__${type}--${index + 1}`}
+    viewport={viewport}
   >
     <div>
       <img

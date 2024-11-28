@@ -20,6 +20,9 @@ export type RowCardsWithBigCardPropsType = {
   }[];
 };
 
+const ANIMATION_DELAY_ICON = 0;
+const ANIMATION_DELAY_TEXT = ANIMATION_DELAY_ICON + 0.05;
+
 export const RowCardsWithBigCard = ({
   bigCard,
   rowCards,
@@ -33,14 +36,21 @@ export const RowCardsWithBigCard = ({
             dangerouslySetInnerHTML={{ __html: Icons[icon] }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 + i * 0.05 }}
+            transition={{
+              duration: 0.5,
+              delay: ANIMATION_DELAY_ICON + i * 0.05,
+            }}
           />
           <div className="row-cards-section-with-big-card__content">
             <motion.h3
               className="row-cards-section-with-big-card__title"
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 + i * 0.05 }}
+              transition={{
+                duration: 0.5,
+                delay: ANIMATION_DELAY_TEXT + i * 0.05,
+              }}
+              viewport={{ once: true }}
             >
               {title}
             </motion.h3>
@@ -48,7 +58,11 @@ export const RowCardsWithBigCard = ({
               className="row-cards-section-with-big-card__description"
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 + i * 0.05 }}
+              transition={{
+                duration: 0.5,
+                delay: ANIMATION_DELAY_TEXT + i * 0.05,
+              }}
+              viewport={{ once: true }}
             >
               {description}
             </motion.p>

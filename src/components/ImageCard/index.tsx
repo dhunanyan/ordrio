@@ -17,6 +17,10 @@ export type ImageCardPropsType = {
   index?: number;
 };
 
+const ANIMATION_DELAY_TEXT = 0.1;
+const ANIMATION_DELAY_ICON = ANIMATION_DELAY_TEXT + 0.2;
+const ANIMATION_DELAY_LINK = ANIMATION_DELAY_TEXT + 0.1;
+
 export const ImageCard = ({
   title,
   description,
@@ -33,23 +37,35 @@ export const ImageCard = ({
       <motion.h3
         className="image-card__title"
         dangerouslySetInnerHTML={{ __html: title }}
-        initial={{ opacity: 0, x: 20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0.2 * index }}
+        initial={{ opacity: 0, y: 5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+          delay: ANIMATION_DELAY_TEXT + 0.1 * index,
+        }}
+        viewport={{ once: true }}
       />
       <motion.p
-        initial={{ opacity: 0, x: 20 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0.2 * index }}
         className="image-card__description"
+        initial={{ opacity: 0, y: 5 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+          delay: ANIMATION_DELAY_TEXT + 0.1 * index,
+        }}
+        viewport={{ once: true }}
       >
         {description}
       </motion.p>
       {link && (
         <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.3, delay: 0.2 * index + 0.4 + 0.2 }}
+          initial={{ opacity: 0, y: 5 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{
+            duration: 0.3,
+            delay: ANIMATION_DELAY_LINK + 0.1 * index,
+          }}
+          viewport={{ once: true }}
         >
           <Link
             href={link.href}
@@ -66,7 +82,8 @@ export const ImageCard = ({
       className="image-card__image"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: 0.1 * index }}
+      transition={{ duration: 0.3, delay: ANIMATION_DELAY_ICON + 0.1 * index }}
+      viewport={{ once: true }}
     >
       <Image
         placeholder="blur"

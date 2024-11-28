@@ -26,6 +26,9 @@ export type ContentPropsType = {
   textColor?: Colors;
 };
 
+const ANIMATION_DELAY_TEXT = 0;
+const ANIMATION_DELAY_LINK = ANIMATION_DELAY_TEXT + 0.05;
+
 export const Content = ({
   icon,
   title,
@@ -44,7 +47,7 @@ export const Content = ({
         dangerouslySetInnerHTML={{ __html: Icons[icon] }}
         initial={{ opacity: 0, x: 10 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0.2 }}
+        transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
       />
     )}
     {title && (
@@ -52,7 +55,7 @@ export const Content = ({
         className={`content__title content__title--${textColor}`}
         initial={{ opacity: 0, x: 10 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: ANIMATION_DELAY_TEXT }}
         viewport={{ once: true }}
       >
         {title}
@@ -63,7 +66,8 @@ export const Content = ({
         className={`content__description content__description--${textColor}`}
         initial={{ opacity: 0, x: 10 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: 0.2 }}
+        transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
+        viewport={{ once: true }}
       >
         {description}
       </motion.p>
@@ -73,7 +77,8 @@ export const Content = ({
         className={`content__subtitle content__subtitle--${textColor}`}
         initial={{ opacity: 0, x: 10 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
+        viewport={{ once: true }}
       >
         {subtitle}
       </motion.h4>
@@ -82,7 +87,7 @@ export const Content = ({
       <motion.div
         initial={{ opacity: 0, x: 10 }}
         whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3 }}
+        transition={{ duration: 0.3, delay: ANIMATION_DELAY_LINK }}
       >
         <Link href={link.href} target={link.target} className="content__link">
           <span
@@ -105,7 +110,10 @@ export const Content = ({
               key={i}
               initial={{ opacity: 0, x: 10 }}
               whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.3, delay: 0.15 * (i + 1) }}
+              transition={{
+                duration: 0.3,
+                delay: ANIMATION_DELAY_LINK + 0.15 * (i + 1),
+              }}
             >
               <Link
                 href={href}
@@ -125,8 +133,11 @@ export const Content = ({
               dangerouslySetInnerHTML={{ __html: text }}
               disabled={disabled}
               initial={{ opacity: 0, x: 10 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.3, delay: 0.15 * (i + 1) }}
+              whileInView={{ opacity: disabled ? 0.6 : 1, x: 0 }}
+              transition={{
+                duration: 0.3,
+                delay: ANIMATION_DELAY_LINK + 0.05 * i,
+              }}
             />
           )
         )}

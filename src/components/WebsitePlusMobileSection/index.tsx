@@ -20,6 +20,12 @@ export type WebsitePlusMobileSectionPropsType = {
   screenshotURLs: string[];
 };
 
+const ANIMATION_DELAY_SPANS = 0;
+const ANIMATION_DELAY_TITLE = ANIMATION_DELAY_SPANS + 0.05;
+const ANIMATION_DELAY_DESCRIPTION = ANIMATION_DELAY_TITLE + 0.005;
+const ANIMATION_DELAY_BUTTONS = ANIMATION_DELAY_DESCRIPTION + 0.05;
+const ANIMATION_DELAY_IMAGE = ANIMATION_DELAY_BUTTONS + 0.005;
+
 export const WebsitePlusMobileSection = ({
   content: { title, description, bottomButtons, bottomLinks, spans },
   screenshotURLs,
@@ -44,9 +50,13 @@ export const WebsitePlusMobileSection = ({
             {spans.map((span, i) => (
               <motion.li
                 key={i}
-                initial={{ opacity: 0, y: -30 }}
+                initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3, delay: 0.2 * i }}
+                transition={{
+                  duration: 0.3,
+                  delay: ANIMATION_DELAY_SPANS,
+                }}
+                viewport={{ once: true }}
               >
                 <span className="big-cards-section__span">{span}</span>
               </motion.li>
@@ -56,7 +66,7 @@ export const WebsitePlusMobileSection = ({
             className="big-cards-section__title"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: 0.2 }}
+            transition={{ duration: 0.3, delay: ANIMATION_DELAY_TITLE }}
             viewport={{ once: true }}
           >
             {title}
@@ -65,7 +75,7 @@ export const WebsitePlusMobileSection = ({
             className="big-cards-section__description"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: 0.3 }}
+            transition={{ duration: 0.3, delay: ANIMATION_DELAY_DESCRIPTION }}
             viewport={{ once: true }}
           >
             {description}
@@ -77,7 +87,10 @@ export const WebsitePlusMobileSection = ({
                   key={i}
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.2 * i }}
+                  transition={{
+                    duration: 0.3,
+                    delay: ANIMATION_DELAY_BUTTONS,
+                  }}
                 >
                   <Link
                     href={href}
@@ -90,22 +103,21 @@ export const WebsitePlusMobileSection = ({
             </ul>
           )}
           {bottomButtons && (
-            <div className="big-cards-section__bottom-buttons">
-              <motion.div
+            <motion.div
+              className="big-cards-section__bottom-buttons"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: ANIMATION_DELAY_IMAGE }}
+            >
+              <div
                 className="big-cards-section__bottom-line"
                 style={{
                   transform: `translate(${(190 + 16) * activeScreenshot}px, 0)`,
                 }}
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.4 }}
               />
               {bottomButtons.map((text, i) => (
-                <motion.button
+                <button
                   key={i}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.2 * i }}
                   onClick={() => setActiveScreenshot(i)}
                   className={
                     "big-cards-section__bottom-button" +
@@ -115,9 +127,9 @@ export const WebsitePlusMobileSection = ({
                   }
                 >
                   {text}
-                </motion.button>
+                </button>
               ))}
-            </div>
+            </motion.div>
           )}
         </div>
 

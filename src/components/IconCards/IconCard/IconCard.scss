@@ -1,5 +1,5 @@
-@import "../../styles/variables";
-@import "../../styles/mixins";
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
 
 .icon-card {
   @include lightShadow;
@@ -73,6 +73,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 28px;
+    margin: 0 0 auto 0;
     text-align: center;
   }
 

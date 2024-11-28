@@ -3,7 +3,9 @@
 import * as React from "react";
 import Link from "next/link";
 
-import { IconCard, type IconCardPropsType } from "../IconCard";
+import { motion } from "framer-motion";
+
+import { IconCards, type IconCardPropsType } from "../IconCards";
 import { Colors, Icons } from "@config";
 
 import "./Contact.scss";
@@ -29,24 +31,32 @@ export const Contact = ({
   moreHelp,
 }: ContactPropsType) => (
   <div className="contact">
-    <ul className="contact__cards">
-      {cards.map((card, i) => (
-        <IconCard key={i} {...(card as IconCardPropsType)} color={color} />
-      ))}
-    </ul>
+    <IconCards cards={cards} color={color} />
 
     <ul className={`contact__more-help contact__more-help--${color}`}>
       <li className="contact__more-help-item">
-        <h3>{moreHelp.title}</h3>
+        <motion.h3
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+        >
+          {moreHelp.title}
+        </motion.h3>
       </li>
       {moreHelp.links.map(({ description, text, href, icon, target }, i) => (
-        <li key={i} className="contact__more-help-item">
+        <motion.li
+          key={i}
+          className="contact__more-help-item"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.3, delay: 0.2 }}
+        >
           <p>{description}</p>
           <Link href={href} target={target}>
             <span dangerouslySetInnerHTML={{ __html: Icons[icon] }} />
             {text}
           </Link>
-        </li>
+        </motion.li>
       ))}
     </ul>
   </div>

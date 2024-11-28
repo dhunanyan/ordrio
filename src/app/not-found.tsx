@@ -1,3 +1,9 @@
+import { CommonSection, type CommonSectionPropsType } from "@components";
+
+import { NotFoundContent } from "@data";
+
 export default function NotFound() {
-  return <div>TODO</div>;
+  return (
+    <CommonSection {...(NotFoundContent.hero as CommonSectionPropsType)} />
+  );
 }

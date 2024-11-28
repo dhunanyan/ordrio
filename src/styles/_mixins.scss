@@ -54,23 +54,22 @@
   justify-content: flex-start;
   padding: 9px 12px;
   text-align: center;
-  transition: all 120ms ease-out;
+  transition: all 150ms ease-out;
 
   &::after {
     content: "➜";
-    padding: 0;
     opacity: 0;
-    transition: all 120ms ease-out;
+    transition:
+      all 150ms ease-out,
+      opacity 200ms ease-out;
     width: 0;
   }
 
   &:hover {
-    transform: translate(-6px, 0);
-    padding: 9px 9px 9px 12px;
+    transform: translate(-4px, 0);
 
     &::after {
       content: "➜";
-      padding: 0 0 0 8px;
       opacity: 1;
       width: 16px;
     }
@@ -176,5 +175,60 @@
   &:hover {
     background-color: $white-color-alt;
     color: $black-color;
+  }
+}
+
+@mixin animatedHighlight {
+  @keyframes highlight {
+    0% {
+      border-radius: 0px;
+      width: 0%;
+    }
+    18% {
+      border-radius: 10px;
+      width: 104%;
+    }
+    30% {
+      border-radius: 12px;
+      width: 94%;
+    }
+    42% {
+      border-radius: 16px;
+      width: 102%;
+    }
+    56% {
+      border-radius: 22px;
+      width: 90%;
+    }
+    60% {
+      border-radius: 0;
+      width: 100%;
+    }
+    90% {
+      border-radius: 22px;
+      width: 100%;
+    }
+    100% {
+      border-radius: 0px;
+      width: 0%;
+    }
+  }
+
+  display: inline-flex;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+
+  &::before {
+    animation: highlight 5s $animation-2 infinite;
+    background: $yellow-color;
+    display: inline-block;
+    content: "";
+    left: 0;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
   }
 }

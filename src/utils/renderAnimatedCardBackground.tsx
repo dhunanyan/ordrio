@@ -15,6 +15,7 @@ export const renderAnimatedCardBackgroundAssets = (
           initial={{ opacity: 0, scale: 1.3 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3, delay: 0.1 }}
+          viewport={{ once: true }}
           className="animated-card__background animated-card__background--tick-1"
         />
       );
@@ -26,6 +27,7 @@ export const renderAnimatedCardBackgroundAssets = (
           initial={{ opacity: 0, scale: 1.3 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3, delay: 0.1 }}
+          viewport={{ once: true }}
           className="animated-card__background animated-card__background--tick-2"
         />
       );
@@ -37,6 +39,7 @@ export const renderAnimatedCardBackgroundAssets = (
           initial={{ opacity: 0, scale: 1.3 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.3, delay: 0.1 }}
+          viewport={{ once: true }}
           className="animated-card__background animated-card__background--tick-3"
         />
       );
@@ -49,6 +52,7 @@ export const renderAnimatedCardBackgroundAssets = (
             initial={{ opacity: 0, scale: 1.3 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.1 }}
+            viewport={{ once: true }}
             className="animated-card__background animated-card__background--tick-1"
           />
           <motion.img
@@ -57,6 +61,7 @@ export const renderAnimatedCardBackgroundAssets = (
             initial={{ opacity: 0, scale: 1.3 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.3, delay: 0.2 }}
+            viewport={{ once: true }}
             className="animated-card__background animated-card__background--tick-2"
           />
         </>

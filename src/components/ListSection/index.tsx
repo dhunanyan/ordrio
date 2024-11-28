@@ -18,6 +18,10 @@ export type ListSectionPropsType = {
   applyCardStyles?: boolean;
 };
 
+const ANIMATION_DELAY_IMAGE = 0;
+const ANIMATION_DELAY_TEXT = ANIMATION_DELAY_IMAGE + 0.05;
+const ANIMATION_DELAY_LIST_ITEM = ANIMATION_DELAY_TEXT + 0.005;
+
 export const ListSection = ({
   children,
   imageURL,
@@ -43,7 +47,7 @@ export const ListSection = ({
               alt={title}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.4 }}
+              transition={{ duration: 0.4, delay: ANIMATION_DELAY_IMAGE }}
               viewport={{ once: true }}
             />
           )}
@@ -59,7 +63,7 @@ export const ListSection = ({
           className="list-section__title"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.1 }}
+          transition={{ duration: 0.5, delay: ANIMATION_DELAY_TEXT }}
           viewport={{ once: true }}
         >
           {title}
@@ -70,14 +74,21 @@ export const ListSection = ({
               <p className="list-section__item-text">
                 <motion.span
                   dangerouslySetInnerHTML={{ __html: Icons["check"] }}
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: 0.1 * i }}
+                  initial={{ opacity: 0, y: -20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: ANIMATION_DELAY_LIST_ITEM + 0.05 * i,
+                  }}
                 />
                 <motion.span
-                  initial={{ opacity: 0, x: 30 }}
+                  initial={{ opacity: 0, x: 20 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: 0.1 * i + 0.3 }}
+                  transition={{
+                    duration: 0.3,
+                    delay: ANIMATION_DELAY_LIST_ITEM + 0.1 * i + 0.0025,
+                  }}
+                  viewport={{ once: true }}
                 >
                   {item}
                 </motion.span>

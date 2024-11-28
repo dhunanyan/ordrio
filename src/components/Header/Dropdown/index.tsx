@@ -1,4 +1,5 @@
 import * as React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 import { DropdownData } from "@data";
@@ -36,74 +37,55 @@ export const Dropdown = ({ type, animationDuration }: DropdownPropsType) => (
     exit="exit"
     transition={{ duration: animationDuration * 0.001 }}
   >
-    <aside className="dropdown__aside">
+    <motion.aside
+      className="dropdown__aside"
+      initial={{ opacity: 0, y: -10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      transition={{
+        duration: 0.2,
+        delay: animationDuration * 0.0005 + 0.05,
+      }}
+    >
       <ul className="dropdown__aside-list">
         {DropdownData[type].aside.map(({ title, description, href }, i) => (
           <li key={i} className="dropdown__aside-item">
             <a className="dropdown__aside-link" href={href}>
-              <motion.h4
-                className="dropdown__aside-title"
-                initial={{ opacity: 0, x: 10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                  duration: 0.2,
-                  delay: animationDuration * 0.001 + 0.1 * i,
-                }}
-              >
-                {title}
-              </motion.h4>
-              <motion.p
-                className="dropdown__aside-description"
-                initial={{ opacity: 0, x: 10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{
-                  duration: 0.2,
-                  delay: animationDuration * 0.001 + 0.1 * i + 0.05,
-                }}
-              >
-                {description}
-              </motion.p>
+              <h4 className="dropdown__aside-title">{title}</h4>
+              <p className="dropdown__aside-description">{description}</p>
             </a>
           </li>
         ))}
       </ul>
-    </aside>
-    <nav className="dropdown__nav">
+    </motion.aside>
+    <motion.nav
+      className="dropdown__nav"
+      initial={{ opacity: 0, y: -10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      transition={{
+        duration: 0.2,
+        delay: animationDuration * 0.0005 + 0.05,
+      }}
+    >
       {DropdownData[type].nav.map(({ title, links }, i) => (
         <div key={i} className="dropdown__section">
           <h3 className="dropdown__title">{title}</h3>
           <ul className="dropdown__list">
-            {links.map(({ icon, text, href }, j) => (
+            {links.map(({ icon, text, href, target }, j) => (
               <li key={j} className="dropdown__item">
-                <a className="dropdown__link" href={href}>
-                  <motion.span
+                <Link className="dropdown__link" href={href} target={target}>
+                  <span
                     className="dropdown__icon"
                     dangerouslySetInnerHTML={{ __html: Icons[icon] }}
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.2,
-                      delay: animationDuration * 0.001 + 0.05 * j + i * 0.4,
-                    }}
                   />
-                  <motion.span
-                    className="dropdown__text"
-                    initial={{ opacity: 0, y: 10 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.2,
-                      delay:
-                        animationDuration * 0.001 + 0.05 * j + i * 0.4 + 0.1,
-                    }}
-                  >
-                    {text}
-                  </motion.span>
-                </a>
+                  <span className="dropdown__text">{text}</span>
+                </Link>
               </li>
             ))}
           </ul>
         </div>
       ))}
-    </nav>
+    </motion.nav>
   </motion.div>
 );

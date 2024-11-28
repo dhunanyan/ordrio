@@ -18,6 +18,7 @@ export const LogoInCircleAsset = ({
   initial,
   whileInView,
   transition,
+  viewport,
   url,
 }: RenderAssetPropsType) => (
   <motion.div
@@ -28,6 +29,7 @@ export const LogoInCircleAsset = ({
       ...transition,
       delay: (transition?.delay || 0) + 0.05 * index,
     }}
+    viewport={viewport}
   >
     <img
       src={url || "/images/animated-cards/inventory.png"}

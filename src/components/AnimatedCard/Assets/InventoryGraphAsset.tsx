@@ -18,12 +18,14 @@ export const InventoryGraphAsset = ({
   initial,
   whileInView,
   transition,
+  viewport,
   url,
 }: RenderAssetPropsType) => (
   <motion.div
     initial={initial}
     whileInView={whileInView}
     transition={transition}
+    viewport={viewport}
     className={`inventory-graph-asset animated-card__assets animated-card__assets--${type} animated-card__${type}--${index + 1}`}
   >
     <div>

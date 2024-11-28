@@ -2,14 +2,16 @@
 
 import * as React from "react";
 import { motion } from "framer-motion";
-import { AnimatedCard } from "@config";
+import { RenderAssetPropsType } from "./renderAsset";
 
-export type SmallCardsAssetPropsType = {
-  index: number;
-  type: AnimatedCard;
-};
-
-export const SmallCardsAsset = ({ index, type }: SmallCardsAssetPropsType) => (
+export const SmallCardsAsset = ({
+  index,
+  type,
+  initial,
+  whileInView,
+  transition,
+  viewport,
+}: Omit<RenderAssetPropsType, "url">) => (
   <div
     className={`animated-card__assets animated-card__assets--${type} animated-card__${type}--${index + 1}`}
   >
@@ -18,9 +20,13 @@ export const SmallCardsAsset = ({ index, type }: SmallCardsAssetPropsType) => (
       [...Array(10)].map((_, i) => (
         <motion.img
           key={i}
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, delay: 0.2 + i * 0.05 }}
+          initial={initial}
+          whileInView={whileInView}
+          transition={{
+            ...transition,
+            delay: (transition?.delay || 0) + i * 0.05,
+          }}
+          viewport={viewport}
           src={`/images/animated-cards/add-ons/image-${i + 1}.png`}
           alt={`Component ${i + 1}`}
         />

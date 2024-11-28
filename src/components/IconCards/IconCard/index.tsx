@@ -16,6 +16,10 @@ export type IconCardPropsType = {
   color?: Colors;
 };
 
+const ANIMATION_DELAY_ICON = 0;
+const ANIMATION_DELAY_TEXT = ANIMATION_DELAY_ICON + 0.05;
+const ANIMATION_DELAY_LINK = ANIMATION_DELAY_TEXT + 0.005;
+
 export const IconCard = ({
   index,
   icon,
@@ -37,14 +41,20 @@ export const IconCard = ({
         dangerouslySetInnerHTML={{ __html: Icons[icon] }}
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, delay: index * 0.02 }}
+        transition={{
+          duration: 0.3,
+          delay: ANIMATION_DELAY_ICON + index * 0.05,
+        }}
       />
     ) : (
       <motion.div
         className="icon-card__icon"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, delay: index * 0.02 }}
+        transition={{
+          duration: 0.3,
+          delay: ANIMATION_DELAY_ICON + index * 0.05,
+        }}
       >
         <img src={icon} alt={`${title} icon`} />
       </motion.div>
@@ -53,7 +63,11 @@ export const IconCard = ({
       className="icon-card__title"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: 0.2 + index * 0.02 }}
+      transition={{
+        duration: 0.3,
+        delay: ANIMATION_DELAY_TEXT + index * 0.05,
+      }}
+      viewport={{ once: true }}
     >
       {title}
     </motion.h3>
@@ -61,7 +75,11 @@ export const IconCard = ({
       className="icon-card__description"
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.3, delay: 0.3 + index * 0.02 }}
+      transition={{
+        duration: 0.3,
+        delay: ANIMATION_DELAY_TEXT + index * 0.05,
+      }}
+      viewport={{ once: true }}
     >
       {description}
     </motion.p>
@@ -69,7 +87,11 @@ export const IconCard = ({
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4, delay: 0.65 }}
+        transition={{
+          duration: 0.4,
+          delay: ANIMATION_DELAY_LINK + index * 0.05,
+        }}
+        viewport={{ once: true }}
       >
         <Link
           href={link?.href}

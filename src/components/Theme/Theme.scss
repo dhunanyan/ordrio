@@ -63,8 +63,7 @@
       text-align: left;
 
       span {
-        border-radius: 22px;
-        background: $yellow-color;
+        @include animatedHighlight;
         padding: 0 10px;
       }
     }

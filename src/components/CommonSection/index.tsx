@@ -36,6 +36,11 @@ const getImageInitialY = (separatorType?: Separator) => {
   }
 };
 
+const ANIMATION_DELAY_ICON = 0;
+const ANIMATION_DELAY_TEXT = ANIMATION_DELAY_ICON + 0.05;
+const ANIMATION_DELAY_LINK = ANIMATION_DELAY_TEXT + 0.005;
+const ANIMATION_DELAY_IMAGE = ANIMATION_DELAY_LINK + 0.005;
+
 export const CommonSection = ({
   title,
   subtitle,
@@ -79,7 +84,7 @@ export const CommonSection = ({
             dangerouslySetInnerHTML={{ __html: Icons[icon] }}
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: 0.1 }}
+            transition={{ duration: 0.3, delay: ANIMATION_DELAY_ICON }}
           />
         )}
         {title && (
@@ -88,7 +93,7 @@ export const CommonSection = ({
             dangerouslySetInnerHTML={{ __html: title }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
             viewport={{ once: true }}
           />
         )}
@@ -98,24 +103,25 @@ export const CommonSection = ({
             dangerouslySetInnerHTML={{ __html: subtitle }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
             viewport={{ once: true }}
           />
         )}
         {description && (
           <motion.p
             className="common-section__description"
+            dangerouslySetInnerHTML={{ __html: description }}
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.2, delay: 0.2 }}
-            dangerouslySetInnerHTML={{ __html: description }}
+            transition={{ duration: 0.2, delay: ANIMATION_DELAY_TEXT }}
+            viewport={{ once: true }}
           />
         )}
         {link && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
+            transition={{ duration: 0.4, delay: ANIMATION_DELAY_LINK }}
           >
             <Link
               href={link.href}
@@ -143,8 +149,7 @@ export const CommonSection = ({
           opacity: 1,
           y: getImageInitialY(separator),
         }}
-        transition={{ duration: 0.5, delay: 0.3 }}
-        viewport={{ once: true }}
+        transition={{ duration: 0.4, delay: ANIMATION_DELAY_IMAGE }}
       >
         <img src={imageURL} alt={title} />
       </motion.div>
@@ -154,7 +159,7 @@ export const CommonSection = ({
         className={`common-section__separator-image common-section__separator-image--${separator}`}
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.3, delay: 0.35 }}
+        transition={{ duration: 0.3, delay: ANIMATION_DELAY_IMAGE }}
         viewport={{ once: true }}
       >
         {[...Array(7)].map((_, i) => (

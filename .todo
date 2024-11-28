@@ -1,32 +1,38 @@
-TODO: README.md
+- - - - - - - - FEATURES - - - - - - - -
 
-TODO: NotFound page
+TODO: Remove animations from "Step" cards (Step 1,2,3) -> To be confirmed
 
-TODO: HtmlMeta tags
+TODO: Add HtmlMeta tags (such as Title, Description, Keywords) for each page
 
-TODO: tab icon
+TODO: Create Footer
 
-TODO: animate tiger-in-phone.png (refactor of BannerSection is needed)
+TODO: Add Badge Logo for browser tab
 
-TODO: Footer
+- - - - - - - - - BUGS - - - - - - - -
 
-TODO: Banner Section add button styles inside `link { prop here }`
+TODO: fix card image - title: Technology Partner
 
-TODO: get rid of blue and yellow icons
+TODO: Change titles to subtitles in (make them smaller) for all Common Section except of the Hero (First one).
 
-TODO: Remove SASS duplications and use mixins
+TODO: Ongoing Updates Animated Card -> Synchronize animations of asset cards (3 cards in blank dashboard)
 
-TODO: add plugins: src\data\PluginsContent.tsx (@TODO comment is placed)
+TODO: AnimatedCards -> handle overlapping content
 
-TODO: fix banner background image
+TODO: Fix banner background image
 
-TODO: organize assets folder
+- - - - - - - - TECH DEPTH - - - - - - - -
 
-TODO: use `flex: 1;` in Plan and PlanCompare (will fix your life on mobile layout)
+TODO: Refactor: Get rid of blue and yellow icons instead use SASS to change colors
 
-TODO: change title to subtitle in @data for all CommonSections (not hero)
+TODO: Refactor: Banner Section (Blue ones) -> add button styles inside `link { prop here }`
 
-TODO: Fix accordion container styles
+TODO: Refactor: Organize assets folder
+
+TODO: Refactor: use `flex: 1;` in Plan and PlanCompare (will fix your life on mobile layout)
+
+TODO: Refactor: Remove SASS duplications and use mixins
+
+TODO: Create Documentation -> README.md
 
 ---
 

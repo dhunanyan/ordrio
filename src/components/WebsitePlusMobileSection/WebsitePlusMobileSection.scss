@@ -47,8 +47,7 @@
     line-height: 60px;
 
     span {
-      border-radius: 22px;
-      background: $yellow-color;
+      @include animatedHighlight;
       padding: 0 10px;
     }
   }

@@ -5,7 +5,47 @@ export enum NavItemType {
   BUTTON = "button",
 }
 
-export const HeaderData = {
+type HeaderLinkType = {
+  text: string;
+  id: string;
+  target?: "_blank";
+  href: string;
+};
+
+type DropdownAsideLinkType = {
+  title: string;
+  description: string;
+  href: string;
+  target?: string;
+};
+
+type DropdownNavLinkType = {
+  icon: string;
+  text: string;
+  href: string;
+  target?: string;
+};
+
+export type HeaderDataType = {
+  links: (HeaderLinkType & {
+    type: NavItemType;
+  })[];
+  buttons: HeaderLinkType[];
+};
+
+export type DropdownDataNavType = {
+  title: string;
+  links: DropdownNavLinkType[];
+}[];
+
+export type DropdownDataType = {
+  [key: string]: {
+    aside: DropdownAsideLinkType[];
+    nav: DropdownDataNavType;
+  };
+};
+
+export const HeaderData: HeaderDataType = {
   links: [
     {
       text: "Why Ordrio",
@@ -48,7 +88,7 @@ export const HeaderData = {
   ],
 };
 
-export const DropdownData = {
+export const DropdownData: DropdownDataType = {
   [Dropdown.RESOURCES]: {
     aside: [
       {

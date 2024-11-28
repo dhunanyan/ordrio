@@ -62,8 +62,7 @@
     }
 
     span {
-      border-radius: 22px;
-      background: $yellow-color;
+      @include animatedHighlight;
       padding: 0 10px;
     }
   }
@@ -127,7 +126,6 @@
 
     &--disabled {
       cursor: auto;
-      opacity: 0.6 !important;
       pointer-events: none;
     }
   }

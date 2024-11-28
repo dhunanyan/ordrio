@@ -33,6 +33,10 @@ export type PlanPropsType = {
   };
 };
 
+const ANIMATION_DELAY_NAME = 0;
+const ANIMATION_DELAY_TEXT = ANIMATION_DELAY_NAME + 0.05;
+const ANIMATION_DELAY_LINK = ANIMATION_DELAY_TEXT + 0.005;
+
 export const Plan = ({
   free: { name, price, description, list, link },
   paid,
@@ -40,24 +44,35 @@ export const Plan = ({
 }: PlanPropsType) => (
   <div className={"plan" + (!extraSection ? " plan--dark-top" : "")}>
     <div className="plan__free">
-      <span className="plan__name plan__name--free">{name}</span>
-      <p className="plan__price plan__price--free">
+      <motion.span
+        className="plan__name plan__name--free"
+        initial={{ opacity: 0, x: 10 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3, delay: ANIMATION_DELAY_NAME }}
+      >
+        {name}
+      </motion.span>
+      <motion.p
+        className="plan__price plan__price--free"
+        initial={{ opacity: 0, x: 10 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
+      >
         <span>{price}</span>
         <span>{description}</span>
-      </p>
-      <Link
-        href={link.href}
-        target={link.target}
+      </motion.p>
+      <motion.div
         className="plan__link plan__link--free"
+        initial={{ opacity: 0, y: 10 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.3, delay: ANIMATION_DELAY_LINK }}
+        viewport={{ once: true }}
       >
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.3, delay: 0.1 }}
-        >
+        <Link href={link.href} target={link.target}>
           {link.text}
-        </motion.div>
-      </Link>
+        </Link>
+      </motion.div>
+
       <ul className="plan__benefits-list plan__benefits-list--free">
         {list.map((benefit, j) => (
           <li key={j} className="plan__benefits-item">
@@ -68,19 +83,8 @@ export const Plan = ({
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.3, delay: 0.02 * j }}
               />
-              <motion.span
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.2, delay: 0.02 * j }}
-              >
-                {benefit}
-              </motion.span>
-              <motion.span
-                dangerouslySetInnerHTML={{ __html: Icons["info"] }}
-                initial={{ opacity: 0, x: 10 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ duration: 0.3, delay: 0.02 * j }}
-              />
+              <span>{benefit}</span>
+              <span dangerouslySetInnerHTML={{ __html: Icons["info"] }} />
             </p>
           </li>
         ))}
@@ -103,14 +107,33 @@ export const Plan = ({
           ) => (
             <li key={i} className="plan__item">
               {isMostPopular && (
-                <span className="plan__most-popular">MOST POPULAR</span>
+                <motion.span
+                  className="plan__most-popular"
+                  initial={{ opacity: 0, y: 10, x: "-50%" }}
+                  whileInView={{ opacity: 1, y: 0, x: "-50%" }}
+                  transition={{ duration: 0.3, delay: ANIMATION_DELAY_NAME }}
+                >
+                  MOST POPULAR
+                </motion.span>
               )}
-              <span className="plan__name">{name}</span>
-              <p className="plan__price">
+              <motion.span
+                className="plan__name"
+                initial={{ opacity: 0, x: 10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3, delay: ANIMATION_DELAY_NAME }}
+              >
+                {name}
+              </motion.span>
+              <motion.p
+                className="plan__price"
+                initial={{ opacity: 0, x: 10 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
+              >
                 <span>{currency}</span>
                 <span>{price}</span>
                 <span>{period}</span>
-              </p>
+              </motion.p>
               <span className="plan__separator" />
               <ul className="plan__benefits-list">
                 {list.map((benefit, j) => (
@@ -122,32 +145,28 @@ export const Plan = ({
                         whileInView={{ opacity: 1, x: 0 }}
                         transition={{ duration: 0.3, delay: 0.02 * j }}
                       />
-                      <motion.span
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.2, delay: 0.02 * j }}
-                      >
-                        {benefit}
-                      </motion.span>
-                      <motion.span
+                      <span>{benefit}</span>
+                      <span
                         dangerouslySetInnerHTML={{ __html: Icons["info"] }}
-                        initial={{ opacity: 0, x: 10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.3, delay: 0.02 * j }}
                       />
                     </p>
                   </li>
                 ))}
               </ul>
-              <Link href={href} target={target} className="plan__link">
-                <motion.div
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.3, delay: 0.1 }}
-                >
+              <motion.div
+                className="plan__link"
+                initial={{ opacity: 0, y: 10 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{
+                  duration: 0.3,
+                  delay: ANIMATION_DELAY_LINK + i * 0.1,
+                }}
+                viewport={{ once: true }}
+              >
+                <Link href={href} target={target}>
                   {text}
-                </motion.div>
-              </Link>
+                </Link>
+              </motion.div>
             </li>
           )
         )}
@@ -161,19 +180,21 @@ export const Plan = ({
             <span>{extraSection.price}</span>
             <span>{extraSection.description}</span>
           </p>
-          <Link
-            href={extraSection.link.href}
-            target={extraSection.link.target}
+
+          <motion.div
             className="plan__link plan__link--extra"
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.3, delay: ANIMATION_DELAY_LINK }}
+            viewport={{ once: true }}
           >
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.3, delay: 0.1 }}
+            <Link
+              href={extraSection.link.href}
+              target={extraSection.link.target}
             >
               {extraSection.link.text}
-            </motion.div>
-          </Link>
+            </Link>
+          </motion.div>
         </div>
       )}
     </div>

@@ -23,6 +23,7 @@ export const renderAsset = ({
   initial,
   whileInView,
   transition,
+  viewport,
   url,
 }: RenderAssetPropsType) => {
   switch (kind) {
@@ -36,6 +37,7 @@ export const renderAsset = ({
           initial={initial}
           whileInView={whileInView}
           transition={transition}
+          viewport={viewport}
         />
       );
     case AnimatedCardAssetKind.INVENTORY_GRAPH:
@@ -48,10 +50,21 @@ export const renderAsset = ({
           initial={initial}
           whileInView={whileInView}
           transition={transition}
+          viewport={viewport}
         />
       );
     case AnimatedCardAssetKind.SMALL_CARDS:
-      return <SmallCardsAsset key={index} index={index} type={type} />;
+      return (
+        <SmallCardsAsset
+          key={index}
+          index={index}
+          type={type}
+          initial={initial}
+          whileInView={whileInView}
+          transition={transition}
+          viewport={viewport}
+        />
+      );
     case AnimatedCardAssetKind.ORDER_PROCESSING:
       return (
         <OrderProcessingAsset
@@ -61,18 +74,20 @@ export const renderAsset = ({
           initial={initial}
           whileInView={whileInView}
           transition={transition}
+          viewport={viewport}
         />
       );
     default:
       return (
         <motion.img
           key={index}
+          src={url}
+          alt={`Asset ${index}`}
           className={`animated-card__assets animated-card__assets--${type} animated-card__${type}--${index + 1}`}
           initial={initial}
           whileInView={whileInView}
           transition={transition}
-          src={url}
-          alt={`Asset ${index}`}
+          viewport={viewport}
         />
       );
   }
