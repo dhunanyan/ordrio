@@ -1,0 +1,47 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.compliance {
+  padding-top: 30px;
+
+  &__container {
+    @include container;
+  }
+
+  &__title {
+    color: $black-color;
+    font-family: $font-spoof-trail;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 95px;
+    margin: 0 0 24px 0;
+    text-align: center;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__subtitle {
+    color: $black-color;
+    font-family: $font-spoof-trail;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+  }
+
+  &__description {
+    color: $black-color;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 18px 0;
+  }
+}

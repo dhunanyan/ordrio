@@ -49,3 +49,4 @@ export {
 export { Positions, type PositionsPropsType } from "./Positions";
 export { ShipPartners, type ShipPartnersPropsType } from "./ShipPartners";
 export { Contact, type ContactPropsType } from "./Contact";
+export { Compliance, type CompliancePropsType } from "./Compliance";
