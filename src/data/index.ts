@@ -7,6 +7,7 @@ export {
   HeaderData,
   DropdownData,
   NavItemType,
+  FooterContent,
 } from "./Components";
 
 export { HomeContent } from "./Home";
