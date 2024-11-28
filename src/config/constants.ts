@@ -29,7 +29,7 @@ export enum ThemeCardVariant {
   STANDARD = "standard",
 }
 
-export enum CardVariant {
+export enum Size {
   SMALL = "small",
   MEDIUM = "medium",
   BIG = "big",

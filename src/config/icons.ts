@@ -3,6 +3,7 @@ import arrowLeft from "../../public/svg/i_arrow-left.svg";
 import arrowRight from "../../public/svg/i_arrow-right.svg";
 import arrowRightCircle from "../../public/svg/i_arrow-right-circle.svg";
 import appStore from "../../public/svg/i_app-store.svg";
+import appStoreWhite from "../../public/svg/i_app-store-white.svg";
 import aboutUs from "../../public/svg/i_about-us.svg";
 import bulbBlue from "../../public/svg/i_bulb-blue.svg";
 import bulbYellow from "../../public/svg/i_bulb-yellow.svg";
@@ -27,6 +28,7 @@ import customerCentricBlue from "../../public/svg/i_customer-centric-blue.svg";
 import designBlue from "../../public/svg/i_design-blue.svg";
 import faq from "../../public/svg/i_faq.svg";
 import googlePlay from "../../public/svg/i_google-play.svg";
+import googlePlayWhite from "../../public/svg/i_google-play-white.svg";
 import graphBlue from "../../public/svg/i_graph-blue.svg";
 import graphYellow from "../../public/svg/i_graph-yellow.svg";
 import groceriesAndSupermarkets from "../../public/svg/i_groceries-and-supermarkets.svg";
@@ -68,9 +70,14 @@ import videoBlue from "../../public/svg/i_video-blue.svg";
 import windowCheckBlue from "../../public/svg/i_window-check-blue.svg";
 import windowCheckYellow from "../../public/svg/i_window-check-yellow.svg";
 import walletBlue from "../../public/svg/i_wallet-blue.svg";
+import facebookYellow from "../../public/svg/i_facebook-yellow.svg";
+import instagramYellow from "../../public/svg/i_instagram-yellow.svg";
+import youtubeYellow from "../../public/svg/i_youtube-yellow.svg";
+import linkedinYellow from "../../public/svg/i_linkedin-yellow.svg";
 
 export const Icons = {
   "app-store": appStore,
+  "app-store-white": appStoreWhite,
   "arrow-down": arrowDown,
   "arrow-left": arrowLeft,
   "arrow-right": arrowRight,
@@ -88,6 +95,7 @@ export const Icons = {
   "design-blue": designBlue,
   faq,
   "google-play": googlePlay,
+  "google-play-white": googlePlayWhite,
   "graph-blue": graphBlue,
   "graph-yellow": graphYellow,
   "groceries-and-supermarkets": groceriesAndSupermarkets,
@@ -140,4 +148,8 @@ export const Icons = {
   "check-medal-blue": checkMedalBlue,
   "time-yellow": timeYellow,
   "window-check-blue": windowCheckBlue,
+  "facebook-yellow": facebookYellow,
+  "instagram-yellow": instagramYellow,
+  "youtube-yellow": youtubeYellow,
+  "linkedin-yellow": linkedinYellow,
 } as { [key: string]: string };

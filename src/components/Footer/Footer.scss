@@ -1,0 +1,146 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.footer {
+  background-color: $grey-color;
+
+  &__container {
+    @include container;
+  }
+
+  &__nav {
+    align-items: flex-start;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+
+      &-link {
+        color: $black-color;
+        font-family: $font-inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        transition: all 120ms ease-in-out;
+
+        &:hover {
+          color: $blue-color;
+        }
+      }
+    }
+  }
+
+  &__aside {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &-list {
+      align-items: center;
+      display: flex;
+      gap: 12px;
+
+      &-link {
+        &--small {
+          align-items: center;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          height: 42px;
+          width: 42px;
+        }
+
+        &--big {
+          align-items: center;
+          background-color: $black-color;
+          border-radius: 268px;
+          display: flex;
+          justify-content: center;
+          height: 34px;
+          width: 116px;
+
+          svg {
+            width: 78px;
+          }
+        }
+      }
+    }
+  }
+
+  &__nav-column,
+  &__aside-column {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+
+    &-title {
+      color: $black-color;
+      font-family: $font-inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 32px;
+    }
+  }
+
+  &__copyright {
+    @include container;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+    padding-bottom: 40px !important;
+    padding-top: 32px !important;
+
+    &-text {
+      color: $black-color;
+      font-family: $font-inter;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 24px;
+      margin: 0 auto 0 0;
+      color: #000;
+    }
+
+    &-list {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+
+      &-link {
+        color: $black-color;
+        font-family: $font-inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        transition: all 120ms ease-in-out;
+
+        &:hover {
+          color: $blue-color;
+        }
+      }
+
+      &-item {
+        align-items: center;
+        display: flex;
+        gap: 8px;
+
+        &-dot {
+          align-items: center;
+          display: flex;
+          justify-content: center;
+        }
+      }
+    }
+  }
+}

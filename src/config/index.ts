@@ -4,7 +4,7 @@ export {
   Dropdown,
   Colors,
   StepCardAnimation,
-  CardVariant,
+  Size,
   ThemeCardVariant,
   AnimatedCard,
   AnimatedCardBackground,
