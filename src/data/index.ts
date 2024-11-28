@@ -29,3 +29,4 @@ export { NotFoundContent } from "./NotFound";
 export { ServicesContent } from "./Services";
 export { PetStoresContent } from "./PetStores";
 export { PrivacyPolicyContent } from "./PrivacyPolicy";
+export { TermsAndConditionsContent } from "./TermsAndConditions";
