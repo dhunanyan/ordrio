@@ -251,6 +251,10 @@
         fill: $white-color;
       }
     }
+
+    &--transparent {
+      background-color: transparent;
+    }
   }
 
   &__component {
@@ -261,6 +265,8 @@
   }
 
   &__image {
+    min-width: 45%;
+
     img {
       width: 100%;
     }

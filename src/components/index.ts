@@ -31,10 +31,6 @@ export {
 export { AnimatedCard, type AnimatedCardPropsType } from "./AnimatedCard";
 export { ImageCards, type ImageCardsPropsType } from "./ImageCards";
 export { Theme, type ThemePropsType } from "./Theme";
-export {
-  ContentWithImageSection,
-  type ContentWithImageSectionPropsType,
-} from "./ContentWithImageSection";
 export { Positions, type PositionsPropsType } from "./Positions";
 export { ShipPartners, type ShipPartnersPropsType } from "./ShipPartners";
 export { Contact, type ContactPropsType } from "./Contact";

@@ -16,6 +16,7 @@ export enum Colors {
   YELLOW = "yellow",
   LIGHT_BLUE = "light-blue",
   LIGHT_WHITE = "light-white",
+  TRANSPARENT = "transparent",
 }
 
 export enum StepCardAnimation {

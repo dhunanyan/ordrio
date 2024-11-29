@@ -18,17 +18,23 @@ export const AboutUsContent = {
   contentWithImageSection1: {
     imageURL: "/images/our-story.png",
     icon: "three-dots",
-    title: "Our Story",
+    subtitle: "Our Story",
     description:
       "Ordrio started as a simple idea scribbled on a napkin (okay, maybe not a napkin, but you get the picture). We saw a need for a better eCommerce platform - one that's easy, affordable, and actually helps businesses grow. So, we rolled up our sleeves and got to work.",
+    displayInRow: true,
+    alignContentLeft: true,
+    switchOrder: true,
+    linkColor: Colors.TRANSPARENT,
   },
   contentWithImageSection2: {
     imageURL: "/images/mission.png",
     icon: "three-dots",
-    title: "Mission",
+    subtitle: "Mission",
     description:
       "To empower entrepreneurs and businesses by making eCommerce accessible, affordable, and easy to use for everyone. We believe in democratizing online selling, leveling the playing field, and helping businesses thrive in the digital age.",
-    switchOrder: true,
+    displayInRow: true,
+    alignContentLeft: true,
+    linkColor: Colors.TRANSPARENT,
   },
   iconCardsContent: {
     backgroundImage: BackgroundImage.GREY_SPIRAL,
