@@ -2,6 +2,8 @@
 @import "../../styles/mixins";
 
 .big-cards-section {
+  background-color: $white-color;
+
   &__container {
     @include container;
     align-items: center;
@@ -74,6 +76,10 @@
       background-color: $white-color-alt;
       border: 2px solid $light-white-color;
       height: 48px;
+
+      &:hover {
+        background-color: $light-white-color;
+      }
     }
   }
 
@@ -89,7 +95,6 @@
     }
 
     &-button {
-      background-color: transparent;
       border-radius: 90px;
       color: $grey-color-darker;
       font-family: $font-inter;
@@ -120,11 +125,14 @@
   }
 
   &__bottom-image {
+    @include thinnerShadow;
+    border-radius: 32px 32px 0px 0px;
     display: flex;
     justify-content: center;
-    margin: -80px auto 0 auto;
     height: 464px;
+    margin: -80px auto 0 auto;
     min-width: 900px;
+    overflow: hidden;
     position: relative;
     transform: translate(0, 80px);
 

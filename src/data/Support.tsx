@@ -1,4 +1,4 @@
-import { AnimatedCard, Colors, Separator } from "@config";
+import { AnimatedCard, Colors, Separator, BackgroundImage } from "@config";
 
 export const SupportContent = {
   hero: {
@@ -95,7 +95,7 @@ export const SupportContent = {
     ],
   },
   bannerSection: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     title: "We are Committed to Your Success",
     description:
       "We want you to succeed with Ordrio. Our team is here to provide the support you need to reach your goals.",

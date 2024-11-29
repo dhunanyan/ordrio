@@ -1,4 +1,10 @@
-import { AnimatedCard, Icons, Separator } from "@config";
+import {
+  AnimatedCard,
+  Icons,
+  Separator,
+  BackgroundImage,
+  Colors,
+} from "@config";
 import { PlanContent } from "./Components";
 
 export const HomeContent = {
@@ -28,7 +34,7 @@ export const HomeContent = {
     ],
   },
   partnerSection: {
-    backgroundImageURL: "/images/grey-spiral.png",
+    backgroundImage: BackgroundImage.GREY_SPIRAL,
     title: "Helping <span>Businesses</span> Thrive",
     partners: [
       {
@@ -80,12 +86,17 @@ export const HomeContent = {
       },
     ],
   },
-  imageCardsWithContentSection: {
-    backgroundImageURL: "/images/yellow-brush.png",
-    title: "No More Tool Juggling",
+  imageCardsSection: {
+    backgroundImage: BackgroundImage.YELLOW_BRUSH,
+    subtitle: "No More Tool Juggling",
     description:
       "One powerful platform for eCommerce, shipping, and payments - everything working together seamlessly",
     link: { text: "Find Out More", href: "/product-tour" },
+    backgroundColor: Colors.YELLOW,
+    displayInRow: true,
+    alignContentLeft: true,
+  },
+  imageCards: {
     cards: [
       {
         title: "Add your first product",
@@ -189,7 +200,7 @@ export const HomeContent = {
     alignContentLeft: true,
   },
   bannerSection: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     imageURL: "/images/tiger-boxes.png",
     icon: "check",
     title:

@@ -1,4 +1,10 @@
-import { AnimatedCard, Colors, Separator, ThemeCardVariant } from "@config";
+import {
+  AnimatedCard,
+  Colors,
+  Separator,
+  ThemeCardVariant,
+  BackgroundImage,
+} from "@config";
 
 export const PetStoresContent = {
   hero: {
@@ -95,7 +101,7 @@ export const PetStoresContent = {
     ],
   },
   iconCardsContent: {
-    backgroundImageURL: "/images/grey-spiral.png",
+    backgroundImage: BackgroundImage.GREY_SPIRAL,
     subtitle: "Key Features for Pet Product Businesses",
     backgroundColor: Colors.GREY,
   },
@@ -154,7 +160,7 @@ export const PetStoresContent = {
       text: "Schedule a Personalized Demo", //@LINKS: requested - to be added
       href: "#",
     },
-    backgroundImageURL: "/images/blue-small-spirals.png",
+    backgroundImage: BackgroundImage.BLUE_SMALL_SPIRALS,
     tintColor: Colors.YELLOW,
   },
   bigCardsSection2: {
@@ -180,7 +186,7 @@ export const PetStoresContent = {
     alignContentLeft: true,
   },
   bannerSection2: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     imageURL: "/images/tiger-computer.png",
     icon: "check",
     title: "Join the Ordrio Family",

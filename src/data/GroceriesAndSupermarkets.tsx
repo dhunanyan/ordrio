@@ -4,6 +4,7 @@ import {
   Icons,
   Separator,
   ThemeCardVariant,
+  BackgroundImage,
 } from "@config";
 
 export const GroceriesAndSupermarketsContent = {
@@ -51,12 +52,17 @@ export const GroceriesAndSupermarketsContent = {
       },
     ],
   },
-  imageCardsWithContentSection: {
-    backgroundImageURL: "/images/yellow-brush.png",
-    title: "No More Tool Juggling",
+  imageCardsSection: {
+    backgroundImage: BackgroundImage.YELLOW_BRUSH,
+    subtitle: "No More Tool Juggling",
     description:
       "One powerful platform for eCommerce, shipping, and payments - everything working together seamlessly",
     link: { text: "Find Out More", href: "/product-tour" },
+    backgroundColor: Colors.YELLOW,
+    displayInRow: true,
+    alignContentLeft: true,
+  },
+  imageCards: {
     cards: [
       {
         title: "Add your first product",
@@ -107,7 +113,7 @@ export const GroceriesAndSupermarketsContent = {
     ],
   },
   iconCardsContent: {
-    backgroundImageURL: "/images/grey-spiral.png",
+    backgroundImage: BackgroundImage.GREY_SPIRAL,
     title: "Features That Make Your Grocery Store Shine Online",
     backgroundColor: Colors.GREY,
   },
@@ -159,7 +165,7 @@ export const GroceriesAndSupermarketsContent = {
       { text: Icons["google-play"], href: "#" }, //@LINKS: requested - to be added
       { text: Icons["app-store"], href: "#" }, //@LINKS: requested - to be added
     ],
-    backgroundImageURL: "/images/blue-small-spirals.png",
+    backgroundImage: BackgroundImage.BLUE_SMALL_SPIRALS,
     imageURL: "/images/tiger-in-phone.png",
     tintColor: Colors.WHITE,
   },
@@ -186,7 +192,7 @@ export const GroceriesAndSupermarketsContent = {
     alignContentLeft: true,
   },
   bannerSection2: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     imageURL: "/images/tiger-boxes.png",
     icon: "check",
     title: "Join the Ordrio Family",

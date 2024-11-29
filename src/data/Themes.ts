@@ -1,4 +1,4 @@
-import { AnimatedCard, Colors, Separator } from "@config";
+import { AnimatedCard, Colors, Separator, BackgroundImage } from "@config";
 
 export const ThemesContent = {
   hero: {
@@ -55,11 +55,11 @@ export const ThemesContent = {
     description:
       "With Ordrio, you have the power to create a truly unique online presence that reflects  your brand's values and resonates with your target audience",
     imageURL: "/images/tablet-and-mobile-view-tiger.png",
-    backgroundImageURL: "images/grey-spiral.png",
+    backgroundImage: BackgroundImage.GREY_SPIRAL,
     backgroundColor: Colors.GREY,
   },
   iconCardsContent: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     title: "Why Choose Ordrio?",
     backgroundColor: Colors.BLUE,
   },
@@ -109,7 +109,7 @@ export const ThemesContent = {
     alignContentLeft: true,
   },
   bannerSection: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     imageURL: "/images/tiger-boxes.png",
     icon: "check",
     title: "Ready to Make a Statement?",

@@ -4,7 +4,6 @@ import {
   BigCards,
   CarouselSection,
   CommonSection,
-  ImageCardsWithContentSection,
   ListSection,
   PartnersSection,
   Plan,
@@ -13,12 +12,13 @@ import {
   type BigCardsPropsType,
   type CarouselSectionPropsType,
   type CommonSectionPropsType,
-  type ImageCardsWithContentSectionPropsType,
   type ListSectionPropsType,
   type PartnersSectionPropsType,
   type PlanPropsType,
   type WebsitePlusMobileSectionPropsType,
   type AccordionsPropsType,
+  ImageCards,
+  ImageCardsPropsType,
 } from "@components";
 
 import { AccordionsContent, HomeContent, PlanContent } from "@data";
@@ -31,13 +31,14 @@ export default function Home() {
       <PartnersSection
         {...(HomeContent.partnerSection as PartnersSectionPropsType)}
       />
-      <ImageCardsWithContentSection
-        {...(HomeContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
-      />
+      <CommonSection
+        {...(HomeContent.imageCardsSection as CommonSectionPropsType)}
+      >
+        <ImageCards {...(HomeContent.imageCards as ImageCardsPropsType)} />
+      </CommonSection>
       <CommonSection>
         <BigCards {...(HomeContent.bigCardsSection as BigCardsPropsType)} />
       </CommonSection>
-
       <WebsitePlusMobileSection
         {...(HomeContent.websiteAndMobileSection as WebsitePlusMobileSectionPropsType)}
       />

@@ -1,4 +1,10 @@
-import { AnimatedCard, Colors, Separator, ThemeCardVariant } from "@config";
+import {
+  AnimatedCard,
+  Colors,
+  Separator,
+  ThemeCardVariant,
+  BackgroundImage,
+} from "@config";
 
 export const ServicesContent = {
   hero: {
@@ -47,12 +53,17 @@ export const ServicesContent = {
       },
     ],
   },
-  imageCardsWithContentSection: {
-    backgroundImageURL: "/images/yellow-brush.png",
-    title: "Highlight Your Expertise, Attract More Customers",
+  imageCardsSection: {
+    backgroundImage: BackgroundImage.YELLOW_BRUSH,
+    subtitle: "Highlight Your Expertise, Attract More Customers",
     description:
       "ServiOps empowers you to Showcase Your Services, Simplify Your Bookings",
     link: { text: "Find Out More", href: "/product-tour" },
+    backgroundColor: Colors.YELLOW,
+    displayInRow: true,
+    alignContentLeft: true,
+  },
+  imageCards: {
     //@CONTENT - to be changed
     cards: [
       {
@@ -88,7 +99,6 @@ export const ServicesContent = {
       },
     ],
   },
-
   bigCardsSection1: {
     cards: [
       {
@@ -106,7 +116,7 @@ export const ServicesContent = {
     ],
   },
   iconCardsContent: {
-    backgroundImageURL: "/images/grey-spiral.png",
+    backgroundImage: BackgroundImage.GREY_SPIRAL,
     subtitle: "Key Features for Service-Based Businesses",
     backgroundColor: Colors.GREY,
   },
@@ -164,7 +174,7 @@ export const ServicesContent = {
       text: "Schedule a Personalized Demo", //@LINKS: requested - to be added
       href: "#",
     },
-    backgroundImageURL: "/images/blue-small-spirals.png",
+    backgroundImage: BackgroundImage.BLUE_SMALL_SPIRALS,
     tintColor: Colors.YELLOW,
   },
   bigCardsSection2: {
@@ -190,7 +200,7 @@ export const ServicesContent = {
     alignContentLeft: true,
   },
   bannerSection2: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     imageURL: "/images/tiger-computer.png",
     icon: "check",
     title: "Join the Ordrio Family",

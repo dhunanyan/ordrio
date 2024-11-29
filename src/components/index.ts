@@ -21,10 +21,6 @@ export { Header } from "./Header";
 export { CommonSection, type CommonSectionPropsType } from "./CommonSection";
 export { ImageCard, type ImageCardPropsType } from "./ImageCard";
 export { IconCards, type IconCardsPropsType } from "./IconCards";
-export {
-  ImageCardsWithContentSection,
-  type ImageCardsWithContentSectionPropsType,
-} from "./ImageCardsWithContentSection";
 export { ListSection, type ListSectionPropsType } from "./ListSection";
 export {
   PartnersSection,

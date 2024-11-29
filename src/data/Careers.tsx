@@ -1,4 +1,4 @@
-import { Colors, Separator } from "@config";
+import { Colors, Separator, BackgroundImage } from "@config";
 
 export const CareersContent = {
   hero: {
@@ -57,7 +57,7 @@ export const CareersContent = {
     ],
   },
   iconCardsContent: {
-    backgroundImageURL: "/images/white-brushes-flipped.png",
+    backgroundImage: BackgroundImage.WHITE_BRUSHES_FLIPPED,
     title: "Our Values",
     description:
       "Whether you want to boost sales, streamline operations, or simply add more functionality, we have got the tools you need to succeed.",
@@ -92,7 +92,7 @@ export const CareersContent = {
     ],
   },
   bannerSection: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     title: "Ready to Join the Ordrio Crew?",
     description:
       "If you're ready to be a part of a team that values innovation, diversity, and professional growth, Reach us at Careers@ordrio.com",

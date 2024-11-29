@@ -4,7 +4,7 @@ import {
   BigCards,
   CommonSection,
   IconCards,
-  ImageCardsWithContentSection,
+  ImageCards,
   Slideshow,
   RowCardsWithBigCard,
   type BannerSectionPropsType,
@@ -13,8 +13,8 @@ import {
   type IconCardsPropsType,
   type CommonSectionPropsType,
   type RowCardsWithBigCardPropsType,
-  type ImageCardsWithContentSectionPropsType,
   type AccordionsPropsType,
+  type ImageCardsPropsType,
 } from "@components";
 
 import { AccordionsContent, CafesContent } from "@data";
@@ -32,9 +32,12 @@ export default function Page() {
           {...(CafesContent.rowAndBigCardsInCommonSection as RowCardsWithBigCardPropsType)}
         />
       </CommonSection>
-      <ImageCardsWithContentSection
-        {...(CafesContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
-      />
+
+      <CommonSection
+        {...(CafesContent.imageCardsSection as CommonSectionPropsType)}
+      >
+        <ImageCards {...(CafesContent.imageCards as ImageCardsPropsType)} />
+      </CommonSection>
       <CommonSection>
         <BigCards {...(CafesContent.bigCardsSection1 as BigCardsPropsType)} />
       </CommonSection>

@@ -5,10 +5,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+import { getBackgroundImageURL } from "@utils";
+import { BackgroundImage } from "@config";
+
 import "./PartnersSection.scss";
 
 export type PartnersSectionPropsType = {
-  backgroundImageURL: string;
+  backgroundImage: BackgroundImage;
   title: string;
   partners: {
     imageURL: string;
@@ -21,7 +24,7 @@ export type PartnersSectionPropsType = {
 };
 
 export const PartnersSection = ({
-  backgroundImageURL,
+  backgroundImage,
   title,
   partners,
   quotes,
@@ -29,8 +32,8 @@ export const PartnersSection = ({
   <section className="partners-section">
     <Image
       placeholder="blur"
-      blurDataURL={backgroundImageURL}
-      src={backgroundImageURL}
+      blurDataURL={getBackgroundImageURL(backgroundImage)}
+      src={getBackgroundImageURL(backgroundImage)}
       alt="Background layout"
       fill
       sizes="100vw"

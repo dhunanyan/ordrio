@@ -12,7 +12,9 @@ export type ImageCardsPropsType = {
 };
 
 export const ImageCards = ({ cards }: ImageCardsPropsType) => (
-  <ul className="image-cards">
+  <ul
+    className={"image-cards" + (cards.length > 4 ? " image-cards--wrap" : "")}
+  >
     {cards.map((card, i) => (
       <motion.li
         key={i}

@@ -1,4 +1,10 @@
-import { AnimatedCard, Colors, Separator, ThemeCardVariant } from "@config";
+import {
+  AnimatedCard,
+  Colors,
+  Separator,
+  ThemeCardVariant,
+  BackgroundImage,
+} from "@config";
 
 export const CafesContent = {
   hero: {
@@ -46,12 +52,17 @@ export const CafesContent = {
       },
     ],
   },
-  imageCardsWithContentSection: {
-    backgroundImageURL: "/images/yellow-brush.png",
-    title: "Your Coffee Shop, Reimagined Online",
+  imageCardsSection: {
+    backgroundImage: BackgroundImage.YELLOW_BRUSH,
+    subtitle: "Your Coffee Shop, Reimagined Online",
     description:
       "Escafe offers a comprehensive solution to help your coffee business thrive online",
     link: { text: "Find Out More", href: "/product-tour" },
+    backgroundColor: Colors.YELLOW,
+    displayInRow: true,
+    alignContentLeft: true,
+  },
+  imageCards: {
     //@CONTENT - to be changed
     cards: [
       {
@@ -87,7 +98,6 @@ export const CafesContent = {
       },
     ],
   },
-
   bigCardsSection1: {
     cards: [
       {
@@ -105,7 +115,7 @@ export const CafesContent = {
     ],
   },
   iconCardsContent: {
-    backgroundImageURL: "/images/grey-spiral.png",
+    backgroundImage: BackgroundImage.GREY_SPIRAL,
     subtitle: "Key Features for Pet Product Businesses",
     backgroundColor: Colors.GREY,
   },
@@ -164,7 +174,7 @@ export const CafesContent = {
       text: "Schedule a Personalized Demo", //@LINKS: requested - to be added
       href: "#",
     },
-    backgroundImageURL: "/images/blue-small-spirals.png",
+    backgroundImage: BackgroundImage.BLUE_SMALL_SPIRALS,
     tintColor: Colors.YELLOW,
   },
   bigCardsSection2: {
@@ -190,7 +200,7 @@ export const CafesContent = {
     alignContentLeft: true,
   },
   bannerSection2: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     imageURL: "/images/tiger-computer.png",
     icon: "check",
     title: "Join the Ordrio Family",

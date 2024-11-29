@@ -1,4 +1,10 @@
-import { AnimatedCard, Colors, Separator, ThemeCardVariant } from "@config";
+import {
+  AnimatedCard,
+  Colors,
+  Separator,
+  ThemeCardVariant,
+  BackgroundImage,
+} from "@config";
 
 export const MarketplaceContent = {
   hero: {
@@ -53,12 +59,17 @@ export const MarketplaceContent = {
       },
     ],
   },
-  imageCardsWithContentSection: {
-    backgroundImageURL: "/images/yellow-brush.png",
-    title: "Your Marketplace, Your Way",
+  imageCardsSection: {
+    backgroundImage: BackgroundImage.YELLOW_BRUSH,
+    subtitle: "Your Marketplace, Your Way",
     description:
       "HIVE is not just another platform; it is your strategic partner in building a successful online community.",
     link: { text: "Find Out More", href: "/product-tour" },
+    backgroundColor: Colors.YELLOW,
+    displayInRow: true,
+    alignContentLeft: true,
+  },
+  imageCards: {
     cards: [
       {
         title: "Limitless Possibilities",
@@ -94,7 +105,7 @@ export const MarketplaceContent = {
     ],
   },
   iconCardsContent: {
-    backgroundImageURL: "/images/grey-spiral.png",
+    backgroundImage: BackgroundImage.GREY_SPIRAL,
     subtitle: "Key Features for a Thriving Restaurant",
     backgroundColor: Colors.GREY,
   },
@@ -153,7 +164,7 @@ export const MarketplaceContent = {
       text: "Schedule a Personalized Demo", //@LINKS: requested - to be added
       href: "#",
     },
-    backgroundImageURL: "/images/blue-small-spirals.png",
+    backgroundImage: BackgroundImage.BLUE_SMALL_SPIRALS,
     tintColor: Colors.YELLOW,
   },
   bigCardsSection1: {
@@ -179,7 +190,7 @@ export const MarketplaceContent = {
     alignContentLeft: true,
   },
   bannerSection2: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     imageURL: "/images/tiger-boxes.png",
     icon: "check",
     title: "Join the Ordrio Family",

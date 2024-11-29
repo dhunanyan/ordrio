@@ -4,7 +4,8 @@ import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import { Colors, Icons, Separator } from "@config";
+import { BackgroundImage, Colors, Icons, Separator } from "@config";
+import { getBackgroundImageURL } from "@utils";
 
 import "./CommonSection.scss";
 
@@ -16,7 +17,7 @@ export type CommonSectionPropsType = {
   link?: { text: string; href: string; target?: string };
   children?: React.ReactNode;
   imageURL?: string;
-  backgroundImageURL?: string;
+  backgroundImage?: BackgroundImage;
   backgroundColor?: Colors;
   linkColor?: Colors;
   separator?: Separator;
@@ -50,7 +51,7 @@ export const CommonSection = ({
   children,
   separator,
   imageURL,
-  backgroundImageURL,
+  backgroundImage,
   linkColor = Colors.BLUE,
   backgroundColor = Colors.WHITE,
   isFirstSection = false,
@@ -64,7 +65,13 @@ export const CommonSection = ({
       (separator === Separator.BIG ? ` common-section--${separator}` : "")
     }
   >
-    {backgroundImageURL && <img src={backgroundImageURL} alt="Background" />}
+    {backgroundImage && (
+      <img
+        className={`common-section__background common-section__background--${backgroundImage}`}
+        src={getBackgroundImageURL(backgroundImage)}
+        alt="Background"
+      />
+    )}
 
     <div
       className={

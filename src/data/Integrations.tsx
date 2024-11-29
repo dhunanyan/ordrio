@@ -1,4 +1,4 @@
-import { AnimatedCard, Colors, Separator } from "@config";
+import { AnimatedCard, Colors, Separator, BackgroundImage } from "@config";
 
 export const IntegrationsContent = {
   hero: {
@@ -81,9 +81,9 @@ export const IntegrationsContent = {
       },
     ],
   },
-  imageCardsWithContentSection: {
-    backgroundImageURL: "/images/yellow-brush.png",
-    title: "Benefits of Ordrio Integrations",
+  imageCardsSection: {
+    backgroundImage: BackgroundImage.YELLOW_BRUSH,
+    subtitle: "Benefits of Ordrio Integrations",
     description:
       "Ordrio's extensive suite of integrations empowers you to streamline your workflow.",
     link: {
@@ -91,6 +91,11 @@ export const IntegrationsContent = {
       target: "_blank",
       href: "https://control.ordrio.com/#/register",
     },
+    backgroundColor: Colors.YELLOW,
+    displayInRow: true,
+    alignContentLeft: true,
+  },
+  imageCards: {
     cards: [
       {
         title: "Simplified Setup",
@@ -152,7 +157,7 @@ export const IntegrationsContent = {
       "Ordrio's growing library of integrations continues to expand, offering you the flexibility to connect your store with the tools you need to succeed",
   },
   bannerSection: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     title: "Get Started Today",
     description:
       "Explore our extensive library of integrations and discover how Ordrio can help you connect your store with the tools you need to thrive in the competitive eCommerce landscape.",

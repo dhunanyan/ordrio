@@ -1,4 +1,4 @@
-import { Separator } from "@config";
+import { Separator, BackgroundImage } from "@config";
 
 export const PricingContent = {
   hero: {
@@ -20,7 +20,7 @@ export const PricingContent = {
     alignContentLeft: true,
   },
   bannerSection: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     imageURL: "/images/tiger-boxes.png",
     icon: "check",
     title:

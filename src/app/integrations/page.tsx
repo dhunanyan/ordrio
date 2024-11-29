@@ -2,15 +2,15 @@ import {
   BannerSection,
   CommonSection,
   IconCards,
-  ImageCardsWithContentSection,
   BigCards,
   ShipPartners,
+  ImageCards,
   type ShipPartnersPropsType,
   type BannerSectionPropsType,
   type IconCardsPropsType,
   type CommonSectionPropsType,
-  type ImageCardsWithContentSectionPropsType,
   type BigCardsPropsType,
+  type ImageCardsPropsType,
 } from "@components";
 
 import { IntegrationsContent } from "@data";
@@ -26,10 +26,13 @@ export default function Page() {
       >
         <IconCards {...(IntegrationsContent.iconCards as IconCardsPropsType)} />
       </CommonSection>
-
-      <ImageCardsWithContentSection
-        {...(IntegrationsContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
-      />
+      <CommonSection
+        {...(IntegrationsContent.imageCardsSection as CommonSectionPropsType)}
+      >
+        <ImageCards
+          {...(IntegrationsContent.imageCards as ImageCardsPropsType)}
+        />
+      </CommonSection>
       <CommonSection>
         <BigCards
           {...(IntegrationsContent.bigCardsSection as BigCardsPropsType)}

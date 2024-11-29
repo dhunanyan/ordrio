@@ -1,4 +1,4 @@
-import { AnimatedCard, Colors } from "@config";
+import { AnimatedCard, Colors, BackgroundImage } from "@config";
 
 export const AboutUsContent = {
   hero: {
@@ -31,7 +31,7 @@ export const AboutUsContent = {
     switchOrder: true,
   },
   iconCardsContent: {
-    backgroundImageURL: "/images/grey-spiral.png",
+    backgroundImage: BackgroundImage.GREY_SPIRAL,
     title: "Our Values",
     description:
       "Whether you want to boost sales, streamline operations, or simply add more functionality, we have got the tools you need to succeed.",
@@ -89,7 +89,7 @@ export const AboutUsContent = {
     ],
   },
   bannerSection: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     title: "Join Us on the Journey",
     description:
       "We are excited about the future of eCommerce, and we are always looking for talented individuals to join our team. If you are passionate about technology, entrepreneurship, and making a difference, we would love to hear from you.",

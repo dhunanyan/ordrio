@@ -6,15 +6,15 @@ import {
   IconCards,
   Slideshow,
   RowCardsWithBigCard,
-  ImageCardsWithContentSection,
+  ImageCards,
   type BannerSectionPropsType,
   type BigCardsPropsType,
   type SlideshowPropsType,
   type IconCardsPropsType,
   type CommonSectionPropsType,
   type RowCardsWithBigCardPropsType,
-  type ImageCardsWithContentSectionPropsType,
   type AccordionsPropsType,
+  type ImageCardsPropsType,
 } from "@components";
 
 import { AccordionsContent, MarketplaceContent } from "@data";
@@ -34,9 +34,13 @@ export default function Page() {
           {...(MarketplaceContent.rowAndBigCardsInCommonSection as RowCardsWithBigCardPropsType)}
         />
       </CommonSection>
-      <ImageCardsWithContentSection
-        {...(MarketplaceContent.imageCardsWithContentSection as ImageCardsWithContentSectionPropsType)}
-      />
+      <CommonSection
+        {...(MarketplaceContent.imageCardsSection as CommonSectionPropsType)}
+      >
+        <ImageCards
+          {...(MarketplaceContent.imageCards as ImageCardsPropsType)}
+        />
+      </CommonSection>
       <CommonSection
         {...(MarketplaceContent.iconCardsContent as CommonSectionPropsType)}
       >

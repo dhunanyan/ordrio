@@ -1,4 +1,10 @@
-import { AnimatedCard, Colors, Separator, ThemeCardVariant } from "@config";
+import {
+  AnimatedCard,
+  Colors,
+  Separator,
+  ThemeCardVariant,
+  BackgroundImage,
+} from "@config";
 
 export const ClothingAndAccessoriesContent = {
   hero: {
@@ -80,7 +86,7 @@ export const ClothingAndAccessoriesContent = {
     ],
   },
   iconCardsContent: {
-    backgroundImageURL: "/images/grey-spiral.png",
+    backgroundImage: BackgroundImage.GREY_SPIRAL,
     title: "Key Features for Fashion-Forward Brands",
     backgroundColor: Colors.GREY,
   },
@@ -140,7 +146,7 @@ export const ClothingAndAccessoriesContent = {
         href: "https://control.ordrio.com/#/register",
       },
     ],
-    backgroundImageURL: "/images/blue-small-spirals.png",
+    backgroundImage: BackgroundImage.BLUE_SMALL_SPIRALS,
   },
   bigCardsSection2: {
     cards: [
@@ -165,7 +171,7 @@ export const ClothingAndAccessoriesContent = {
     alignContentLeft: true,
   },
   bannerSection2: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     imageURL: "/images/tiger-computer.png",
     icon: "check",
     title: "Join the Ordrio Family",

@@ -5,13 +5,15 @@ import { motion } from "framer-motion";
 
 import { Content } from "@components";
 
-import { Colors } from "@config";
+import { BackgroundImage, Colors } from "@config";
+import { getBackgroundImageURL } from "@utils";
+
 import "./BannerSection.scss";
 
 export type BannerSectionPropsType = {
   title: string;
   subtitle?: string;
-  backgroundImageURL?: string;
+  backgroundImage?: BackgroundImage;
   imageURL?: string;
   icon?: string;
   description?: string;
@@ -22,7 +24,7 @@ export type BannerSectionPropsType = {
 };
 
 export const BannerSection = ({
-  backgroundImageURL,
+  backgroundImage,
   imageURL,
   icon,
   title,
@@ -34,8 +36,11 @@ export const BannerSection = ({
   alignContentLeft = false,
 }: BannerSectionPropsType) => (
   <section className="banner-section">
-    {backgroundImageURL && (
-      <img src={backgroundImageURL} alt="Background layout" />
+    {backgroundImage && (
+      <img
+        src={getBackgroundImageURL(backgroundImage)}
+        alt="Background layout"
+      />
     )}
     <div
       className={

@@ -1,4 +1,4 @@
-import { AnimatedCard, Colors, Separator } from "@config";
+import { AnimatedCard, Colors, Separator, BackgroundImage } from "@config";
 
 export const BecomeAPartnerContent = {
   hero: {
@@ -103,7 +103,7 @@ export const BecomeAPartnerContent = {
     ],
   },
   iconCardsContent: {
-    backgroundImageURL: "/images/grey-spiral.png",
+    backgroundImage: BackgroundImage.GREY_SPIRAL,
     title: "Why Partner with Ordrio?",
     description:
       "Unlock new revenue streams, expand your reach, and help businesses succeed online with Ordrio, the leading eCommerce platform for growing brands.",
@@ -144,7 +144,7 @@ export const BecomeAPartnerContent = {
     ],
   },
   bannerSection: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     title: "Ready to Partner with Us?",
     description:
       "Join the Ordrio Partner Program and become part of a growing community of eCommerce professionals dedicated to empowering businesses worldwide.",

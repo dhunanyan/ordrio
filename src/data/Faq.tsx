@@ -1,3 +1,5 @@
+import { BackgroundImage } from "@config";
+
 export const FaqContent = {
   hero: {
     title: "Frequently Asked Questions",
@@ -7,6 +9,6 @@ export const FaqContent = {
   bannerSection: {
     title: "Still not satisfied with the answer? Let us help you.",
     links: [{ text: "Get in Touch", href: "/support" }],
-    backgroundImageURL: "/images/blue-small-spirals.png",
+    backgroundImage: BackgroundImage.BLUE_SMALL_SPIRALS,
   },
 };

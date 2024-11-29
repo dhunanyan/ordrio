@@ -5,3 +5,5 @@ export {
   AnimatedCardAssetKind,
 } from "./getAnimatedCardAssets";
 export { renderAnimatedCardBackgroundAssets } from "./renderAnimatedCardBackground";
+
+export { getBackgroundImageURL } from "./getBackgroundImageURL";

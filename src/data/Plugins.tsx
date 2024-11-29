@@ -1,4 +1,4 @@
-import { AnimatedCard, Colors } from "@config";
+import { AnimatedCard, Colors, BackgroundImage } from "@config";
 
 export const PluginsContent = {
   hero: {
@@ -115,7 +115,7 @@ export const PluginsContent = {
     ],
   },
   iconCardsContent: {
-    backgroundImageURL: "/images/grey-spiral.png",
+    backgroundImage: BackgroundImage.GREY_SPIRAL,
     title: "Unlock New Possibilities",
     description:
       "Whether you want to boost sales, streamline operations, or simply add more functionality, we have got the tools you need to succeed.",
@@ -161,7 +161,7 @@ export const PluginsContent = {
     ],
   },
   bannerSection: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     title:
       "Discover the power of Ordrio add-ons and transform your online store into a thriving business.",
     links: [{ text: "Setup Your Free Account", href: "#" }], //@LINKS: requested - to be added

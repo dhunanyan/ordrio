@@ -1,4 +1,10 @@
-import { AnimatedCard, Colors, Separator, ThemeCardVariant } from "@config";
+import {
+  AnimatedCard,
+  Colors,
+  Separator,
+  ThemeCardVariant,
+  BackgroundImage,
+} from "@config";
 
 export const MilkAndTiffinSubscriptionsContent = {
   hero: {
@@ -81,7 +87,7 @@ export const MilkAndTiffinSubscriptionsContent = {
     ],
   },
   iconCardsContent: {
-    backgroundImageURL: "/images/grey-spiral.png",
+    backgroundImage: BackgroundImage.GREY_SPIRAL,
     title: "Key Features for a Thriving Restaurant",
     backgroundColor: Colors.GREY,
   },
@@ -138,7 +144,7 @@ export const MilkAndTiffinSubscriptionsContent = {
         href: "https://control.ordrio.com/#/register",
       },
     ],
-    backgroundImageURL: "/images/blue-small-spirals.png",
+    backgroundImage: BackgroundImage.BLUE_SMALL_SPIRALS,
     alignContentLeft: false,
   },
   bigCardsSection2: {
@@ -164,7 +170,7 @@ export const MilkAndTiffinSubscriptionsContent = {
     alignContentLeft: true,
   },
   bannerSection2: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     imageURL: "/images/tiger-cart.png",
     icon: "check",
     title: "Join the Ordrio Family",

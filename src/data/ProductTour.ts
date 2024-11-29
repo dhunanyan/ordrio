@@ -1,4 +1,10 @@
-import { AnimatedCard, Colors, Icons, Separator } from "@config";
+import {
+  AnimatedCard,
+  Colors,
+  Icons,
+  Separator,
+  BackgroundImage,
+} from "@config";
 
 export const ProductTourContent = {
   hero: {
@@ -39,7 +45,7 @@ export const ProductTourContent = {
   },
   iconCardsContent: {
     icon: "check",
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     title: "Marketing and Promotion",
     backgroundColor: Colors.BLUE,
     linkColor: Colors.YELLOW,
@@ -106,7 +112,7 @@ export const ProductTourContent = {
       { text: Icons["google-play"], href: "#" }, //@LINKS: requested - to be added
       { text: Icons["app-store"], href: "#" }, //@LINKS: requested - to be added
     ],
-    backgroundImageURL: "/images/blue-small-spirals.png",
+    backgroundImage: BackgroundImage.BLUE_SMALL_SPIRALS,
     imageURL: "/images/tiger-in-phone.png",
     tintColor: Colors.WHITE,
   },
@@ -137,7 +143,7 @@ export const ProductTourContent = {
     alignContentLeft: true,
   },
   bannerSection2: {
-    backgroundImageURL: "/images/blue-spiral.png",
+    backgroundImage: BackgroundImage.BLUE_SPIRAL,
     imageURL: "/images/tiger-boxes.png",
     icon: "check",
     title:

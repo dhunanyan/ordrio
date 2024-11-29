@@ -9,4 +9,5 @@ export {
   AnimatedCard,
   AnimatedCardBackground,
   AnimatedCardBackgroundColor,
+  BackgroundImage,
 } from "./constants";
