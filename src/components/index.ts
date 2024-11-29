@@ -1,8 +1,5 @@
 export { Accordions, type AccordionsPropsType } from "./Accordions";
-export {
-  StepCardsSection,
-  type StepCardsSectionPropsType,
-} from "./StepCardsSection";
+export { StepCards, type StepCardsPropsType } from "./StepCards";
 export { BannerSection, type BannerSectionPropsType } from "./BannerSection";
 export { BigCards, type BigCardsPropsType } from "./BigCards";
 export {

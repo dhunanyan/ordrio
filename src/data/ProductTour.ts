@@ -131,7 +131,7 @@ export const ProductTourContent = {
         description:
           "Boost your store's potential with the perfect add-ons for marketing, analytics, and more.",
         link: {
-          text: "View Detail's",
+          text: "View Details",
           href: "/plugins",
         },
         type: AnimatedCard.ADD_ONS,

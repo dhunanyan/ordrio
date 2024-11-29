@@ -1,12 +1,12 @@
 import {
   Accordions,
-  StepCardsSection,
+  StepCards,
   BigCards,
   BannerSection,
   IconCards,
   CommonSection,
   WebsitePlusMobileSection,
-  type StepCardsSectionPropsType,
+  type StepCardsPropsType,
   type BannerSectionPropsType,
   type BigCardsPropsType,
   type IconCardsPropsType,
@@ -27,9 +27,7 @@ export default function Page() {
   return (
     <main>
       <CommonSection {...(ProductTourContent.hero as CommonSectionPropsType)}>
-        <StepCardsSection
-          {...(AnimatedCardsContent as StepCardsSectionPropsType)}
-        />
+        <StepCards {...(AnimatedCardsContent as StepCardsPropsType)} />
       </CommonSection>
 
       <CommonSection

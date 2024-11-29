@@ -145,7 +145,7 @@ export const HomeContent = {
         title: "<span>100+</span> Add-ons",
         description:
           "Boost your store's potential with the perfect add-ons for marketing, analytics, and more.",
-        link: { text: "View Detail's", href: "/plugins" },
+        link: { text: "View Details", href: "/plugins" },
         type: AnimatedCard.ADD_ONS,
       },
     ],

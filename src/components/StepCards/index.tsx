@@ -9,9 +9,9 @@ import { Robot } from "./Robot";
 import { Store } from "./Store";
 import { Tablet } from "./Tablet";
 
-import "./StepCardsSection.scss";
+import "./StepCards.scss";
 
-export type StepCardsSectionPropsType = {
+export type StepCardsPropsType = {
   cards: {
     title: string;
     subtitle: string;
@@ -30,9 +30,9 @@ const renderAnimation = (animation: StepCardAnimation) => {
   }
 };
 
-export const StepCardsSection = ({ cards }: StepCardsSectionPropsType) => {
+export const StepCards = ({ cards }: StepCardsPropsType) => {
   return (
-    <ul className="step-cards-section">
+    <ul className="step-cards">
       {cards.map(({ title, subtitle, animation }, i) => (
         <li key={i} className="step-card">
           <div className="step-card__image">
