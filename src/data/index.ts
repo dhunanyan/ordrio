@@ -31,3 +31,4 @@ export { PetStoresContent } from "./PetStores";
 export { PrivacyPolicyContent } from "./PrivacyPolicy";
 export { TermsAndConditionsContent } from "./TermsAndConditions";
 export { CafesContent } from "./Cafes";
+export { AccordionsContent } from "./Accordions";

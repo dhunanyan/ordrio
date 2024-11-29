@@ -1,5 +1,5 @@
 import {
-  AccordionSection,
+  Accordions,
   StepCardsSection,
   BigCards,
   BannerSection,
@@ -7,7 +7,6 @@ import {
   CommonSection,
   ListSection,
   WebsitePlusMobileSection,
-  type AccordionSectionPropsType,
   type StepCardsSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsPropsType,
@@ -15,10 +14,15 @@ import {
   type CommonSectionPropsType,
   type ListSectionPropsType,
   type WebsitePlusMobileSectionPropsType,
+  type AccordionsPropsType,
 } from "@components";
 import { AnimatedCard } from "@config";
 
-import { ProductTourContent, AnimatedCardsContent } from "@data";
+import {
+  ProductTourContent,
+  AnimatedCardsContent,
+  AccordionsContent,
+} from "@data";
 import { renderAnimatedCard } from "@utils";
 
 export default function Page() {
@@ -60,9 +64,11 @@ export default function Page() {
           {...(ProductTourContent.bigCardsSection2 as BigCardsPropsType)}
         />
       </CommonSection>
-      <AccordionSection
-        {...(ProductTourContent.accordionSection as AccordionSectionPropsType)}
-      />
+      <CommonSection
+        {...(ProductTourContent.accordionSection as CommonSectionPropsType)}
+      >
+        <Accordions {...(AccordionsContent as AccordionsPropsType)} />
+      </CommonSection>
       <BannerSection
         {...(ProductTourContent.bannerSection2 as BannerSectionPropsType)}
       />

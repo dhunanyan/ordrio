@@ -1,7 +1,4 @@
-export {
-  AccordionSection,
-  type AccordionSectionPropsType,
-} from "./AccordionSection";
+export { Accordions, type AccordionsPropsType } from "./Accordions";
 export {
   StepCardsSection,
   type StepCardsSectionPropsType,

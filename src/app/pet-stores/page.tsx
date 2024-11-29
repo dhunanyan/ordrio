@@ -1,22 +1,22 @@
 import {
-  AccordionSection,
   BannerSection,
   BigCards,
   CommonSection,
   IconCards,
   Slideshow,
   RowCardsWithBigCard,
-  type AccordionSectionPropsType,
+  ImageCards,
+  Accordions,
   type BannerSectionPropsType,
   type BigCardsPropsType,
   type SlideshowPropsType,
   type IconCardsPropsType,
   type CommonSectionPropsType,
   type RowCardsWithBigCardPropsType,
-  ImageCards,
+  type AccordionsPropsType,
 } from "@components";
 
-import { PetStoresContent } from "@data";
+import { AccordionsContent, PetStoresContent } from "@data";
 
 export default function Page() {
   return (
@@ -56,9 +56,11 @@ export default function Page() {
           {...(PetStoresContent.bigCardsSection2 as BigCardsPropsType)}
         />
       </CommonSection>
-      <AccordionSection
-        {...(PetStoresContent.accordionSection as AccordionSectionPropsType)}
-      />
+      <CommonSection
+        {...(PetStoresContent.accordionSection as CommonSectionPropsType)}
+      >
+        <Accordions {...(AccordionsContent as AccordionsPropsType)} />
+      </CommonSection>
       <BannerSection
         {...(PetStoresContent.bannerSection2 as BannerSectionPropsType)}
       />

@@ -1,13 +1,12 @@
 import {
-  AccordionSection,
   BannerSection,
   BigCards,
   CommonSection,
   IconCards,
   Slideshow,
   RowCardsWithBigCard,
+  Accordions,
   ImageCardsWithContentSection,
-  type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsPropsType,
   type SlideshowPropsType,
@@ -15,9 +14,10 @@ import {
   type CommonSectionPropsType,
   type RowCardsWithBigCardPropsType,
   type ImageCardsWithContentSectionPropsType,
+  type AccordionsPropsType,
 } from "@components";
 
-import { ServicesContent } from "@data";
+import { AccordionsContent, ServicesContent } from "@data";
 
 export default function Page() {
   return (
@@ -53,9 +53,11 @@ export default function Page() {
           {...(ServicesContent.bigCardsSection2 as BigCardsPropsType)}
         />
       </CommonSection>
-      <AccordionSection
-        {...(ServicesContent.accordionSection as AccordionSectionPropsType)}
-      />
+      <CommonSection
+        {...(ServicesContent.accordionSection as CommonSectionPropsType)}
+      >
+        <Accordions {...(AccordionsContent as AccordionsPropsType)} />
+      </CommonSection>
       <BannerSection
         {...(ServicesContent.bannerSection2 as BannerSectionPropsType)}
       />

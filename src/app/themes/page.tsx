@@ -1,17 +1,17 @@
 import {
-  AccordionSection,
   BannerSection,
   BigCards,
   CommonSection,
   IconCards,
-  type AccordionSectionPropsType,
+  Accordions,
   type BannerSectionPropsType,
   type BigCardsPropsType,
   type IconCardsPropsType,
   type CommonSectionPropsType,
+  type AccordionsPropsType,
 } from "@components";
 
-import { ThemesContent } from "@data";
+import { AccordionsContent, ThemesContent } from "@data";
 
 export default function Page() {
   return (
@@ -39,9 +39,11 @@ export default function Page() {
       <CommonSection>
         <BigCards {...(ThemesContent.bigCardsSection as BigCardsPropsType)} />
       </CommonSection>
-      <AccordionSection
-        {...(ThemesContent.accordionSection as AccordionSectionPropsType)}
-      />
+      <CommonSection
+        {...(ThemesContent.accordionSection as CommonSectionPropsType)}
+      >
+        <Accordions {...(AccordionsContent as AccordionsPropsType)} />
+      </CommonSection>
       <BannerSection
         {...(ThemesContent.bannerSection as BannerSectionPropsType)}
       />

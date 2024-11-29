@@ -1,20 +1,21 @@
 import {
-  AccordionSection,
+  Accordions,
   BannerSection,
   ComparePlans,
   CommonSection,
   Plan,
-  type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type ComparePlansPropsType,
   type CommonSectionPropsType,
   type PlanPropsType,
+  type AccordionsPropsType,
 } from "@components";
 
 import {
   PricingContent,
   PlanWithExtraContent,
   ComparePlansContent,
+  AccordionsContent,
 } from "@data";
 
 export default function Page() {
@@ -28,9 +29,11 @@ export default function Page() {
       >
         <ComparePlans {...(ComparePlansContent as ComparePlansPropsType)} />
       </CommonSection>
-      <AccordionSection
-        {...(PricingContent.accordionSection as AccordionSectionPropsType)}
-      />
+      <CommonSection
+        {...(PricingContent.accordionSection as CommonSectionPropsType)}
+      >
+        <Accordions {...(AccordionsContent as AccordionsPropsType)} />
+      </CommonSection>
       <BannerSection
         {...(PricingContent.bannerSection as BannerSectionPropsType)}
       />

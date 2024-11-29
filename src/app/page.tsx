@@ -1,5 +1,5 @@
 import {
-  AccordionSection,
+  Accordions,
   BannerSection,
   BigCards,
   CarouselSection,
@@ -9,7 +9,6 @@ import {
   PartnersSection,
   Plan,
   WebsitePlusMobileSection,
-  type AccordionSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsPropsType,
   type CarouselSectionPropsType,
@@ -19,9 +18,10 @@ import {
   type PartnersSectionPropsType,
   type PlanPropsType,
   type WebsitePlusMobileSectionPropsType,
+  type AccordionsPropsType,
 } from "@components";
 
-import { HomeContent, PlanContent } from "@data";
+import { AccordionsContent, HomeContent, PlanContent } from "@data";
 
 export default function Home() {
   return (
@@ -47,9 +47,11 @@ export default function Home() {
       <CommonSection {...(HomeContent.planSection as CommonSectionPropsType)}>
         <Plan {...(PlanContent as PlanPropsType)} />
       </CommonSection>
-      <AccordionSection
-        {...(HomeContent.accordionSection as AccordionSectionPropsType)}
-      />
+      <CommonSection
+        {...(HomeContent.accordionSection as CommonSectionPropsType)}
+      >
+        <Accordions {...(AccordionsContent as AccordionsPropsType)} />
+      </CommonSection>
       <BannerSection
         {...(HomeContent.bannerSection as BannerSectionPropsType)}
       />

@@ -1,22 +1,22 @@
 import {
-  AccordionSection,
   BannerSection,
   BigCards,
   CommonSection,
   IconCards,
   Slideshow,
   RowCardsWithBigCard,
-  type AccordionSectionPropsType,
+  ImageCards,
+  Accordions,
   type BannerSectionPropsType,
   type BigCardsPropsType,
   type SlideshowPropsType,
   type IconCardsPropsType,
   type CommonSectionPropsType,
   type RowCardsWithBigCardPropsType,
-  ImageCards,
+  type AccordionsPropsType,
 } from "@components";
 
-import { MilkAndTiffinSubscriptionsContent } from "@data";
+import { AccordionsContent, MilkAndTiffinSubscriptionsContent } from "@data";
 
 export default function Page() {
   return (
@@ -57,9 +57,11 @@ export default function Page() {
           {...(MilkAndTiffinSubscriptionsContent.bigCardsSection2 as BigCardsPropsType)}
         />
       </CommonSection>
-      <AccordionSection
-        {...(MilkAndTiffinSubscriptionsContent.accordionSection as AccordionSectionPropsType)}
-      />
+      <CommonSection
+        {...(MilkAndTiffinSubscriptionsContent.accordionSection as CommonSectionPropsType)}
+      >
+        <Accordions {...(AccordionsContent as AccordionsPropsType)} />
+      </CommonSection>
       <BannerSection
         {...(MilkAndTiffinSubscriptionsContent.bannerSection2 as BannerSectionPropsType)}
       />

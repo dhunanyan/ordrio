@@ -1,49 +1,14 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
-.accordion-section {
-  background-color: $grey-color;
+.accordions {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  justify-content: center;
+  width: 100%;
   transition: all 430ms ease-out;
-
-  &__container {
-    @include container;
-    display: flex;
-    gap: 24px;
-    transition: all 430ms ease-out;
-  }
-
-  &__content {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    max-width: 375px;
-    transition: all 430ms ease-out;
-  }
-
-  &__title {
-    color: $black-color-alt;
-    font-family: $font-spoof-trail;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 60px;
-    text-align: left;
-  }
-
-  &__link {
-    @include buttonBlue;
-  }
-
-  &__list {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    justify-content: center;
-    width: 100%;
-    transition: all 430ms ease-out;
-  }
 
   &__button {
     @include thinnerShadow;
