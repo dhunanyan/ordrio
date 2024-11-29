@@ -50,7 +50,10 @@ export const AnimatedCard = ({
     className={`animated-card animated-card--${type} animated-card--${background.color}`}
   >
     <img
-      className="animated-card__workaround"
+      className={
+        "animated-card__workaround" +
+        (content ? " animated-card__workaround--with-content" : "")
+      }
       src="/images/animated-cards/workaround.png"
       alt="I'm Hidden"
     />

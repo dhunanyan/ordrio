@@ -41,7 +41,7 @@
   min-height: 100%;
   overflow: hidden;
   position: relative;
-  width: 100%;
+  min-width: 100%;
 
   &--light-white {
     background-color: $light-white-color !important;
@@ -81,7 +81,9 @@
   }
 
   &__workaround {
-    height: 0;
+    &--with-content {
+      height: 0;
+    }
   }
 
   &__content {

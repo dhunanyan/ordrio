@@ -1,12 +1,12 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
-.animated-cards-section {
+.step-cards-section {
   display: flex;
   justify-content: space-between;
   gap: 24px;
 
-  .animated-card {
+  .step-card {
     @include thinShadow;
     align-items: center;
     background-color: $grey-color;

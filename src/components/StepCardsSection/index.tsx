@@ -32,10 +32,10 @@ const renderAnimation = (animation: StepCardAnimation) => {
 
 export const StepCardsSection = ({ cards }: StepCardsSectionPropsType) => {
   return (
-    <ul className="animated-cards-section">
+    <ul className="step-cards-section">
       {cards.map(({ title, subtitle, animation }, i) => (
-        <div key={i} className="animated-card">
-          <li className="animated-card__image">
+        <li key={i} className="step-card">
+          <div className="step-card__image">
             <motion.img
               src={`/images/step-cards/${animation}.png`}
               alt={animation}
@@ -45,9 +45,9 @@ export const StepCardsSection = ({ cards }: StepCardsSectionPropsType) => {
               viewport={{ once: true }}
             />
             {renderAnimation(animation)}
-          </li>
+          </div>
           <motion.h4
-            className="animated-card__subtitle"
+            className="step-card__subtitle"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: 0.05 * i }}
@@ -55,14 +55,14 @@ export const StepCardsSection = ({ cards }: StepCardsSectionPropsType) => {
             {subtitle}
           </motion.h4>
           <motion.h3
-            className="animated-card__title"
+            className="step-card__title"
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.3, delay: 0.1 * i }}
           >
             {title}
           </motion.h3>
-        </div>
+        </li>
       ))}
     </ul>
   );
