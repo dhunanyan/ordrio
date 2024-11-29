@@ -4,7 +4,6 @@ import {
   BigCards,
   CarouselSection,
   CommonSection,
-  ListSection,
   PartnersSection,
   Plan,
   WebsitePlusMobileSection,
@@ -12,7 +11,6 @@ import {
   type BigCardsPropsType,
   type CarouselSectionPropsType,
   type CommonSectionPropsType,
-  type ListSectionPropsType,
   type PartnersSectionPropsType,
   type PlanPropsType,
   type WebsitePlusMobileSectionPropsType,
@@ -27,7 +25,7 @@ export default function Home() {
   return (
     <main>
       <CommonSection {...(HomeContent.hero as CommonSectionPropsType)} />
-      <ListSection {...(HomeContent.listSection as ListSectionPropsType)} />
+      <CommonSection {...(HomeContent.listSection as CommonSectionPropsType)} />
       <PartnersSection
         {...(HomeContent.partnerSection as PartnersSectionPropsType)}
       />

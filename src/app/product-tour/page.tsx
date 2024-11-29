@@ -5,14 +5,12 @@ import {
   BannerSection,
   IconCards,
   CommonSection,
-  ListSection,
   WebsitePlusMobileSection,
   type StepCardsSectionPropsType,
   type BannerSectionPropsType,
   type BigCardsPropsType,
   type IconCardsPropsType,
   type CommonSectionPropsType,
-  type ListSectionPropsType,
   type WebsitePlusMobileSectionPropsType,
   type AccordionsPropsType,
 } from "@components";
@@ -33,16 +31,18 @@ export default function Page() {
           {...(AnimatedCardsContent as StepCardsSectionPropsType)}
         />
       </CommonSection>
-      <ListSection
-        {...(ProductTourContent.listSection as ListSectionPropsType)}
+
+      <CommonSection
+        {...(ProductTourContent.listSection as CommonSectionPropsType)}
       >
         {renderAnimatedCard(AnimatedCard.EASY_MANAGEMENT)}
-      </ListSection>
-      <ListSection
-        {...(ProductTourContent.listSectionReversed as ListSectionPropsType)}
+      </CommonSection>
+      <CommonSection
+        {...(ProductTourContent.listSectionReversed as CommonSectionPropsType)}
       >
         {renderAnimatedCard(AnimatedCard.SMART_CONTROL)}
-      </ListSection>
+      </CommonSection>
+
       <CommonSection
         {...(ProductTourContent.iconCardsContent as CommonSectionPropsType)}
       >

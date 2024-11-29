@@ -15,7 +15,7 @@ export const ProductTourContent = {
     isFirstSection: true,
   },
   listSection: {
-    title: "Easy Product Management",
+    subtitle: "Easy Product Management",
     list: [
       "Add new products effortlessly with our intuitive tools.",
       "Update product details quickly with a user-friendly interface.",
@@ -26,10 +26,12 @@ export const ProductTourContent = {
       target: "_blank",
       href: "https://control.ordrio.com/#/register",
     },
-    applyCardStyles: true,
+    displayInRow: true,
+    alignContentLeft: true,
+    switchOrder: true,
   },
   listSectionReversed: {
-    title: "Smart Inventory Control",
+    subtitle: "Smart Inventory Control",
     list: [
       "Monitor your inventory levels in real-time to prevent stockouts.",
       "Receive automatic alerts when stock levels are low to ensure timely restocking.",
@@ -40,8 +42,8 @@ export const ProductTourContent = {
       target: "_blank",
       href: "https://control.ordrio.com/#/register",
     },
-    switchOrder: true,
-    applyCardStyles: true,
+    displayInRow: true,
+    alignContentLeft: true,
   },
   iconCardsContent: {
     icon: "check",

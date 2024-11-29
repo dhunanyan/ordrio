@@ -21,17 +21,20 @@ export const HomeContent = {
       href: "https://control.ordrio.com",
     },
     separator: Separator.BIG,
-    imageURL: "/images/tablet-and-mobile-view-tiger.png",
+    bottomImageURL: "/images/tablet-and-mobile-view-tiger.png",
     isFirstSection: true,
   },
   listSection: {
     imageURL: "/images/tiger-painting.png",
-    title: "eCommerce Shouldn't Be a Juggling Act",
+    subtitle: "eCommerce Shouldn't Be a Juggling Act",
     list: [
       "At Ordrio, we handle the tech headaches so you can focus on growing your brand",
       "Sell incredible products and manage sales seamlessly",
       "Connect with customers, nurture relationships, and watch your business thrive",
     ],
+    displayInRow: true,
+    alignContentLeft: true,
+    switchOrder: true,
   },
   partnerSection: {
     backgroundImage: BackgroundImage.GREY_SPIRAL,

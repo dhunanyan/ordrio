@@ -14,9 +14,12 @@ export type CommonSectionPropsType = {
   subtitle?: string;
   description?: string;
   icon?: string;
+  list?: string[];
+  listIcon?: string;
   link?: { text: string; href: string; target?: string };
   children?: React.ReactNode;
   imageURL?: string;
+  bottomImageURL?: string;
   backgroundImage?: BackgroundImage;
   backgroundColor?: Colors;
   linkColor?: Colors;
@@ -24,6 +27,7 @@ export type CommonSectionPropsType = {
   isFirstSection?: boolean;
   displayInRow?: boolean;
   alignContentLeft?: boolean;
+  switchOrder?: boolean;
 };
 
 const getImageInitialY = (separatorType?: Separator) => {
@@ -39,24 +43,29 @@ const getImageInitialY = (separatorType?: Separator) => {
 
 const ANIMATION_DELAY_ICON = 0;
 const ANIMATION_DELAY_TEXT = ANIMATION_DELAY_ICON + 0.05;
-const ANIMATION_DELAY_LINK = ANIMATION_DELAY_TEXT + 0.005;
+const ANIMATION_DELAY_LIST = ANIMATION_DELAY_TEXT + 0.005;
+const ANIMATION_DELAY_LINK = ANIMATION_DELAY_LIST + 0.005;
 const ANIMATION_DELAY_IMAGE = ANIMATION_DELAY_LINK + 0.005;
 
 export const CommonSection = ({
   title,
   subtitle,
   description,
+  list,
+  listIcon = "check",
   icon,
   link,
   children,
   separator,
   imageURL,
+  bottomImageURL,
   backgroundImage,
   linkColor = Colors.BLUE,
   backgroundColor = Colors.WHITE,
   isFirstSection = false,
   displayInRow = false,
   alignContentLeft = false,
+  switchOrder = false,
 }: CommonSectionPropsType) => (
   <section
     className={
@@ -82,7 +91,8 @@ export const CommonSection = ({
       <div
         className={
           "common-section__content" +
-          (alignContentLeft ? " common-section__content--align-left" : "")
+          (alignContentLeft ? " common-section__content--align-left" : "") +
+          (switchOrder ? " common-section__content--switch-order" : "")
         }
       >
         {icon && (
@@ -124,6 +134,36 @@ export const CommonSection = ({
             viewport={{ once: true }}
           />
         )}
+        {list && (
+          <ul className="common-section__list">
+            {list.map((item, i) => (
+              <li key={i} className="common-section__item">
+                <p className="common-section__item-text">
+                  <motion.span
+                    dangerouslySetInnerHTML={{ __html: Icons[listIcon] }}
+                    initial={{ opacity: 0, y: -20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{
+                      duration: 0.3,
+                      delay: ANIMATION_DELAY_LIST + 0.05 * i,
+                    }}
+                  />
+                  <motion.span
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{
+                      duration: 0.3,
+                      delay: ANIMATION_DELAY_LIST + 0.1 * i + 0.0025,
+                    }}
+                    viewport={{ once: true }}
+                  >
+                    {item}
+                  </motion.span>
+                </p>
+              </li>
+            ))}
+          </ul>
+        )}
         {link && (
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -141,12 +181,28 @@ export const CommonSection = ({
         )}
       </div>
       {children && <div className="common-section__component">{children}</div>}
+      {imageURL && (
+        <motion.div
+          className={"common-section__image"}
+          initial={{
+            opacity: 0,
+            y: getImageInitialY(separator) + 10,
+          }}
+          whileInView={{
+            opacity: 1,
+            y: getImageInitialY(separator),
+          }}
+          transition={{ duration: 0.4, delay: ANIMATION_DELAY_IMAGE }}
+        >
+          <img src={imageURL} alt={title} />
+        </motion.div>
+      )}
     </div>
-    {imageURL && (
+    {bottomImageURL && (
       <motion.div
         className={
-          "common-section__image" +
-          (separator ? ` common-section__image--${separator}` : "")
+          "common-section__bottom-image" +
+          (separator ? ` common-section__bottom-image--${separator}` : "")
         }
         initial={{
           opacity: 0,
@@ -158,7 +214,7 @@ export const CommonSection = ({
         }}
         transition={{ duration: 0.4, delay: ANIMATION_DELAY_IMAGE }}
       >
-        <img src={imageURL} alt={title} />
+        <img src={bottomImageURL} alt={title} />
       </motion.div>
     )}
     {separator && (
