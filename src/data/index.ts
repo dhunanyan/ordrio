@@ -8,6 +8,9 @@ export {
   DropdownData,
   NavItemType,
   FooterContent,
+  AccordionsContent,
+  FAQType,
+  FaqTypeText,
 } from "./Components";
 
 export { HomeContent } from "./Home";
@@ -31,4 +34,4 @@ export { PetStoresContent } from "./PetStores";
 export { PrivacyPolicyContent } from "./PrivacyPolicy";
 export { TermsAndConditionsContent } from "./TermsAndConditions";
 export { CafesContent } from "./Cafes";
-export { AccordionsContent } from "./Accordions";
+export { FaqContent } from "./Faq";

@@ -2,13 +2,51 @@
 @import "../../styles/mixins";
 
 .accordions {
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
-  gap: 8px;
-  justify-content: center;
-  width: 100%;
-  transition: all 430ms ease-out;
+
+  &__buttons {
+    align-items: center;
+    display: flex;
+    gap: 8px;
+    margin: 0 0 50px;
+
+    &-button {
+      @include thinnerShadow;
+      background-color: $grey-color;
+      border: 2px solid $grey-color;
+      border-radius: 50px;
+      font-family: $font-spoof-trail;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 28px;
+      padding: 10px 16px;
+      transition: all 150ms ease-in-out;
+      white-space: nowrap;
+
+      &:hover {
+        background-color: $white-color;
+        border: 2px solid $white-color;
+      }
+
+      &--active {
+        border: 2px solid $blue-color;
+        color: $blue-color;
+      }
+    }
+  }
+
+  &__list {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    width: 100%;
+    transition: all 430ms ease-out;
+  }
 
   &__button {
     @include thinnerShadow;
