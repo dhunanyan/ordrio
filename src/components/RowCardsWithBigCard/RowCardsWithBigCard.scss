@@ -23,22 +23,12 @@
   }
 
   &__title {
-    color: $black-color;
-    text-align: center;
-    font-family: $font-inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 32px;
+    @include titleInter;
   }
 
   &__description {
+    @include descriptionInterBig;
     color: $black-color-alt;
-    font-family: $font-inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 28px;
   }
 
   &__content {

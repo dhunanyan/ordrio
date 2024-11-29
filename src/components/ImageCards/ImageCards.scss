@@ -13,13 +13,11 @@
       max-height: 350px;
 
       &__title {
-        font-size: 20px;
-        line-height: 26px;
+        @include titleInter;
       }
 
       &__description {
-        font-size: 14px;
-        line-height: 22px;
+        @include descriptionManrope;
       }
     }
   }
@@ -72,13 +70,11 @@
         }
 
         &__title {
-          font-size: 16px;
-          line-height: 20px;
+          @include titleInterSmall;
         }
 
         &__description {
-          font-size: 9px;
-          line-height: 16px;
+          @include descriptionManrope;
         }
       }
     }

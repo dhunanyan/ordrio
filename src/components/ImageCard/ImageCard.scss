@@ -26,21 +26,11 @@
   }
 
   &__title {
-    color: $black-color;
-    font-family: $font-inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 20px;
+    @include titleInterSmall;
   }
 
   &__description {
-    color: $black-color;
-    font-family: $font-manrope;
-    font-size: 9px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 16px;
+    @include descriptionManropeSmall;
   }
 
   &__link {

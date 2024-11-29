@@ -244,3 +244,140 @@
     z-index: -1;
   }
 }
+
+@mixin titleSpoofTrail {
+  color: $black-color;
+  font-family: $font-spoof-trail;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 800;
+  justify-content: center;
+  line-height: 110px;
+  text-align: center;
+
+  span {
+    @include animatedHighlight;
+    padding: 0 10px;
+  }
+}
+
+@mixin titleSpoofTrailSmall {
+  color: $black-color;
+  text-align: center;
+  font-family: $font-spoof-trail;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+@mixin subtitleSpoofTrailBig {
+  color: $black-color;
+  font-family: $font-spoof-trail;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 50px;
+  text-align: left;
+
+  span {
+    @include animatedHighlight;
+    padding: 0 10px;
+    line-height: 66px;
+  }
+}
+
+@mixin subtitleSpoofTrail {
+  color: $black-color;
+  font-family: $font-spoof-trail;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+@mixin subtitleSpoofTrailSmall {
+  color: $black-color;
+  text-align: center;
+  font-family: $font-spoof-trail;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+@mixin descriptionSpoofTrail {
+  color: $black-color;
+  font-family: $font-spoof-trail;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+}
+
+@mixin descriptionSpoofTrailVeryBig {
+  color: $black-color;
+  font-family: $font-spoof-trail;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: center;
+}
+
+@mixin titleInterSmall {
+  color: $black-color;
+  font-family: $font-inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+@mixin titleInter {
+  color: $black-color;
+  text-align: center;
+  font-family: $font-inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  text-align: center;
+}
+
+@mixin descriptionInter {
+  color: $black-color;
+  font-family: $font-inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+@mixin descriptionInterBig {
+  color: $black-color;
+  font-family: $font-inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+@mixin descriptionManropeSmall {
+  color: $black-color;
+  font-family: $font-manrope;
+  font-size: 9px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+@mixin descriptionManrope {
+  color: $black-color;
+  font-family: $font-manrope;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
