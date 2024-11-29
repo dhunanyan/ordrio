@@ -103,14 +103,16 @@ export const Header = () => {
   const [dropdownAnimation, setDropdownAnimation] = React.useState({
     x: 0,
     y: -20,
-    opacity: 1,
+    opacityHidden: 0,
+    opacityExit: 0,
     duration: DROPDOWN_STANDARD_DURATION,
   });
+  const [isDropdownHovered, setIsDropdownHovered] = React.useState(false);
   const pathname = usePathname();
 
   const dropdownAnimationVariants = {
     hidden: () => ({
-      opacity: dropdownAnimation.opacity,
+      opacity: dropdownAnimation.opacityHidden,
       y: dropdownAnimation.y,
       x: dropdownAnimation.x,
     }),
@@ -120,7 +122,7 @@ export const Header = () => {
       x: 0,
     },
     exit: () => ({
-      opacity: 1,
+      opacity: dropdownAnimation.opacityExit,
       y: dropdownAnimation.y,
       x: dropdownAnimation.x,
     }),
@@ -146,21 +148,24 @@ export const Header = () => {
       setDropdownAnimation({
         x: 0,
         y: -20,
-        opacity: 0,
+        opacityHidden: 0,
+        opacityExit: 0,
         duration: DROPDOWN_STANDARD_DURATION,
       });
     } else if (window.innerWidth >= 768) {
       setDropdownAnimation({
         x: -360,
         y: 0,
-        opacity: 1,
+        opacityHidden: 0,
+        opacityExit: 1,
         duration: DROPDOWN_BURGER_DURATION,
       });
     } else {
       setDropdownAnimation({
         x: -768,
         y: 0,
-        opacity: 1,
+        opacityHidden: 0,
+        opacityExit: 1,
         duration: DROPDOWN_BURGER_DURATION,
       });
     }
@@ -216,21 +221,23 @@ export const Header = () => {
 
   React.useEffect(() => {
     const handleScroll = () => {
-      if (window.innerWidth >= 1040) {
+      if (window.innerWidth >= 1040 && !isDropdownHovered) {
         setActiveDropdown("");
       }
 
       if (window.scrollY > 0) {
         setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
+
+        return;
       }
+      setIsScrolled(false);
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [isDropdownHovered]);
 
   React.useEffect(() => {
     const handleResize = () => {
@@ -238,7 +245,8 @@ export const Header = () => {
         setDropdownAnimation({
           x: 0,
           y: -20,
-          opacity: 0,
+          opacityHidden: 0,
+          opacityExit: 0,
           duration: DROPDOWN_STANDARD_DURATION,
         });
 
@@ -254,7 +262,8 @@ export const Header = () => {
         setDropdownAnimation({
           x: -360,
           y: 0,
-          opacity: 0,
+          opacityHidden: 0,
+          opacityExit: 1,
           duration: DROPDOWN_BURGER_DURATION,
         });
 
@@ -264,7 +273,8 @@ export const Header = () => {
       setDropdownAnimation({
         x: 768,
         y: 0,
-        opacity: 0,
+        opacityHidden: 0,
+        opacityExit: 1,
         duration: DROPDOWN_BURGER_DURATION,
       });
     };
@@ -345,6 +355,8 @@ export const Header = () => {
               <AnimatePresence custom={1}>
                 {activeDropdown && (
                   <Dropdown
+                    onMouseEnter={() => setIsDropdownHovered(true)}
+                    onMouseLeave={() => setIsDropdownHovered(false)}
                     variants={dropdownAnimationVariants}
                     type={activeDropdown}
                     animationDuration={dropdownAnimation.duration as number}

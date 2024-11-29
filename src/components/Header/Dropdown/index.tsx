@@ -8,17 +8,23 @@ import { Icons, Dropdown as DropdownType } from "@config";
 import "./Dropdown.scss";
 
 export type DropdownPropsType = {
+  onMouseEnter: (e?: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
+  onMouseLeave: (e?: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
   variants: Variants;
   type: DropdownType;
   animationDuration: number;
 };
 
 export const Dropdown = ({
+  onMouseEnter,
+  onMouseLeave,
   variants,
   type,
   animationDuration,
 }: DropdownPropsType) => (
   <motion.div
+    onMouseEnter={onMouseEnter}
+    onMouseLeave={onMouseLeave}
     custom={1}
     className="dropdown"
     variants={variants}
