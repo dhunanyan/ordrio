@@ -20,7 +20,7 @@
     max-width: 360px;
   }
 
-  @media screen and (min-width: 1040px) {
+  @media screen and (min-width: 1024px) {
     @include lightShadow;
     border: 1px solid $grey-color;
     border-radius: 16px;
@@ -37,7 +37,7 @@
     min-width: 280px;
     max-width: calc(280px + 2 * 40px);
 
-    @media screen and (min-width: 1040px) {
+    @media screen and (min-width: 1024px) {
       margin: 0;
       padding: 40px;
     }
@@ -97,7 +97,7 @@
     padding: 12px 0;
     width: 100%;
 
-    @media screen and (min-width: 1040px) {
+    @media screen and (min-width: 1024px) {
       margin: 0;
       padding: 40px;
     }
@@ -120,7 +120,7 @@
     width: 100%;
     white-space: nowrap;
 
-    @media screen and (min-width: 1040px) {
+    @media screen and (min-width: 1024px) {
       flex-direction: row;
       flex-wrap: wrap;
     }

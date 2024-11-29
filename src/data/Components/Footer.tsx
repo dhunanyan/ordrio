@@ -13,11 +13,13 @@ type AsideLinkType = {
 };
 
 type FooterContentNavType = {
+  id: string;
   title: string;
   links: NavLinkType[];
 };
 
 type FooterContentAsideType = {
+  id: string;
   title: string;
   type: Size;
   links: AsideLinkType[];
@@ -37,6 +39,7 @@ export type FooterContentType = {
 export const FooterContent: FooterContentType = {
   nav: [
     {
+      id: "support",
       title: "Support",
       links: [
         {
@@ -64,6 +67,7 @@ export const FooterContent: FooterContentType = {
       ],
     },
     {
+      id: "our-company",
       title: "Our Company",
       links: [
         {
@@ -90,6 +94,7 @@ export const FooterContent: FooterContentType = {
       ],
     },
     {
+      id: "solutions",
       title: "Solutions",
       links: [
         {
@@ -133,6 +138,7 @@ export const FooterContent: FooterContentType = {
   ],
   aside: [
     {
+      id: "social",
       title: "Social",
       type: Size.SMALL,
       links: [
@@ -159,6 +165,7 @@ export const FooterContent: FooterContentType = {
       ],
     },
     {
+      id: "download-app",
       title: "Download App",
       type: Size.BIG,
       links: [

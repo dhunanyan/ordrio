@@ -144,7 +144,7 @@ export const Header = () => {
   };
 
   const handleDropdownClick = (id: DropdownType) => {
-    if (window.innerWidth >= 1040) {
+    if (window.innerWidth >= 1024) {
       setDropdownAnimation({
         x: 0,
         y: -20,
@@ -221,7 +221,7 @@ export const Header = () => {
 
   React.useEffect(() => {
     const handleScroll = () => {
-      if (window.innerWidth >= 1040 && !isDropdownHovered) {
+      if (window.innerWidth >= 1024 && !isDropdownHovered) {
         setActiveDropdown("");
       }
 
@@ -241,7 +241,7 @@ export const Header = () => {
 
   React.useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth >= 1040) {
+      if (window.innerWidth >= 1024) {
         setDropdownAnimation({
           x: 0,
           y: -20,
