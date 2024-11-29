@@ -80,7 +80,7 @@ export const HeaderData: HeaderDataType = {
       href: "https://control.ordrio.com/#/login",
     },
     {
-      text: "Sign up for Free",
+      text: "Sign up",
       id: "sign-up",
       target: "_blank",
       href: "https://control.ordrio.com/#/register",
@@ -104,7 +104,7 @@ export const DropdownData: DropdownDataType = {
       {
         title: "Ordrio Ship",
         description: "Integrated with delivery",
-        href: "/ordrio-ship", //LAST_PAGE
+        href: "/ordrio-ship",
       },
       {
         title: "Plugins",
@@ -134,17 +134,17 @@ export const DropdownData: DropdownDataType = {
           {
             icon: "marketplace",
             text: "Marketplace",
-            href: "/marketplace", // 2/1
+            href: "/marketplace",
           },
           {
             icon: "services",
             text: "Services",
-            href: "/services", // 2/2
+            href: "/services",
           },
           {
             icon: "pet-stores",
             text: "Pet Stores",
-            href: "/pet-stores", // 2/3
+            href: "/pet-stores",
           },
           {
             icon: "clothing-and-accessories",
@@ -154,12 +154,12 @@ export const DropdownData: DropdownDataType = {
           {
             icon: "cafes",
             text: "Cafes",
-            href: "/cafes", // 2/4
+            href: "/cafes",
           },
           {
             icon: "meat-stores",
             text: "Meat Stores",
-            href: "/meat-stores", // 2/5
+            href: "/meat-stores",
           },
         ],
       },
@@ -188,7 +188,6 @@ export const DropdownData: DropdownDataType = {
         target: "_blank",
         href: "https://www.facebook.com/groups/694862734867377",
       },
-      //REMOVED PRODUCT NEWS
       {
         title: "Become a Partner",
         description: "Join the team",
@@ -224,7 +223,7 @@ export const DropdownData: DropdownDataType = {
           {
             icon: "faq",
             text: "FAQ",
-            href: "/faq", // NO FAQ PAGE
+            href: "/faq",
           },
         ],
       },

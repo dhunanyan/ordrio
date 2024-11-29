@@ -2,23 +2,45 @@
 @import "../../../styles/mixins";
 
 .dropdown {
-  @include lightShadow;
+  @include zeroShadow;
   align-items: flex-start;
   background-color: $white-color;
-  border-radius: 16px;
-  border: 1px solid $grey-color;
+  border-radius: 0;
+  border: 0;
   display: flex;
-  left: 30px;
-  overflow: hidden;
+  flex-direction: column;
+  left: 0;
+  max-width: 768px;
   position: absolute;
-  top: calc(100% - 10px);
-  width: max-content;
+  top: 0;
+  width: 100%;
   z-index: 9992;
 
+  @media screen and (min-width: 768px) {
+    max-width: 360px;
+  }
+
+  @media screen and (min-width: 1040px) {
+    @include lightShadow;
+    border: 1px solid $grey-color;
+    border-radius: 16px;
+    flex-direction: row;
+    left: -100px;
+    max-width: max-content;
+    position: absolute;
+    top: calc(100% - 10px);
+  }
+
   &__aside {
-    padding: 40px;
+    margin: 0 23px;
+    padding: 12px 0;
     min-width: 280px;
     max-width: calc(280px + 2 * 40px);
+
+    @media screen and (min-width: 1040px) {
+      margin: 0;
+      padding: 40px;
+    }
 
     &-list {
       display: flex;
@@ -70,12 +92,18 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
+    margin: 0 23px;
     max-width: calc(800px - 2 * 40px);
-    padding: 40px;
+    padding: 12px 0;
     width: 100%;
+
+    @media screen and (min-width: 1040px) {
+      margin: 0;
+      padding: 40px;
+    }
   }
 
-  &__title {
+  &__subtitle {
     color: $grey-color-darker;
     font-family: $font-inter;
     font-size: 16px;
@@ -88,10 +116,16 @@
   &__list {
     align-items: flex-start;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    flex-wrap: wrap;
     margin: 8px 0 0;
     width: 100%;
+    white-space: nowrap;
+
+    @media screen and (min-width: 1040px) {
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
   }
 
   &__item {

@@ -1,10 +1,17 @@
 @import "../styles/variables.scss";
 
+main > *,
+footer > * {
+  // Menu burger animation (when website movies left right)
+  transition: all 450ms $animation-2 !important;
+}
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: $font-spoof-trail;
+  overflow-x: hidden;
 
   &::-webkit-scrollbar {
     width: 12px;

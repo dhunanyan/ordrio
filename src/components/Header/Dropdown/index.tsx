@@ -1,33 +1,23 @@
 import * as React from "react";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 
 import { DropdownData } from "@data";
 import { Icons, Dropdown as DropdownType } from "@config";
 
 import "./Dropdown.scss";
 
-const variants = {
-  hidden: () => ({
-    opacity: 0,
-    y: -20,
-  }),
-  visible: {
-    y: 0,
-    opacity: 1,
-  },
-  exit: () => ({
-    opacity: 0,
-    y: -20,
-  }),
-};
-
 export type DropdownPropsType = {
+  variants: Variants;
   type: DropdownType;
   animationDuration: number;
 };
 
-export const Dropdown = ({ type, animationDuration }: DropdownPropsType) => (
+export const Dropdown = ({
+  variants,
+  type,
+  animationDuration,
+}: DropdownPropsType) => (
   <motion.div
     custom={1}
     className="dropdown"
@@ -35,15 +25,27 @@ export const Dropdown = ({ type, animationDuration }: DropdownPropsType) => (
     initial="hidden"
     animate="visible"
     exit="exit"
-    transition={{ duration: animationDuration * 0.001 }}
+    transition={{
+      duration:
+        (variants.hidden as { [key: string]: number }).x !== 0 ? 0.5 : 0.2,
+    }}
   >
     <motion.aside
       className="dropdown__aside"
-      initial={{ opacity: 0, y: -10 }}
+      initial={{
+        opacity: 0,
+        y: (variants.hidden as { [key: string]: number }).x !== 0 ? 0 : -10,
+        x: (variants.hidden as { [key: string]: number }).x !== 0 ? 0 : -10,
+      }}
       whileInView={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -10 }}
+      exit={{
+        opacity: 0,
+        y: (variants.hidden as { [key: string]: number }).x !== 0 ? 0 : -10,
+        x: (variants.hidden as { [key: string]: number }).x !== 0 ? 0 : -10,
+      }}
       transition={{
-        duration: 0.2,
+        duration:
+          (variants.hidden as { [key: string]: number }).x !== 0 ? 0.5 : 0.2,
         delay: animationDuration * 0.0005 + 0.05,
       }}
     >
@@ -60,9 +62,18 @@ export const Dropdown = ({ type, animationDuration }: DropdownPropsType) => (
     </motion.aside>
     <motion.nav
       className="dropdown__nav"
-      initial={{ opacity: 0, y: -10 }}
+      initial={{
+        opacity: 0,
+        y: (variants.hidden as { [key: string]: number }).x !== 0 ? 0 : -10,
+        x: (variants.hidden as { [key: string]: number }).x !== 0 ? 0 : -10,
+      }}
       whileInView={{ opacity: 1, y: 0 }}
-      exit={{ opacity: 0, y: -10 }}
+      exit={{
+        opacity: 0,
+        y: (variants.hidden as { [key: string]: number }).x !== 0 ? 0 : -10,
+
+        x: (variants.hidden as { [key: string]: number }).x !== 0 ? 0 : -10,
+      }}
       transition={{
         duration: 0.2,
         delay: animationDuration * 0.0005 + 0.05,
@@ -70,7 +81,7 @@ export const Dropdown = ({ type, animationDuration }: DropdownPropsType) => (
     >
       {DropdownData[type].nav.map(({ title, links }, i) => (
         <div key={i} className="dropdown__section">
-          <h3 className="dropdown__title">{title}</h3>
+          <h3 className="dropdown__subtitle">{title}</h3>
           <ul className="dropdown__list">
             {links.map(({ icon, text, href, target }, j) => (
               <li key={j} className="dropdown__item">

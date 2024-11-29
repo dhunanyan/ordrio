@@ -39,24 +39,192 @@
   &__logo {
     align-items: center;
     display: flex;
-    justify-content: space-between;
     height: 24px;
+    justify-content: space-between;
     padding: 5px;
     position: relative;
     transition: all 200ms ease-in;
+    width: 90px;
 
     &--is-scrolled {
       transition: all 220ms ease-out;
     }
+
+    @media screen and (min-width: 465px) {
+      width: 121px;
+    }
+
+    svg {
+      width: 100%;
+    }
+  }
+
+  &__burger {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 0 10px 0 0;
+
+    @media screen and (min-width: 1040px) {
+      display: none;
+    }
   }
 
   &__nav {
-    display: flex;
+    @include thinnerRightShadow;
+    background-color: $white-color;
+    height: calc(100vh - 64px);
+    left: 0;
+    max-width: 768px;
+    position: fixed;
+    top: 64px;
+    transform: translate(-100%, 0);
+    transition: all 450ms $animation-2;
     width: 100%;
+
+    &::before {
+      background-color: $white-color;
+      content: "";
+      display: block;
+      height: 100vh;
+      position: fixed;
+      left: 0;
+      max-width: 768px;
+      top: 0;
+      transform: translate(-100%, 0);
+    }
+
+    &--opened {
+      transform: translate(0, 0);
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 360px;
+
+      &::before {
+        max-width: 360px;
+      }
+    }
+
+    @media screen and (min-width: 1040px) {
+      @include zeroShadow;
+      background-color: transparent;
+      flex-direction: row;
+      height: auto;
+      left: auto;
+      max-width: 100%;
+      position: static;
+      transform: translate(0, 0);
+      top: auto;
+
+      &::before {
+        display: none;
+      }
+
+      &--opened {
+        transform: translate(0%, 0);
+      }
+    }
+
+    &-container {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $yellow-color;
+        border: 3px solid $yellow-color;
+        cursor: pointer;
+
+        &:active {
+          background-color: $yellow-color-dark;
+          border: 3px solid $yellow-color-dark;
+        }
+      }
+
+      &::-webkit-scrollbar-track {
+        background-color: $black-color-light;
+      }
+
+      @media screen and (min-width: 1040px) {
+        flex-direction: row;
+        overflow-y: unset;
+      }
+    }
+
+    &-close-button {
+      align-items: center;
+      background-color: $grey-color;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      height: 52px;
+      margin: 0 auto 0 23px;
+      padding: 20px;
+      transition: all 150ms ease-in-out;
+      width: 52px;
+
+      svg {
+        width: 14px;
+      }
+
+      path {
+        transition: all 150ms ease-in-out;
+      }
+
+      &:hover {
+        background-color: $blue-color;
+
+        path {
+          fill: $white-color;
+        }
+      }
+
+      @media screen and (min-width: 1040px) {
+        display: none;
+      }
+    }
+
+    &-title-container {
+      display: block;
+      height: 64px;
+      overflow: hidden;
+
+      @media screen and (min-width: 1040px) {
+        display: none;
+      }
+    }
+
+    &-title {
+      color: $black-color;
+      font-family: $font-spoof-trail;
+      font-size: 35px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 40px;
+      margin: 0 23px;
+      padding: 12px 0;
+      transition: all 150ms ease-in-out;
+    }
   }
 
   &__list {
     display: flex;
+    flex-direction: column;
+    height: calc(100% - 180px);
+    position: relative;
+    transition: all 150ms ease-in-out;
+
+    @media screen and (min-width: 1040px) {
+      flex-direction: row;
+      position: static;
+    }
   }
 
   &__item {
@@ -68,10 +236,12 @@
       font-size: 16px;
       font-family: $font-spoof-trail;
       font-weight: 500;
+      justify-content: space-between;
       line-height: 28px;
       margin: 0 23px;
       padding: 12px 0;
       transition: all 180ms ease-out;
+      width: calc(100% - 2 * 23px);
       white-space: nowrap;
 
       &:hover {
@@ -89,18 +259,32 @@
       path {
         transition: all 180ms ease-out;
       }
+
+      @media screen and (min-width: 1040px) {
+        justify-content: unset;
+        width: auto;
+      }
     }
 
     button span {
       align-items: center;
       display: flex;
       justify-content: center;
+      transform: rotate(-90deg);
       transform-origin: center center;
       transition: all 120ms ease-out;
+
+      @media screen and (min-width: 1040px) {
+        transform: rotate(0);
+      }
     }
 
     &--active button span {
-      transform: rotate(180deg);
+      transform: rotate(-90deg);
+
+      @media screen and (min-width: 1040px) {
+        transform: rotate(180deg);
+      }
     }
   }
 
@@ -109,6 +293,11 @@
       align-items: center;
       display: flex;
       gap: 8px;
+      margin: 0 0 0 auto;
+
+      @media screen and (min-width: 1040px) {
+        margin: 0;
+      }
     }
 
     &-link {
@@ -117,11 +306,11 @@
       background-color: $white-color;
       border-radius: 90px;
       font-family: $font-spoof-trail;
-      font-size: 16px;
+      font-size: 13px;
       font-weight: 500;
       height: 52px;
       line-height: 28px;
-      padding: 12px 24px;
+      padding: 8px 12px;
       transition: all 120ms ease-in-out;
       white-space: nowrap;
 
@@ -138,6 +327,11 @@
           background-color: $blue-color;
           border: 1px solid $blue-color;
         }
+      }
+
+      @media screen and (min-width: 465px) {
+        font-size: 16px;
+        padding: 12px 24px;
       }
     }
   }

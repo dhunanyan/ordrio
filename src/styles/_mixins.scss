@@ -24,6 +24,18 @@
   -moz-box-shadow: 3px -4px 18px -10px rgba(0, 0, 0, 0.47);
 }
 
+@mixin thinnerRightShadow {
+  box-shadow: 4px 10px 18px -10px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 4px 10px 18px -10px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 4px 10px 18px -10px rgba(0, 0, 0, 0.47);
+}
+
+@mixin zeroShadow {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+}
+
 @mixin container {
   max-width: 1220px;
   margin: 0 auto;

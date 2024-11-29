@@ -1,5 +1,6 @@
 import arrowDown from "../../public/svg/i_arrow-down.svg";
 import arrowLeft from "../../public/svg/i_arrow-left.svg";
+import arrowLeft2 from "../../public/svg/i_arrow-left-2.svg";
 import arrowRight from "../../public/svg/i_arrow-right.svg";
 import arrowRightCircle from "../../public/svg/i_arrow-right-circle.svg";
 import appStore from "../../public/svg/i_app-store.svg";
@@ -84,12 +85,15 @@ import bulletPointsBlue from "../../public/svg/i_bullet-points-blue.svg";
 import plusCardBlue from "../../public/svg/i_plus-card-blue.svg";
 import handshakeBlue from "../../public/svg/i_handshake-blue.svg";
 import presentBlue from "../../public/svg/i_present-blue.svg";
+import burger from "../../public/svg/i_burger.svg";
+import times from "../../public/svg/i_times.svg";
 
 export const Icons = {
   "app-store": appStore,
   "app-store-white": appStoreWhite,
   "arrow-down": arrowDown,
   "arrow-left": arrowLeft,
+  "arrow-left-2": arrowLeft2,
   "arrow-right": arrowRight,
   "arrow-right-circle": arrowRightCircle,
   "about-us": aboutUs,
@@ -172,4 +176,6 @@ export const Icons = {
   "plus-card-blue": plusCardBlue,
   "handshake-blue": handshakeBlue,
   "present-blue": presentBlue,
+  burger,
+  times,
 } as { [key: string]: string };
