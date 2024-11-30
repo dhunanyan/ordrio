@@ -23,7 +23,7 @@ export const ImageCards = ({ cards }: ImageCardsPropsType) => (
         transition={{ duration: 0.3, delay: 0.15 * i }}
         viewport={{ once: true }}
       >
-        <ImageCard {...card} index={i} />
+        <ImageCard {...card} smallerText={cards.length > 4} index={i} />
       </motion.li>
     ))}
   </ul>

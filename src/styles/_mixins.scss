@@ -61,10 +61,11 @@
   border: 0;
   border-radius: 90px;
   display: flex;
-  font-size: 10px;
+  font-size: 16px;
   font-weight: 700;
   justify-content: flex-start;
-  padding: 9px 12px;
+  line-height: 28px;
+  padding: 16px 32px;
   text-align: center;
   transition: all 150ms ease-out;
 
@@ -79,67 +80,69 @@
 
   &:hover {
     transform: translate(-4px, 0);
+    padding: 16px 16px 16px 32px;
 
     &::after {
       content: "➜";
       opacity: 1;
+      padding: 0 0 0 8px;
       width: 16px;
     }
   }
 
-  @media screen and (min-width: 375px) {
-    font-size: 14px;
-    padding: 12px 16px;
+  // @media screen and (min-width: 375px) {
+  //   font-size: 14px;
+  //   padding: 12px 16px;
 
-    &:hover {
-      padding: 9px 9px 9px 12px;
+  //   &:hover {
+  //     padding: 9px 9px 9px 12px;
 
-      &::after {
-        padding: 0 0 0 4px;
-      }
-    }
-  }
+  //     &::after {
+  //       padding: 0 0 0 4px;
+  //     }
+  //   }
+  // }
 
-  @media screen and (min-width: 425px) {
-    font-size: 14px;
-    padding: 16px 20px;
+  // @media screen and (min-width: 425px) {
+  //   font-size: 14px;
+  //   padding: 16px 20px;
 
-    &:hover {
-      padding: 16px 16px 16px 20px;
+  //   &:hover {
+  //     padding: 16px 16px 16px 20px;
 
-      &::after {
-        padding: 0 0 0 8px;
-      }
-    }
-  }
+  //     &::after {
+  //       padding: 0 0 0 8px;
+  //     }
+  //   }
+  // }
 
-  @media screen and (min-width: 768px) {
-    font-size: 14px;
-    line-height: 24px;
-    padding: 16px 20px;
+  // @media screen and (min-width: 768px) {
+  //   font-size: 14px;
+  //   line-height: 24px;
+  //   padding: 16px 20px;
 
-    &:hover {
-      padding: 16px 16px 16px 20px;
+  //   &:hover {
+  //     padding: 16px 16px 16px 20px;
 
-      &::after {
-        padding: 0 0 0 8px;
-      }
-    }
-  }
+  //     &::after {
+  //       padding: 0 0 0 8px;
+  //     }
+  //   }
+  // }
 
-  @media screen and (min-width: 1024px) {
-    font-size: 16px;
-    line-height: 28px;
-    padding: 16px 32px;
+  // @media screen and (min-width: 1024px) {
+  //   font-size: 16px;
+  //   line-height: 28px;
+  //   padding: 16px 32px;
 
-    &:hover {
-      padding: 16px 16px 16px 32px;
+  //   &:hover {
+  //     padding: 16px 16px 16px 32px;
 
-      &::after {
-        padding: 0 0 0 8px;
-      }
-    }
-  }
+  //     &::after {
+  //       padding: 0 0 0 8px;
+  //     }
+  //   }
+  // }
 }
 
 @mixin buttonBlue {
@@ -248,16 +251,23 @@
 @mixin titleSpoofTrail {
   color: $black-color;
   font-family: $font-spoof-trail;
-  font-size: 90px;
+  font-size: 45px;
   font-style: normal;
   font-weight: 800;
   justify-content: center;
-  line-height: 110px;
+  line-height: 45px;
   text-align: center;
+  transform: all 150ms ease-in-out;
 
   span {
     @include animatedHighlight;
     padding: 0 10px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 90px;
+    line-height: 110px;
+    text-align: left;
   }
 }
 
@@ -269,21 +279,33 @@
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
+  transform: all 150ms ease-in-out;
 }
 
 @mixin subtitleSpoofTrailBig {
   color: $black-color;
   font-family: $font-spoof-trail;
-  font-size: 45px;
+  font-size: 28px;
   font-style: normal;
   font-weight: 700;
-  line-height: 50px;
+  line-height: 40px;
   text-align: left;
+  transform: all 150ms ease-in-out;
 
   span {
     @include animatedHighlight;
-    padding: 0 10px;
-    line-height: 66px;
+    padding: 0 5px;
+    line-height: 45px;
+
+    @media screen and (min-width: 768px) {
+      padding: 0 10px;
+      line-height: 66px;
+    }
+  }
+
+  @media screen and (min-width: 425px) {
+    font-size: 45px;
+    line-height: 50px;
   }
 }
 
@@ -294,6 +316,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
+  transform: all 150ms ease-in-out;
 }
 
 @mixin subtitleSpoofTrailSmall {
@@ -304,26 +327,40 @@
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
+  transform: all 150ms ease-in-out;
 }
 
 @mixin descriptionSpoofTrail {
   color: $black-color;
   font-family: $font-spoof-trail;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 28px;
+  line-height: 24px;
   text-align: center;
+  transform: all 150ms ease-in-out;
+
+  @media screen and (min-width: 768px) {
+    line-height: 18px;
+    line-height: 28px;
+    text-align: left;
+  }
 }
 
 @mixin descriptionSpoofTrailVeryBig {
   color: $black-color;
   font-family: $font-spoof-trail;
-  font-size: 32px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 45px;
+  line-height: 36px;
   text-align: center;
+  transform: all 150ms ease-in-out;
+
+  @media screen and (min-width: 425px) {
+    font-size: 32px;
+    line-height: 45px;
+  }
 }
 
 @mixin titleInterSmall {
@@ -333,6 +370,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 20px;
+  transform: all 150ms ease-in-out;
 }
 
 @mixin titleInter {
@@ -344,6 +382,7 @@
   font-weight: 700;
   line-height: 32px;
   text-align: center;
+  transform: all 150ms ease-in-out;
 }
 
 @mixin descriptionInter {
@@ -353,6 +392,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 30px;
+  transform: all 150ms ease-in-out;
 }
 
 @mixin descriptionInterBig {
@@ -362,6 +402,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 28px;
+  transform: all 150ms ease-in-out;
 }
 
 @mixin descriptionManropeSmall {
@@ -370,7 +411,12 @@
   font-size: 9px;
   font-style: normal;
   font-weight: 500;
-  line-height: 16px;
+  line-height: 10px;
+  transform: all 150ms ease-in-out;
+
+  @media screen and (min-width: 1064px) {
+    line-height: 16px;
+  }
 }
 
 @mixin descriptionManrope {
@@ -380,4 +426,5 @@
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
+  transform: all 150ms ease-in-out;
 }

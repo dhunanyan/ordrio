@@ -9,7 +9,11 @@
   position: relative;
 
   &--offset {
-    padding-top: 30px;
+    padding-top: 60px;
+
+    @media screen and (min-width: 768px) {
+      padding-top: 30px;
+    }
   }
 
   &--grey {
@@ -74,13 +78,17 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 90px;
+    gap: 20px;
     position: relative;
     z-index: 2;
 
+    @media screen and (min-width: 768px) {
+      gap: 90px;
+    }
+
     &--row {
-      flex-direction: row;
-      align-items: flex-start;
+      flex-direction: column;
+      align-items: center;
 
       .icon-cards {
         flex-wrap: wrap;
@@ -90,9 +98,34 @@
         }
       }
 
-      * {
-        text-align: left !important;
+      > div > p,
+      > div > ul p,
+      > div > a,
+      > div > button {
+        text-align: center !important;
+
+        @media screen and (min-width: 768px) {
+          text-align: left !important;
+        }
       }
+
+      > div > h1,
+      > div > h2,
+      > div > h3 {
+        text-align: center !important;
+
+        @media screen and (min-width: 768px) {
+          text-align: left !important;
+        }
+      }
+
+      @media screen and (min-width: 768px) {
+        flex-direction: row;
+      }
+    }
+
+    &--align-top {
+      align-items: flex-start;
     }
   }
 
@@ -100,14 +133,24 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
 
     &--align-left {
-      align-items: flex-start;
+      @media screen and (min-width: 768px) {
+        align-items: flex-start;
+      }
     }
 
     &--switch-order {
-      order: 10;
+      order: 0;
+
+      @media screen and (min-width: 768px) {
+        order: 10;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      gap: 40px;
     }
   }
 
@@ -117,6 +160,11 @@
 
   &__subtitle {
     @include subtitleSpoofTrailBig;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &__item {
@@ -147,12 +195,22 @@
     @include descriptionSpoofTrail;
     align-items: center;
     display: flex;
-    gap: 30px;
+    flex-direction: column;
+    gap: 3px;
+    transition: all 150ms ease-in-out;
 
     span {
       align-items: center;
       display: flex;
       gap: 5px;
+    }
+
+    @media screen and (min-width: 425px) {
+      gap: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+      flex-direction: row;
     }
   }
 
@@ -246,6 +304,7 @@
   &__bottom-image {
     margin: 0 auto;
     max-width: 1220px;
+    overflow: hidden;
     padding: 0 30px;
     position: relative;
     z-index: 1;
@@ -262,7 +321,6 @@
 
     img {
       @include lightShadow;
-      border-radius: 24px 24px 0px 0px;
       width: 100%;
     }
   }
@@ -270,7 +328,12 @@
   &__separator-image {
     align-items: center;
     display: flex;
+    opacity: 0 !important;
     width: 100vw;
+
+    @media screen and (min-width: 425px) {
+      opacity: 1 !important;
+    }
 
     &--section-separator-medium {
       span {

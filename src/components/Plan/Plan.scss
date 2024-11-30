@@ -2,55 +2,120 @@
 @import "../../styles/mixins";
 
 .plan {
-  border: 1px solid $yellow-color-alt;
-  background: $cream-gradient-light;
-  border-radius: 24px;
-  @include thinShadow;
-  overflow: hidden;
+  display: flex;
+  flex-direction: column;
   width: 100%;
 
+  @media screen and (min-width: 768px) {
+    overflow: hidden;
+  }
+
+  @media screen and (min-width: 768px) {
+    @include thinnerShadow;
+    border: 1px solid $yellow-color-alt;
+    border-radius: 24px;
+    background: $cream-gradient-light;
+  }
+
   &--dark-top {
-    background: $cream-gradient-dark;
+    background: transparent;
+
+    @media screen and (min-width: 768px) {
+      background: $cream-gradient-dark;
+    }
   }
 
   &__free {
+    @include thinnerShadow;
+    border: 1px solid $yellow-color-alt;
+    border-radius: 24px;
+    background: $cream-gradient-dark;
     display: grid;
+    grid-gap: 20px;
     grid-template-areas:
-      "a d"
-      "b d"
-      "c d";
-    grid-template-columns: 333px auto;
-    grid-template-rows: 50px 86px 132px;
-    padding: 40px;
+      "a"
+      "b"
+      "d"
+      "e"
+      "c";
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      minmax(50px, auto)
+      minmax(50px, auto)
+      minmax(0, auto)
+      minmax(0, auto)
+      minmax(50px, auto);
+    margin: 0 0 8px;
+    max-width: calc(100% - 24px * 2);
+    padding: 40px 24px;
+
+    @media screen and (min-width: 768px) {
+      @include zeroShadow;
+      border: 0;
+      border-radius: 0;
+      background: transparent;
+      padding: 40px;
+      margin: 0;
+    }
+
+    @media screen and (min-width: 1024px) {
+      grid-template-columns: minmax(1fr, 333px) auto;
+      grid-template-rows: 50px 86px 132px;
+      grid-template-areas:
+        "a d"
+        "b d"
+        "c d";
+    }
   }
 
   &__inner-container {
-    @include thinShadow;
-    background-color: $cream-color;
-    border-radius: 24px;
+    @media screen and (min-width: 768px) {
+      @include thinnerShadow;
+      background-color: $cream-color;
+      border-radius: 24px;
+    }
   }
 
   &__list {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    overflow: hidden;
+    gap: 8px;
+
+    @media screen and (min-width: 768px) {
+      overflow: hidden;
+      gap: 0;
+    }
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+    }
   }
 
   &__item {
-    border-right: 1px solid $black-color-alt-opacity;
+    @include thinnerShadow;
+    background-color: $cream-color;
+    border: 1px solid $yellow-color-alt;
+    border-radius: 24px;
     display: flex;
     flex-direction: column;
     padding: 40px 24px;
     position: relative;
-    width: 100%;
+    width: calc(100% - 24px * 2);
 
-    &:last-of-type {
-      border: 0;
+    @media screen and (min-width: 768px) {
+      @include zeroShadow;
+      background-color: transparent;
+      border-radius: 0;
+
+      &:last-of-type {
+        border: 0;
+      }
     }
   }
 
   &__most-popular {
-    @include thinShadow;
+    @include thinnerShadow;
     background-color: $red-color;
     border-radius: 0px 0px 8px 8px;
     color: $white-color;
@@ -111,7 +176,10 @@
       display: flex;
       flex-direction: column;
       grid-area: b;
-      margin: 0 0 71px 0;
+
+      @media screen and (min-width: 1024px) {
+        margin: 0 0 71px 0;
+      }
 
       span:first-of-type {
         font-size: 60px;
@@ -132,20 +200,83 @@
     width: 100%;
   }
 
+  &__expand {
+    @include descriptionInterBig;
+    background-color: transparent;
+    display: block;
+    font-weight: 600;
+    line-height: 32px;
+    margin: 16px 0;
+    text-align: left;
+
+    &--free {
+      grid-area: e;
+    }
+
+    @media screen and (min-width: 768px) {
+      display: none;
+    }
+
+    span {
+      font-size: 24px;
+    }
+  }
+
   &__benefits {
+    &-list-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 0fr;
+      transition: all 450ms $animation-2;
+
+      @media screen and (min-width: 768px) {
+        display: block;
+        grid-area: unset;
+        grid-template-columns: unset;
+        grid-template-rows: unset;
+      }
+
+      &--open {
+        grid-template-rows: 1fr;
+      }
+
+      &--free {
+        grid-area: d;
+        grid-template-columns: 1fr;
+      }
+    }
+
     &-list {
       display: flex;
       flex-direction: column;
       gap: 16px;
-      margin: 0 0 26px 0;
+      overflow: hidden;
 
-      &--free,
-      &--extra {
+      @media screen and (min-width: 768px) {
+        gap: 16px;
+        margin: 0 0 26px 0;
+        overflow: unset;
+      }
+
+      &--extra,
+      &--free {
         display: grid;
+        grid-template-columns: 1fr;
+
+        @media screen and (min-width: 768px) {
+          grid-template-columns:
+            minmax(322px, 1fr)
+            minmax(322px, 1fr);
+        }
+
+        @media screen and (min-width: 1024px) {
+          margin: 0 0 26px auto;
+          grid-template-columns: 322px 322px;
+        }
+      }
+
+      &--extra {
         grid-area: d;
-        grid-template-columns: 322px 322px;
-        grid-column-gap: 80px;
-        margin: 0 0 26px auto;
       }
     }
 
@@ -181,6 +312,7 @@
     @include buttonBlue;
     margin: auto 0 0 0;
     justify-content: center;
+    width: calc(100% - 32px * 2);
 
     &--free,
     &--extra {
@@ -194,10 +326,14 @@
     &--extra {
       margin: auto 0 auto auto;
     }
+
+    @media screen and (min-width: 768px) {
+      width: auto;
+    }
   }
 
   &__extra {
-    @include thinShadow;
+    @include thinnerShadow;
     background: $cream-gradient-dark;
     border-radius: 24px;
     display: grid;

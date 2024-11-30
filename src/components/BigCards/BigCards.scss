@@ -3,10 +3,15 @@
 
 .big-cards {
   display: flex;
+  flex-wrap: wrap;
   gap: 25px;
   justify-content: space-between;
 
   > li {
     width: 100%;
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
   }
 }

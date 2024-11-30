@@ -144,23 +144,15 @@ export const WebsitePlusMobileSection = ({
               (screenshotURL, i) =>
                 i === activeScreenshot && (
                   <motion.img
-                    custom={1}
-                    key={i}
                     src={screenshotURL}
                     alt={`Screenshot ${1}`}
+                    custom={1}
+                    transition={{ duration: 0.5 }}
+                    key={i}
                     variants={variants}
                     initial="hidden"
                     animate="visible"
                     exit="exit"
-                    transition={{ duration: 0.5 }}
-                    style={{
-                      position: "absolute",
-                      top: 0,
-                      left: 0,
-                      width: "100%",
-                      height: "100%",
-                      objectFit: "cover",
-                    }}
                   />
                 )
             )}

@@ -23,14 +23,31 @@
     gap: 5px;
     padding: 20px;
     z-index: 1;
+
+    &--smaller-text {
+      padding: 10px;
+
+      @media screen and (min-width: 1064px) {
+        padding: 20px;
+      }
+    }
   }
 
   &__title {
-    @include titleInterSmall;
+    @include titleInter;
+    text-align: left;
+
+    &--smaller-text {
+      @include titleInterSmall;
+    }
   }
 
   &__description {
-    @include descriptionManropeSmall;
+    @include descriptionManrope;
+
+    &--smaller-text {
+      @include descriptionManropeSmall;
+    }
   }
 
   &__link {

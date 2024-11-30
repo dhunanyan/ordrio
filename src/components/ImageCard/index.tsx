@@ -15,6 +15,7 @@ export type ImageCardPropsType = {
   link?: { text: string; href: string; target?: string };
   backgroundColor?: string;
   index?: number;
+  smallerText?: boolean;
 };
 
 const ANIMATION_DELAY_TEXT = 0.1;
@@ -28,14 +29,23 @@ export const ImageCard = ({
   link,
   backgroundColor,
   index = 0,
+  smallerText,
 }: ImageCardPropsType) => (
   <div
     className="image-card"
     {...(backgroundColor && { style: { backgroundColor } })}
   >
-    <div className="image-card__content">
+    <div
+      className={
+        "image-card__content" +
+        (smallerText ? " image-card__content--smaller-text" : "")
+      }
+    >
       <motion.h3
-        className="image-card__title"
+        className={
+          "image-card__title" +
+          (smallerText ? " image-card__title--smaller-text" : "")
+        }
         dangerouslySetInnerHTML={{ __html: title }}
         initial={{ opacity: 0, y: 5 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -46,7 +56,10 @@ export const ImageCard = ({
         viewport={{ once: true }}
       />
       <motion.p
-        className="image-card__description"
+        className={
+          "image-card__description" +
+          (smallerText ? " image-card__description--smaller-text" : "")
+        }
         initial={{ opacity: 0, y: 5 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{

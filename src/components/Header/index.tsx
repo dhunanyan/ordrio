@@ -190,32 +190,13 @@ export const Header = () => {
     );
   };
 
-  const moveWebsiteRight = (isMenuOpened: boolean) => {
-    const footer = document.querySelector("footer") as HTMLElement;
-    const main = document.querySelector("main") as HTMLElement;
-
-    if (!footer || !main) {
-      return;
-    }
-
-    const translatedX = `translateX(${!isMenuOpened ? 360 : 0}px)`;
-    main.childNodes.forEach((child: ChildNode) => {
-      (child as HTMLElement).style.transform = translatedX;
-    });
-    footer.childNodes.forEach((child: ChildNode) => {
-      (child as HTMLElement).style.transform = translatedX;
-    });
-  };
-
   const handleBurgerClick = () => {
-    setIsOpened((prev) => {
-      moveWebsiteRight(prev);
-      return !prev;
-    });
+    setIsOpened((prev) => !prev);
 
     if (window.innerWidth < 768) {
-      (document.querySelector("body") as HTMLElement).style.overflowY =
-        !isOpened ? "hidden" : "unset";
+      (document.querySelector("body") as HTMLElement).style.overflow = !isOpened
+        ? "hidden"
+        : "unset";
     }
   };
 
@@ -248,11 +229,6 @@ export const Header = () => {
           opacityHidden: 0,
           opacityExit: 0,
           duration: DROPDOWN_STANDARD_DURATION,
-        });
-
-        setIsOpened(() => {
-          moveWebsiteRight(true);
-          return false;
         });
 
         return;
@@ -291,6 +267,10 @@ export const Header = () => {
   React.useEffect(() => {
     setActiveDropdown("");
   }, [pathname, isOpened]);
+
+  React.useEffect(() => {
+    setIsOpened(false);
+  }, [pathname]);
 
   return (
     <header

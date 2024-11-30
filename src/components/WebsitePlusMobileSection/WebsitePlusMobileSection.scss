@@ -3,6 +3,7 @@
 
 .big-cards-section {
   background-color: $white-color;
+  overflow: hidden;
 
   &__container {
     @include container;
@@ -16,9 +17,14 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 24px 0;
-    margin: 100px 0;
+    gap: 16px;
+    margin: 20px 0;
     max-width: 700px;
+
+    @media screen and (min-width: 768px) {
+      gap: 24px;
+      margin: 100px 0;
+    }
   }
 
   &__spans {
@@ -42,6 +48,7 @@
 
   &__title {
     @include subtitleSpoofTrailBig;
+    text-align: center;
   }
 
   &__description {
@@ -59,7 +66,20 @@
       @include button;
       background-color: $white-color-alt;
       border: 2px solid $light-white-color;
-      height: 48px;
+      height: 24px;
+      padding: 12px 24px;
+
+      @media screen and (min-width: 425px) {
+        padding: 16px 32px;
+      }
+
+      @media screen and (min-width: 768px) {
+        height: 48px;
+      }
+
+      svg {
+        width: 100%;
+      }
 
       &:hover {
         background-color: $light-white-color;
@@ -112,19 +132,31 @@
   }
 
   &__bottom-image {
-    @include thinnerShadow;
-    border-radius: 32px 32px 0px 0px;
     display: flex;
     justify-content: center;
-    height: 464px;
-    margin: -80px auto 0 auto;
-    min-width: 900px;
-    overflow: hidden;
+    margin: -40px auto 0 auto;
+    width: 100%;
     position: relative;
-    transform: translate(0, 80px);
+    transform: translate(0, 40px) !important;
+    transition: all 150ms ease-in-out;
 
     img {
       @include thinShadow;
+      border-radius: 12px 12px 0px 0px;
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        border-radius: 32px 32px 0px 0px;
+      }
+    }
+
+    @media screen and (min-width: 768px) {
+      margin: -80px auto 0 auto;
+      transform: translate(0, 80px) !important;
+    }
+
+    @media screen and (min-width: 1024px) {
+      min-width: 900px;
     }
   }
 }

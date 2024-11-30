@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 import { getBackgroundImageURL } from "@utils";
@@ -30,24 +29,14 @@ export const PartnersSection = ({
   quotes,
 }: PartnersSectionPropsType) => (
   <section className="partners-section">
-    <Image
-      placeholder="blur"
-      blurDataURL={getBackgroundImageURL(backgroundImage)}
-      src={getBackgroundImageURL(backgroundImage)}
-      alt="Background layout"
-      fill
-      sizes="100vw"
-      style={{
-        objectFit: "cover",
-      }}
-    />
+    <img src={getBackgroundImageURL(backgroundImage)} alt="Background layout" />
     <div className="partners-section__container">
       <h2
         className="partners-section__title"
         dangerouslySetInnerHTML={{ __html: title }}
       />
       <ul className="partners-section__logos-list">
-        {partners.map(({ imageURL, width, height, href, target }, i) => (
+        {partners.map(({ imageURL, href, target }, i) => (
           <motion.li
             key={i}
             className="partners-section__logos-item"
@@ -60,14 +49,7 @@ export const PartnersSection = ({
               href={href}
               target={target}
             >
-              <Image
-                placeholder="blur"
-                blurDataURL={imageURL}
-                src={imageURL}
-                width={width}
-                height={height}
-                alt={"Partner" + i}
-              />
+              <img src={imageURL} alt={"Partner" + i} />
             </Link>
           </motion.li>
         ))}

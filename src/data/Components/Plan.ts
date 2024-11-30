@@ -1,5 +1,10 @@
 export const PlanContent = {
+  button: {
+    close: "Close Services",
+    view: "View Services",
+  },
   free: {
+    id: "seed",
     name: "Seed",
     price: "FREE",
     description: "For all member no included taxes",
@@ -25,6 +30,7 @@ export const PlanContent = {
   },
   paid: [
     {
+      id: "launch",
       name: "Launch",
       currency: "$",
       price: "9",
@@ -43,6 +49,7 @@ export const PlanContent = {
       },
     },
     {
+      id: "grow",
       name: "Grow",
       currency: "$",
       price: "19",
@@ -56,6 +63,7 @@ export const PlanContent = {
       },
     },
     {
+      id: "scale",
       name: "Scale",
       currency: "$",
       price: "29",
@@ -75,6 +83,7 @@ export const PlanContent = {
       },
     },
     {
+      id: "max",
       name: "Max",
       currency: "$",
       price: "49",
@@ -105,6 +114,7 @@ export const PlanContent = {
 export const PlanWithExtraContent = {
   ...PlanContent,
   extraSection: {
+    id: "enterprise",
     name: "Enterprise Plan",
     price: "Ordrio X",
     description:

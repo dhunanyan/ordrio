@@ -53,7 +53,7 @@ export const Accordions = ({
           <motion.li
             key={i}
             className="accordions__button"
-            onClick={() => setActiveAccordions(i)}
+            onClick={() => setActiveAccordions((prev) => (prev === i ? -1 : i))}
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.3, delay: 0.05 * i }}

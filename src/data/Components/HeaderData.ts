@@ -89,7 +89,7 @@ export const HeaderData: HeaderDataType = {
 };
 
 export const DropdownData: DropdownDataType = {
-  [Dropdown.RESOURCES]: {
+  [Dropdown.WHY_ORDIO]: {
     aside: [
       {
         title: "Product Tour",
@@ -180,7 +180,7 @@ export const DropdownData: DropdownDataType = {
       },
     ],
   },
-  [Dropdown.WHY_ORDIO]: {
+  [Dropdown.RESOURCES]: {
     aside: [
       {
         title: "Community",

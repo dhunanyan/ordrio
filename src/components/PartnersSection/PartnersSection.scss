@@ -3,7 +3,18 @@
 
 .partners-section {
   background-color: $grey-color;
+  overflow: hidden;
   position: relative;
+
+  > img {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
+    z-index: 0;
+  }
 
   &__container {
     @include container;
@@ -13,25 +24,53 @@
 
   &__title {
     @include subtitleSpoofTrailBig;
+    text-align: center;
   }
 
   &__logos {
     &-list {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      margin: 58px 0 0 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 36px 0 0 0;
+
+      @media screen and (min-width: 768px) {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        margin: 58px 0 0 0;
+      }
     }
 
     &-item {
+      justify-content: center;
       display: flex;
+      align-items: center;
+      width: calc(100% / 3);
+
+      @media screen and (min-width: 768px) {
+        width: auto;
+      }
     }
 
     &-link {
+      height: 30px;
       opacity: 0.4;
-      padding: 20px 0;
+      padding: 20px;
       position: relative;
       transition: all 120ms ease-out;
+
+      img {
+        height: 100%;
+      }
+
+      @media screen and (min-width: 425px) {
+        height: 40px;
+      }
+
+      @media screen and (min-width: 768px) {
+        padding: 20px 0;
+      }
 
       &:hover {
         opacity: 0.9;
@@ -45,16 +84,26 @@
     display: flex;
     height: 2px;
     opacity: 0.2;
-    margin: 42px 0;
+    margin: 36px 0;
     width: 100%;
+
+    @media screen and (min-width: 768px) {
+      margin: 42px 0;
+    }
   }
 
   &__quotes {
     &-list {
       align-items: flex-start;
       display: flex;
-      gap: 54px;
+      flex-direction: column;
+      gap: 30px;
       justify-content: center;
+
+      @media screen and (min-width: 425px) {
+        flex-direction: row;
+        gap: 54px;
+      }
     }
 
     &-item {

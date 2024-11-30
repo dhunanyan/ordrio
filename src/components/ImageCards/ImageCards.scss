@@ -11,14 +11,6 @@
 
     .image-card {
       max-height: 350px;
-
-      &__title {
-        @include titleInter;
-      }
-
-      &__description {
-        @include descriptionManrope;
-      }
     }
   }
 
@@ -30,11 +22,34 @@
     gap: unset;
     grid-gap: 13px;
     grid-template-areas:
-      "a b e"
-      "c d e";
-    grid-template-columns: 220px 220px 220px;
-    grid-template-rows: 220px 220px;
+      "a b"
+      "c d"
+      "e e";
+    grid-template-columns:
+      minmax(125px, 1fr)
+      minmax(125px, 1fr);
+    grid-template-rows: 180px 180px 230px;
     padding: 13px;
+    transition: all 150ms ease-in-out;
+
+    @media screen and (min-width: 485px) {
+      grid-template-areas:
+        "a b e"
+        "c d e";
+      grid-template-columns:
+        minmax(125px, 1fr)
+        minmax(125px, 1fr)
+        minmax(125px, 1fr);
+      grid-template-rows: 180px 180px;
+    }
+
+    @media screen and (min-width: 1064px) {
+      grid-template-columns:
+        minmax(220px, 1fr)
+        minmax(220px, 1fr)
+        minmax(220px, 1fr);
+      grid-template-rows: 220px 220px;
+    }
 
     li {
       display: flex;
@@ -59,6 +74,27 @@
 
       &:nth-of-type(5) {
         grid-area: e;
+
+        .image-card__image {
+          max-width: 100%;
+
+          img {
+            margin: auto auto 0 auto;
+            width: 40% !important;
+            height: auto !important;
+          }
+
+          @media screen and (min-width: 485px) {
+            margin: auto 0 0 0 !important;
+            max-width: unset;
+
+            img {
+              margin: 0;
+              width: 100% !important;
+              height: 100% !important;
+            }
+          }
+        }
       }
 
       .image-card {
@@ -67,14 +103,6 @@
         &:hover {
           cursor: pointer;
           transform: translate(3px, -5px);
-        }
-
-        &__title {
-          @include titleInterSmall;
-        }
-
-        &__description {
-          @include descriptionManrope;
         }
       }
     }

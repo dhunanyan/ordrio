@@ -49,13 +49,9 @@
       }
 
       p {
+        @include descriptionInterBig;
         color: $grey-color-darker;
         text-align: center;
-        font-family: $font-inter;
-        font-size: 18px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 28px;
       }
 
       a {
