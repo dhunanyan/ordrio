@@ -168,6 +168,7 @@ export const MilkAndTiffinSubscriptionsContent = {
     link: { text: "Ask Us Now", href: "/support" },
     displayInRow: true,
     alignContentLeft: true,
+    verticalAlignTop: true,
   },
   bannerSection2: {
     backgroundImage: BackgroundImage.BLUE_SPIRAL,

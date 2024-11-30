@@ -18,6 +18,7 @@ export const PricingContent = {
     link: { text: "Ask Us Now", href: "/support" },
     displayInRow: true,
     alignContentLeft: true,
+    verticalAlignTop: true,
   },
   bannerSection: {
     backgroundImage: BackgroundImage.BLUE_SPIRAL,

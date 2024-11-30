@@ -28,8 +28,6 @@ TODO: Refactor: Banner Section (Blue ones) -> add button styles inside `link { p
 
 TODO: Refactor: Organize assets folder
 
-TODO: Refactor: use `flex: 1;` in Plan and PlanCompare (will fix your life on mobile layout)
-
 TODO: Refactor: Remove SASS duplications and use mixins
 
 TODO: Create Documentation -> README.md

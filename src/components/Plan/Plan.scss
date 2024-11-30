@@ -46,8 +46,13 @@
       minmax(0, auto)
       minmax(50px, auto);
     margin: 0 0 8px;
-    max-width: calc(100% - 24px * 2);
-    padding: 40px 24px;
+    max-width: calc(100% - 16px * 2);
+    padding: 24px 16px;
+
+    @media screen and (min-width: 425px) {
+      padding: 40px 24px;
+      max-width: calc(100% - 24px * 2);
+    }
 
     @media screen and (min-width: 768px) {
       @include zeroShadow;
@@ -56,6 +61,7 @@
       background: transparent;
       padding: 40px;
       margin: 0;
+      max-width: calc(100% - 40px * 2);
     }
 
     @media screen and (min-width: 1024px) {
@@ -99,9 +105,14 @@
     border-radius: 24px;
     display: flex;
     flex-direction: column;
-    padding: 40px 24px;
+    padding: 24px 16px;
     position: relative;
-    width: calc(100% - 24px * 2);
+    width: calc(100% - 16px * 2);
+
+    @media screen and (min-width: 425px) {
+      padding: 40px 24px;
+      width: calc(100% - 24px * 2);
+    }
 
     @media screen and (min-width: 768px) {
       @include zeroShadow;
@@ -312,6 +323,7 @@
     @include buttonBlue;
     margin: auto 0 0 0;
     justify-content: center;
+    white-space: nowrap;
     width: calc(100% - 32px * 2);
 
     &--free,
@@ -324,7 +336,11 @@
     }
 
     &--extra {
-      margin: auto 0 auto auto;
+      margin: 16px 0 auto auto;
+
+      @media screen and (min-width: 768px) {
+        margin: auto 0 auto auto;
+      }
     }
 
     @media screen and (min-width: 768px) {
@@ -334,14 +350,35 @@
 
   &__extra {
     @include thinnerShadow;
+    border: 1px solid $yellow-color-alt;
     background: $cream-gradient-dark;
     border-radius: 24px;
     display: grid;
     grid-template-areas:
-      "a c"
-      "b c";
-    grid-template-columns: auto auto;
-    grid-template-rows: 50px 86px;
-    padding: 40px;
+      "a"
+      "b"
+      "c";
+    grid-template-columns: auto;
+    grid-template-rows:
+      minmax(50px, auto)
+      minmax(50px, auto)
+      minmax(50px, auto);
+    margin: 8px 0 0;
+    padding: 24px 16px;
+
+    @media screen and (min-width: 425px) {
+      padding: 40px 24px;
+    }
+
+    @media screen and (min-width: 768px) {
+      border: 0;
+      grid-template-areas:
+        "a c"
+        "b c";
+      grid-template-columns: auto auto;
+      grid-template-rows: 50px 86px;
+      margin: 0;
+      padding: 40px;
+    }
   }
 }

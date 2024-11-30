@@ -115,8 +115,16 @@
     gap: 20px;
 
     &--align-left {
+      * {
+        text-align: center !important;
+      }
+
       @media screen and (min-width: 768px) {
         align-items: flex-start;
+
+        * {
+          text-align: left !important;
+        }
       }
     }
 

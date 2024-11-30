@@ -7,21 +7,22 @@
   border-radius: 16px;
   border: 1px solid $white-blue-color;
   overflow: hidden;
-  width: 100%;
-
-  &__container {
-    width: 100%;
-  }
+  display: flex;
+  flex-direction: column;
 
   &__rows,
   &__header {
     display: flex;
     flex-direction: column;
-    width: 100%;
   }
 
   &__header {
     background-color: $white-blue-color;
+    display: none;
+
+    @media screen and (min-width: 850px) {
+      display: flex;
+    }
   }
 
   &__row,
@@ -31,7 +32,11 @@
     display: flex;
     justify-content: space-between;
     gap: 16px;
-    padding: 16px 24px;
+
+    @media screen and (min-width: 850px) {
+      padding: 16px 24px;
+      width: calc(100% - 24px * 2);
+    }
 
     &-item {
       color: $black-color;
@@ -40,15 +45,21 @@
       font-style: normal;
       font-weight: 400;
       line-height: 24px;
-      max-width: 100px;
+      text-align: center;
       width: 100%;
       white-space: nowrap;
-      text-align: center;
-      min-width: 100px;
+
+      @media screen and (min-width: 850px) {
+        max-width: 100px;
+      }
 
       &:first-of-type {
-        max-width: 400px;
         text-align: left;
+        margin: 0 auto 0 0;
+
+        @media screen and (min-width: 850px) {
+          max-width: 200px;
+        }
       }
 
       &--icon {
@@ -72,8 +83,110 @@
   }
 
   &__header-row-item {
-    font-size: 20px;
     font-weight: 700;
-    line-height: 32px;
+  }
+
+  &__row,
+  &__header-row {
+    display: grid;
+    grid-template-columns:
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr;
+    grid-template-rows:
+      1fr
+      1fr;
+    grid-template-areas:
+      "a a a a a"
+      "b c d e f";
+    grid-gap: 0;
+
+    @media screen and (min-width: 850px) {
+      display: flex;
+    }
+
+    &-item {
+      align-self: center;
+
+      @media screen and (min-width: 850px) {
+        padding: 0;
+        width: 100%;
+      }
+
+      &:nth-of-type(1) {
+        padding: 12px 24px;
+        background-color: $grey-color;
+        grid-area: a;
+
+        @media screen and (min-width: 850px) {
+          background-color: transparent;
+        }
+      }
+
+      &:nth-of-type(2) {
+        grid-area: b;
+      }
+
+      &:nth-of-type(3) {
+        grid-area: c;
+      }
+
+      &:nth-of-type(4) {
+        grid-area: d;
+      }
+
+      &:nth-of-type(5) {
+        grid-area: e;
+      }
+
+      &:nth-of-type(6) {
+        grid-area: f;
+      }
+
+      &:nth-of-type(2),
+      &:nth-of-type(3),
+      &:nth-of-type(4),
+      &:nth-of-type(5),
+      &:nth-of-type(6) {
+        margin: 0 auto;
+        padding: 0;
+      }
+    }
+
+    &:first-of-type .compare-plans__row-item {
+      &:nth-of-type(2),
+      &:nth-of-type(3),
+      &:nth-of-type(4),
+      &:nth-of-type(5),
+      &:nth-of-type(6) {
+        font-size: 12px;
+        line-height: 16px;
+
+        @media screen and (min-width: 850px) {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        &.compare-plans__row-item--pricing {
+          display: flex;
+          flex-direction: column;
+
+          @media screen and (min-width: 850px) {
+            display: block;
+          }
+
+          span {
+            display: inline-block;
+            font-weight: 700;
+
+            @media screen and (min-width: 850px) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
   }
 }
