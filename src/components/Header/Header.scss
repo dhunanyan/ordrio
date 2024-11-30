@@ -89,9 +89,10 @@
       height: 100vh;
       position: fixed;
       left: 0;
-      max-width: 768px;
+      width: 768px;
       top: 0;
       transform: translate(-100%, 0);
+      z-index: 99;
     }
 
     &--opened {
@@ -102,7 +103,7 @@
       max-width: 360px;
 
       &::before {
-        max-width: 360px;
+        width: 360px;
       }
     }
 
