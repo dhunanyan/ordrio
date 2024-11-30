@@ -7,11 +7,18 @@
   flex-direction: column;
   gap: 6px;
   height: calc(92px - 2 * 11px);
-  left: 185px;
+  left: 154px;
   padding: 11px 3.8px;
   position: absolute;
-  top: 132.5px;
+  transform: scale(0.86);
+  top: 134px;
   width: calc(67px - 2 * 3.8px);
+
+  @media screen and (min-width: 425px) {
+    left: 185px;
+    transform: scale(1);
+    top: 132.5px;
+  }
 
   img {
     pointer-events: none;

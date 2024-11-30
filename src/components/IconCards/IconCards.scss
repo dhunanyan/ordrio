@@ -4,8 +4,13 @@
 .icon-cards {
   align-items: stretch;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 24px;
+
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+  }
 
   &--wrap {
     flex-wrap: wrap;

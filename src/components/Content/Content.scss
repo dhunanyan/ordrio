@@ -112,6 +112,21 @@
       cursor: auto;
       pointer-events: none;
     }
+
+    &--yellow,
+    &--blue,
+    &--white {
+      height: 24px;
+      padding: 12px 24px;
+      @media screen and (min-width: 425px) {
+        padding: 16px 32px;
+        height: 48px;
+      }
+    }
+
+    svg {
+      width: 100%;
+    }
   }
 
   &__link {

@@ -98,27 +98,6 @@
         }
       }
 
-      > div > p,
-      > div > ul p,
-      > div > a,
-      > div > button {
-        text-align: center !important;
-
-        @media screen and (min-width: 768px) {
-          text-align: left !important;
-        }
-      }
-
-      > div > h1,
-      > div > h2,
-      > div > h3 {
-        text-align: center !important;
-
-        @media screen and (min-width: 768px) {
-          text-align: left !important;
-        }
-      }
-
       @media screen and (min-width: 768px) {
         flex-direction: row;
       }
@@ -156,15 +135,12 @@
 
   &__title {
     @include titleSpoofTrail;
+    text-align: center;
   }
 
   &__subtitle {
     @include subtitleSpoofTrailBig;
     text-align: center;
-
-    @media screen and (min-width: 768px) {
-      text-align: left;
-    }
   }
 
   &__item {
@@ -231,6 +207,7 @@
     font-weight: 400;
     font-size: 18px;
     line-height: 28px;
+    text-align: left;
 
     span svg {
       background-color: $black-color;
@@ -328,12 +305,7 @@
   &__separator-image {
     align-items: center;
     display: flex;
-    opacity: 0 !important;
     width: 100vw;
-
-    @media screen and (min-width: 425px) {
-      opacity: 1 !important;
-    }
 
     &--section-separator-medium {
       span {
@@ -342,6 +314,12 @@
     }
 
     &--section-separator-big {
+      opacity: 0 !important;
+
+      @media screen and (min-width: 425px) {
+        opacity: 1 !important;
+      }
+
       span {
         height: 121px;
       }

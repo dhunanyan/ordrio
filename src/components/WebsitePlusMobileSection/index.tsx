@@ -146,9 +146,9 @@ export const WebsitePlusMobileSection = ({
                   <motion.img
                     src={screenshotURL}
                     alt={`Screenshot ${1}`}
+                    key={i}
                     custom={1}
                     transition={{ duration: 0.5 }}
-                    key={i}
                     variants={variants}
                     initial="hidden"
                     animate="visible"

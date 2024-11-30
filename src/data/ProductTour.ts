@@ -68,7 +68,7 @@ export const ProductTourContent = {
   iconCardsContent: {
     icon: "check",
     backgroundImage: BackgroundImage.BLUE_SPIRAL,
-    title: "Marketing and Promotion",
+    subtitle: "Marketing and Promotion",
     backgroundColor: Colors.BLUE,
     linkColor: Colors.YELLOW,
   },

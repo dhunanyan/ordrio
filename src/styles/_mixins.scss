@@ -267,7 +267,6 @@
   @media screen and (min-width: 768px) {
     font-size: 90px;
     line-height: 110px;
-    text-align: left;
   }
 }
 
@@ -275,17 +274,22 @@
   color: $black-color;
   text-align: center;
   font-family: $font-spoof-trail;
-  font-size: 35px;
+  font-size: 24px;
   font-style: normal;
   font-weight: 700;
-  line-height: 40px;
+  line-height: 34px;
   transform: all 150ms ease-in-out;
+
+  @media screen and (min-width: 425px) {
+    font-size: 35px;
+    line-height: 40px;
+  }
 }
 
 @mixin subtitleSpoofTrailBig {
   color: $black-color;
   font-family: $font-spoof-trail;
-  font-size: 28px;
+  font-size: 35px;
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
@@ -304,6 +308,11 @@
   }
 
   @media screen and (min-width: 425px) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
     font-size: 45px;
     line-height: 50px;
   }
@@ -323,11 +332,16 @@
   color: $black-color;
   text-align: center;
   font-family: $font-spoof-trail;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 600;
   line-height: 28px;
   transform: all 150ms ease-in-out;
+
+  @media screen and (min-width: 425px) {
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 
 @mixin descriptionSpoofTrail {
