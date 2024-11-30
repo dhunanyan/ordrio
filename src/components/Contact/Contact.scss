@@ -39,12 +39,7 @@
       padding: 0 0 0 50px;
 
       h3 {
-        color: $black-color;
-        font-family: $font-inter;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 700;
-        line-height: 32px;
+        @include titleInter;
         max-width: 110px;
       }
 

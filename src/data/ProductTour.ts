@@ -4,6 +4,7 @@ import {
   Icons,
   Separator,
   BackgroundImage,
+  StepCardAnimation,
 } from "@config";
 
 export const ProductTourContent = {
@@ -13,6 +14,25 @@ export const ProductTourContent = {
       "Get to know the key elements of Ordrio even before creating your account.",
     separator: Separator.MEDIUM,
     isFirstSection: true,
+  },
+  stepCards: {
+    cards: [
+      {
+        title: "Register your Account",
+        subtitle: "STEP 1",
+        animation: StepCardAnimation.TABLET,
+      },
+      {
+        title: "Answer few Easy Questions",
+        subtitle: "STEP 2",
+        animation: StepCardAnimation.ROBOT,
+      },
+      {
+        title: "Get your Online Store Ready",
+        subtitle: "STEP 3",
+        animation: StepCardAnimation.STORE,
+      },
+    ],
   },
   listSection: {
     subtitle: "Easy Product Management",

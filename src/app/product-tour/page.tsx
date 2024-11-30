@@ -16,18 +16,14 @@ import {
 } from "@components";
 import { AnimatedCard } from "@config";
 
-import {
-  ProductTourContent,
-  AnimatedCardsContent,
-  AccordionsContent,
-} from "@data";
+import { ProductTourContent, AccordionsContent } from "@data";
 import { renderAnimatedCard } from "@utils";
 
 export default function Page() {
   return (
     <main>
       <CommonSection {...(ProductTourContent.hero as CommonSectionPropsType)}>
-        <StepCards {...(AnimatedCardsContent as StepCardsPropsType)} />
+        <StepCards {...(ProductTourContent.stepCards as StepCardsPropsType)} />
       </CommonSection>
 
       <CommonSection

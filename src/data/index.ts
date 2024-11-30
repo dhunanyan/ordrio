@@ -3,7 +3,6 @@ export {
   PlanContent,
   PlanWithExtraContent,
   ComparePlansContent,
-  AnimatedCardsContent,
   HeaderData,
   DropdownData,
   NavItemType,
@@ -35,3 +34,4 @@ export { PrivacyPolicyContent } from "./PrivacyPolicy";
 export { TermsAndConditionsContent } from "./TermsAndConditions";
 export { CafesContent } from "./Cafes";
 export { FaqContent } from "./Faq";
+export { OrdrioShipContent } from "./OrdrioShip";

@@ -79,15 +79,21 @@ import customizationYellow from "../../public/svg/i_customization-yellow.svg";
 import workerBlue from "../../public/svg/i_worker-blue.svg";
 import checkSaveBlue from "../../public/svg/i_check-save-blue.svg";
 import userBlue from "../../public/svg/i_user-blue.svg";
+import userYellow from "../../public/svg/i_user-yellow.svg";
 import calendarBlue from "../../public/svg/i_calendar-blue.svg";
 import bankBlue from "../../public/svg/i_bank-blue.svg";
 import bulletPointsBlue from "../../public/svg/i_bullet-points-blue.svg";
 import plusCardBlue from "../../public/svg/i_plus-card-blue.svg";
+import plusCardYellow from "../../public/svg/i_plus-card-yellow.svg";
 import handshakeBlue from "../../public/svg/i_handshake-blue.svg";
 import presentBlue from "../../public/svg/i_present-blue.svg";
 import burger from "../../public/svg/i_burger.svg";
 import times from "../../public/svg/i_times.svg";
 import four0four from "../../public/svg/i_404.svg";
+import mouseBlue from "../../public/svg/i_mouse-blue.svg";
+import timerBlue from "../../public/svg/i_timer-blue.svg";
+import bellBlue from "../../public/svg/i_bell-blue.svg";
+import thumbUpBlue from "../../public/svg/i_thumb-up-blue.svg";
 
 export const Icons = {
   "app-store": appStore,
@@ -169,14 +175,20 @@ export const Icons = {
   "linkedin-yellow": linkedinYellow,
   "customization-yellow": customizationYellow,
   "user-blue": userBlue,
+  "user-yellow": userYellow,
   "worker-blue": workerBlue,
   "check-save-blue": checkSaveBlue,
   "calendar-blue": calendarBlue,
   "bank-blue": bankBlue,
   "bullet-points-blue": bulletPointsBlue,
   "plus-card-blue": plusCardBlue,
+  "plus-card-yellow": plusCardYellow,
   "handshake-blue": handshakeBlue,
   "present-blue": presentBlue,
+  "mouse-blue": mouseBlue,
+  "timer-blue": timerBlue,
+  "bell-blue": bellBlue,
+  "thumb-up-blue": thumbUpBlue,
   burger,
   times,
   "404": four0four,

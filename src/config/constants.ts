@@ -23,6 +23,9 @@ export enum StepCardAnimation {
   ROBOT = "robot",
   STORE = "store",
   TABLET = "tablet",
+  STORE_CONNECT = "store-connect",
+  BOXES = "boxes",
+  DOORS = "doors",
 }
 
 export enum ThemeCardVariant {

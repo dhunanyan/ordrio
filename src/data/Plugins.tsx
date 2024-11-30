@@ -42,7 +42,7 @@ export const PluginsContent = {
       },
       {
         icon: "/icons/store-timings.png",
-        title: "Store Timings ",
+        title: "Store Timings",
         description:
           "Specify the hours your store will be open to customers each day.",
       },

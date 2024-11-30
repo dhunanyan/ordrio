@@ -15,6 +15,7 @@
     flex-direction: column;
     justify-content: flex-end;
     padding: 24px;
+    width: calc(100% / 3);
 
     &__image {
       position: relative;
@@ -35,6 +36,13 @@
 
     &__title {
       @include titleSpoofTrailSmall;
+    }
+
+    &__description {
+      @include descriptionInterBig;
+      color: $grey-color-dark;
+      margin: 16px 0 0;
+      text-align: center;
     }
   }
 }

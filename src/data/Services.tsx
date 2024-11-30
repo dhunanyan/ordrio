@@ -182,7 +182,7 @@ export const ServicesContent = {
       {
         title: "Reviews & Ratings",
         description:
-          "Enable customers to leave feedback and build social proof. ",
+          "Enable customers to leave feedback and build social proof.",
         type: AnimatedCard.RATING,
       },
       {

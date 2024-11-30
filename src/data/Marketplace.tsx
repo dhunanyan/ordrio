@@ -8,8 +8,8 @@ import {
 
 export const MarketplaceContent = {
   hero: {
-    title: "Power Your <span>Online</span> <span>Marketplace</span> Empire ",
-    description: "Build, Grow, and Thrive: Your Marketplace, Your Rules ",
+    title: "Power Your <span>Online</span> <span>Marketplace</span> Empire",
+    description: "Build, Grow, and Thrive: Your Marketplace, Your Rules",
     separator: Separator.MEDIUM,
     isFirstSection: true,
   },
@@ -150,7 +150,7 @@ export const MarketplaceContent = {
     ],
   },
   bannerSection1: {
-    title: "Ready to Unleash Your Marketplace Potential? ",
+    title: "Ready to Unleash Your Marketplace Potential?",
     description:
       "Your vision. Your marketplace. Your success. HIVE is here to make it happen.",
     links: [
