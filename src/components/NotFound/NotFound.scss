@@ -1,0 +1,51 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+.not-found {
+  background-color: $white-color;
+  padding: 60px 0 0;
+
+  > img {
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+  }
+
+  &__container {
+    @include container;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__image {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 260px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    @include titleSpoofTrail;
+  }
+
+  &__icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
+  }
+
+  &__subtitle {
+    @include descriptionInterBig;
+  }
+}

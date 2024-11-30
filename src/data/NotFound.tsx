@@ -1,16 +1,11 @@
-import { Separator } from "@config";
+import { BackgroundImage } from "@config";
 
 export const NotFoundContent = {
   hero: {
-    title: "404",
-    subtitle: "Oops... page not found.",
-    description:
-      "We don't know how you ended up here, but you should go away now",
-    link: {
-      text: "Go back",
-      href: "/",
-    },
-    isFirstSection: true,
-    separator: Separator.MEDIUM,
+    title: "OOPS! PAGE NOT FOUND",
+    subtitle: "WE ARE SORRY, BUT THE PAGE YOU REQUESTED WAS NOT FOUND",
+    imageURL: "/images/tiger-head.png",
+    icon: "404",
+    backgroundImage: BackgroundImage.GREY_SPIRALS,
   },
 };

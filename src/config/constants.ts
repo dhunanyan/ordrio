@@ -102,6 +102,7 @@ export enum BackgroundImage {
   GREY_SPIRAL = "grey-spiral",
   BLUE_SPIRAL = "blue-spiral",
   BLUE_SMALL_SPIRALS = "blue-small-spirals",
+  GREY_SPIRALS = "grey-spirals",
   YELLOW_BRUSH = "yellow-brush",
   WHITE_BRUSHES_FLIPPED = "white-brushes-flipped",
 }

@@ -87,6 +87,7 @@ import handshakeBlue from "../../public/svg/i_handshake-blue.svg";
 import presentBlue from "../../public/svg/i_present-blue.svg";
 import burger from "../../public/svg/i_burger.svg";
 import times from "../../public/svg/i_times.svg";
+import four0four from "../../public/svg/i_404.svg";
 
 export const Icons = {
   "app-store": appStore,
@@ -178,4 +179,5 @@ export const Icons = {
   "present-blue": presentBlue,
   burger,
   times,
+  "404": four0four,
 } as { [key: string]: string };
