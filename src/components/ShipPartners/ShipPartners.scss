@@ -2,6 +2,8 @@
 @import "../../styles/mixins";
 
 .ship-partners {
+  background-color: $white-color;
+
   &__container {
     @include container;
     align-items: center;
@@ -16,15 +18,30 @@
   &__list {
     align-items: center;
     display: flex;
+    flex-wrap: wrap;
     gap: 16px;
     padding: 24px 0;
+
+    @media screen and (min-width: 768px) {
+      flex-wrap: nowrap;
+    }
   }
 
   &__item {
     border: 1px solid $grey-color;
     border-radius: 16px;
-    padding: 48px 43px;
-    max-width: 120px;
+    padding: calc(48px / 2) calc(43px / 2);
+    max-width: calc(100% / 2 - 53px);
+    width: calc(100% - 53px);
+
+    @media screen and (min-width: 425px) {
+      max-width: calc(100% / 2 - 48px * 2);
+      padding: 48px 43px;
+    }
+
+    @media screen and (min-width: 768px) {
+      max-width: 120px;
+    }
 
     img {
       width: 100%;
@@ -34,5 +51,6 @@
   &__description {
     @include descriptionInterBig;
     color: $grey-color-darker;
+    text-align: center;
   }
 }

@@ -14,7 +14,7 @@ export const IntegrationsContent = {
     isFirstSection: true,
   },
   iconCardsContent: {
-    title: "Marketing & Sales",
+    subtitle: "Marketing & Sales",
     description:
       "Ordrio seamlessly integrates with a wide range of 3rd party platforms and tools, including",
     link: {
@@ -22,10 +22,11 @@ export const IntegrationsContent = {
       target: "_blank",
       href: "https://control.ordrio.com/#/login",
     },
-    alignContentLeft: true,
-    backgroundColor: Colors.WHITE,
     linkColor: Colors.YELLOW,
+    backgroundColor: Colors.WHITE,
+    alignContentLeft: true,
     displayInRow: true,
+    verticalAlignTop: true,
   },
   iconCards: {
     color: Colors.WHITE,
