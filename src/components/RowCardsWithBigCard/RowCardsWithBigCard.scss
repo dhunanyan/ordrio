@@ -4,14 +4,23 @@
 .row-cards-section-with-big-card {
   align-items: center;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (min-width: 1024px) {
+    flex-direction: row;
+  }
 
   &__list {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    margin: 0 60px 0 0;
-    max-width: 545px;
+    margin: 0 0 60px;
+
+    @media screen and (min-width: 1024px) {
+      margin: 0 60px 0 0;
+      max-width: 545px;
+    }
   }
 
   &__item {
@@ -19,23 +28,46 @@
     background-color: $grey-color;
     border-radius: 24px;
     display: flex;
+    flex-direction: column;
+    gap: 8px;
     padding: 20px 16px;
+
+    @media screen and (min-width: 1024px) {
+      flex-direction: row;
+      gap: unset;
+    }
   }
 
   &__title {
     @include titleInter;
+    text-align: center;
+
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+    }
   }
 
   &__description {
     @include descriptionInterBig;
     color: $black-color-alt;
+    text-align: center;
+
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+    }
   }
 
   &__content {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 8px;
+
+    text-align: center;
+
+    @media screen and (min-width: 1024px) {
+      align-items: flex-start;
+    }
   }
 
   &__icon {
@@ -48,6 +80,8 @@
   }
 
   &__big-cards {
-    max-width: 50%;
+    @media screen and (min-width: 1024px) {
+      max-width: 50%;
+    }
   }
 }
