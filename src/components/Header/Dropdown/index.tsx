@@ -8,6 +8,7 @@ import { Icons, Dropdown as DropdownType } from "@config";
 import "./Dropdown.scss";
 
 export type DropdownPropsType = {
+  reset: () => void;
   onMouseEnter: (e?: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
   onMouseLeave: (e?: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
   variants: Variants;
@@ -16,6 +17,7 @@ export type DropdownPropsType = {
 };
 
 export const Dropdown = ({
+  reset,
   onMouseEnter,
   onMouseLeave,
   variants,
@@ -91,7 +93,12 @@ export const Dropdown = ({
           <ul className="dropdown__list">
             {links.map(({ icon, text, href, target }, j) => (
               <li key={j} className="dropdown__item">
-                <Link className="dropdown__link" href={href} target={target}>
+                <Link
+                  onClick={reset}
+                  className="dropdown__link"
+                  href={href}
+                  target={target}
+                >
                   <span
                     className="dropdown__icon"
                     dangerouslySetInnerHTML={{ __html: Icons[icon] }}

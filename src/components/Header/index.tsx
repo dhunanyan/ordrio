@@ -1,7 +1,6 @@
 "use client";
 
 import * as React from "react";
-import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { motion, AnimatePresence, Variants } from "framer-motion";
 
@@ -18,18 +17,19 @@ const renderNavItem = ({
   target,
   href,
   onClick,
+  reset,
 }: {
   type: NavItemType;
   text: string;
   href?: string;
   target?: string;
   onClick?: () => void;
-  isActive?: boolean;
+  reset?: () => void;
 }) => {
   switch (type) {
     case NavItemType.LINK:
       return (
-        <Link href={href as string} target={target}>
+        <Link onClick={reset} href={href as string} target={target}>
           {text}
         </Link>
       );
@@ -108,7 +108,6 @@ export const Header = () => {
     duration: DROPDOWN_STANDARD_DURATION,
   });
   const [isDropdownHovered, setIsDropdownHovered] = React.useState(false);
-  const pathname = usePathname();
 
   const dropdownAnimationVariants = {
     hidden: () => ({
@@ -141,6 +140,19 @@ export const Header = () => {
       opacity: 0,
       x: -20,
     }),
+  };
+
+  const reset = () => {
+    setActiveDropdown("");
+    setIsOpened((prev) => {
+      if (window.innerWidth < 768) {
+        (document.querySelector("body") as HTMLElement).style.overflow = !prev
+          ? "hidden"
+          : "unset";
+      }
+
+      return false;
+    });
   };
 
   const handleDropdownClick = (id: DropdownType) => {
@@ -264,22 +276,6 @@ export const Header = () => {
     };
   }, []);
 
-  React.useEffect(() => {
-    setActiveDropdown("");
-  }, [pathname, isOpened]);
-
-  React.useEffect(() => {
-    setIsOpened((prev) => {
-      if (window.innerWidth < 768) {
-        (document.querySelector("body") as HTMLElement).style.overflow = !prev
-          ? "hidden"
-          : "unset";
-      }
-
-      return false;
-    });
-  }, [pathname]);
-
   return (
     <header
       className={
@@ -336,6 +332,7 @@ export const Header = () => {
                     text,
                     href,
                     onClick: () => handleDropdownClick(id as DropdownType),
+                    reset,
                   })}
                 </li>
               ))}
@@ -343,6 +340,7 @@ export const Header = () => {
               <AnimatePresence custom={1}>
                 {activeDropdown && (
                   <Dropdown
+                    reset={reset}
                     onMouseEnter={() => setIsDropdownHovered(true)}
                     onMouseLeave={() => setIsDropdownHovered(false)}
                     variants={dropdownAnimationVariants}
@@ -358,9 +356,10 @@ export const Header = () => {
           {HeaderData.buttons.map(({ id, href, target, text }) => (
             <li className="header__buttons-item" key={id}>
               <Link
-                target={target}
-                href={href}
                 className={`header__buttons-link header__buttons-link--${id}`}
+                href={href}
+                target={target}
+                onClick={reset}
               >
                 {text}
               </Link>
