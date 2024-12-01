@@ -97,7 +97,7 @@ export const Content = ({
           </span>
           <span
             className={`content__link-icon content__link-icon--${tintColor}`}
-            dangerouslySetInnerHTML={{ __html: Icons["arrow-right"] }}
+            dangerouslySetInnerHTML={{ __html: Icons["arrow-right-circle"] }}
           />
         </Link>
       </motion.div>
