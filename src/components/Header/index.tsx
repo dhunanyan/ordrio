@@ -270,6 +270,11 @@ export const Header = () => {
 
   React.useEffect(() => {
     setIsOpened(false);
+    if (window.innerWidth < 768) {
+      (document.querySelector("body") as HTMLElement).style.overflow = !isOpened
+        ? "hidden"
+        : "unset";
+    }
   }, [pathname]);
 
   return (
