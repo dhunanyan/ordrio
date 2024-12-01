@@ -44,12 +44,12 @@
     position: relative;
 
     @media screen and (min-width: 1024px) {
-      height: 523px;
+      height: 400px;
       margin: auto 86px 0 0;
       max-width: 565px;
       order: unset;
       padding: unset;
-      transform: translate(0, 100px) !important;
+      transform: translate(0, 0) !important;
     }
 
     img {
@@ -57,7 +57,7 @@
       width: 100%;
 
       @media screen and (min-width: 1024px) {
-        height: calc(100% - 100px);
+        height: calc(100%);
         padding: 0;
         width: auto;
       }
@@ -66,6 +66,7 @@
 
   &__content {
     margin: 0 auto;
+    height: max-content;
 
     &--split {
       margin: 0;

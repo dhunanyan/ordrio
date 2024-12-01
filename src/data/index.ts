@@ -35,3 +35,4 @@ export { TermsAndConditionsContent } from "./TermsAndConditions";
 export { CafesContent } from "./Cafes";
 export { FaqContent } from "./Faq";
 export { OrdrioShipContent } from "./OrdrioShip";
+export { MeatStoresContent } from "./MeatStores";

@@ -64,6 +64,13 @@ export const HtmlMeta = {
       "Build and manage your online marketplace with HIVE by Ordrio. A powerful platform for sellers and customers alike.",
     keywords: "marketplace platform, HIVE by Ordrio, online marketplace tools",
   },
+  "meat-stores": {
+    title: "Meat Craft | Ordrio",
+    description:
+      "Elevate your meat store operations with Meat Craft by Ordrio. Simplify inventory, track orders, and deliver the freshest products with ease.",
+    keywords:
+      "Meat Craft, meat store management, Ordrio meat solutions, fresh meat delivery, inventory tracking, order management tools, meat shop solutions",
+  },
   "milk-and-tiffin-subscriptions": {
     title: "Moo & Chew | Ordrio",
     description:

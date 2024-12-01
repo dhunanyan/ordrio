@@ -95,6 +95,9 @@ import mouseBlue from "../../public/svg/i_mouse-blue.svg";
 import timerBlue from "../../public/svg/i_timer-blue.svg";
 import bellBlue from "../../public/svg/i_bell-blue.svg";
 import thumbUpBlue from "../../public/svg/i_thumb-up-blue.svg";
+import forkYellow from "../../public/svg/i_fork-yellow.svg";
+import skilletBlue from "../../public/svg/i_skillet-blue.svg";
+import cubeBlue from "../../public/svg/i_cube-blue.svg";
 
 export const Icons = {
   "app-store": appStore,
@@ -194,4 +197,7 @@ export const Icons = {
   times,
   "404": four0four,
   "cup-yellow": cupYellow,
+  "fork-yellow": forkYellow,
+  "skillet-blue": skilletBlue,
+  "cube-blue": cubeBlue,
 } as { [key: string]: string };
