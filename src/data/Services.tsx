@@ -121,38 +121,39 @@ export const ServicesContent = {
     backgroundColor: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "check-save-blue",
+        icon: "check-save",
         title: "Intuitive Booking System",
         description:
           "User can easily browse your services, select their preferred time and date, and book appointments online.",
       },
       {
-        icon: "calendar-blue",
+        icon: "calendar",
         title: "Calendar Integration",
         description:
           "Sync your ServiOps calendar with your personal calendar (Google, Outlook, etc) to avoid double-booking.",
       },
       {
-        icon: "worker-blue",
+        icon: "worker",
         title: "Staff Management",
         description:
           "Assign appointments to specific staff members, manage their schedules, and track their availability.",
       },
       {
-        icon: "bank-blue",
+        icon: "bank",
         title: "Payment Processing",
         description: "Accept payments online through secure payment gateways.",
       },
       {
-        icon: "user-blue",
+        icon: "user",
         title: "Client Management",
         description:
           "Store customer information, track their appointment history, and send personalized reminders.",
       },
       {
-        icon: "mobile-blue",
+        icon: "mobile",
         title: "Mobile-Optimized",
         description:
           "Your booking system looks great and functions seamlessly on any device.",

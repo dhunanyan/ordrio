@@ -121,39 +121,40 @@ export const CafesContent = {
     backgroundColor: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "bullet-points-blue",
+        icon: "bullet-points",
         title: "Intuitive Online Menu Builder",
         description:
           "Easily create a visually appealing and interactive menu that showcases your coffee creations.",
       },
       {
-        icon: "plus-card-blue",
+        icon: "plus-card",
         title: "Customizable Ordering Options",
         description:
           "Allow customers to personalize their orders with modifiers, add-ons, and special requests.",
       },
       {
-        icon: "check-save-blue",
+        icon: "check-save",
         title: "Seamless Order Management",
         description:
           "Track orders in real-time, manage inventory, and streamline fulfillment for a smooth customer experience.",
       },
       {
-        icon: "handshake-blue",
+        icon: "handshake",
         title: "Loyalty & Rewards Programs",
         description:
           "Incentivize repeat business and build lasting customer relationships with personalized rewards and discounts.",
       },
       {
-        icon: "present-blue",
+        icon: "gift",
         title: "Analytics & Insights",
         description:
           "Track sales data, customer behavior, and popular menu items to make informed business decisions.",
       },
       {
-        icon: "book-blue",
+        icon: "book",
         title: "Mobile-First Design",
         description:
           "Ensure your online coffee shop looks & functions beautifully on all devices, from smartphones to desktops.",

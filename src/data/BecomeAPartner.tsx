@@ -110,33 +110,34 @@ export const BecomeAPartnerContent = {
     backgroundColor: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "wallet-blue",
+        icon: "wallet",
         title: "Lucrative Earning Potential",
         description:
           "Earn generous commissions & recurring revenue by referring new customers to Ordrio or providing valuable services to our existing merchants.",
       },
       {
-        icon: "customer-centric-blue",
+        icon: "customer-centric",
         title: "Expand Your Reach",
         description:
           "Tap into our vast network of eCommerce businesses and gain exposure to a global audience.",
       },
       {
-        icon: "check-medal-blue",
+        icon: "check-medal",
         title: "Access Exclusive Resources",
         description:
           "Get priority support, training materials, co-marketing opportunities, and early access to new features.",
       },
       {
-        icon: "rocket-blue",
+        icon: "rocket",
         title: "Make a Real Impact",
         description:
           "Help entrepreneurs and small businesses achieve their eCommerce dreams by providing them with the tools and support they need.",
       },
       {
-        icon: "chat-blue",
+        icon: "chat",
         title: "Join a Thriving Community",
         description:
           "Connect with other passionate professionals in the eCommerce space and build valuable relationships.",

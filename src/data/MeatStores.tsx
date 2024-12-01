@@ -108,39 +108,40 @@ export const MeatStoresContent = {
     backgroundColor: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "bullet-points-blue",
+        icon: "bullet-points",
         title: "Specialized Product Categories",
         description:
           "Easily organize your products by type (beef, poultry, pork, seafood), cut, or preparation style.",
       },
       {
-        icon: "skillet-blue",
+        icon: "skillet",
         title: "Recipe & Pairing Suggestions",
         description:
           "Inspire your customers with delicious recipes and wine or beer pairing suggestions.",
       },
       {
-        icon: "cube-blue",
+        icon: "cube",
         title: "Subscription Boxes",
         description:
           "Offer curated boxes of your finest products delivered regularly.",
       },
       {
-        icon: "car-blue",
+        icon: "car",
         title: "Bulk Ordering Options",
         description:
           "Cater to restaurants, caterers, and other businesses with wholesale pricing and bulk ordering options.",
       },
       {
-        icon: "book-blue",
+        icon: "book",
         title: "Educational Resources",
         description:
           "Share your expertise with customers through blogs, videos, cooking guides on handling & preparing meat & fish.",
       },
       {
-        icon: "mobile-blue",
+        icon: "mobile",
         title: "Mobile-First Design",
         description:
           "Ensure your online shop looks & functions beautifully on all devices, from smartphones to desktops.",

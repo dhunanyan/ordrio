@@ -10,11 +10,13 @@ import "./IconCards.scss";
 export type IconCardsPropsType = {
   cards: Omit<IconCardPropsType, "index">[];
   alignCardsContentLeft?: boolean;
-  color: Colors;
+  iconColor?: Colors;
+  color?: Colors;
 };
 
 export const IconCards = ({
   cards,
+  iconColor = Colors.TRANSPARENT,
   color = Colors.WHITE,
   alignCardsContentLeft = false,
 }: IconCardsPropsType) => (
@@ -35,6 +37,7 @@ export const IconCards = ({
           {...card}
           alignLeft={alignCardsContentLeft}
           color={color}
+          iconColor={iconColor}
         />
       </li>
     ))}

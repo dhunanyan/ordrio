@@ -11,6 +11,7 @@ import { Colors, Icons } from "@config";
 import "./Contact.scss";
 
 export type ContactPropsType = {
+  iconColor?: Colors;
   color?: Colors;
   cards: IconCardPropsType[];
   moreHelp: {
@@ -28,12 +29,13 @@ export type ContactPropsType = {
 };
 
 export const Contact = ({
+  iconColor = Colors.TRANSPARENT,
   color = Colors.WHITE,
   cards,
   moreHelp,
 }: ContactPropsType) => (
   <div className="contact">
-    <IconCards cards={cards} color={color} />
+    <IconCards cards={cards} color={color} iconColor={iconColor} />
 
     <div className={`contact__more-help contact__more-help--${color}`}>
       <div>

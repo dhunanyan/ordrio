@@ -122,21 +122,22 @@ export const PluginsContent = {
     backgroundColor: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "monitor-blue",
+        icon: "monitor",
         title: "Streamline Operations",
         description:
           "Optimize order packing, manage multiple locations effortlessly, & gain deep insights with advanced analytics.",
       },
       {
-        icon: "customization-blue",
+        icon: "customization",
         title: "Enhance Customer Experience",
         description:
           "Offer flexible delivery options, enable in-store pickup, and cater to B2B clients with specialized pricing.",
       },
       {
-        icon: "globe-blue",
+        icon: "globe",
         title: "Go Global",
         description:
           "Reach international customers with multi-language support and real-time shipping rates.",

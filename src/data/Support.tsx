@@ -35,9 +35,10 @@ export const SupportContent = {
         },
       ],
     },
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "book-blue",
+        icon: "book",
         title: "Search Our Knowledge Base",
         description:
           "Find solutions and helpful guides in our extensive knowledge base.",
@@ -49,14 +50,14 @@ export const SupportContent = {
         },
       },
       {
-        icon: "book-question-blue",
+        icon: "book-question",
         title: "Browse FAQs",
         description:
           "Check out our most frequently asked questions for quick answers.",
         link: { text: "Browse All", href: "#", icon: "arrow-right-circle" }, //@LINKS: requested - to be added
       },
       {
-        icon: "video-blue",
+        icon: "video",
         title: "Watch Video Tutorials",
         description:
           "Learn how to use Ordrio features with our easy-to-follow video tutorials.",

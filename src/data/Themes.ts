@@ -64,22 +64,23 @@ export const ThemesContent = {
     backgroundColor: Colors.BLUE,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     color: Colors.YELLOW,
     cards: [
       {
-        icon: "design-blue",
+        icon: "design",
         title: "Eye-Catching Design",
         description:
           "Our themes are crafted by Professional designers to ensure your store looks stunning.",
       },
       {
-        icon: "customization-blue",
+        icon: "customization",
         title: "Easy Customization",
         description:
           "Tailor your theme to your brand's colours, fonts, and overall aesthetic with our intuitive tools.",
       },
       {
-        icon: "mobile-blue",
+        icon: "mobile",
         title: "Mobile-First Approach",
         description:
           "Your store will look and function flawlessly on any device, from smartphones to desktops.",

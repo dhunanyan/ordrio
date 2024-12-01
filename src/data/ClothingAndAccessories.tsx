@@ -91,39 +91,40 @@ export const ClothingAndAccessoriesContent = {
     backgroundColor: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "paper-check-blue",
+        icon: "paper-check",
         title: "Product Filtering & Sorting",
         description:
           "Help shoppers find exactly what they are looking for with easy-to-use filters and sorting options.",
       },
       {
-        icon: "paper-blue",
+        icon: "paper",
         title: "Size Charts & Fit Guides",
         description:
           "Provide detailed sizing information to reduce returns and increase customer satisfaction.",
       },
       {
-        icon: "money-blue",
+        icon: "money",
         title: "Lookbook Creation",
         description:
           "Curate stunning lookbooks to highlight your collections and inspire shoppers.",
       },
       {
-        icon: "money-blue",
+        icon: "money",
         title: "Social Media Integration",
         description:
           "Connect your online store to your social media channels to expand your reach and drive traffic.",
       },
       {
-        icon: "graph-blue",
+        icon: "graph",
         title: "Analytics & Reporting",
         description:
           "Gain valuable insights into customer behavior, sales trends, and product performance.",
       },
       {
-        icon: "mobile-blue",
+        icon: "mobile",
         title: "Email Marketing Tools",
         description:
           "Build your email list and send targeted campaigns to nurture customer relationships.",

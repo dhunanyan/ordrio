@@ -120,38 +120,39 @@ export const RestaurantsContent = {
     backgroundColor: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "car-blue",
+        icon: "car",
         title: "Online Ordering & Delivery",
         description:
           "Offer convenient online ordering for pickup, delivery, or dine-in.",
       },
       {
-        icon: "table-blue",
+        icon: "table",
         title: "Table Reservations",
         description: "Manage reservations seamlessly and avoid overbooking.",
       },
       {
-        icon: "paper-check-blue",
+        icon: "paper-check",
         title: "Menu Management",
         description:
           "Easily update your menu with photos, descriptions, and pricing.",
       },
       {
-        icon: "paper-blue",
+        icon: "paper",
         title: "Inventory & Recipe Management",
         description:
           "Track ingredient usage, optimize stock levels, and control costs.",
       },
       {
-        icon: "graph-blue",
+        icon: "graph",
         title: "Reporting & Analytics",
         description:
           "Gain insights into sales, customer behaviour, and operational efficiency.",
       },
       {
-        icon: "mobile-blue",
+        icon: "mobile",
         title: "Custom Mobile Apps",
         description:
           "Provide a branded app for iOS and Android for an even more seamless experience.",

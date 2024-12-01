@@ -51,10 +51,43 @@
     background-color: $white-color-light;
   }
 
-  &__icon svg,
-  &__icon img {
-    height: 64px;
-    width: 64px;
+  &__icon {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    padding: 17px;
+    width: 30px;
+
+    img {
+      width: 100%;
+    }
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+
+    &--blue,
+    &--yellow {
+      border-radius: 50%;
+    }
+
+    &--blue {
+      background-color: $blue-color;
+
+      path {
+        fill: $white-color;
+      }
+    }
+
+    &--yellow {
+      background-color: $yellow-color;
+
+      path {
+        fill: $black-color;
+      }
+    }
   }
 
   &__title {

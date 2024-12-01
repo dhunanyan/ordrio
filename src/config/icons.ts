@@ -6,98 +6,96 @@ import arrowRightCircle from "../../public/svg/i_arrow-right-circle.svg";
 import appStore from "../../public/svg/i_app-store.svg";
 import appStoreWhite from "../../public/svg/i_app-store-white.svg";
 import aboutUs from "../../public/svg/i_about-us.svg";
-import bulbBlue from "../../public/svg/i_bulb-blue.svg";
+import bulb from "../../public/svg/i_bulb.svg";
 import bulbYellow from "../../public/svg/i_bulb-yellow.svg";
-import bookBlue from "../../public/svg/i_book-blue.svg";
-import bookQuestionBlue from "../../public/svg/i_book-question-blue.svg";
-import carBlue from "../../public/svg/i_car-blue.svg";
+import book from "../../public/svg/i_book.svg";
+import bookQuestion from "../../public/svg/i_book-question.svg";
+import car from "../../public/svg/i_car.svg";
 import cafes from "../../public/svg/i_cafes.svg";
 import careers from "../../public/svg/i_careers.svg";
 import clothingAndAccessories from "../../public/svg/i_clothing-and-accessories.svg";
 import check from "../../public/svg/i_check.svg";
-import checkMedalBlue from "../../public/svg/i_check-medal-blue.svg";
+import checkMedal from "../../public/svg/i_check-medal.svg";
 import checkSquare from "../../public/svg/i_check-square.svg";
 import chat from "../../public/svg/i_chat.svg";
-import chatBlue from "../../public/svg/i_chat-blue.svg";
 import clothesYellow from "../../public/svg/i_clothes-yellow.svg";
 import coupons from "../../public/svg/i_coupons.svg";
-import collaborativeBlue from "../../public/svg/i_collaborative-blue.svg";
+import collaborative from "../../public/svg/i_collaborative.svg";
 import collaborativeYellow from "../../public/svg/i_collaborative-yellow.svg";
-import customizationBlue from "../../public/svg/i_customization-blue.svg";
+import customization from "../../public/svg/i_customization.svg";
 import cursorYellow from "../../public/svg/i_cursor-yellow.svg";
-import customerCentricBlue from "../../public/svg/i_customer-centric-blue.svg";
-import designBlue from "../../public/svg/i_design-blue.svg";
+import customerCentric from "../../public/svg/i_customer-centric.svg";
+import design from "../../public/svg/i_design.svg";
 import faq from "../../public/svg/i_faq.svg";
 import googlePlay from "../../public/svg/i_google-play.svg";
 import googlePlayWhite from "../../public/svg/i_google-play-white.svg";
-import graphBlue from "../../public/svg/i_graph-blue.svg";
+import graph from "../../public/svg/i_graph.svg";
 import graphYellow from "../../public/svg/i_graph-yellow.svg";
 import groceriesAndSupermarkets from "../../public/svg/i_groceries-and-supermarkets.svg";
 import howToGuide from "../../public/svg/i_how-to-guide.svg";
 import info from "../../public/svg/i_info.svg";
-import globeBlue from "../../public/svg/i_globe-blue.svg";
+import globe from "../../public/svg/i_globe.svg";
 import logo from "../../public/svg/i_logo.svg";
 import mail from "../../public/svg/i_mail.svg";
 import marketplace from "../../public/svg/i_marketplace.svg";
-import marketplaceBlue from "../../public/svg/i_marketplace-blue.svg";
 import marketplaceYellow from "../../public/svg/i_marketplace-yellow.svg";
 import meatStores from "../../public/svg/i_meat-stores.svg";
 import megaphone from "../../public/svg/i_megaphone.svg";
 import milkAndTiffinSubscriptions from "../../public/svg/i_milk-and-tiffin-subscriptions.svg";
-import mobileBlue from "../../public/svg/i_mobile-blue.svg";
-import moneyBlue from "../../public/svg/i_money-blue.svg";
+import mobile from "../../public/svg/i_mobile.svg";
+import money from "../../public/svg/i_money.svg";
 import moneyYellow from "../../public/svg/i_money-yellow.svg";
-import monitorBlue from "../../public/svg/i_monitor-blue.svg";
-import paperBlue from "../../public/svg/i_paper-blue.svg";
-import paperCheckBlue from "../../public/svg/i_paper-check-blue.svg";
+import monitor from "../../public/svg/i_monitor.svg";
+import paper from "../../public/svg/i_paper.svg";
+import paperCheck from "../../public/svg/i_paper-check.svg";
 import petStores from "../../public/svg/i_pet-stores.svg";
 import phone from "../../public/svg/i_phone.svg";
 import restaurants from "../../public/svg/i_restaurants.svg";
-import rocketBlue from "../../public/svg/i_rocket-blue.svg";
+import rocket from "../../public/svg/i_rocket.svg";
 import rocketYellow from "../../public/svg/i_rocket-yellow.svg";
 import sale from "../../public/svg/i_sale.svg";
 import separator from "../../public/svg/i_section-separator.svg";
 import separatorBig from "../../public/svg/i_section-separator-big.svg";
 import services from "../../public/svg/i_services.svg";
-import shieldBlue from "../../public/svg/i_shield-blue.svg";
+import shield from "../../public/svg/i_shield.svg";
 import support from "../../public/svg/i_support.svg";
 import squaresYellow from "../../public/svg/i_squares-yellow.svg";
-import ticketBlue from "../../public/svg/i_ticket-blue.svg";
+import ticket from "../../public/svg/i_ticket.svg";
 import timeYellow from "../../public/svg/i_time-yellow.svg";
-import tableBlue from "../../public/svg/i_table-blue.svg";
+import table from "../../public/svg/i_table.svg";
 import threeDots from "../../public/svg/i_three-dots.svg";
 import videos from "../../public/svg/i_videos.svg";
-import videoBlue from "../../public/svg/i_video-blue.svg";
-import windowCheckBlue from "../../public/svg/i_window-check-blue.svg";
+import video from "../../public/svg/i_video.svg";
+import windowCheck from "../../public/svg/i_window-check.svg";
 import windowCheckYellow from "../../public/svg/i_window-check-yellow.svg";
-import walletBlue from "../../public/svg/i_wallet-blue.svg";
+import wallet from "../../public/svg/i_wallet.svg";
 import facebookYellow from "../../public/svg/i_facebook-yellow.svg";
 import instagramYellow from "../../public/svg/i_instagram-yellow.svg";
 import youtubeYellow from "../../public/svg/i_youtube-yellow.svg";
 import linkedinYellow from "../../public/svg/i_linkedin-yellow.svg";
 import customizationYellow from "../../public/svg/i_customization-yellow.svg";
-import workerBlue from "../../public/svg/i_worker-blue.svg";
-import checkSaveBlue from "../../public/svg/i_check-save-blue.svg";
-import userBlue from "../../public/svg/i_user-blue.svg";
+import worker from "../../public/svg/i_worker.svg";
+import checkSave from "../../public/svg/i_check-save.svg";
+import user from "../../public/svg/i_user.svg";
 import userYellow from "../../public/svg/i_user-yellow.svg";
 import cupYellow from "../../public/svg/i_cup-yellow.svg";
-import calendarBlue from "../../public/svg/i_calendar-blue.svg";
-import bankBlue from "../../public/svg/i_bank-blue.svg";
-import bulletPointsBlue from "../../public/svg/i_bullet-points-blue.svg";
-import plusCardBlue from "../../public/svg/i_plus-card-blue.svg";
+import calendar from "../../public/svg/i_calendar.svg";
+import bank from "../../public/svg/i_bank.svg";
+import bulletPoints from "../../public/svg/i_bullet-points.svg";
+import plusCard from "../../public/svg/i_plus-card.svg";
 import plusCardYellow from "../../public/svg/i_plus-card-yellow.svg";
-import handshakeBlue from "../../public/svg/i_handshake-blue.svg";
-import presentBlue from "../../public/svg/i_present-blue.svg";
+import handshake from "../../public/svg/i_handshake.svg";
+import gift from "../../public/svg/i_gift.svg";
 import burger from "../../public/svg/i_burger.svg";
 import times from "../../public/svg/i_times.svg";
 import four0four from "../../public/svg/i_404.svg";
-import mouseBlue from "../../public/svg/i_mouse-blue.svg";
-import timerBlue from "../../public/svg/i_timer-blue.svg";
-import bellBlue from "../../public/svg/i_bell-blue.svg";
-import thumbUpBlue from "../../public/svg/i_thumb-up-blue.svg";
+import mouse from "../../public/svg/i_mouse.svg";
+import timer from "../../public/svg/i_timer.svg";
+import bell from "../../public/svg/i_bell.svg";
+import thumbUp from "../../public/svg/i_thumb-up.svg";
 import forkYellow from "../../public/svg/i_fork-yellow.svg";
-import skilletBlue from "../../public/svg/i_skillet-blue.svg";
-import cubeBlue from "../../public/svg/i_cube-blue.svg";
+import skillet from "../../public/svg/i_skillet.svg";
+import cube from "../../public/svg/i_cube.svg";
 
 export const Icons = {
   "app-store": appStore,
@@ -109,31 +107,30 @@ export const Icons = {
   "arrow-right-circle": arrowRightCircle,
   "about-us": aboutUs,
   cafes,
-  "car-blue": carBlue,
+  car: car,
   careers,
   check: check,
   "check-square": checkSquare,
   "clothing-and-accessories": clothingAndAccessories,
   coupons,
-  "customization-blue": customizationBlue,
+  customization: customization,
   "clothes-yellow": clothesYellow,
-  "design-blue": designBlue,
+  design: design,
   faq,
   "google-play": googlePlay,
   "google-play-white": googlePlayWhite,
-  "graph-blue": graphBlue,
+  graph: graph,
   "graph-yellow": graphYellow,
   "groceries-and-supermarkets": groceriesAndSupermarkets,
   "how-to-guide": howToGuide,
   info,
   logo,
   marketplace,
-  "marketplace-blue": marketplaceBlue,
   "meat-stores": meatStores,
   "milk-and-tiffin-subscriptions": milkAndTiffinSubscriptions,
-  "mobile-blue": mobileBlue,
-  "paper-blue": paperBlue,
-  "paper-check-blue": paperCheckBlue,
+  mobile: mobile,
+  paper: paper,
+  "paper-check": paperCheck,
   "pet-stores": petStores,
   restaurants,
   sale,
@@ -141,63 +138,62 @@ export const Icons = {
   "section-separator-big": separatorBig,
   services,
   support,
-  "table-blue": tableBlue,
+  table: table,
   videos,
   megaphone,
   "cursor-yellow": cursorYellow,
-  "money-blue": moneyBlue,
+  money: money,
   "money-yellow": moneyYellow,
   "marketplace-yellow": marketplaceYellow,
   "squares-yellow": squaresYellow,
   "window-check-yellow": windowCheckYellow,
-  "ticket-blue": ticketBlue,
-  "globe-blue": globeBlue,
-  "monitor-blue": monitorBlue,
+  ticket: ticket,
+  globe: globe,
+  monitor: monitor,
   "three-dots": threeDots,
-  "bulb-blue": bulbBlue,
-  "collaborative-blue": collaborativeBlue,
-  "customer-centric-blue": customerCentricBlue,
-  "rocket-blue": rocketBlue,
-  "shield-blue": shieldBlue,
+  bulb: bulb,
+  collaborative: collaborative,
+  "customer-centric": customerCentric,
+  rocket: rocket,
+  shield: shield,
   "collaborative-yellow": collaborativeYellow,
   "bulb-yellow": bulbYellow,
   "rocket-yellow": rocketYellow,
-  "book-blue": bookBlue,
-  "book-question-blue": bookQuestionBlue,
-  "video-blue": videoBlue,
+  book: book,
+  "book-question": bookQuestion,
+  video: video,
   phone: phone,
   mail: mail,
   chat: chat,
-  "chat-blue": chatBlue,
-  "wallet-blue": walletBlue,
-  "check-medal-blue": checkMedalBlue,
+  wallet: wallet,
+  "check-medal": checkMedal,
   "time-yellow": timeYellow,
-  "window-check-blue": windowCheckBlue,
+  "window-check": windowCheck,
   "facebook-yellow": facebookYellow,
   "instagram-yellow": instagramYellow,
   "youtube-yellow": youtubeYellow,
   "linkedin-yellow": linkedinYellow,
   "customization-yellow": customizationYellow,
-  "user-blue": userBlue,
+  user: user,
   "user-yellow": userYellow,
-  "worker-blue": workerBlue,
-  "check-save-blue": checkSaveBlue,
-  "calendar-blue": calendarBlue,
-  "bank-blue": bankBlue,
-  "bullet-points-blue": bulletPointsBlue,
-  "plus-card-blue": plusCardBlue,
+  worker: worker,
+  "check-save": checkSave,
+  calendar: calendar,
+  bank: bank,
+  "bullet-points": bulletPoints,
+  "plus-card": plusCard,
   "plus-card-yellow": plusCardYellow,
-  "handshake-blue": handshakeBlue,
-  "present-blue": presentBlue,
-  "mouse-blue": mouseBlue,
-  "timer-blue": timerBlue,
-  "bell-blue": bellBlue,
-  "thumb-up-blue": thumbUpBlue,
+  handshake: handshake,
+  gift: gift,
+  mouse: mouse,
+  timer: timer,
+  bell: bell,
+  "thumb-up": thumbUp,
   burger,
   times,
   "404": four0four,
   "cup-yellow": cupYellow,
   "fork-yellow": forkYellow,
-  "skillet-blue": skilletBlue,
-  "cube-blue": cubeBlue,
+  skillet: skillet,
+  cube: cube,
 } as { [key: string]: string };

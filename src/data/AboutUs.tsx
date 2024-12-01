@@ -44,33 +44,34 @@ export const AboutUsContent = {
     backgroundColor: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "customer-centric-blue",
+        icon: "customer-centric",
         title: "Customer-Centric",
         description:
           "We put our customers first and are dedicated to their success.",
       },
       {
-        icon: "bulb-blue",
+        icon: "bulb",
         title: "Innovative",
         description:
           "We embrace new ideas, technologies, and approaches to create better solutions.",
       },
       {
-        icon: "collaborative-blue",
+        icon: "collaborative",
         title: "Collaborative",
         description:
           "We believe in the power of community and work together to achieve common goals.",
       },
       {
-        icon: "shield-blue",
+        icon: "shield",
         title: "Transparent",
         description:
           "We communicate openly and honestly with our customers, partners, and team members.",
       },
       {
-        icon: "rocket-blue",
+        icon: "rocket",
         title: "Impactful",
         description:
           "We strive to make a positive difference in the world through our work.",

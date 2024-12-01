@@ -106,39 +106,40 @@ export const PetStoresContent = {
     backgroundColor: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "bullet-points-blue",
+        icon: "bullet-points",
         title: "Pet-Specific Categories",
         description:
           "Organize your products by species (dogs, cats, birds, etc.), breed, age, & category (food, toys, grooming, etc.)",
       },
       {
-        icon: "plus-card-blue",
+        icon: "plus-card",
         title: "Product Bundles & Kits",
         description:
           "Offer curated bundles of products that complement each other, encouraging larger purchases.",
       },
       {
-        icon: "check-save-blue",
+        icon: "check-save",
         title: "Subscription Options",
         description:
           "Allow customers to subscribe to recurring deliveries of food, treats, or other essentials.",
       },
       {
-        icon: "handshake-blue",
+        icon: "handshake",
         title: "Loyalty Programs",
         description:
           "Reward loyal customers with points, discounts, or exclusive offers.",
       },
       {
-        icon: "present-blue",
+        icon: "gift",
         title: "Gift Registries",
         description:
           "Enable customers to create Wishlist's for their pets or for upcoming pet adoptions.",
       },
       {
-        icon: "book-blue",
+        icon: "book",
         title: "Educational Resources",
         description:
           "Helpful articles, blog posts, & guides to position yourself as a trusted expert in the pet care industry.",

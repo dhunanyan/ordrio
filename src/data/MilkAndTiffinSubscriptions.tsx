@@ -92,39 +92,40 @@ export const MilkAndTiffinSubscriptionsContent = {
     backgroundColor: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "car-blue",
+        icon: "car",
         title: "Online Subscription Management",
         description:
           "Customers can easily sign up, manage their subscriptions, and make changes on their own.",
       },
       {
-        icon: "table-blue",
+        icon: "table",
         title: "Customer Communication",
         description:
           "Send automated reminders, notifications, and promotional offers to keep your customers engaged.",
       },
       {
-        icon: "paper-check-blue",
+        icon: "paper-check",
         title: "Inventory Management",
         description:
           "Track your stock levels, manage product variants, and ensure you always have enough to meet demand.",
       },
       {
-        icon: "paper-blue",
+        icon: "paper",
         title: "Flexible Billing Options",
         description:
           "Set up recurring billing, offer discounts, and manage payment methods effortlessly.",
       },
       {
-        icon: "graph-blue",
+        icon: "graph",
         title: "Reporting & Analytics",
         description:
           "Gain insights into sales, customer behaviour, and operational efficiency.",
       },
       {
-        icon: "mobile-blue",
+        icon: "mobile",
         title: "Custom Mobile Apps",
         description:
           "Provide a branded app for iOS and Android for an even more seamless experience.",

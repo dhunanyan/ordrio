@@ -57,39 +57,40 @@ export const OrdrioShipContent = {
     backgroundColor: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "mouse-blue",
+        icon: "mouse",
         title: "One-Click Shipping",
         description:
           "Generate shipping labels & process orders directly from your Ordrio dashboard - no more switching.",
       },
       {
-        icon: "plus-card-blue",
+        icon: "plus-card",
         title: "Multiple Carrier Integrations",
         description:
           "Access a wide range of shipping carriers (domestic & international) and compare rates to find the best deals.",
       },
       {
-        icon: "timer-blue",
+        icon: "timer",
         title: "Automated Fulfillment",
         description:
           "Save time and reduce errors with automated label printing, order tracking, and customer notifications.",
       },
       {
-        icon: "ticket-blue",
+        icon: "ticket",
         title: "Discounted Shipping Rates",
         description:
           "Take advantage of our exclusive partnerships with carriers to get the best rates possible.",
       },
       {
-        icon: "bell-blue",
+        icon: "bell",
         title: "Real-Time Tracking",
         description:
           "Keep your customers informed with accurate tracking updates throughout the shipping process.",
       },
       {
-        icon: "thumb-up-blue",
+        icon: "thumb-up",
         title: "Returns Management",
         description:
           "Simplify returns processing and offer a hassle-free experience for your customers.",

@@ -110,39 +110,40 @@ export const MarketplaceContent = {
     backgroundColor: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "window-check-blue",
+        icon: "window-check",
         title: "Intuitive Vendor Dashboard",
         description:
           "Empower sellers to effortlessly manage their listings, orders, and financials.",
       },
       {
-        icon: "paper-check-blue",
+        icon: "paper-check",
         title: "Robust Catalog Management",
         description:
           "Organize, categorize, and highlight products with ease, regardless of complexity or scale.",
       },
       {
-        icon: "paper-blue",
+        icon: "paper",
         title: "Streamlined Order Management",
         description:
           "Rack orders, manage shipping, and handle returns efficiently, ensuring customer satisfaction.",
       },
       {
-        icon: "money-blue",
+        icon: "money",
         title: "Secure Payment Gateway",
         description:
           "Accept multiple payment methods and ensure secure transactions for both buyers and sellers.",
       },
       {
-        icon: "graph-blue",
+        icon: "graph",
         title: "Analytics & Reporting",
         description:
           "Gain valuable insights into your marketplace's performance, customer behavior, and sales trends.",
       },
       {
-        icon: "mobile-blue",
+        icon: "mobile",
         title: "Seamless Mobile Experience",
         description:
           "Deliver a smooth, engaging experience for buyers and sellers on any device.",

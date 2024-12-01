@@ -118,37 +118,38 @@ export const GroceriesAndSupermarketsContent = {
     backgroundColor: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "marketplace-blue",
+        icon: "marketplace",
         title: "Customizable Storefront",
         description:
           "Design your online store to match your brand's personality.",
       },
       {
-        icon: "mobile-blue",
+        icon: "mobile",
         title: "Custom Mobile Apps",
         description:
           "Give your customers a dedicated app for easy ordering and a seamless shopping experience.",
       },
       {
-        icon: "paper-check-blue",
+        icon: "paper-check",
         title: "Easy Inventory Management",
         description: "Keep your online shelves stocked and organized.",
       },
       {
-        icon: "ticket-blue",
+        icon: "ticket",
         title: "Flexible Pricing & Promotions",
         description:
           "Track ingredient usage, optimize stock levels, and control costs.",
       },
       {
-        icon: "paper-blue",
+        icon: "paper",
         title: "Convenient Ordering & Checkout",
         description: "Make it easy for customers to shop and pay.",
       },
       {
-        icon: "car-blue",
+        icon: "car",
         title: "Delivery & Pickup Options",
         description:
           "Let your customers choose how they want to receive their groceries.",
