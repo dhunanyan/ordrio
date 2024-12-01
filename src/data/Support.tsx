@@ -9,19 +9,22 @@ export const SupportContent = {
   },
   heroComponent: {
     moreHelp: {
+      addressTitle: "Office address",
+      addressDescription:
+        "1st floor, Pritvi soudha bldg. N.H. 66 Junction Ambalpady Udupi Karnataka- 576 103",
       title: "Need More Help?",
       links: [
-        {
-          description: "Send us an email at",
-          text: "Support@Ordrio.com",
-          href: "mailto:Support@Ordrio.com",
-          icon: "mail",
-        },
         {
           description: "Call our support team at",
           text: "+917204707513",
           href: "tel:+917204707513",
           icon: "phone",
+        },
+        {
+          description: "Send us an email at",
+          text: "Support@Ordrio.com",
+          href: "mailto:Support@Ordrio.com",
+          icon: "mail",
         },
         {
           description: "Chat with us in real-time.",
@@ -68,7 +71,7 @@ export const SupportContent = {
     color: Colors.GREY,
   },
   commonSection: {
-    title: "Additional Resources",
+    subtitle: "Additional Resources",
     description: "We welcome a diverse range of partners, including",
     backgroundColor: Colors.WHITE,
   },

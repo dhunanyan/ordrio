@@ -15,11 +15,27 @@
 
   &__more-help {
     @include lightShadow;
-    align-items: center;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-areas:
+      "a"
+      "c"
+      "b";
     border-radius: 24px;
-    display: flex;
-    padding: 40px;
-    width: calc(100% - 2 * 40px);
+    padding: 26px 12px;
+    width: calc(100% - 2 * 12px);
+
+    @media screen and (min-width: 768px) {
+      padding: 40px 24px;
+      width: calc(100% - 2 * 24px);
+    }
+
+    @media screen and (min-width: 950px) {
+      grid-gap: 60px;
+      grid-template-areas:
+        "a c"
+        "b c";
+    }
 
     &--white {
       background-color: $white-color;
@@ -29,23 +45,91 @@
       background-color: $grey-color;
     }
 
+    &-title {
+      @include titleInter;
+      margin: 0 0 16px;
+      text-align: center;
+
+      @media screen and (min-width: 768px) {
+        margin: 0;
+        text-align: left;
+      }
+    }
+
+    > div {
+      &:nth-of-type(1) {
+        grid-area: a;
+      }
+
+      &:nth-of-type(2) {
+        grid-area: b;
+      }
+
+      &:nth-of-type(3) {
+        grid-area: c;
+      }
+
+      > p {
+        @include descriptionInterBig;
+        color: $grey-color-darker;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+          text-align: left;
+        }
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      @media screen and (min-width: 768px) {
+        gap: 35px;
+      }
+    }
+
     &-item {
-      align-items: flex-start;
-      border-left: 1px solid $grey-color-darker;
+      align-items: center;
       display: flex;
       flex: 1;
       flex-direction: column;
       gap: 8px;
-      padding: 0 0 0 50px;
-
-      h3 {
-        @include titleInter;
-        max-width: 110px;
-      }
+      min-width: calc(100% - 30px * 2);
+      padding: 10px 30px;
 
       &:first-of-type {
-        border-left: 0;
-        padding: 0;
+        padding: 10px 0;
+      }
+
+      &:nth-of-type(2) {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+      }
+
+      &:last-of-type {
+        border-top: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 10px 0;
+      }
+
+      @media screen and (min-width: 768px) {
+        align-items: flex-start;
+        min-width: calc(50% - 30px * 2);
+
+        &:first-of-type {
+          padding: 10px 30px 10px 0px;
+        }
+
+        &:nth-of-type(2) {
+          border-left: 1px solid rgba(0, 0, 0, 0.1);
+          border-top: 0;
+          padding: 10px 0px 10px 30px;
+        }
+
+        &:last-of-type {
+          border-top: 0;
+          padding: 10px 30px 10px 0px;
+        }
       }
 
       p {
@@ -74,6 +158,21 @@
             fill: $blue-color;
           }
         }
+      }
+    }
+
+    &-image {
+      height: 100%;
+      margin: 0 auto;
+      max-width: 434px;
+
+      @media screen and (min-width: 950px) {
+        margin: 0;
+      }
+
+      img {
+        border-radius: 14px;
+        width: 100%;
       }
     }
   }
