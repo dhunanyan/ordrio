@@ -84,10 +84,6 @@
       text-align: center; // overrides mixin above
     }
 
-    @media screen and (min-width: 1024px) {
-      text-align: left;
-    }
-
     &--white {
       color: $white-color;
     }

@@ -18,7 +18,16 @@ export const IconCards = ({
   color = Colors.WHITE,
   alignCardsContentLeft = false,
 }: IconCardsPropsType) => (
-  <ul className={"icon-cards" + (cards.length > 4 ? " icon-cards--wrap" : "")}>
+  <ul
+    className={
+      "icon-cards" +
+      (cards.length > 4
+        ? " icon-cards--big"
+        : cards.length === 4
+          ? " icon-cards--standard"
+          : "")
+    }
+  >
     {cards.map((card, i) => (
       <li key={i} className="icon-cards__item">
         <IconCard

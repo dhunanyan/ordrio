@@ -18,7 +18,7 @@ export const CareersContent = {
     ],
   },
   positionsSection: {
-    title: "Ready to Work a with Great Team?",
+    subtitle: "Ready to Work a with Great Team?",
     description: "Let's Explore the opportunities",
   },
   positionsSectionComponent: {
@@ -58,7 +58,7 @@ export const CareersContent = {
   },
   iconCardsContent: {
     backgroundImage: BackgroundImage.WHITE_BRUSHES_FLIPPED,
-    title: "Our Values",
+    subtitle: "Our Values",
     description:
       "Whether you want to boost sales, streamline operations, or simply add more functionality, we have got the tools you need to succeed.",
     color: Colors.GREY,

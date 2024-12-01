@@ -8,8 +8,13 @@
   &__item {
     border-top: $grey-blue-color 1px solid;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     padding: 32px 0;
+
+    @media screen and (min-width: 975px) {
+      flex-direction: row;
+    }
 
     &-index {
       border-radius: 90px;
@@ -20,10 +25,14 @@
       font-style: normal;
       font-weight: 400;
       line-height: 28px;
-      margin: 0 0 auto 0;
-      padding: 10px;
+      margin: 0 auto 15px 0;
+      padding: 10px 26px;
       text-align: center;
       flex: 0.2;
+
+      @media screen and (min-width: 975px) {
+        margin: 0 0 auto 0;
+      }
     }
 
     &-title {
@@ -33,8 +42,11 @@
       font-style: normal;
       font-weight: 700;
       line-height: 32px;
-      margin: 0 0 0 50px;
       flex: 0.7;
+
+      @media screen and (min-width: 975px) {
+        margin: 0 0 0 50px;
+      }
     }
 
     &-requirements {
@@ -42,8 +54,11 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 8px;
-      margin: 0 0 0 50px;
       flex: 1;
+
+      @media screen and (min-width: 975px) {
+        margin: 0 0 0 50px;
+      }
     }
 
     &-requirement {
@@ -59,8 +74,12 @@
     &-link {
       @include buttonBlue;
       flex: 0.3;
-      margin: 0 0 auto 50px;
+      margin: 25px auto 0 0;
       overflow: hidden;
+
+      @media screen and (min-width: 975px) {
+        margin: 0 0 0 50px;
+      }
 
       &:hover {
         flex: 0.34;
