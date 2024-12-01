@@ -1,4 +1,5 @@
 $black-color: #000000;
+$black-color-border: #0000001a;
 $black-color-alt: #2d2323;
 $black-color-light: #413b3b;
 $black-color-alt-opacity: #2d23231a;
@@ -40,7 +41,7 @@ $red-gradient: linear-gradient(180deg, #ffcf9a 0%, #ffddb9 100%);
 $green-gradient: linear-gradient(180deg, #d9f7cc 0%, #e8fbe5 100%);
 $grey-gradient: linear-gradient(180deg, #d9ecf9 0%, #ccd5e2 100%);
 
-$font-spoof-trail: var(--font-spoof-trial), sans-serif;
+$font-spoof-trial: var(--font-spoof-trial), sans-serif;
 $font-inter: var(--font-inter), sans-serif;
 $font-manrope: var(--font-manrope), sans-serif;
 

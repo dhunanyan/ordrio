@@ -43,7 +43,7 @@
     }
 
     &__subtitle {
-      @include subtitleSpoofTrailSmall;
+      @include subtitleSpoofTrialSmall;
       color: $red-color;
       font-style: normal;
       font-weight: 700;
@@ -51,7 +51,7 @@
     }
 
     &__title {
-      @include titleSpoofTrailSmall;
+      @include titleSpoofTrialSmall;
     }
 
     &__description {

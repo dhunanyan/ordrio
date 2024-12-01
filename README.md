@@ -17,7 +17,9 @@ Ordrio is a high-performance informational website built with **Next.js 14 App R
 5. [Project Structure](#project-structure)
 6. [Linting and Code Formatting](#linting-and-code-formatting)
 7. [🚀 Deployment](#🚀-deployment)
-8. [License](#license)
+8. [🎨 Color Pallette](#🎨-color-pallette)
+9. [🖋️ Fonts](#🖋️-fonts)
+10. [License](#license)
 
 ## 🔧 Tech Stack
 
@@ -154,6 +156,65 @@ The `dev build` of the application is deployed using [Netlify](https://www.netli
 - Dev Status: [![Netlify Status](https://api.netlify.com/api/v1/badges/ec89ac37-1f1e-42ad-bfb6-dd424fdfc95d/deploy-status)](https://app.netlify.com/sites/ordrio/deploys)
 
 The production build can be accessed here: https://ordrio.com
+
+## 🎨 Color Pallette
+
+<table >
+  <td>
+
+| **Color**                | **Hex**                                                                |
+| ------------------------ | ---------------------------------------------------------------------- |
+| $black-color             | ![#000000](https://via.placeholder.com/10/000000?text=+) `#64ffda`     |
+| $black-color-border      | ![#000000](https://via.placeholder.com/10/000000?text=+) `#0000001a`   |
+| $black-color-alt-opacity | ![#413b3b](https://via.placeholder.com/10/2d23231a?text=+) `#2d23231a` |
+| $black-color-alt         | ![#2d2323](https://via.placeholder.com/10/2d2323?text=+) `#64ffda`     |
+| $black-color-light       | ![#413b3b](https://via.placeholder.com/10/413b3b?text=+) `#64ffda`     |
+| $grey-color-darker       | ![#767676](https://via.placeholder.com/10/767676?text=+) `#64ffda`     |
+| $grey-color-dark         | ![#9e9fa4](https://via.placeholder.com/10/9e9fa4?text=+) `#64ffda`     |
+| $white-color-light       | ![#f8fafc](https://via.placeholder.com/10/f8fafc?text=+) `#64ffda`     |
+| $grey-color              | ![#ecf0f6](https://via.placeholder.com/10/ecf0f6?text=+) `#64ffda`     |
+| $white-color             | ![#ffffff](https://via.placeholder.com/10/ffffff?text=+) `#64ffda`     |
+| $white-color-alt         | ![#f0f0f0](https://via.placeholder.com/10/f0f0f0?text=+) `#64ffda`     |
+| $white-blue-color        | ![#c7d7e8](https://via.placeholder.com/10/c7d7e8?text=+) `#64ffda`     |
+| $white-blue-color-dark   | ![#d3d8de](https://via.placeholder.com/10/d3d8de?text=+) `#64ffda`     |
+| $grey-blue-color         | ![#c7d7ef](https://via.placeholder.com/10/c7d7ef?text=+) `#64ffda`     |
+| $cream-color             | ![#fff8da](https://via.placeholder.com/10/fff8da?text=+) `#64ffda`     |
+| $light-white-color       | ![#f9faf5](https://via.placeholder.com/10/f9faf5?text=+) `#64ffda`     |
+| $white-color-opacity     | ![#f8fafc](https://via.placeholder.com/10/ffffff8c?text=+) `#ffffff8c` |
+
+  </td>
+  <td>
+
+| **Color**             | **Hex**                                                            |
+| --------------------- | ------------------------------------------------------------------ |
+| $cream-color-light    | ![#fff8b7](https://via.placeholder.com/10/fff8b7?text=+) `#64ffda` |
+| $yellow-color-hover   | ![#ffe587](https://via.placeholder.com/10/ffe587?text=+) `#64ffda` |
+| $yellow-color         | ![#fedf22](https://via.placeholder.com/10/fedf22?text=+) `#64ffda` |
+| $yellow-color-dark    | ![#dcb400](https://via.placeholder.com/10/dcb400?text=+) `#64ffda` |
+| $yellow-color-alt     | ![#e4d99a](https://via.placeholder.com/10/e4d99a?text=+) `#64ffda` |
+| $yellow-color-light   | ![#f6eece](https://via.placeholder.com/10/f6eece?text=+) `#64ffda` |
+| $yellow-color-light-2 | ![#ffeab9](https://via.placeholder.com/10/ffeab9?text=+) `#64ffda` |
+| $blue-color           | ![#3355ff](https://via.placeholder.com/10/3355ff?text=+) `#64ffda` |
+| $blue-color-hover     | ![#4466ff](https://via.placeholder.com/10/4466ff?text=+) `#64ffda` |
+| $blue-color-dark      | ![#243d6f](https://via.placeholder.com/10/243d6f?text=+) `#64ffda` |
+| $red-color            | ![#f2604b](https://via.placeholder.com/10/f2604b?text=+) `#64ffda` |
+| $red-color-dark       | ![#a46565](https://via.placeholder.com/10/a46565?text=+) `#64ffda` |
+| $red-color-light      | ![#ffe1cb](https://via.placeholder.com/10/ffe1cb?text=+) `#64ffda` |
+| $pink-color           | ![#d3bafe](https://via.placeholder.com/10/d3bafe?text=+) `#64ffda` |
+| $green-color          | ![#95edb2](https://via.placeholder.com/10/95edb2?text=+) `#64ffda` |
+| $purple-color         | ![#7968ed](https://via.placeholder.com/10/7968ed?text=+) `#64ffda` |
+| $purple-color-2       | ![#8766d7](https://via.placeholder.com/10/8766d7?text=+) `#64ffda` |
+
+  </td>
+</table>
+
+## 🖋️ Fonts
+
+| **Font**          | **Location**                              |
+| ----------------- | ----------------------------------------- |
+| $font-spoof-trial | [SpoofTrial](./src/app/fonts/SpoofTrial/) |
+| $font-inter       | [SpoofTrial](./src/app/fonts/Inter/)      |
+| $font-manrope     | [SpoofTrial](./src/app/fonts/Manrope/)    |
 
 ## License
 

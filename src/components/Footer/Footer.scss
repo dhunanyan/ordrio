@@ -230,7 +230,7 @@
   &__copyright {
     @include container;
     align-items: center;
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-top: 1px solid $black-color-border;
     display: flex;
     flex-direction: column;
     justify-content: space-between;

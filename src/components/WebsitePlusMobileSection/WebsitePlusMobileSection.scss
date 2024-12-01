@@ -37,7 +37,7 @@
     background-color: $black-color-alt;
     border-radius: 90px;
     color: $white-color;
-    font-family: $font-spoof-trail;
+    font-family: $font-spoof-trial;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -47,12 +47,12 @@
   }
 
   &__title {
-    @include subtitleSpoofTrailBig;
+    @include subtitleSpoofTrialBig;
     text-align: center;
   }
 
   &__description {
-    @include descriptionSpoofTrailVeryBig;
+    @include descriptionSpoofTrialVeryBig;
   }
 
   &__bottom {

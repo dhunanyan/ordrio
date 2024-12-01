@@ -247,9 +247,9 @@
   }
 }
 
-@mixin titleSpoofTrail {
+@mixin titleSpoofTrial {
   color: $black-color;
-  font-family: $font-spoof-trail;
+  font-family: $font-spoof-trial;
   font-size: 45px;
   font-style: normal;
   font-weight: 800;
@@ -269,10 +269,10 @@
   }
 }
 
-@mixin titleSpoofTrailSmall {
+@mixin titleSpoofTrialSmall {
   color: $black-color;
   text-align: center;
-  font-family: $font-spoof-trail;
+  font-family: $font-spoof-trial;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -285,9 +285,9 @@
   }
 }
 
-@mixin subtitleSpoofTrailBig {
+@mixin subtitleSpoofTrialBig {
   color: $black-color;
-  font-family: $font-spoof-trail;
+  font-family: $font-spoof-trial;
   font-size: 35px;
   font-style: normal;
   font-weight: 700;
@@ -317,9 +317,9 @@
   }
 }
 
-@mixin subtitleSpoofTrail {
+@mixin subtitleSpoofTrial {
   color: $black-color;
-  font-family: $font-spoof-trail;
+  font-family: $font-spoof-trial;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -327,10 +327,10 @@
   transform: all 150ms ease-in-out;
 }
 
-@mixin subtitleSpoofTrailSmall {
+@mixin subtitleSpoofTrialSmall {
   color: $black-color;
   text-align: center;
-  font-family: $font-spoof-trail;
+  font-family: $font-spoof-trial;
   font-size: 16px;
   font-style: normal;
   font-weight: 600;
@@ -343,9 +343,9 @@
   }
 }
 
-@mixin descriptionSpoofTrail {
+@mixin descriptionSpoofTrial {
   color: $black-color;
-  font-family: $font-spoof-trail;
+  font-family: $font-spoof-trial;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -360,9 +360,9 @@
   }
 }
 
-@mixin descriptionSpoofTrailVeryBig {
+@mixin descriptionSpoofTrialVeryBig {
   color: $black-color;
-  font-family: $font-spoof-trail;
+  font-family: $font-spoof-trial;
   font-size: 24px;
   font-style: normal;
   font-weight: 400;

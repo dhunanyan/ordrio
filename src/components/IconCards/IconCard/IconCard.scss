@@ -96,7 +96,7 @@
   }
 
   &__description {
-    @include descriptionSpoofTrail;
+    @include descriptionSpoofTrial;
     margin: 0 0 auto 0;
   }
 
@@ -104,7 +104,7 @@
     align-items: center;
     color: $blue-color;
     display: flex;
-    font-family: $font-spoof-trail;
+    font-family: $font-spoof-trial;
     font-size: 16px;
     font-style: normal;
     font-weight: 700;

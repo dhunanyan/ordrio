@@ -23,7 +23,7 @@
   }
 
   &__title {
-    @include subtitleSpoofTrailBig;
+    @include subtitleSpoofTrialBig;
     text-align: center;
   }
 
@@ -116,7 +116,7 @@
     &-text {
       color: $black-color;
       font-size: 14px;
-      font-family: $font-spoof-trail;
+      font-family: $font-spoof-trial;
       font-weight: 700;
       line-height: 28px;
       text-align: center;
@@ -124,7 +124,7 @@
 
     &-author {
       color: $black-color;
-      font-family: $font-spoof-trail;
+      font-family: $font-spoof-trial;
       font-weight: 500;
       font-size: 13px;
       line-height: 28px;

@@ -167,12 +167,12 @@
   }
 
   &__title {
-    @include titleSpoofTrail;
+    @include titleSpoofTrial;
     text-align: center;
   }
 
   &__subtitle {
-    @include subtitleSpoofTrailBig;
+    @include subtitleSpoofTrialBig;
     text-align: center;
   }
 
@@ -201,7 +201,7 @@
   }
 
   &__description {
-    @include descriptionSpoofTrail;
+    @include descriptionSpoofTrial;
     align-items: center;
     display: flex;
     flex-direction: column;
