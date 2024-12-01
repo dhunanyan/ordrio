@@ -18,7 +18,7 @@ export type BigCardsPropsType = {
 };
 
 export const BigCards = ({ cards }: BigCardsPropsType) => (
-  <ul className="big-cards">
+  <ul className={"big-cards" + (cards.length > 2 ? " big-cards--big" : "")}>
     {cards.map((bigCard, i) => (
       <motion.li
         key={i}
