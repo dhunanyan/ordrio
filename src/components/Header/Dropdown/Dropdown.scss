@@ -11,6 +11,7 @@
   flex-direction: column;
   left: 0;
   max-width: 768px;
+  padding: 0 0 120px;
   position: absolute;
   top: 0;
   width: 100%;
@@ -27,6 +28,7 @@
     flex-direction: row;
     left: -100px;
     max-width: max-content;
+    padding: 0;
     position: absolute;
     top: calc(100% + 10px);
   }
