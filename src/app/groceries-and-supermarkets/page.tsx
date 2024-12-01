@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   Accordions,
   BannerSection,
@@ -17,7 +18,13 @@ import {
   type ImageCardsPropsType,
 } from "@components";
 
-import { AccordionsContent, GroceriesAndSupermarketsContent } from "@data";
+import {
+  AccordionsContent,
+  GroceriesAndSupermarketsContent,
+  HtmlMeta,
+} from "@data";
+
+export const metadata: Metadata = HtmlMeta["groceries-and-supermarkets"];
 
 export default function Page() {
   return (

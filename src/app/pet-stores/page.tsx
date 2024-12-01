@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   BannerSection,
   BigCards,
@@ -16,7 +17,9 @@ import {
   type AccordionsPropsType,
 } from "@components";
 
-import { AccordionsContent, PetStoresContent } from "@data";
+import { AccordionsContent, HtmlMeta, PetStoresContent } from "@data";
+
+export const metadata: Metadata = HtmlMeta["pet-stores"];
 
 export default function Page() {
   return (

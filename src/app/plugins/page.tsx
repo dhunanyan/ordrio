@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   BannerSection,
   BigCards,
@@ -9,7 +10,9 @@ import {
   type CommonSectionPropsType,
 } from "@components";
 
-import { PluginsContent } from "@data";
+import { HtmlMeta, PluginsContent } from "@data";
+
+export const metadata: Metadata = HtmlMeta["plugins"];
 
 export default function Page() {
   return (

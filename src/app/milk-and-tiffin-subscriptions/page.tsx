@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   BannerSection,
   BigCards,
@@ -16,7 +17,13 @@ import {
   type AccordionsPropsType,
 } from "@components";
 
-import { AccordionsContent, MilkAndTiffinSubscriptionsContent } from "@data";
+import {
+  AccordionsContent,
+  HtmlMeta,
+  MilkAndTiffinSubscriptionsContent,
+} from "@data";
+
+export const metadata: Metadata = HtmlMeta["milk-and-tiffin-subscriptions"];
 
 export default function Page() {
   return (

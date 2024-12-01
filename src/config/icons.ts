@@ -80,6 +80,7 @@ import workerBlue from "../../public/svg/i_worker-blue.svg";
 import checkSaveBlue from "../../public/svg/i_check-save-blue.svg";
 import userBlue from "../../public/svg/i_user-blue.svg";
 import userYellow from "../../public/svg/i_user-yellow.svg";
+import cupYellow from "../../public/svg/i_cup-yellow.svg";
 import calendarBlue from "../../public/svg/i_calendar-blue.svg";
 import bankBlue from "../../public/svg/i_bank-blue.svg";
 import bulletPointsBlue from "../../public/svg/i_bullet-points-blue.svg";
@@ -192,4 +193,5 @@ export const Icons = {
   burger,
   times,
   "404": four0four,
+  "cup-yellow": cupYellow,
 } as { [key: string]: string };

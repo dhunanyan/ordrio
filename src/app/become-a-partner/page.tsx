@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   BannerSection,
   CommonSection,
@@ -10,8 +11,9 @@ import {
   BigCards,
   BigCardsPropsType,
 } from "@components";
+import { BecomeAPartnerContent, HtmlMeta } from "@data";
 
-import { BecomeAPartnerContent } from "@data";
+export const metadata: Metadata = HtmlMeta["become-a-partner"];
 
 export default function Page() {
   return (

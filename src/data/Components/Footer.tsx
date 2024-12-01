@@ -48,7 +48,7 @@ export const FooterContent: FooterContentType = {
         },
         {
           text: "Locate Us",
-          href: "/@TODO",
+          href: "/support",
         },
         {
           text: "Contact Us",

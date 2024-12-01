@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   Accordions,
   StepCards,
@@ -16,8 +17,10 @@ import {
 } from "@components";
 import { AnimatedCard } from "@config";
 
-import { ProductTourContent, AccordionsContent } from "@data";
+import { ProductTourContent, AccordionsContent, HtmlMeta } from "@data";
 import { renderAnimatedCard } from "@utils";
+
+export const metadata: Metadata = HtmlMeta["product-tour"];
 
 export default function Page() {
   return (

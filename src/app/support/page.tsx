@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   BannerSection,
   CommonSection,
@@ -9,7 +10,9 @@ import {
   type BigCardsPropsType,
 } from "@components";
 
-import { SupportContent } from "@data";
+import { HtmlMeta, SupportContent } from "@data";
+
+export const metadata: Metadata = HtmlMeta["support"];
 
 export default function Page() {
   return (

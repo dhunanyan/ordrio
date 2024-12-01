@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   BannerSection,
   CommonSection,
@@ -11,7 +12,9 @@ import {
   type SlideshowPropsType,
 } from "@components";
 
-import { CareersContent } from "@data";
+import { CareersContent, HtmlMeta } from "@data";
+
+export const metadata: Metadata = HtmlMeta["careers"];
 
 export default function Page() {
   return (

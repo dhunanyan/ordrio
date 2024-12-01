@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   Accordions,
   BannerSection,
@@ -16,7 +17,13 @@ import {
   type AccordionsPropsType,
 } from "@components";
 
-import { AccordionsContent, ClothingAndAccessoriesContent } from "@data";
+import {
+  AccordionsContent,
+  ClothingAndAccessoriesContent,
+  HtmlMeta,
+} from "@data";
+
+export const metadata: Metadata = HtmlMeta["clothing-and-accessories"];
 
 export default function Page() {
   return (

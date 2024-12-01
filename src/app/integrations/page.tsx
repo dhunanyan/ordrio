@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   BannerSection,
   CommonSection,
@@ -13,7 +14,9 @@ import {
   type ImageCardsPropsType,
 } from "@components";
 
-import { IntegrationsContent } from "@data";
+import { HtmlMeta, IntegrationsContent } from "@data";
+
+export const metadata: Metadata = HtmlMeta["integrations"];
 
 export default function Page() {
   return (

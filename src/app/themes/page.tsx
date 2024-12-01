@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   BannerSection,
   BigCards,
@@ -11,7 +12,9 @@ import {
   type AccordionsPropsType,
 } from "@components";
 
-import { AccordionsContent, ThemesContent } from "@data";
+import { AccordionsContent, HtmlMeta, ThemesContent } from "@data";
+
+export const metadata: Metadata = HtmlMeta["themes"];
 
 export default function Page() {
   return (

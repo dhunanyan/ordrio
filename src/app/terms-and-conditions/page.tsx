@@ -1,6 +1,9 @@
+import { Metadata } from "next";
 import { Compliance, type CompliancePropsType } from "@components";
 
-import { TermsAndConditionsContent } from "@data";
+import { HtmlMeta, TermsAndConditionsContent } from "@data";
+
+export const metadata: Metadata = HtmlMeta["terms-and-conditions"];
 
 export default function Page() {
   return (

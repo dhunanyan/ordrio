@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   Accordions,
   BannerSection,
@@ -7,7 +8,9 @@ import {
   type CommonSectionPropsType,
 } from "@components";
 
-import { AccordionsContent, FaqContent } from "@data";
+import { AccordionsContent, FaqContent, HtmlMeta } from "@data";
+
+export const metadata: Metadata = HtmlMeta["faq"];
 
 export default function Page() {
   return (

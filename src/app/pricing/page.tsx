@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   Accordions,
   BannerSection,
@@ -16,7 +17,10 @@ import {
   PlanWithExtraContent,
   ComparePlansContent,
   AccordionsContent,
+  HtmlMeta,
 } from "@data";
+
+export const metadata: Metadata = HtmlMeta["pricing"];
 
 export default function Page() {
   return (

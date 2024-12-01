@@ -1,9 +1,5 @@
 - - - - - - - - FEATURES - - - - - - - -
 
-TODO: Remove animations from "Step" cards (Step 1,2,3) -> To be confirmed
-
-TODO: Add HtmlMeta tags (such as Title, Description, Keywords) for each page
-
 TODO: Add Badge Logo for browser tab
 
 - - - - - - - - - BUGS - - - - - - - -
@@ -16,18 +12,10 @@ TODO: Ongoing Updates Animated Card -> Synchronize animations of asset cards (3 
 
 TODO: AnimatedCards -> handle overlapping content
 
-TODO: Fix banner background image
-
-TODO: Locate us link
-
 - - - - - - - - TECH DEPTH - - - - - - - -
 
 TODO: Refactor: Get rid of blue and yellow icons instead use SASS to change colors
 
-TODO: Refactor: Banner Section (Blue ones) -> add button styles inside `link { prop here }`
-
 TODO: Refactor: Organize assets folder
-
-TODO: Refactor: Remove SASS duplications and use mixins
 
 TODO: Create Documentation -> README.md

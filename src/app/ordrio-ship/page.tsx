@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import {
   BannerSection,
   CommonSection,
@@ -11,7 +12,9 @@ import {
   type StepCardsPropsType,
 } from "@components";
 
-import { OrdrioShipContent } from "@data";
+import { HtmlMeta, OrdrioShipContent } from "@data";
+
+export const metadata: Metadata = HtmlMeta["ordrio-ship"];
 
 export default function Page() {
   return (

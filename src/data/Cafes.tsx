@@ -8,8 +8,8 @@ import {
 
 export const CafesContent = {
   hero: {
-    title: "Unleash Your <span>Pet</span> Product Potential",
-    description: "Create a Pawsome Online Store for Your Furry Friends",
+    title: "Entice <span>Coffee</span> Lovers, Grow Your Café Empire",
+    description: "Brew Your Online Coffee Shop Success",
     separator: Separator.MEDIUM,
     isFirstSection: true,
   },
@@ -22,8 +22,9 @@ export const CafesContent = {
     ],
   },
   commonSectionWithRowAndBigCards: {
-    subtitle: "Why Choose PetO?",
-    description: "Showcase Your Services, Simplify Your Bookings",
+    subtitle: "Why Choose Escafe?",
+    description:
+      "Whether you are a cozy corner cafe or a bustling roastery, Escafe empowers you to create a captivating online presence that showcases your coffee expertise and converts visitors into loyal customers.",
     backgroundColor: Colors.WHITE,
   },
   rowAndBigCardsInCommonSection: {
@@ -33,22 +34,22 @@ export const CafesContent = {
     },
     rowCards: [
       {
-        icon: "customization-yellow",
-        title: "Designed for Pet Lovers",
+        icon: "cup-yellow",
+        title: "Built for Coffee Lovers",
         description:
-          "We understand the passion and care that goes into choosing the best products for our furry friends. Our theme reflects this with a playful, engaging design.",
+          "Our platform is designed by coffee enthusiasts who understand the nuances of the industry and the unique needs of coffee businesses.",
       },
       {
         icon: "cursor-yellow",
         title: "Ease of Use",
         description:
-          "Our intuitive interface makes it simple to set up and manage your online store, even if you have no technical experience.",
+          "Our intuitive interface makes it simple to set up and manage your online coffee shop, even if you have no technical experience.",
       },
       {
         icon: "graph-yellow",
-        title: "SEO-Friendly",
+        title: "Flexible & Scalable",
         description:
-          "Our theme is optimized for search engines, helping you attract more organic traffic.",
+          "Escafe can adapt to your business size and needs, whether you are a small independent cafe or a multi-location roastery.",
       },
     ],
   },
