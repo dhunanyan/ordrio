@@ -72,7 +72,7 @@ export const BannerSection = ({
           description={description}
           buttons={links}
           link={link}
-          alignLeft={alignContentLeft}
+          alignLeft={alignContentLeft || !!imageURL}
           tintColor={tintColor}
         />
       </div>

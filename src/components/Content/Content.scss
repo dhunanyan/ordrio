@@ -13,10 +13,12 @@
   }
 
   &--align-left {
-    align-items: flex-start;
+    @media screen and (min-width: 1024px) {
+      align-items: flex-start;
 
-    * {
-      text-align: left !important;
+      * {
+        text-align: left !important;
+      }
     }
   }
 
@@ -76,6 +78,15 @@
 
   &__description {
     @include descriptionSpoofTrail;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: center; // overrides mixin above
+    }
+
+    @media screen and (min-width: 1024px) {
+      text-align: left;
+    }
 
     &--white {
       color: $white-color;
