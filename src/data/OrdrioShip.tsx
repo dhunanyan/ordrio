@@ -45,7 +45,7 @@ export const OrdrioShipContent = {
           "Offer multiple shipping options, real-time tracking, and easy returns to create a positive customer experience.",
       },
       {
-        icon: "graph",
+        icon: "graph-loupe",
         title: "Scalable",
         description:
           "As your business grows, Ordrio Ship can easily scale to meet your increasing shipping needs.",
@@ -61,7 +61,7 @@ export const OrdrioShipContent = {
     iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "mouse",
+        icon: "cursor-default",
         title: "One-Click Shipping",
         description:
           "Generate shipping labels & process orders directly from your Ordrio dashboard - no more switching.",

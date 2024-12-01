@@ -6,8 +6,6 @@ TODO: Add Badge Logo for browser tab
 
 TODO: fix card image - title: Technology Partner
 
-TODO: Change titles to subtitles in (make them smaller) for all Common Section except of the Hero (First one).
-
 TODO: Ongoing Updates Animated Card -> Synchronize animations of asset cards (3 cards in blank dashboard)
 
 TODO: AnimatedCards -> handle overlapping content
@@ -17,8 +15,3 @@ TODO: AnimatedCards -> handle overlapping content
 TODO: Refactor: Organize assets folder
 
 TODO: Create Documentation -> README.md
-
----
-
-TODO: Correct the contact small icons size and color (svg has been changed)
-TODO: Correct the marketplace (menu item) icon size and color (svg has been changed)

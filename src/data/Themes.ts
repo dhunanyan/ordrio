@@ -68,7 +68,7 @@ export const ThemesContent = {
     color: Colors.YELLOW,
     cards: [
       {
-        icon: "design",
+        icon: "star",
         title: "Eye-Catching Design",
         description:
           "Our themes are crafted by Professional designers to ensure your store looks stunning.",

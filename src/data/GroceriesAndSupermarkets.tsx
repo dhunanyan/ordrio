@@ -47,7 +47,7 @@ export const GroceriesAndSupermarketsContent = {
           "Get your online store running quickly, even if you're not tech savvy.",
       },
       {
-        icon: "window-check",
+        icon: "check-window",
         title: "Easy to Manage",
         description: "Update your inventory, prices, and promotions with ease.",
       },
@@ -134,7 +134,7 @@ export const GroceriesAndSupermarketsContent = {
           "Give your customers a dedicated app for easy ordering and a seamless shopping experience.",
       },
       {
-        icon: "paper-check",
+        icon: "check-paper",
         title: "Easy Inventory Management",
         description: "Keep your online shelves stocked and organized.",
       },

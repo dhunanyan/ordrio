@@ -41,13 +41,13 @@ export const CafesContent = {
           "Our platform is designed by coffee enthusiasts who understand the nuances of the industry and the unique needs of coffee businesses.",
       },
       {
-        icon: "cursor",
+        icon: "cursor-pointer",
         title: "Ease of Use",
         description:
           "Our intuitive interface makes it simple to set up and manage your online coffee shop, even if you have no technical experience.",
       },
       {
-        icon: "graph",
+        icon: "graph-loupe",
         title: "Flexible & Scalable",
         description:
           "Escafe can adapt to your business size and needs, whether you are a small independent cafe or a multi-location roastery.",

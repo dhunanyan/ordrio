@@ -40,13 +40,13 @@ export const PetStoresContent = {
           "We understand the passion and care that goes into choosing the best products for our furry friends. Our theme reflects this with a playful, engaging design.",
       },
       {
-        icon: "cursor",
+        icon: "cursor-pointer",
         title: "Ease of Use",
         description:
           "Our intuitive interface makes it simple to set up and manage your online store, even if you have no technical experience.",
       },
       {
-        icon: "graph",
+        icon: "graph-loupe",
         title: "SEO-Friendly",
         description:
           "Our theme is optimized for search engines, helping you attract more organic traffic.",

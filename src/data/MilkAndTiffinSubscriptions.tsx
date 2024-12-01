@@ -42,7 +42,7 @@ export const MilkAndTiffinSubscriptionsContent = {
           "Our platform is specifically designed for milk and tiffin subscription services, catering to your unique needs.",
       },
       {
-        icon: "cursor",
+        icon: "cursor-pointer",
         title: "Easy to Use",
         description:
           "Our intuitive interface makes it simple to set up and manage your subscriptions, even if you are not tech-savvy.",
@@ -108,7 +108,7 @@ export const MilkAndTiffinSubscriptionsContent = {
           "Send automated reminders, notifications, and promotional offers to keep your customers engaged.",
       },
       {
-        icon: "paper-check",
+        icon: "check-paper",
         title: "Inventory Management",
         description:
           "Track your stock levels, manage product variants, and ensure you always have enough to meet demand.",

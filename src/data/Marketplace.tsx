@@ -41,7 +41,7 @@ export const MarketplaceContent = {
           "Trusted by successful marketplaces across diverse industries.",
       },
       {
-        icon: "graph",
+        icon: "graph-loupe",
         title: "Focus on Your Success",
         description:
           "We are committed to your growth, providing ongoing support and resources.",
@@ -114,13 +114,13 @@ export const MarketplaceContent = {
     iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "window-check",
+        icon: "check-window",
         title: "Intuitive Vendor Dashboard",
         description:
           "Empower sellers to effortlessly manage their listings, orders, and financials.",
       },
       {
-        icon: "paper-check",
+        icon: "check-paper",
         title: "Robust Catalog Management",
         description:
           "Organize, categorize, and highlight products with ease, regardless of complexity or scale.",

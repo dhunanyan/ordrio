@@ -41,7 +41,7 @@ export const ServicesContent = {
           "We understand the unique needs of service-based businesses, and our platform is built to address them.",
       },
       {
-        icon: "cursor",
+        icon: "cursor-pointer",
         title: "Ease of Use",
         description:
           "Even if you are not tech-savvy, you will find our interface simple and intuitive.",

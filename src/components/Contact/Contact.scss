@@ -16,7 +16,8 @@
   &__more-help {
     @include lightShadow;
     display: grid;
-    grid-gap: 30px;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
     grid-template-areas:
       "a"
       "c"
@@ -27,14 +28,16 @@
 
     @media screen and (min-width: 768px) {
       padding: 40px 24px;
+      grid-row-gap: 30px;
       width: calc(100% - 2 * 24px);
     }
 
     @media screen and (min-width: 950px) {
-      grid-gap: 60px;
+      grid-column-gap: 60px;
       grid-template-areas:
         "a c"
         "b c";
+      grid-template-rows: 1fr 2.5fr;
     }
 
     &--white {
@@ -85,7 +88,7 @@
       flex-wrap: wrap;
 
       @media screen and (min-width: 768px) {
-        gap: 35px;
+        gap: 10px;
       }
     }
 
@@ -153,6 +156,8 @@
           align-items: center;
           display: flex;
           justify-content: center;
+          height: 18px;
+          width: 18px;
 
           path {
             fill: $blue-color;

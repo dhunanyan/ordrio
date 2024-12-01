@@ -21,13 +21,14 @@ import clothes from "../../public/svg/i_clothes.svg";
 import coupons from "../../public/svg/i_coupons.svg";
 import collaborative from "../../public/svg/i_collaborative.svg";
 import customization from "../../public/svg/i_customization.svg";
-import cursor from "../../public/svg/i_cursor.svg";
+import cursorPointer from "../../public/svg/i_cursor-pointer.svg";
 import customerCentric from "../../public/svg/i_customer-centric.svg";
-import design from "../../public/svg/i_design.svg";
+import star from "../../public/svg/i_star.svg";
 import faq from "../../public/svg/i_faq.svg";
 import googlePlay from "../../public/svg/i_google-play.svg";
 import googlePlayWhite from "../../public/svg/i_google-play-white.svg";
 import graph from "../../public/svg/i_graph.svg";
+import graphLoupe from "../../public/svg/i_graph-loupe.svg";
 import groceriesAndSupermarkets from "../../public/svg/i_groceries-and-supermarkets.svg";
 import howToGuide from "../../public/svg/i_how-to-guide.svg";
 import info from "../../public/svg/i_info.svg";
@@ -42,7 +43,7 @@ import mobile from "../../public/svg/i_mobile.svg";
 import money from "../../public/svg/i_money.svg";
 import monitor from "../../public/svg/i_monitor.svg";
 import paper from "../../public/svg/i_paper.svg";
-import paperCheck from "../../public/svg/i_paper-check.svg";
+import checkPaper from "../../public/svg/i_check-paper.svg";
 import petStores from "../../public/svg/i_pet-stores.svg";
 import phone from "../../public/svg/i_phone.svg";
 import restaurants from "../../public/svg/i_restaurants.svg";
@@ -60,7 +61,7 @@ import table from "../../public/svg/i_table.svg";
 import threeDots from "../../public/svg/i_three-dots.svg";
 import videos from "../../public/svg/i_videos.svg";
 import video from "../../public/svg/i_video.svg";
-import windowCheck from "../../public/svg/i_window-check.svg";
+import checkWindow from "../../public/svg/i_check-window.svg";
 import wallet from "../../public/svg/i_wallet.svg";
 import facebook from "../../public/svg/i_facebook.svg";
 import instagram from "../../public/svg/i_instagram.svg";
@@ -80,7 +81,7 @@ import gift from "../../public/svg/i_gift.svg";
 import burger from "../../public/svg/i_burger.svg";
 import times from "../../public/svg/i_times.svg";
 import four0four from "../../public/svg/i_404.svg";
-import mouse from "../../public/svg/i_mouse.svg";
+import cursorDefault from "../../public/svg/i_cursor-default.svg";
 import timer from "../../public/svg/i_timer.svg";
 import bell from "../../public/svg/i_bell.svg";
 import thumbUp from "../../public/svg/i_thumb-up.svg";
@@ -106,10 +107,11 @@ export const Icons = {
   coupons,
   customization: customization,
   clothes: clothes,
-  design: design,
+  star: star,
   faq,
   "google-play": googlePlay,
   "google-play-white": googlePlayWhite,
+  "graph-loupe": graphLoupe,
   graph: graph,
   "groceries-and-supermarkets": groceriesAndSupermarkets,
   "how-to-guide": howToGuide,
@@ -120,7 +122,7 @@ export const Icons = {
   "milk-and-tiffin-subscriptions": milkAndTiffinSubscriptions,
   mobile: mobile,
   paper: paper,
-  "paper-check": paperCheck,
+  "check-paper": checkPaper,
   "pet-stores": petStores,
   restaurants,
   sale,
@@ -131,7 +133,7 @@ export const Icons = {
   table: table,
   videos,
   megaphone,
-  cursor: cursor,
+  "cursor-pointer": cursorPointer,
   money: money,
   squares: squares,
   ticket: ticket,
@@ -152,7 +154,7 @@ export const Icons = {
   wallet: wallet,
   "check-medal": checkMedal,
   time: time,
-  "window-check": windowCheck,
+  "check-window": checkWindow,
   facebook: facebook,
   instagram: instagram,
   youtube: youtube,
@@ -167,7 +169,7 @@ export const Icons = {
   "plus-card": plusCard,
   handshake: handshake,
   gift: gift,
-  mouse: mouse,
+  "cursor-default": cursorDefault,
   timer: timer,
   bell: bell,
   "thumb-up": thumbUp,

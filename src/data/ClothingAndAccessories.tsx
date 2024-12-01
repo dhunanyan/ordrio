@@ -41,13 +41,13 @@ export const ClothingAndAccessoriesContent = {
           "Aura's aesthetic is specifically tailored to the clothing and accessories industry, creating a visually appealing and on-trend shopping experience.",
       },
       {
-        icon: "cursor",
+        icon: "cursor-pointer",
         title: "Ease of Use",
         description:
           "Our intuitive platform makes it simple to set up and manage your online store, even if you have no technical experience.",
       },
       {
-        icon: "graph",
+        icon: "graph-loupe",
         title: "SEO-Optimized",
         description:
           "Boost your store's visibility in search engine results to attract more organic traffic.",
@@ -95,7 +95,7 @@ export const ClothingAndAccessoriesContent = {
     iconColor: Colors.BLUE,
     cards: [
       {
-        icon: "paper-check",
+        icon: "check-paper",
         title: "Product Filtering & Sorting",
         description:
           "Help shoppers find exactly what they are looking for with easy-to-use filters and sorting options.",

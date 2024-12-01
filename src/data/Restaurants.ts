@@ -42,7 +42,7 @@ export const RestaurantsContent = {
           "Our platform is designed by restaurant professionals who understand your unique challenges.",
       },
       {
-        icon: "cursor",
+        icon: "cursor-pointer",
         title: "Easy to Use",
         description:
           "Our intuitive interface makes it simple to set up and manage your online presence, even if you are not tech-savvy.",
@@ -135,7 +135,7 @@ export const RestaurantsContent = {
         description: "Manage reservations seamlessly and avoid overbooking.",
       },
       {
-        icon: "paper-check",
+        icon: "check-paper",
         title: "Menu Management",
         description:
           "Easily update your menu with photos, descriptions, and pricing.",

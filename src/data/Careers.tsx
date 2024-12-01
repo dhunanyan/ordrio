@@ -85,7 +85,7 @@ export const CareersContent = {
           "We believe in teamwork, open communication, and a supportive environment where everyone's ideas are valued.",
       },
       {
-        icon: "graph",
+        icon: "graph-loupe",
         title: "Growth Opportunitie",
         description:
           "We invest in our employees' development, providing opportunities for learning, mentorship, and career advancement.",
