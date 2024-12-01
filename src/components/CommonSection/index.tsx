@@ -29,6 +29,7 @@ export type CommonSectionPropsType = {
   alignContentLeft?: boolean;
   switchOrder?: boolean;
   verticalAlignTop?: boolean;
+  biggerGap?: boolean;
 };
 
 const getImageInitialY = (separatorType?: Separator) => {
@@ -68,6 +69,7 @@ export const CommonSection = ({
   alignContentLeft = false,
   switchOrder = false,
   verticalAlignTop = false,
+  biggerGap = false,
 }: CommonSectionPropsType) => (
   <section
     className={
@@ -88,7 +90,8 @@ export const CommonSection = ({
       className={
         "common-section__container" +
         (displayInRow ? " common-section__container--row" : "") +
-        (verticalAlignTop ? " common-section__container--align-top" : "")
+        (verticalAlignTop ? " common-section__container--align-top" : "") +
+        (biggerGap ? " common-section__container--bigger-gap" : "")
       }
     >
       <div

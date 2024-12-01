@@ -9,7 +9,7 @@ export const ThemesContent = {
     isFirstSection: true,
   },
   commonSectionWithBigCards: {
-    title: "Find Your Perfect Fit",
+    subtitle: "Find Your Perfect Fit",
     description:
       "Every brand has a unique story to tell. Ordrio's curated collection of  themes helps you express your brand's personality and captivate your customers. your brand, your products, and your customers.",
     backgroundColor: Colors.WHITE,
@@ -60,7 +60,7 @@ export const ThemesContent = {
   },
   iconCardsContent: {
     backgroundImage: BackgroundImage.BLUE_SPIRAL,
-    title: "Why Choose Ordrio?",
+    subtitle: "Why Choose Ordrio?",
     backgroundColor: Colors.BLUE,
   },
   iconCards: {

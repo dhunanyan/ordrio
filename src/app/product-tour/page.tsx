@@ -27,11 +27,13 @@ export default function Page() {
       </CommonSection>
 
       <CommonSection
+        biggerGap
         {...(ProductTourContent.listSection as CommonSectionPropsType)}
       >
         {renderAnimatedCard(AnimatedCard.EASY_MANAGEMENT)}
       </CommonSection>
       <CommonSection
+        biggerGap
         {...(ProductTourContent.listSectionReversed as CommonSectionPropsType)}
       >
         {renderAnimatedCard(AnimatedCard.SMART_CONTROL)}

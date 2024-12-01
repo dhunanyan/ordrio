@@ -23,7 +23,7 @@ export const RestaurantsContent = {
     ],
   },
   commonSectionWithRowAndBigCards: {
-    title: "Why Restobite?",
+    subtitle: "Why Restobite?",
     description:
       "Restobite is more than just online ordering. It is a comprehensive solution that empowers your restaurant to",
     backgroundColor: Colors.WHITE,
@@ -116,7 +116,7 @@ export const RestaurantsContent = {
   },
   iconCardsContent: {
     backgroundImage: BackgroundImage.GREY_SPIRAL,
-    title: "Key Features for a Thriving Restaurant",
+    subtitle: "Key Features for a Thriving Restaurant",
     backgroundColor: Colors.GREY,
   },
   iconCards: {

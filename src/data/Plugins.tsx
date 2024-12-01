@@ -116,7 +116,7 @@ export const PluginsContent = {
   },
   iconCardsContent: {
     backgroundImage: BackgroundImage.GREY_SPIRAL,
-    title: "Unlock New Possibilities",
+    subtitle: "Unlock New Possibilities",
     description:
       "Whether you want to boost sales, streamline operations, or simply add more functionality, we have got the tools you need to succeed.",
     backgroundColor: Colors.GREY,
