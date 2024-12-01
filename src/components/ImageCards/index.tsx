@@ -13,7 +13,10 @@ export type ImageCardsPropsType = {
 
 export const ImageCards = ({ cards }: ImageCardsPropsType) => (
   <ul
-    className={"image-cards" + (cards.length > 4 ? " image-cards--wrap" : "")}
+    className={
+      "image-cards" +
+      (cards.length > 4 ? " image-cards--big" : " image-cards--standard")
+    }
   >
     {cards.map((card, i) => (
       <motion.li
