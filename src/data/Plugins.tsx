@@ -164,7 +164,8 @@ export const PluginsContent = {
     backgroundImage: BackgroundImage.BLUE_SPIRAL,
     title:
       "Discover the power of Ordrio add-ons and transform your online store into a thriving business.",
-    links: [{ text: "Setup Your Free Account", href: "#" }], //@LINKS: requested - to be added
+    links: [{ text: "Request a Personalized Demo", href: "#" }], //@LINKS: requested - to be added
     alignContentLeft: false,
+    tintColor: Colors.YELLOW,
   },
 };

@@ -30,9 +30,17 @@
     background-color: $grey-color;
     border: 18.5px solid $grey-color;
     border-radius: 24px;
-    height: 360px;
+    height: 200px;
     margin: 0 15px;
     overflow: hidden;
+
+    @media screen and (min-width: 425px) {
+      height: 250px;
+    }
+
+    @media screen and (min-width: 550px) {
+      height: 360px;
+    }
 
     img {
       height: 100%;

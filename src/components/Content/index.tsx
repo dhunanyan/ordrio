@@ -102,7 +102,7 @@ export const Content = ({
         </Link>
       </motion.div>
     )}
-    <div className="content__buttons">
+    <div className={`content__buttons content__buttons--${tintColor}`}>
       {buttons &&
         buttons.map(({ text, href, target, onClick, disabled }, i) =>
           href ? (

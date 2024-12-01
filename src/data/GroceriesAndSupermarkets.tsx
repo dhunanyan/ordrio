@@ -114,7 +114,7 @@ export const GroceriesAndSupermarketsContent = {
   },
   iconCardsContent: {
     backgroundImage: BackgroundImage.GREY_SPIRAL,
-    title: "Features That Make Your Grocery Store Shine Online",
+    subtitle: "Features That Make Your Grocery Store Shine Online",
     backgroundColor: Colors.GREY,
   },
   iconCards: {
