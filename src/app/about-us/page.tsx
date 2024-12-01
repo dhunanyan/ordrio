@@ -20,9 +20,11 @@ export default function Page() {
         <Slideshow {...(AboutUsContent.heroComponent as SlideshowPropsType)} />
       </CommonSection>
       <CommonSection
+        biggerGap
         {...(AboutUsContent.contentWithImageSection1 as CommonSectionPropsType)}
       />
       <CommonSection
+        biggerGap
         {...(AboutUsContent.contentWithImageSection2 as CommonSectionPropsType)}
       />
       <CommonSection

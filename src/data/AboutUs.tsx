@@ -38,7 +38,7 @@ export const AboutUsContent = {
   },
   iconCardsContent: {
     backgroundImage: BackgroundImage.GREY_SPIRAL,
-    title: "Our Values",
+    subtitle: "Our Values",
     description:
       "Whether you want to boost sales, streamline operations, or simply add more functionality, we have got the tools you need to succeed.",
     backgroundColor: Colors.GREY,
