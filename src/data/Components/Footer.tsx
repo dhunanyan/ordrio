@@ -143,22 +143,27 @@ export const FooterContent: FooterContentType = {
       type: Size.SMALL,
       links: [
         {
-          icon: "facebook-yellow",
+          icon: "facebook",
           href: "https://www.facebook.com/Ordrio",
           target: "_blank",
         },
         {
-          icon: "instagram-yellow",
+          icon: "instagram",
           href: "https://www.instagram.com/ordrio_com",
           target: "_blank",
         },
         {
-          icon: "youtube-yellow",
+          icon: "twitter",
+          href: "https://x.com/Ordrio_tech",
+          target: "_blank",
+        },
+        {
+          icon: "youtube",
           href: "https://www.youtube.com/@Ordrio",
           target: "_blank",
         },
         {
-          icon: "linkedin-yellow",
+          icon: "linkedin",
           href: "https://www.linkedin.com/company/ordrio",
           target: "_blank",
         },

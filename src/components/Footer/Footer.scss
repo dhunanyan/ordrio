@@ -191,6 +191,40 @@
       gap: 32px;
       margin: 24px 0 0 0;
     }
+
+    &--social {
+      a {
+        @include zeroShadow;
+        align-items: center;
+        background-color: $yellow-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        height: 24px;
+        padding: 10px;
+        transition: all 150ms ease-in-out;
+        width: 24px;
+
+        svg {
+          width: 100%;
+
+          path {
+            fill: $black-color-alt;
+            transition: all 150ms ease-in-out;
+          }
+        }
+
+        &:hover {
+          @include thinnerShadow;
+          background-color: $black-color;
+          transform: scale(1.2);
+
+          svg path {
+            fill: $yellow-color;
+          }
+        }
+      }
+    }
   }
 
   &__copyright {

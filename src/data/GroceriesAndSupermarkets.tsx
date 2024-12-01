@@ -33,20 +33,21 @@ export const GroceriesAndSupermarketsContent = {
       card: AnimatedCard.GROCBAY,
       props: { variant: ThemeCardVariant.MOBILE },
     },
+    iconColor: Colors.YELLOW,
     rowCards: [
       {
-        icon: "marketplace-yellow",
+        icon: "marketplace",
         title: "Your Store, Your Way",
         description: "Showcase your unique brand, not someone else's.",
       },
       {
-        icon: "squares-yellow",
+        icon: "squares",
         title: "Simple to Set Up",
         description:
           "Get your online store running quickly, even if you're not tech savvy.",
       },
       {
-        icon: "window-check-yellow",
+        icon: "window-check",
         title: "Easy to Manage",
         description: "Update your inventory, prices, and promotions with ease.",
       },

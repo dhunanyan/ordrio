@@ -32,21 +32,22 @@ export const ServicesContent = {
       card: AnimatedCard.SERVICES,
       props: { variant: ThemeCardVariant.MOBILE },
     },
+    iconColor: Colors.YELLOW,
     rowCards: [
       {
-        icon: "customization-yellow",
+        icon: "customization",
         title: "Designed for Service Providers",
         description:
           "We understand the unique needs of service-based businesses, and our platform is built to address them.",
       },
       {
-        icon: "cursor-yellow",
+        icon: "cursor",
         title: "Ease of Use",
         description:
           "Even if you are not tech-savvy, you will find our interface simple and intuitive.",
       },
       {
-        icon: "money-yellow",
+        icon: "money",
         title: "Affordable",
         description:
           "Our pricing plans are flexible and scalable to fit your budget.",

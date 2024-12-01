@@ -32,27 +32,28 @@ export const MarketplaceContent = {
       card: AnimatedCard.MARKETPLACE,
       props: { variant: ThemeCardVariant.MOBILE },
     },
+    iconColor: Colors.YELLOW,
     rowCards: [
       {
-        icon: "time-yellow",
+        icon: "time",
         title: "Proven Track Record",
         description:
           "Trusted by successful marketplaces across diverse industries.",
       },
       {
-        icon: "graph-yellow",
+        icon: "graph",
         title: "Focus on Your Success",
         description:
           "We are committed to your growth, providing ongoing support and resources.",
       },
       {
-        icon: "bulb-yellow",
+        icon: "bulb",
         title: "Cutting-Edge Technology",
         description:
           "Stay ahead of the curve with our innovative features and continuous updates.",
       },
       {
-        icon: "money-yellow",
+        icon: "money",
         title: "Transparent Pricing",
         description:
           "Choose a plan that fits your budget and needs, with no hidden fees or surprises.",

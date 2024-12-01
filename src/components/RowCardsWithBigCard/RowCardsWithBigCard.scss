@@ -75,8 +75,37 @@
     display: flex;
     justify-content: center;
     margin: 0 16px 0 0;
-    height: 50px;
-    width: 50px;
+    min-height: 30px;
+    max-width: 30px;
+    max-height: 30px;
+    min-width: 30px;
+    padding: 17px;
+
+    svg {
+      height: 100%;
+      width: 100%;
+    }
+
+    &--blue,
+    &--yellow {
+      border-radius: 50%;
+    }
+
+    &--blue {
+      background-color: $blue-color;
+
+      path {
+        fill: $white-color;
+      }
+    }
+
+    &--yellow {
+      background-color: $yellow-color;
+
+      path {
+        fill: $black-color-alt;
+      }
+    }
   }
 
   &__big-cards {

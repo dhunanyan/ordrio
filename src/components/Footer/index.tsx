@@ -59,8 +59,11 @@ export const Footer = () => {
             </div>
           ))}
           <aside className="footer__aside">
-            {FooterContent.aside.map(({ title, links, type }, i) => (
-              <div key={i} className="footer__aside-column">
+            {FooterContent.aside.map(({ title, links, type, id }, i) => (
+              <div
+                key={i}
+                className={`footer__aside-column footer__aside-column--${id}`}
+              >
                 <h3 className="footer__aside-column-title">{title}</h3>
                 <ul className="footer__aside-list">
                   {links.map(({ icon, href, target }, j) => (

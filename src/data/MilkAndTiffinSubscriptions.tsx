@@ -33,21 +33,22 @@ export const MilkAndTiffinSubscriptionsContent = {
       card: AnimatedCard.GROCBAY,
       props: { variant: ThemeCardVariant.MOBILE },
     },
+    iconColor: Colors.YELLOW,
     rowCards: [
       {
-        icon: "marketplace-yellow",
+        icon: "marketplace",
         title: "Built for Your Business",
         description:
           "Our platform is specifically designed for milk and tiffin subscription services, catering to your unique needs.",
       },
       {
-        icon: "cursor-yellow",
+        icon: "cursor",
         title: "Easy to Use",
         description:
           "Our intuitive interface makes it simple to set up and manage your subscriptions, even if you are not tech-savvy.",
       },
       {
-        icon: "money-yellow",
+        icon: "money",
         title: "Affordable & Flexible",
         description:
           "Choose the plan that fits your business size and budget, and easily upgrade as you grow.",

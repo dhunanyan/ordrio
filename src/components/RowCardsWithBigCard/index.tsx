@@ -3,7 +3,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 
-import { AnimatedCard, Icons } from "@config";
+import { AnimatedCard, Colors, Icons } from "@config";
 import { type ContentType, renderAnimatedCard } from "@utils";
 
 import "./RowCardsWithBigCard.scss";
@@ -13,6 +13,7 @@ export type RowCardsWithBigCardPropsType = {
     card: AnimatedCard;
     props: ContentType;
   };
+  iconColor?: Colors;
   rowCards: {
     icon: string;
     title: string;
@@ -26,13 +27,14 @@ const ANIMATION_DELAY_TEXT = ANIMATION_DELAY_ICON + 0.05;
 export const RowCardsWithBigCard = ({
   bigCard,
   rowCards,
+  iconColor = Colors.TRANSPARENT,
 }: RowCardsWithBigCardPropsType) => (
   <div className="row-cards-section-with-big-card">
     <ul className="row-cards-section-with-big-card__list">
       {rowCards.map(({ title, description, icon }, i) => (
         <li key={i} className="row-cards-section-with-big-card__item">
           <motion.div
-            className="row-cards-section-with-big-card__icon"
+            className={`row-cards-section-with-big-card__icon row-cards-section-with-big-card__icon--${iconColor}`}
             dangerouslySetInnerHTML={{ __html: Icons[icon] }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

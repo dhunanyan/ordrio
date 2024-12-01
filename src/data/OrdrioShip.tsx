@@ -24,27 +24,28 @@ export const OrdrioShipContent = {
     bigCard: {
       card: AnimatedCard.TECHNOLOGY_PARTNER,
     },
+    iconColor: Colors.YELLOW,
     rowCards: [
       {
-        icon: "plus-card-yellow",
+        icon: "plus-card",
         title: "Seamless Integration",
         description:
           "Ordrio Ship is built directly into your Ordrio store, eliminating the need for complex integrations or additional software.",
       },
       {
-        icon: "money-yellow",
+        icon: "money",
         title: "Cost-Effective",
         description:
           "Save money on shipping with our discounted rates and automated processes that reduce manual labor.",
       },
       {
-        icon: "user-yellow",
+        icon: "user",
         title: "Customer-Centric",
         description:
           "Offer multiple shipping options, real-time tracking, and easy returns to create a positive customer experience.",
       },
       {
-        icon: "graph-yellow",
+        icon: "graph",
         title: "Scalable",
         description:
           "As your business grows, Ordrio Ship can easily scale to meet your increasing shipping needs.",

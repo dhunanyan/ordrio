@@ -12,6 +12,8 @@ TODO: Ongoing Updates Animated Card -> Synchronize animations of asset cards (3 
 
 TODO: AnimatedCards -> handle overlapping content
 
+TODO: Fix Positions bug in /careers
+
 - - - - - - - - TECH DEPTH - - - - - - - -
 
 TODO: Refactor: Get rid of blue and yellow icons instead use SASS to change colors

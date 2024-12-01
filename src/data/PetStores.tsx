@@ -31,21 +31,22 @@ export const PetStoresContent = {
       card: AnimatedCard.PET_STORES,
       props: { variant: ThemeCardVariant.MOBILE },
     },
+    iconColor: Colors.YELLOW,
     rowCards: [
       {
-        icon: "customization-yellow",
+        icon: "customization",
         title: "Designed for Pet Lovers",
         description:
           "We understand the passion and care that goes into choosing the best products for our furry friends. Our theme reflects this with a playful, engaging design.",
       },
       {
-        icon: "cursor-yellow",
+        icon: "cursor",
         title: "Ease of Use",
         description:
           "Our intuitive interface makes it simple to set up and manage your online store, even if you have no technical experience.",
       },
       {
-        icon: "graph-yellow",
+        icon: "graph",
         title: "SEO-Friendly",
         description:
           "Our theme is optimized for search engines, helping you attract more organic traffic.",

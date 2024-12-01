@@ -64,27 +64,28 @@ export const CareersContent = {
     color: Colors.GREY,
   },
   iconCards: {
+    iconColor: Colors.YELLOW,
     cards: [
       {
-        icon: "rocket-yellow",
+        icon: "rocket",
         title: "Make an Impact",
         description:
           "Your work will directly influence the success of thousands of online businesses worldwide.",
       },
       {
-        icon: "bulb-yellow",
+        icon: "bulb",
         title: "Embrace Innovation",
         description:
           "We are constantly pushing boundaries and exploring new technologies to stay ahead of the curve.",
       },
       {
-        icon: "collaborative-yellow",
+        icon: "collaborative",
         title: "Collaborative Culture",
         description:
           "We believe in teamwork, open communication, and a supportive environment where everyone's ideas are valued.",
       },
       {
-        icon: "graph-yellow",
+        icon: "graph",
         title: "Growth Opportunitie",
         description:
           "We invest in our employees' development, providing opportunities for learning, mentorship, and career advancement.",

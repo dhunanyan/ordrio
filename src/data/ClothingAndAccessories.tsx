@@ -32,21 +32,22 @@ export const ClothingAndAccessoriesContent = {
       card: AnimatedCard.AURA,
       props: { variant: ThemeCardVariant.MOBILE },
     },
+    iconColor: Colors.YELLOW,
     rowCards: [
       {
-        icon: "clothes-yellow",
+        icon: "clothes",
         title: "Fashion-Forward Design",
         description:
           "Aura's aesthetic is specifically tailored to the clothing and accessories industry, creating a visually appealing and on-trend shopping experience.",
       },
       {
-        icon: "cursor-yellow",
+        icon: "cursor",
         title: "Ease of Use",
         description:
           "Our intuitive platform makes it simple to set up and manage your online store, even if you have no technical experience.",
       },
       {
-        icon: "graph-yellow",
+        icon: "graph",
         title: "SEO-Optimized",
         description:
           "Boost your store's visibility in search engine results to attract more organic traffic.",

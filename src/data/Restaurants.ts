@@ -33,21 +33,22 @@ export const RestaurantsContent = {
       card: AnimatedCard.RESTOBITE,
       props: { variant: ThemeCardVariant.MOBILE },
     },
+    iconColor: Colors.YELLOW,
     rowCards: [
       {
-        icon: "marketplace-yellow",
+        icon: "marketplace",
         title: "Built for Restaurants",
         description:
           "Our platform is designed by restaurant professionals who understand your unique challenges.",
       },
       {
-        icon: "cursor-yellow",
+        icon: "cursor",
         title: "Easy to Use",
         description:
           "Our intuitive interface makes it simple to set up and manage your online presence, even if you are not tech-savvy.",
       },
       {
-        icon: "money-yellow",
+        icon: "money",
         title: "Affordable & Flexible",
         description:
           "Choose the plan that fits your restaurant's size and budget.",
