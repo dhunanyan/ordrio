@@ -9,11 +9,32 @@
   }
 
   &--2 {
-    columns: 2;
+    bottom: calc(-100% + 100px);
+    display: grid;
+    grid-gap: 9px;
+    grid-template-columns: 196px 196px 196px;
+    left: -20px;
     max-width: 380px;
     position: absolute;
-    top: 0px;
-    right: -110px;
+
+    @media screen and (min-width: 425px) {
+      bottom: calc(-100% + 400px);
+      grid-template-columns: 196px 196px 196px 196px 196px;
+    }
+
+    @media screen and (min-width: 768px) {
+      bottom: calc(-100% - 120px);
+      left: -30px;
+      grid-template-columns: 196px 196px 196px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      bottom: auto;
+      grid-template-columns: 196px 196px;
+      left: auto;
+      right: -110px;
+      top: 0px;
+    }
 
     img {
       @include lightShadow;
@@ -26,5 +47,23 @@
 }
 
 @mixin addOnsCard {
-  min-width: 60%;
+  min-width: 50%;
+
+  @media screen and (min-width: 1024px) {
+    min-width: 60%;
+  }
+
+  .animated-card {
+    height: 587px;
+
+    @media screen and (min-width: 768px) {
+      height: 500px;
+    }
+
+    &__content {
+      > * {
+        max-width: 270px;
+      }
+    }
+  }
 }

@@ -94,98 +94,100 @@ export const CommonSection = ({
         (biggerGap ? " common-section__container--bigger-gap" : "")
       }
     >
-      <div
-        className={
-          "common-section__content" +
-          (alignContentLeft ? " common-section__content--align-left" : "") +
-          (switchOrder ? " common-section__content--switch-order" : "")
-        }
-      >
-        {icon && (
-          <motion.div
-            className={`common-section__icon common-section__icon--${linkColor}`}
-            dangerouslySetInnerHTML={{ __html: Icons[icon] }}
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: ANIMATION_DELAY_ICON }}
-          />
-        )}
-        {title && (
-          <motion.h1
-            className="common-section__title"
-            dangerouslySetInnerHTML={{ __html: title }}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
-            viewport={{ once: true }}
-          />
-        )}
-        {subtitle && (
-          <motion.h2
-            className="common-section__subtitle"
-            dangerouslySetInnerHTML={{ __html: subtitle }}
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
-            viewport={{ once: true }}
-          />
-        )}
-        {description && (
-          <motion.p
-            className="common-section__description"
-            dangerouslySetInnerHTML={{ __html: description }}
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.2, delay: ANIMATION_DELAY_TEXT }}
-            viewport={{ once: true }}
-          />
-        )}
-        {list && (
-          <ul className="common-section__list">
-            {list.map((item, i) => (
-              <li key={i} className="common-section__item">
-                <p className="common-section__item-text">
-                  <motion.span
-                    dangerouslySetInnerHTML={{ __html: Icons[listIcon] }}
-                    initial={{ opacity: 0, y: -20 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    transition={{
-                      duration: 0.3,
-                      delay: ANIMATION_DELAY_LIST + 0.05 * i,
-                    }}
-                  />
-                  <motion.span
-                    initial={{ opacity: 0, x: 20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{
-                      duration: 0.3,
-                      delay: ANIMATION_DELAY_LIST + 0.1 * i + 0.0025,
-                    }}
-                    viewport={{ once: true }}
-                  >
-                    {item}
-                  </motion.span>
-                </p>
-              </li>
-            ))}
-          </ul>
-        )}
-        {link && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: ANIMATION_DELAY_LINK }}
-          >
-            <Link
-              href={link.href}
-              target={link.target}
-              className={`common-section__button common-section__button--${linkColor}`}
+      {(icon || title || subtitle || description || list || link) && (
+        <div
+          className={
+            "common-section__content" +
+            (alignContentLeft ? " common-section__content--align-left" : "") +
+            (switchOrder ? " common-section__content--switch-order" : "")
+          }
+        >
+          {icon && (
+            <motion.div
+              className={`common-section__icon common-section__icon--${linkColor}`}
+              dangerouslySetInnerHTML={{ __html: Icons[icon] }}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: ANIMATION_DELAY_ICON }}
+            />
+          )}
+          {title && (
+            <motion.h1
+              className="common-section__title"
+              dangerouslySetInnerHTML={{ __html: title }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
+              viewport={{ once: true }}
+            />
+          )}
+          {subtitle && (
+            <motion.h2
+              className="common-section__subtitle"
+              dangerouslySetInnerHTML={{ __html: subtitle }}
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
+              viewport={{ once: true }}
+            />
+          )}
+          {description && (
+            <motion.p
+              className="common-section__description"
+              dangerouslySetInnerHTML={{ __html: description }}
+              initial={{ opacity: 0, y: 10 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.2, delay: ANIMATION_DELAY_TEXT }}
+              viewport={{ once: true }}
+            />
+          )}
+          {list && (
+            <ul className="common-section__list">
+              {list.map((item, i) => (
+                <li key={i} className="common-section__item">
+                  <p className="common-section__item-text">
+                    <motion.span
+                      dangerouslySetInnerHTML={{ __html: Icons[listIcon] }}
+                      initial={{ opacity: 0, y: -20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{
+                        duration: 0.3,
+                        delay: ANIMATION_DELAY_LIST + 0.05 * i,
+                      }}
+                    />
+                    <motion.span
+                      initial={{ opacity: 0, x: 20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{
+                        duration: 0.3,
+                        delay: ANIMATION_DELAY_LIST + 0.1 * i + 0.0025,
+                      }}
+                      viewport={{ once: true }}
+                    >
+                      {item}
+                    </motion.span>
+                  </p>
+                </li>
+              ))}
+            </ul>
+          )}
+          {link && (
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: ANIMATION_DELAY_LINK }}
             >
-              {link.text}
-            </Link>
-          </motion.div>
-        )}
-      </div>
+              <Link
+                href={link.href}
+                target={link.target}
+                className={`common-section__button common-section__button--${linkColor}`}
+              >
+                {link.text}
+              </Link>
+            </motion.div>
+          )}
+        </div>
+      )}
       {children && <div className="common-section__component">{children}</div>}
       {imageURL && (
         <motion.div

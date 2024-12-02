@@ -88,7 +88,7 @@
   }
 
   &__content {
-    align-items: flex-start;
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -99,6 +99,7 @@
     z-index: 20;
 
     @media screen and (min-width: 768px) {
+      align-items: flex-start;
       gap: 23px;
       height: calc(100% - 2 * 40px);
       padding: 40px;
@@ -108,11 +109,21 @@
 
   &__title {
     @include subtitleSpoofTrialBig;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &__description {
     @include descriptionInter;
     max-width: 350px;
+    text-align: center;
+
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
 
   &__link {
@@ -169,10 +180,6 @@
 
   &__add-ons {
     @include addOns;
-  }
-
-  &--add-ons {
-    @include addOnsCard;
   }
 
   &__relationship {
