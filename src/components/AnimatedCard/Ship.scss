@@ -4,8 +4,40 @@
 @mixin ship {
   &--1 {
     bottom: 0;
-    left: calc(50% - 422px / 2);
-    max-width: 422px;
+    left: calc(50% - 300px / 2);
+    max-width: 300px;
     transform-origin: center 195px;
+
+    @media screen and (min-width: 425px) {
+      left: calc(50% - 400px / 2);
+      max-width: 400px;
+    }
   }
 }
+
+@mixin shipCard {
+  .animated-card {
+    height: 400px;
+
+    p {
+      max-width: 100%;
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 500px;
+
+      p {
+        max-width: 350px;
+      }
+    }
+  }
+}
+
+// @media screen and (min-width: 425px) {
+// }
+
+// @media screen and (min-width: 768px) {
+// }
+
+// @media screen and (min-width: 1024px) {
+// }

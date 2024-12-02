@@ -9,23 +9,26 @@
   }
 
   &--2 {
-    bottom: calc(-100% + 100px);
+    bottom: -280px;
     display: grid;
     grid-gap: 9px;
-    grid-template-columns: 196px 196px 196px;
+    grid-template-columns: 128px 128px 128px;
+    grid-row: 78px;
     left: -20px;
     max-width: 380px;
     position: absolute;
 
     @media screen and (min-width: 425px) {
-      bottom: calc(-100% + 400px);
-      grid-template-columns: 196px 196px 196px 196px 196px;
+      left: 0;
+      bottom: -65px;
+      grid-template-columns: 128px 128px 128px 128px 128px;
     }
 
     @media screen and (min-width: 768px) {
       bottom: calc(-100% - 120px);
       left: -30px;
       grid-template-columns: 196px 196px 196px;
+      grid-row: 120px;
     }
 
     @media screen and (min-width: 1024px) {

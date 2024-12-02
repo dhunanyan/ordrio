@@ -2,6 +2,7 @@
 @import "../../styles/mixins";
 
 @import "../AnimatedCard/AddOns";
+@import "../AnimatedCard/Ship";
 
 .big-cards {
   display: flex;
@@ -19,6 +20,10 @@
     &.big-cards {
       &__add-ons {
         @include addOnsCard;
+      }
+
+      &__ship {
+        @include shipCard;
       }
     }
   }
