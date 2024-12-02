@@ -215,8 +215,8 @@ The production build can be accessed here: https://ordrio.com
 | **Font**          | **Location**                              |
 | ----------------- | ----------------------------------------- |
 | $font-spoof-trial | [SpoofTrial](./src/app/fonts/SpoofTrial/) |
-| $font-inter       | [SpoofTrial](./src/app/fonts/Inter/)      |
-| $font-manrope     | [SpoofTrial](./src/app/fonts/Manrope/)    |
+| $font-inter       | [Inter](./src/app/fonts/Inter/)           |
+| $font-manrope     | [Manrope](./src/app/fonts/Manrope/)       |
 
 ## License
 
