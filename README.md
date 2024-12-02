@@ -2,6 +2,8 @@
 
 Ordrio is a high-performance informational website built with **Next.js 14 App Router**, delivering a seamless and modern user experience. This repository includes the complete front-end codebase and configurations for setting up and deploying the application.
 
+https://github.com/user-attachments/assets/32571828-f036-4eed-be67-720ae33f5361
+
 # Table of Contents
 
 1. [Tech Stack](#🔧-tech-stack)
