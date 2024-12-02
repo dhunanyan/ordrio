@@ -1,6 +1,8 @@
 @import "../../styles/variables";
 @import "../../styles/mixins";
 
+@import "../AnimatedCard/AddOns";
+
 .big-cards {
   display: flex;
   flex-wrap: wrap;
@@ -13,6 +15,12 @@
 
   > li {
     width: 100%;
+
+    &.big-cards {
+      &__add-ons {
+        @include addOnsCard;
+      }
+    }
   }
 
   &--big {

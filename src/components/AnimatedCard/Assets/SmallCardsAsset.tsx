@@ -3,6 +3,10 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { RenderAssetPropsType } from "./renderAsset";
+import { IconCard } from "@components/IconCards";
+import { PluginsComponentContent } from "@data";
+
+import "./SmallCardsAsset.scss";
 
 export const SmallCardsAsset = ({
   index,
@@ -12,25 +16,22 @@ export const SmallCardsAsset = ({
   transition,
   viewport,
 }: Omit<RenderAssetPropsType, "url">) => (
-  <div
+  <ul
     className={`animated-card__assets animated-card__assets--${type} animated-card__${type}--${index + 1}`}
   >
-    {
-      // Can be up to 16
-      [...Array(10)].map((_, i) => (
-        <motion.img
-          key={i}
-          initial={initial}
-          whileInView={whileInView}
-          transition={{
-            ...transition,
-            delay: (transition?.delay || 0) + i * 0.05,
-          }}
-          viewport={viewport}
-          src={`/images/animated-cards/add-ons/image-${i + 1}.png`}
-          alt={`Component ${i + 1}`}
-        />
-      ))
-    }
-  </div>
+    {PluginsComponentContent.map((card, i) => (
+      <motion.li
+        key={i}
+        initial={initial}
+        whileInView={whileInView}
+        transition={{
+          ...transition,
+          delay: (transition?.delay || 0) + i * 0.05,
+        }}
+        viewport={viewport}
+      >
+        <IconCard index={i} {...card} />
+      </motion.li>
+    ))}
+  </ul>
 );

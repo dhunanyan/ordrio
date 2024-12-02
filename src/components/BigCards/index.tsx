@@ -26,6 +26,7 @@ export const BigCards = ({ cards }: BigCardsPropsType) => (
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.3, delay: 0.15 * i }}
         viewport={{ once: true }}
+        className={`big-cards__${bigCard.type} big-cards--big--${bigCard.type}`}
       >
         {renderAnimatedCard(bigCard.type, bigCard)}
       </motion.li>

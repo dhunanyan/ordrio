@@ -10,7 +10,8 @@
 @import "./Relationship";
 @import "./CustomerManagement";
 @import "./SmartControl";
-@import "./Conversion";
+@import "./Rocket";
+@import "./RocketV2";
 @import "./Secure";
 @import "./Support";
 @import "./Delivery";
@@ -170,6 +171,10 @@
     @include addOns;
   }
 
+  &--add-ons {
+    @include addOnsCard;
+  }
+
   &__relationship {
     @include relationship;
   }
@@ -182,8 +187,16 @@
     @include smartControl;
   }
 
-  &__conversion {
-    @include conversion;
+  &__rocket {
+    @include rocket;
+  }
+
+  &__rocket-v2 {
+    @include rocketV2;
+  }
+
+  &--rocket-v2 {
+    @include rocketV2Content;
   }
 
   &__support {

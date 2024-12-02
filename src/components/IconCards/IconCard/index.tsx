@@ -11,6 +11,7 @@ export type IconCardPropsType = {
   icon: string;
   title: string;
   description: string;
+  label?: string;
   link?: { text: string; href: string; icon: string; target?: string };
   alignLeft?: boolean;
   color?: Colors;
@@ -26,6 +27,7 @@ export const IconCard = ({
   icon,
   title,
   description,
+  label,
   link,
   alignLeft = false,
   color = Colors.WHITE,
@@ -37,6 +39,19 @@ export const IconCard = ({
       (alignLeft ? " icon-card--align-left" : "")
     }
   >
+    {label && (
+      <motion.span
+        className="icon-card__label"
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{
+          duration: 0.3,
+          delay: ANIMATION_DELAY_ICON + index * 0.06,
+        }}
+      >
+        {label}
+      </motion.span>
+    )}
     {Icons[icon] ? (
       <motion.div
         className={`icon-card__icon icon-card__icon--${iconColor}`}
@@ -50,7 +65,7 @@ export const IconCard = ({
       />
     ) : (
       <motion.div
-        className="icon-card__icon"
+        className="icon-card__icon icon-card__icon--img"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{

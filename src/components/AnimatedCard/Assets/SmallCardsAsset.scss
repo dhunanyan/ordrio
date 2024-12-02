@@ -1,0 +1,53 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.animated-card__assets--add-ons {
+  margin: 0;
+
+  li {
+    margin: 0px -4.5px 4.5px -4.5px;
+
+    div {
+      align-items: flex-start;
+      border-radius: 15.43px;
+      height: calc(119.7px - 15.43px * 2);
+      padding: 15.43px;
+
+      span {
+        font-size: 7.713px;
+        font-weight: 600;
+        line-height: normal;
+        padding: 5.142px 7.713px 5.142px 5.142px;
+        right: 15.42px;
+        top: 15.42px;
+
+        &::before {
+          width: 6.427px;
+          height: 6.427px;
+        }
+      }
+
+      div {
+        padding: 0;
+        height: 30.84px;
+        width: 30.84px;
+
+        img {
+          border-radius: 7.71px;
+          margin: 0;
+        }
+      }
+
+      h3 {
+        font-size: 11.57px;
+        line-height: 15.43px;
+        margin: 10.28px 0 7.71px 0;
+      }
+
+      p {
+        font-size: 7.71px;
+        line-height: 11.57px;
+      }
+    }
+  }
+}

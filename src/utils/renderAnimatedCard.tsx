@@ -69,7 +69,8 @@ export const renderAnimatedCard = (
         />
       );
     case AnimatedCardType.SHIP:
-    case AnimatedCardType.CONVERSION:
+    case AnimatedCardType.ROCKET:
+    case AnimatedCardType.ROCKET_V2:
     case AnimatedCardType.RELATIONSHIP:
       return (
         <AnimatedCard

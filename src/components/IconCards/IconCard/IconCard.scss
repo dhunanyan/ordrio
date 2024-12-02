@@ -10,6 +10,7 @@
   height: 100%;
   justify-content: space-between;
   padding: 26px 12px;
+  position: relative;
 
   @media screen and (min-width: 768px) {
     padding: 40px 24px;
@@ -51,6 +52,35 @@
     background-color: $white-color-light;
   }
 
+  &__label {
+    @include titleInterSmall;
+    align-items: center;
+    background-color: $green-color-light;
+    border-radius: 1216.17px;
+    color: $green-color-dark;
+    display: flex;
+    font-weight: 600;
+    padding: 10px 12px;
+    position: absolute;
+    right: 12px;
+    top: 26px;
+
+    @media screen and (min-width: 768px) {
+      right: 24px;
+      top: 40px;
+    }
+
+    &::before {
+      border-radius: 50%;
+      background-color: $green-color-dark;
+      content: "";
+      display: block;
+      height: 12px;
+      margin: 0 7px 0 0;
+      width: 12px;
+    }
+  }
+
   &__icon {
     align-items: center;
     display: flex;
@@ -58,6 +88,12 @@
     height: 30px;
     padding: 17px;
     width: 30px;
+
+    &--img {
+      height: 58px;
+      padding: 0;
+      width: 58px;
+    }
 
     img {
       width: 100%;

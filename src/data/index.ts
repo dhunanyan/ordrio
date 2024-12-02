@@ -10,6 +10,7 @@ export {
   AccordionsContent,
   FAQType,
   FaqTypeText,
+  PluginsContent as PluginsComponentContent,
 } from "./Components";
 
 export { HomeContent } from "./Home";

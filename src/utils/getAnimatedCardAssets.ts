@@ -311,7 +311,8 @@ export const getAnimatedCardAssets = (
           url: "/images/animated-cards/laptop-call.png",
         },
       ];
-    case AnimatedCard.CONVERSION:
+
+    case AnimatedCard.ROCKET:
       return [
         {
           initial: { opacity: 0, scale: 1.3 },
@@ -326,6 +327,23 @@ export const getAnimatedCardAssets = (
           transition: { duration: 0.4, delay: 0.6 },
           viewport: { once: true },
           url: "/images/animated-cards/rockets.png",
+        },
+      ];
+    case AnimatedCard.ROCKET_V2:
+      return [
+        {
+          initial: { opacity: 0, scale: 1.3 },
+          whileInView: { opacity: 1, scale: 1 },
+          transition: { duration: 0.4, delay: 0.4 },
+          viewport: { once: true },
+          url: "/images/animated-cards/wave-v2.png",
+        },
+        {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          transition: { duration: 0.4, delay: 0.6 },
+          viewport: { once: true },
+          url: "/images/animated-cards/rocket-big.png",
         },
       ];
     case AnimatedCard.SMART_CONTROL:

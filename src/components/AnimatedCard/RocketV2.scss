@@ -1,0 +1,31 @@
+@import "../../styles/variables";
+@import "../../styles/mixins";
+
+@mixin rocketV2 {
+  &--1 {
+    bottom: -80px;
+    right: 0;
+  }
+
+  &--2 {
+    bottom: 0;
+    left: 0;
+    max-width: 510px;
+  }
+}
+
+@mixin rocketV2Content {
+  .animated-card {
+    &__content {
+      margin: 0 0 0 50%;
+    }
+
+    &__title {
+      max-width: 40%;
+    }
+
+    &__description {
+      max-width: 40%;
+    }
+  }
+}

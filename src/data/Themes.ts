@@ -93,7 +93,7 @@ export const ThemesContent = {
         title: "Conversion Optimized",
         description:
           "Our themes are designed to guide customers smoothly through the purchase process",
-        type: AnimatedCard.CONVERSION,
+        type: AnimatedCard.ROCKET,
       },
       {
         title: "Ongoing Updates",
