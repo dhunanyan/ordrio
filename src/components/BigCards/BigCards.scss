@@ -4,6 +4,7 @@
 @import "../AnimatedCard/AddOns";
 @import "../AnimatedCard/Ship";
 @import "../AnimatedCard/HowToGuides";
+@import "../AnimatedCard/Delivery";
 
 .big-cards {
   display: flex;
@@ -29,6 +30,10 @@
 
       &__how-to-guides {
         @include howToGuidesCard;
+      }
+
+      &__delivery {
+        @include deliveryCard;
       }
     }
   }

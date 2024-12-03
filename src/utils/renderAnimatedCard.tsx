@@ -30,7 +30,6 @@ export const renderAnimatedCard = (
       return <Theme {...(content as ThemePropsType)} type={animationType} />;
     case AnimatedCardType.MARKETING:
     case AnimatedCardType.SECURE:
-    case AnimatedCardType.BUILT_FOR_GROWTH:
     case AnimatedCardType.HASSLE:
     case AnimatedCardType.CUSTOMIZATION:
       return (
@@ -98,6 +97,7 @@ export const renderAnimatedCard = (
       );
     case AnimatedCardType.CUSTOMER_MANAGEMENT:
     case AnimatedCardType.SMART_CONTROL:
+    case AnimatedCardType.BUILT_FOR_GROWTH:
     case AnimatedCardType.EASY_MANAGEMENT:
       return (
         <AnimatedCard

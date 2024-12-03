@@ -100,6 +100,14 @@
 
     @media screen and (min-width: 768px) {
       align-items: flex-start;
+      gap: 18px;
+      height: calc(100% - 2 * 20px);
+      padding: 20px;
+      min-width: calc(100% - 2 * 20px);
+    }
+
+    @media screen and (min-width: 900px) {
+      align-items: flex-start;
       gap: 23px;
       height: calc(100% - 2 * 40px);
       padding: 40px;
