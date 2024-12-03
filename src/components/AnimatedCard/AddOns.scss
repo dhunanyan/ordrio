@@ -3,12 +3,6 @@
 
 @mixin addOns {
   &--1 {
-    left: 0;
-    top: 0;
-    max-width: 550px;
-  }
-
-  &--2 {
     bottom: -350px;
     display: grid;
     grid-gap: 9px;
@@ -20,12 +14,12 @@
 
     @media screen and (min-width: 425px) {
       left: 0;
-      bottom: -65px;
+      bottom: -110px;
       grid-template-columns: 128px 128px 128px 128px 128px;
     }
 
     @media screen and (min-width: 768px) {
-      bottom: calc(-100% - 140px);
+      bottom: calc(-100% - 200px);
       left: -30px;
       grid-template-columns: 196px 196px 196px;
       grid-row: 120px;
@@ -36,15 +30,7 @@
       grid-template-columns: 196px 196px;
       left: auto;
       right: -110px;
-      top: 0px;
-    }
-
-    img {
-      @include lightShadow;
-      border-radius: 16px;
-      margin: 4.5px;
-      overflow: hidden;
-      width: 180px;
+      top: -95px;
     }
   }
 }

@@ -7,6 +7,9 @@
 @import "../AnimatedCard/Delivery";
 @import "../AnimatedCard/CustomerManagement";
 @import "../AnimatedCard/Hassle";
+@import "../AnimatedCard/Customization";
+@import "../AnimatedCard/Support";
+@import "../AnimatedCard/Mobile";
 
 .big-cards {
   display: flex;
@@ -20,6 +23,10 @@
 
   > li {
     width: 100%;
+
+    > * {
+      height: 100%;
+    }
 
     &.big-cards {
       &__add-ons {
@@ -44,6 +51,18 @@
 
       &__hassle {
         @include hassleCard;
+      }
+
+      &__customization {
+        @include customizationCard;
+      }
+
+      &__support {
+        @include supportCard;
+      }
+
+      &__mobile {
+        @include mobileCard;
       }
     }
   }

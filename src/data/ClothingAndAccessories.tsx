@@ -88,7 +88,7 @@ export const ClothingAndAccessoriesContent = {
   },
   iconCardsContent: {
     backgroundImage: BackgroundImage.GREY_SPIRAL,
-    title: "Key Features for Fashion-Forward Brands",
+    subtitle: "Key Features for Fashion-Forward Brands",
     backgroundColor: Colors.GREY,
   },
   iconCards: {
@@ -130,7 +130,6 @@ export const ClothingAndAccessoriesContent = {
         description:
           "Build your email list and send targeted campaigns to nurture customer relationships.",
       },
-      ,
     ],
   },
   bannerSection1: {

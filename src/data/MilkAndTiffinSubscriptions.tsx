@@ -131,7 +131,6 @@ export const MilkAndTiffinSubscriptionsContent = {
         description:
           "Provide a branded app for iOS and Android for an even more seamless experience.",
       },
-      ,
     ],
   },
   bannerSection1: {
