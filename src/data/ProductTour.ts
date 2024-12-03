@@ -97,7 +97,7 @@ export const ProductTourContent = {
   bigCardsSection: {
     cards: [
       {
-        title: "<span>Hassle-Free</span> Orders & Fulfillment",
+        title: "<span>Hassle-Free</span> Orders",
         description:
           "Our platform integrates with Ordrio Ship to provide multiple fulfillment options and automated notifications, ensuring timely and accurate delivery to your customers.",
         type: AnimatedCard.HASSLE,

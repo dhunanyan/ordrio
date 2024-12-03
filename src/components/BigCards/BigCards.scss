@@ -5,6 +5,8 @@
 @import "../AnimatedCard/Ship";
 @import "../AnimatedCard/HowToGuides";
 @import "../AnimatedCard/Delivery";
+@import "../AnimatedCard/CustomerManagement";
+@import "../AnimatedCard/Hassle";
 
 .big-cards {
   display: flex;
@@ -34,6 +36,14 @@
 
       &__delivery {
         @include deliveryCard;
+      }
+
+      &__customer-management {
+        @include customerManagementCard;
+      }
+
+      &__hassle {
+        @include hassleCard;
       }
     }
   }

@@ -4,24 +4,44 @@
 @mixin hassle {
   &--1 {
     @include lightShadow;
-    border-radius: 20px 20px 0 0;
-    bottom: -30px;
+    border-radius: 10px 10px 0 0;
+    bottom: -50px;
     max-width: 500px;
-    right: 0;
+    left: 50px;
+
+    @media screen and (min-width: 425px) {
+      bottom: -140px;
+      left: 70px;
+    }
+
+    @media screen and (min-width: 900px) {
+      bottom: -200px;
+    }
   }
 
   &--2 {
-    max-width: 70px;
-    bottom: 220px;
+    max-width: 40px;
+    bottom: 100px;
     left: 40px;
+
+    @media screen and (min-width: 425px) {
+      bottom: 150px;
+      max-width: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+      bottom: 60px;
+      max-width: 40px;
+    }
   }
 
   &--3 {
     @include lightShadow;
     border-radius: 20px 0 0 20px;
-    bottom: 30px;
+    bottom: -20px;
     max-width: 180px;
     right: -20px;
+    transform: scale(0.8) !important;
     z-index: 1;
 
     > div {
@@ -83,6 +103,33 @@
             background-color: $grey-color-dark;
           }
         }
+      }
+    }
+
+    @media screen and (min-width: 425px) {
+      bottom: -20px;
+      transform: scale(0.8) !important;
+      right: -20px;
+    }
+
+    @media screen and (min-width: 768px) {
+      transform: scale(0.65) !important;
+      right: -35px;
+    }
+  }
+}
+
+@mixin hassleCard {
+  .animated-card {
+    height: 500px;
+
+    @media screen and (min-width: 768px) {
+      height: 450px;
+    }
+
+    &__content {
+      > * {
+        max-width: 100%;
       }
     }
   }
