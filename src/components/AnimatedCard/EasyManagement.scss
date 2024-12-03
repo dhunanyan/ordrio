@@ -3,37 +3,63 @@
 
 @mixin easyManagement {
   &--1 {
-    left: 20px;
-    top: 0;
-    max-width: 250px;
+    left: 0px;
+    max-width: 220px;
+    top: 0px;
+    z-index: 3;
+
+    @media screen and (min-width: 525px) {
+      left: 20px;
+      max-width: 250px;
+      top: 0;
+    }
   }
 
   &--2 {
-    max-width: 250px;
-    right: 0;
+    max-width: 200px;
+    right: -80px;
     top: 0;
+    z-index: 1;
+
+    @media screen and (min-width: 375px) {
+      max-width: 250px;
+      top: -40px;
+    }
+
+    @media screen and (min-width: 525px) {
+      right: 0;
+      top: 0;
+    }
   }
 
   &--3 {
     bottom: 0;
-    max-width: 450px;
-    right: 0;
+    min-width: 380px;
+    right: -120px;
+    z-index: 0;
+
+    @media screen and (min-width: 375px) {
+      max-width: 450px;
+      min-width: auto;
+      right: -70px;
+    }
+
+    @media screen and (min-width: 525px) {
+      right: 0;
+    }
   }
 
   &--4 {
     max-width: 50px;
     left: 30px;
-    top: 300px;
+    top: 250px;
+    z-index: 2;
   }
 
   &--5 {
     max-width: 50px;
     left: 30px;
-    top: 370px;
+    top: 320px;
+    z-index: 2;
   }
-}
-
-@mixin easyManagementCard {
-  min-width: 70% !important;
-  max-width: 70% !important;
 }

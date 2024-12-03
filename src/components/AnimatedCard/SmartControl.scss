@@ -5,28 +5,48 @@
   &--1 {
     right: 0;
     top: 0;
-    max-width: 550px;
+    max-width: 320px;
   }
 
   &--2 {
-    max-width: 380px;
+    max-width: 320px;
     right: 0;
-    bottom: 0;
+    bottom: -180px;
+
+    @media screen and (min-width: 425px) {
+      bottom: -50px;
+    }
+
+    @media screen and (min-width: 768px) {
+      bottom: 0;
+    }
   }
 
   &--3 {
     @include lightShadow;
-    bottom: -20px;
     border-radius: 40px;
     max-width: 350px;
     overflow: hidden;
-    left: -20px;
-    transform: scale(0.65) !important;
+    left: -60px;
+    top: 10px;
+    transform: scale(0.58) !important;
+
+    @media screen and (min-width: 425px) {
+      left: -20px;
+      transform: scale(0.65) !important;
+    }
+
+    @media screen and (min-width: 768px) {
+      bottom: -20px;
+      top: auto;
+    }
   }
 }
 
 @mixin smartControlCard {
-  min-width: 70% !important;
-  margin: 0 0 0 auto;
-  max-width: 70% !important;
+  height: 475px;
+
+  @media screen and (min-width: 768px) {
+    height: 450px;
+  }
 }

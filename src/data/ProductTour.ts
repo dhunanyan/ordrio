@@ -49,6 +49,7 @@ export const ProductTourContent = {
     displayInRow: true,
     alignContentLeft: true,
     switchOrder: true,
+    biggerGap: true,
   },
   listSectionReversed: {
     subtitle: "Smart Inventory Control",
@@ -64,6 +65,7 @@ export const ProductTourContent = {
     },
     displayInRow: true,
     alignContentLeft: true,
+    biggerGap: true,
   },
   iconCardsContent: {
     icon: "check",

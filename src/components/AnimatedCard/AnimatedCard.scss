@@ -186,10 +186,6 @@
     @include easyManagement;
   }
 
-  &--easy-management {
-    @include easyManagementCard;
-  }
-
   &__add-ons {
     @include addOns;
   }
