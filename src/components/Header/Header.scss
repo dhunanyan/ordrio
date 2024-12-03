@@ -135,22 +135,21 @@
       overflow-y: auto;
 
       &::-webkit-scrollbar {
-        width: 4px;
+        width: 0;
       }
 
       &::-webkit-scrollbar-thumb {
-        background-color: $yellow-color;
-        border: 3px solid $yellow-color;
-        cursor: pointer;
+        background-color: transparent;
+        border: 0 solid transparent;
 
         &:active {
-          background-color: $yellow-color-dark;
-          border: 3px solid $yellow-color-dark;
+          background-color: transparent;
+          border: 0;
         }
       }
 
       &::-webkit-scrollbar-track {
-        background-color: $black-color-light;
+        background-color: transparent;
       }
 
       @media screen and (min-width: 1024px) {
@@ -267,16 +266,22 @@
       }
     }
 
-    button span {
-      align-items: center;
-      display: flex;
-      justify-content: center;
-      transform: rotate(-90deg);
-      transform-origin: center center;
-      transition: all 120ms ease-out;
+    button {
+      * {
+        pointer-events: none;
+      }
 
-      @media screen and (min-width: 1024px) {
-        transform: rotate(0);
+      span {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        transform: rotate(-90deg);
+        transform-origin: center center;
+        transition: all 120ms ease-out;
+
+        @media screen and (min-width: 1024px) {
+          transform: rotate(0);
+        }
       }
     }
 

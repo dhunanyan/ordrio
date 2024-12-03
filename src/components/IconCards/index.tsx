@@ -23,11 +23,13 @@ export const IconCards = ({
   <ul
     className={
       "icon-cards" +
-      (cards.length > 4
-        ? " icon-cards--big"
-        : cards.length === 4
-          ? " icon-cards--standard"
-          : "")
+      (cards.length > 6
+        ? " icon-cards--very-big"
+        : cards.length > 4
+          ? " icon-cards--big"
+          : cards.length === 4
+            ? " icon-cards--standard"
+            : "")
     }
   >
     {cards.map((card, i) => (

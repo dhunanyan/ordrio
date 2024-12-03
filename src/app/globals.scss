@@ -15,22 +15,22 @@ body {
   overflow-x: hidden;
 
   &::-webkit-scrollbar {
-    width: 12px;
+    width: 8px;
   }
 
   &::-webkit-scrollbar-thumb {
-    background-color: $yellow-color;
-    border: 3px solid $yellow-color;
+    background-color: $grey-color-darker;
+    border: 3px solid $grey-color-darker;
     cursor: pointer;
 
     &:active {
-      background-color: $yellow-color-dark;
-      border: 3px solid $yellow-color-dark;
+      background-color: $grey-color-darker;
+      border: 3px solid $grey-color-darker;
     }
   }
 
   &::-webkit-scrollbar-track {
-    background-color: $black-color-light;
+    background-color: $grey-color;
   }
 
   &:focus,

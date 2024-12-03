@@ -4,7 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import { getBackgroundImageURL } from "@utils";
+import { getBackgroundImageURL, renderHighlightedTitle } from "@utils";
 import { BackgroundImage } from "@config";
 
 import "./PartnersSection.scss";
@@ -31,10 +31,9 @@ export const PartnersSection = ({
   <section className="partners-section">
     <img src={getBackgroundImageURL(backgroundImage)} alt="Background layout" />
     <div className="partners-section__container">
-      <h2
-        className="partners-section__title"
-        dangerouslySetInnerHTML={{ __html: title }}
-      />
+      <h2 className="partners-section__title">
+        {renderHighlightedTitle(title)}
+      </h2>
       <ul className="partners-section__logos-list">
         {partners.map(({ imageURL, href, target }, i) => (
           <motion.li
@@ -43,6 +42,7 @@ export const PartnersSection = ({
             initial={{ opacity: 0, y: -20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.22, delay: 0.15 * i }}
+            viewport={{ once: true }}
           >
             <Link
               className="partners-section__logos-link"

@@ -8,6 +8,7 @@ import { Icons, Dropdown as DropdownType } from "@config";
 import "./Dropdown.scss";
 
 export type DropdownPropsType = {
+  dropdownRef: React.Ref<HTMLDivElement>;
   reset: () => void;
   onMouseEnter: (e?: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
   onMouseLeave: (e?: React.MouseEvent<HTMLDivElement, MouseEvent>) => void;
@@ -17,6 +18,7 @@ export type DropdownPropsType = {
 };
 
 export const Dropdown = ({
+  dropdownRef,
   reset,
   onMouseEnter,
   onMouseLeave,
@@ -25,10 +27,11 @@ export const Dropdown = ({
   animationDuration,
 }: DropdownPropsType) => (
   <motion.div
+    ref={dropdownRef}
     onMouseEnter={onMouseEnter}
     onMouseLeave={onMouseLeave}
     custom={1}
-    className="dropdown"
+    className={`dropdown dropdown--${type}`}
     variants={variants}
     initial="hidden"
     animate="visible"
@@ -37,6 +40,7 @@ export const Dropdown = ({
       duration:
         (variants.hidden as { [key: string]: number }).x !== 0 ? 0.5 : 0.2,
     }}
+    viewport={{ once: true }}
   >
     <motion.aside
       className="dropdown__aside"
@@ -56,6 +60,7 @@ export const Dropdown = ({
           (variants.hidden as { [key: string]: number }).x !== 0 ? 0.5 : 0.2,
         delay: animationDuration * 0.0005 + 0.05,
       }}
+      viewport={{ once: true }}
     >
       <ul className="dropdown__aside-list">
         {DropdownData[type].aside.map(({ title, description, href }, i) => (
@@ -86,9 +91,10 @@ export const Dropdown = ({
         duration: 0.2,
         delay: animationDuration * 0.0005 + 0.05,
       }}
+      viewport={{ once: true }}
     >
       {DropdownData[type].nav.map(({ title, links }, i) => (
-        <div key={i} className="dropdown__section">
+        <div key={i} className={`dropdown__section dropdown__section--${type}`}>
           <h3 className="dropdown__subtitle">{title}</h3>
           <ul className="dropdown__list">
             {links.map(({ icon, text, href, target }, j) => (

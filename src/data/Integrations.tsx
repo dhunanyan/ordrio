@@ -24,9 +24,11 @@ export const IntegrationsContent = {
     },
     linkColor: Colors.YELLOW,
     backgroundColor: Colors.WHITE,
+    biggerGap: true,
     alignContentLeft: true,
     displayInRow: true,
     verticalAlignTop: true,
+    smallerContent: true,
   },
   iconCards: {
     color: Colors.WHITE,

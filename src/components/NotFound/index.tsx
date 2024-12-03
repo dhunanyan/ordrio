@@ -1,8 +1,9 @@
 import * as React from "react";
+
 import { BackgroundImage, Icons } from "@config";
+import { getBackgroundImageURL, renderHighlightedTitle } from "@utils";
 
 import "./NotFound.scss";
-import { getBackgroundImageURL } from "@utils";
 
 export type NotFoundPropsType = {
   title: string;
@@ -25,7 +26,7 @@ export const NotFound = ({
       <div className="not-found__image">
         <img src={imageURL} alt={title} />
       </div>
-      <h1 className="not-found__title">{title}</h1>
+      <h1 className="not-found__title">{renderHighlightedTitle(title)}</h1>
       <div
         className="not-found__icon"
         dangerouslySetInnerHTML={{ __html: Icons[icon] }}

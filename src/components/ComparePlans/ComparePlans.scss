@@ -116,12 +116,13 @@
       }
 
       &:nth-of-type(1) {
-        padding: 12px 24px;
         background-color: $grey-color;
         grid-area: a;
+        padding: 12px 24px;
 
         @media screen and (min-width: 850px) {
           background-color: transparent;
+          padding: 0;
         }
       }
 

@@ -2,9 +2,11 @@
 @import "../../styles/mixins";
 
 .theme {
-  &--standard {
+  &--standard > div {
+    transition: all 150ms ease-in-out;
+
     &:hover {
-      transform: translate(0, 40px);
+      transform: translate(0, -5px);
     }
   }
 

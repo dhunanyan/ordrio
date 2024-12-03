@@ -140,10 +140,10 @@
       transition: all 380ms $animation-2;
       width: 190px;
       z-index: 0;
-    }
 
-    @media screen and (min-width: 650px) {
-      display: block;
+      @media screen and (min-width: 650px) {
+        display: block;
+      }
     }
   }
 

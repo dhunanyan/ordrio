@@ -48,6 +48,7 @@ export const IconCard = ({
           duration: 0.3,
           delay: ANIMATION_DELAY_ICON + index * 0.06,
         }}
+        viewport={{ once: true }}
       >
         {label}
       </motion.span>
@@ -62,6 +63,7 @@ export const IconCard = ({
           duration: 0.3,
           delay: ANIMATION_DELAY_ICON + index * 0.05,
         }}
+        viewport={{ once: true }}
       />
     ) : (
       <motion.div
@@ -72,6 +74,7 @@ export const IconCard = ({
           duration: 0.3,
           delay: ANIMATION_DELAY_ICON + index * 0.05,
         }}
+        viewport={{ once: true }}
       >
         <img src={icon} alt={`${title} icon`} />
       </motion.div>

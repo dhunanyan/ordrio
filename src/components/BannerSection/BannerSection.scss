@@ -65,11 +65,20 @@
   }
 
   &__content {
-    margin: 0 auto;
     height: max-content;
+    margin: 0 auto;
 
     &--split {
       margin: 0;
+      padding-bottom: 20px;
+
+      @media screen and (min-width: 425px) {
+        padding-bottom: 30px;
+      }
+
+      @media screen and (min-width: 768px) {
+        padding-bottom: 80px;
+      }
     }
   }
 }

@@ -9,7 +9,7 @@
   }
 
   &--2 {
-    max-width: 350px;
+    max-width: 250px;
     right: 0;
     top: 0;
   }
@@ -31,4 +31,9 @@
     left: 30px;
     top: 370px;
   }
+}
+
+@mixin easyManagementCard {
+  min-width: 70% !important;
+  max-width: 70% !important;
 }

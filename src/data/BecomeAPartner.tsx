@@ -104,7 +104,7 @@ export const BecomeAPartnerContent = {
   },
   iconCardsContent: {
     backgroundImage: BackgroundImage.GREY_SPIRAL,
-    title: "Why Partner with Ordrio?",
+    subtitle: "Why Partner with Ordrio?",
     description:
       "Unlock new revenue streams, expand your reach, and help businesses succeed online with Ordrio, the leading eCommerce platform for growing brands.",
     backgroundColor: Colors.GREY,

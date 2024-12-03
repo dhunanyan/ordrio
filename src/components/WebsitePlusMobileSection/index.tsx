@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import { AnimatePresence, motion } from "framer-motion";
 
+import { renderHighlightedTitle } from "@utils";
 import { Icons } from "@config";
 
 import "./WebsitePlusMobileSection.scss";
@@ -31,6 +32,7 @@ export const WebsitePlusMobileSection = ({
   screenshotURLs,
 }: WebsitePlusMobileSectionPropsType) => {
   const [activeScreenshot, setActiveScreenshot] = React.useState(0);
+  const autoplayInterval = 10000;
 
   const variants = {
     hidden: () => ({
@@ -41,6 +43,18 @@ export const WebsitePlusMobileSection = ({
       opacity: 0,
     }),
   };
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveScreenshot((prev) =>
+        prev === screenshotURLs.length - 1
+          ? 0
+          : Math.min(screenshotURLs.length - 1, prev + 1)
+      );
+    }, autoplayInterval);
+
+    return () => clearInterval(interval);
+  }, [screenshotURLs]);
 
   return (
     <section className="big-cards-section">
@@ -69,7 +83,7 @@ export const WebsitePlusMobileSection = ({
             transition={{ duration: 0.3, delay: ANIMATION_DELAY_TITLE }}
             viewport={{ once: true }}
           >
-            {title}
+            {renderHighlightedTitle(title, ANIMATION_DELAY_TITLE)}
           </motion.h2>
           <motion.p
             className="big-cards-section__description"

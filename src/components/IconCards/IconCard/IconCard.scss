@@ -90,9 +90,9 @@
     width: 30px;
 
     &--img {
-      height: 58px;
+      height: 42px;
       padding: 0;
-      width: 58px;
+      width: 42px;
     }
 
     img {
@@ -102,6 +102,7 @@
     svg {
       height: 100%;
       width: 100%;
+      max-width: 24px !important;
     }
 
     &--blue,
@@ -124,16 +125,31 @@
         fill: $black-color-alt;
       }
     }
+
+    &--black {
+      padding: 0;
+      width: 64px;
+      height: 64px;
+
+      svg {
+        max-width: 64px !important;
+      }
+    }
   }
 
   &__title {
     @include titleInter;
-    margin: 16px 0 24px;
+    margin: 16px 0 12px;
   }
 
   &__description {
     @include descriptionSpoofTrial;
+    text-align: center;
     margin: 0 0 auto 0;
+
+    @media screen and (min-width: 768px) {
+      text-align: center;
+    }
   }
 
   &__link {
@@ -145,7 +161,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 28px;
-    margin: 24px 0 0 0;
+    margin: 16px 0 0 0;
 
     &:hover {
       span {

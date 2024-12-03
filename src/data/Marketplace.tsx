@@ -107,7 +107,7 @@ export const MarketplaceContent = {
   },
   iconCardsContent: {
     backgroundImage: BackgroundImage.GREY_SPIRAL,
-    subtitle: "Key Features for a Thriving Restaurant",
+    subtitle: "Feature Highlights That Drive Marketplace Success",
     backgroundColor: Colors.GREY,
   },
   iconCards: {

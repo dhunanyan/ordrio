@@ -93,6 +93,8 @@ export const Contact = ({
       >
         <img src="/images/map.png" alt="Address on Google Map" />
       </motion.div>
+
+      <span id="locate-us" />
     </div>
   </div>
 );

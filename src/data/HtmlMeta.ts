@@ -46,7 +46,7 @@ export const HtmlMeta = {
     keywords:
       "Ordrio FAQ, frequently asked questions, Ordrio support, help center, e-commerce platform questions, features, pricing, integrations",
   },
-  "groceries-and-supermarkets": {
+  grocbay: {
     title: "Grocbay | Ordrio",
     description:
       "Simplify grocery store management with Grocbay by Ordrio. Enhance inventory tracking, orders, and delivery systems.",

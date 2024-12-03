@@ -40,11 +40,9 @@
       "c";
     grid-template-columns: 1fr;
     grid-template-rows:
-      minmax(50px, auto)
-      minmax(50px, auto)
-      minmax(0, auto)
-      minmax(0, auto)
-      minmax(50px, auto);
+      minmax(auto, auto)
+      minmax(auto, auto)
+      minmax(auto, auto);
     margin: 0 0 8px;
     max-width: calc(100% - 16px * 2);
     padding: 24px 16px;
@@ -59,14 +57,19 @@
       border: 0;
       border-radius: 0;
       background: transparent;
-      padding: 40px;
+      grid-template-areas:
+        "a"
+        "b"
+        "d"
+        "c";
       margin: 0;
       max-width: calc(100% - 40px * 2);
+      padding: 40px;
     }
 
     @media screen and (min-width: 1024px) {
       grid-template-columns: minmax(1fr, 333px) auto;
-      grid-template-rows: 50px 86px 132px;
+      grid-template-rows: 50px 86px 50px;
       grid-template-areas:
         "a d"
         "b d"
@@ -153,6 +156,11 @@
 
     &--free {
       grid-area: a;
+      margin: 0 auto 0 0;
+
+      @media screen and (min-width: 1024px) {
+        margin: 0 auto 20px 0;
+      }
     }
   }
 

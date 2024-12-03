@@ -16,10 +16,10 @@ export const GroceriesAndSupermarketsContent = {
   },
   heroComponent: {
     imageURLs: [
-      "/images/slideshow/groceries-and-supermarkets/image-1.png",
-      "/images/slideshow/groceries-and-supermarkets/image-2.png",
-      "/images/slideshow/groceries-and-supermarkets/image-3.png",
-      "/images/slideshow/groceries-and-supermarkets/image-4.png",
+      "/images/slideshow/grocbay/image-1.png",
+      "/images/slideshow/grocbay/image-2.png",
+      "/images/slideshow/grocbay/image-3.png",
+      "/images/slideshow/grocbay/image-4.png",
     ],
   },
   commonSectionWithRowAndBigCards: {
@@ -155,7 +155,6 @@ export const GroceriesAndSupermarketsContent = {
         description:
           "Let your customers choose how they want to receive their groceries.",
       },
-      ,
     ],
   },
   bannerSection1: {

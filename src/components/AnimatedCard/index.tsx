@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 import { renderAsset } from "./Assets";
@@ -14,10 +15,10 @@ import {
 import {
   AnimatedCardAssetsType,
   renderAnimatedCardBackgroundAssets,
+  renderHighlightedTitle,
 } from "@utils";
 
 import "./AnimatedCard.scss";
-import Link from "next/link";
 
 export type AnimatedCardPropsType = {
   type: AnimatedCardType;
@@ -65,12 +66,13 @@ export const AnimatedCard = ({
         {content.title && (
           <motion.h3
             className="animated-card__title"
-            dangerouslySetInnerHTML={{ __html: content.title }}
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             transition={{ duration: 0.3, delay: ANIMATION_DELAY_TITLE }}
             viewport={{ once: true }}
-          />
+          >
+            {renderHighlightedTitle(content.title, ANIMATION_DELAY_TITLE)}
+          </motion.h3>
         )}
         {content.description && (
           <motion.p

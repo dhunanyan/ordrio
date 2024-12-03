@@ -108,6 +108,8 @@ export const Header = () => {
     duration: DROPDOWN_STANDARD_DURATION,
   });
   const [isDropdownHovered, setIsDropdownHovered] = React.useState(false);
+  const ref = React.useRef<HTMLDivElement>(null);
+  const dropdownRef = React.useRef<HTMLDivElement>(null);
 
   const dropdownAnimationVariants = {
     hidden: () => ({
@@ -276,8 +278,34 @@ export const Header = () => {
     };
   }, []);
 
+  React.useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const mainElement = document.querySelector("main");
+      const footerElement = document.querySelector("footer");
+
+      if (
+        (mainElement?.contains(event.target as Node) ||
+          footerElement?.contains(event.target as Node) ||
+          (ref.current &&
+            ref.current.contains(event.target as Node) &&
+            !(event.target instanceof HTMLButtonElement))) &&
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target as Node)
+      ) {
+        setActiveDropdown("");
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <header
+      ref={ref}
       className={
         "header" +
         (isScrolled ? " header--is-scrolled" : "") +
@@ -346,6 +374,7 @@ export const Header = () => {
                     variants={dropdownAnimationVariants}
                     type={activeDropdown}
                     animationDuration={dropdownAnimation.duration as number}
+                    dropdownRef={dropdownRef}
                   />
                 )}
               </AnimatePresence>

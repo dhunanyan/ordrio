@@ -14,7 +14,7 @@
   padding: 0 0 120px;
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 900px;
   z-index: 9992;
 
   @media screen and (min-width: 768px) {
@@ -25,6 +25,7 @@
     @include lightShadow;
     border: 1px solid $grey-color;
     border-radius: 16px;
+    align-items: stretch;
     flex-direction: row;
     left: -100px;
     max-width: max-content;
@@ -34,20 +35,25 @@
   }
 
   &__aside {
-    margin: 0 23px;
     padding: 12px 0;
-    min-width: 280px;
-    max-width: calc(280px + 2 * 40px);
+    margin: 0 23px;
+    max-width: calc(235px + 2 * 20px);
+    min-width: 235px;
 
     @media screen and (min-width: 1024px) {
+      border-right: 1px solid $grey-color;
       margin: 0;
-      padding: 40px;
+      padding: 20px;
     }
 
     &-list {
       display: flex;
       flex-direction: column;
       gap: 32px;
+
+      @media screen and (min-width: 1024px) {
+        gap: 15px;
+      }
     }
 
     &-link {
@@ -87,7 +93,6 @@
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    border-left: 1px solid $grey-color;
   }
 
   &__section {
@@ -95,13 +100,19 @@
     display: flex;
     flex-direction: column;
     margin: 0 23px;
-    max-width: calc(800px - 2 * 40px);
+    max-width: calc(800px - 2 * 20px);
     padding: 12px 0;
     width: 100%;
 
     @media screen and (min-width: 1024px) {
       margin: 0;
-      padding: 40px;
+      max-width: calc(800px - 2 * 20px);
+      padding: 20px;
+      width: calc(100% - 2 * 20px);
+
+      &:first-of-type {
+        padding: 20px 20px 0 20px;
+      }
     }
   }
 
@@ -123,14 +134,19 @@
     white-space: nowrap;
 
     @media screen and (min-width: 1024px) {
-      flex-direction: row;
-      flex-wrap: wrap;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 20px;
     }
   }
 
   &__item {
     margin: 24px auto 0 0;
     width: 50%;
+
+    @media screen and (min-width: 1024px) {
+      width: 100%;
+    }
   }
 
   &__link {

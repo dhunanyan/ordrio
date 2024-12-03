@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
+import { renderHighlightedTitle } from "@utils";
 import { Colors, Icons } from "@config";
 
 import "./Content.scss";
@@ -58,7 +59,7 @@ export const Content = ({
         transition={{ duration: ANIMATION_DELAY_TEXT }}
         viewport={{ once: true }}
       >
-        {title}
+        {renderHighlightedTitle(title, ANIMATION_DELAY_TEXT)}
       </motion.h2>
     )}
     {description && (
@@ -88,6 +89,7 @@ export const Content = ({
         initial={{ opacity: 0, x: 10 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.3, delay: ANIMATION_DELAY_LINK }}
+        viewport={{ once: true }}
       >
         <Link href={link.href} target={link.target} className="content__link">
           <span
@@ -114,6 +116,7 @@ export const Content = ({
                 duration: 0.3,
                 delay: ANIMATION_DELAY_LINK + 0.15 * (i + 1),
               }}
+              viewport={{ once: true }}
             >
               <Link
                 href={href}
@@ -138,6 +141,7 @@ export const Content = ({
                 duration: 0.3,
                 delay: ANIMATION_DELAY_LINK + 0.05 * i,
               }}
+              viewport={{ once: true }}
             />
           )
         )}

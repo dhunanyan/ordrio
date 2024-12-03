@@ -69,6 +69,7 @@ export const Plan = ({
           initial={{ opacity: 0, x: 10 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, delay: ANIMATION_DELAY_NAME }}
+          viewport={{ once: true }}
         >
           {name}
         </motion.span>
@@ -77,6 +78,7 @@ export const Plan = ({
           initial={{ opacity: 0, x: 10 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
+          viewport={{ once: true }}
         >
           <span>{price}</span>
           <span>{description}</span>
@@ -108,9 +110,13 @@ export const Plan = ({
                     initial={{ opacity: 0, x: -10 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, delay: 0.02 * j }}
+                    viewport={{ once: true }}
                   />
                   <span>{benefit}</span>
-                  <span dangerouslySetInnerHTML={{ __html: Icons["info"] }} />
+                  <span
+                    style={{ opacity: 0 }}
+                    dangerouslySetInnerHTML={{ __html: Icons["info"] }}
+                  />
                 </p>
               </li>
             ))}
@@ -146,6 +152,7 @@ export const Plan = ({
                     initial={{ opacity: 0, y: 10, x: "-50%" }}
                     whileInView={{ opacity: 1, y: 0, x: "-50%" }}
                     transition={{ duration: 0.3, delay: ANIMATION_DELAY_NAME }}
+                    viewport={{ once: true }}
                   >
                     MOST POPULAR
                   </motion.span>
@@ -155,6 +162,7 @@ export const Plan = ({
                   initial={{ opacity: 0, x: 10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: ANIMATION_DELAY_NAME }}
+                  viewport={{ once: true }}
                 >
                   {name}
                 </motion.span>
@@ -163,6 +171,7 @@ export const Plan = ({
                   initial={{ opacity: 0, x: 10 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
+                  viewport={{ once: true }}
                 >
                   <span>{currency}</span>
                   <span>{price}</span>
@@ -184,9 +193,11 @@ export const Plan = ({
                             initial={{ opacity: 0, x: -10 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.3, delay: 0.02 * j }}
+                            viewport={{ once: true }}
                           />
                           <span>{benefit}</span>
                           <span
+                            style={{ opacity: 0 }}
                             dangerouslySetInnerHTML={{ __html: Icons["info"] }}
                           />
                         </p>

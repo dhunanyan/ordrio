@@ -43,7 +43,10 @@ export default function Home() {
       <CarouselSection
         {...(HomeContent.carouselSection as CarouselSectionPropsType)}
       />
-      <CommonSection {...(HomeContent.planSection as CommonSectionPropsType)}>
+      <CommonSection
+        descriptionToTop
+        {...(HomeContent.planSection as CommonSectionPropsType)}
+      >
         <Plan {...(PlanContent as PlanPropsType)} />
       </CommonSection>
       <CommonSection

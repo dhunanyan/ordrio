@@ -31,6 +31,7 @@ export const renderAnimatedCard = (
     case AnimatedCardType.MARKETING:
     case AnimatedCardType.SECURE:
     case AnimatedCardType.BUILT_FOR_GROWTH:
+    case AnimatedCardType.HASSLE:
     case AnimatedCardType.CUSTOMIZATION:
       return (
         <AnimatedCard
@@ -109,7 +110,6 @@ export const renderAnimatedCard = (
           content={content}
         />
       );
-    case AnimatedCardType.HASSLE:
     case AnimatedCardType.ONGOING_UPDATES:
     case AnimatedCardType.SUPPORT:
     case AnimatedCardType.DELIVERY:

@@ -24,6 +24,7 @@
       "b";
     border-radius: 24px;
     padding: 26px 12px;
+    position: relative;
     width: calc(100% - 2 * 12px);
 
     @media screen and (min-width: 768px) {
@@ -46,6 +47,12 @@
 
     &--grey {
       background-color: $grey-color;
+    }
+
+    #locate-us {
+      position: absolute;
+      left: 0;
+      top: calc(-86px - 12px);
     }
 
     &-title {

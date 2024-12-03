@@ -119,7 +119,7 @@ export const DropdownData: DropdownDataType = {
           {
             icon: "groceries-and-supermarkets",
             text: "Groceries & Supermarkets",
-            href: "/groceries-and-supermarkets",
+            href: "/grocbay",
           },
           {
             icon: "restaurants",

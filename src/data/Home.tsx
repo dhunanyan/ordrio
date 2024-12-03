@@ -146,10 +146,6 @@ export const HomeContent = {
       title: "Seamless Mobile Shopping",
       description:
         "Deliver a smooth shopping experience for your customers on any device.",
-      bottomLinks: [
-        { text: "google-play", href: "#" }, //@LINKS: requested - to be added
-        { text: "app-store", href: "#" }, //@LINKS: requested - to be added
-      ],
     },
     screenshotURLs: ["/images/carousels/landing-screenshot/0.png"],
   },
@@ -173,7 +169,7 @@ export const HomeContent = {
       },
       {
         imageURL: "/images/carousels/landing-theme/2.png",
-        href: "/groceries-and-supermarkets",
+        href: "/grocbay",
       },
       {
         imageURL: "/images/carousels/landing-theme/3.png",

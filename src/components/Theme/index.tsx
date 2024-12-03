@@ -31,7 +31,7 @@ const getLinkHref = (type: ThemeType) => {
     case AnimatedCard.AURA:
       return "/clothing-and-accessories";
     case AnimatedCard.GROCBAY:
-      return "/groceries-and-supermarkets";
+      return "/grocbay";
     case AnimatedCard.RESTOBITE:
       return "/restaurants";
     case AnimatedCard.MOO_CHEW:
@@ -64,6 +64,7 @@ const renderInnerContent = ({
         initial={{ opacity: 0, y: 50, scale: 0.9 }}
         whileInView={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
         src={`/images/themes/${type}/image-1.png`}
         alt="Background Asset 1"
       />
@@ -73,6 +74,7 @@ const renderInnerContent = ({
           initial={{ opacity: 0, y: 50, scale: 0.8 }}
           whileInView={{ opacity: 1, y: 0, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.1 }}
+          viewport={{ once: true }}
           src={`/images/themes/${type}/image-2.png`}
           alt="Background Asset 2"
         />
@@ -84,6 +86,7 @@ const renderInnerContent = ({
             initial={{ opacity: 0, y: 80 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
+            viewport={{ once: true }}
             src={`/images/themes/${type}/image-3.png`}
             alt="Background Asset 3"
           />
@@ -94,6 +97,7 @@ const renderInnerContent = ({
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
+          viewport={{ once: true }}
           src={`/images/themes/${type}/image-4.png`}
           alt="Desktop Layout"
         />
@@ -103,6 +107,7 @@ const renderInnerContent = ({
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.25 }}
+        viewport={{ once: true }}
         src={`/images/themes/${type}/image-5.png`}
         alt="Mobile Layout"
       />
@@ -114,6 +119,7 @@ const renderInnerContent = ({
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.3 + 0.05 * (i + 1) }}
+              viewport={{ once: true }}
             >
               <img
                 className={`theme-card__icon theme-card__icon--${icon}`}
@@ -129,7 +135,10 @@ const renderInnerContent = ({
       <div className="theme__content">
         <h3 className="theme__title">
           <span>{title}</span>
-          <span dangerouslySetInnerHTML={{ __html: Icons["info"] }} />
+          <span
+            style={{ opacity: 0 }}
+            dangerouslySetInnerHTML={{ __html: Icons["info"] }}
+          />
         </h3>
         <p className="theme__description">{description}</p>
       </div>
@@ -144,7 +153,7 @@ export const Theme = ({
   type,
   variant = ThemeCardVariant.STANDARD,
 }: ThemePropsType) => {
-  if (variant === ThemeCardVariant.STANDARD) {
+  if (variant === ThemeCardVariant.MOBILE) {
     return (
       <div className="theme theme--mobile">
         {renderInnerContent({
@@ -159,14 +168,16 @@ export const Theme = ({
   }
 
   return (
-    <Link href={getLinkHref(type)} className="theme theme--mobile">
-      {renderInnerContent({
-        title,
-        description,
-        icons,
-        type,
-        variant,
-      })}
+    <Link href={getLinkHref(type)} className="theme theme--standard">
+      <div>
+        {renderInnerContent({
+          title,
+          description,
+          icons,
+          type,
+          variant,
+        })}
+      </div>
     </Link>
   );
 };

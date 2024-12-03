@@ -2,13 +2,25 @@
 
 TODO: Add Badge Logo for browser tab
 
-- - - - - - - - - BUGS - - - - - - - -
+TODO: Staged scrolling - To be discussed, will be a hard one on design level (current Figma solution does not have same sizes for all sections to scale it properly)
 
-TODO: fix card image - title: Technology Partner
+TODO: Partners logo -> make a carousel of it once will have new logos - Leroy's engagement is required
+TODO: Moo Chew and Restobite -> same titles in Icon Cards Section - Leroy's/Designer's engagement is required
+
+TODO: About Us -> content update - Leroy's and Designer's engagement is required
+
+- - - - - - - - - BUGS - - - - - - - -
 
 TODO: Ongoing Updates Animated Card -> Synchronize animations of asset cards (3 cards in blank dashboard)
 
 TODO: AnimatedCards -> handle overlapping content
+
+TODO: Insightful Reporting & Analytics -> feels that everything is very big - Figma changes are required - Designer's engagement is required
+
+TODO: Plan Ordrio X -> this needs to be linked to a google form [need to create it] - Leroy's engagement is required
+
+TODO: Become a Partner -> join partner program (change link)" - Leroy's engagement is required
+
 
 - - - - - - - - TECH DEPTH - - - - - - - -
 

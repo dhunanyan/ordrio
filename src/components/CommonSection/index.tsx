@@ -5,7 +5,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import { BackgroundImage, Colors, Icons, Separator } from "@config";
-import { getBackgroundImageURL } from "@utils";
+import { getBackgroundImageURL, renderHighlightedTitle } from "@utils";
 
 import "./CommonSection.scss";
 
@@ -27,9 +27,11 @@ export type CommonSectionPropsType = {
   isFirstSection?: boolean;
   displayInRow?: boolean;
   alignContentLeft?: boolean;
+  smallerContent?: boolean;
   switchOrder?: boolean;
   verticalAlignTop?: boolean;
   biggerGap?: boolean;
+  descriptionToTop?: boolean;
 };
 
 const getImageInitialY = (separatorType?: Separator) => {
@@ -67,9 +69,11 @@ export const CommonSection = ({
   isFirstSection = false,
   displayInRow = false,
   alignContentLeft = false,
+  smallerContent = false,
   switchOrder = false,
   verticalAlignTop = false,
   biggerGap = false,
+  descriptionToTop = false,
 }: CommonSectionPropsType) => (
   <section
     className={
@@ -98,6 +102,9 @@ export const CommonSection = ({
         <div
           className={
             "common-section__content" +
+            (smallerContent
+              ? " common-section__content--smaller-content"
+              : "") +
             (alignContentLeft ? " common-section__content--align-left" : "") +
             (switchOrder ? " common-section__content--switch-order" : "")
           }
@@ -114,12 +121,12 @@ export const CommonSection = ({
           {title && (
             <motion.h1
               className="common-section__title"
-              dangerouslySetInnerHTML={{ __html: title }}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
-              viewport={{ once: true }}
-            />
+            >
+              {renderHighlightedTitle(title, ANIMATION_DELAY_TEXT)}
+            </motion.h1>
           )}
           {subtitle && (
             <motion.h2
@@ -133,7 +140,10 @@ export const CommonSection = ({
           )}
           {description && (
             <motion.p
-              className="common-section__description"
+              className={
+                "common-section__description" +
+                (descriptionToTop ? " common-section__description--to-top" : "")
+              }
               dangerouslySetInnerHTML={{ __html: description }}
               initial={{ opacity: 0, y: 10 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -154,6 +164,7 @@ export const CommonSection = ({
                         duration: 0.3,
                         delay: ANIMATION_DELAY_LIST + 0.05 * i,
                       }}
+                      viewport={{ once: true }}
                     />
                     <motion.span
                       initial={{ opacity: 0, x: 20 }}
@@ -176,6 +187,7 @@ export const CommonSection = ({
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: ANIMATION_DELAY_LINK }}
+              viewport={{ once: true }}
             >
               <Link
                 href={link.href}
@@ -201,6 +213,7 @@ export const CommonSection = ({
             y: getImageInitialY(separator),
           }}
           transition={{ duration: 0.4, delay: ANIMATION_DELAY_IMAGE }}
+          viewport={{ once: true }}
         >
           <img src={imageURL} alt={title} />
         </motion.div>
@@ -221,6 +234,7 @@ export const CommonSection = ({
           y: getImageInitialY(separator),
         }}
         transition={{ duration: 0.4, delay: ANIMATION_DELAY_IMAGE }}
+        viewport={{ once: true }}
       >
         <img src={bottomImageURL} alt={title} />
       </motion.div>

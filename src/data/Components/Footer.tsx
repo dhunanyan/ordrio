@@ -48,7 +48,7 @@ export const FooterContent: FooterContentType = {
         },
         {
           text: "Locate Us",
-          href: "/support",
+          href: "/support#locate-us",
         },
         {
           text: "Contact Us",
@@ -99,7 +99,7 @@ export const FooterContent: FooterContentType = {
       links: [
         {
           text: "Groceries & Supermarkets",
-          href: "/groceries-and-supermarkets",
+          href: "/grocbay",
         },
         {
           text: "Milk & Tiffin Subscriptions",

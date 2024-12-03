@@ -1,4 +1,5 @@
 import * as React from "react";
+import { renderHighlightedTitle } from "@utils";
 
 import "./Compliance.scss";
 
@@ -10,7 +11,7 @@ export type CompliancePropsType = {
 export const Compliance = ({ title, sections }: CompliancePropsType) => (
   <div className="compliance">
     <div className="compliance__container">
-      <h1 className="compliance__title">{title}</h1>
+      <h1 className="compliance__title">{renderHighlightedTitle(title)}</h1>
       {sections.map(({ subtitle, descriptions }, i) => (
         <section key={i} className="compliance__section">
           {subtitle && <h3 className="compliance__subtitle">{subtitle}</h3>}

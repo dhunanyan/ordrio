@@ -49,7 +49,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    padding: 80px 30px;
+    padding: 60px 30px;
     width: calc(100% - 30px * 2);
   }
 }
@@ -88,60 +88,6 @@
       width: 16px;
     }
   }
-
-  // @media screen and (min-width: 375px) {
-  //   font-size: 14px;
-  //   padding: 12px 16px;
-
-  //   &:hover {
-  //     padding: 9px 9px 9px 12px;
-
-  //     &::after {
-  //       padding: 0 0 0 4px;
-  //     }
-  //   }
-  // }
-
-  // @media screen and (min-width: 425px) {
-  //   font-size: 14px;
-  //   padding: 16px 20px;
-
-  //   &:hover {
-  //     padding: 16px 16px 16px 20px;
-
-  //     &::after {
-  //       padding: 0 0 0 8px;
-  //     }
-  //   }
-  // }
-
-  // @media screen and (min-width: 768px) {
-  //   font-size: 14px;
-  //   line-height: 24px;
-  //   padding: 16px 20px;
-
-  //   &:hover {
-  //     padding: 16px 16px 16px 20px;
-
-  //     &::after {
-  //       padding: 0 0 0 8px;
-  //     }
-  //   }
-  // }
-
-  // @media screen and (min-width: 1024px) {
-  //   font-size: 16px;
-  //   line-height: 28px;
-  //   padding: 16px 32px;
-
-  //   &:hover {
-  //     padding: 16px 16px 16px 32px;
-
-  //     &::after {
-  //       padding: 0 0 0 8px;
-  //     }
-  //   }
-  // }
 }
 
 @mixin buttonBlue {
@@ -193,56 +139,20 @@
 }
 
 @mixin animatedHighlight {
-  @keyframes highlight {
-    0% {
-      border-radius: 0px;
-      width: 0%;
-    }
-    18% {
-      border-radius: 10px;
-      width: 104%;
-    }
-    30% {
-      border-radius: 12px;
-      width: 94%;
-    }
-    42% {
-      border-radius: 16px;
-      width: 102%;
-    }
-    56% {
-      border-radius: 22px;
-      width: 90%;
-    }
-    60% {
-      border-radius: 0;
-      width: 100%;
-    }
-    90% {
-      border-radius: 22px;
-      width: 100%;
-    }
-    100% {
-      border-radius: 0px;
-      width: 0%;
-    }
-  }
-
   display: inline-flex;
   overflow: hidden;
   position: relative;
   z-index: 1;
 
-  &::before {
-    animation: highlight 5s $animation-2 infinite;
+  > span {
+    padding: 0;
     background: $yellow-color;
-    display: inline-block;
+    display: flex;
     content: "";
     left: 0;
     height: 100%;
     position: absolute;
     top: 0;
-    width: 100%;
     z-index: -1;
   }
 }
@@ -260,6 +170,7 @@
 
   span {
     @include animatedHighlight;
+    border-radius: 22px;
     padding: 0 10px;
   }
 
@@ -297,6 +208,7 @@
 
   span {
     @include animatedHighlight;
+    border-radius: 12px;
     padding: 0 5px;
     line-height: 45px;
 

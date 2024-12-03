@@ -24,3 +24,9 @@
     transform: scale(0.65) !important;
   }
 }
+
+@mixin smartControlCard {
+  min-width: 70% !important;
+  margin: 0 0 0 auto;
+  max-width: 70% !important;
+}

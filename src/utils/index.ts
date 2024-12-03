@@ -7,3 +7,4 @@ export {
 export { renderAnimatedCardBackgroundAssets } from "./renderAnimatedCardBackground";
 
 export { getBackgroundImageURL } from "./getBackgroundImageURL";
+export { renderHighlightedTitle } from "./renderHighlightedTitle";

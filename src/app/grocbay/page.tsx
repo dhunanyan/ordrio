@@ -24,7 +24,7 @@ import {
   HtmlMeta,
 } from "@data";
 
-export const metadata: Metadata = HtmlMeta["groceries-and-supermarkets"];
+export const metadata: Metadata = HtmlMeta["grocbay"];
 
 export default function Page() {
   return (

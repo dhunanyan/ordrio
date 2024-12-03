@@ -16,8 +16,9 @@ export const OrdrioShipContent = {
     isFirstSection: true,
   },
   commonSectionWithRowAndBigCards: {
-    subtitle: "Why Choose PetO?",
-    description: "Showcase Your Services, Simplify Your Bookings",
+    subtitle: "Why Choose Ordrio Ship?",
+    description:
+      "MeatCraft is the perfect theme to highlight the quality and freshness of your products, creating an online experience that is as enticing as your finest cuts.",
     backgroundColor: Colors.WHITE,
   },
   rowAndBigCardsInCommonSection: {
@@ -54,7 +55,9 @@ export const OrdrioShipContent = {
   },
   iconCardsContent: {
     backgroundImage: BackgroundImage.GREY_SPIRAL,
-    subtitle: "Key Features for Pet Product Businesses",
+    subtitle: "Your Shipping Solution, Simplified",
+    description:
+      "Ordrio Ship is more than just a shipping tool; it is a game-changer for your eCommerce business",
     backgroundColor: Colors.GREY,
   },
   iconCards: {

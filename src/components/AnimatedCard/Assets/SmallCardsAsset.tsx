@@ -28,7 +28,7 @@ export const SmallCardsAsset = ({
           ...transition,
           delay: (transition?.delay || 0) + i * 0.05,
         }}
-        viewport={viewport}
+        viewport={viewport ? viewport : { once: true }}
       >
         <IconCard index={i} {...card} />
       </motion.li>

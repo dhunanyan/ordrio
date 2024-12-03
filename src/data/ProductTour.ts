@@ -74,6 +74,7 @@ export const ProductTourContent = {
   },
   iconCards: {
     color: Colors.YELLOW,
+    iconColor: Colors.BLACK,
     cards: [
       {
         icon: "coupons",

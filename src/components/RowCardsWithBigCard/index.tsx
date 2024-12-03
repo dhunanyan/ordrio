@@ -42,6 +42,7 @@ export const RowCardsWithBigCard = ({
               duration: 0.5,
               delay: ANIMATION_DELAY_ICON + i * 0.05,
             }}
+            viewport={{ once: true }}
           />
           <div className="row-cards-section-with-big-card__content">
             <motion.h3

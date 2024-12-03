@@ -26,29 +26,30 @@ export const CarouselSection = ({
 }: CarouselSectionPropsType) => {
   const [activeTheme, setActiveTheme] = React.useState(0);
   const totalPages = slides.length - 1;
+  const autoplayInterval = 5000;
 
   const onPrevClick = () => {
-    setActiveTheme((prev) => Math.max(0, prev - 1));
+    setActiveTheme((prev) => (prev === 0 ? totalPages : Math.max(0, prev - 1)));
   };
 
   const onNextClick = () => {
-    setActiveTheme((prev) => Math.min(+totalPages, prev + 1));
+    setActiveTheme((prev) =>
+      prev === totalPages ? 0 : Math.min(+totalPages, prev + 1)
+    );
   };
 
   const prevButton = React.useMemo(
     () => ({
       text: buttons[0].text,
-      disabled: activeTheme === 0,
     }),
-    [buttons, activeTheme]
+    [buttons]
   );
 
   const nextButton = React.useMemo(
     () => ({
       text: buttons[1].text,
-      disabled: activeTheme === totalPages,
     }),
-    [buttons, activeTheme, totalPages]
+    [buttons]
   );
 
   const variants = {
@@ -60,6 +61,16 @@ export const CarouselSection = ({
       opacity: 0,
     }),
   };
+
+  React.useEffect(() => {
+    const interval = setInterval(() => {
+      setActiveTheme((prev) =>
+        prev === totalPages ? 0 : Math.min(+totalPages, prev + 1)
+      );
+    }, autoplayInterval);
+
+    return () => clearInterval(interval);
+  }, [totalPages]);
 
   return (
     <section className="carousel-section">
