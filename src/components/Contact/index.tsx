@@ -43,6 +43,7 @@ export const Contact = ({
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.3, delay: 0.2 }}
+          viewport={{ once: true }}
           className="contact__more-help-title"
         >
           {moreHelp.addressTitle}
@@ -51,6 +52,7 @@ export const Contact = ({
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.3, delay: 0.2 }}
+          viewport={{ once: true }}
         >
           {moreHelp.addressDescription}
         </motion.p>
@@ -60,6 +62,7 @@ export const Contact = ({
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.3, delay: 0.2 }}
+          viewport={{ once: true }}
           className="contact__more-help-title"
         >
           {moreHelp.title}
@@ -73,6 +76,7 @@ export const Contact = ({
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 0.3, delay: 0.2 }}
+                viewport={{ once: true }}
               >
                 <p>{description}</p>
                 <Link href={href} target={target}>
@@ -89,6 +93,7 @@ export const Contact = ({
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.3, delay: 0.2 }}
+        viewport={{ once: true }}
         className="contact__more-help-image"
       >
         <img src="/images/map.png" alt="Address on Google Map" />

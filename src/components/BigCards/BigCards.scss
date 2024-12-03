@@ -3,6 +3,7 @@
 
 @import "../AnimatedCard/AddOns";
 @import "../AnimatedCard/Ship";
+@import "../AnimatedCard/HowToGuides";
 
 .big-cards {
   display: flex;
@@ -24,6 +25,10 @@
 
       &__ship {
         @include shipCard;
+      }
+
+      &__how-to-guides {
+        @include howToGuidesCard;
       }
     }
   }
@@ -47,6 +52,14 @@
       &:last-of-type {
         width: 100%;
       }
+    }
+  }
+
+  &--how-to-guides-blog {
+    flex-wrap: wrap;
+
+    @media screen and (min-width: 945px) {
+      flex-wrap: nowrap;
     }
   }
 }
