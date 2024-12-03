@@ -7,5 +7,17 @@
     left: calc(50% - 300px / 2);
     max-width: 300px;
     z-index: 1;
+
+    @media screen and (min-width: 425px) {
+      bottom: -200px;
+      left: calc(50% - 300px / 2);
+      max-width: 300px;
+    }
+
+    @media screen and (min-width: 768px) {
+      bottom: -260px;
+      left: calc(50% - 300px / 2);
+      max-width: 300px;
+    }
   }
 }

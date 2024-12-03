@@ -3,9 +3,24 @@
 
 @mixin threePeopleLaptop {
   &--1 {
-    bottom: -20px;
-    right: 40px;
-    max-width: 350px;
+    bottom: -85px;
+    max-width: 240px;
+    right: calc(50% - 240px / 2);
     z-index: 1;
+
+    @media screen and (min-width: 425px) {
+      bottom: -65px;
+      max-width: 260px;
+      right: calc(50% - 260px / 2);
+    }
+
+    @media screen and (min-width: 768px) {
+      right: 0px;
+    }
+
+    @media screen and (min-width: 1005px) {
+      bottom: -20px;
+      right: 40px;
+    }
   }
 }

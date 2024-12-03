@@ -96,4 +96,27 @@
       flex-wrap: nowrap;
     }
   }
+
+  &--girl-with-laptop-man-with-tablet-man-with-speaker {
+    > li {
+      width: 100%;
+
+      @media screen and (min-width: 768px) {
+        width: calc(100% / 2 - 12.5px);
+        height: 400px;
+
+        .animated-card {
+          &__title {
+            @include titleSpoofTrialSmall;
+            text-align: left;
+          }
+        }
+      }
+
+      @media screen and (min-width: 1175px) {
+        width: calc(100% / 3 - 12.5px) !important;
+        height: 450px;
+      }
+    }
+  }
 }

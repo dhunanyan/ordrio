@@ -4,8 +4,22 @@
 @mixin manWithTablet {
   &--1 {
     bottom: -70px;
-    left: calc(50% - 350px / 2);
-    max-width: 350px;
+    left: 0;
+    max-width: 290px;
     z-index: 1;
+
+    @media screen and (min-width: 325px) {
+      left: calc(50% - 290px / 2);
+    }
+
+    @media screen and (min-width: 425px) {
+      left: calc(50% - 330px / 2);
+      max-width: 330px;
+    }
+
+    @media screen and (min-width: 768px) {
+      left: calc(50% - 290px / 2);
+      max-width: 290px;
+    }
   }
 }

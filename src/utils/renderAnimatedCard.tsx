@@ -134,8 +134,8 @@ export const renderAnimatedCard = (
     case AnimatedCardType.TWO_MEN_HANDSHAKE:
       return (
         <AnimatedCard
-          type={AnimatedCardType.TWO_MEN_HANDSHAKE}
-          assets={getAnimatedCardAssets(AnimatedCardType.TWO_MEN_HANDSHAKE)}
+          type={animationType}
+          assets={getAnimatedCardAssets(animationType)}
           background={{
             type: AnimatedCardBackground.TWO_TICKS,
             color: AnimatedCardBackgroundColor.RED_GRADIENT,
@@ -146,8 +146,8 @@ export const renderAnimatedCard = (
     case AnimatedCardType.GIRL_WITH_LAPTOP:
       return (
         <AnimatedCard
-          type={AnimatedCardType.GIRL_WITH_LAPTOP}
-          assets={getAnimatedCardAssets(AnimatedCardType.GIRL_WITH_LAPTOP)}
+          type={animationType}
+          assets={getAnimatedCardAssets(animationType)}
           background={{
             type: AnimatedCardBackground.TWO_TICKS,
             color: AnimatedCardBackgroundColor.GREEN_GRADIENT,
@@ -158,8 +158,8 @@ export const renderAnimatedCard = (
     case AnimatedCardType.MAN_WITH_TABLET:
       return (
         <AnimatedCard
-          type={AnimatedCardType.MAN_WITH_TABLET}
-          assets={getAnimatedCardAssets(AnimatedCardType.MAN_WITH_TABLET)}
+          type={animationType}
+          assets={getAnimatedCardAssets(animationType)}
           background={{
             type: AnimatedCardBackground.TWO_TICKS,
             color: AnimatedCardBackgroundColor.GREY_GRADIENT,
@@ -171,8 +171,8 @@ export const renderAnimatedCard = (
     case AnimatedCardType.THREE_PEOPLE_LAPTOP:
       return (
         <AnimatedCard
-          type={AnimatedCardType.THREE_PEOPLE_LAPTOP}
-          assets={getAnimatedCardAssets(AnimatedCardType.THREE_PEOPLE_LAPTOP)}
+          type={animationType}
+          assets={getAnimatedCardAssets(animationType)}
           background={{
             type: AnimatedCardBackground.TWO_TICKS,
             color: AnimatedCardBackgroundColor.YELLOW_GRADIENT,
