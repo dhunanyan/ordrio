@@ -42,23 +42,21 @@
     align-items: center;
     display: flex;
     justify-content: center;
-    margin: 60px 0;
+    margin: 10px 0;
     position: relative;
 
-    span svg {
-      opacity: 0.8;
-      position: relative;
-      overflow: hidden;
+    @media screen and (min-width: 425px) {
+      margin: 60px 0;
     }
 
-    img {
-      position: absolute;
+    svg {
       width: 100%;
     }
   }
 
   &__subtitle {
     @include descriptionInterBig;
+    text-align: center;
   }
 
   &__link {
