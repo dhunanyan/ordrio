@@ -310,6 +310,8 @@
 
   &__image {
     min-width: 45%;
+    position: relative;
+    z-index: 1;
 
     img {
       max-height: 500px;
@@ -323,7 +325,7 @@
     overflow: hidden;
     padding: 0 30px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
     &--section-separator-medium {
       transform: translate(0, 72px) !important;
@@ -362,6 +364,20 @@
       span {
         height: 121px;
       }
+    }
+  }
+
+  &__gradient {
+    left: 0;
+    max-width: 1200px;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+
+    img {
+      width: 100%;
     }
   }
 }

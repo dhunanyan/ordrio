@@ -89,7 +89,6 @@ export const CommonSection = ({
         alt="Background"
       />
     )}
-
     <div
       className={
         "common-section__container" +
@@ -98,6 +97,19 @@ export const CommonSection = ({
         (biggerGap ? " common-section__container--bigger-gap" : "")
       }
     >
+      {isFirstSection && (
+        <motion.div
+          className="common-section__gradient"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: ANIMATION_DELAY_TEXT }}
+        >
+          <img
+            src={getBackgroundImageURL(BackgroundImage.GRADIENT)}
+            alt="Background Gradient"
+          />
+        </motion.div>
+      )}
       {(icon || title || subtitle || description || list || link) && (
         <div
           className={

@@ -103,6 +103,7 @@ export enum AnimatedCardBackgroundColor {
 }
 
 export enum BackgroundImage {
+  GRADIENT = "gradient",
   GREY_SPIRAL = "grey-spiral",
   BLUE_SPIRAL = "blue-spiral",
   BLUE_SMALL_SPIRALS = "blue-small-spirals",
