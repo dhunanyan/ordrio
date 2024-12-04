@@ -138,7 +138,7 @@ export const ProductTourContent = {
       { text: Icons["app-store"], href: "#" }, //@LINKS: requested - to be added
     ],
     backgroundImage: BackgroundImage.BLUE_SMALL_SPIRALS,
-    imageURL: "/images/tiger-in-phone.png",
+    imageURL: "/images/seamless-mobile-app.png",
     tintColor: Colors.WHITE,
   },
   bigCardsSection2: {
