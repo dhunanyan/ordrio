@@ -82,9 +82,9 @@ export const AboutUsContent = {
   bigCardsSection: {
     cards: [
       {
-        title: "Boost Sales & Marketing",
+        title: "Vision",
         description:
-          "Implement abandoned cart recovery, run targeted promotions, and create engaging membership programs to drive revenue.",
+          "To be the leading global platform empowering businesses of all sizes to seamlessly launch, manage, and grow their online presence, fostering a thriving and inclusive digital marketplace where every entrepreneur has the opportunity to succeed.",
         type: AnimatedCard.VISION,
       },
       {

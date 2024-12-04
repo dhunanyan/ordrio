@@ -13,6 +13,8 @@
 @import "../AnimatedCard/TechnologyPartner";
 @import "../AnimatedCard/Marketing";
 @import "../AnimatedCard/OngoingUpdates";
+@import "../AnimatedCard/Vision";
+@import "../AnimatedCard/WeAre";
 
 .big-cards {
   display: flex;
@@ -78,6 +80,14 @@
 
       &__ongoing-updates {
         @include ongoingUpdatesCard;
+      }
+
+      &__vision {
+        @include visionsCard;
+      }
+
+      &__we-are {
+        @include weAreCard;
       }
     }
   }

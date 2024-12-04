@@ -10,9 +10,37 @@
   }
 
   &--2 {
-    bottom: 0;
-    max-width: 300px;
+    bottom: -40px;
     left: calc(50% - 300px / 2);
+    max-width: 300px;
     z-index: 1;
+
+    @media screen and (min-width: 425px) {
+      bottom: 0;
+      left: calc(50% - 340px / 2);
+      max-width: 340px;
+    }
+
+    @media screen and (min-width: 768px) {
+      bottom: -40px;
+      left: calc(50% - 260px / 2);
+      max-width: 260px;
+    }
+  }
+}
+
+@mixin visionsCard {
+  .animated-card {
+    height: 500px;
+
+    @media screen and (min-width: 768px) {
+      height: 475px;
+    }
+
+    &__content {
+      > * {
+        max-width: 100%;
+      }
+    }
   }
 }

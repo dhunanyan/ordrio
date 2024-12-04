@@ -3,9 +3,29 @@
 
 @mixin weAre {
   &--1 {
-    bottom: -100px;
+    bottom: -50px;
     left: 0;
     max-width: 100%;
     z-index: 1;
+
+    @media screen and (min-width: 768px) {
+      bottom: -100px;
+    }
+  }
+}
+
+@mixin weAreCard {
+  .animated-card {
+    height: 425px;
+
+    @media screen and (min-width: 768px) {
+      height: 475px;
+    }
+
+    &__content {
+      > * {
+        max-width: 100%;
+      }
+    }
   }
 }
