@@ -60,4 +60,9 @@
   &__subtitle {
     @include descriptionInterBig;
   }
+
+  &__link {
+    @include buttonYellow;
+    margin: 40px 0 0;
+  }
 }

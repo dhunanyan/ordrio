@@ -7,5 +7,6 @@ export const NotFoundContent = {
     imageURL: "/images/tiger-head.png",
     icon: "404",
     backgroundImage: BackgroundImage.GREY_SPIRALS,
+    link: { text: "Back to Home", href: "/" },
   },
 };

@@ -4,6 +4,7 @@ import { BackgroundImage, Icons } from "@config";
 import { getBackgroundImageURL, renderHighlightedTitle } from "@utils";
 
 import "./NotFound.scss";
+import Link from "next/link";
 
 export type NotFoundPropsType = {
   title: string;
@@ -11,6 +12,7 @@ export type NotFoundPropsType = {
   imageURL: string;
   backgroundImage: BackgroundImage;
   icon: string;
+  link: { text: string; href: string };
 };
 
 export const NotFound = ({
@@ -19,6 +21,7 @@ export const NotFound = ({
   imageURL,
   backgroundImage,
   icon,
+  link,
 }: NotFoundPropsType) => (
   <section className="not-found">
     <img src={getBackgroundImageURL(backgroundImage)} alt="Background" />
@@ -32,6 +35,9 @@ export const NotFound = ({
         dangerouslySetInnerHTML={{ __html: Icons[icon] }}
       />
       <h2 className="not-found__subtitle">{subtitle}</h2>
+      <Link className="not-found__link" href={link.href}>
+        {link.text}
+      </Link>
     </div>
   </section>
 );
