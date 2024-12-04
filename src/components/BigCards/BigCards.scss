@@ -10,6 +10,7 @@
 @import "../AnimatedCard/Customization";
 @import "../AnimatedCard/Support";
 @import "../AnimatedCard/Mobile";
+@import "../AnimatedCard/TechnologyPartner";
 
 .big-cards {
   display: flex;
@@ -63,6 +64,10 @@
 
       &__mobile {
         @include mobileCard;
+      }
+
+      &__technology-partner {
+        @include technologyPartnerCard;
       }
     }
   }

@@ -3,9 +3,20 @@
 
 @mixin moneyBag {
   &--1 {
-    bottom: -140px;
-    left: calc(50% - 500px / 2);
-    max-width: 500px;
+    bottom: -70px;
+    left: 0;
+    max-width: 430px;
     z-index: 1;
+
+    @media screen and (min-width: 450px) {
+      bottom: -120px;
+      left: calc(50% - 430px / 2);
+    }
+
+    @media screen and (min-width: 768px) {
+      bottom: -90px;
+      left: calc(50% - 300px / 2);
+      max-width: 300px;
+    }
   }
 }

@@ -3,9 +3,26 @@
 
 @mixin speaker {
   &--1 {
-    bottom: -100px;
-    left: calc(50% - 400px / 2);
-    max-width: 400px;
+    bottom: -150px;
+    left: 0;
+    max-width: 320px;
     z-index: 1;
+
+    @media screen and (min-width: 350px) {
+      bottom: -90px;
+      left: calc(50% - 320px / 2);
+    }
+
+    @media screen and (min-width: 768px) {
+      bottom: -10px;
+      left: calc(50% - 230px / 2);
+      max-width: 230px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      bottom: 0px;
+      left: calc(50% - 250px / 2);
+      max-width: 250px;
+    }
   }
 }
