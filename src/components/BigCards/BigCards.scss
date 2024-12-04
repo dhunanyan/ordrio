@@ -12,6 +12,7 @@
 @import "../AnimatedCard/Mobile";
 @import "../AnimatedCard/TechnologyPartner";
 @import "../AnimatedCard/Marketing";
+@import "../AnimatedCard/OngoingUpdates";
 
 .big-cards {
   display: flex;
@@ -73,6 +74,10 @@
 
       &__marketing {
         @include marketingCard;
+      }
+
+      &__ongoing-updates {
+        @include ongoingUpdatesCard;
       }
     }
   }
