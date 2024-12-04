@@ -16,6 +16,7 @@ type ThemeType =
   | AnimatedCard.MARKETPLACE
   | AnimatedCard.SERVICES
   | AnimatedCard.CAFES
+  | AnimatedCard.MEAT_STORES
   | AnimatedCard.PET_STORES;
 
 export type ThemePropsType = {
@@ -40,6 +41,10 @@ const getLinkHref = (type: ThemeType) => {
       return "/marketplace";
     case AnimatedCard.SERVICES:
       return "/services";
+    case AnimatedCard.MEAT_STORES:
+      return "/meat-stores";
+    case AnimatedCard.PET_STORES:
+      return "/pet-stores";
     default:
       return "#";
   }

@@ -30,7 +30,7 @@ export const MeatStoresContent = {
   },
   rowAndBigCardsInCommonSection: {
     bigCard: {
-      card: AnimatedCard.PET_STORES,
+      card: AnimatedCard.MEAT_STORES,
       props: { variant: ThemeCardVariant.MOBILE },
     },
     iconColor: Colors.YELLOW,
@@ -99,13 +99,13 @@ export const MeatStoresContent = {
         title: "Mobile-Optimized",
         description:
           "Ensure your store looks great and functions flawlessly on any device, so customers can shop on the go.",
-        type: AnimatedCard.MOBILE,
+        type: AnimatedCard.MOBILE_MEAT,
       },
     ],
   },
   iconCardsContent: {
     backgroundImage: BackgroundImage.GREY_SPIRAL,
-    subtitle: "Key Features for Pet Product Businesses",
+    subtitle: "Key Features for Meat & Fish Businesses",
     backgroundColor: Colors.GREY,
   },
   iconCards: {
@@ -170,15 +170,15 @@ export const MeatStoresContent = {
   bigCardsSection2: {
     cards: [
       {
-        title: "Reviews & Ratings",
+        title: "Reviews & <span>Ratings</span>",
         description:
           "Enable customers to leave feedback and build social proof.",
         type: AnimatedCard.RATING,
       },
       {
-        title: "Promotional Tools",
+        title: "Marketing & <span>Promotions</span>",
         description:
-          "Create discount codes, offer special packages, and run targeted marketing campaigns.",
+          "Reach your target audience with targeted email campaigns, social media promotions, and exclusive offers.",
         type: AnimatedCard.MARKETING,
       },
     ],

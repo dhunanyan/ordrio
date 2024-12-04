@@ -60,6 +60,7 @@ export enum AnimatedCard {
   SERVICES = "services",
   PET_STORES = "pet-stores",
   CAFES = "cafes",
+  MEAT_STORES = "meat-stores",
   RELATIONSHIP = "relationship",
   MARKETING = "marketing",
   SUPPORT = "support",
@@ -82,6 +83,7 @@ export enum AnimatedCard {
   MAN_WITH_SPEAKER = "man-with-speaker",
   RATING = "rating",
   MOBILE = "mobile",
+  MOBILE_MEAT = "mobile-meat",
 }
 
 export enum AnimatedCardBackground {

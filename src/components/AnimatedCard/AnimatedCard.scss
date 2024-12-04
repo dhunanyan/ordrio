@@ -32,6 +32,7 @@
 @import "./ManWithSpeaker";
 @import "./Rating";
 @import "./Mobile";
+@import "./MobileMeat";
 
 .animated-card {
   @include lightShadow;
@@ -296,5 +297,9 @@
 
   &__mobile {
     @include mobile;
+  }
+
+  &__mobile-meat {
+    @include mobileMeat;
   }
 }

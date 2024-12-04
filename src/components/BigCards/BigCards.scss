@@ -10,6 +10,7 @@
 @import "../AnimatedCard/Customization";
 @import "../AnimatedCard/Support";
 @import "../AnimatedCard/Mobile";
+@import "../AnimatedCard/MobileMeat";
 @import "../AnimatedCard/TechnologyPartner";
 @import "../AnimatedCard/Marketing";
 @import "../AnimatedCard/OngoingUpdates";
@@ -68,6 +69,10 @@
 
       &__mobile {
         @include mobileCard;
+      }
+
+      &__mobile-meat {
+        @include mobileMeatCard;
       }
 
       &__technology-partner {

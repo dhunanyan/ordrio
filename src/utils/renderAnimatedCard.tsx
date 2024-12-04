@@ -26,6 +26,7 @@ export const renderAnimatedCard = (
     case AnimatedCardType.MARKETPLACE:
     case AnimatedCardType.SERVICES:
     case AnimatedCardType.PET_STORES:
+    case AnimatedCardType.MEAT_STORES:
     case AnimatedCardType.CAFES:
       return <Theme {...(content as ThemePropsType)} type={animationType} />;
     case AnimatedCardType.MARKETING:
@@ -119,6 +120,7 @@ export const renderAnimatedCard = (
     case AnimatedCardType.PHONE_CHAT:
     case AnimatedCardType.MONEY_BAG:
     case AnimatedCardType.RATING:
+    case AnimatedCardType.MOBILE_MEAT:
     case AnimatedCardType.MOBILE:
       return (
         <AnimatedCard
