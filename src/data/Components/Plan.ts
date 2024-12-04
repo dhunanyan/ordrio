@@ -7,7 +7,7 @@ export const PlanContent = {
     id: "seed",
     name: "Seed",
     price: "FREE",
-    description: "For all member no included taxes",
+    description: "For all members",
     list: [
       "Storefront",
       "Ordrio Ship",

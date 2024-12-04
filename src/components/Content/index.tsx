@@ -42,15 +42,6 @@ export const Content = ({
   textColor = Colors.WHITE,
 }: ContentPropsType) => (
   <div className={"content" + (alignLeft ? " content--align-left" : "")}>
-    {icon && (
-      <motion.div
-        className={`content__icon content__icon--${tintColor}`}
-        dangerouslySetInnerHTML={{ __html: Icons[icon] }}
-        initial={{ opacity: 0, x: 10 }}
-        whileInView={{ opacity: 1, x: 0 }}
-        transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
-      />
-    )}
     {title && (
       <motion.h2
         className={`content__title content__title--${textColor}`}
@@ -59,6 +50,15 @@ export const Content = ({
         transition={{ duration: ANIMATION_DELAY_TEXT }}
         viewport={{ once: true }}
       >
+        {icon && (
+          <motion.span
+            className={`content__icon content__icon--${tintColor}`}
+            dangerouslySetInnerHTML={{ __html: Icons[icon] }}
+            initial={{ opacity: 0, x: 10 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.3, delay: ANIMATION_DELAY_TEXT }}
+          />
+        )}
         {renderHighlightedTitle(title, ANIMATION_DELAY_TEXT)}
       </motion.h2>
     )}

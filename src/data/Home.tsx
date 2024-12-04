@@ -26,11 +26,11 @@ export const HomeContent = {
   },
   listSection: {
     imageURL: "/images/tiger-painting.png",
-    subtitle: "eCommerce Shouldn't Be a Juggling Act",
+    subtitle: "eCommerce Made Simple—No More Juggling!",
     list: [
-      "At Ordrio, we handle the tech headaches so you can focus on growing your brand",
-      "Sell incredible products and manage sales seamlessly",
-      "Connect with customers, nurture relationships, and watch your business thrive",
+      "Let Ordrio handle the tech, while you grow your brand",
+      "Sell with ease and manage your business seamlessly",
+      "Build connections, nurture customers, and thrive",
     ],
     displayInRow: true,
     alignContentLeft: true,
@@ -46,24 +46,24 @@ export const HomeContent = {
         href: "https://chennaistar.com",
       },
       {
-        imageURL: "/images/logos/tokree.png",
+        imageURL: "/images/logos/ziippy.png",
         target: "_blank",
-        href: "https://www.quickcompany.in/trademarks/2848950-tokree-no-more-khit-pit",
+        href: "https://zippyonline.com",
       },
       {
-        imageURL: "/images/logos/country.png",
+        imageURL: "/images/logos/kg-cart.png",
         target: "_blank",
-        href: "https://www.countrychickenco.in",
+        href: "https://kgcart.com",
       },
       {
-        imageURL: "/images/logos/fib.png",
+        imageURL: "/images/logos/jayalaxmi-silks.png",
         target: "_blank",
-        href: "https://appagg.com/android/shopping/feel-it-buy-38658831.html",
+        href: "https://jayalaxmisilks.co",
       },
       {
-        imageURL: "/images/logos/shree-baba.png",
+        imageURL: "/images/logos/purity-prayag.png",
         target: "_blank",
-        href: "https://www.instagram.com/shreebabaramdevdhaba",
+        href: "https://purityprayag.com",
       },
     ],
     quotes: [
@@ -179,7 +179,7 @@ export const HomeContent = {
   },
   planSection: {
     description: "No matter your budget",
-    subtitle: "We've got a plan that fits",
+    subtitle: "there's a plan tailored just for you",
   },
   planSectionInCommonSection: PlanContent,
   accordionSection: {
@@ -193,8 +193,8 @@ export const HomeContent = {
     backgroundImage: BackgroundImage.BLUE_SPIRAL,
     imageURL: "/images/tiger-boxes.png",
     icon: "check",
-    title:
-      "Let's Bring Your Business Online With just a few clicks, get started for free!",
+    title: "Take Your Business Online Today",
+    description: "Launch your store in just a few clicks—no cost, no hassle!",
     links: [
       {
         text: "Get Started for Free",
