@@ -66,18 +66,24 @@ export const RestaurantsContent = {
     alignContentLeft: true,
   },
   imageCards: {
+    isCarousel: true,
     cards: [
       {
         title: "Own Your Online Presence",
-        description:
-          "Create a beautiful, branded website or mobile app where customers can easily browse your menu, place orders, and make reservations.",
+        description: "Create a beautiful, branded website or mobile app",
         imageURL: "/images/tiger-boxes-card.png",
       },
       {
         title: "Boost Sales & Efficiency",
         description:
-          "Maximize table turnover, reduce errors, and increase average order value with seamless online ordering and contactless payments.",
+          "Maximize table turnover, reduce errors, and increase average order value.",
         imageURL: "/images/rocket-card.png",
+      },
+      {
+        title: "Gain Valuable Insights",
+        description:
+          "Track sales data, customer preferences, and operational trends to make informed decisions.",
+        imageURL: "/images/toys-card.png",
       },
       {
         title: "Streamline Operations",
@@ -90,12 +96,6 @@ export const RestaurantsContent = {
         description:
           "Build lasting relationships with loyalty programs, personalized promotions, and targeted marketing campaigns.",
         imageURL: "/images/handshake-card.png",
-      },
-      {
-        title: "Gain Valuable Insights",
-        description:
-          "Track sales data, customer preferences, and operational trends to make informed decisions and optimize your business.",
-        imageURL: "/images/toys-card.png",
       },
     ],
   },

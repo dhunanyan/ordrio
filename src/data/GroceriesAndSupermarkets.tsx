@@ -64,36 +64,36 @@ export const GroceriesAndSupermarketsContent = {
     alignContentLeft: true,
   },
   imageCards: {
+    isCarousel: true,
     cards: [
       {
-        title: "Add your first product",
-        description:
-          "Add first product with price. Photos and It's description that you want to sell",
+        title: "Own Your Online Presence",
+        description: "Create a beautiful, branded website or mobile app",
         imageURL: "/images/tiger-boxes-card.png",
       },
       {
-        title: "Set up payments",
+        title: "Boost Sales & Efficiency",
         description:
-          "Revolutionize your payment experience with Ordrio swipe feature",
-        imageURL: "/images/credit-cards-card.png",
+          "Maximize table turnover, reduce errors, and increase average order value.",
+        imageURL: "/images/rocket-card.png",
       },
       {
-        title: "Other Store details",
+        title: "Gain Valuable Insights",
         description:
-          "Add store information, including store name and store type",
+          "Track sales data, customer preferences, and operational trends to make informed decisions.",
+        imageURL: "/images/toys-card.png",
+      },
+      {
+        title: "Streamline Operations",
+        description:
+          "Manage orders, inventory, table reservations, and staff schedules from a single, intuitive dashboard.",
         imageURL: "/images/papers-card.png",
       },
       {
-        title: "Customize Your Store",
+        title: "Engage & Retain Customers",
         description:
-          "Unleash the Power of Personalization with Our Store Customization Options!",
-        imageURL: "/images/tiger-painting-card.png",
-      },
-      {
-        title: "Add delivery location",
-        description:
-          "Configure pickup address, delivery type, and delivery charge",
-        imageURL: "/images/tiger-backpack-card.png",
+          "Build lasting relationships with loyalty programs, personalized promotions, and targeted marketing campaigns.",
+        imageURL: "/images/handshake-card.png",
       },
     ],
   },

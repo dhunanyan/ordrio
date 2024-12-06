@@ -16,6 +16,7 @@
 @import "../AnimatedCard/OngoingUpdates";
 @import "../AnimatedCard/Vision";
 @import "../AnimatedCard/WeAre";
+@import "../AnimatedCard/Secure";
 
 .big-cards {
   display: flex;
@@ -64,6 +65,10 @@
       }
 
       &__support {
+        @include supportCard;
+      }
+
+      &__secure {
         @include supportCard;
       }
 

@@ -2,142 +2,69 @@
 @import "../../styles/mixins";
 
 .image-cards {
-  align-items: center;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   gap: 12px;
 
-  &--standard {
+  &__list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+
     @media screen and (min-width: 1024px) {
       flex-wrap: nowrap;
     }
 
-    > li {
-      width: 100%;
+    &--carousel {
+      min-height: 350px;
+      min-width: 676.75px;
+      position: relative;
 
-      @media screen and (min-width: 550px) {
-        width: calc(50% - 6px);
+      > li {
+        width: 25%;
+        position: absolute;
       }
+    }
 
-      @media screen and (min-width: 1024px) {
-        max-width: 25%;
-      }
+    &--standard {
+      > li {
+        max-width: 100%;
 
-      .image-card {
-        width: 100%;
-        max-height: 350px;
-
-        img {
-          margin: auto auto 0 auto;
-          width: 100% !important;
-          height: auto !important;
+        @media screen and (min-width: 550px) {
+          max-width: calc(50% - 6px);
         }
 
         @media screen and (min-width: 1024px) {
-          margin: auto 0 0 0 !important;
-          max-width: unset;
-
-          img {
-            margin: 0;
-            width: 100% !important;
-            height: 100% !important;
-          }
+          max-width: 25%;
         }
       }
     }
   }
 
-  &--big {
-    align-items: unset;
-    background-color: $yellow-color-dark;
-    border-radius: 28px;
-    display: grid;
-    gap: unset;
-    grid-gap: 13px;
-    grid-template-areas:
-      "a b"
-      "c d"
-      "e e";
-    grid-template-columns:
-      minmax(125px, 1fr)
-      minmax(125px, 1fr);
-    grid-template-rows: 180px 180px 230px;
-    padding: 13px;
-    transition: all 150ms ease-in-out;
+  &__buttons {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    gap: 14px;
+  }
 
-    @media screen and (min-width: 485px) {
-      grid-template-areas:
-        "a b e"
-        "c d e";
-      grid-template-columns:
-        minmax(125px, 1fr)
-        minmax(125px, 1fr)
-        minmax(125px, 1fr);
-      grid-template-rows: 180px 180px;
+  &__button {
+    @include buttonBlue;
+    width: 52px !important;
+    height: 52px !important;
+    padding: 16px !important;
+
+    &::after {
+      display: none !important;
     }
 
-    @media screen and (min-width: 1064px) {
-      grid-template-columns:
-        minmax(220px, 1fr)
-        minmax(220px, 1fr)
-        minmax(220px, 1fr);
-      grid-template-rows: 220px 220px;
+    &:hover {
+      transform: translate(0, 0);
     }
 
-    li {
-      display: flex;
-      flex-direction: column;
-      max-width: 100%;
-
-      &:nth-of-type(1) {
-        grid-area: a;
-      }
-
-      &:nth-of-type(2) {
-        grid-area: b;
-      }
-
-      &:nth-of-type(3) {
-        grid-area: c;
-      }
-
-      &:nth-of-type(4) {
-        grid-area: d;
-      }
-
-      &:nth-of-type(5) {
-        grid-area: e;
-
-        .image-card__image {
-          max-width: 100%;
-
-          img {
-            margin: auto auto 0 auto;
-            width: 40% !important;
-            height: auto !important;
-          }
-
-          @media screen and (min-width: 485px) {
-            margin: auto 0 0 0 !important;
-            max-width: unset;
-
-            img {
-              margin: 0;
-              width: 100% !important;
-              height: 100% !important;
-            }
-          }
-        }
-      }
-
-      .image-card {
-        max-height: 100%;
-
-        &:hover {
-          cursor: pointer;
-          transform: translate(3px, -5px);
-        }
-      }
+    svg path {
+      fill: $white-color;
     }
   }
 }

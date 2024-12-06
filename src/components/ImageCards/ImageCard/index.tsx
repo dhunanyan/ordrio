@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 import { motion } from "framer-motion";
 
@@ -15,7 +14,7 @@ export type ImageCardPropsType = {
   link?: { text: string; href: string; target?: string };
   backgroundColor?: string;
   index?: number;
-  smallerText?: boolean;
+  isCarousel?: boolean;
 };
 
 const ANIMATION_DELAY_TEXT = 0.1;
@@ -29,23 +28,15 @@ export const ImageCard = ({
   link,
   backgroundColor,
   index = 0,
-  smallerText,
+  isCarousel = false,
 }: ImageCardPropsType) => (
   <div
-    className="image-card"
+    className={`image-card image-card--${isCarousel ? "carousel" : "standard"}`}
     {...(backgroundColor && { style: { backgroundColor } })}
   >
-    <div
-      className={
-        "image-card__content" +
-        (smallerText ? " image-card__content--smaller-text" : "")
-      }
-    >
+    <div className="image-card__content">
       <motion.h3
-        className={
-          "image-card__title" +
-          (smallerText ? " image-card__title--smaller-text" : "")
-        }
+        className="image-card__title"
         dangerouslySetInnerHTML={{ __html: title }}
         initial={{ opacity: 0, y: 5 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -56,10 +47,7 @@ export const ImageCard = ({
         viewport={{ once: true }}
       />
       <motion.p
-        className={
-          "image-card__description" +
-          (smallerText ? " image-card__description--smaller-text" : "")
-        }
+        className="image-card__description"
         initial={{ opacity: 0, y: 5 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{
@@ -92,23 +80,13 @@ export const ImageCard = ({
     </div>
 
     <motion.div
-      className="image-card__image"
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      className={`image-card__image image-card__image--${isCarousel ? "carousel" : "standard"}`}
+      initial={{ opacity: 0, y: -160 }}
+      whileInView={{ opacity: 1, y: -180 }}
       transition={{ duration: 0.3, delay: ANIMATION_DELAY_ICON + 0.1 * index }}
       viewport={{ once: true }}
     >
-      <Image
-        placeholder="blur"
-        blurDataURL={imageURL}
-        src={imageURL}
-        alt={title}
-        fill
-        sizes="100%"
-        style={{
-          objectFit: "cover",
-        }}
-      />
+      <img src={imageURL} alt={title} />
     </motion.div>
   </div>
 );

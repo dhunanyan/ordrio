@@ -3,9 +3,43 @@
 
 @mixin secure {
   &--1 {
-    bottom: 0;
-    max-width: 300px;
-    left: calc(50% - 300px / 2);
+    bottom: -20px;
+    left: calc(50% - 240px / 2);
+    max-width: 240px;
     z-index: 1;
+
+    @media screen and (min-width: 425px) {
+      bottom: 0;
+      left: calc(50% - 280px / 2);
+      max-width: 280px;
+    }
+
+    @media screen and (min-width: 768px) {
+      left: calc(50% - 200px / 2);
+      max-width: 200px;
+    }
+
+    @media screen and (min-width: 900px) {
+      bottom: -20px;
+      left: calc(50% - 260px / 2);
+      max-width: 260px;
+    }
+  }
+}
+
+@mixin secureCard {
+  .animated-card {
+    height: 400px;
+
+    @media screen and (min-width: 768px) {
+      min-height: 450px;
+      height: 100%;
+    }
+
+    &__content {
+      > * {
+        max-width: 100%;
+      }
+    }
   }
 }

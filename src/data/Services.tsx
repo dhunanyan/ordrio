@@ -65,38 +65,37 @@ export const ServicesContent = {
     alignContentLeft: true,
   },
   imageCards: {
-    //@CONTENT - to be changed
+    isCarousel: true,
     cards: [
       {
-        title: "Limitless Possibilities",
+        title: "Showcase Your Services",
         description:
-          "Sell anything you can imagine - products, services, digital goods, rentals, and more.",
-        imageURL: "/images/tiger-boxes-card.png",
+          "Present your services in a clear, organized way with detailed descriptions, pricing, and images.",
+        imageURL: "/images/paper-card.png",
       },
       {
-        title: "Grow & Scale Effortlessly",
+        title: "Manage Your Schedule",
         description:
-          "Our flexible architecture adapts to your growing needs, from startups to enterprise-level marketplaces.",
-        imageURL: "/images/rocket-card.png",
+          "Keep track of appointments, staff availability, and customer information in one central location.",
+        imageURL: "/images/calendar-card.png",
       },
       {
-        title: "Attract & Delight Buyers",
+        title: "Drive More Business",
         description:
-          "Offer a seamless shopping experience with powerful search, personalized recommendations, secure payments, and social engagement features.",
-        imageURL: "/images/credit-cards-card.png",
-      },
-      {
-        title: "Empower Your Sellers",
-        description:
-          "Provide intuitive tools for managing products, inventory, orders, and customer interactions.",
+          "Attract new customers and encourage repeat bookings with special offers, promotions, and loyalty programs.",
         imageURL: "/images/handshake-card.png",
       },
       {
-        title:
-          "From branding to user experience, tailor every aspect to match your vision.",
+        title: "Simplify Booking",
         description:
-          "Build lasting relationships with loyalty programs, personalized promotions, and targeted marketing campaigns.",
-        imageURL: "/images/tiger-painting-vertical.png",
+          "Enable customers to easily schedule appointments online, 24/7.",
+        imageURL: "/images/mobile-card.png",
+      },
+      {
+        title: "Boost Your Brand",
+        description:
+          "Create a professional online presence that highlights your expertise and builds trust.",
+        imageURL: "/images/rocket-card.png",
       },
     ],
   },

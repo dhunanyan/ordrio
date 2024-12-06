@@ -99,6 +99,7 @@ export const IntegrationsContent = {
     alignContentLeft: true,
   },
   imageCards: {
+    isCarousel: true,
     cards: [
       {
         title: "Simplified Setup",

@@ -81,15 +81,17 @@ export const HomeContent = {
   },
   imageCardsSection: {
     backgroundImage: BackgroundImage.YELLOW_BRUSH,
-    subtitle: "No More Tool Juggling",
+    subtitle: "One Platform, Endless Possibilities",
     description:
-      "One powerful platform for eCommerce, shipping, and payments - everything working together seamlessly",
+      "Simplify your workflow with a single solution for eCommerce, shipping, and payments—all perfectly in sync.",
     link: { text: "Find Out More", href: "/product-tour" },
     backgroundColor: Colors.YELLOW,
     displayInRow: true,
     alignContentLeft: true,
+    biggerGap: true,
   },
   imageCards: {
+    isCarousel: true,
     cards: [
       {
         title: "Add your first product",
@@ -161,7 +163,7 @@ export const HomeContent = {
     slides: [
       {
         imageURL: "/images/carousels/landing-theme/0.png",
-        href: "restaurants",
+        href: "/restaurants",
       },
       {
         imageURL: "/images/carousels/landing-theme/1.png",

@@ -65,38 +65,37 @@ export const CafesContent = {
     alignContentLeft: true,
   },
   imageCards: {
-    //@CONTENT - to be changed
+    isCarousel: true,
     cards: [
       {
-        title: "Limitless Possibilities",
+        title: "Showcase Your Signature Brews",
         description:
-          "Sell anything you can imagine - products, services, digital goods, rentals, and more.",
-        imageURL: "/images/tiger-boxes-card.png",
+          "Create an enticing digital menu that highlights your unique coffee blends, specialty drinks, and delectable pastries.",
+        imageURL: "/images/cups-card.png",
       },
       {
-        title: "Grow & Scale Effortlessly",
+        title: "Manage Your Cafe Efficiently",
         description:
-          "Our flexible architecture adapts to your growing needs, from startups to enterprise-level marketplaces.",
-        imageURL: "/images/rocket-card.png",
+          "Streamline operations with integrated tools for inventory management, order tracking, and staff scheduling.",
+        imageURL: "/images/tiger-computer-card.png",
       },
       {
-        title: "Attract & Delight Buyers",
+        title: "Engage Your Community",
         description:
-          "Offer a seamless shopping experience with powerful search, personalized recommendations, secure payments, and social engagement features.",
-        imageURL: "/images/credit-cards-card.png",
-      },
-      {
-        title: "Empower Your Sellers",
-        description:
-          "Provide intuitive tools for managing products, inventory, orders, and customer interactions.",
+          "Foster loyal following through personalized promotions, loyalty programs, and interactive social media integrations.",
         imageURL: "/images/handshake-card.png",
       },
       {
-        title:
-          "From branding to user experience, tailor every aspect to match your vision.",
+        title: "Simplify Online Ordering",
         description:
-          "Build lasting relationships with loyalty programs, personalized promotions, and targeted marketing campaigns.",
-        imageURL: "/images/tiger-painting-vertical.png",
+          "Enable customers to order their favorite beverages and treats for pickup or delivery, with seamless integration into your existing workflow.",
+        imageURL: "/images/mobile-card.png",
+      },
+      {
+        title: "Grow Your Business",
+        description:
+          "Reach new customers, increase sales, and expand your brand's presence with Escafe's powerful marketing and analytics tools.",
+        imageURL: "/images/rocket-card.png",
       },
     ],
   },
