@@ -1,11 +1,25 @@
 {
   "name": "ordrio",
-  "version": "1.3.0",
+  "version": "1.3.1",
   "description": "Ordrio: Next.js 14-based informational website for e-commerce solutions, featuring SCSS, TypeScript, and dynamic routing optimized for performance and scalability.",
   "author": "dhunanyan",
   "license": "MIT",
-  "repository": "git@github.com:dhunanyan/ordrio.git",
-  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhunanyan/ordrio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dhunanyan/ordrio/issues"
+  },
+  "homepage": "https://github.com/dhunanyan/ordrio#readme",
+  "keywords": [
+    "react",
+    "typescript",
+    "app-router",
+    "framer-motion",
+    "nextjs14",
+    "ordrio"
+  ],
   "engines": {
     "node": ">=20.0.0"
   },

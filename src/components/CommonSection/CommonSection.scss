@@ -372,12 +372,28 @@
     max-width: 1200px;
     pointer-events: none;
     position: absolute;
-    top: 0;
+    top: 260px;
     width: 100%;
     z-index: -1;
 
     img {
       width: 100%;
+    }
+
+    @media screen and (min-width: 375px) {
+      top: 120px;
+    }
+
+    @media screen and (min-width: 425px) {
+      top: 100px;
+    }
+
+    @media screen and (min-width: 768px) {
+      top: 250px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      top: -0px;
     }
   }
 }
